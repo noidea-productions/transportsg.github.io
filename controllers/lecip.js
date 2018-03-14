@@ -12,7 +12,7 @@ function loadEDSData(svc, cb) {
     }
 
     ajax({url: 'https://beta.transportsg.me/eds/' + svc}, data => {
-        if (data.operator === 'SBS Transit') {
+        if (data !== 'error!') {
             dests[svc] = data.interchanges.map(int => {
                 int = '> ' + int.toUpperCase().replace(/ TER/, '').replace(/ INT/, '');
                 return int;
