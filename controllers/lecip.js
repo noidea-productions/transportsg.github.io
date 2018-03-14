@@ -13,7 +13,7 @@ let dests = {
     4444: ['ON TEST'],
     5555: ['TRAINING BUS'],
     7777: ['FREE SHUTTLE'],
-    9999: ['VER.14MAR18-DD']
+    9999: ['VER. NO']
 
 };
 
