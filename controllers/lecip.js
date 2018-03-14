@@ -97,7 +97,7 @@ function onF4Pressed() {
 }
 
 function paintHome() {
-    renderText('Route No:' + padTo4DigitSpace([...currentSvc]) + ' ' + (Number(currentDir) + 1) + ' ', currentDest);
+    renderText('Route No: ' + padTo4DigitSpace([...currentSvc]) + ' ' + (Number(currentDir) + 1) + ' ', currentDest);
 }
 
 function runMainFirmware() {
