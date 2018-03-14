@@ -29,7 +29,6 @@ let dests = {
     4444: ['ON TEST'],
     5555: ['TRAINING BUS'],
     3333: ['FREE SHUTTLE'],
-    7777: ['FREE BRIDING BUS'],
     9999: ['VER. NO']
 };
 
