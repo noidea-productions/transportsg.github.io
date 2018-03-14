@@ -39,8 +39,19 @@ body {
     width: 30vw;
     height: 6vw;
 
-    display: block;
-    background-color: #7AA230
+    background-color: #7AA230;
+    font-family: monospace;
+
+    display: flex;
+    flex-direction: column;
+    font-size: 2.3vw;
+
+    justify-content: center;
+}
+
+#output-screen > * {
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
 
 #keypad-section {
