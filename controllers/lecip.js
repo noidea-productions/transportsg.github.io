@@ -1,7 +1,7 @@
 let currentSvc = '174';
 let currentDest = '> NEW BRIDGE RD';
 let currentState = 'off';
-let svcBeingInputted = [];
+let svcBeingInputted = [0,0,0,0];
 
 let dests = {
     174: '> NEW BRIDGE RD',
@@ -41,9 +41,10 @@ function registerKeyPress(number) {
 
 function onEntPressed() {
     if (currentState === 'inputSvc') {
-        console.log('ent press')
-        currentSvc = svcBeingInputted.join('');
-        svcBeingInputted = [];
+        currentSvc = svcBeingInputted.join('').slice(-4);
+        currentSvc = currentSvc.slice(currentSvc.lastIndexOf('0') + 1);
+
+        svcBeingInputted = [0,0,0,0];
 
         if (dests[currentSvc]) currentDest = dests[currentSvc];
         else currentDest = '> SOMEWHERE';
@@ -53,7 +54,7 @@ function onEntPressed() {
 
 function onClrPressed() {
     if (currentState === 'inputSvc') {
-        svcBeingInputted = [];
+        svcBeingInputted = [0,0,0,0];
         registerKeyPress(0);
     }
 }
@@ -79,13 +80,13 @@ function performStartup() {
     textSets.forEach((lines, index) => {
         setTimeout(() => {
             renderText(lines[0], lines[1]);
-        }, index * 2000);
+        }, index * 2000 * 0);
     });
 
     setTimeout(() => {
         currentState = 'home';
         runMainFirmware();
-    }, (textSets.length + 1) * 1000);
+    }, (textSets.length + 1) * 1000 * 0);
 }
 
 function main() {
