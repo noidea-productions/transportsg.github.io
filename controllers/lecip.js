@@ -1,17 +1,19 @@
 let currentSvc = '174';
 let currentDest = '> NEW BRIDGE RD';
+let currentDir = false;
+
 let currentState = 'off';
 let svcBeingInputted = [0,0,0,0];
 
 let dests = {
-    174: '> NEW BRIDGE RD',
-    157: '> TOA PAYOH',
-    1111: 'OFF SERVICE',
-    2222: 'SBS TRANSIT',
-    4444: 'ON TEST',
-    5555: 'TRAINING BUS',
-    7777: 'FREE SHUTTLE',
-    9999: ''
+    174: ['> NEW BRIDGE RD', '> BOON LAY'],
+    157: ['>BOON LAY', '> TOA PAYOH'],
+    1111: ['OFF SERVICE'],
+    2222: ['SBS TRANSIT'],
+    4444: ['ON TEST'],
+    5555: ['TRAINING BUS'],
+    7777: ['FREE SHUTTLE'],
+    9999: ['VER.14MAR18-DD']
 
 };
 
@@ -46,7 +48,10 @@ function onEntPressed() {
 
         svcBeingInputted = [0,0,0,0];
 
-        if (dests[currentSvc]) currentDest = dests[currentSvc];
+        if (dests[currentSvc]) {
+            currentDest = dests[currentSvc][0];
+            currentDir = 0;
+        }
         else currentDest = '             E11';
         currentState = 'home';
     }
@@ -59,8 +64,17 @@ function onClrPressed() {
     }
 }
 
+function onF4Pressed() {
+    if (currentState === 'home') {
+        if (dests[currentSvc].length === 2) {
+            currentDir = !currentDir;
+            currentDest = dests[currentSvc][Number(currentDir)];
+        }
+    }
+}
+
 function paintHome() {
-    renderText('Route No: ' + currentSvc + ' 1 ', currentDest);
+    renderText('Route No: ' + currentSvc + ' ' + (Number(currentDir) + 1) + ' ', currentDest);
 }
 
 function runMainFirmware() {
@@ -104,6 +118,7 @@ function main() {
 
     document.getElementById('keypad-ent').addEventListener('click', onEntPressed);
     document.getElementById('keypad-clr').addEventListener('click', onClrPressed);
+    document.getElementById('keypad-f4').addEventListener('click', onF4Pressed);
 }
 
 window.addEventListener('load', main);
