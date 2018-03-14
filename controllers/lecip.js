@@ -10,6 +10,7 @@ function loadEDSData(svc, cb) {
         if (cb) cb();
         return;
     }
+
     ajax({url: 'https://beta.transportsg.me/eds/' + svc}, data => {
         if (data.operator === 'SBS Transit') {
             dests[svc] = data.interchanges.map(int => {
