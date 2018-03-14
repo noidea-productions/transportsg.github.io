@@ -63,8 +63,7 @@ function registerKeyPress(number) {
 
 function onEntPressed() {
     if (currentState === 'inputSvc') {
-        currentSvc = svcBeingInputted.join('').slice(-4);
-        currentSvc = currentSvc.slice(currentSvc.lastIndexOf('0') + 1);
+        currentSvc = svcBeingInputted.join('').slice(-4).replace(/^0+/, '');
 
         loadEDSData(currentSvc, () => {
             if (!currentSvc) currentSvc = '0';
