@@ -47,7 +47,7 @@ function onEntPressed() {
         svcBeingInputted = [0,0,0,0];
 
         if (dests[currentSvc]) currentDest = dests[currentSvc];
-        else currentDest = '> SOMEWHERE';
+        else currentDest = '             E11';
         currentState = 'home';
     }
 }
@@ -80,13 +80,13 @@ function performStartup() {
     textSets.forEach((lines, index) => {
         setTimeout(() => {
             renderText(lines[0], lines[1]);
-        }, index * 2000 * 0);
+        }, index * 2000);
     });
 
     setTimeout(() => {
         currentState = 'home';
         runMainFirmware();
-    }, (textSets.length + 1) * 1000 * 0);
+    }, (textSets.length + 1) * 1000);
 }
 
 function main() {
