@@ -86,7 +86,7 @@ function performStartup() {
     setTimeout(() => {
         currentState = 'home';
         runMainFirmware();
-    }, (textSets.length + 1) * 1000);
+    }, (textSets.length) * 2000);
 }
 
 function main() {
