@@ -52,12 +52,12 @@ function registerKeyPress(number) {
     if (currentState === 'home') {
         svcBeingInputted.push(number);
         currentState = 'inputSvc';
-        renderText('Input Route No.', '           ' + padTo4Digit(svcBeingInputted));
+        renderText('Input Route No. ', '           ' + padTo4Digit(svcBeingInputted));
     } else if (currentState === 'inputSvc') {
         if (svcBeingInputted.length === 4)
             svcBeingInputted.shift();
         svcBeingInputted.push(number);
-        renderText('Input Route No.', '           ' + padTo4Digit(svcBeingInputted));
+        renderText('Input Route No. ', '           ' + padTo4Digit(svcBeingInputted));
     }
 }
 
