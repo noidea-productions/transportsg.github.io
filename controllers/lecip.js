@@ -5,16 +5,28 @@ let currentDir = false;
 let currentState = 'off';
 let svcBeingInputted = [0,0,0,0];
 
+function loadEDSData(svc, cb) {
+    if (dests[svc]) return;
+    ajax({url: 'https://beta.transportsg.me/eds/' + svc}, data => {
+        if (data.operator === 'SBS Transit') {
+            dests[svc] = data.interchanges.map(int => {
+                int = '> ' + int.toUpperCase().replace(/ TER/, '').replace(/ INT/, '');
+                return int;
+            });
+        }
+        if (cb) cb();
+    });
+}
+
 let dests = {
     174: ['> NEW BRIDGE RD', '> BOON LAY'],
-    157: ['>BOON LAY', '> TOA PAYOH'],
     1111: ['OFF SERVICE'],
     2222: ['SBS TRANSIT'],
     4444: ['ON TEST'],
     5555: ['TRAINING BUS'],
-    7777: ['FREE SHUTTLE'],
+    3333: ['FREE SHUTTLE'],
+    7777: ['FREE BRIDING BUS'],
     9999: ['VER. NO']
-
 };
 
 function renderText(line1, line2) {
@@ -49,16 +61,19 @@ function onEntPressed() {
     if (currentState === 'inputSvc') {
         currentSvc = svcBeingInputted.join('').slice(-4);
         currentSvc = currentSvc.slice(currentSvc.lastIndexOf('0') + 1);
-        if (!currentSvc) currentSvc = '0';
 
-        svcBeingInputted = [0,0,0,0];
+        loadEDSData(currentSvc, () => {
+            if (!currentSvc) currentSvc = '0';
 
-        currentDir = 0;
-        if (dests[currentSvc]) {
-            currentDest = dests[currentSvc][0];
-        }
-        else currentDest = '             E11';
-        currentState = 'home';
+            svcBeingInputted = [0,0,0,0];
+
+            currentDir = 0;
+            if (dests[currentSvc]) {
+                currentDest = dests[currentSvc][0];
+            }
+            else currentDest = '             E11';
+            currentState = 'home';
+        });
     }
 }
 
@@ -71,6 +86,7 @@ function onClrPressed() {
 
 function onF4Pressed() {
     if (currentState === 'home') {
+        if (!(currentSvc in dests)) return;
         if (dests[currentSvc].length === 2) {
             currentDir = !currentDir;
             currentDest = dests[currentSvc][Number(currentDir)];
@@ -83,6 +99,7 @@ function paintHome() {
 }
 
 function runMainFirmware() {
+    loadEDSData(157);
     setInterval(() => {
         if (currentState === 'home')
             paintHome();
@@ -127,3 +144,28 @@ function main() {
 }
 
 window.addEventListener('load', main);
+
+
+
+Object.defineProperty(XMLHttpRequest.prototype, 'responseJSON', {
+    get: function() {
+        try {
+            return JSON.parse(this.responseText);
+        } catch (e) {
+            return undefined;
+        }
+    },
+    enumerable: false
+});
+
+function ajax(options, callback) {
+    var xhr = new XMLHttpRequest();
+    xhr.addEventListener('load', function() {
+        callback(xhr.responseJSON || xhr.responseXML || xhr.responseText);
+    });
+    xhr.open(options.method || 'GET', options.url || location.toString());
+    if (options.data) {
+        xhr.setRequestHeader('Content-Type', 'application/json');
+    }
+    xhr.send(JSON.stringify(options.data));
+}
