@@ -28,6 +28,10 @@ function padTo4Digit(svcArray) {
     return Array(4).fill(0).concat(svcArray).slice(-4).join('');
 }
 
+function padTo4DigitSpace(svcArray) {
+    return Array(4).fill(' ').concat(svcArray).slice(-4).join('');
+}
+
 function registerKeyPress(number) {
     if (currentState === 'home') {
         svcBeingInputted.push(number);
@@ -45,12 +49,13 @@ function onEntPressed() {
     if (currentState === 'inputSvc') {
         currentSvc = svcBeingInputted.join('').slice(-4);
         currentSvc = currentSvc.slice(currentSvc.lastIndexOf('0') + 1);
+        if (!currentSvc) currentSvc = '0';
 
         svcBeingInputted = [0,0,0,0];
 
+        currentDir = 0;
         if (dests[currentSvc]) {
             currentDest = dests[currentSvc][0];
-            currentDir = 0;
         }
         else currentDest = '             E11';
         currentState = 'home';
@@ -74,7 +79,7 @@ function onF4Pressed() {
 }
 
 function paintHome() {
-    renderText('Route No: ' + currentSvc + ' ' + (Number(currentDir) + 1) + ' ', currentDest);
+    renderText('Route No:' + padTo4DigitSpace([...currentSvc]) + ' ' + (Number(currentDir) + 1) + ' ', currentDest);
 }
 
 function runMainFirmware() {
