@@ -13,10 +13,11 @@ function loadEDSData(svc, cb) {
 
     ajax({url: 'https://beta.transportsg.me/eds/' + svc}, data => {
         if (data !== 'error!') {
-            dests[svc] = data.interchanges.map(int => {
-                int = '> ' + int.toUpperCase().replace(/(:? BUS)? TER(:?MINAL)?/, '').replace(/ INT/, '').replace(/ TEMP/, '');
-                return int;
-            });
+            if (data.operator === 'SBS Transit')
+                dests[svc] = data.interchanges.map(int => {
+                    int = '> ' + int.toUpperCase().replace(/(:? BUS)? TER(:?MINAL)?/, '').replace(/ INT/, '').replace(/ TEMP/, '');
+                    return int;
+                });
         }
         if (cb) cb();
     });
