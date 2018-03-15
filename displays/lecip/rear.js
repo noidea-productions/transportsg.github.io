@@ -21,17 +21,25 @@ window.addEventListener('load', () => {
         }
     }
 
-    for (let xOff = 0; xOff > -120; xOff--) {
-        setTimeout(() => {
-            clearLEDs();
-            let x = 0;
-            for (let i = 0; i < 10; i++) {
-                showChar(i, 'medium', x + xOff);
-                if (i == 1) x += 7;
-                else x += 11;
-            }
-        }, -xOff * 50);
+    function oneRound() {
+        for (let xOff = 0; xOff > -140; xOff--) {
+            setTimeout(() => {
+                let x = 40;
+                for (let i = 0; i < 10; i++) {
+                    let size = (i === 1) ? 7 : 11;
+                    clearRect(x + xOff, 0, x + xOff + size, height);
+                    showChar(i, 'medium', x + xOff);
+
+                    x += size;
+                }
+            }, -xOff * 50);
+        }
     }
+
+    oneRound();
+    setInterval(() => {
+        oneRound();
+    }, 5300);
 
 });
 
@@ -61,8 +69,12 @@ function showChar(char, type, dx) {
 }
 
 function clearLEDs() {
-    for (let y = 0; y < height; y++) {
-        for (let x = 0; x < width; x++) {
+    clearRect(0, 0, width, height);
+}
+
+function clearRect(sx, sy, ex, ey) {
+    for (let y = sy; y < ey; y++) {
+        for (let x = sx; x < ex; x++) {
             setLEDState(x, y, false);
         }
     }
