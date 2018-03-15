@@ -15,7 +15,9 @@ function loadEDSData(svc, cb) {
         if (data !== 'error!') {
             if (data.operator === 'SBS Transit')
                 dests[svc] = data.interchanges.map(int => {
-                    int = '> ' + int.toUpperCase().replace(/(:? BUS)? TER(:?MINAL)?/, '').replace(/ INT/, '').replace(/ TEMP/, '');
+                    int = '> ' + int.toUpperCase().replace(/(:? BUS)? TER(:?MINAL)?/, '').replace(/ INT/, '').replace(/ TEMP/, '').replace(/BUSINESS/, 'BIZ');
+                    if (int === '> BEACH STATION')
+                        int = '> SENTOSA'
                     return int;
                 });
         }
