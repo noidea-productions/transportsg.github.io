@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+}
+
+#controller, #rear {
+    width: 50vw;
+    height: 100vh;
+
+    border: 0;
+}
