@@ -22,6 +22,12 @@ function loadEDSData(svc, cb) {
     });
 }
 
+function triggerUpdate(data) {
+    if (parent) {
+        parent.postMessage(JSON.stringify(data), parent.location.toString());
+    }
+}
+
 let failedDests = [];
 
 let dests = {
@@ -79,6 +85,10 @@ function onEntPressed() {
             currentDir = 0;
             if (dests[currentSvc]) {
                 currentDest = dests[currentSvc][0];
+                triggerUpdate({
+                    type: 'svc-update',
+                    svc: currentSvc
+                });
             }
             else {
                 currentDest = '             E11';
@@ -111,7 +121,12 @@ function paintHome() {
 }
 
 function runMainFirmware() {
-    loadEDSData(157);
+    
+    triggerUpdate({
+        type: 'svc-update',
+        svc: currentSvc
+    });
+
     setInterval(() => {
         if (currentState === 'home')
             paintHome();

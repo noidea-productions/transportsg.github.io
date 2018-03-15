@@ -59,3 +59,28 @@ function clearRect(sx, sy, ex, ey) {
         }
     }
 }
+
+window.addEventListener('message', event => {
+    let eventData = JSON.parse(event.data);
+
+    if (event.origin == location.origin) {
+        switch (eventData.type) {
+            case 'svc-update':
+                handleSvcUpdate(eventData.svc);
+                break;
+        }
+    }
+});
+
+function handleSvcUpdate(svc) {
+    console.log('rear: change to ' + svc)
+
+    clearLEDs();
+
+    var numbers = [...svc.toString()];
+
+    var curX = 3;
+    numbers.forEach(number => {
+        curX += showChar(number, 'medium', curX) + 2;
+    });
+}
