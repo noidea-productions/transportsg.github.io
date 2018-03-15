@@ -1,5 +1,7 @@
 let width = 40, height = 20;
 
+let ledCache = {};
+
 window.addEventListener('load', () => {
     let ledContainer = document.getElementById('led-container');
     for (let y = 0; y < height; y++) {
@@ -13,11 +15,13 @@ window.addEventListener('load', () => {
 
             ledSegment.appendChild(led);
 
+            ledCache[x + '-' + y] = led;
+
             ledContainer.appendChild(ledSegment);
         }
     }
 
-    for (let xOff = 0; xOff > -100; xOff--) {
+    for (let xOff = 0; xOff > -120; xOff--) {
         setTimeout(() => {
             clearLEDs();
             let x = 0;
@@ -32,7 +36,8 @@ window.addEventListener('load', () => {
 });
 
 function setLEDState(x, y, state) {
-    let led = document.querySelector('#led-' + x + '-' + y + ' > div.led');
+    let led = ledCache[x + '-' + y];
+
     if (!led) return;
 
     var state = 'led-' + (state ? 'on' : 'off');
