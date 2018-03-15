@@ -17,14 +17,17 @@ window.addEventListener('load', () => {
         }
     }
 
-    // let x = 0;
-    // for (let i = 0; i < 10; i++) {
-    //     showChar(i, 'medium', x);
-    //     if (i == 1) x += 6;
-    //     else x += 10;
-    // }
-
-    showChar(6, 'medium', 0);
+    for (let xOff = 0; xOff > -100; xOff--) {
+        setTimeout(() => {
+            clearLEDs();
+            let x = 0;
+            for (let i = 0; i < 10; i++) {
+                showChar(i, 'medium', x + xOff);
+                if (i == 1) x += 7;
+                else x += 11;
+            }
+        }, -xOff * 50);
+    }
 
 });
 
@@ -47,6 +50,15 @@ function showChar(char, type, dx) {
     for (let y = 0; y < height; y++) {
         for (let x = 0; x < charWidth; x++) {
             setLEDState(x + dx, y, charData[y][x]);
+        }
+    }
+    return charWidth;
+}
+
+function clearLEDs() {
+    for (let y = 0; y < height; y++) {
+        for (let x = 0; x < width; x++) {
+            setLEDState(x, y, false);
         }
     }
 }
