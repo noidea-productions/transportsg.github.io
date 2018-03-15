@@ -22,13 +22,16 @@ function loadEDSData(svc, cb) {
     });
 }
 
+let failedDests = [];
+
 let dests = {
     174: ['> NEW BRIDGE RD', '> BOON LAY'],
     1111: ['OFF SERVICE'],
     2222: ['SBS TRANSIT'],
+    3333: ['FREE SHUTTLE BUS'],
     4444: ['ON TEST'],
     5555: ['TRAINING BUS'],
-    3333: ['FREE SHUTTLE'],
+    7777: ['FREE BRIDGING BUS'],
     9999: ['VER. NO']
 };
 
@@ -64,6 +67,10 @@ function onEntPressed() {
     if (currentState === 'inputSvc') {
         currentSvc = svcBeingInputted.join('').slice(-4).replace(/^0+/, '');
 
+        if (currentSvc in failedDests) {
+            currentDir = '             E11';
+            return;
+        }
         loadEDSData(currentSvc, () => {
             if (!currentSvc) currentSvc = '0';
 
@@ -73,7 +80,10 @@ function onEntPressed() {
             if (dests[currentSvc]) {
                 currentDest = dests[currentSvc][0];
             }
-            else currentDest = '             E11';
+            else {
+                currentDest = '             E11';
+                failedDests.push(currentSvc);
+            }
             currentState = 'home';
         });
     }
