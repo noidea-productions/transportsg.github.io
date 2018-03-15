@@ -62,8 +62,7 @@ function clearRect(sx, sy, ex, ey) {
 
 window.addEventListener('message', event => {
     let eventData = JSON.parse(event.data);
-
-    if (event.origin == location.origin) {
+    if (event.origin === location.origin) {
         switch (eventData.type) {
             case 'svc-update':
                 handleSvcUpdate(eventData.svc);

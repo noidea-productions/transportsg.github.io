@@ -121,7 +121,7 @@ function paintHome() {
 }
 
 function runMainFirmware() {
-    
+
     triggerUpdate({
         type: 'svc-update',
         svc: currentSvc

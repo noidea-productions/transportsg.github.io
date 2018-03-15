@@ -1,6 +1,9 @@
-let controller = document.getElementById('controller');
-let rearEDS = document.getElementById('rear');
+let controller, rearEDS;
 
+window.addEventListener('load', () => {
+    controller = document.getElementById('controller');
+    rearEDS = document.getElementById('rear');
+});
 window.addEventListener('message', event => {
     let eventData = JSON.parse(event.data);
 
@@ -17,7 +20,7 @@ window.addEventListener('message', event => {
 
 function onSvcUpdated(newSvc) {
     console.log('load svc ', newSvc);
-    rear.contentWindow.postMessage(JSON.stringify({
+    rearEDS.contentWindow.postMessage(JSON.stringify({
         type: 'svc-update',
         svc: newSvc
     }), location.toString());
