@@ -21,26 +21,6 @@ window.addEventListener('load', () => {
         }
     }
 
-    function oneRound() {
-        for (let xOff = 0; xOff > -140; xOff--) {
-            setTimeout(() => {
-                let x = 40;
-                for (let i = 0; i < 10; i++) {
-                    let size = (i === 1) ? 7 : 11;
-                    clearRect(x + xOff, 0, x + xOff + size, height);
-                    showChar(i, 'medium', x + xOff);
-
-                    x += size;
-                }
-            }, -xOff * 50);
-        }
-    }
-
-    oneRound();
-    setInterval(() => {
-        oneRound();
-    }, 5300);
-
 });
 
 function setLEDState(x, y, state) {
