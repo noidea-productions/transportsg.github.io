@@ -17,7 +17,7 @@ window.addEventListener('load', () => {
         }
     }
 
-    showChar(1, 'medium', 0);
+    showChar(4, 'medium', 0);
 });
 
 function setLEDState(x, y, state) {
