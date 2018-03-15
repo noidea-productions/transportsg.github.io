@@ -17,12 +17,20 @@ window.addEventListener('load', () => {
         }
     }
 
-    showChar(4, 'medium', 0);
+    // let x = 0;
+    // for (let i = 0; i < 10; i++) {
+    //     showChar(i, 'medium', x);
+    //     if (i == 1) x += 6;
+    //     else x += 10;
+    // }
+
+    showChar(6, 'medium', 0);
+
 });
 
 function setLEDState(x, y, state) {
     let led = document.querySelector('#led-' + x + '-' + y + ' > div.led');
-    console.log('#led-' + x + '-' + y + ' > div.led')
+    if (!led) return;
 
     var state = 'led-' + (state ? 'on' : 'off');
     led.className = 'led ' + state;
