@@ -102,7 +102,7 @@ function handleSvcUpdate(svc) {
 
     let font = '';
 
-    if (numbers.length < 4) font = 'medium'
+    if (numbers.filter(e => e === 'e').length < 4) font = 'medium'
     else font = 'thin';
 
     numbers.forEach(number => {
