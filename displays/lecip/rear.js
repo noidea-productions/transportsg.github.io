@@ -20,7 +20,6 @@ window.addEventListener('load', () => {
             ledContainer.appendChild(ledSegment);
         }
     }
-
 });
 
 function setLEDState(x, y, state) {
@@ -39,10 +38,11 @@ function showChar(char, type, dx) {
     let charData = charSet[type][char];
 
     let charWidth = charData[0].length;
+    let charHeight = charData.length;
 
-    for (let y = 0; y < height; y++) {
+    for (let y = 0; y < charHeight; y++) {
         for (let x = 0; x < charWidth; x++) {
-            setLEDState(x + dx, y, charData[y][x]);
+            setLEDState(x + dx, y + (height - charHeight), charData[y][x]);
         }
     }
     return charWidth;
