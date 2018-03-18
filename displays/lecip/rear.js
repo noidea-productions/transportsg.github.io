@@ -21,7 +21,26 @@ window.addEventListener('load', () => {
         }
     }
 
+    setTimeout(showBootupText, 1500);
 });
+
+function showBootupText() {
+    showChar(0, 'tiny', 1, 13);
+    showChar(1, 'tiny', 9, 13);
+    showChar(0, 'tiny', 15, 13);
+    showChar(1, 'tiny', 23, 13);
+    showChar(0, 'tiny', 29, 13);
+
+    showChar(5, 'tiny', 1, 5);
+    showChar('.', 'tiny', 9, 5);
+    showChar(0, 'tiny', 15, 5);
+    showChar(0, 'tiny', 22, 5);
+    showChar('R', 'tiny', 29, 5);
+
+    setTimeout(() => {
+        clearLEDs();
+    }, 1250);
+}
 
 function setLEDState(x, y, state) {
     let led = ledCache[x + '-' + y];
@@ -32,7 +51,7 @@ function setLEDState(x, y, state) {
     led.className = 'led ' + state;
 }
 
-function showChar(char, type, dx) {
+function showChar(char, type, dx, dy) {
     if (!(type in charSet)) return;
     if (!(char in charSet[type])) return;
 
@@ -43,7 +62,7 @@ function showChar(char, type, dx) {
 
     for (let y = 0; y < charHeight; y++) {
         for (let x = 0; x < charWidth; x++) {
-            setLEDState(x + dx, y + (height - charHeight), charData[y][x]);
+            setLEDState(x + dx, y - (dy || 0) + (height - charHeight), charData[y][x]);
         }
     }
     return charWidth;
