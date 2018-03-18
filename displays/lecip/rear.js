@@ -20,6 +20,7 @@ window.addEventListener('load', () => {
             ledContainer.appendChild(ledSegment);
         }
     }
+
 });
 
 function setLEDState(x, y, state) {
@@ -79,7 +80,13 @@ function handleSvcUpdate(svc) {
     var numbers = [...svc.toString()];
 
     var curX = 3;
+
+    let font = '';
+
+    if (numbers.length < 4) font = 'medium'
+    else font = 'thin';
+
     numbers.forEach(number => {
-        curX += showChar(number, 'medium', curX) + 2;
+        curX += showChar(number, font, curX) + 2;
     });
 }
