@@ -13,7 +13,7 @@ function loadEDSData(svc, cb) {
 
     ajax({url: 'https://beta.transportsg.me/eds/' + svc}, data => {
         if (data !== 'error!') {
-            if (data.operator === 'SBS Transit')
+            if (data.operator === 'SBST')
                 dests[svc] = data.interchanges.map(int => {
                     int = '> ' + int.toUpperCase().replace(/(:? BUS)? TER(:?MINAL)?/, '').replace(/ INT/, '').replace(/ TEMP/, '').replace(/BUSINESS/, 'BIZ');
                     if (int === '> BEACH STATION')
