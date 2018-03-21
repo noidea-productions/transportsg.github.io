@@ -1,5 +1,5 @@
-let currentSvc = '174';
-let currentDest = '> NEW BRIDGE RD';
+let currentSvc = '123';
+let currentDest = '> SENTOSA';
 let currentDir = false;
 
 let currentState = 'off';
@@ -90,7 +90,8 @@ function onEntPressed() {
                 currentDest = dests[currentSvc][0];
                 triggerUpdate({
                     type: 'svc-update',
-                    svc: currentSvc
+                    svc: currentSvc,
+                    dest: currentDest
                 });
             }
             else {
@@ -115,6 +116,12 @@ function onF4Pressed() {
         if (dests[currentSvc].length === 2) {
             currentDir = !currentDir;
             currentDest = dests[currentSvc][Number(currentDir)];
+
+            triggerUpdate({
+                type: 'svc-update',
+                svc: currentSvc,
+                dest: currentDest
+            });
         }
     }
 }

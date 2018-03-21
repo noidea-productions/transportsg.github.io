@@ -69,7 +69,7 @@ function showSvc(svcNumber) {
 
     let totalWidth = chars.map(char => charSet.fat[char][0].length + 2).reduce((a, b) => a + b, 0);
 
-    let xPos = width - totalWidth + 1;
+    let xPos = width - totalWidth + 2;
 
     clearRect(xPos, 0, width, height);
 
@@ -156,27 +156,16 @@ window.addEventListener('message', event => {
     if (event.origin === location.origin) {
         switch (eventData.type) {
             case 'svc-update':
-                handleSvcUpdate(eventData.svc);
+                handleSvcUpdate(eventData.svc, eventData.dest);
                 break;
         }
     }
 });
 
-function handleSvcUpdate(svc) {
-    console.log('front: change to ' + svc)
-
+function handleSvcUpdate(svc, dest) {
+    console.log('front: change to', svc, dest);
     clearLEDs();
 
-    var numbers = [...svc.toString()];
-
-    var curX = 3;
-
-    let font = '';
-
-    if (numbers.filter(e => e !== 'e').length < 4) font = 'medium'
-    else font = 'thin';
-
-    numbers.forEach(number => {
-        curX += showChar(number, font, curX) + 1;
-    });
+    showSvc(svc);
+    showDest(dest);
 }

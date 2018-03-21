@@ -11,7 +11,7 @@ window.addEventListener('message', event => {
     if (event.origin == location.origin) {
         switch (eventData.type) {
             case 'svc-update':
-                onSvcUpdated(eventData.svc);
+                onSvcUpdated(eventData.svc, eventData.dest);
                 break;
             default:
                 break;
@@ -19,10 +19,16 @@ window.addEventListener('message', event => {
     }
 });
 
-function onSvcUpdated(newSvc) {
+function onSvcUpdated(newSvc, newDest) {
     console.log('load svc ', newSvc);
     rearEDS.contentWindow.postMessage(JSON.stringify({
         type: 'svc-update',
         svc: newSvc
+    }), location.toString());
+    
+    frontEDS.contentWindow.postMessage(JSON.stringify({
+        type: 'svc-update',
+        svc: newSvc,
+        dest: newDest
     }), location.toString());
 }
