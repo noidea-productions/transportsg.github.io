@@ -77,14 +77,26 @@ function showSvc(svcNumber) {
 function showDest(dest) {
     let chars = [...dest.toString()];
 
-    let totalWidth = chars.map(char => charSet.frontFat[char][0].length + 1).reduce((a, b) => a + b, 0);
+    let yOff = 0;
+
+    let font = 'frontFat';
+    if (dest.length > 13) dest = dest.slice(2);
+    
+    if (!dest.includes('>')) {
+        font = 'frontThin';
+        yOff = 1;
+    }
+
+    console.log(font);
+
+    let totalWidth = chars.map(char => charSet[font][char][0].length + 1).reduce((a, b) => a + b, 0);
 
     let xPos = 0;
 
-    clearRect(0, 0, totalWidth, 10);
+    clearRect(0, 0, totalWidth, 10 + yOff);
 
     chars.forEach(char => {
-        xPos += showChar(char, 'frontFat', xPos) + 1;
+        xPos += showChar(char, font, xPos, yOff) + 1;
     });
 }
 
