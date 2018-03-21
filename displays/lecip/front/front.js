@@ -2,10 +2,6 @@ let width = 160, height = 20;
 
 let ledCache = [];
 
-function setCache(x, y, led) {
-    ledCache[x][y] = led;
-}
-
 window.addEventListener('load', () => {
     for (let x = 0; x < width; x++) {
         ledCache.push([]);
@@ -26,7 +22,7 @@ window.addEventListener('load', () => {
 
             ledSegment.appendChild(led);
 
-            setCache(x, y, led);
+            ledCache[x][y] = led;
 
             ledContainer.appendChild(ledSegment);
         }
