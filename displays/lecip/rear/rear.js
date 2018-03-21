@@ -1,8 +1,15 @@
 let width = 40, height = 20;
 
-let ledCache = {};
+let ledCache = [];
 
 window.addEventListener('load', () => {
+    for (let x = 0; x < width; x++) {
+        ledCache.push([]);
+        for (let y = 0; y < height; y++) {
+            ledCache[x].push([]);
+        }
+    }
+
     let ledContainer = document.getElementById('led-container');
     for (let y = 0; y < height; y++) {
         for (let x = 0; x < width; x++) {
@@ -15,7 +22,7 @@ window.addEventListener('load', () => {
 
             ledSegment.appendChild(led);
 
-            ledCache[x + '-' + y] = led;
+            ledCache[x][y] = led;
 
             ledContainer.appendChild(ledSegment);
         }
@@ -43,7 +50,7 @@ function showBootupText() {
 }
 
 function setLEDState(x, y, state) {
-    let led = ledCache[x + '-' + y];
+    let led = ledCache[x][y];
 
     if (!led) return;
 
