@@ -35,8 +35,15 @@ function bootupSequence() {
     for (let x = 0; x < width; x++) {
         setTimeout(() => {
             setColumn(x, true);
-        }, x * 10);
+        }, x * 5);
     }
+    setTimeout(() => {
+        for (let x = 0; x < width; x++) {
+            setTimeout(() => {
+                setColumn(x, false);
+            }, x * 5);
+        }
+    }, 1000);
 }
 
 function setColumn(x, state) {
