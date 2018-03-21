@@ -110,7 +110,7 @@ function handleSvcUpdate(svc) {
 
     let font = '';
 
-    let length = numbers.filter(e => e !== 'e').length;
+    let length = numbers.length;
     if (length < 3) font = 'fat';
     else if (length === 3) font = 'medium';
     else font = 'thin';
