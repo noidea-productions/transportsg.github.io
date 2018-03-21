@@ -64,6 +64,34 @@ function writeText(text) {
 
 }
 
+function showSvc(svcNumber) {
+    let chars = [...svcNumber.toString()];
+
+    let totalWidth = chars.map(char => charSet.fat[char][0].length + 2).reduce((a, b) => a + b, 0);
+
+    let xPos = width - totalWidth + 1;
+
+    clearRect(0, xPos, width, height);
+
+    chars.forEach(char => {
+        xPos += showChar(char, 'fat', xPos) + 2;
+    });
+}
+
+function showDest(dest) {
+    let chars = [...dest.toString()];
+
+    let totalWidth = chars.map(char => charSet.frontFat[char][0].length + 1).reduce((a, b) => a + b, 0);
+
+    let xPos = 0;
+
+    clearRect(0, totalWidth, width, height);
+
+    chars.forEach(char => {
+        xPos += showChar(char, 'frontFat', xPos) + 1;
+    });
+}
+
 function setColumn(x, state) {
     for (let y = 0; y < height; y++) {
         setLEDState(x, y, state);
