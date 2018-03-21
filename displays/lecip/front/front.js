@@ -1,8 +1,19 @@
 let width = 160, height = 20;
 
-let ledCache = {};
+let ledCache = [];
+
+function setCache(x, y, led) {
+    ledCache[x][y] = led;
+}
 
 window.addEventListener('load', () => {
+    for (let x = 0; x < width; x++) {
+        ledCache.push([]);
+        for (let y = 0; y < height; y++) {
+            ledCache[x].push([]);
+        }
+    }
+
     let ledContainer = document.getElementById('led-container');
     for (let y = 0; y < height; y++) {
         for (let x = 0; x < width; x++) {
@@ -15,15 +26,31 @@ window.addEventListener('load', () => {
 
             ledSegment.appendChild(led);
 
-            ledCache[x + '-' + y] = led;
+            setCache(x, y, led);
 
             ledContainer.appendChild(ledSegment);
         }
     }
+
+    setTimeout(bootupSequence, 1500);
 });
 
+function bootupSequence() {
+    for (let x = 0; x < width; x++) {
+        setTimeout(() => {
+            setColumn(x, true);
+        }, x * 10);
+    }
+}
+
+function setColumn(x, state) {
+    for (let y = 0; y < height; y++) {
+        setLEDState(x, y, state);
+    }
+}
+
 function setLEDState(x, y, state) {
-    let led = ledCache[x + '-' + y];
+    let led = ledCache[x][y];
 
     if (!led) return;
 

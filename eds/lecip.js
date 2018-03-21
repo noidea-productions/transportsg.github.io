@@ -1,8 +1,9 @@
-let controller, rearEDS;
+let controller, rearEDS, frontEDS;
 
 window.addEventListener('load', () => {
     controller = document.getElementById('controller');
     rearEDS = document.getElementById('rear');
+    frontEDS = document.getElementById('front')
 });
 window.addEventListener('message', event => {
     let eventData = JSON.parse(event.data);
