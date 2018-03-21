@@ -4,12 +4,22 @@ body {
 
 #content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 #controller, #rear {
     width: 50vw;
-    height: 100vh;
+    height: 60vh;
+}
 
+iframe {
     border: 0;
+}
+
+#top-contents {
+    display: flex;
+}
+
+#front {
+    height: 40vh;
 }
