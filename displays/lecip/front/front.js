@@ -43,10 +43,11 @@ function bootupSequence() {
                 setColumn(x, false);
             }, x * 5);
         }
-        setTimeout(() => {
-            writeText('OFF SERVICE')
-        }, width * 5 + 100);
     }, 1000);
+
+    setTimeout(() => {
+        writeText('OFF SERVICE')
+    }, 6000);
 }
 
 function writeText(text) {
