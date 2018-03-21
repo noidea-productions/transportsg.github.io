@@ -81,7 +81,7 @@ function showDest(dest) {
 
     let font = 'frontFat';
     if (dest.length > 13) dest = dest.slice(2);
-    
+
     if (!dest.includes('>')) {
         font = 'frontThin';
         yOff = 1;
@@ -174,6 +174,20 @@ function handleSvcUpdate(svc, dest) {
     console.log('front: change to', svc, dest);
     clearLEDs();
 
-    showSvc(svc);
-    showDest(dest);
+    switch (svc) {
+        case '1111':
+            writeText('OFF SERVICE');
+            break;
+        case '4444':
+            writeText('ON TEST');
+            break;
+        case '5555':
+            writeText('TRAINING BUS');
+            break;
+        default:
+            showSvc(svc);
+            showDest(dest);
+            break;
+    }
+
 }
