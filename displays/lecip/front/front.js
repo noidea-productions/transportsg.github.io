@@ -43,7 +43,24 @@ function bootupSequence() {
                 setColumn(x, false);
             }, x * 5);
         }
+        setTimeout(() => {
+            writeText('OFF SERVICE')
+        }, width * 5 + 100);
     }, 1000);
+}
+
+function writeText(text) {
+    clearLEDs();
+
+    let chars = [...text];
+    let totalWidth = chars.map(char => charSet.fat[char][0].length + 3).reduce((a, b) => a + b, 0);
+
+    let xPos = Math.floor(width / 2 - totalWidth / 2);
+
+    chars.forEach(char => {
+        xPos += showChar(char, 'fat', xPos) + 3;
+    });
+
 }
 
 function setColumn(x, state) {
