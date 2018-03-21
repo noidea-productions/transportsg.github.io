@@ -71,7 +71,7 @@ function showSvc(svcNumber) {
 
     let xPos = width - totalWidth + 1;
 
-    clearRect(0, xPos, width, height);
+    clearRect(xPos, 0, width, height);
 
     chars.forEach(char => {
         xPos += showChar(char, 'fat', xPos) + 2;
@@ -85,10 +85,24 @@ function showDest(dest) {
 
     let xPos = 0;
 
-    clearRect(0, totalWidth, width, height);
+    clearRect(0, 0, totalWidth, 10);
 
     chars.forEach(char => {
         xPos += showChar(char, 'frontFat', xPos) + 1;
+    });
+}
+
+function showSvcInfo(line) {
+    let chars = [...line.toString()];
+
+    let totalWidth = chars.map(char => charSet.frontThin[char][0].length + 1).reduce((a, b) => a + b, 0);
+
+    let xPos = 0;
+
+    clearRect(0, 13, totalWidth - 1, height);
+
+    chars.forEach(char => {
+        xPos += showChar(char, 'frontThin', xPos, 13) + 1;
     });
 }
 
@@ -132,7 +146,7 @@ function clearLEDs() {
 function clearRect(sx, sy, ex, ey) {
     for (let y = sy; y < ey; y++) {
         for (let x = sx; x < ex; x++) {
-            setLEDState(x, y, false);
+            setLEDState(x, height - y - 1, false);
         }
     }
 }
