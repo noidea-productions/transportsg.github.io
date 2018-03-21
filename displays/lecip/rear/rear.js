@@ -50,6 +50,7 @@ function showBootupText() {
 }
 
 function setLEDState(x, y, state) {
+    if (!ledCache[x]) return;
     let led = ledCache[x][y];
 
     if (!led) return;
@@ -109,7 +110,9 @@ function handleSvcUpdate(svc) {
 
     let font = '';
 
-    if (numbers.filter(e => e !== 'e').length < 4) font = 'medium'
+    let length = numbers.filter(e => e !== 'e').length;
+    if (length < 3) font = 'fat';
+    else if (length === 3) font = 'medium';
     else font = 'thin';
 
     numbers.forEach(number => {

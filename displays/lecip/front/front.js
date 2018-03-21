@@ -53,6 +53,7 @@ function setColumn(x, state) {
 }
 
 function setLEDState(x, y, state) {
+    if (!ledCache[x]) return;
     let led = ledCache[x][y];
 
     if (!led) return;
