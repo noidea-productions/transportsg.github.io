@@ -44,10 +44,6 @@ function bootupSequence() {
             }, x * 5);
         }
     }, 1000);
-
-    setTimeout(() => {
-        writeText('OFF SERVICE')
-    }, 6000);
 }
 
 function writeText(text) {

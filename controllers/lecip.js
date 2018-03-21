@@ -1,6 +1,6 @@
 let currentSvc = '123';
 let currentDest = '> SENTOSA';
-let currentDir = false;
+let currentDir = true;
 
 let currentState = 'off';
 let svcBeingInputted = [0,0,0,0];
@@ -34,7 +34,7 @@ function triggerUpdate(data) {
 let failedDests = [];
 
 let dests = {
-    174: ['> NEW BRIDGE RD', '> BOON LAY'],
+    123: ['BUKIT MERAH INT', '> SENTOSA'],
     1111: ['OFF SERVICE'],
     2222: ['SBS TRANSIT'],
     3333: ['FREE SHUTTLE BUS'],
@@ -134,7 +134,8 @@ function runMainFirmware() {
 
     triggerUpdate({
         type: 'svc-update',
-        svc: currentSvc
+        svc: currentSvc,
+        dest: currentDest
     });
 
     setInterval(() => {
