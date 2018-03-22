@@ -85,14 +85,10 @@ function showDest(dest) {
     let yOff = 0;
 
     let font = 'frontFat';
-    if (dest.length > 20) dest = dest.slice(2);
-
-    if (!dest.includes('>')) {
-        font = 'frontSmall';
+    if (dest.length > 15) {
+        font = 'frontSmall'
         yOff = 1;
     }
-
-    console.log(font);
 
     let totalWidth = chars.map(char => charSet[font][char][0].length + 2).reduce((a, b) => a + b, 0);
 

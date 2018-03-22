@@ -34,7 +34,7 @@ function triggerUpdate(data) {
 let failedDests = [];
 
 let dests = {
-    123: ['BUKIT MERAH INT', '> SENTOSA'],
+    123: ['> BUKIT MERAH', '> SENTOSA'],
     1111: ['OFF SERVICE'],
     2222: ['SBS TRANSIT'],
     3333: ['FREE SHUTTLE BUS'],
