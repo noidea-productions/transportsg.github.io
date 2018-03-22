@@ -46,16 +46,21 @@ function bootupSequence() {
     }, 1000);
 }
 
-function writeText(text) {
+function writeText(text, font, spaceWidth) {
     clearLEDs();
 
+    font = font || 'fat';
+    spaceWidth = spaceWidth || 3;
+
     let chars = [...text];
-    let totalWidth = chars.map(char => charSet.fat[char][0].length + 3).reduce((a, b) => a + b, 0);
+    let totalWidth = chars.map(char => charSet[font][char][0].length + spaceWidth).reduce((a, b) => a + b, 0);
+    let totalHeight = charSet[font][chars[0]].length;
 
     let xPos = Math.floor(width / 2 - totalWidth / 2);
+    let yPos = Math.floor(height / 2 - totalHeight / 2);
 
     chars.forEach(char => {
-        xPos += showChar(char, 'fat', xPos) + 3;
+        xPos += showChar(char, font, xPos, yPos) + spaceWidth;
     });
 
 }
