@@ -205,6 +205,9 @@ function handleSvcUpdate(svc, dest) {
         case '5555':
             writeText('TRAINING BUS');
             break;
+        case '9999':
+            writeText('VER. 14SEP14-DD', 'frontVersion', 1);
+            break;
         default:
             showSvc(svc);
             showDest(dest);
