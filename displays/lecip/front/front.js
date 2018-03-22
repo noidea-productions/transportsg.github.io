@@ -85,37 +85,37 @@ function showDest(dest) {
     let yOff = 0;
 
     let font = 'frontFat';
-    if (dest.length > 13) dest = dest.slice(2);
+    if (dest.length > 20) dest = dest.slice(2);
 
     if (!dest.includes('>')) {
-        font = 'frontThin';
+        font = 'frontSmall';
         yOff = 1;
     }
 
     console.log(font);
 
-    let totalWidth = chars.map(char => charSet[font][char][0].length + 1).reduce((a, b) => a + b, 0);
+    let totalWidth = chars.map(char => charSet[font][char][0].length + 2).reduce((a, b) => a + b, 0);
 
     let xPos = 0;
 
     clearRect(0, 0, totalWidth, 10 + yOff);
 
     chars.forEach(char => {
-        xPos += showChar(char, font, xPos, yOff) + 1;
+        xPos += showChar(char, font, xPos, yOff) + 2;
     });
 }
 
 function showSvcInfo(line) {
     let chars = [...line.toString()];
 
-    let totalWidth = chars.map(char => charSet.frontThin[char][0].length + 1).reduce((a, b) => a + b, 0);
+    let totalWidth = chars.map(char => charSet.frontSmall[char][0].length + 1).reduce((a, b) => a + b, 0);
 
     let xPos = 0;
 
     clearRect(0, 13, totalWidth - 1, height);
 
     chars.forEach(char => {
-        xPos += showChar(char, 'frontThin', xPos, 13) + 1;
+        xPos += showChar(char, 'frontSmall', xPos, 13) + 1;
     });
 }
 
