@@ -197,7 +197,7 @@ function handleSvcUpdate(svc, dest) {
             writeText('OFF SERVICE');
             break;
         case '2222':
-            showImage('sbst-front')
+            showImage('sbst-front');
             break;
         case '4444':
             writeText('ON TEST');
