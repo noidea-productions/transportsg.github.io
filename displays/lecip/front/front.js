@@ -147,6 +147,19 @@ function showChar(char, type, dx, dy) {
     return charWidth;
 }
 
+function showImage(name) {
+    let imageData = charSet.images[name];
+
+    if (!imageData) return;
+
+    for (let x = 0; x < width; x++) {
+        for (let y = 0; y < height; y++) {
+            setLEDState(x, y, imageData[x][y]);
+        }
+    }
+
+}
+
 function clearLEDs() {
     clearRect(0, 0, width, height);
 }
@@ -177,6 +190,9 @@ function handleSvcUpdate(svc, dest) {
     switch (svc) {
         case '1111':
             writeText('OFF SERVICE');
+            break;
+        case '2222':
+            showImage('sbst-front')
             break;
         case '4444':
             writeText('ON TEST');
