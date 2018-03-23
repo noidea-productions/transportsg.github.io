@@ -59,6 +59,36 @@ function setLEDState(x, y, state) {
     led.className = 'led ' + state;
 }
 
+
+function getTextWidth(chars, font, spaceWidth) {
+    return chars.map(char => charSet[font][char][0].length + spaceWidth).reduce((a, b) => a + b, 0) - spaceWidth;
+}
+
+function writeText(text, font, spaceWidth, xPos, yPos) {
+    let chars = [...text];
+
+    font = font || 'fat';
+    spaceWidth = spaceWidth || 3;
+    xPos = xPos || 0;
+    yPos = yPos || 0;
+
+    chars.forEach(char => {
+        xPos += showChar(char, font, xPos, yPos) + spaceWidth;
+    });
+}
+
+
+function showSmallText(line, yPos) {
+    let chars = [...line];
+
+    let totalWidth = getTextWidth(chars, 'rearText', 1);
+
+    let xPos = Math.floor(32 / 2 - totalWidth / 2);
+
+    writeText(line, 'rearText', 1, xPos, yPos);
+
+}
+
 function showChar(char, type, dx, dy) {
     if (!(type in charSet)) return;
     if (!(char in charSet[type])) return;
@@ -106,15 +136,23 @@ function handleSpecialCode(code) {
     switch (code) {
         case '1111':
             clearLEDs();
+            showSmallText('OFF', 11);
+            showSmallText('SERVICE', 3);
             break;
         case '2222':
             clearLEDs();
+            showSmallText('SBS', 11);
+            showSmallText('TRANSIT', 3);
             break;
         case '4444':
             clearLEDs();
+            showSmallText('ON', 11);
+            showSmallText('TEST', 3);
             break;
         case '5555':
             clearLEDs();
+            showSmallText('TRG', 11);
+            showSmallText('BUS', 3);
             break;
         case '9999':
             clearLEDs();
