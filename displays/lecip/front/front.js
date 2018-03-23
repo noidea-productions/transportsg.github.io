@@ -83,6 +83,8 @@ function writeText(text, font, spaceWidth, xPos, yPos) {
 
 
 function showSvc(svcNumber) {
+    if (svcNumber.endsWith('e')) svcNumber = '  ' + svcNumber;
+
     let chars = [...svcNumber.toString()];
 
     let totalWidth = getTextWidth(chars, 'fat', 2);
@@ -203,17 +205,27 @@ window.addEventListener('message', event => {
 
 function doEDSScroll() {
     clearLEDs();
-    showSvc(currentSvc);
-    showDest(currentDest);
 
-    var data = EDSData[currentSvc];
-    if (!data) return;
+    if (currentSvc.endsWith('e')) {
+        if (currentScrollPos === -168) {
+            currentScrollPos = 118;
+        }
 
-    if ((currentScrollPos + 1) >= data[currentDirection].length) {
-        currentScrollPos = 0;
+        writeText('FAST FORWARD', 'fat', 3, currentScrollPos--);
+        showSvc(currentSvc);
+    } else {
+        showSvc(currentSvc);
+        showDest(currentDest);
+
+        var data = EDSData[currentSvc];
+        if (!data) return;
+
+        if ((currentScrollPos + 1) >= data[currentDirection].length) {
+            currentScrollPos = 0;
+        }
+
+        showSvcInfo(data[currentDirection][currentScrollPos++].toUpperCase());
     }
-
-    showSvcInfo(data[currentDirection][currentScrollPos++].toUpperCase());
 }
 
 let edsScrollInterval = 0;
@@ -247,7 +259,7 @@ function handleSvcUpdate(svc, dest, direction) {
 
             currentScrollPos = 0;
 
-            edsScrollInterval = setInterval(doEDSScroll, 2500);
+            edsScrollInterval = setInterval(doEDSScroll, svc.endsWith('e') ? 50 : 2500);
 
             doEDSScroll();
             break;
