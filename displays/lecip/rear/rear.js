@@ -136,15 +136,23 @@ function handleSpecialCode(code) {
     switch (code) {
         case '1111':
             clearLEDs();
+            showSmallText('OFF', 11);
+            showSmallText('SERVICE', 3);
             break;
         case '2222':
             clearLEDs();
+            showSmallText('SBS', 11);
+            showSmallText('TRANSIT', 3);
             break;
         case '4444':
             clearLEDs();
+            showSmallText('ON', 11);
+            showSmallText('TEST', 3);
             break;
         case '5555':
             clearLEDs();
+            showSmallText('TRG', 11);
+            showSmallText('BUS', 3);
             break;
         case '9999':
             clearLEDs();
