@@ -13,11 +13,18 @@ window.addEventListener('message', event => {
             case 'svc-update':
                 onSvcUpdated(eventData.svc, eventData.dest, eventData.direction);
                 break;
+            case 'special-code':
+                propagateEvent(eventData);
             default:
                 break;
         }
     }
 });
+
+function propagateEvent(eventData) {
+    rearEDS.contentWindow.postMessage(JSON.stringify(eventData), location.toString());
+    frontEDS.contentWindow.postMessage(JSON.stringify(eventData), location.toString());
+}
 
 function onSvcUpdated(newSvc, newDest, direction) {
     console.log('load svc ', newSvc);

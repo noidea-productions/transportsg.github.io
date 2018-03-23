@@ -81,6 +81,20 @@ function onEntPressed() {
             currentDir = '             E11';
             return;
         }
+
+        if (svcBeingInputted.filter((e, i, a) => a.indexOf(e) === i).length === 1) {
+            triggerUpdate({
+                type: 'special-code',
+                code: svcBeingInputted.join('')
+            });
+
+            currentDest = '';
+
+            svcBeingInputted = [0,0,0,0];
+            currentState = 'home';
+            return;
+        }
+
         loadEDSData(currentSvc, () => {
             if (!currentSvc) currentSvc = '0';
 

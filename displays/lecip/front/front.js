@@ -199,6 +199,9 @@ window.addEventListener('message', event => {
             case 'svc-update':
                 handleSvcUpdate(eventData.svc, eventData.dest, eventData.direction);
                 break;
+            case 'special-code':
+                handleSpecialCode(eventData.code);
+                break;
         }
     }
 });
@@ -230,13 +233,10 @@ function doEDSScroll() {
 
 let edsScrollInterval = 0;
 
-function handleSvcUpdate(svc, dest, direction) {
-    console.log('front: change to', svc, dest);
-    clearLEDs();
-
+function handleSpecialCode(code) {
     clearInterval(edsScrollInterval);
-
-    switch (svc) {
+    
+    switch (code) {
         case '1111':
             writeTextCentered('OFF SERVICE');
             break;
@@ -252,17 +252,22 @@ function handleSvcUpdate(svc, dest, direction) {
         case '9999':
             writeTextCentered('VER. 14SEP14-DD', 'frontVersion', 1);
             break;
-        default:
-            currentSvc = svc;
-            currentDirection = 1 + direction;
-            currentDest = dest;
+        }
+}
 
-            currentScrollPos = 0;
+function handleSvcUpdate(svc, dest, direction) {
+    console.log('front: change to', svc, dest);
+    clearLEDs();
 
-            edsScrollInterval = setInterval(doEDSScroll, svc.endsWith('e') ? 50 : 2500);
+    clearInterval(edsScrollInterval);
 
-            doEDSScroll();
-            break;
-    }
+    currentSvc = svc;
+    currentDirection = 1 + direction;
+    currentDest = dest;
 
+    currentScrollPos = 0;
+
+    edsScrollInterval = setInterval(doEDSScroll, svc.endsWith('e') ? 50 : 2500);
+
+    doEDSScroll();
 }
