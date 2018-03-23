@@ -48,29 +48,44 @@ function bootupSequence() {
     }, 1000);
 }
 
-function writeText(text, font, spaceWidth) {
-    clearLEDs();
+function getTextWidth(chars, font, spaceWidth) {
+    return chars.map(char => charSet[font][char][0].length + spaceWidth).reduce((a, b) => a + b, 0) - spaceWidth;
+}
 
+function writeTextCentered(text, font, spaceWidth) {
     font = font || 'fat';
     spaceWidth = spaceWidth || 3;
 
     let chars = [...text];
-    let totalWidth = chars.map(char => charSet[font][char][0].length + spaceWidth).reduce((a, b) => a + b, 0);
+    let totalWidth = getTextWidth(chars, font, spaceWidth);
     let totalHeight = charSet[font][chars[0]].length;
 
     let xPos = Math.floor(width / 2 - totalWidth / 2);
     let yPos = Math.floor(height / 2 - totalHeight / 2);
 
+    writeText(text, font, spaceWidth, xPos, yPos);
+}
+
+function writeText(text, font, spaceWidth, xPos, yPos) {
+    clearLEDs();
+    let chars = [...text];
+
+    font = font || 'fat';
+    spaceWidth = spaceWidth || 3;
+    xPos = xPos || 0;
+    yPos = yPos || 0;
+
     chars.forEach(char => {
         xPos += showChar(char, font, xPos, yPos) + spaceWidth;
     });
-
 }
+
+
 
 function showSvc(svcNumber) {
     let chars = [...svcNumber.toString()];
 
-    let totalWidth = chars.map(char => charSet.fat[char][0].length + 2).reduce((a, b) => a + b, 0);
+    let totalWidth = getTextWidth(chars, 'fat', 2);
 
     let xPos = width - totalWidth + 2;
 
@@ -92,7 +107,7 @@ function showDest(dest) {
         yOff = 1;
     }
 
-    let totalWidth = chars.map(char => charSet[font][char][0].length + 1).reduce((a, b) => a + b, 0);
+    let totalWidth = getTextWidth(chars, font, 1);
 
     let xPos = 1;
 
@@ -106,7 +121,7 @@ function showDest(dest) {
 function showSvcInfo(line) {
     let chars = [...line.toString()];
 
-    let totalWidth = chars.map(char => charSet.frontSmall[char][0].length + 1).reduce((a, b) => a + b, 0);
+    let totalWidth = getTextWidth(chars, 'frontSmall', 1);
 
     let xPos = 1;
 
@@ -190,7 +205,7 @@ function doEDSScroll() {
     clearLEDs();
     showSvc(currentSvc);
     showDest(currentDest);
-    
+
     var data = EDSData[currentSvc];
     if (!data) return;
 
@@ -209,19 +224,19 @@ function handleSvcUpdate(svc, dest, direction) {
 
     switch (svc) {
         case '1111':
-            writeText('OFF SERVICE');
+            writeTextCentered('OFF SERVICE');
             break;
         case '2222':
             showImage('sbst-front');
             break;
         case '4444':
-            writeText('ON TEST');
+            writeTextCentered('ON TEST');
             break;
         case '5555':
-            writeText('TRAINING BUS');
+            writeTextCentered('TRAINING BUS');
             break;
         case '9999':
-            writeText('VER. 14SEP14-DD', 'frontVersion', 1);
+            writeTextCentered('VER. 14SEP14-DD', 'frontVersion', 1);
             break;
         default:
             currentSvc = svc;
