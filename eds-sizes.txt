@@ -1,0 +1,10 @@
+LECIP:
+    Front:
+        Width: 160
+        Height: 20
+    Rear:
+        Width: 40
+        Height: 20
+    Side:
+        Width: 96
+        Height: 20
