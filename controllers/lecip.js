@@ -62,12 +62,12 @@ function padTo4DigitSpace(svcArray) {
 
 function registerKeyPress(number) {
     if (currentState === 'home') {
+        svcBeingInputted.shift();
         svcBeingInputted.push(number);
         currentState = 'inputSvc';
         renderText('Input Route No. ', '           ' + padTo4Digit(svcBeingInputted));
     } else if (currentState === 'inputSvc') {
-        if (svcBeingInputted.length === 4)
-            svcBeingInputted.shift();
+        svcBeingInputted.shift();
         svcBeingInputted.push(number);
         renderText('Input Route No. ', '           ' + padTo4Digit(svcBeingInputted));
     }
@@ -129,6 +129,36 @@ function onF4Pressed() {
     }
 }
 
+function ammendVariant(direction) {
+    if (isNaN(parseInt(svcBeingInputted[3]))) {
+        let currentVariant = svcBeingInputted[3].charCodeAt(0);
+        let newVariantCID = currentVariant += direction;
+        if (newVariantCID > 90) newVariantCID = 65;
+        if (newVariantCID < 65) newVariantCID = 90;
+
+        let newVariant = String.fromCharCode(newVariantCID);
+        svcBeingInputted.pop();
+        svcBeingInputted.push(newVariant);
+    } else {
+        svcBeingInputted.shift();
+        svcBeingInputted.push('A');
+    }
+
+    renderText('Input Route No. ', '           ' + padTo4Digit(svcBeingInputted));
+}
+
+function onUpPressed() {
+    if (currentState === 'inputSvc') {
+        ammendVariant(+1);
+    }
+}
+
+function onDownPressed() {
+    if (currentState === 'inputSvc') {
+        ammendVariant(-1);
+    }
+}
+
 function paintHome() {
     renderText('Route No: ' + padTo4DigitSpace([...currentSvc]) + ' ' + (Number(currentDir) + 1) + ' ', currentDest);
 }
@@ -183,6 +213,8 @@ function main() {
     document.getElementById('keypad-ent').addEventListener('click', onEntPressed);
     document.getElementById('keypad-clr').addEventListener('click', onClrPressed);
     document.getElementById('keypad-f4').addEventListener('click', onF4Pressed);
+    document.getElementById('keypad-up').addEventListener('click', onUpPressed);
+    document.getElementById('keypad-down').addEventListener('click', onDownPressed);
 }
 
 window.addEventListener('load', main);
