@@ -16,13 +16,13 @@ let EDSData = {
     },
     174: {
         1: [
-            'Bt Batok Ave 6, 3',
+            'Bt Batok E. Ave 6, 3',
             'Jln Jurong Kechil',
             'Dunearn Rd',
             'Farrer Rd',
             'Holland Rd',
             'Orchard Rd',
-            'Bras Basah Rd',
+            'Nth, Sth Bridge Rd',
             'Nth Bridge Rd'
         ],
         2: [
@@ -32,7 +32,7 @@ let EDSData = {
             'Farrer Rd',
             'Bt Timah Rd',
             'Jln Jurong Kechil',
-            'Bt Batok Ave 6, 3'
+            'Bt Batok E. Ave 6, 3'
         ]
     },
     181: {
