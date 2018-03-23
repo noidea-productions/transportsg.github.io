@@ -87,7 +87,7 @@ function showSvc(svcNumber) {
 
     let totalWidth = getTextWidth(chars, 'fat', 2);
 
-    let xPos = width - totalWidth + 2;
+    let xPos = width - totalWidth - 1;
 
     clearRect(xPos, 0, width, height);
 
@@ -223,7 +223,7 @@ function handleSvcUpdate(svc, dest, direction) {
     clearLEDs();
 
     clearInterval(edsScrollInterval);
-        
+
     switch (svc) {
         case '1111':
             writeTextCentered('OFF SERVICE');
