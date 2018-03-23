@@ -15,8 +15,8 @@ function loadEDSData(svc, cb) {
         if (data !== 'error!') {
             if (data.operator === 'SBST')
                 dests[svc] = data.interchanges.map(int => {
-                    int = '> ' + int.toUpperCase().replace(/(:? BUS)? TER(:?MINAL)?/, '').replace(/ INT/, '').replace(/ TEMP/, '').replace(/BUSINESS/, 'BIZ');
-                    if (int === '> BEACH STATION')
+                    int = '> ' + int.toUpperCase().replace(/ TEMP/, '').replace(/BUSINESS/, 'BIZ');
+                    if (int === '> BEACH STATION BUS TERMINAL')
                         int = '> SENTOSA'
                     return int;
                 }).filter((e, i, a) => a.indexOf(e) === i);
@@ -34,7 +34,7 @@ function triggerUpdate(data) {
 let failedDests = [];
 
 let dests = {
-    123: ['> BUKIT MERAH', '> SENTOSA'],
+    123: ['> BUKIT MERAH INT', '> SENTOSA'],
     174: ['> BOON LAY INT', '> KAMPONG BAHRU TER'],
     1111: ['OFF SERVICE'],
     2222: ['SBS TRANSIT'],
