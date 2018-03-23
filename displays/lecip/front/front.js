@@ -214,11 +214,7 @@ function doEDSScroll() {
     clearLEDs();
 
     if (currentSvc.endsWith('e')) {
-        if (currentScrollPos === -168) {
-            currentScrollPos = 118;
-        }
-
-        writeText('FAST FORWARD', 'fat', 3, currentScrollPos--);
+        showImage('fastForward')
         showSvc(currentSvc);
     } else {
         showSvc(currentSvc);
@@ -287,7 +283,7 @@ function handleSvcUpdate(event) {
 
     currentScrollPos = 0;
 
-    edsScrollInterval = setInterval(doEDSScroll, svc.endsWith('e') ? 50 : 2500);
+    edsScrollInterval = setInterval(doEDSScroll, 2500);
 
     doEDSScroll();
 }

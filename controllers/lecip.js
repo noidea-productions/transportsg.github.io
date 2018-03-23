@@ -47,6 +47,11 @@ let dests = {
         interchanges: ['> BOON LAY INT', '> KAMPONG BAHRU TER'],
         routeType: 'TRUNK',
         loopPoint: ''
+    },
+    '174e': {
+        interchanges: ['> BOON LAY INT', '> KAMPONG BAHRU TER'],
+        routeType: 'EXPRESS',
+        loopPoint: ''
     }
 };
 
