@@ -19,7 +19,7 @@ function loadEDSData(svc, cb) {
                     if (int === '> BEACH STATION')
                         int = '> SENTOSA'
                     return int;
-                });
+                }).filter((e, i, a) => a.indexOf(e) === i);
         }
         if (cb) cb();
     });
