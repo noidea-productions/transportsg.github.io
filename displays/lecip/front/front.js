@@ -172,8 +172,8 @@ function showImage(name) {
 
     if (!imageData) return;
 
-    for (let x = 0; x < width; x++) {
-        for (let y = 0; y < height; y++) {
+    for (let x = 0; x < imageData.length; x++) {
+        for (let y = 0; y < imageData[0].length; y++) {
             setLEDState(x, y, imageData[x][y]);
         }
     }
