@@ -190,12 +190,12 @@ function doEDSScroll() {
     var data = EDSData[currentSvc];
     if (!data) return;
 
-    if (++currentScrollPos >= data[currentDirection].length) {
+    if (currentScrollPos + 1 >= data[currentDirection].length) {
         currentScrollPos = 0;
     }
 
     clearLEDs();
-    showSvcInfo(data[currentDirection][currentScrollPos].toUpperCase());
+    showSvcInfo(data[currentDirection][currentScrollPos++].toUpperCase());
     showSvc(currentSvc);
     showDest(currentDest);
 }
@@ -226,6 +226,8 @@ function handleSvcUpdate(svc, dest, direction) {
             currentSvc = svc;
             currentDirection = direction;
             currentDest = dest;
+
+            currentScrollPos = 0;
 
             clearInterval(edsScrollInterval);
             edsScrollInterval = setInterval(doEDSScroll, 2500);
