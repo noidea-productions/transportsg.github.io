@@ -222,6 +222,8 @@ function handleSvcUpdate(svc, dest, direction) {
     console.log('front: change to', svc, dest);
     clearLEDs();
 
+    clearInterval(edsScrollInterval);
+        
     switch (svc) {
         case '1111':
             writeTextCentered('OFF SERVICE');
@@ -245,7 +247,6 @@ function handleSvcUpdate(svc, dest, direction) {
 
             currentScrollPos = 0;
 
-            clearInterval(edsScrollInterval);
             edsScrollInterval = setInterval(doEDSScroll, 2500);
 
             doEDSScroll();
