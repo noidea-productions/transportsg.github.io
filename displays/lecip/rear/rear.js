@@ -92,12 +92,35 @@ window.addEventListener('message', event => {
     let eventData = JSON.parse(event.data);
     if (event.origin === location.origin) {
         switch (eventData.type) {
+            case 'special-code':
+                handleSpecialCode(eventData.code);
+                break;
             case 'svc-update':
                 handleSvcUpdate(eventData.svc);
                 break;
         }
     }
 });
+
+function handleSpecialCode(code) {
+    switch (code) {
+        case '1111':
+            clearLEDs();
+            break;
+        case '2222':
+            clearLEDs();
+            break;
+        case '4444':
+            clearLEDs();
+            break;
+        case '5555':
+            clearLEDs();
+            break;
+        case '9999':
+            clearLEDs();
+            break;
+    }
+}
 
 function handleSvcUpdate(svc) {
     console.log('rear: change to ' + svc)
