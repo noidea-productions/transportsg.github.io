@@ -1,6 +1,6 @@
-let currentSvc = '123';
-let currentDest = '> SENTOSA';
-let currentDir = true;
+let currentSvc = '174';
+let currentDest = '> BOON LAY INT';
+let currentDir = false;
 
 let currentState = 'off';
 let svcBeingInputted = [0,0,0,0];
@@ -35,6 +35,7 @@ let failedDests = [];
 
 let dests = {
     123: ['> BUKIT MERAH', '> SENTOSA'],
+    174: ['> BOON LAY INT', '> KAMPONG BAHRU TER'],
     1111: ['OFF SERVICE'],
     2222: ['SBS TRANSIT'],
     3333: ['FREE SHUTTLE BUS'],
