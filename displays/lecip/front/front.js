@@ -235,8 +235,15 @@ let edsScrollInterval = 0;
 
 function handleSpecialCode(code) {
     clearInterval(edsScrollInterval);
-    
+
     switch (code) {
+        case '1':
+            for (let x = 0; x < width; x++) {
+                for (let y = 0; y < height; y++) {
+                    setLEDState(x, y, true);
+                }
+            }
+            break;
         case '1111':
             writeTextCentered('OFF SERVICE');
             break;

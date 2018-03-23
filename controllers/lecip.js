@@ -82,10 +82,10 @@ function onEntPressed() {
             return;
         }
 
-        if (svcBeingInputted.filter((e, i, a) => a.indexOf(e) === i).length === 1) {
+        if (svcBeingInputted.filter((e, i, a) => a.indexOf(e) === i).length === 1 || currentSvc === '1') {
             triggerUpdate({
                 type: 'special-code',
-                code: svcBeingInputted.join('')
+                code: currentSvc
             });
 
             currentDest = '';
