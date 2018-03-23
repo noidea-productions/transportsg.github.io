@@ -1,5 +1,5 @@
-let currentSvc = '174';
-let currentDest = '> BOON LAY INT';
+let currentSvc = '1111';
+let currentDest = 'OFF SERVICE';
 let currentDir = false;
 
 let currentState = 'off';
@@ -14,12 +14,16 @@ function loadEDSData(svc, cb) {
     ajax({url: 'https://beta.transportsg.me/eds/' + svc}, data => {
         if (data !== 'error!') {
             if (data.operator === 'SBST')
-                dests[svc] = data.interchanges.map(int => {
-                    int = '> ' + int.toUpperCase().replace(/ TEMP/, '').replace(/BUSINESS/, 'BIZ');
-                    if (int === '> BEACH STATION BUS TERMINAL')
-                        int = '> SENTOSA'
-                    return int;
-                }).filter((e, i, a) => a.indexOf(e) === i);
+                dests[svc] = {
+                    interchanges: data.interchanges.map(int => {
+                        int = '> ' + int.toUpperCase().replace(/ TEMP/, '').replace(/BUSINESS/, 'BIZ');
+                        if (int === '> BEACH STATION BUS TERMINAL')
+                            int = '> SENTOSA'
+                        return int;
+                    }).filter((e, i, a) => a.indexOf(e) === i),
+                    routeType: data.routeType,
+                    loopPoint: data.loopPoint
+            }   ;
         }
         if (cb) cb();
     });
@@ -34,15 +38,16 @@ function triggerUpdate(data) {
 let failedDests = [];
 
 let dests = {
-    123: ['> BUKIT MERAH INT', '> SENTOSA'],
-    174: ['> BOON LAY INT', '> KAMPONG BAHRU TER'],
-    1111: ['OFF SERVICE'],
-    2222: ['SBS TRANSIT'],
-    3333: ['FREE SHUTTLE BUS'],
-    4444: ['ON TEST'],
-    5555: ['TRAINING BUS'],
-    7777: ['FREE BRIDGING BUS'],
-    9999: ['VER. NO']
+    258: {
+        interchanges: ['> JOO KOON'],
+        routeType: 'INDUSTRIAL',
+        loopPoint: 'Jurong West St 64'
+    },
+    174: {
+        interchanges: ['> BOON LAY INT', '> KAMPONG BAHRU TER'],
+        routeType: 'TRUNK',
+        loopPoint: ''
+    }
 };
 
 function renderText(line1, line2) {
@@ -102,11 +107,13 @@ function onEntPressed() {
 
             currentDir = 0;
             if (dests[currentSvc]) {
-                currentDest = dests[currentSvc][0];
+                currentDest = dests[currentSvc].interchanges[0];
                 triggerUpdate({
                     type: 'svc-update',
                     svc: currentSvc,
                     dest: currentDest,
+                    loopPoint: dests[currentSvc].loopPoint,
+                    routeType: dests[currentSvc].routeType,
                     direction: Number(currentDir)
                 });
             }
@@ -131,12 +138,14 @@ function onF4Pressed() {
         if (!(currentSvc in dests)) return;
         if (dests[currentSvc].length === 2) {
             currentDir = !currentDir;
-            currentDest = dests[currentSvc][Number(currentDir)];
+            currentDest = dests[currentSvc].interchanges[Number(currentDir)];
 
             triggerUpdate({
                 type: 'svc-update',
                 svc: currentSvc,
                 dest: currentDest,
+                loopPoint: dests[currentSvc].loopPoint,
+                routeType: dests[currentSvc].routeType,
                 direction: Number(currentDir)
             });
         }
@@ -180,10 +189,8 @@ function paintHome() {
 function runMainFirmware() {
 
     triggerUpdate({
-        type: 'svc-update',
-        svc: currentSvc,
-        dest: currentDest,
-        direction: Number(currentDir)
+        type: 'special-code',
+        code: currentSvc
     });
 
     setInterval(() => {

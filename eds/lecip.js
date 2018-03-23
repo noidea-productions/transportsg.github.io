@@ -5,13 +5,14 @@ window.addEventListener('load', () => {
     rearEDS = document.getElementById('rear');
     frontEDS = document.getElementById('front')
 });
+
 window.addEventListener('message', event => {
     let eventData = JSON.parse(event.data);
 
     if (event.origin == location.origin) {
         switch (eventData.type) {
             case 'svc-update':
-                onSvcUpdated(eventData.svc, eventData.dest, eventData.direction);
+                onSvcUpdated(eventData);
                 break;
             case 'special-code':
                 propagateEvent(eventData);
@@ -26,17 +27,19 @@ function propagateEvent(eventData) {
     frontEDS.contentWindow.postMessage(JSON.stringify(eventData), location.toString());
 }
 
-function onSvcUpdated(newSvc, newDest, direction) {
-    console.log('load svc ', newSvc);
+function onSvcUpdated(eventData) {
+    console.log('load svc ', eventData.svc);
     rearEDS.contentWindow.postMessage(JSON.stringify({
         type: 'svc-update',
-        svc: newSvc
+        svc: eventData.svc
     }), location.toString());
 
     frontEDS.contentWindow.postMessage(JSON.stringify({
         type: 'svc-update',
-        svc: newSvc,
-        dest: newDest,
-        direction: direction
+        svc: eventData.svc,
+        dest: eventData.dest,
+        loopPoint: eventData.loopPoint,
+        routeType: eventData.routeType,
+        direction: eventData.direction
     }), location.toString());
 }

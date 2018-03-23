@@ -1,6 +1,6 @@
 let width = 160, height = 20;
 
-let currentSvc = '', currentDirection = 1, currentDest = '';
+let currentSvc = '', currentDirection = 1, currentDest = '', currentLoopPoint = '';
 let currentScrollPos = 0;
 let ledCache = [];
 
@@ -115,7 +115,11 @@ function showDest(dest) {
 
     clearRect(0, 0, totalWidth, 10 + yOff);
 
-    chars.forEach(char => {
+    chars.forEach((char, i) => {
+        let spacing = 1;
+
+        if (char === '-' || chars[i + 1] === '-') spacing = 0;
+
         xPos += showChar(char, font, xPos, yOff) + 1;
     });
 }
@@ -197,7 +201,7 @@ window.addEventListener('message', event => {
     if (event.origin === location.origin) {
         switch (eventData.type) {
             case 'svc-update':
-                handleSvcUpdate(eventData.svc, eventData.dest, eventData.direction);
+                handleSvcUpdate(eventData);
                 break;
             case 'special-code':
                 handleSpecialCode(eventData.code);
@@ -231,19 +235,16 @@ function doEDSScroll() {
     }
 }
 
+function shortenRoadName(roadName) {
+    return roadName.replace('Jurong', 'Jur').replace('West ', 'W.').replace('East ', 'E.');
+}
+
 let edsScrollInterval = 0;
 
 function handleSpecialCode(code) {
     clearInterval(edsScrollInterval);
 
     switch (code) {
-        case '1':
-            for (let x = 0; x < width; x++) {
-                for (let y = 0; y < height; y++) {
-                    setLEDState(x, y, true);
-                }
-            }
-            break;
         case '1111':
             writeTextCentered('OFF SERVICE');
             break;
@@ -262,7 +263,13 @@ function handleSpecialCode(code) {
         }
 }
 
-function handleSvcUpdate(svc, dest, direction) {
+function handleSvcUpdate(event) {
+    let svc = event.svc,
+        dest = event.dest,
+        direction = event.direction,
+        loopPoint = event.loopPoint,
+        routeType = event.routeType;
+
     console.log('front: change to', svc, dest);
     clearLEDs();
 
@@ -271,6 +278,12 @@ function handleSvcUpdate(svc, dest, direction) {
     currentSvc = svc;
     currentDirection = 1 + direction;
     currentDest = dest;
+    currentLoopPoint = loopPoint;
+
+    if (routeType !== 'TRUNK' && loopPoint) {
+        let trimmedDest = currentDest.slice(2);
+        currentDest = trimmedDest + '-' + shortenRoadName(loopPoint).toUpperCase();
+    }
 
     currentScrollPos = 0;
 
