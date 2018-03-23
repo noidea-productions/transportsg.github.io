@@ -1,5 +1,7 @@
 let width = 160, height = 20;
 
+let currentSvc = '', currentDirection = 1, currentDest = '';
+let currentScrollPos = 0;
 let ledCache = [];
 
 window.addEventListener('load', () => {
@@ -90,14 +92,14 @@ function showDest(dest) {
         yOff = 1;
     }
 
-    let totalWidth = chars.map(char => charSet[font][char][0].length + 2).reduce((a, b) => a + b, 0);
+    let totalWidth = chars.map(char => charSet[font][char][0].length + 1).reduce((a, b) => a + b, 0);
 
-    let xPos = 0;
+    let xPos = 1;
 
     clearRect(0, 0, totalWidth, 10 + yOff);
 
     chars.forEach(char => {
-        xPos += showChar(char, font, xPos, yOff) + 2;
+        xPos += showChar(char, font, xPos, yOff) + 1;
     });
 }
 
@@ -106,12 +108,12 @@ function showSvcInfo(line) {
 
     let totalWidth = chars.map(char => charSet.frontSmall[char][0].length + 1).reduce((a, b) => a + b, 0);
 
-    let xPos = 0;
+    let xPos = 1;
 
-    clearRect(0, 13, totalWidth - 1, height);
+    clearRect(0, 12, totalWidth - 1, height);
 
     chars.forEach(char => {
-        xPos += showChar(char, 'frontSmall', xPos, 13) + 1;
+        xPos += showChar(char, 'frontSmall', xPos, 12) + 1;
     });
 }
 
@@ -178,13 +180,29 @@ window.addEventListener('message', event => {
     if (event.origin === location.origin) {
         switch (eventData.type) {
             case 'svc-update':
-                handleSvcUpdate(eventData.svc, eventData.dest);
+                handleSvcUpdate(eventData.svc, eventData.dest, eventData.direction);
                 break;
         }
     }
 });
 
-function handleSvcUpdate(svc, dest) {
+function doEDSScroll() {
+    var data = EDSData[currentSvc];
+    if (!data) return;
+
+    if (++currentScrollPos >= data[currentDirection].length) {
+        currentScrollPos = 0;
+    }
+
+    clearLEDs();
+    showSvcInfo(data[currentDirection][currentScrollPos].toUpperCase());
+    showSvc(currentSvc);
+    showDest(currentDest);
+}
+
+let edsScrollInterval = 0;
+
+function handleSvcUpdate(svc, dest, direction) {
     console.log('front: change to', svc, dest);
     clearLEDs();
 
@@ -205,8 +223,14 @@ function handleSvcUpdate(svc, dest) {
             writeText('VER. 14SEP14-DD', 'frontVersion', 1);
             break;
         default:
-            showSvc(svc);
-            showDest(dest);
+            currentSvc = svc;
+            currentDirection = direction;
+            currentDest = dest;
+
+            clearInterval(edsScrollInterval);
+            edsScrollInterval = setInterval(doEDSScroll, 2500);
+
+            doEDSScroll();
             break;
     }
 

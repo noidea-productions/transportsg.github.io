@@ -91,7 +91,8 @@ function onEntPressed() {
                 triggerUpdate({
                     type: 'svc-update',
                     svc: currentSvc,
-                    dest: currentDest
+                    dest: currentDest,
+                    direction: Number(currentDir)
                 });
             }
             else {
@@ -120,7 +121,8 @@ function onF4Pressed() {
             triggerUpdate({
                 type: 'svc-update',
                 svc: currentSvc,
-                dest: currentDest
+                dest: currentDest,
+                direction: Number(currentDir)
             });
         }
     }
@@ -135,7 +137,8 @@ function runMainFirmware() {
     triggerUpdate({
         type: 'svc-update',
         svc: currentSvc,
-        dest: currentDest
+        dest: currentDest,
+        direction: Number(currentDir)
     });
 
     setInterval(() => {
