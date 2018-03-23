@@ -75,7 +75,7 @@ function registerKeyPress(number) {
 
 function onEntPressed() {
     if (currentState === 'inputSvc') {
-        currentSvc = svcBeingInputted.join('').slice(-4).replace(/^0+/, '');
+        currentSvc = svcBeingInputted.join('').slice(-4).replace(/^0+/, '').replace('E', 'e');
 
         if (currentSvc in failedDests) {
             currentDir = '             E11';
