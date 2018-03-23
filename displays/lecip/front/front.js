@@ -85,7 +85,7 @@ function showDest(dest) {
     let yOff = 0;
 
     let font = 'frontFat';
-    if (dest.length > 15) {
+    if (dest.length > 15 || !dest.startsWith('> ')) {
         font = 'frontSmall'
         yOff = 1;
     }
