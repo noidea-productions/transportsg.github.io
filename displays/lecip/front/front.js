@@ -1,6 +1,6 @@
 let width = 160, height = 20;
 
-let currentSvc = '', currentDirection = 1, currentDest = '', currentLoopPoint = '';
+let currentSvc = '', currentDirection = 1, currentDest = '', currentLoopPoint = '', currentRouteType = '';
 let currentScrollPos = 0;
 let ledCache = [];
 
@@ -79,7 +79,6 @@ function writeText(text, font, spaceWidth, xPos, yPos) {
         xPos += showChar(char, font, xPos, yPos) + spaceWidth;
     });
 }
-
 
 
 function showSvc(svcNumber) {
@@ -216,6 +215,9 @@ function doEDSScroll() {
     if (currentSvc.endsWith('e')) {
         showImage('fastForward')
         showSvc(currentSvc);
+    } else if (currentRouteType === 'CITY_LINK') {
+        writeText('CITY DIRECT', 'fat', 1);
+        showSvc(currentSvc);
     } else {
         showSvc(currentSvc);
         showDest(currentDest);
@@ -278,6 +280,7 @@ function handleSvcUpdate(event) {
     currentDirection = 1 + direction;
     currentDest = dest;
     currentLoopPoint = loopPoint;
+    currentRouteType = routeType;
 
     if (routeType !== 'TRUNK' && loopPoint) {
         let trimmedDest = currentDest.slice(2);
