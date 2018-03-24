@@ -141,7 +141,7 @@ function onClrPressed() {
 function onF4Pressed() {
     if (currentState === 'home') {
         if (!(currentSvc in dests)) return;
-        if (dests[currentSvc].length === 2) {
+        if (dests[currentSvc].interchanges.length === 2) {
             currentDir = !currentDir;
             currentDest = dests[currentSvc].interchanges[Number(currentDir)];
 
