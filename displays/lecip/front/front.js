@@ -253,6 +253,9 @@ function handleSpecialCode(code) {
         case '5555':
             writeTextCentered('TRAINING BUS');
             break;
+        case '7777':
+            writeTextCentered('FREE SHUTTLE', 'fat', 2);
+            break;
         case '9999':
             writeTextCentered('VER. 14SEP14-DD', 'frontVersion', 1);
             break;
