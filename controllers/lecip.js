@@ -112,13 +112,21 @@ function onEntPressed() {
 
             currentDir = 0;
             if (dests[currentSvc]) {
-                currentDest = dests[currentSvc].interchanges[0];
+                let routeType = dests[currentSvc].routeType;
+
+                if (routeType === 'CITY_LINK') {
+                    currentDest = 'CITY DIRECT';
+                } else if (routeType.includes('FLAT FARE')) {
+                    currentDest = 'PREMIUM';
+                } else {
+                    currentDest = dests[currentSvc].interchanges[0];
+                }
                 triggerUpdate({
                     type: 'svc-update',
                     svc: currentSvc,
                     dest: currentDest,
                     loopPoint: dests[currentSvc].loopPoint,
-                    routeType: dests[currentSvc].routeType,
+                    routeType: routeType,
                     direction: Number(currentDir)
                 });
             }
