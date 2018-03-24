@@ -151,7 +151,7 @@ function handleSpecialCode(code) {
             break;
         case '5555':
             clearLEDs();
-            showSmallText('TRG', 11);
+            showSmallText('TRAINING', 11);
             showSmallText('BUS', 3);
             break;
         case '9999':
