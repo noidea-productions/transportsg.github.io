@@ -1,17 +1,22 @@
 let EDSData = {
-    18: {
+    123: {
         1: [
-            'Tampines Concourse',
-            'Tampines Ave 7',
-            'Tampines St 33',
-            'Tampines Ave 2',
-            'Bedok Reservoir Rd',
-            'Bedok Nth Dr',
-            'Bedok Nth Rd',
-            'Bedok Reservoir Rd',
-            'Tampines Ave 2',
-            'Tampines St 33',
-            'Tampines Ave 7'
+            'Bukit Purmei Ave',
+            'Lower Delta Rd',
+            'Tiong Bahru Rd',
+            'Havelock Rd',
+            'Orchard Blvd',
+            'Holland Rd',
+            'Queensway'
+        ],
+        2: [
+            'Queensway',
+            'Holland Rd',
+            'Orchard Rd',
+            'Havelock Rd',
+            'Tiong Bahru Rd',
+            'Lower Delta Rd',
+            'Bukit Purmei Ave'
         ]
     },
     174: {
