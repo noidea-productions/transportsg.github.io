@@ -2,6 +2,8 @@ let width = 40, height = 20;
 
 let ledCache = [];
 
+let ledsInverted = false;
+
 window.addEventListener('load', () => {
     for (let x = 0; x < width; x++) {
         ledCache.push([]);
@@ -54,6 +56,8 @@ function setLEDState(x, y, state) {
     let led = ledCache[x][y];
 
     if (!led) return;
+
+    state = state ^ ledsInverted;
 
     var state = 'led-' + (state ? 'on' : 'off');
     led.className = 'led ' + state;
@@ -118,21 +122,33 @@ function clearRect(sx, sy, ex, ey) {
     }
 }
 
+let lastState = '', lastEvent = {};
+
 window.addEventListener('message', event => {
     let eventData = JSON.parse(event.data);
     if (event.origin === location.origin) {
         switch (eventData.type) {
             case 'special-code':
-                handleSpecialCode(eventData.code);
+                lastState = 'handleSpecialCode';
+                lastEvent = eventData;
+                handleSpecialCode(eventData);
                 break;
             case 'svc-update':
-                handleSvcUpdate(eventData.svc);
+                lastState = 'handleSvcUpdate';
+                lastEvent = eventData;
+                handleSvcUpdate(eventData);
+                break;
+            case 'led-invert':
+                ledsInverted = eventData.state;
+
+                window[lastState](lastEvent);
                 break;
         }
     }
 });
 
-function handleSpecialCode(code) {
+function handleSpecialCode(event) {
+    let code = event.code;
     switch (code) {
         case '1':
             for (let x = 0; x < width; x++)
@@ -170,7 +186,9 @@ function handleSpecialCode(code) {
     }
 }
 
-function handleSvcUpdate(svc) {
+function handleSvcUpdate(event) {
+    let svc = event.svc;
+
     console.log('rear: change to ' + svc)
 
     clearLEDs();

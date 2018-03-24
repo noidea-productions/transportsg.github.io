@@ -5,6 +5,8 @@ let currentDir = false;
 let currentState = 'off';
 let svcBeingInputted = [0,0,0,0];
 
+let ledsInverted = false;
+
 function loadEDSData(svc, cb) {
     if (dests[svc]) {
         if (cb) cb();
@@ -165,6 +167,16 @@ function onF4Pressed() {
     }
 }
 
+function onF3Pressed() {
+    if (currentState === 'home') {
+        ledsInverted = !ledsInverted;
+        triggerUpdate({
+            type: 'led-invert',
+            state: ledsInverted
+        });
+    }
+}
+
 function ammendVariant(direction) {
     if (isNaN(parseInt(svcBeingInputted[3]))) {
         let currentVariant = svcBeingInputted[3].charCodeAt(0);
@@ -247,6 +259,7 @@ function main() {
     document.getElementById('keypad-ent').addEventListener('click', onEntPressed);
     document.getElementById('keypad-clr').addEventListener('click', onClrPressed);
     document.getElementById('keypad-f4').addEventListener('click', onF4Pressed);
+    document.getElementById('keypad-f3').addEventListener('click', onF3Pressed);
     document.getElementById('keypad-up').addEventListener('click', onUpPressed);
     document.getElementById('keypad-down').addEventListener('click', onDownPressed);
 }

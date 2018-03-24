@@ -14,9 +14,8 @@ window.addEventListener('message', event => {
             case 'svc-update':
                 onSvcUpdated(eventData);
                 break;
-            case 'special-code':
-                propagateEvent(eventData);
             default:
+                propagateEvent(eventData);
                 break;
         }
     }

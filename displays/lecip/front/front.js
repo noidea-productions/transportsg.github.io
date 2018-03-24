@@ -4,6 +4,8 @@ let currentSvc = '', currentDirection = 1, currentDest = '', currentLoopPoint = 
 let currentScrollPos = 0;
 let ledCache = [];
 
+let ledsInverted = false;
+
 window.addEventListener('load', () => {
     for (let x = 0; x < width; x++) {
         ledCache.push([]);
@@ -149,6 +151,8 @@ function setLEDState(x, y, state) {
 
     if (!led) return;
 
+    state = state ^ ledsInverted;
+
     var state = 'led-' + (state ? 'on' : 'off');
     led.className = 'led ' + state;
 }
@@ -195,15 +199,26 @@ function clearRect(sx, sy, ex, ey) {
     }
 }
 
+let lastState = '', lastEvent = {};
+
 window.addEventListener('message', event => {
     let eventData = JSON.parse(event.data);
     if (event.origin === location.origin) {
         switch (eventData.type) {
             case 'svc-update':
+                lastState = 'handleSvcUpdate';
+                lastEvent = eventData;
                 handleSvcUpdate(eventData);
                 break;
             case 'special-code':
-                handleSpecialCode(eventData.code);
+                lastState = 'handleSpecialCode';
+                lastEvent = eventData;
+                handleSpecialCode(eventData);
+                break;
+            case 'led-invert':
+                ledsInverted = eventData.state;
+
+                window[lastState](lastEvent, 1);
                 break;
         }
     }
@@ -242,7 +257,8 @@ function shortenRoadName(roadName) {
 
 let edsScrollInterval = 0;
 
-function handleSpecialCode(code) {
+function handleSpecialCode(event) {
+    let code = event.code;
     clearInterval(edsScrollInterval);
 
     switch (code) {
@@ -269,10 +285,10 @@ function handleSpecialCode(code) {
         case '9999':
             writeTextCentered('VER. 14SEP14-DD', 'frontVersion', 1);
             break;
-        }
+    }
 }
 
-function handleSvcUpdate(event) {
+function handleSvcUpdate(event, preventReset) {
     let svc = event.svc,
         dest = event.dest,
         direction = event.direction,
@@ -281,8 +297,6 @@ function handleSvcUpdate(event) {
 
     console.log('front: change to', svc, dest);
     clearLEDs();
-
-    clearInterval(edsScrollInterval);
 
     currentSvc = svc;
     currentDirection = 1 + direction;
@@ -294,9 +308,15 @@ function handleSvcUpdate(event) {
         currentDest = trimmedDest + '-' + shortenRoadName(loopPoint).toUpperCase();
     }
 
-    currentScrollPos = 0;
+    if (!preventReset)
+        currentScrollPos = 0;
+    else
+        currentScrollPos--;
 
-    edsScrollInterval = setInterval(doEDSScroll, 2500);
+    if (!preventReset) {
+        clearInterval(edsScrollInterval);
+        edsScrollInterval = setInterval(doEDSScroll, 2500);
+    }
 
     doEDSScroll();
 }
