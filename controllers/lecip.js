@@ -19,6 +19,8 @@ function loadEDSData(svc, cb) {
         svc = svc.slice(0, -1);
     }
 
+    console.log(svc, variant)
+
     ajax({url: 'https://beta.transportsg.me/eds/' + svc}, data => {
         if (data !== 'error!') {
             if (data.operator === 'SBST') {
@@ -39,6 +41,7 @@ function loadEDSData(svc, cb) {
 
                 if (variant && SWTs[svc + variant]) {
                     let terminalData = SWTs[svc + variant].split(';');
+
                     dests[svc + variant] = {
                         roadName: terminalData[0],
                         busStopName: terminalData[1],
@@ -184,6 +187,8 @@ function onEntPressed() {
                         direction: Number(currentDir)
                     });
                 } else {
+                    currentDest = currentSvc;
+
                     triggerUpdate({
                         type: 'set-swt',
                         svc: currentSvc,

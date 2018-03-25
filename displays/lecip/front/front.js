@@ -53,6 +53,7 @@ function bootupSequence() {
 }
 
 function getTextWidth(chars, font, spaceWidth) {
+    console.log(chars)
     return chars.map(char => charSet[font][char][0].length + spaceWidth).reduce((a, b) => a + b, 0) - spaceWidth;
 }
 
@@ -308,7 +309,7 @@ function doEDSScroll() {
         showSvc(currentSvc);
     } else if (currentRouteType === 'SWT') {
         clearLEDs();
-        writeSmallText('TERMINATE AT' + terminalRoad.toUpperCase(), 11);
+        writeSmallText('TERMINATE AT ' + terminalRoad.toUpperCase(), 11);
         writeSmallText(terminalBusStop.toUpperCase(), 3);
 
         showSvc(currentSvc);

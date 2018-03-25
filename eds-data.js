@@ -228,7 +228,7 @@ let EDSData = {
 
 let SWTs = {
     '7A': 'Orchard Blvd;Bef Orchard Stn Exit B',
-    '7B': '',
+    '7B': 'Orchard Rd;Dhoby Ghaut Stn',
     '9A': 'Loyang Ave;Blk 149A',
     '13A': 'Bishan Rd;Bishan Stn',
     '14A': 'Grange Rd;Natl Y. Council',
@@ -237,5 +237,7 @@ let SWTs = {
     '31A': 'New U. Changi Rd;T. Merah Stn',
     '33A': 'Tiong Bahru Rd;Blk 1',
     '33B': 'Joo Chiat Place;Aft Tembeling Rd',
+    '58A': 'Tampines Ave 10;Bef TPE',
+    '58B': 'Upp Paya Lebar Rd;Aft Tai Seng Stn',
     '241A': 'Jurong W. St 63;Blk 649A'
 }
