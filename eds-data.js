@@ -10,6 +10,21 @@ let EDSData = {
             'Lower Delta Rd'
         ]
     },
+    107: {
+        2: [
+            'Hougang Ave 10',
+            'Upper Serangoon Rd',
+            'Kallang Bahru',
+            'Lavender St',
+            'Beach Rd'
+        ],
+        1:  'Beach Rd',
+            'Lavender St',
+            'Kallang Bahru',
+            'Upper Serangoon Rd',
+            'Hougang Ave 10'
+        ],
+    },  
     123: {
         1: [
             'Bukit Purmei Ave',
@@ -20,6 +35,7 @@ let EDSData = {
             'Holland Rd',
             'Queensway'
         ],
+    
         2: [
             'Queensway',
             'Holland Rd',
