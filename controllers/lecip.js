@@ -23,6 +23,8 @@ function loadEDSData(svc, cb) {
                             int = '> SENTOSA';
                         if (int === '> BT MERAH INT')
                             int = '> BUKIT MERAH INT';
+                        if (int === '> S\'GOON INT')
+                            int = '> SERANGOON INT';
                         return int;
                     }).filter((e, i, a) => a.indexOf(e) === i),
                     routeType: data.routeType,
