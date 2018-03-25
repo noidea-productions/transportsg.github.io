@@ -357,6 +357,9 @@ function determineDest(dest, svc, routeType, loopPoint) {
             return dest.slice(2) + '-' + loopPoint;
         }
     }
+    if (routeType === 'EXPRESS') {
+        return 'EXPRESS';
+    }
 }
 
 function handleSvcUpdate(event, preventReset) {

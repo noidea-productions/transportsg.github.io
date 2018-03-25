@@ -61,6 +61,21 @@ let dests = {
         interchanges: ['> BOON LAY INT'],
         routeType: 'TRUNK',
         loopPoint: 'Jurong West.'
+    },
+    807: {
+        interchanges: ['> YISHUN INT'],
+        routeType: 'FEEDER',
+        loopPoint: 'Yishun St 71'
+    },
+    811: {
+        interchanges: ['> YISHUN INT'],
+        routeType: 'TOWNLINK',
+        loopPoint: 'Yishun Ave 5&1'
+    },
+    812: {
+        interchanges: ['> YISHUN INT'],
+        routeType: 'TOWNLINK',
+        loopPoint: 'Yishun Ave 4&3'
     }
 };
 
@@ -95,6 +110,7 @@ function registerKeyPress(number) {
 function onEntPressed() {
     if (currentState === 'inputSvc') {
         currentSvc = svcBeingInputted.join('').slice(-4).replace(/^0+/, '').replace('E', 'e');
+        if (currentSvc.startsWith('8') && currentSvc.length === 4) currentSvc = currentSvc.toUpperCase();
 
         if (currentSvc in failedDests) {
             currentDir = '             E11';
