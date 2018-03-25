@@ -48,6 +48,17 @@ let EDSData = {
             'Yishun Ring Rd'
         ]
     },
+    807: {
+        1: [
+            'Yishun Central',
+            'Yishun Ave 9',
+            'Yishun Ring Rd',
+            'Yishun Ave 5',
+            'Sembawang Rd',
+            'Yishun St 71',
+            'Yishun Ring Rd'
+        ]
+    },
     812: {
         1: [
             'Yishun Ring Rd'
