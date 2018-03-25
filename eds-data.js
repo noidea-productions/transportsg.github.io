@@ -44,6 +44,7 @@ let EDSData = {
         1: [
             'Yishun Central',
             'Yishun Ave 11',
+            'Yishun Ave 6',
             'Yishun Ring Rd'
         ]
     },
