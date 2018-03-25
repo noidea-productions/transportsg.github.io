@@ -8,7 +8,8 @@ let EDSData = {
             'Jalan Besar',
             'Orchard Boulevard',
             'Lower Delta Rd'
-        ],
+        ]
+    },
     123: {
         1: [
             'Bukit Purmei Ave',
