@@ -113,7 +113,7 @@ function determineFont(dest, svc, routeType) {
     }
     if (routeType === 'INDUSTRIAL') {
         if (dest.startsWith('JOO KOON')) {
-            return 'frontSmall';
+            return 'frontSmallDest';
         } else return 'frontFat'
     }
     if (dest.length > 16 || (svc.startsWith('8') && svc.length === 3)) {
@@ -338,7 +338,7 @@ function determineDest(dest, svc, routeType, loopPoint) {
         return dest.slice(2) + '-' + loopPoint;
     }
     if (routeType === 'FEEDER' || routeType === 'TRUNK') {
-        if (svc.startsWith('8') && svc.length === 3) { // Yishun svc
+        if (svc.startsWith('8') && svc.length === 3 && loopPoint) { // Yishun svc
             return dest.slice(2) + '-' + loopPoint;
         }
         return dest;
@@ -366,7 +366,7 @@ function handleSvcUpdate(event, preventReset) {
     let svc = event.svc,
         dest = event.dest,
         direction = event.direction,
-        loopPoint = event.loopPoint,
+        loopPoint = shortenRoadName(event.loopPoint),
         routeType = event.routeType;
 
     console.log('front: change to', svc, dest);

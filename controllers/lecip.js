@@ -42,21 +42,6 @@ function triggerUpdate(data) {
 let failedDests = [];
 
 let dests = {
-    258: {
-        interchanges: ['> JOO KOON'],
-        routeType: 'INDUSTRIAL',
-        loopPoint: 'Jurong West St 64'
-    },
-    174: {
-        interchanges: ['> BOON LAY INT', '> KAMPONG BAHRU TER'],
-        routeType: 'TRUNK',
-        loopPoint: ''
-    },
-    '174e': {
-        interchanges: ['> BOON LAY INT', '> KAMPONG BAHRU TER'],
-        routeType: 'EXPRESS',
-        loopPoint: ''
-    },
     181: {
         interchanges: ['> BOON LAY INT'],
         routeType: 'TRUNK',
@@ -71,6 +56,9 @@ let dests = {
         interchanges: ['> YISHUN INT'],
         routeType: 'TOWNLINK',
         loopPoint: 'Yishun Ave 5&1'
+    },
+    '811E': {
+
     },
     812: {
         interchanges: ['> YISHUN INT'],
