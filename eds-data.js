@@ -18,7 +18,8 @@ let EDSData = {
             'Lavender St',
             'Beach Rd'
         ],
-        1:  'Beach Rd',
+        1:  [
+            'Beach Rd',
             'Lavender St',
             'Kallang Bahru',
             'Upper Serangoon Rd',
