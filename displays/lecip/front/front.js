@@ -335,6 +335,10 @@ function determineDest(dest, svc, routeType, loopPoint) {
     if (routeType === 'TRUNK' && loopPoint) {
         if (dest === '> LOR 1 GEYLANG TER')
             dest = '> GEYLANG'
+        if (svc === '127') {
+            dest = '> TAMP';
+            loopPoint = loopPoint.replace('Tampines', 'Tamp');
+        }
         return dest.slice(2) + '-' + loopPoint;
     }
     if (routeType === 'FEEDER' || routeType === 'TRUNK') {
