@@ -116,11 +116,10 @@ function determineFont(dest, svc, routeType) {
             return 'frontSmall';
         } else return 'frontFat'
     }
-    if (dest.length > 15) {
+    if (dest.length > 16) {
         return 'frontSmall';
-    } else if (dest.length > 22) {
-        return 'frontSmallDest';
     }
+    return 'frontFat';
 }
 
 function showDest(dest) {
@@ -337,7 +336,7 @@ function determineDest(dest, svc, routeType, loopPoint) {
     if (routeType === 'TRUNK' && loopPoint) {
         return dest.slice(2) + '-' + loopPoint;
     }
-    if (routeType === 'FEEDER') {
+    if (routeType === 'FEEDER' || routeType === 'TRUNK') {
         return dest;
     }
     if (routeType === 'INDUSTRIAL') {
@@ -368,9 +367,10 @@ function handleSvcUpdate(event, preventReset) {
 
     currentSvc = svc;
     currentDirection = 1 + direction;
-    currentDest = determineDest(dest, svc, routeType, loopPoint).toUpperCase();
     currentLoopPoint = loopPoint;
     currentRouteType = routeType;
+
+    currentDest = determineDest(dest, svc, routeType, loopPoint).toUpperCase();
 
     console.log(currentDest);
 
