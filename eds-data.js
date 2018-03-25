@@ -62,7 +62,31 @@ let EDSData = {
             'Bukit Purmei Ave'
         ],
     },
-    174: {
+    127: {
+        1: [
+            'Tampines Concourse',
+            'Tampines Ave 9, 10',
+            'Tampines Ind Ave 5',
+            'Tampines Rd'
+       ],
+    },
+   168: {
+       2: [
+           'Bedok North Ave 3',
+           'Tampines Ave 4',
+           'Tampines Ave 10',
+           'Jalan Kayu',
+           'Woodlands Ave 2'
+       ],
+       1: [
+          'Woodlands Ave 2',
+          'Jalan Kayu',
+          'Tampines Ave 10',
+          'Tampines Ave 4',
+          'Bedok North Ave 3'
+       ]
+   },
+   174: {
         2: [
             'Bt Batok E. Ave 6, 3',
             'Jln Jurong Kechil',
@@ -88,6 +112,23 @@ let EDSData = {
             'Jurong West St 63',
             'Pionner Rd North',
             'Jurong West St 91'
+        ]
+    },
+    371: {
+        1: [
+            'Compassvale Rd',
+            'Rivervale Dr',
+            'Rivervale Cres',
+            'Compassvale St'
+        ]
+    },
+    374: {
+        1: [
+            'Sengkang East Way',
+            'Anchorvale Cres',
+            'Compassvale Rd',
+            'Sengkang East Way',
+            'Fernvale Rd'
         ]
     },
     804: {
