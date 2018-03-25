@@ -1,6 +1,6 @@
 let EDSData = {
     65: {
-        1: [
+        2: [
             'Bedok Resevior Rd',
             'Ubi Ave 2',
             'Macpherson Rd',
