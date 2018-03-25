@@ -109,7 +109,12 @@ function determineFont(dest, svc, routeType) {
     if (routeType === 'FEEDER') {
         if (svc.startsWith('8') && svc.length === 3) { // Yishun svc
             return 'frontSmallDest';
-        } else return 'frontFat';
+        } else {
+            if (dest.length > 16) {
+                return 'frontSmall'
+            }
+            return 'frontFat';
+        }
     }
     if (routeType === 'INDUSTRIAL') {
         if (dest.startsWith('JOO KOON')) {
@@ -335,8 +340,8 @@ function determineDest(dest, svc, routeType, loopPoint) {
     if (routeType === 'TRUNK' && loopPoint) {
         if (dest === '> LOR 1 GEYLANG TER')
             dest = '> GEYLANG'
-        if (svc === '127') {
-            dest = '> TAMP';
+        if (dest.includes('TAMPINES')) {
+            dest = '> TAMP INT';
             loopPoint = loopPoint.replace('Tampines', 'Tamp');
         }
         return dest.slice(2) + '-' + loopPoint;
