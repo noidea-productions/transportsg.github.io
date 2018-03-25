@@ -136,6 +136,8 @@ function onEntPressed() {
                     currentDest = 'CITY DIRECT';
                 } else if (routeType.includes('FLAT FARE')) {
                     currentDest = 'PREMIUM';
+                } else if (routeType === 'NIGHT SERVICE') {
+                    currentDest = 'NITE OWL';
                 } else {
                     currentDest = dests[currentSvc].interchanges[0];
                 }

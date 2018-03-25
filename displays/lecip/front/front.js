@@ -281,7 +281,7 @@ function doEDSScroll() {
     } else if (currentDest === 'CITY DIRECT') {
         writeText(currentDest, 'fat', 1);
         showSvc(currentSvc);
-    } else if (currentDest === 'PREMIUM') {
+    } else if (currentDest === 'PREMIUM' || currentDest === 'NITE OWL') {
         writeText(currentDest, 'fat', 2);
         showSvc(currentSvc);
     } else {
@@ -368,6 +368,9 @@ function determineDest(dest, svc, routeType, loopPoint) {
     }
     if (routeType === 'EXPRESS') {
         return 'EXPRESS';
+    }
+    if (routeType === 'NIGHT SERVICE') {
+        return 'NITE OWL';
     }
 }
 
