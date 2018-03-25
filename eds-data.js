@@ -1,4 +1,13 @@
 let EDSData = {
+     4: {
+        1: [
+            'Tampines Ave 7'
+            'Flora Dr'
+            'Changi North Way'
+            'Flora Rd'
+            'Tampines Ave 7'
+        ]
+    },
     37: {
         1: [
             'Tampines Ave 7',
@@ -26,6 +35,22 @@ let EDSData = {
             'Bedok Reservior Rd'
         ]    
     },
+    103: {
+        2: [
+            'Yio Chu Kang Rd',
+            'Jalan Kayu',
+            'Seletar Areospace Dr',
+            'West Camp Rd'
+            'Yishun Central'
+        ],
+        1: [
+            'Yishun Central'
+            'West Camp Rd'
+            'Seletar Areospace Dr'
+            'Jalan Kayu'
+            'Yio Chu Kang Rd'
+        ],
+    },   
     107: {
         2: [
             'Hougang Ave 10',
