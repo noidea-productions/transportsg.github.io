@@ -14,7 +14,7 @@ let EDSData = {
             'Upper Changi Rd North',
             'Changi North St 1'
         ]
-    },      
+    },
     65: {
         2: [
             'Bedok Resevior Rd',
@@ -33,7 +33,7 @@ let EDSData = {
             'Macpherson Rd',
             'Ubi Ave 2',
             'Bedok Reservior Rd'
-        ]    
+        ]
     },
     103: {
         2: [
@@ -50,7 +50,7 @@ let EDSData = {
             'Jalan Kayu',
             'Yio Chu Kang Rd'
         ]
-    },   
+    },
     107: {
         2: [
             'Hougang Ave 10',
@@ -225,3 +225,17 @@ let EDSData = {
         ]
     }
 };
+
+let SWTs = {
+    '7A': 'Orchard Blvd;Bef Orchard Stn Exit B',
+    '7B': '',
+    '9A': 'Loyang Ave;Blk 149A',
+    '13A': 'Bishan Rd;Bishan Stn',
+    '14A': 'Grange Rd;Natl Y. Council',
+    '21A': 'Kitchener Rd;Bef Tai Hoe Hotel',
+    '27A': 'Tampines Ave 4;Opp Century Sq',
+    '31A': 'New U. Changi Rd;T. Merah Stn',
+    '33A': 'Tiong Bahru Rd;Blk 1',
+    '33B': 'Joo Chiat Place;Aft Tembeling Rd',
+    '241A': 'Jurong W. St 63;Blk 649A'
+}

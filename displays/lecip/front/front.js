@@ -1,6 +1,8 @@
 let width = 160, height = 20;
 
 let currentSvc = '', currentDirection = 1, currentDest = '', currentLoopPoint = '', currentRouteType, isUsingSmallFont;
+
+let terminalRoad = '', terminalBusStop = '';
 let currentScrollPos = 0;
 let ledCache = [];
 
@@ -54,6 +56,20 @@ function getTextWidth(chars, font, spaceWidth) {
     return chars.map(char => charSet[font][char][0].length + spaceWidth).reduce((a, b) => a + b, 0) - spaceWidth;
 }
 
+function writeSmallText(text, yPos) {
+    font = 'rearText';
+
+    spaceWidth = 1;
+
+    let chars = [...text];
+    let totalWidth = getTextWidth(chars, font, spaceWidth);
+    let totalHeight = charSet[font][chars[0]].length;
+
+    let xPos = Math.floor(120 / 2 - totalWidth / 2);
+
+    writeText(text, font, spaceWidth, xPos, yPos, false);
+}
+
 function writeTextCentered(text, font, spaceWidth) {
     font = font || 'fat';
     spaceWidth = spaceWidth || 3;
@@ -68,8 +84,9 @@ function writeTextCentered(text, font, spaceWidth) {
     writeText(text, font, spaceWidth, xPos, yPos);
 }
 
-function writeText(text, font, spaceWidth, xPos, yPos) {
-    clearLEDs();
+function writeText(text, font, spaceWidth, xPos, yPos, shoudClearLEDs) {
+    if (shoudClearLEDs)
+        clearLEDs();
     let chars = [...text];
 
     font = font || 'fat';
@@ -260,6 +277,11 @@ window.addEventListener('message', event => {
                 lastEvent = eventData;
                 handleSpecialCode(eventData);
                 break;
+            case 'set-swt':
+                lastState = 'setSWT';
+                lastEvent = eventData;
+                setSWT(eventData);
+                break;
             case 'led-invert':
                 ledsInverted = eventData.state;
 
@@ -284,6 +306,12 @@ function doEDSScroll() {
     } else if (currentDest === 'PREMIUM' || currentDest === 'NITE OWL') {
         writeText(currentDest, 'fat', 2);
         showSvc(currentSvc);
+    } else if (currentRouteType === 'SWT') {
+        clearLEDs();
+        writeSmallText('TERMINATE AT' + terminalRoad.toUpperCase(), 11);
+        writeSmallText(terminalBusStop.toUpperCase(), 3);
+
+        showSvc(currentSvc);
     } else {
         showSvc(currentSvc);
         showDest(currentDest);
@@ -304,6 +332,22 @@ function shortenRoadName(roadName) {
 }
 
 let edsScrollInterval = 0;
+
+function setSWT(event) {
+    let svc = event.svc,
+    roadName = event.roadName,
+    busStopName = event.busStopName;
+
+    currentRouteType = 'SWT';
+
+    currentSvc = svc;
+    terminalRoad = roadName;
+    terminalBusStop = busStopName;
+
+    clearInterval(edsScrollInterval);
+
+    doEDSScroll();
+}
 
 function handleSpecialCode(event) {
     let code = event.code;

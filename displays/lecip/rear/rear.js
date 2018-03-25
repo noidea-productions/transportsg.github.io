@@ -138,6 +138,11 @@ window.addEventListener('message', event => {
                 lastEvent = eventData;
                 handleSvcUpdate(eventData);
                 break;
+            case 'set-swt':
+                lastState = 'setSWT';
+                lastEvent = eventData;
+                setSWT(eventData);
+                break;
             case 'led-invert':
                 ledsInverted = eventData.state;
 
@@ -146,6 +151,31 @@ window.addEventListener('message', event => {
         }
     }
 });
+
+function setSWT(event) {
+    clearLEDs();
+
+    let svc = event.svc;
+    let font = '';
+
+    if (svc.length === 2) { // 9A
+        font = 'fat';
+    }
+    if (svc.length === 3) { // 21A
+        font = 'medium';
+    }
+    if (svc.length === 4) { // 241A
+        font = 'thin';
+    }
+
+    var numbers = [...svc.toString()];
+
+    var curX = 3;
+
+    numbers.forEach(number => {
+        curX += showChar(number, font, curX) + 1;
+    });
+}
 
 function handleSpecialCode(event) {
     let code = event.code;

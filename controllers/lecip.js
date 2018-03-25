@@ -13,9 +13,15 @@ function loadEDSData(svc, cb) {
         return;
     }
 
+    let variant = '';
+    if (svc.endsWith('A') || svc.endsWith('B') || svc.endsWith('C')) {
+        variant = svc.slice(-1);
+        svc = svc.slice(0, -1);
+    }
+
     ajax({url: 'https://beta.transportsg.me/eds/' + svc}, data => {
         if (data !== 'error!') {
-            if (data.operator === 'SBST')
+            if (data.operator === 'SBST') {
                 dests[svc] = {
                     interchanges: data.interchanges.map(int => {
                         int = '> ' + int.toUpperCase().replace(/ TEMP/, '').replace(/BUSINESS/, 'BIZ');
@@ -29,7 +35,17 @@ function loadEDSData(svc, cb) {
                     }).filter((e, i, a) => a.indexOf(e) === i),
                     routeType: data.routeType,
                     loopPoint: data.loopPoint
-            }   ;
+                };
+
+                if (variant && SWTs[svc + variant]) {
+                    let terminalData = SWTs[svc + variant].split(';');
+                    dests[svc + variant] = {
+                        roadName: terminalData[0],
+                        busStopName: terminalData[1],
+                        routeType: 'SWT'
+                    }
+                }
+            }
         }
         if (cb) cb();
     });
@@ -149,23 +165,32 @@ function onEntPressed() {
             if (dests[currentSvc]) {
                 let routeType = dests[currentSvc].routeType;
 
-                if (routeType === 'CITY_LINK') {
-                    currentDest = 'CITY DIRECT';
-                } else if (routeType.includes('FLAT FARE')) {
-                    currentDest = 'PREMIUM';
-                } else if (routeType === 'NIGHT SERVICE') {
-                    currentDest = 'NITE OWL';
+                if (routeType !== 'SWT') {
+                    if (routeType === 'CITY_LINK') {
+                        currentDest = 'CITY DIRECT';
+                    } else if (routeType.includes('FLAT FARE')) {
+                        currentDest = 'PREMIUM';
+                    } else if (routeType === 'NIGHT SERVICE') {
+                        currentDest = 'NITE OWL';
+                    } else {
+                        currentDest = dests[currentSvc].interchanges[0];
+                    }
+                    triggerUpdate({
+                        type: 'svc-update',
+                        svc: currentSvc,
+                        dest: currentDest,
+                        loopPoint: dests[currentSvc].loopPoint,
+                        routeType: routeType,
+                        direction: Number(currentDir)
+                    });
                 } else {
-                    currentDest = dests[currentSvc].interchanges[0];
+                    triggerUpdate({
+                        type: 'set-swt',
+                        svc: currentSvc,
+                        roadName: dests[currentSvc].roadName,
+                        busStopName: dests[currentSvc].busStopName
+                    });
                 }
-                triggerUpdate({
-                    type: 'svc-update',
-                    svc: currentSvc,
-                    dest: currentDest,
-                    loopPoint: dests[currentSvc].loopPoint,
-                    routeType: routeType,
-                    direction: Number(currentDir)
-                });
             }
             else {
                 currentDest = '             E11';
