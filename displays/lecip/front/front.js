@@ -99,22 +99,56 @@ function showSvc(svcNumber) {
     });
 }
 
+function determineFont(dest, svc, routeType) {
+    if (routeType === 'TOWNLINK') {
+        return 'frontSmall';
+        // if (svc.startsWith('8') && svc.length === 3) { // Yishun svc
+        //     return 'frontSmall';
+        // } else return 'frontSmall';
+    }
+    if (routeType === 'FEEDER') {
+        if (svc.startsWith('8') && svc.length === 3) { // Yishun svc
+            return 'frontSmallDest';
+        } else return 'frontFat';
+    }
+    if (routeType === 'INDUSTRIAL') {
+        if (dest.startsWith('JOO KOON')) {
+            return 'frontSmall';
+        } else return 'frontFat'
+    }
+    if (dest.length > 15) {
+        return 'frontSmall';
+    } else if (dest.length > 22) {
+        return 'frontSmallDest';
+    }
+}
+
 function showDest(dest) {
     let chars = [...dest.toString()];
 
     let yOff = 0;
 
-    let font = 'frontFat';
-    if (dest.length > 15 || !dest.startsWith('> ')) {
-        font = 'frontSmall'
-        yOff = 1;
-    }
+    let font = determineFont(dest, currentSvc, currentRouteType);
 
-    if (dest.length > 20) {
-        isUsingSmallFont = true;
-        font = 'frontSmallDest';
-        yOff = 3;
-    }
+    isUsingSmallFont = false;
+
+    if (font === 'frontSmall') yOff = 1;
+    else if (font === 'frontSmallDest') yOff = 3, isUsingSmallFont = true;
+
+    // if (dest.length > 15) {
+    //     font = 'frontSmall'
+    //     yOff = 1;
+    // }
+    //
+    // if (dest.length > 22 && dest.includes('-')) {
+    //     isUsingSmallFont = true;
+    //     font = 'frontSmallDest';
+    //     yOff = 3;
+    // } else {
+    //     isUsingSmallFont = false;
+    // }
+
+    console.log(font)
 
     let totalWidth = getTextWidth(chars, font, 1);
 
@@ -299,6 +333,29 @@ function handleSpecialCode(event) {
     }
 }
 
+function determineDest(dest, svc, routeType, loopPoint) {
+    if (routeType === 'TRUNK' && loopPoint) {
+        return dest.slice(2) + '-' + loopPoint;
+    }
+    if (routeType === 'FEEDER') {
+        return dest;
+    }
+    if (routeType === 'INDUSTRIAL') {
+        if (svc.startsWith('25') && svc.length === 3) {
+            return dest.slice(2) + '-' + loopPoint;
+        } else if (svc.startsWith('24') && svc.length === 3) {
+            return dest;
+        }
+    }
+    if (routeType === 'TOWNLINK') {
+        if (svc.startsWith('8') && svc.length === 3) { // Yishun svc
+            return '> ' + loopPoint;
+        } else {
+            return dest.slice(2) + '-' + loopPoint;
+        }
+    }
+}
+
 function handleSvcUpdate(event, preventReset) {
     let svc = event.svc,
         dest = event.dest,
@@ -311,14 +368,11 @@ function handleSvcUpdate(event, preventReset) {
 
     currentSvc = svc;
     currentDirection = 1 + direction;
-    currentDest = dest;
+    currentDest = determineDest(dest, svc, routeType, loopPoint).toUpperCase();
     currentLoopPoint = loopPoint;
     currentRouteType = routeType;
 
-    if (routeType !== 'TRUNK' && loopPoint) {
-        let trimmedDest = currentDest.slice(2);
-        currentDest = trimmedDest + '-' + shortenRoadName(loopPoint).toUpperCase();
-    }
+    console.log(currentDest);
 
     if (!preventReset)
         currentScrollPos = 0;
