@@ -64,6 +64,11 @@ let dests = {
         interchanges: ['> YISHUN INT'],
         routeType: 'TOWNLINK',
         loopPoint: 'Yishun Ave 4&3'
+    },
+    860: {
+        interchanges: ['> YIO CHU KANG INT', '> YISHUN INT'],
+        routeType: 'TRUNK',
+        loopPoint: ''
     }
 };
 

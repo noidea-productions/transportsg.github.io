@@ -51,6 +51,19 @@ let EDSData = {
             'Bt Batok E. Ave 6, 3'
         ]
     },
+    804: {
+        1: [
+            'Yishun Ave 2',
+            'Yishun Ave 1',
+            'Yishun Ave 11'
+        ]
+    },
+    805: {
+        1: [
+            'Yishun Ring Rd',
+
+        ]
+    },
     806: {
         1: [
             'Yishun Central',
@@ -69,8 +82,40 @@ let EDSData = {
             'Yishun Ring Rd'
         ]
     },
+    811: {
+        1: [
+            'Yishun Ave 9,6,7',
+            'Yishun Ave 5,2',
+            'Yishun Ring Rd'
+        ]
+    },
     812: {
         1: [
+            'Yishun St 61',
+            'Yishun Ave 2',
+            'Yishun Ring Rd',
+            'Yishun Central'
+        ]
+    },
+    851: {
+        1: [
+            'Tiong Bahru Rd',
+            'Victoria St',
+            'Thomson Rd',
+            'Marymount Rd',
+            'Yishun Ave 2'
+        ]
+    },
+    852: {
+        2: [
+            'Ang Mo Kio Ave 6'
+        ]
+    },
+    860: {
+        1: [
+            ''
+        ],
+        2: [
             'Yishun Ring Rd'
         ]
     }
