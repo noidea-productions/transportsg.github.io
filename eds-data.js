@@ -17,7 +17,7 @@ let EDSData = {
             'Tiong Bahru Rd',
             'Lower Delta Rd',
             'Bukit Purmei Ave'
-        ]
+        ],
     },
     174: {
         1: [
@@ -38,6 +38,11 @@ let EDSData = {
             'Bt Timah Rd',
             'Jln Jurong Kechil',
             'Bt Batok E. Ave 6, 3'
+        ]
+    },
+    806: {
+        1: [
+            'Yishun Ave 11'
         ]
     }
 };

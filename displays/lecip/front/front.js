@@ -1,6 +1,6 @@
 let width = 160, height = 20;
 
-let currentSvc = '', currentDirection = 1, currentDest = '', currentLoopPoint = '', currentRouteType;
+let currentSvc = '', currentDirection = 1, currentDest = '', currentLoopPoint = '', currentRouteType, isUsingSmallFont;
 let currentScrollPos = 0;
 let ledCache = [];
 
@@ -110,6 +110,12 @@ function showDest(dest) {
         yOff = 1;
     }
 
+    if (dest.length > 20) {
+        isUsingSmallFont = true;
+        font = 'frontSmallDest';
+        yOff = 3;
+    }
+
     let totalWidth = getTextWidth(chars, font, 1);
 
     let xPos = 1;
@@ -128,14 +134,16 @@ function showDest(dest) {
 function showSvcInfo(line) {
     let chars = [...line.toString()];
 
-    let totalWidth = getTextWidth(chars, 'frontSmall', 1);
+    let font = isUsingSmallFont ? 'frontSmallDest' : 'frontSmall';
+
+    let totalWidth = getTextWidth(chars, font, 1);
 
     let xPos = 1;
 
     clearRect(0, 12, totalWidth - 1, height);
 
     chars.forEach(char => {
-        xPos += showChar(char, 'frontSmall', xPos, 12) + 1;
+        xPos += showChar(char, font, xPos, 12) + 1;
     });
 }
 
