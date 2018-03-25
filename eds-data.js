@@ -65,8 +65,8 @@ let EDSData = {
     127: {
         1: [
             'Tampines Concourse',
-            'Tampines Ave 9 , 10',
-            'Tampines Ind Ave 5'
+            'Tampines Ave 9, 10',
+            'Tampines Ind Ave 5',
             'Tampines Rd'
        ],
     },
@@ -81,8 +81,8 @@ let EDSData = {
        1: [
           'Woodlands Ave 2',
           'Jalan Kayu',
-          'Tampines Ave 10'
-          'Tampines Ave 4'
+          'Tampines Ave 10',
+          'Tampines Ave 4',
           'Bedok North Ave 3'
        ]
    },
@@ -119,7 +119,7 @@ let EDSData = {
             'Compassvale Rd',
             'Rivervale Dr',
             'Rivervale Cres',
-            'Compassvale St',
+            'Compassvale St'
         ]
     },
     374: {
