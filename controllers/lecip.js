@@ -20,7 +20,9 @@ function loadEDSData(svc, cb) {
                     interchanges: data.interchanges.map(int => {
                         int = '> ' + int.toUpperCase().replace(/ TEMP/, '').replace(/BUSINESS/, 'BIZ');
                         if (int === '> BEACH STATION BUS TERMINAL')
-                            int = '> SENTOSA'
+                            int = '> SENTOSA';
+                        if (int === '> BT MERAH INT')
+                            int = '> BUKIT MERAH INT';
                         return int;
                     }).filter((e, i, a) => a.indexOf(e) === i),
                     routeType: data.routeType,
