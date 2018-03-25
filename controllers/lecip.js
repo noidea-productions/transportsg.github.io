@@ -42,6 +42,11 @@ function triggerUpdate(data) {
 let failedDests = [];
 
 let dests = {
+    89: {
+        interchanges: ['> HOUGANG CENTRAL', '> CHANGI AIRFREIGHT CTR'],
+        routeType: 'TRUNK',
+        loopPoint: ''
+    },
     181: {
         interchanges: ['> BOON LAY INT'],
         routeType: 'TRUNK',
