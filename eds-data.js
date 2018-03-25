@@ -1,10 +1,10 @@
 let EDSData = {
      4: {
         1: [
-            'Tampines Ave 7'
-            'Flora Dr'
-            'Changi North Way'
-            'Flora Rd'
+            'Tampines Ave 7',
+            'Flora Dr',
+            'Changi North Way',
+            'Flora Rd',
             'Tampines Ave 7'
         ]
     },
@@ -40,16 +40,16 @@ let EDSData = {
             'Yio Chu Kang Rd',
             'Jalan Kayu',
             'Seletar Areospace Dr',
-            'West Camp Rd'
+            'West Camp Rd',
             'Yishun Central'
         ],
         1: [
-            'Yishun Central'
-            'West Camp Rd'
-            'Seletar Areospace Dr'
-            'Jalan Kayu'
+            'Yishun Central',
+            'West Camp Rd',
+            'Seletar Areospace Dr',
+            'Jalan Kayu',
             'Yio Chu Kang Rd'
-        ],
+        ]
     },   
     107: {
         2: [
