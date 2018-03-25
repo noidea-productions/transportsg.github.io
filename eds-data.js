@@ -47,7 +47,7 @@ let EDSData = {
         ],
     },
     174: {
-        1: [
+        2: [
             'Bt Batok E. Ave 6, 3',
             'Jln Jurong Kechil',
             'Dunearn Rd',
@@ -57,7 +57,7 @@ let EDSData = {
             'Nth, Sth Bridge Rd',
             'Nth Bridge Rd'
         ],
-        2: [
+        1: [
             'Eu Tong Sen St',
             'Orchard Blvd',
             'Holland Rd',

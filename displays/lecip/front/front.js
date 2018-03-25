@@ -286,7 +286,7 @@ function doEDSScroll() {
         var data = EDSData[currentSvc];
         if (!data) return;
 
-        if ((currentScrollPos + 1) >= data[currentDirection].length) {
+        if ((currentScrollPos + 1) > data[currentDirection].length) {
             currentScrollPos = 0;
         }
 
