@@ -116,7 +116,7 @@ function determineFont(dest, svc, routeType) {
             return 'frontSmall';
         } else return 'frontFat'
     }
-    if (dest.length > 16) {
+    if (dest.length > 16 || (svc.startsWith('8') && svc.length === 3)) {
         return 'frontSmall';
     }
     return 'frontFat';
@@ -334,6 +334,8 @@ function handleSpecialCode(event) {
 
 function determineDest(dest, svc, routeType, loopPoint) {
     if (routeType === 'TRUNK' && loopPoint) {
+        if (dest === '> LOR 1 GEYLANG TER')
+            dest = '> GEYLANG'
         return dest.slice(2) + '-' + loopPoint;
     }
     if (routeType === 'FEEDER' || routeType === 'TRUNK') {
