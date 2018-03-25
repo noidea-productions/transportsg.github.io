@@ -1,4 +1,14 @@
 let EDSData = {
+    65: {
+        1: [
+            'Bedok Resevior Rd',
+            'Ubi Ave 2',
+            'Macpherson Rd',
+            'Bendemmer Rd',
+            'Jalan Besar',
+            'Orchard Boulevard',
+            'Lower Delta Rd'
+        ],
     123: {
         1: [
             'Bukit Purmei Ave',
@@ -44,7 +54,6 @@ let EDSData = {
         1: [
             'Yishun Central',
             'Yishun Ave 11',
-            'Yishun Ave 6',
             'Yishun Ring Rd'
         ]
     },
