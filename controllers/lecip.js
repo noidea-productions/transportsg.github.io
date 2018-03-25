@@ -44,6 +44,11 @@ function triggerUpdate(data) {
 let failedDests = [];
 
 let dests = {
+    69: {
+        interchanges: ['> BEDOK INT'],
+        routeType: 'TRUNK',
+        loopPoint: ''
+    },
     89: {
         interchanges: ['> HOUGANG CENTRAL', '> CHANGI AIRFREIGHT CTR'],
         routeType: 'TRUNK',
@@ -53,6 +58,11 @@ let dests = {
         interchanges: ['> BOON LAY INT'],
         routeType: 'TRUNK',
         loopPoint: 'Jurong West.'
+    },
+    200: {
+        interchanges: ['> KENT RIDGE TER', '> BUONA VISTA TER'],
+        routeType: 'TRUNK',
+        loopPoint: ''
     },
     807: {
         interchanges: ['> YISHUN INT'],

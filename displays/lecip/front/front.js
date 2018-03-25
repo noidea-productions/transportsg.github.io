@@ -347,6 +347,7 @@ function determineDest(dest, svc, routeType, loopPoint) {
         if (dest.includes('KAMPONG BAHRU')) {
             dest = '> KG BAHRU TER';
         }
+
         return dest.slice(2) + '-' + loopPoint;
     }
     if (routeType === 'FEEDER' || routeType === 'TRUNK') {
