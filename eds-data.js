@@ -86,7 +86,7 @@ let EDSData = {
     241: {
         1: [
             'Jurong West St 63',
-            'Pionner Rd North'
+            'Pionner Rd North',
             'Jurong West St 91'
         ]
     },
