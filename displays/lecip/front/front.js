@@ -147,7 +147,6 @@ function showDest(dest) {
     //     isUsingSmallFont = false;
     // }
 
-    console.log(font)
 
     let totalWidth = getTextWidth(chars, font, 1);
 
@@ -339,6 +338,9 @@ function determineDest(dest, svc, routeType, loopPoint) {
         return dest.slice(2) + '-' + loopPoint;
     }
     if (routeType === 'FEEDER' || routeType === 'TRUNK') {
+        if (svc.startsWith('8') && svc.length === 3) { // Yishun svc
+            return dest.slice(2) + '-' + loopPoint;
+        }
         return dest;
     }
     if (routeType === 'INDUSTRIAL') {
