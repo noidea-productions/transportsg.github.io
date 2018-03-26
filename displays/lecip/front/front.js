@@ -309,8 +309,14 @@ function doEDSScroll() {
         showSvc(currentSvc);
     } else if (currentRouteType === 'SWT') {
         clearLEDs();
-        writeSmallText('TERMINATE AT', 11);
-        writeSmallText(terminalRoad.toUpperCase() + ' (' + terminalBusStop.toUpperCase() + ')', 3);
+        let lowerLine = terminalRoad.toUpperCase() + ' (' + terminalBusStop.toUpperCase() + ')';
+        if (lowerLine.length > 30) {
+            writeSmallText('TERMINATE AT ' + terminalRoad.toUpperCase(), 11);
+            writeSmallText(terminalBusStop.toUpperCase(), 3);
+        } else {
+            writeSmallText('TERMINATE AT', 11);
+            writeSmallText(lowerLine, 3);
+        }
 
         showSvc(currentSvc);
     } else {
