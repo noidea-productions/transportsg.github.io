@@ -65,7 +65,7 @@ function writeSmallText(text, yPos) {
     let totalWidth = getTextWidth(chars, font, spaceWidth);
     let totalHeight = charSet[font][chars[0]].length;
 
-    let xPos = Math.floor(120 / 2 - totalWidth / 2);
+    let xPos = Math.floor(114 / 2 - totalWidth / 2);
 
     writeText(text, font, spaceWidth, xPos, yPos, false);
 }
