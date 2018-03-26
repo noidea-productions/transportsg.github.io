@@ -309,8 +309,8 @@ function doEDSScroll() {
         showSvc(currentSvc);
     } else if (currentRouteType === 'SWT') {
         clearLEDs();
-        writeSmallText('TERMINATE AT ' + terminalRoad.toUpperCase(), 11);
-        writeSmallText(terminalBusStop.toUpperCase(), 3);
+        writeSmallText('TERMINATE AT', 11);
+        writeSmallText(terminalRoad.toUpperCase() + ' (' + terminalBusStop.toUpperCase() + ')', 3);
 
         showSvc(currentSvc);
     } else {
@@ -361,21 +361,26 @@ function handleSpecialCode(event) {
                     setLEDState(x, y, true);
             break;
         case '1111':
+            clearLEDs();
             writeTextCentered('OFF SERVICE');
             break;
         case '2222':
             showImage('sbst-front');
             break;
         case '4444':
+            clearLEDs();
             writeTextCentered('ON TEST');
             break;
         case '5555':
+            clearLEDs();
             writeTextCentered('TRAINING BUS');
             break;
         case '7777':
+            clearLEDs();
             writeTextCentered('FREE SHUTTLE', 'fat', 2);
             break;
         case '9999':
+            clearLEDs();
             writeTextCentered('VER. 14SEP14-DD', 'frontVersion', 1);
             break;
     }
