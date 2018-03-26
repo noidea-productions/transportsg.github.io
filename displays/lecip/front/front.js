@@ -56,7 +56,7 @@ function getTextWidth(chars, font, spaceWidth) {
     return chars.map(char => charSet[font][char][0].length + spaceWidth).reduce((a, b) => a + b, 0) - spaceWidth;
 }
 
-function writeSmallText(text, yPos) {
+function writeSmallText(text, yPos, svcWidth) {
     font = 'rearText';
 
     spaceWidth = 1;
@@ -65,7 +65,7 @@ function writeSmallText(text, yPos) {
     let totalWidth = getTextWidth(chars, font, spaceWidth);
     let totalHeight = charSet[font][chars[0]].length;
 
-    let xPos = Math.floor(114 / 2 - totalWidth / 2);
+    let xPos = Math.floor((width - svcWidth) / 2 - totalWidth / 2);
 
     writeText(text, font, spaceWidth, xPos, yPos, false);
 }
@@ -309,12 +309,14 @@ function doEDSScroll() {
     } else if (currentRouteType === 'SWT') {
         clearLEDs();
         let lowerLine = terminalRoad.toUpperCase() + ' (' + terminalBusStop.toUpperCase() + ')';
+
+        let svcWidth = getTextWidth([...currentSvc], 'fat', 2);
         if (lowerLine.length > 30) {
-            writeSmallText('TERMINATE AT ' + terminalRoad.toUpperCase(), 11);
-            writeSmallText(terminalBusStop.toUpperCase(), 3);
+            writeSmallText('TERMINATE AT ' + terminalRoad.toUpperCase(), 11, svcWidth);
+            writeSmallText(terminalBusStop.toUpperCase(), 3, svcWidth);
         } else {
-            writeSmallText('TERMINATE AT', 11);
-            writeSmallText(lowerLine, 3);
+            writeSmallText('TERMINATE AT', 11, svcWidth);
+            writeSmallText(lowerLine, 3, svcWidth);
         }
 
         showSvc(currentSvc);
@@ -430,6 +432,10 @@ function determineDest(dest, svc, routeType, loopPoint) {
     }
     if (routeType === 'NIGHT SERVICE') {
         return 'NITE OWL';
+    }
+
+    if (routeType.includes('FLAT FARE')) {
+        return 'PREMIUM';
     }
 }
 
