@@ -8,12 +8,35 @@ let EDSData = {
             'Tampines Ave 7'
         ]
     },
+    23: {
+       1:  [
+            'Tampines Ave 1',
+            'Bedok North Rd',
+            'Bendemmer Rd',
+            'Serangoon Rd',
+            'Bedok North Rd',
+            'Tampines Ave 1'
+        ]
+    },
     37: {
         1: [
             'Tampines Ave 7',
             'Upper Changi Rd North',
             'Changi North St 1'
         ]
+    },
+    46: {
+       1: [
+           'Tampines Ave 3',
+           'Bedok Reservior Rd',
+           'Bedok North Rd',
+           'Bedok South Ave 3'
+        ],
+        2: [
+            'Bedok South Ave 3',
+            'Bedok North Rd',
+            'Bedok Reservior Rd',
+            'Tampines Ave 3'
     },
     65: {
         2: [
@@ -138,6 +161,15 @@ let EDSData = {
             'Pionner Rd North',
             'Jurong West St 91'
         ]
+    },
+    292: {
+        1: [
+            'Tampines Ave 5'
+            'Tampines Ave 2'
+            'Tampines St 22'
+            'Tampines Ave 2'
+            'Tampines St 11'
+         ]
     },
     371: {
         1: [
