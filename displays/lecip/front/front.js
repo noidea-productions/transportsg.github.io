@@ -433,7 +433,9 @@ function determineDest(dest, svc, routeType, loopPoint) {
     if (routeType === 'NIGHT SERVICE') {
         return 'NITE OWL';
     }
-
+    if (routeType === 'CITY_LINK') {
+        return 'CITY DIRECT';
+    }
     if (routeType.includes('FLAT FARE')) {
         return 'PREMIUM';
     }
