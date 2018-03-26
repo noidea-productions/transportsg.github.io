@@ -164,11 +164,11 @@ let EDSData = {
     },
     292: {
         1: [
-            'Tampines Ave 5'
-            'Tampines Ave 2'
-            'Tampines St 22'
-            'Tampines Ave 2'
-            'Tampines St 11'
+            'Tampines Ave 5',
+            'Tampines Ave 2',
+            'Tampines St 22',
+            'Tampines Ave 2',
+            'Tampines St 11',
          ]
     },
     371: {
