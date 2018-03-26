@@ -194,8 +194,7 @@ let EDSData = {
             'Yishun Ave 7',
             'Sembawang Rd',
             'Yishun St 71',
-            'Yishun Ring Rd',
-            ''
+            'Yishun Ring Rd'
         ]
     },
     803: {
@@ -263,6 +262,8 @@ let EDSData = {
             'Victoria St',
             'Thomson Rd',
             'Marymount Rd',
+            'Ang Mo Kio Ave 5',
+            'Ang Mo Kio Ave 6',
             'Yishun Ave 2'
         ]
     },
