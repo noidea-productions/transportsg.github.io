@@ -15,14 +15,14 @@ body {
 
 #led-container {
 
-    width: 88vw;
+    width: 92.8vw;
 
     display: grid;
 
-    grid-template-columns: repeat(160, 0.55vw);
-    grid-row-gap: 0.06vw;
+    grid-template-columns: repeat(160, 0.58vw);
+    grid-row-gap: 0.07vw;
 
-    grid-auto-rows: 0.55vw;
+    grid-auto-rows: 0.58vw;
 
     background-color: #101010;
 }
@@ -42,8 +42,8 @@ body {
     border-radius: 1vw;
 
     display: block;
-    width: 0.33vw;
-    height: 0.33vw;
+    width: 0.4vw;
+    height: 0.4vw;
 }
 
 .led-on {

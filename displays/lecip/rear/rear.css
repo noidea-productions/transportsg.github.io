@@ -14,7 +14,6 @@ body {
 }
 
 #led-container {
-
     width: 72vw;
 
     display: grid;
@@ -39,8 +38,8 @@ body {
     border-radius: 1vw;
 
     display: block;
-    width: 1vw;
-    height: 1vw;
+    width: 1.3vw;
+    height: 1.3vw;
 }
 
 .led-on {
