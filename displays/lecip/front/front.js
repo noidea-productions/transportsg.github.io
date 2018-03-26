@@ -53,7 +53,6 @@ function bootupSequence() {
 }
 
 function getTextWidth(chars, font, spaceWidth) {
-    console.log(chars)
     return chars.map(char => charSet[font][char][0].length + spaceWidth).reduce((a, b) => a + b, 0) - spaceWidth;
 }
 
@@ -451,7 +450,6 @@ function handleSvcUpdate(event, preventReset) {
 
     currentDest = determineDest(dest, svc, routeType, loopPoint).toUpperCase();
 
-    console.log(currentDest);
 
     if (!preventReset)
         currentScrollPos = 0;

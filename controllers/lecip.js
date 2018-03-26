@@ -63,13 +63,18 @@ function triggerUpdate(data) {
 let failedDests = [];
 
 let dests = {
+    19: {
+        interchanges: ['> TAMPINES INT', '> CHANGI AIRFREIGHT CTR'],
+        routeType: 'TRUNK',
+        loopPoint: ''
+    },
     69: {
         interchanges: ['> BEDOK INT'],
         routeType: 'TRUNK',
         loopPoint: ''
     },
     89: {
-        interchanges: ['> HOUGANG CENTRAL', '> CHANGI AIRFREIGHT CTR'],
+        interchanges: ['> HOUGANG CENTRAL    ', 'CHANGI AIRFREIGHT CTR'],
         routeType: 'TRUNK',
         loopPoint: ''
     },
