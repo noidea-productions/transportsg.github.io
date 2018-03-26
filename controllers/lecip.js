@@ -68,6 +68,11 @@ let dests = {
         routeType: 'TRUNK',
         loopPoint: ''
     },
+    23: {
+        interchanges: ['> TAMPINES INT'],
+        routeType: 'TRUNK',
+        loopPoint: 'Rochor'
+    },
     69: {
         interchanges: ['> BEDOK INT'],
         routeType: 'TRUNK',
