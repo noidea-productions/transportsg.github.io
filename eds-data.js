@@ -59,6 +59,16 @@ let EDSData = {
             'Bedok Reservoir Rd'
         ]
     },
+    89:  {
+       2: [
+           'Hougang Ave 10',
+           'Compassvale Rd',
+           'Pasir Ris Dr 1',
+           'Pasir Ris Dr 3',
+           'Loyang Ave',
+           'Airline Rd'
+       ]
+    },
     103: {
         2: [
             'Yio Chu Kang Rd',
@@ -119,6 +129,22 @@ let EDSData = {
             'Tampines Rd'
        ],
     },
+   161: {
+       1: [
+           'Woodlands Ave 2',
+           'Sengkang East Way',
+           'Sengkang East Rd',
+           'Hougang Ave 4',
+           'Hougang Ave 8'
+       ],
+       2: [
+           'Hougang Ave 8',
+           'Hougang Ave 4',
+           'Sengkang East Rd',
+           'Sengkang East Way',
+           'Woodlands Ave 2'
+        ]
+   },
    168: {
        2: [
            'Bedok North Ave 3',
