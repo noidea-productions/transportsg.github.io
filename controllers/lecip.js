@@ -213,8 +213,12 @@ function onEntPressed() {
 
 function onClrPressed() {
     if (currentState === 'inputSvc') {
-        svcBeingInputted = [0,0,0,0];
-        registerKeyPress(0);
+        if (svcBeingInputted.join('') === '0000') {
+            currentState = 'home';
+        } else {
+            svcBeingInputted = [0,0,0,0];
+            registerKeyPress(0);
+        }
     }
 }
 
