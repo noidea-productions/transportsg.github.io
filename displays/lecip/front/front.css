@@ -36,11 +36,14 @@ body {
 }
 
 .led {
+    border: 0;
+    padding: 0;
+    margin: 0;
     border-radius: 1vw;
 
     display: block;
-    /* width: 0.33vw;
-    height: 0.33vw; */
+    width: 0.33vw;
+    height: 0.33vw;
 }
 
 .led-on {

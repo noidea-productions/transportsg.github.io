@@ -37,6 +37,7 @@ let EDSData = {
             'Bedok North Rd',
             'Bedok Reservior Rd',
             'Tampines Ave 3'
+        ]
     },
     65: {
         2: [

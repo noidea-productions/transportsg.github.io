@@ -23,11 +23,11 @@ function generateLEDCssCode() {
 }
 
 window.addEventListener('resize', () => {
-    generateLEDCssCode();
+    // generateLEDCssCode();
 })
 
 window.addEventListener('load', () => {
-    generateLEDCssCode();
+    // generateLEDCssCode();
     for (let x = 0; x < width; x++) {
         ledCache.push([]);
         for (let y = 0; y < height; y++) {
