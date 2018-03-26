@@ -28,23 +28,23 @@ let EDSData = {
     46: {
        1: [
            'Tampines Ave 3',
-           'Bedok Reservior Rd',
+           'Bedok Reservoir Rd',
            'Bedok North Rd',
            'Bedok South Ave 3'
         ],
         2: [
             'Bedok South Ave 3',
             'Bedok North Rd',
-            'Bedok Reservior Rd',
+            'Bedok Reservoir Rd',
             'Tampines Ave 3'
         ]
     },
     65: {
         2: [
-            'Bedok Resevior Rd',
+            'Bedok Reservoir Rd',
             'Ubi Ave 2',
             'Macpherson Rd',
-            'Bendemmer Rd',
+            'Bendemeer Rd',
             'Jalan Besar',
             'Orchard Boulevard',
             'Lower Delta Rd'
@@ -56,21 +56,21 @@ let EDSData = {
             'Serangoon Rd',
             'Macpherson Rd',
             'Ubi Ave 2',
-            'Bedok Reservior Rd'
+            'Bedok Reservoir Rd'
         ]
     },
     103: {
         2: [
             'Yio Chu Kang Rd',
             'Jalan Kayu',
-            'Seletar Areospace Dr',
+            'Seletar Aerospace Dr',
             'West Camp Rd',
             'Yishun Central'
         ],
         1: [
             'Yishun Central',
             'West Camp Rd',
-            'Seletar Areospace Dr',
+            'Seletar Aerospace Dr',
             'Jalan Kayu',
             'Yio Chu Kang Rd'
         ]
