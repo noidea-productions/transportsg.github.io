@@ -189,15 +189,35 @@ let EDSData = {
             'Fernvale Rd'
         ]
     },
+    800: {
+        1: [
+            'Yishun Ave 7',
+            'Sembawang Rd',
+            'Yishun St 71',
+            'Yishun Ring Rd',
+            ''
+        ]
+    },
+    803: {
+        1: [
+            'Yishun Ave 6'
+        ]
+    },
     804: {
         1: [
             'Yishun Ave 2',
+            'Yishun Ring Rd',
+            'Yishun St 41',
             'Yishun Ave 1',
-            'Yishun Ave 11'
+            'Yishun Ave 11',
+            'Yishun Ring Rd'
         ]
     },
     805: {
         1: [
+            'Yishun Ave 2',
+            'Yishun Ave 4',
+            'Yishun Ave 1',
             'Yishun Ring Rd',
 
         ]
@@ -206,25 +226,27 @@ let EDSData = {
         1: [
             'Yishun Central',
             'Yishun Ave 11',
+            'Yishun Ave 6',
             'Yishun Ring Rd'
         ]
     },
     807: {
         1: [
-            'Yishun Central',
+            'Yishun Ring Rd',
             'Yishun Ave 9',
             'Yishun Ring Rd',
             'Yishun Ave 5',
             'Sembawang Rd',
             'Yishun St 71',
-            'Yishun Ring Rd'
         ]
     },
     811: {
         1: [
             'Yishun Ave 9,6,7',
+            'Sembawang Rd',
             'Yishun Ave 5,2',
-            'Yishun Ring Rd'
+            'Yishun Ring Rd',
+            'Yishun Ave 2'
         ]
     },
     812: {
@@ -251,10 +273,16 @@ let EDSData = {
     },
     860: {
         1: [
-            ''
+            'Upper Thomson Rd',
+            'Ang Mo Kio Ave 5',
+            'Yishun Ring Rd',
+            'Yishun Ave 3'
         ],
         2: [
-            'Yishun Ring Rd'
+            'Yishun Ring Rd',
+            'Upper Thomson Rd',
+            'Sembawang Rd',
+            'Yishun Ave 3'
         ]
     }
 };
@@ -272,5 +300,6 @@ let SWTs = {
     '33B': 'Joo Chiat Place;Aft Tembeling Rd',
     '58A': 'Tampines Ave 10;Bef TPE',
     '58B': 'Upp Paya Lebar Rd;Aft Tai Seng Stn',
-    '241A': 'Jurong W. St 63;Blk 649A'
+    '241A': 'Jurong W. St 63;Blk 649A',
+    '269A': 'Ang Mo Kio St 61;MKT/FC'
 }
