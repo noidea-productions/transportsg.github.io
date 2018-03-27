@@ -59,6 +59,21 @@ let EDSData = {
             'Bedok Reservoir Rd'
         ]
     },
+    77: {
+        1: [
+            'Stamford Rd',
+            'Orchard Boulevard',
+            'Holland Rd / Village',
+            'Sixth Ave',
+            'Toh Tuck Rd'
+        ],
+        2: [
+            'Toh Tuck Rd',
+            'Sixth Ave',
+            'Holland Rd / Village',
+            'Orchard Rd'
+        ]
+    },
     89:  {
        2: [
            'Hougang Ave 10',
