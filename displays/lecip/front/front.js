@@ -311,7 +311,7 @@ function doEDSScroll() {
         let lowerLine = terminalRoad.toUpperCase() + ' (' + terminalBusStop.toUpperCase() + ')';
 
         let svcWidth = getTextWidth([...currentSvc], 'fat', 2);
-        if (lowerLine.length > 30) {
+        if (lowerLine.length > 32) {
             writeSmallText('TERMINATE AT ' + terminalRoad.toUpperCase(), 11, svcWidth);
             writeSmallText(terminalBusStop.toUpperCase(), 3, svcWidth);
         } else {
