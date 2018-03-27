@@ -300,7 +300,27 @@ let SWTs = {
     '33A': 'Tiong Bahru Rd;Blk 1',
     '33B': 'Joo Chiat Place;Aft Tembeling Rd',
     '58A': 'Tampines Ave 10;Bef TPE',
+    '51A': 'Pandan Gdns;Blk 407',
+    '53A': 'Changi Airport;PTB2',
+    '55B': 'Ang Mo Kio Ave 10;Blk 443',
     '58B': 'Upp Paya Lebar Rd;Aft Tai Seng Stn',
+    '60A': 'Bedok Reservior Rd;Blk 608',
+    '70A'; 'Temasek Ave,Op. Ritz Carlton'
+    '70B'; 'Serangoon Ctrl;Sgoon Stn'
+    '72B'; 'AMK Ave 5;ITE College Ctrl'
+    '80A'; 'Aljunied Rd;Aljunied Station'
+    '88A'; 'AMK Ave 3;Opp AMK Station'
+    '88B': 'AMK Ave 5;Bef Yio Chu Kang Rd'
+    '89A'; 'Airport Cargo Rd;Airfreight Terminal Bldg'
+    '94A'; 'Airport Rd;Bef RSAF Aabout'
+    '100A'; 'Aljunied Rd;Aljunied Station'
+    '109A'; 'Hougang Ave 4;Blk 913'
+    '113A'; 'Upp Serangoon Rd;Kovan Stn'
+    '127A'; 'Tampines Ave 9;Blk 742A'
+    '130A'; 'Sin Ming Rd;Blk 25A'
+    '135A'; 'M.Parade Rd;Victoria Sch'
+    '154A'; 'Boon Lay Way;Lakeside Stn'
+    '154B'; 'Clementi Rd;Ngee Ann Poly'
     '241A': 'Jurong W. St 63;Blk 649A',
     '269A': 'Ang Mo Kio St 61;MKT/FC'
 }
