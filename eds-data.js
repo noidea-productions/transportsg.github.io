@@ -268,8 +268,24 @@ let EDSData = {
         ]
     },
     852: {
+        1: [
+            'Bukit Batok E. Ave 6',
+            'Upp Bukit Timah Rd',
+            'Dunearn Rd',
+            'Lornie Rd',
+            'Marymount Rd',
+            'Ang Mo Kio Ave 6',
+            'Lentor Ave',
+            'Yishun Ave 2'
+        ],
         2: [
-            'Ang Mo Kio Ave 6'
+            'Yishun Ave 2',
+            'Lentor Ave',
+            'Ang Mo Kio Ave 6',
+            'Lornie Rd',
+            'Bukit Timah Rd',
+            'Upp Bukit Timah Rd',
+            'Bukit Batok E. Ave 6'
         ]
     },
     860: {
