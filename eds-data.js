@@ -347,7 +347,7 @@ let SWTs = {
     '55B': 'Ang Mo Kio Ave 10;Blk 443',
     '58B': 'Upp Paya Lebar Rd;Aft Tai Seng Stn',
     '60A': 'Bedok Reservior Rd;Blk 608',
-    '70A': 'Temasek Ave,Op. Ritz Carlton',
+    '70A': 'Temasek Ave;Op. Ritz Carlton',
     '70B': 'Serangoon Ctrl;S\'goon Stn',
     '72B': 'AMK Ave 5;ITE College Ctrl',
     '80A': 'Aljunied Rd;Aljunied Station',
@@ -364,5 +364,5 @@ let SWTs = {
     '154A': 'Boon Lay Way;Lakeside Stn',
     '154B': 'Clementi Rd;Ngee Ann Poly',
     '241A': 'Jurong W. St 63;Blk 649A',
-    '269A': 'Ang Mo Kio St 61;MKT/FC',
+    '269A': 'Ang Mo Kio St 61;MKT/FC'
 }
