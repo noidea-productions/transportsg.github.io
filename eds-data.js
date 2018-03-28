@@ -39,6 +39,18 @@ let EDSData = {
             'Tampines Ave 3'
         ]
     },
+    61: {
+        2: [
+            'Clementi Rd',
+            'Holland Rd, Ave',
+            'Telok Blangah Rd',
+            'Chinatown',
+            'Victoria St',
+            'Kallang Bahru',
+            'Macpherson Rd',
+            'Ubi Ave 2'
+        ]
+    },
     65: {
         2: [
             'Bedok Reservoir Rd',
@@ -98,6 +110,22 @@ let EDSData = {
             'Seletar Aerospace Dr',
             'Jalan Kayu',
             'Yio Chu Kang Rd'
+        ]
+    },
+    106: {
+        1: [
+            'Bayfront Ave / MBS',
+            'Orchard Boulevard',
+            'Holland Rd / Village',
+            'C\'Wealth Ave West',
+            'Toh Tuck Ave'
+        ],
+        2: [
+            'C\'Wealth Ave West',
+            'Holland Village / Rd',
+            'Orchard Rd',
+            'Suntec City',
+            'Bayfront Ave / MBS',
         ]
     },
     107: {
@@ -341,6 +369,15 @@ let EDSData = {
             'Upper Thomson Rd',
             'Sembawang Rd',
             'Yishun Ave 3'
+        ]
+    },
+    945: {
+        1: [
+            'Bt Batok East Ave 5',
+            'Bt Batok St 52',
+            'Bt Gombak MRT',
+            'Bt Batok West Ave 7',
+            'Bt Batok St 34'
         ]
     }
 };
