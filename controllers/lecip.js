@@ -21,7 +21,7 @@ function loadEDSData(svc, cb) {
 
     console.log(svc, variant)
 
-    ajax({url: 'https://beta.transportsg.me/eds/' + svc}, data => {
+    ajax({url: 'https://transportsg.me/eds/' + svc}, data => {
         if (data !== 'error!') {
             if (data.operator === 'SBST' || true) {
                 dests[svc] = {
