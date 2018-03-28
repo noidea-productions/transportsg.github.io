@@ -387,6 +387,14 @@ let EDSData = {
             'Bt Batok West Ave 8'
         ]
     },
+    944: {
+        1: [
+            'Bukit Batok Ctrl',
+            'B.B West Ave 3',
+            'B.B West Ave 8',
+            'Bt Batok Rd (Loop)'
+        ]
+    },
     945: {
         1: [
             'Bt Batok East Ave 5',
