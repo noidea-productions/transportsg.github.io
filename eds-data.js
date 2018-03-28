@@ -225,6 +225,14 @@ let EDSData = {
             'Bt Batok E. Ave 6, 3'
         ]
     },
+    189: {
+        1: [
+            'Bt Batok East Ave 6',
+            'Bt Batok St 23',
+            'Clementi Ave 6',
+            'Clementi MRT'
+        ]
+    },
     241: {
         1: [
             'Jurong West St 63',
@@ -371,6 +379,14 @@ let EDSData = {
             'Yishun Ave 3'
         ]
     },
+    941: {
+        1: [
+            'Bt Batok West Ave 3',
+            'Bt Batok West Ave 6',
+            'Bt Batok St 11',
+            'Bt Batok West Ave 8'
+        ]
+    },
     945: {
         1: [
             'Bt Batok East Ave 5',
@@ -378,6 +394,13 @@ let EDSData = {
             'Bt Gombak MRT',
             'Bt Batok West Ave 7',
             'Bt Batok St 34'
+        ]
+    },
+    990: {
+        1: [
+            'Bukit Batok East Ave 6',
+            'Toh Guan Rd',
+            'Jurong East MRT'
         ]
     }
 };
