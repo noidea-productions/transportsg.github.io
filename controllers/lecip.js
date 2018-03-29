@@ -122,8 +122,18 @@ let dests = {
         loopPoint: ''
     },
 
+    CT8: {
+        interchanges: ['> ANG MO KIO AVE 9   ', '> NEW BRIDGE RD TER'],
+        routeType: 'TRUNK',
+        loopPoint: ''
+    },
+    CT18: {
+        interchanges: ['> BEDOK NTH AVE 3   ', '> NEW BRIDGE RD TER'],
+        routeType: 'TRUNK',
+        loopPoint: ''
+    },
     CT28: {
-        interchanges: ['> CLEMENTI AVE 4', '> NEW BRIDGE RD TER'],
+        interchanges: ['> CLEMENTI AVE 4   ', '> NEW BRIDGE RD TER'],
         routeType: 'TRUNK',
         loopPoint: ''
     }
