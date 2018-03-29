@@ -17,6 +17,12 @@ function generateLEDCssCode() {
         width: ${pixelSize}px;
         height: ${pixelSize}px;
     }
+
+    #led-container {
+        grid-template-columns: repeat(160, ${Math.ceil(window.innerWidth * 0.0058)}px);
+        grid-row-gap: ${Math.ceil(window.innerWidth * 0.0007)}px;
+        grid-auto-rows: ${Math.ceil(window.innerWidth * 0.0058)}px;
+    }
 `;
 
     document.getElementById('led-style').textContent = cssData;
