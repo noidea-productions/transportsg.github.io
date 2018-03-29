@@ -169,6 +169,12 @@ window.addEventListener('message', event => {
                 lastEvent = eventData;
                 setSWT(eventData);
                 break;
+            case '106-easter':
+                lastState = 'run106Easter';
+                lastEvent = eventData;
+                run106Easter();
+                break;
+
             case 'led-invert':
                 ledsInverted = eventData.state;
 
@@ -177,6 +183,17 @@ window.addEventListener('message', event => {
         }
     }
 });
+
+function run106Easter() {
+    clearLEDs();
+    var numbers = [...'106'];
+
+    var curX = 3;
+
+    numbers.forEach(number => {
+        curX += showChar(number, 'fat', curX) + 1;
+    });
+}
 
 function setSWT(event) {
     clearLEDs();
