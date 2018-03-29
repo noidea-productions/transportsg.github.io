@@ -165,6 +165,7 @@ function onEntPressed() {
 
             svcBeingInputted = [0,0,0,0];
             currentState = 'home';
+            return;
         }
 
         if (svcBeingInputted.filter((e, i, a) => a.indexOf(e) === i).length === 1 || currentSvc === '1') {

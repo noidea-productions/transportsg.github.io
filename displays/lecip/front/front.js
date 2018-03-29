@@ -308,6 +308,13 @@ window.addEventListener('message', event => {
                 lastEvent = eventData;
                 setSWT(eventData);
                 break;
+
+            case '106-easter':
+                lastState = 'run106Easter';
+                lastEvent = eventData;
+                run106Easter();
+                break;
+
             case 'led-invert':
                 ledsInverted = eventData.state;
 
@@ -360,6 +367,13 @@ function doEDSScroll() {
 
         showSvcInfo(data[currentDirection][currentScrollPos++].toUpperCase());
     }
+}
+
+function run106Easter() {
+    console.log('front: 106 wong tai sin')
+    clearLEDs();
+
+    showSvc('106');
 }
 
 function shortenRoadName(roadName) {
