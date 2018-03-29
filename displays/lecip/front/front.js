@@ -96,7 +96,7 @@ function writeSmallText(text, yPos, svcWidth) {
     writeText(text, font, spaceWidth, xPos, yPos, false);
 }
 
-function writeTextCentered(text, font, spaceWidth) {
+function writeTextCentered(text, font, spaceWidth, baseY, rightWidth) {
     font = font || 'fat';
     spaceWidth = spaceWidth || 3;
 
@@ -104,8 +104,8 @@ function writeTextCentered(text, font, spaceWidth) {
     let totalWidth = getTextWidth(chars, font, spaceWidth);
     let totalHeight = charSet[font][chars[0]].length;
 
-    let xPos = Math.floor(width / 2 - totalWidth / 2);
-    let yPos = Math.floor(height / 2 - totalHeight / 2);
+    let xPos = Math.floor((width - (rightWidth || 0)) / 2 - totalWidth / 2);
+    let yPos = baseY !== undefined ? baseY : Math.floor(height / 2 - totalHeight / 2);
 
     writeText(text, font, spaceWidth, xPos, yPos);
 }
@@ -373,6 +373,8 @@ function run106Easter() {
     console.log('front: 106 wong tai sin')
     clearLEDs();
 
+    writeTextCentered('WDS', '106Easter', 1, 7, 15);
+    writeTextCentered('wong tai sin', '106Easter', 1, 0, 15);
     showSvc('106');
 }
 
