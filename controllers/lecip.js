@@ -156,6 +156,17 @@ function onEntPressed() {
             return;
         }
 
+        if (currentSvc === '1069') {
+            triggerUpdate({
+                type: '106-easter'
+            });
+
+            currentDest = 'Wong Tai Sin';
+
+            svcBeingInputted = [0,0,0,0];
+            currentState = 'home';
+        }
+
         if (svcBeingInputted.filter((e, i, a) => a.indexOf(e) === i).length === 1 || currentSvc === '1') {
             triggerUpdate({
                 type: 'special-code',
