@@ -105,7 +105,7 @@ function writeTextCentered(text, font, spaceWidth, baseY, rightWidth) {
     let totalHeight = charSet[font][chars[0]].length;
 
     let xPos = Math.floor((width - (rightWidth || 0)) / 2 - totalWidth / 2);
-    let yPos = baseY !== undefined ? baseY : Math.floor(height / 2 - totalHeight / 2);
+    let yPos = baseY === undefined ? baseY : Math.floor(height / 2 - totalHeight / 2);
 
     writeText(text, font, spaceWidth, xPos, yPos);
 }
@@ -354,7 +354,10 @@ function doEDSScroll() {
 
         showSvc(currentSvc);
     } else {
-        showSvc(currentSvc);
+        if (currentSvc === '609')
+            showSvc('DTL');
+        else
+            showSvc(currentSvc);
         showDest(currentDest);
 
         var data = EDSData[currentSvc];

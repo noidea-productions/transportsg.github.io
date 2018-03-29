@@ -136,6 +136,12 @@ let dests = {
         interchanges: ['> CLEMENTI AVE 4   ', '> NEW BRIDGE RD TER'],
         routeType: 'TRUNK',
         loopPoint: ''
+    },
+
+    609: {
+        interchanges: ['> CHINATOWN', '> BUKIT PANJANG'],
+        routeType: 'TRUNK',
+        loopPoint: ''
     }
 };
 

@@ -423,6 +423,44 @@ let EDSData = {
             'C\'Wealth Ave W.',
             'Eu Tong Sen St'
         ]
+    },
+    609: {
+        1: [
+            'BUKIT PANJANG',
+            'CASHEW',
+            'HILLVIEW',
+            'BEAUTY WORLD',
+            'TAN KAH KEE',
+            'SIXTH AVENUE',
+            'BOTANIC GARDENS',
+            'STEVENS',
+            'NEWTON',
+            'LITTLE INDIA',
+            'ROCHOR',
+            'BUGIS',
+            'PROMENADE',
+            'BAYFRONT',
+            'DOWNTOWN',
+            'TELOK AYER '
+        ],
+        2: [
+            'CHINATOWN',
+            'TELOK AYER ',
+            'DOWNTOWN',
+            'BAYFRONT',
+            'PROMENADE',
+            'BUGIS',
+            'ROCHOR',
+            'LITTLE INDIA',
+            'NEWTON',
+            'STEVENS',
+            'BOTANIC GARDENS',
+            'SIXTH AVENUE',
+            'TAN KAH KEE',
+            'BEAUTY WORLD',
+            'HILLVIEW',
+            'CASHEW'
+        ]
     }
 };
 
