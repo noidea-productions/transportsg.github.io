@@ -8,3 +8,11 @@ LECIP:
     Side:
         Width: 96
         Height: 20
+
+Mobi
+    Front:
+        Width: 144
+        Height: 16
+    Rear:
+        Width: 32
+        Height: 16
