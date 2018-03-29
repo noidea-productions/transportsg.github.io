@@ -410,6 +410,19 @@ let EDSData = {
             'Toh Guan Rd',
             'Jurong East MRT'
         ]
+    },
+
+    CT28: {
+        1: [
+            'Eu Tong Sen St',
+            'C\'Wealth Ave W.',
+            'Clementi Ave 4'
+        ],
+        2: [
+            'Clementi Ave 4',
+            'C\'Wealth Ave W.',
+            'Eu Tong Sen St'
+        ]
     }
 };
 
