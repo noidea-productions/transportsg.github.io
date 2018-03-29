@@ -430,8 +430,9 @@ let EDSData = {
             'CASHEW',
             'HILLVIEW',
             'BEAUTY WORLD',
-            'TAN KAH KEE',
+            'KING ALBERT PARK',
             'SIXTH AVENUE',
+            'TAN KAH KEE',
             'BOTANIC GARDENS',
             'STEVENS',
             'NEWTON',
@@ -441,11 +442,11 @@ let EDSData = {
             'PROMENADE',
             'BAYFRONT',
             'DOWNTOWN',
-            'TELOK AYER '
+            'TELOK AYER'
         ],
         2: [
             'CHINATOWN',
-            'TELOK AYER ',
+            'TELOK AYER',
             'DOWNTOWN',
             'BAYFRONT',
             'PROMENADE',
@@ -455,8 +456,9 @@ let EDSData = {
             'NEWTON',
             'STEVENS',
             'BOTANIC GARDENS',
-            'SIXTH AVENUE',
             'TAN KAH KEE',
+            'SIXTH AVENUE',
+            'KING ALBERT PARK',
             'BEAUTY WORLD',
             'HILLVIEW',
             'CASHEW'
