@@ -243,6 +243,7 @@ function onF4Pressed() {
     if (currentState === 'home') {
         if (!(currentSvc in dests)) return;
         if (!dests[currentSvc].interchanges) return; // SWT
+        if (currentDest === 'PREMIUM' || currentDir === 'NIGHT OWL' || currentDest === 'CITY DIRECT') return;
         if (dests[currentSvc].interchanges.length === 2) {
             currentDir = !currentDir;
             currentDest = dests[currentSvc].interchanges[Number(currentDir)];
