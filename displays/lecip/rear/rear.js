@@ -4,7 +4,33 @@ let ledCache = [];
 
 let ledsInverted = false;
 
+function generateLEDCssCode() {
+    let pixelSize = Math.ceil(window.innerWidth * 0.013);
+
+    let cssData =
+`
+    .led {
+        width: ${pixelSize}px;
+        height: ${pixelSize}px;
+    }
+
+    #led-container {
+        width: ${40 * Math.ceil(window.innerWidth * 0.018)}px;
+        grid-template-columns: repeat(40, ${Math.ceil(window.innerWidth * 0.018)}px);
+        grid-row-gap: ${Math.ceil(window.innerWidth * 0.002)}px;
+        grid-auto-rows: ${Math.ceil(window.innerWidth * 0.018)}px;
+    }
+`;
+
+    document.getElementById('led-style').textContent = cssData;
+}
+
+window.addEventListener('resize', () => {
+    generateLEDCssCode();
+});
+
 window.addEventListener('load', () => {
+    generateLEDCssCode();
     for (let x = 0; x < width; x++) {
         ledCache.push([]);
         for (let y = 0; y < height; y++) {
