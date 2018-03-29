@@ -8,7 +8,26 @@ let ledCache = [];
 
 let ledsInverted = false;
 
+function generateLEDCssCode() {
+    let pixelSize = Math.ceil(window.innerWidth * 0.0033);
+
+    let cssData =
+`
+    .led {
+        width: ${pixelSize}px;
+        height: ${pixelSize}px;
+    }
+`;
+
+    document.getElementById('led-style').textContent = cssData;
+}
+
+window.addEventListener('resize', () => {
+    generateLEDCssCode();
+})
+
 window.addEventListener('load', () => {
+    generateLEDCssCode();
     for (let x = 0; x < width; x++) {
         ledCache.push([]);
         for (let y = 0; y < height; y++) {
