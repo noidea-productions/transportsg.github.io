@@ -197,6 +197,8 @@ function onEntPressed() {
                         currentDest = 'PREMIUM';
                     } else if (routeType === 'NIGHT SERVICE') {
                         currentDest = 'NITE OWL';
+                    } else if (routeType === 'EXPRESS') {
+                        currentDest = 'EXPRESS';
                     } else {
                         currentDest = dests[currentSvc].interchanges[0];
                     }
@@ -243,7 +245,7 @@ function onF4Pressed() {
     if (currentState === 'home') {
         if (!(currentSvc in dests)) return;
         if (!dests[currentSvc].interchanges) return; // SWT
-        if (currentDest === 'PREMIUM' || currentDir === 'NIGHT OWL' || currentDest === 'CITY DIRECT') return;
+        if (currentDest === 'PREMIUM' || currentDir === 'NIGHT OWL' || currentDest === 'CITY DIRECT' || dests[currentSvc].routeType === 'EXPRESS') return;
         if (dests[currentSvc].interchanges.length === 2) {
             currentDir = !currentDir;
             currentDest = dests[currentSvc].interchanges[Number(currentDir)];
