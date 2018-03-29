@@ -373,6 +373,8 @@ function doEDSScroll() {
 }
 
 function run106Easter() {
+    clearInterval(edsScrollInterval);
+    
     console.log('front: 106 wong tai sin')
     clearLEDs();
 
