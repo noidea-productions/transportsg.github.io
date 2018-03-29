@@ -73,6 +73,11 @@ let dests = {
         routeType: 'TRUNK',
         loopPoint: 'Rochor'
     },
+    36: {
+        interchanges: ['> TOMLINSON RD', '> CHANGI AIRPORT'],
+        routeType: 'TRUNK',
+        loopPoint: ''
+    },
     69: {
         interchanges: ['> BEDOK INT'],
         routeType: 'TRUNK',
@@ -113,6 +118,12 @@ let dests = {
     },
     860: {
         interchanges: ['> YIO CHU KANG INT', '> YISHUN INT'],
+        routeType: 'TRUNK',
+        loopPoint: ''
+    },
+
+    CT28: {
+        interchanges: ['> CLEMENTI AVE 4', '> NEW BRIDGE RD TER'],
         routeType: 'TRUNK',
         loopPoint: ''
     }
@@ -180,6 +191,10 @@ function onEntPressed() {
             currentState = 'home';
             return;
         }
+
+        if (currentSvc === '814') currentSvc = 'CT8';
+        if (currentSvc === '815') currentSvc = 'CT18';
+        if (currentSvc === '816') currentSvc = 'CT28';
 
         loadEDSData(currentSvc, () => {
             if (!currentSvc) currentSvc = '0';
