@@ -248,7 +248,7 @@ function handleSpecialCode(event) {
             showSmallText('TRAINING', 11);
             showSmallText('BUS', 3);
             break;
-        case '7777':
+        case '3333':
             clearLEDs();
             showSmallText('FREE', 11);
             showSmallText('SHUTTLE', 3);

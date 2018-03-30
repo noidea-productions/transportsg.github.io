@@ -374,7 +374,7 @@ function doEDSScroll() {
 
 function run106Easter() {
     clearInterval(edsScrollInterval);
-    
+
     console.log('front: 106 wong tai sin')
     clearLEDs();
 
@@ -430,7 +430,7 @@ function handleSpecialCode(event) {
             clearLEDs();
             writeTextCentered('TRAINING BUS');
             break;
-        case '7777':
+        case '3333':
             clearLEDs();
             writeTextCentered('FREE SHUTTLE', 'fat', 2);
             break;
