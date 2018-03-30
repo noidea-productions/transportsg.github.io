@@ -518,7 +518,7 @@ function handleSvcUpdate(event, preventReset) {
 
     if (!preventReset) {
         clearInterval(edsScrollInterval);
-        edsScrollInterval = setInterval(doEDSScroll, 2500);
+        edsScrollInterval = setInterval(doEDSScroll, 5000);
     }
 
     doEDSScroll();
