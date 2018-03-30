@@ -434,6 +434,10 @@ function handleSpecialCode(event) {
             clearLEDs();
             writeTextCentered('FREE SHUTTLE', 'fat', 2);
             break;
+        case '7777':
+            clearLEDs();
+            writeTextCentered('FREE BRIDGING BUS', 'frontThin', 2);
+            break;
         case '9999':
             clearLEDs();
             writeTextCentered('VER. 14SEP14-DD', 'frontVersion', 1);
