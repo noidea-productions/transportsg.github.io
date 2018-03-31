@@ -9,6 +9,6 @@ Things you can find here:
 
 #Credits and Stuff:
 
-- Keith Lim moFo for EDS fonts
+- [SBS2799S](http://instagram.com/sbs2799s) for EDS fonts
 - [Beckham](https://github.com/Veckong9806J) for EDS route data
 - [Dante](https://github.com/SBS2831G) for EDS route data
