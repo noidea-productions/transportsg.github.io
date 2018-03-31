@@ -93,6 +93,11 @@ let dests = {
         routeType: 'TRUNK',
         loopPoint: 'Jurong West.'
     },
+    179: {
+        interchanges: ['> BOON LAY INT'],
+        routeType: 'TRUNK',
+        loopPoint: 'NTU'
+    },
     200: {
         interchanges: ['> KENT RIDGE TER', '> BUONA VISTA TER'],
         routeType: 'TRUNK',

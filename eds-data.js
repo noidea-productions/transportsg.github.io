@@ -234,6 +234,11 @@ let EDSData = {
             'Bt Batok E. Ave 6, 3'
         ]
     },
+    181: {
+        1: [
+            'Jurong West St 64'
+        ]
+    },
     189: {
         1: [
             'Bt Batok East Ave 6',
@@ -247,6 +252,11 @@ let EDSData = {
             'Jurong West St 63',
             'Pionner Rd North',
             'Jurong West St 91'
+        ]
+    },
+    251: {
+        1: [
+            'Pioneer Rd Nth'
         ]
     },
     292: {

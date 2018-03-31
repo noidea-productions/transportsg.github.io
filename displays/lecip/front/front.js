@@ -164,7 +164,11 @@ function determineFont(dest, svc, routeType) {
             return 'frontSmallDest';
         } else return 'frontFat';
     }
-    if (dest.length > 16 || (svc.startsWith('8') && svc.length === 3) || dest.includes('-')) {
+    if (dest.includes('-')) {
+        if (dest.length > 16 || (svc.startsWith('8') && svc.length === 3)) {
+            return 'frontSmallDest';
+        }
+
         return 'frontSmall';
     }
     return 'frontFat';
