@@ -183,7 +183,7 @@ function onEntPressed() {
             return;
         }
 
-        if (currentSvc === '1069') {
+        if (currentSvc === '1O6W') {
             triggerUpdate({
                 type: '106-easter'
             });
