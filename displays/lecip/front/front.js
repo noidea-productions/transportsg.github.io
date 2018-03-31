@@ -160,9 +160,9 @@ function determineFont(dest, svc, routeType) {
         }
     }
     if (routeType === 'INDUSTRIAL') {
-        if (dest.startsWith('JOO KOON')) {
+        if (!dest.startsWith('>')) {
             return 'frontSmallDest';
-        } else return 'frontFat'
+        } else return 'frontFat';
     }
     if (dest.length > 16 || (svc.startsWith('8') && svc.length === 3) || dest.includes('-')) {
         return 'frontSmall';
