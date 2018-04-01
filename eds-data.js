@@ -96,6 +96,12 @@ let EDSData = {
            'Airline Rd'
        ]
     },
+    95: {
+        1: [
+            'North Buona Vista Rd',
+            'Holland Ave'
+        ]
+    },
     103: {
         2: [
             'Yio Chu Kang Rd',
@@ -234,6 +240,14 @@ let EDSData = {
             'Bt Batok E. Ave 6, 3'
         ]
     },
+    179: {
+        1: [
+            'Jurong West St 63',
+            'Pioneer Rd North',
+            'Lien Ying Chow Dr',
+            'Nanyang Dr'
+        ]
+    },
     181: {
         1: [
             'Jurong West St 64'
@@ -247,11 +261,67 @@ let EDSData = {
             'Clementi MRT'
         ]
     },
+    192: {
+        2: [
+            'Jurong West St 62'
+            'Tuas Ave 1',
+            'Tuas Ave 12',
+            'Pioneer Rd'
+        ]
+    }
+    193: {
+        2: [
+            'Jurong West Ave 4',
+            'Lok Yang Way',
+            'Tuas Rd',
+            'Tuas Ave 5, 9',
+            'Tuas West Dr'
+        ]
+    }
+    198: {
+        1: [
+            'Queensway',
+            'AYE',
+            'Jurong Town Hall Rd',
+            'Jurong East Ave 1',
+            'Jurong West Ave 1',
+            'Boon Lay Ave'
+        ]
+    },
+    200: {
+        2: [
+            'Pasir Panjang Rd',
+            'Sth Buona Vista Rd'
+        ]
+    },
+    201: {
+        1: [
+            'C\'Wealth Ave West'
+        ]
+    },
+    240: {
+        1: [
+            'Jalan Ahmad Ibrahim',
+            'Kang Ching Rd',
+            'Yuan Ching Rd',
+            'Boon Lay Place',
+            'Boon Lay Way'
+        ]
+    },
     241: {
         1: [
             'Jurong West St 63',
             'Pionner Rd North',
             'Jurong West St 91'
+        ]
+    },
+    249: {
+        1: [
+            'Jalan Boon Lay',
+            'Jurong Pier Rd',
+            'Tanjong Kling Rd',
+            'Shipyard Rd',
+            'Jalan Samulun'
         ]
     },
     251: {
