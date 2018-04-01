@@ -358,11 +358,16 @@ function doEDSScroll() {
 
         showSvc(currentSvc);
     } else {
-        if (currentSvc === '609')
-            showSvc('DTL');
-        else
-            showSvc(currentSvc);
-        showDest(currentDest);
+        try {
+            if (currentSvc === '609')
+                showSvc('DTL');
+            else
+                showSvc(currentSvc);
+        } catch (e) {}
+        
+        try {
+            showDest(currentDest);
+        } catch (e) {}
 
         var data = EDSData[currentSvc];
         if (!data) return;
