@@ -8,6 +8,16 @@ let EDSData = {
             'Tampines Ave 7'
         ]
     },
+    22: {
+        1: [
+            'Tampines Ave 4',
+            'Bedok Reservior Rd',
+            'Ubi Ave 2',
+            'Upp Paya Lebar Rd',
+            'Serangoon Ctrl',
+            'AMK Ave 8'
+        ]
+    },
     23: {
        1:  [
             'Tampines Ave 1',
@@ -16,6 +26,18 @@ let EDSData = {
             'Serangoon Rd',
             'Bedok North Rd',
             'Tampines Ave 1'
+        ]
+    },
+    29: {
+        1: [
+            'Tampines Ave 9',
+            'Old Tampines Rd',
+            'Upper Changi Rd North',
+            'Netheravon Rd',
+            'Changi Village Rd',
+            'Netheravon Rd',
+            'Upper Changi Rd North',
+            'Old Tampines Rd'
         ]
     },
     37: {
@@ -263,12 +285,12 @@ let EDSData = {
     },
     192: {
         2: [
-            'Jurong West St 62'
+            'Jurong West St 62',
             'Tuas Ave 1',
             'Tuas Ave 12',
             'Pioneer Rd'
         ]
-    }
+    },
     193: {
         2: [
             'Jurong West Ave 4',
@@ -277,7 +299,7 @@ let EDSData = {
             'Tuas Ave 5, 9',
             'Tuas West Dr'
         ]
-    }
+    },
     198: {
         1: [
             'Queensway',
@@ -337,6 +359,13 @@ let EDSData = {
             'Tampines Ave 2',
             'Tampines St 11',
          ]
+    },
+    293: {
+        1: [
+            'Tampines St 45&42',
+            'Tampines Ave 4&3',
+            'Tampines Ave 8&9'
+        ]
     },
     371: {
         1: [
