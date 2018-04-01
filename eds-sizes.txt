@@ -13,6 +13,20 @@ Mobi
     Front:
         Width: 144
         Height: 16
+    Side:
+        Width: 96
+        Height: 16
     Rear:
         Width: 32
         Height: 16
+
+Colour Mobi:
+    Front Small:
+        Width: 32
+        Height: 19
+    Front Large:
+        Width: 160
+        Height: 19
+    Side:
+        Width: 120
+        Height: 19
