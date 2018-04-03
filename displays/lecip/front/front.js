@@ -171,6 +171,8 @@ function determineFont(dest, svc, routeType) {
 
         return 'frontSmall';
     }
+    if (dest.length > 16)
+        return 'frontSmall';
     return 'frontFat';
 }
 
@@ -364,7 +366,7 @@ function doEDSScroll() {
             else
                 showSvc(currentSvc);
         } catch (e) {}
-        
+
         try {
             showDest(currentDest);
         } catch (e) {}
