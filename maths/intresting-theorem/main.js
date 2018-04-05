@@ -1,6 +1,7 @@
 let canvas, context;
 
 let quadPoints = [];
+let isMouseDown = false;
 
 class Point {
     constructor(x, y) {
@@ -28,7 +29,21 @@ function doResizing() {
 }
 
 function onMouseMoved(event) {
+    let absDiff = (a, b) => Math.abs(a - b);
     let mouseX = event.clientX, mouseY = event.clientY;
+
+    quadPoints.forEach((point, i, a) => {
+        if ((absDiff(point.x, mouseX) < 10 && absDiff(point.y, mouseY) < 10) || (+new Date() - point.lastMoveTime) < 500) {
+            if (isMouseDown) {
+                point.x = mouseX;
+                point.y = mouseY;
+
+                point.lastMoveTime = +new Date();
+
+                quadPoints = sortPoints(quadPoints);
+            }
+        }
+    })
 }
 
 function getCentrePoint(points) {
@@ -72,6 +87,11 @@ function initData() {
     for (let p = 0; p < 4; p++)
         quadPoints.push(Point.randomPoint(0, 0, width, height));
 
+    quadPoints.map(point => {
+        point.lastMoveTime = 0;
+        return point;
+    })
+
     quadPoints = sortPoints(quadPoints);
 }
 
@@ -111,6 +131,9 @@ function paintPoints(points, colour) {
 }
 
 function paintCanvas() {
+    context.fillStyle = 'white';
+    context.fillRect(0, 0, window.innerWidth, window.innerHeight);
+
     paintPoints(quadPoints, 'black');
     paintPoints(getMidpoints(quadPoints), 'red');
 
@@ -126,6 +149,8 @@ let onLoad = () => {
     initData();
 
     canvas.addEventListener('mousemove', onMouseMoved);
+    canvas.addEventListener('mousedown', () => isMouseDown = true);
+    canvas.addEventListener('mouseup', () => isMouseDown = false);
 
     paintCanvas();
 };
