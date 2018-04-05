@@ -27,7 +27,7 @@ let EDSData = {
         ]
     },
     23: {
-       1:  
+       1: [
             'Tampines Ave 1',
             'Bedok North Rd',
             'Bendemmer Rd',
@@ -395,10 +395,10 @@ let EDSData = {
     },
     386: {
         1: [
-            'Punggol Central'
-            'Edgefield Plains'
-            'Punggol East'
-            'Edgefield Plains'
+            'Punggol Central',
+            'Edgefield Plains',
+            'Punggol East',
+            'Edgefield Plains',
             'Punggol Central'
          ]
     },
@@ -477,7 +477,7 @@ let EDSData = {
             'Marymount Rd',
             'Ang Mo Kio Ave 5',
             'Ang Mo Kio Ave 6',
-            'Lentor Ave'
+            'Lentor Ave',
             'Yishun Ave 2'
         ]
     },
