@@ -201,6 +201,24 @@ let EDSData = {
             'Bukit Purmei Ave'
         ],
     },
+    124: {
+        1: [
+            'New Bridge Rd',
+            'Kampong Bahru Rd',
+            'Telok Blangah Hts',
+            'Moulmein Rd',
+            'Orchard Rd'
+        ],
+        2:  [
+            'Telok Blangah Hts',
+            'Telok Blangah Way',
+            '',
+            'Orchard Turn',
+            'Moulmein Rd',
+            'Telok Blangah Way',
+            'Kampong Bahru Rd',
+        ],
+    },
     127: {
         1: [
             'Tampines Concourse',
