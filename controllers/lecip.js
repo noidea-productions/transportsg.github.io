@@ -73,13 +73,18 @@ let dests = {
         routeType: 'TRUNK',
         loopPoint: 'Rochor'
     },
+    29: {
+        interchanges: ['>TAMPINES INT'],
+        routeType: 'TRUNK',
+        loopPoint: 'Changi Village'
+    },
     36: {
         interchanges: ['> TOMLINSON RD', '> CHANGI AIRPORT'],
         routeType: 'TRUNK',
         loopPoint: ''
     },
     69: {
-        interchanges: ['> BEDOK INT'],
+        interchanges: ['> BEDOK INT' , '> Tampines Int'],
         routeType: 'TRUNK',
         loopPoint: ''
     },
