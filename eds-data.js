@@ -13,13 +13,21 @@ let EDSData = {
             'Tampines Ave 4',
             'Bedok Reservior Rd',
             'Ubi Ave 2',
-            'Upp Paya Lebar Rd',
+            'Upper Paya Lebar Rd',
             'Serangoon Ctrl',
-            'AMK Ave 8'
+            'Ang Mo Kio Ave 8'
+        ],
+        2: [
+            'Ang Mo Kio Ave 8',
+            'Serangoon Ctrl',
+            'Upper Paya Lebar Rd',
+            'Ubi Ave 2',
+            'Bedok Reservior Rd',
+            'Tampines Ave 4'
         ]
     },
     23: {
-       1:  [
+       1: [
             'Tampines Ave 1',
             'Bedok North Rd',
             'Bendemmer Rd',
@@ -37,7 +45,8 @@ let EDSData = {
             'Changi Village Rd',
             'Netheravon Rd',
             'Upper Changi Rd North',
-            'Old Tampines Rd'
+            'Old Tampines Rd',
+            'Tampines Ave 9'
         ]
     },
     37: {
@@ -402,6 +411,15 @@ let EDSData = {
             'Fernvale Rd'
         ]
     },
+    386: {
+        1: [
+            'Punggol Central',
+            'Edgefield Plains',
+            'Punggol East',
+            'Edgefield Plains',
+            'Punggol Central'
+         ]
+    },
     800: {
         1: [
             'Yishun Ave 7',
@@ -477,6 +495,7 @@ let EDSData = {
             'Marymount Rd',
             'Ang Mo Kio Ave 5',
             'Ang Mo Kio Ave 6',
+            'Lentor Ave',
             'Yishun Ave 2'
         ]
     },
