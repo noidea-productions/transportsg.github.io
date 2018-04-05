@@ -1,7 +1,7 @@
 let canvas, context;
 
 let quadPoints = [];
-let isMouseDown = false;
+let isMouseDown = false, isMovingPoint = false;
 
 class Point {
     constructor(x, y) {
@@ -33,15 +33,17 @@ function onMouseMoved(event) {
     let mouseX = event.clientX, mouseY = event.clientY;
 
     quadPoints.forEach((point, i, a) => {
-        if ((absDiff(point.x, mouseX) < 10 && absDiff(point.y, mouseY) < 10) || (+new Date() - point.lastMoveTime) < 500) {
+        if ((absDiff(point.x, mouseX) < 10 && absDiff(point.y, mouseY) < 10) && !isMovingPoint || (+new Date() - point.lastMoveTime) < 500) {
             if (isMouseDown) {
+                isMovingPoint = true;
+
                 point.x = mouseX;
                 point.y = mouseY;
 
                 point.lastMoveTime = +new Date();
 
                 quadPoints = sortPoints(quadPoints);
-            }
+            } else isMovingPoint = false;
         }
     })
 }
@@ -134,8 +136,20 @@ function paintCanvas() {
     context.fillStyle = 'white';
     context.fillRect(0, 0, window.innerWidth, window.innerHeight);
 
+    let midpoints = getMidpoints(quadPoints);
+
     paintPoints(quadPoints, 'black');
-    paintPoints(getMidpoints(quadPoints), 'red');
+    paintPoints(midpoints, 'red');
+
+    context.strokeStyle = context.fillStyle = 'blue';
+    context.font = '30px roboto';
+
+    midpoints.forEach((midpoint, i) => {
+        let textX = midpoint.x - 10,
+            textY = midpoint.y - 7;
+
+        context.fillText(String.fromCharCode(65 + i), textX, textY);
+    });
 
     requestAnimationFrame(paintCanvas);
 }
