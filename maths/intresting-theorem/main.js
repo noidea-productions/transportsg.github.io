@@ -133,7 +133,7 @@ function paintPoints(points, colour) {
 }
 
 function calculateGradient(point1, point2) {
-    return (point2.y - point1.y) / (point2.x - point1.x);
+    return -(point2.y - point1.y) / (point2.x - point1.x);
 }
 
 function strokeGradients(midpoints) {
