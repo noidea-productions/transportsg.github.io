@@ -1,7 +1,7 @@
 let canvas, context;
 
 let quadPoints = [];
-let isMouseDown = false, isMovingPoint = false;
+let isMouseDown = false, movingPoint = -1;
 
 class Point {
     constructor(x, y) {
@@ -33,9 +33,9 @@ function onMouseMoved(event) {
     let mouseX = event.clientX, mouseY = event.clientY;
 
     quadPoints.forEach((point, i, a) => {
-        if ((absDiff(point.x, mouseX) < 10 && absDiff(point.y, mouseY) < 10) && !isMovingPoint || (+new Date() - point.lastMoveTime) < 500) {
+        if ((absDiff(point.x, mouseX) < 10 && absDiff(point.y, mouseY) < 10) && (movingPoint === -1 || movingPoint === i) || (+new Date() - point.lastMoveTime) < 500) {
             if (isMouseDown) {
-                isMovingPoint = true;
+                isMovingPoint = i;
 
                 point.x = mouseX;
                 point.y = mouseY;
@@ -43,7 +43,7 @@ function onMouseMoved(event) {
                 point.lastMoveTime = +new Date();
 
                 quadPoints = sortPoints(quadPoints);
-            } else isMovingPoint = false;
+            } else isMovingPoint = -1;
         }
     })
 }
@@ -132,6 +132,21 @@ function paintPoints(points, colour) {
     context.stroke();
 }
 
+function calculateGradient(point1, point2) {
+    return (point2.y - point1.y) / (point2.x - point1.x);
+}
+
+function strokeGradients(midpoints) {
+    let Mcd = calculateGradient(midpoints[2], midpoints[3]);
+    let Mba = calculateGradient(midpoints[1], midpoints[0]);
+
+    context.strokeStyle = context.fillStyle = 'black';
+    context.font = '20px roboto';
+
+    context.fillText('Gradient of CD: ' + Mcd, 10, 25);
+    context.fillText('Gradient of BA: ' + Mcd, 10, 55);
+}
+
 function paintCanvas() {
     context.fillStyle = 'white';
     context.fillRect(0, 0, window.innerWidth, window.innerHeight);
@@ -150,6 +165,8 @@ function paintCanvas() {
 
         context.fillText(String.fromCharCode(65 + i), textX, textY);
     });
+
+    strokeGradients(midpoints);
 
     requestAnimationFrame(paintCanvas);
 }
