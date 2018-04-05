@@ -139,12 +139,17 @@ function calculateGradient(point1, point2) {
 function strokeGradients(midpoints) {
     let Mcd = calculateGradient(midpoints[2], midpoints[3]);
     let Mba = calculateGradient(midpoints[1], midpoints[0]);
+    let Mcb = calculateGradient(midpoints[1], midpoints[2]);
+    let Mda = calculateGradient(midpoints[0], midpoints[3]);
 
     context.strokeStyle = context.fillStyle = 'black';
     context.font = '20px roboto';
 
     context.fillText('Gradient of CD: ' + Mcd, 10, 25);
     context.fillText('Gradient of BA: ' + Mcd, 10, 55);
+
+    context.fillText('Gradient of CB: ' + Mcb, 10, 85);
+    context.fillText('Gradient of DA: ' + Mda, 10, 115);
 }
 
 function paintCanvas() {
