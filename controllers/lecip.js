@@ -68,6 +68,11 @@ let dests = {
         routeType: 'TRUNK',
         loopPoint: ''
     },
+    21: {
+        interchanges: ['> ST MICHAEL\'S TER', '> PASIR RIS INT'],
+        routeType: 'TRUNK',
+        loopPoint: ''
+    },
     23: {
         interchanges: ['> TAMPINES INT'],
         routeType: 'TRUNK',
@@ -77,6 +82,11 @@ let dests = {
         interchanges: ['>TAMPINES INT'],
         routeType: 'TRUNK',
         loopPoint: 'Changi Village'
+    },
+    35: {
+         interchanges: ['> ALPS AVE', '> BEDOK INT'],
+         routeType: 'TRUNK',
+         loopPoint: ''
     },
     36: {
         interchanges: ['> TOMLINSON RD', '> CHANGI AIRPORT'],
@@ -88,6 +98,21 @@ let dests = {
         routeType: 'TRUNK',
         loopPoint: ''
     },
+    81: {
+        interchanges: ['> TAMPINES INT'],
+        routeType: 'TRUNK',
+        loopPoint: 'S\'goon Ctrl'
+    },
+    82: {
+        interchanges: ['> PUNGGOL INT'],
+        routeType: 'TRUNK',
+        loopPoint: 'S\'goon Ctrl'
+    },
+    83: {
+        interchanges: ['> PUNGGOL INT'],
+        routeType: 'TRUNK',
+        loopPoint: 'Sengkang SQ'
+    },
     89: {
         interchanges: ['> HOUGANG CENTRAL    ', 'CHANGI AIRFREIGHT CTR'],
         routeType: 'TRUNK',
@@ -97,6 +122,11 @@ let dests = {
         interchanges: ['> HOUGANG INT'],
         routeType: 'TRUNK',
         loopPoint: 'Marina Ctr'
+    },
+    125: {
+        interchanges: ['> SIMS AVE', '> ST MICHAEL\'S TER'],
+        routeType: 'TRUNK',
+        loopPoint: ''
     },
     181: {
         interchanges: ['> BOON LAY INT'],
