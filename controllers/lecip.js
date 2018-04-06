@@ -93,6 +93,16 @@ let dests = {
         routeType: 'TRUNK',
         loopPoint: ''
     },
+    '43M': {
+        interchanges: ['> PUNGGOL INT'],
+        routeType: 'TRUNK',
+        loopPoint: 'S\'goon Ctrl'
+    },
+    45: {
+        interchanges: ['> UPP EAST COAST TER', '> ANG MO KIO DEPOT'],
+        routeType: 'TRUNK',
+        loopPoint: ''
+    },
     69: {
         interchanges: ['> BEDOK INT', '> TAMPINES INT'],
         routeType: 'TRUNK',
