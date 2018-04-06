@@ -7,8 +7,8 @@ let EDSData = {
             'Flora Rd',
             'Tampines Ave 7'
         ]
-    },
-    6:  {
+     },
+     6:  {
         1: [
             'Pasir Ris Dr 3',
             'Loyang Ave',
@@ -53,6 +53,22 @@ let EDSData = {
             'Tampines Ave 1'
         ]
     },
+    25: {
+        1: [
+            'Changi Rd',
+            'Jalan Eunos',
+            'Hougang Ave 3',
+            'Hougang Ave 2',
+            'Ang Mo Kio Ave 3'
+        ],
+        2: [
+            'Ang Mo Kio Ave 3',
+            'Hougang Ave 2',
+            'Hougang Ave 3',
+            'Jalan Eunos',
+            'Sims Ave East
+        ]
+    },
     29: {
         1: [
             'Tampines Ave 9',
@@ -64,6 +80,17 @@ let EDSData = {
             'Upper Changi Rd North',
             'Old Tampines Rd',
             'Tampines Ave 9'
+        ]
+    },
+    35: {
+        1: [
+            'New Upper Changi Rd',
+            'Xilin Ave',
+            'Tanah Merah Ferry Rd'
+        ],
+        2: 'Tanah Merah Ferry Rd',
+           'Xilin Ave',
+           'New Upper Changi Rd'
         ]
     },
     37: {
@@ -324,6 +351,28 @@ let EDSData = {
             'Tampines Rd'
        ],
     },
+   143: {
+       2: [
+           'Thomson Rd',
+           'Orchard Rd',
+           'New Bridge Rd',
+           'Kampong Bahru Rd',
+           'Pasir Panjang Rd',
+           'West Coast Rd',
+           'Jurong Town Hall Rd'
+        ]
+   },
+   154: {
+       2: [
+           'Yuan Chin Rd',
+           'AYE',
+           'Commonwealth Ave West',
+           'Clementi Rd',
+           'Dunearn Rd',
+           'Jalan Toa Payoh',
+           'Paya Lebar Rd'
+        ]
+   },
    161: {
        1: [
            'Woodlands Ave 2',
