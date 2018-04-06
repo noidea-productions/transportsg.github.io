@@ -68,23 +68,73 @@ let dests = {
         routeType: 'TRUNK',
         loopPoint: ''
     },
+    21: {
+        interchanges: ['> ST MICHAEL\'S TER', '> PASIR RIS INT'],
+        routeType: 'TRUNK',
+        loopPoint: ''
+    },
     23: {
         interchanges: ['> TAMPINES INT'],
         routeType: 'TRUNK',
         loopPoint: 'Rochor'
+    },
+    29: {
+        interchanges: ['>TAMPINES INT'],
+        routeType: 'TRUNK',
+        loopPoint: 'Changi Village'
+    },
+    35: {
+         interchanges: ['> ALPS AVE', '> BEDOK INT'],
+         routeType: 'TRUNK',
+         loopPoint: ''
     },
     36: {
         interchanges: ['> TOMLINSON RD', '> CHANGI AIRPORT'],
         routeType: 'TRUNK',
         loopPoint: ''
     },
-    69: {
-        interchanges: ['> BEDOK INT'],
+    '43M': {
+        interchanges: ['> PUNGGOL INT'],
+        routeType: 'TRUNK',
+        loopPoint: 'S\'goon Ctrl'
+    },
+    45: {
+        interchanges: ['> UPP EAST COAST TER', '> ANG MO KIO DEPOT'],
         routeType: 'TRUNK',
         loopPoint: ''
     },
+    69: {
+        interchanges: ['> BEDOK INT', '> TAMPINES INT'],
+        routeType: 'TRUNK',
+        loopPoint: ''
+    },
+    81: {
+        interchanges: ['> TAMPINES INT'],
+        routeType: 'TRUNK',
+        loopPoint: 'S\'goon Ctrl'
+    },
+    82: {
+        interchanges: ['> PUNGGOL INT'],
+        routeType: 'TRUNK',
+        loopPoint: 'S\'goon Ctrl'
+    },
+    83: {
+        interchanges: ['> PUNGGOL INT'],
+        routeType: 'TRUNK',
+        loopPoint: 'Sengkang SQ'
+    },
     89: {
         interchanges: ['> HOUGANG CENTRAL    ', 'CHANGI AIRFREIGHT CTR'],
+        routeType: 'TRUNK',
+        loopPoint: ''
+    },
+    '107M': {
+        interchanges: ['> HOUGANG INT'],
+        routeType: 'TRUNK',
+        loopPoint: 'Marina Ctr'
+    },
+    125: {
+        interchanges: ['> SIMS AVE', '> ST MICHAEL\'S TER'],
         routeType: 'TRUNK',
         loopPoint: ''
     },
@@ -102,6 +152,16 @@ let dests = {
         interchanges: ['> KENT RIDGE TER', '> BUONA VISTA TER'],
         routeType: 'TRUNK',
         loopPoint: ''
+    },
+    291: {
+        interchanges: ['> TAMPINES INT'],
+        routeType: 'TOWNLINK',
+        loopPoint: 'Tampines St 83&33'
+    },
+    293: {
+        interchanges: ['> TAMPINES INT'],
+        routeType: 'TOWNLINK',
+        loopPoint: 'Tampines St 71&Ave 7'
     },
     807: {
         interchanges: ['> YISHUN INT'],
