@@ -188,7 +188,7 @@ let EDSData = {
             'Sengkang East Way',
             'Rivervale Dr',
             'Punggol Central'
-         ]
+         ],
        2: [
            'Punggol Central',
            'Rivervale Dr',
