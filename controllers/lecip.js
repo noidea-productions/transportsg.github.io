@@ -84,7 +84,7 @@ let dests = {
         loopPoint: ''
     },
     69: {
-        interchanges: ['> BEDOK INT' , '> Tampines Int'],
+        interchanges: ['> BEDOK INT', '> TAMPINES INT'],
         routeType: 'TRUNK',
         loopPoint: ''
     },
@@ -92,6 +92,11 @@ let dests = {
         interchanges: ['> HOUGANG CENTRAL    ', 'CHANGI AIRFREIGHT CTR'],
         routeType: 'TRUNK',
         loopPoint: ''
+    },
+    '107M': {
+        interchanges: ['> HOUGANG INT'],
+        routeType: 'TRUNK',
+        loopPoint: 'Marina Ctr'
     },
     181: {
         interchanges: ['> BOON LAY INT'],
@@ -107,6 +112,16 @@ let dests = {
         interchanges: ['> KENT RIDGE TER', '> BUONA VISTA TER'],
         routeType: 'TRUNK',
         loopPoint: ''
+    },
+    291: {
+        interchanges: ['> TAMPINES INT'],
+        routeType: 'TOWNLINK',
+        loopPoint: 'Tampines St 83&33'
+    },
+    293: {
+        interchanges: ['> TAMPINES INT'],
+        routeType: 'TOWNLINK',
+        loopPoint: 'Tampines St 71&Ave 7'
     },
     807: {
         interchanges: ['> YISHUN INT'],
