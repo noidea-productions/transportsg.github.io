@@ -73,7 +73,7 @@ let EDSData = {
             'Changi North St 1'
         ]
     },
-    43M: {
+    '43M': {
        1: [
            'Punggol Way',
            'Sengkang Central',
