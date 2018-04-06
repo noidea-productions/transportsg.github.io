@@ -8,10 +8,27 @@ let EDSData = {
             'Tampines Ave 7'
         ]
     },
+    6:  {
+        1: [
+            'Pasir Ris Dr 3',
+            'Loyang Ave',
+            'Loyang Way',
+            'Loyang Ave',
+            'Pasir Ris Dr 3'
+        ]
+    },
+    20: {
+        1: [
+            'Tampines Ave 5',
+            'Tampines Ave 2',
+            'Simei St 1',
+            'Changi Sth Ave 1&2'
+        ]
+    },
     22: {
         1: [
             'Tampines Ave 4',
-            'Bedok Reservior Rd',
+            'Bedok Reservoir Rd',
             'Ubi Ave 2',
             'Upper Paya Lebar Rd',
             'Serangoon Ctrl',
@@ -22,7 +39,7 @@ let EDSData = {
             'Serangoon Ctrl',
             'Upper Paya Lebar Rd',
             'Ubi Ave 2',
-            'Bedok Reservior Rd',
+            'Bedok Reservoir Rd',
             'Tampines Ave 4'
         ]
     },
@@ -56,6 +73,19 @@ let EDSData = {
             'Changi North St 1'
         ]
     },
+    '43M': {
+       1: [
+           'Punggol Way',
+           'Sengkang Central',
+           'Buangkok Green',
+           'Yio Chu Kang Rd',
+           'Serangoon Central',
+           'Yio Chu Kang Rd',
+           'Buangkok Green',
+           'Sengkang Central',
+           'Punggol Way'
+        ]
+    },
     46: {
        1: [
            'Tampines Ave 3',
@@ -68,6 +98,22 @@ let EDSData = {
             'Bedok North Rd',
             'Bedok Reservoir Rd',
             'Tampines Ave 3'
+        ]
+    },
+    59: {
+        1: [
+            'Loyang Ave',
+            'Tampines Ave 2',
+            'Bedok Reservoir Rd',
+            'Kaki Bukit Ave 1',
+            'Lor 1 Toa Payoh'
+        ],
+        2: [
+            'Lor 1 Toa Payoh',
+            'Kaki Bukit Ave 1',
+            'Bedok Reservoir Rd',
+            'Tampines Ave 2',
+            'Loyang Ave',
         ]
     },
     61: {
@@ -102,6 +148,24 @@ let EDSData = {
             'Bedok Reservoir Rd'
         ]
     },
+    72: {
+        1: [
+            'Tampines Ave 9',
+            'Tampines Ave 10',
+            'Tampines Rd',
+            'Hougang Central',
+            'Hougang Ave 9',
+            'Ang Mo Kio Ave 5'
+        ],
+        2: [
+            'Ang Mo Kio Ave 5',
+            'Hougang Ave 9',
+            'Hougang Central',
+            'Tampines Rd',
+            'Tampines Ave 10',
+            'Tampines Ave 9'
+         ]
+    },            
     77: {
         1: [
             'Stamford Rd',
@@ -117,15 +181,39 @@ let EDSData = {
             'Orchard Rd'
         ]
     },
-    89:  {
+    85: {
+        1: [
+            'Yishun Ave 2',
+            'Sengkang West Way',
+            'Sengkang East Way',
+            'Rivervale Dr',
+            'Punggol Central'
+         ],
        2: [
-           'Hougang Ave 10',
-           'Compassvale Rd',
-           'Pasir Ris Dr 1',
-           'Pasir Ris Dr 3',
-           'Loyang Ave',
-           'Airline Rd'
-       ]
+           'Punggol Central',
+           'Rivervale Dr',
+           'Sengkang East Way',
+           'Sengkang West Way',
+           'Yishun Ave 2'
+         ]
+    },
+    89: {
+        2: [
+            'Hougang Ave 10',
+            'Compassvale Rd',
+            'Pasir Ris Dr 1',
+            'Pasir Ris Dr 3',
+            'Loyang Ave',
+            'Airline Rd'
+        ]
+    },
+    90: {
+        1: [
+            'Lor 6 Toa Payoh',
+            'Jalan Toa Payoh',
+            'Macpherson Rd',
+            'Airport Rd',
+        ]
     },
     95: {
         1: [
@@ -348,6 +436,14 @@ let EDSData = {
             'C\'Wealth Ave West'
         ]
     },
+    228: {
+        1: [
+            'Bedok North St 1',
+            'Bedok North Ave 3',
+            'Bedok Reservoir Rd',
+            'Bedok North Ave 3'
+        ]
+    },
     240: {
         1: [
             'Jalan Ahmad Ibrahim',
@@ -377,6 +473,16 @@ let EDSData = {
         1: [
             'Pioneer Rd Nth'
         ]
+    },
+    291: {
+        1: [
+            'Tampines Ave 5',
+            'Tampines St 83',
+            'Tampines St 81',
+            'Tampines St 21',
+            'Tampines St 32',
+            'Tampines St 21'
+         ]
     },
     292: {
         1: [
@@ -622,7 +728,7 @@ let EDSData = {
 };
 
 let SWTs = {
-    '3A': 'Pasir Ris Dr 3;Pasir Ris MRT',
+    '3A': 'Pasir Ris Dr 12;Blk 747A',
     '7A': 'Orchard Blvd;Bef Orchard Stn Exit B',
     '7B': 'Orchard Rd;Dhoby Ghaut Stn',
     '9A': 'Loyang Ave;Blk 149A',
