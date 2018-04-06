@@ -11,7 +11,7 @@ let EDSData = {
     22: {
         1: [
             'Tampines Ave 4',
-            'Bedok Reservior Rd',
+            'Bedok Reservoir Rd',
             'Ubi Ave 2',
             'Upper Paya Lebar Rd',
             'Serangoon Ctrl',
@@ -22,7 +22,7 @@ let EDSData = {
             'Serangoon Ctrl',
             'Upper Paya Lebar Rd',
             'Ubi Ave 2',
-            'Bedok Reservior Rd',
+            'Bedok Reservoir Rd',
             'Tampines Ave 4'
         ]
     },
