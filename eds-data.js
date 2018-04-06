@@ -8,6 +8,15 @@ let EDSData = {
             'Tampines Ave 7'
         ]
     },
+    6:  {
+        1: [
+            'Pasir Ris Dr 3'
+            'Loyang Ave'
+            'Loyang Way'
+            'Loyang Ave'
+            'Pasir Ris Dr 3'
+        ]
+    },
     22: {
         1: [
             'Tampines Ave 4',
