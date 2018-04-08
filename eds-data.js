@@ -250,6 +250,10 @@ let EDSData = {
         ]
     },
     99: {
+        1: [
+            'Jurong East Ave 1',
+            'Upper Jurong Rd'
+        ],
         2: [
             'Upper Jurong Rd',
             'Jurong East Ave 1',
@@ -449,6 +453,14 @@ let EDSData = {
             'Jurong West St 64'
         ]
     },
+    182: {
+        1: [
+            'Tuas Sth Ave 3',
+            'Jln Ahmad Ibrahim',
+            'Tuas Sth Ave 3',
+            'Tuas Sth Ave 9'
+        ]
+    },
     '182M': {
         1: [
             'Jln Ahmad Ibrahim'
@@ -471,6 +483,9 @@ let EDSData = {
         ]
     },
     193: {
+        1: [
+            'Tuas Ave 9, 5'
+        ],
         2: [
             'Jurong West Ave 4',
             'Lok Yang Way',
@@ -520,7 +535,7 @@ let EDSData = {
     241: {
         1: [
             'Jurong West St 63',
-            'Pionner Rd North',
+            'Pioneer Rd North',
             'Jurong West St 91'
         ]
     },
@@ -538,9 +553,46 @@ let EDSData = {
             'Pioneer Rd Nth'
         ]
     },
+    252: {
+        1: [
+            'Joo Koon Circle',
+            'Enterprise Rd',
+        ]
+    },
+    253: {
+        1: [
+            'Pioneer Rd',
+            'Benoi Rd',
+            'Pioneer Rd',
+            'Benoi Sector'
+        ]
+    },
+    254: {
+        1: [
+            'Tuas Rd',
+            'Tuas Basin Link',
+            'Benoi Rd',
+            'Pioneer Rd'
+        ]
+    },
+    255: {
+        1: [
+            'Gul Ave',
+            'Gul Circle',
+            'Gul Cres'
+        ]
+    },
+    257: {
+        1: [
+            'Pioneer Sect. 2',
+            'Pioneer Sect. 1',
+            'Benoi Rd',
+            'Gul Rd'
+        ]
+    },
     258: {
         1: [
-            'Pionner Rd Nth',
+            'Pioneer Rd Nth',
             'Jurong West St 61, 81, 75',
             'Jln Ahmad Ibrahim'
         ]
@@ -734,6 +786,15 @@ let EDSData = {
             'Bt Gombak MRT',
             'Bt Batok West Ave 7',
             'Bt Batok St 34'
+        ]
+    },
+    974: {
+        1: [
+            'Upp Jurong Rd',
+            'Jurong West St 63',
+            'Jln Boon Lay',
+            'Choa Chu Kang MRT',
+            'Choa Chu Kang Way'
         ]
     },
     990: {

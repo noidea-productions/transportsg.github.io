@@ -148,6 +148,11 @@ let dests = {
         routeType: 'TRUNK',
         loopPoint: 'Jurong West.'
     },
+    182: {
+        interchanges: ['> JOO KOON INT'],
+        routeType: 'INDUSTRIAL',
+        loopPoint: 'Tuas Sth'
+    },
     179: {
         interchanges: ['> BOON LAY INT'],
         routeType: 'TRUNK',
@@ -157,6 +162,11 @@ let dests = {
         interchanges: ['> KENT RIDGE TER', '> BUONA VISTA TER'],
         routeType: 'TRUNK',
         loopPoint: ''
+    },
+    257: {
+        interchanges: ['> JOO KOON INT'],
+        routeType: 'INDUSTRIAL',
+        loopPoint: 'Pioneer Sec 2'
     },
     291: {
         interchanges: ['Tampines St 83&33             '],

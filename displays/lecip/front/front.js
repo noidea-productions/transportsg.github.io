@@ -161,7 +161,9 @@ function determineFont(dest, svc, routeType) {
     }
     if (routeType === 'INDUSTRIAL') {
         if (!dest.startsWith('>')) {
-            return 'frontSmallDest';
+            if (dest.length > 24)
+                return 'frontSmallDest';
+            return 'frontSmall';
         } else return 'frontFat';
     }
     if (dest.includes('-')) {
@@ -397,7 +399,7 @@ function run106Easter() {
 }
 
 function shortenRoadName(roadName) {
-    return roadName.replace('Jurong', 'Jur').replace('West ', 'W.').replace('East ', 'E.');
+    return roadName.replace('Jurong', 'Jur').replace('West ', 'W.').replace('East ', 'E.').replace('Ave', 'A.');
 }
 
 let edsScrollInterval = 0;
@@ -479,11 +481,12 @@ function determineDest(dest, svc, routeType, loopPoint) {
         return dest;
     }
     if (routeType === 'INDUSTRIAL') {
-        if (svc.startsWith('25') && svc.length === 3) {
+        if (svc !== '252' && svc.startsWith('25') || svc.startsWith('18') && svc.length === 3) {
             return dest.slice(2) + '-' + loopPoint;
         } else if (svc.startsWith('24') && svc.length === 3) {
             return dest;
         }
+        return dest;
     }
     if (routeType === 'TOWNLINK') {
         if (svc.startsWith('8') && svc.length === 3) { // Yishun svc
