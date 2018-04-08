@@ -405,6 +405,18 @@ let EDSData = {
            'Paya Lebar Rd'
         ]
    },
+   156: {
+       1: [
+           'Ulu Pandan Rd',
+           'Sixth Ave',
+           'Dunearn Rd',
+           'Thomson Rd',
+           'Bishan Rd',
+           'Yio Chu Kang Rd',
+           'Buangkok Green',
+           'Sengkang East Rd'
+       ]
+   },
    161: {
        1: [
            'Woodlands Ave 2',
