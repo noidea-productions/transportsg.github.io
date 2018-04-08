@@ -948,7 +948,7 @@ let SWTs = {
 
 let MRTShuttles = {
     1: ['Buona Vista', 'Raffles Place'],
-    2: ['Joo Koon', 'Buona Vista'],
+    2: ['Buona Vista', 'Joo Koon'],
     3: ['Tuas Link', 'Joo Koon'],
     '5E': ['Outram Park', 'Boon Lay'],
     6: ['Raffles Place', 'Paya Lebar'],

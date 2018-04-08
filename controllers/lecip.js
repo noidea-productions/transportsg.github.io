@@ -311,7 +311,8 @@ function onEntPressed() {
         if (currentSvc.length === 4 && currentSvc.startsWith('4')) {
             triggerUpdate({
                 type: 'mrt-shuttle',
-                code: currentSvc.slice(1)
+                code: currentSvc.slice(1),
+                direction: false
             });
 
             currentDest = '';
@@ -387,6 +388,16 @@ function onClrPressed() {
 
 function onF4Pressed() {
     if (currentState === 'home') {
+        if (currentSvc.length === 4 && currentSvc.startsWith('4')) {
+            currentDir = !currentDir;
+
+            triggerUpdate({
+                type: 'mrt-shuttle',
+                code: currentSvc.slice(1),
+                direction: currentDir
+            });
+            return;
+        }
         if (!(currentSvc in dests)) return;
         if (!dests[currentSvc].interchanges) return; // SWT
         if (currentDest === 'PREMIUM' || currentDir === 'NIGHT OWL' || currentDest === 'CITY DIRECT' || dests[currentSvc].routeType === 'EXPRESS') return;

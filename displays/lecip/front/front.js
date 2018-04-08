@@ -428,6 +428,7 @@ function setSWT(event) {
 
 function handleMRTShuttle(event) {
     let shuttleID = parseInt(event.code).toString();
+    let direction = Number(event.direction);
     clearInterval(edsScrollInterval);
 
     let routeType = 'SHUTTLE';
@@ -439,7 +440,7 @@ function handleMRTShuttle(event) {
 
     clearLEDs();
     writeTextCentered(routeType + ' ' + parseInt(shuttleID), 'frontSmall', 1, 11);
-    writeTextCentered(routeDetails[0] + ' - ' + routeDetails[1], 'frontSmall', 1, 3);
+    writeTextCentered(routeDetails[0 ^ direction] + ' - ' + routeDetails[1 ^ direction], 'frontSmall', 1, 3);
 
 }
 
