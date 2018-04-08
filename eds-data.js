@@ -66,7 +66,7 @@ let EDSData = {
             'Hougang Ave 2',
             'Hougang Ave 3',
             'Jalan Eunos',
-            'Sims Ave East
+            'Sims Ave East'
         ]
     },
     29: {
