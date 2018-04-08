@@ -138,6 +138,11 @@ let dests = {
         routeType: 'TRUNK',
         loopPoint: ''
     },
+    '163M': {
+        interchanges: ['> SENGKANG W. AVE', '> SENGKANG INT'],
+        routeType: 'TRUNK',
+        loopPoint: ''
+    },
     181: {
         interchanges: ['> BOON LAY INT'],
         routeType: 'TRUNK',
