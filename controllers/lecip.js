@@ -308,6 +308,19 @@ function onEntPressed() {
             return;
         }
 
+        if (currentSvc.length === 4 && currentSvc.startsWith('4')) {
+            triggerUpdate({
+                type: 'mrt-shuttle',
+                code: currentSvc.slice(1)
+            });
+
+            currentDest = '';
+
+            svcBeingInputted = [0, 0, 0, 0];
+            currentState = 'home';
+            return;
+        }
+
         if (currentSvc === '814') currentSvc = 'CT8';
         if (currentSvc === '815') currentSvc = 'CT18';
         if (currentSvc === '816') currentSvc = 'CT28';

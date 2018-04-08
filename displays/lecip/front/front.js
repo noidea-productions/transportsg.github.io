@@ -325,6 +325,12 @@ window.addEventListener('message', event => {
                 run106Easter();
                 break;
 
+            case 'mrt-shuttle':
+                lastState = 'mrtShuttle';
+                lastEvent = eventData;
+                handleMRTShuttle(eventData);
+                break;
+
             case 'led-invert':
                 ledsInverted = eventData.state;
 
@@ -418,6 +424,23 @@ function setSWT(event) {
     clearInterval(edsScrollInterval);
 
     doEDSScroll();
+}
+
+function handleMRTShuttle(event) {
+    let shuttleID = parseInt(event.code).toString();
+    clearInterval(edsScrollInterval);
+
+    let routeType = 'SHUTTLE';
+    if (!MRTShuttles[shuttleID] && !!MRTShuttles[shuttleID + 'E']) shuttleID = shuttleID + 'E', routeType = 'EXPRESS';
+
+    let routeDetails = MRTShuttles[shuttleID].map(e => e.toUpperCase());
+
+    console.log(routeType, routeDetails);
+
+    clearLEDs();
+    writeTextCentered(routeType + ' ' + parseInt(shuttleID), 'frontSmall', 1, 11);
+    writeTextCentered(routeDetails[0] + ' - ' + routeDetails[1], 'frontSmall', 1, 3);
+
 }
 
 function handleSpecialCode(event) {

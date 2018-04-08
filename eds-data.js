@@ -945,3 +945,16 @@ let SWTs = {
     '502A': 'Ctrl Blvd;Downtown Stn',
     '518A': 'Bayfront Ave;Opp MBS MICE'
 }
+
+let MRTShuttles = {
+    1: ['Buona Vista', 'Raffles Place'],
+    2: ['Joo Koon', 'Buona Vista'],
+    3: ['Tuas Link', 'Joo Koon'],
+    '5E': ['Outram Park', 'Boon Lay'],
+    6: ['Raffles Place', 'Paya Lebar'],
+    7: ['Pasir Ris', 'Paya Lebar'],
+    8: ['Changi Airport', 'Tanah Merah'],
+    '12E': ['Changi Airport', 'Bugis'],
+    '13E': ['Bedok', 'Bedok North'],
+    '15E': ['Clementi', 'Beauty World']
+}
