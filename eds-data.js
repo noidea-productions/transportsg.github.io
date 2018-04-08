@@ -524,6 +524,13 @@ let EDSData = {
             'Pioneer Rd Nth'
         ]
     },
+    258: {
+        1: [
+            'Pionner Rd Nth',
+            'Jurong West St 61, 81, 75',
+            'Jln Ahmad Ibrahim'
+        ]
+    },
     291: {
         1: [
             'Tampines Ave 5',
