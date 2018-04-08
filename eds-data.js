@@ -88,7 +88,8 @@ let EDSData = {
             'Xilin Ave',
             'Tanah Merah Ferry Rd'
         ],
-        2: 'Tanah Merah Ferry Rd',
+        2: [
+           'Tanah Merah Ferry Rd',
            'Xilin Ave',
            'New Upper Changi Rd'
         ]
