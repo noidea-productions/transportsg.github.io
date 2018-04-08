@@ -79,7 +79,7 @@ function bootupSequence() {
 }
 
 function getTextWidth(chars, font, spaceWidth) {
-    return chars.map(char => charSet[font][char][0].length + spaceWidth).reduce((a, b) => a + b, 0) - spaceWidth;
+    return chars.map(char => !!charSet[font][char] ? charSet[font][char][0].length + spaceWidth : spaceWidth + 4).reduce((a, b) => a + b, 0) - spaceWidth;
 }
 
 function writeSmallText(text, yPos, svcWidth) {
@@ -253,9 +253,11 @@ function setLEDState(x, y, state) {
 
 function showChar(char, type, dx, dy) {
     if (!(type in charSet)) return;
-    if (!(char in charSet[type])) return;
 
     let charData = charSet[type][char];
+    if (!charData) {
+        charData = charSet['unknown-char'];
+    }
 
     let charWidth = charData[0].length;
     let charHeight = charData.length;
