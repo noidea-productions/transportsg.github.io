@@ -154,14 +154,14 @@ let dests = {
         loopPoint: ''
     },
     291: {
-        interchanges: [''],
-        routeType: 'TOWNLINK',
-        loopPoint: 'Tampines St 83&33'
+        interchanges: ['Tampines St 83&33             '],
+        routeType: 'TRUNK',
+        loopPoint: ''
     },
     293: {
-        interchanges: [''],
-        routeType: 'TOWNLINK',
-        loopPoint: 'Tampines St 71&Ave 7'
+        interchanges: ['Tampines St 71&Ave 7          '],
+        routeType: 'TRUNK',
+        loopPoint: ''
     },
     807: {
         interchanges: ['> YISHUN INT'],

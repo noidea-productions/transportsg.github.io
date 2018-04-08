@@ -193,7 +193,7 @@ let EDSData = {
             'Tampines Ave 10',
             'Tampines Ave 9'
          ]
-    },            
+    },
     77: {
         1: [
             'Stamford Rd',
