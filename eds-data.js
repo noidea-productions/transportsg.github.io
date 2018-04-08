@@ -954,7 +954,7 @@ let MRTShuttles = {
     6: ['Raffles Place', 'Paya Lebar'],
     7: ['Pasir Ris', 'Paya Lebar'],
     8: ['Changi Airport', 'Tanah Merah'],
-    '12E': ['Changi Airport', 'Bugis'],
+    '12E': ['Changi Airport T3', 'Bugis'],
     '13E': ['Bedok', 'Bedok North'],
     '15E': ['Clementi', 'Beauty World']
 }
