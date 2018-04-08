@@ -133,6 +133,11 @@ let dests = {
         routeType: 'TRUNK',
         loopPoint: 'Marina Ctr'
     },
+    120: {
+        interchanges: ['KG BARHU TER'],
+        routeType: 'TRUNK',
+        loopPoint: 'T. Blangah Hts'
+    },
     121: {
         interchanges: ['KG BARHU TER'],
         routeType: 'TRUNK',
