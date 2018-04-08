@@ -161,7 +161,7 @@ function determineFont(dest, svc, routeType) {
     }
     if (routeType === 'INDUSTRIAL') {
         if (!dest.startsWith('>')) {
-            if (dest.length > 24)
+            if (dest.length > 23)
                 return 'frontSmallDest';
             return 'frontSmall';
         } else return 'frontFat';

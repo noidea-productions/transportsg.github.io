@@ -456,14 +456,14 @@ let EDSData = {
     182: {
         1: [
             'Tuas Sth Ave 3',
-            'Jln Ahmad Ibrahim',
+            'Jalan Ahmad Ibrahim',
             'Tuas Sth Ave 3',
             'Tuas Sth Ave 9'
         ]
     },
     '182M': {
         1: [
-            'Jln Ahmad Ibrahim'
+            'Jalan Ahmad Ibrahim'
         ]
     },
     189: {
@@ -475,6 +475,13 @@ let EDSData = {
         ]
     },
     192: {
+        1: [
+            'Pioneer Rd',
+            'Tuas Ave 1',
+            'Jalan Ahmad Ibrahim',
+            'Upp Jurong Rd',
+            'Jurong West St 62'
+        ],
         2: [
             'Jurong West St 62',
             'Tuas Ave 1',
@@ -594,7 +601,7 @@ let EDSData = {
         1: [
             'Pioneer Rd Nth',
             'Jurong West St 61, 81, 75',
-            'Jln Ahmad Ibrahim'
+            'Jalan Ahmad Ibrahim'
         ]
     },
     291: {
