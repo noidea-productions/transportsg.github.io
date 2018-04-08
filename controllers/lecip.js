@@ -133,6 +133,11 @@ let dests = {
         routeType: 'TRUNK',
         loopPoint: 'Marina Ctr'
     },
+    121: {
+        interchanges: ['KG BARHU TER'],
+        routeType: 'TRUNK',
+        loopPoint: 'T.Blangah Rise'
+    },
     125: {
         interchanges: ['> SIMS AVE', '> ST MICHAEL\'S TER'],
         routeType: 'TRUNK',
@@ -167,6 +172,11 @@ let dests = {
         interchanges: ['Tampines St 71&Ave 7          '],
         routeType: 'TRUNK',
         loopPoint: ''
+    },
+    405: {
+        interchanges: ['> BOON LAY INT'],
+        routeType: 'TRUNK',
+        loopPoint: 'Old CCK Rd'
     },
     807: {
         interchanges: ['> YISHUN INT'],
