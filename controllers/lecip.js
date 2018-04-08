@@ -103,6 +103,11 @@ let dests = {
         routeType: 'TRUNK',
         loopPoint: ''
     },
+    64: {
+        interchanges: ['> SIMS PLACE', '> MEI LING ST'],
+        routeType: 'TRUNK',
+        loopPoint: ''
+    },
     69: {
         interchanges: ['> BEDOK INT', '> TAMPINES INT'],
         routeType: 'TRUNK',

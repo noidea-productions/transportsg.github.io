@@ -156,6 +156,24 @@ let EDSData = {
             'Ubi Ave 2'
         ]
     },
+    64: {
+        1: [
+            'Alexandra Rd',
+            'Tiong Bahru Rd',
+            'Clemanceau Ave',
+            'Selegie Rd',
+            'Serangoon Rd',
+            'Aljunied Rd'
+        ],
+        2: [
+            'Aljunied Rd',
+            'Bendemeer Rd',
+            'Jalan Besar',
+            'Clemanceau Ave',
+            'Tiong Bahru Rd',
+            'Stirling Rd'
+        ]
+    },
     65: {
         2: [
             'Bedok Reservoir Rd',
