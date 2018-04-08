@@ -249,6 +249,15 @@ let EDSData = {
             'Holland Ave'
         ]
     },
+    99: {
+        2: [
+            'Upper Jurong Rd',
+            'Jurong East Ave 1',
+            'Jurong West Ave 1',
+            'Jurong West Ave 4',
+            'Jurong West St 91'
+        ]
+    },
     103: {
         2: [
             'Yio Chu Kang Rd',
@@ -438,6 +447,11 @@ let EDSData = {
     181: {
         1: [
             'Jurong West St 64'
+        ]
+    },
+    '182M': {
+        1: [
+            'Jln Ahmad Ibrahim'
         ]
     },
     189: {
