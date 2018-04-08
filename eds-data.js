@@ -509,7 +509,11 @@ let EDSData = {
     },
     193: {
         1: [
-            'Tuas Ave 9, 5'
+            'Tuas West Dr',
+            'Tuas Ave 9, 5',
+            'Tuas Rd',
+            'Lok Yang Way',
+            'Jurong West Ave 4'
         ],
         2: [
             'Jurong West Ave 4',
