@@ -262,6 +262,8 @@ function handleSpecialCode(event) {
 function handleSvcUpdate(event) {
     let svc = event.svc;
 
+    if (svc === '609') svc = 'DTL';
+
     console.log('rear: change to ' + svc)
 
     clearLEDs();
