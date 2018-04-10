@@ -442,6 +442,8 @@ function F3MouseUp() {
     let currTime = performance.now();
     let holdTime = currTime - lastF3DownTime;
 
+    console.log(holdTime);
+
     if (holdTime < 500) {
         onF3Pressed();
     } else {
@@ -552,8 +554,13 @@ function main() {
     document.getElementById('keypad-ent').addEventListener('click', onEntPressed);
     document.getElementById('keypad-clr').addEventListener('click', onClrPressed);
     document.getElementById('keypad-f4').addEventListener('click', onF4Pressed);
-    document.getElementById('keypad-f3').addEventListener('mousedown', F3MouseDown);
-    document.getElementById('keypad-f3').addEventListener('mouseup', F3MouseUp);
+    if (navigator.userAgent.toLowerCase().includes('mobile')) {
+        document.getElementById('keypad-f3').addEventListener('touchstart', F3MouseDown);
+        document.getElementById('keypad-f3').addEventListener('touchend', F3MouseUp);
+    } else {
+        document.getElementById('keypad-f3').addEventListener('mousedown', F3MouseDown);
+        document.getElementById('keypad-f3').addEventListener('mouseup', F3MouseUp);
+    }
     document.getElementById('keypad-up').addEventListener('click', onUpPressed);
     document.getElementById('keypad-down').addEventListener('click', onDownPressed);
 }
