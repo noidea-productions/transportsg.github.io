@@ -432,6 +432,25 @@ function onF4Pressed() {
     }
 }
 
+let lastF3DownTime = 0;
+
+function F3MouseDown() {
+    lastF3DownTime = performance.now();
+}
+
+function F3MouseUp() {
+    let currTime = performance.now();
+    let holdTime = currTime - lastF3DownTime;
+
+    if (holdTime < 500) {
+        onF3Pressed();
+    } else {
+        onF3LongPress();
+    }
+
+    lastF3DownTime = currTime;
+}
+
 function onF3Pressed() {
     if (currentState === 'home') {
         ledsInverted = !ledsInverted;
@@ -439,6 +458,15 @@ function onF3Pressed() {
             type: 'led-invert',
             state: ledsInverted
         });
+    }
+}
+
+function onF3LongPress() {
+    if (currentState === 'home') {
+        triggerUpdate({
+            type: 'char-test'
+        });
+        console.log('Char test');
     }
 }
 
@@ -524,7 +552,8 @@ function main() {
     document.getElementById('keypad-ent').addEventListener('click', onEntPressed);
     document.getElementById('keypad-clr').addEventListener('click', onClrPressed);
     document.getElementById('keypad-f4').addEventListener('click', onF4Pressed);
-    document.getElementById('keypad-f3').addEventListener('click', onF3Pressed);
+    document.getElementById('keypad-f3').addEventListener('mousedown', F3MouseDown);
+    document.getElementById('keypad-f3').addEventListener('mouseup', F3MouseUp);
     document.getElementById('keypad-up').addEventListener('click', onUpPressed);
     document.getElementById('keypad-down').addEventListener('click', onDownPressed);
 }

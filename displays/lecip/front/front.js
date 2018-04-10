@@ -331,6 +331,12 @@ window.addEventListener('message', event => {
                 handleMRTShuttle(eventData);
                 break;
 
+            case 'char-test':
+                lastState = 'charTest';
+                lastEvent = eventData;
+                runCharTest(eventData);
+                break;
+
             case 'led-invert':
                 ledsInverted = eventData.state;
 
@@ -339,6 +345,37 @@ window.addEventListener('message', event => {
         }
     }
 });
+//function writeText(text, font, spaceWidth, xPos, yPos, shoudClearLEDs)
+//function getTextWidth(chars, font, spaceWidth)
+
+function runCharTest() {
+    clearLEDs();
+    clearInterval(edsScrollInterval);
+
+    let hidden = ['106Easter', 'images', 'unknown-char'];
+
+    let currentX = width + 10;
+    let fontsets = Object.keys(charSet).filter(e => !hidden.includes(e)).sort();
+    let currentFontset = fontsets.shift();
+
+    let allChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890';
+    let textWidth = getTextWidth([...allChars], currentFontset, 1);
+
+    edsScrollInterval = setInterval(() => {
+        writeText(allChars, currentFontset, 1, --currentX, 0, true);
+
+        if (currentX < -textWidth) {
+            currentFontset = fontsets.shift();
+
+            if (currentFontset === undefined) {
+                clearInterval(edsScrollInterval);
+                return;
+            }
+            textWidth = getTextWidth([...allChars], currentFontset, 1);
+            currentX = width + 10;
+        }
+    }, 1000 / 120);
+}
 
 function doEDSScroll() {
     clearLEDs();
@@ -475,7 +512,7 @@ function handleSpecialCode(event) {
             break;
         case '7777':
             clearLEDs();
-            writeTextCentered('FREE BRIDGING BUS', 'frontThin', 2);
+            writeTextCentered('FREE BRIDGING BUS', 'medium', 2);
             break;
         case '9999':
             clearLEDs();
