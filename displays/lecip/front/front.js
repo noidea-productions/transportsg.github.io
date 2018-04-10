@@ -9,7 +9,7 @@ let ledCache = [];
 let ledsInverted = false;
 
 function generateLEDCssCode() {
-    let pixelSize = Math.ceil(window.innerWidth * 0.0033);
+    let pixelSize = Math.ceil(window.innerWidth * 0.005);
 
     let cssData =
 `
