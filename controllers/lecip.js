@@ -80,7 +80,7 @@ let dests = {
     },
     23: {
         interchanges: ['> TAMPINES INT'],
-        routeType: 'TRUNK',
+        routeType: 'TOWNLINK',
         loopPoint: 'Rochor'
     },
     29: {
