@@ -70,8 +70,8 @@ let dests = {
     },
     20: {
         interchanges: ['> TAMPINES INT'],
-        routeType: 'TRUNK',
-        loopPoint: 'Changi Biz Park'
+        routeType: 'TOWNLINK',
+        loopPoint: 'Changi Biz Pk'
     },
     21: {
         interchanges: ['> ST MICHAEL\'S TER', '> PASIR RIS INT'],
