@@ -68,6 +68,11 @@ let dests = {
         routeType: 'TRUNK',
         loopPoint: ''
     },
+    20: {
+        interchanges: ['> TAMPINES INT'],
+        routeType: 'TRUNK',
+        loopPoint: 'Changi Biz Park'
+    },
     21: {
         interchanges: ['> ST MICHAEL\'S TER', '> PASIR RIS INT'],
         routeType: 'TRUNK',
@@ -153,10 +158,25 @@ let dests = {
         routeType: 'TRUNK',
         loopPoint: ''
     },
+    161: {
+        interchanges: ['> WOODLANDS INT', '> HOUGANG CTRL INT'],
+        routeType: 'TRUNK',
+        loopPoint: ''
+    },
     '163M': {
         interchanges: ['> SENGKANG W. AVE', '> SENGKANG INT'],
         routeType: 'TRUNK',
         loopPoint: ''
+    },
+    168: {
+        interchanges: ['> WOODLANDS INT', '> BEDOK INT'],
+        routeType: 'TRUNK',
+        loopPoint: ''
+    },
+    179: {
+        interchanges: ['> BOON LAY INT'],
+        routeType: 'TRUNK',
+        loopPoint: 'NTU',
     },
     181: {
         interchanges: ['> BOON LAY INT'],
@@ -167,11 +187,6 @@ let dests = {
         interchanges: ['> JOO KOON INT'],
         routeType: 'INDUSTRIAL',
         loopPoint: 'Tuas Sth'
-    },
-    179: {
-        interchanges: ['> BOON LAY INT'],
-        routeType: 'TRUNK',
-        loopPoint: 'NTU'
     },
     200: {
         interchanges: ['> KENT RIDGE TER', '> BUONA VISTA TER'],
