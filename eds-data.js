@@ -418,14 +418,14 @@ let EDSData = {
        ]
    },
    161: {
-       1: [
+       2: [
            'Woodlands Ave 2',
            'Sengkang East Way',
            'Sengkang East Rd',
            'Hougang Ave 4',
            'Hougang Ave 8'
        ],
-       2: [
+       1: [
            'Hougang Ave 8',
            'Hougang Ave 4',
            'Sengkang East Rd',
@@ -434,14 +434,14 @@ let EDSData = {
         ]
    },
    168: {
-       2: [
+       1: [
            'Bedok North Ave 3',
            'Tampines Ave 4',
            'Tampines Ave 10',
            'Jalan Kayu',
            'Woodlands Ave 2'
        ],
-       1: [
+       2: [
           'Woodlands Ave 2',
           'Jalan Kayu',
           'Tampines Ave 10',
