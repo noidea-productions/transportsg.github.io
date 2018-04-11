@@ -63,6 +63,11 @@ function triggerUpdate(data) {
 let failedDests = [];
 
 let dests = {
+    9: {
+      interchanges: ['> CHANGI AIRFREIGHT CTR', '> BEDOK INT'],
+      routeType: 'TRUNK',
+      loopPoint: ''
+    },
     19: {
         interchanges: ['> TAMPINES INT', '> CHANGI AIRFREIGHT CTR'],
         routeType: 'TRUNK',
@@ -157,6 +162,11 @@ let dests = {
         interchanges: ['> SIMS AVE', '> ST MICHAEL\'S TER'],
         routeType: 'TRUNK',
         loopPoint: ''
+    },
+    127: {
+        interchanges: ['> TAMPINES INT'],
+        routeType: 'TOWNLINK',
+        loopPoint: 'Tamp Ind Ave 5'
     },
     161: {
         interchanges: ['> WOODLANDS INT', '> HOUGANG CTRL INT'],
