@@ -442,7 +442,7 @@ function run106Easter() {
 }
 
 function shortenRoadName(roadName) {
-    return roadName.replace('Jurong', 'Jur').replace('West ', 'W.').replace('East ', 'E.').replace('Ave', 'A.');
+    return roadName.replace('Jurong', 'Jur').replace('West ', 'W.').replace('East ', 'E.');
 }
 
 let edsScrollInterval = 0;
