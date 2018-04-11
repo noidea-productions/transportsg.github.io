@@ -1006,13 +1006,14 @@ let SWTs = {
     '154A': 'Boon Lay Way;Lakeside Stn',
     '154B': 'Clementi Rd;Ngee Ann Poly',
     '155A': 'M.Parade Rd;Victoria Sch',
+    '198A': 'Jur E. Ave 1;Opp Parc Oasis',
     '200A': 'Clementi Rd;Kent Ridge Ter',
     '240A': 'Boon Lay Way;Lakeside Stn',
-    '241A': 'Jurong W. St 63;Blk 649A',
+    '241A': 'Jurong W. St 63;Pioneer Stn Exit B',
     '269A': 'Ang Mo Kio St 61;MKT/FC',
     '502A': 'Ctrl Blvd;Downtown Stn',
     '518A': 'Bayfront Ave;Opp MBS MICE',
-    '807A': 'Yishun Ring Rd;Opp Blk798'
+    '807A': 'Yishun Ring Rd;Opp Blk 798'
 }
 
 let MRTShuttles = {
