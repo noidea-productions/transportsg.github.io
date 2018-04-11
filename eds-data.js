@@ -751,6 +751,7 @@ let EDSData = {
             'Jalan Bahar',
             'Jalan Boon Lay',
             'Jurong West Central 1'
+        ]
     },
     800: {
         1: [

@@ -165,7 +165,7 @@ let dests = {
     },
     127: {
         interchanges: ['> TAMPINES INT'],
-        routeType: 'TOWNLINK',
+        routeType: 'TRUNk',
         loopPoint: 'Tamp Ind Ave 5'
     },
     161: {
