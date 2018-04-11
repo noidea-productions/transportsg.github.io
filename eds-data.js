@@ -328,6 +328,22 @@ let EDSData = {
             'Hougang Ave 10'
         ],
     },
+    109: {
+        1: [
+            'Loyang Ave',
+            'Pasir Ris Dr 1',
+            'Sengkang East Rd',
+            'Hougang Ave 9',
+            'Yio Chu Kang Rd'
+        ],
+        2: [
+            'Yio Chu Kang Rd',
+            'Hougang Ave 9',
+            'Sengkang East Rd',
+            'Pasir Ris Dr 1',
+            'Loyang Ave'
+        ],
+    },
     120: {
         1: [
             'Jalan Bukit Merah',
@@ -383,6 +399,22 @@ let EDSData = {
             'Tampines Rd'
        ],
     },
+   129: {
+       2: [
+           'Tampines Ave 4',
+           'Tampines Ave 1',
+           'Braddell Rd',
+           'Lor 1 Toa Payoh',
+           'Balestier Rd'
+       ],
+       1: [
+           'Balestier Rd',
+           'Lor 1 Toa Payoh',
+           'Braddell Rd',
+           'Tampines Ave 1',
+           'Tampines Ave 4'
+       ],
+   },
    143: {
        2: [
            'Thomson Rd',
@@ -432,6 +464,26 @@ let EDSData = {
            'Sengkang East Way',
            'Woodlands Ave 2'
         ]
+   },
+   163: {
+       1: [
+           'Lor 4 Toa Payoh',
+           'Lor 6 Toa Payoh',
+           'Braddell Rd',
+           'Upper Thomson Rd',
+           'Yio Chu Kang Rd',
+           'Sengkang West Ave',
+           'Sengkang East Ave'
+       ],
+       2: [
+           'Sengkang East Ave',
+           'Sengkang West Ave',
+           'Yio Chu Kang Rd',
+           'Upper Thomson Rd',
+           'Braddell Rd',
+           'Lor 6 Toa Payoh',
+           'Lor 4 Toa Payoh'
+       ]
    },
    168: {
        1: [
@@ -690,6 +742,16 @@ let EDSData = {
             'Punggol Central'
          ]
     },
+    405: {
+        1: [
+            'Jurong West Central 1',
+            'Jalan Boon Lay',
+            'Jalan Bahar',
+            'Old Choa Chu Kang Rd',
+            'Jalan Bahar',
+            'Jalan Boon Lay',
+            'Jurong West Central 1'
+    },
     800: {
         1: [
             'Yishun Ave 7',
@@ -902,6 +964,7 @@ let EDSData = {
 
 let SWTs = {
     '3A': 'Pasir Ris Dr 12;Blk 747A',
+    '3B': 'Pasir Ris Dr 3;Pasir Ris Int',
     '7A': 'Orchard Blvd;Bef Orchard Stn Exit B',
     '7B': 'Orchard Rd;Dhoby Ghaut Stn',
     '9A': 'Loyang Ave;Blk 149A',
@@ -914,6 +977,7 @@ let SWTs = {
     '31A': 'New U. Changi Rd;T. Merah Stn',
     '33A': 'Tiong Bahru Rd;Blk 1',
     '33B': 'Joo Chiat Place;Aft Tembeling Rd',
+    '43A': 'S\'goon Ctrl;S\'goon Stn',
     '51A': 'Pandan Gdns;Blk 407',
     '53A': 'Changi Airport;PTB2',
     '55B': 'Ang Mo Kio Ave 10;Blk 443',
@@ -931,19 +995,24 @@ let SWTs = {
     '88B': 'AMK Ave 5;Bef Yio Chu Kang Rd',
     '89A': 'Airport Cargo Rd;Airfreight Terminal Bldg',
     '94A': 'Airport Rd;Bef RSAF Aabout',
+    '95B': 'N.Buona Vista Rd;Buona V. Stn',
     '100A': 'Aljunied Rd;Aljunied Station',
     '109A': 'Hougang Ave 4;Blk 913',
     '113A': 'Upp Serangoon Rd;Kovan Stn',
     '127A': 'Tampines Ave 9;Blk 742A',
     '130A': 'Sin Ming Rd;Blk 25A',
     '135A': 'M.Parade Rd;Victoria Sch',
+    '139A': 'Kim Keat Rd;Opp Jumbo Ind Bldg',
     '154A': 'Boon Lay Way;Lakeside Stn',
     '154B': 'Clementi Rd;Ngee Ann Poly',
+    '155A': 'M.Parade Rd;Victoria Sch',
+    '200A': 'Clementi Rd;Kent Ridge Ter',
     '240A': 'Boon Lay Way;Lakeside Stn',
     '241A': 'Jurong W. St 63;Blk 649A',
     '269A': 'Ang Mo Kio St 61;MKT/FC',
     '502A': 'Ctrl Blvd;Downtown Stn',
-    '518A': 'Bayfront Ave;Opp MBS MICE'
+    '518A': 'Bayfront Ave;Opp MBS MICE',
+    '807A': 'Yishun Ring Rd;Opp Blk798'
 }
 
 let MRTShuttles = {
