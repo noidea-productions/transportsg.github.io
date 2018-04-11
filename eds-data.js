@@ -368,7 +368,7 @@ let EDSData = {
         2:  [
             'Telok Blangah Hts',
             'Telok Blangah Way',
-            '',
+            'Eu Tong Sen St',
             'Orchard Turn',
             'Moulmein Rd',
             'Telok Blangah Way',
