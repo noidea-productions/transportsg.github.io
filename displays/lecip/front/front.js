@@ -402,7 +402,7 @@ function doEDSScroll() {
             writeSmallText(terminalBusStop.toUpperCase(), 3, svcWidth);
         } else {
             writeSmallText('TERMINATE AT', 11, svcWidth);
-            writeSmallText(lowerLine, 3, svcWidth);
+            writeSmallText('(' + lowerLine + ')', 3, svcWidth);
         }
 
         showSvc(currentSvc);
