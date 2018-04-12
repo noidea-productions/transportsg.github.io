@@ -143,6 +143,11 @@ let dests = {
         routeType: 'TRUNK',
         loopPoint: ''
     },
+    101: {
+        interchanges: ['> S\'GOON INT'],
+        routeType: 'TOWNLINK',
+        loopPoint: ''
+    },
     '107M': {
         interchanges: ['> HOUGANG INT'],
         routeType: 'TRUNK',
