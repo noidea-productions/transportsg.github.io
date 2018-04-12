@@ -1010,7 +1010,7 @@ let SWTs = {
     '198A': 'Jur E. Ave 1;Opp Parc Oasis',
     '200A': 'Clementi Rd;Kent Ridge Ter',
     '240A': 'Boon Lay Way;Lakeside Stn',
-    '241A': 'Jurong W. St 63;Pioneer Stn Exit B',
+    '241A': 'Jur W. St 63;Pioneer Stn Exit B',
     '269A': 'Ang Mo Kio St 61;MKT/FC',
     '502A': 'Ctrl Blvd;Downtown Stn',
     '518A': 'Bayfront Ave;Opp MBS MICE',
