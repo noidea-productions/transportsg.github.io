@@ -273,11 +273,33 @@ let EDSData = {
             'Upper Jurong Rd'
         ],
         2: [
-            'Upper Jurong Rd',
             'Jurong East Ave 1',
             'Jurong West Ave 1',
             'Jurong West Ave 4',
-            'Jurong West St 91'
+            'Jurong West St 91',
+            'Upper Jurong Rd'
+        ]
+    },
+    101: {
+        1: [
+            'Upper Serangoon Rd',
+            'Hougang Central',
+            'Hougang Ave 8',
+            'Hougang St 51',
+            'Buangkok Link',
+            'Hougang St 51',
+            'Hougang Ave 8',
+            'Hougang Central',
+            'Upper Serangoon Rd'
+        ]
+    },
+    102: {
+        1: [
+            'Upper Serangoon Rd',
+            'Buangkok Dr',
+            'Compassvale Dr',
+            'Sengkang East Way',
+            'Sengkang West Way'
         ]
     },
     103: {
@@ -343,6 +365,17 @@ let EDSData = {
             'Pasir Ris Dr 1',
             'Loyang Ave'
         ],
+    },
+    111: {
+        1: [ 
+            'Commonwealth Ave',
+            'Tanglin Rd',
+            'Orchard Rd',
+            'Stamford Rd',
+            'Orchard Boulevard',
+            'Tanglin Rd',
+            'Commonwealth Ave'
+         ]
     },
     120: {
         1: [
