@@ -82,6 +82,20 @@ let EDSData = {
             'Tampines Ave 9'
         ]
     },
+    30: {
+        1: [
+            'Coporation Dr',
+            'West Coast Rd',
+            'Pasir Panjang Rd',
+            'Telok Blangah Rd',
+            'Keppel Rd',
+            'Old Airport Rd',
+            'Sims Ave East'
+        ],
+        2: [
+            'Old Airport Rd'
+        ]
+    },
     35: {
         1: [
             'New Upper Changi Rd',
@@ -367,7 +381,7 @@ let EDSData = {
         ],
     },
     111: {
-        1: [ 
+        1: [
             'Commonwealth Ave',
             'Tanglin Rd',
             'Orchard Rd',
@@ -460,6 +474,15 @@ let EDSData = {
         ]
    },
    154: {
+       1: [
+           'Paya Lebar Rd',
+           'Jalan Toa Payoh',
+           'Bukit Timah Rd',
+           'Clementi Rd',
+           'C\'Wealth Ave West',
+           'AYE',
+           'Yuan Ching Rd'
+       ],
        2: [
            'Yuan Chin Rd',
            'AYE',
@@ -480,6 +503,15 @@ let EDSData = {
            'Yio Chu Kang Rd',
            'Buangkok Green',
            'Sengkang East Rd'
+       ]
+   },
+   157: {
+       2: [
+           'Lornie Rd',
+           'Bukit Timah Rd',
+           'Bukit Batok East Ave 3',
+           'Jurong East Ave 1',
+           'Jurong West Ave 1'
        ]
    },
    161: {
@@ -563,6 +595,12 @@ let EDSData = {
             'Nanyang Dr'
         ]
     },
+    '179A': {
+        1: [
+            'Nanyang Dr',
+            'Pioneer Rd Nth'
+        ]
+    },
     181: {
         1: [
             'Jurong West St 64'
@@ -620,6 +658,11 @@ let EDSData = {
             'Tuas West Dr'
         ]
     },
+    194: {
+        1: [
+            'Jalan Ahmad Ibrahim'
+        ]
+    },
     198: {
         1: [
             'Queensway',
@@ -665,17 +708,27 @@ let EDSData = {
             'Jurong West St 91'
         ]
     },
+    246: {
+        1: [
+            'Yuan Ching Rd'
+        ]
+    },
     249: {
         1: [
             'Jalan Boon Lay',
             'Jurong Pier Rd',
             'Tanjong Kling Rd',
             'Shipyard Rd',
-            'Jalan Samulun'
+            'Jalan Samulun',
+            'Shipyard Rd',
+            'Tanjong Kling Rd'
         ]
     },
     251: {
         1: [
+            'Boon Lay Way',
+            'Pioneer Rd Nth',
+            'Shipyard Rd',
             'Pioneer Rd Nth'
         ]
     },
@@ -683,6 +736,7 @@ let EDSData = {
         1: [
             'Joo Koon Circle',
             'Enterprise Rd',
+            'International Rd'
         ]
     },
     253: {
