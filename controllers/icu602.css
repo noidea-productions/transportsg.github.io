@@ -70,5 +70,25 @@ body {
 
 #controller-content {
     width: 72vw;
+    display: flex;
+}
+
+#controller-left {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#controller-right {
+    flex-grow: 3;
+}
+
+#controller-screen {
+    width: 50vw;
+    height: 17vw;
     display: block;
+    background-color: #3b9cd2;
 }
