@@ -156,11 +156,16 @@ body {
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 
     background-color: #181818;
     border-radius: 2vw;
     color: #d2d2d2;
+}
+
+#numberpad-main > div > span:nth-child(2), #button-0 > span:nth-child(2) {
+    font-size: 1.2vw;
+    margin-left: -1.4vw;
 }
 
 #button-0 {
