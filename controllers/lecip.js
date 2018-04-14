@@ -146,7 +146,7 @@ let dests = {
     101: {
         interchanges: ['> S\'GOON INT'],
         routeType: 'TOWNLINK',
-        loopPoint: ''
+        loopPoint: 'Buangkok Link'
     },
     '107M': {
         interchanges: ['> HOUGANG INT'],
