@@ -223,3 +223,7 @@ body {
     border-radius: 2vw;
     color: #d2d2d2;
 }
+
+#yes-button-icon, #no-button-icon {
+    width: 1.8vw;
+}
