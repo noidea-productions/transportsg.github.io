@@ -82,7 +82,7 @@ body {
     display: flex;
     flex-direction: column;
 
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -166,4 +166,60 @@ body {
 #button-0 {
     margin-left: 7.6vw;
     margin-top: 0.6vw;
+}
+
+#selection-pad {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    justify-content: space-around;
+}
+
+#direction-pad {
+    display: grid;
+
+    grid-template-columns: repeat(3, 3vw);
+    grid-gap: 0.1vw;
+    grid-auto-rows: 3vw;
+}
+
+#direction-pad > div[id]:not([id=""]) {
+    width: 3vw;
+    height: 3vw;
+
+    font-size: 1.5vw;
+
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #181818;
+    border-radius: 2vw;
+    color: #d2d2d2;
+}
+
+#yesno-pad {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#button-yes, #button-no {
+    width: 7vw;
+    height: 3vw;
+
+    font-size: 1.5vw;
+
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #181818;
+    border-radius: 2vw;
+    color: #d2d2d2;
 }
