@@ -11,6 +11,8 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
+
+    font-family: Verdana;
 }
 
 #content {
@@ -39,8 +41,6 @@ body {
     border-right: solid 1vw #1b2f56;
     border-left: solid 1vw #1b2f56;
     margin-left: 3vw;
-
-    font-family: Verdana;
 
     color: #4571c7;
 }
@@ -77,18 +77,60 @@ body {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-
-    justify-content: center;
-    align-items: center;
 }
 
 #controller-right {
-    flex-grow: 3;
+    flex-grow: 10;
+}
+
+#controller-screen-container {
+    margin-top: 3vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #controller-screen {
     width: 50vw;
-    height: 17vw;
+    height: 15vw;
     display: block;
     background-color: #3b9cd2;
+    border: 2vw solid #2c4b8a;
+}
+
+#function-buttons {
+    height: 8vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.function-button {
+    width: 7vw;
+    height: 3.5vw;
+
+    font-size: 2vw;
+
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #181818;
+    border-radius: 2vw;
+    color: #d1c72f;
+    margin-left: 1.3vw;
+    margin-right: 1.3vw;
+}
+
+.function-button > span {
+    line-height: 4vw;
+}
+
+#home-button-icon {
+    width: 3.2vw;
 }
