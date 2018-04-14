@@ -143,12 +143,12 @@ body {
 
     grid-template-columns: repeat(3, 7vw);
     grid-gap: 0.6vw;
-    grid-auto-rows: 3.5vw;
+    grid-auto-rows: 3vw;
 }
 
-#numberpad-main > div {
+#numberpad-main > div, #button-0 {
     width: 7vw;
-    height: 3.5vw;
+    height: 3vw;
 
     font-size: 2vw;
 
@@ -160,5 +160,10 @@ body {
 
     background-color: #181818;
     border-radius: 2vw;
-    color: #d1c72f;
+    color: #d2d2d2;
+}
+
+#button-0 {
+    margin-left: 7.6vw;
+    margin-top: 0.6vw;
 }
