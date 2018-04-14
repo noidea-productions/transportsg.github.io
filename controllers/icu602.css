@@ -1,0 +1,74 @@
+body {
+    background-color: #202020;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    user-select: none;
+    -moz-user-select: none;
+
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+
+    justify-content: center;
+}
+
+#controller-body {
+    background-color: #254075;
+    width: 90vw;
+    height: 30vw;
+    display: flex;
+}
+
+#controller-stripe {
+    width: 13vw;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    border-right: solid 1vw #1b2f56;
+    border-left: solid 1vw #1b2f56;
+    margin-left: 3vw;
+
+    font-family: Verdana;
+
+    color: #4571c7;
+}
+
+#mobitec-label {
+    font-size: 3.1vw;
+    padding: 0;
+    margin: 0;
+
+    transform: scaleX(0.9);
+}
+
+#mobitec-model-label {
+    line-height: 3vw;
+    width: 16vw;
+    font-size: 3.8vw;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+    transform: scaleX(0.71);
+}
+
+#label-spacer {
+    height: 17vw;
+}
+
+#controller-content {
+    width: 72vw;
+    display: block;
+}
