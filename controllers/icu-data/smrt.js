@@ -65,6 +65,7 @@ let EDSData = {
     },
     475: {
         renderType: 'standardService',
+        serviceNumber: '188',
         destination: {
             text: 'HARBOURFRONT',
             renderType: 'big',
@@ -95,6 +96,7 @@ let EDSData = {
     },
     1901: {
         renderType: 'standardService',
+        serviceNumber: '190',
         destination: {
             text: ['KAMPONG BAHRU', 'TERMINAL'],
             renderType: 'thick',

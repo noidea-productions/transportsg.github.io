@@ -2,24 +2,34 @@
     <head>
         <link rel='stylesheet' href='./icu602-inner.css'></link>
         <script src='./icu602-inner.js'></script>
+        <script src='./icu-data/smrt.js'></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     </head>
     <body>
         <div id='content'>
-            <div id='output-preview-container'>
-                <div id='output-preview'>
-                    <span id='full-sized'>SMRT BUSES</span>
-                </div>
-                <div id='output-info'>
-                    <span>Line : 0</span>
-                    <span>Dest : 4</span>
-                    <span>Extr : </span>
+            <div id='screen-home' style='display: none;'>
+                <div id='output-preview-container'>
+                    <div id='output-preview'>
+                        <span id='full-sized'>SMRT BUSES</span>
+                    </div>
+                    <div id='output-info'>
+                        <span>Line : 0</span>
+                        <span>Dest : 4</span>
+                        <span>Extr : </span>
+                    </div>
                 </div>
             </div>
-            <div id='function-label-row'>
-                <div><span>Dest</span></div>
-                <div><span>Extra</span></div>
+            <div id='screen-dest' style='display: none;'>
+                <div id='table-labels'>
+                    <span>Dest</span>
+                    <span>Line no</span>
+                    <span>Destination</span>
+                </div>
+                <div id='dest-table'>
+                </div>
             </div>
+        </div>
+        <div id='function-label-row'>
         </div>
     </body>
 </html>
