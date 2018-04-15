@@ -13,6 +13,10 @@ let previewPresets = {
         data.forEach((e, i) => {
             nodes[i].textContent = linePrefixes[i] + e;
         });
+    },
+    standardService: (data) => {
+        let textContainer = document.getElementById('full-sized');
+        textContainer.textContent = data.serviceNumber;
     }
 };
 
@@ -106,7 +110,6 @@ window.addEventListener('message', (event) => {
     }
 
     if (eventData.mode === 'enterPressed') {
-        console.log('enter')
         let allCodes = Object.keys(EDSData).sort((a, b) => a - b);
         let currentCode = allCodes[destScreenScroll];
 
