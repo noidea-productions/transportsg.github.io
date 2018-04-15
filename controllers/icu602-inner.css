@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    font-family: Verdana;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100vw;
+    height: 100vh;
+}
+
+#function-label-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#function-label-row > div {
+    margin-left: 0.5vw;
+    margin-right: 0l5vw;
+    width: 19vw;
+    height: 25vh;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #000000;
+    color: #3b9cd2;
+}
