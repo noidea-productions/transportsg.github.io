@@ -40,7 +40,7 @@ body {
 
     border-right: solid 1vw #1b2f56;
     border-left: solid 1vw #1b2f56;
-    margin-left: 2.3vw;
+    margin-left: 1.2    vw;
 
     color: #4571c7;
 }
@@ -69,13 +69,19 @@ body {
 }
 
 #controller-content {
-    width: 81.2vw;
+    width: 100%;
     display: flex;
+
+    justify-content: flex-end;
 }
 
 #controller-left {
     display: flex;
     flex-direction: column;
+
+    justify-content: space-evenly;
+    margin-right: 1vw;
+    width: 100%;
 }
 
 #controller-right {
@@ -91,15 +97,24 @@ body {
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+}
+
+#screen-spacer {
+    display: block;
+    width: 2vw;
 }
 
 #controller-screen {
     width: 50vw;
-    height: 15vw;
-    display: block;
+    height: 12.5vw;
+    display: flex;
     background-color: #3b9cd2;
     border: 2vw solid #2c4b8a;
+
+    justify-content: center;
+    align-items: center;
+    margin-right: 1vw;
 }
 
 #function-buttons {
@@ -107,7 +122,7 @@ body {
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: row;
 }
 
@@ -126,8 +141,8 @@ body {
     background-color: #181818;
     border-radius: 2vw;
     color: #d1c72f;
-    margin-left: 1.3vw;
-    margin-right: 1.3vw;
+    margin-left: 1.35vw;
+    margin-right: 1.35vw;
 }
 
 .function-button > span {
@@ -141,13 +156,14 @@ body {
 #numberpad-main {
     display: grid;
 
-    grid-template-columns: repeat(3, 7vw);
-    grid-gap: 0.6vw;
+    grid-template-columns: repeat(3, 6.3vw);
+    grid-gap: 0.4vw;
     grid-auto-rows: 3vw;
+    margin-right: 0.8vw;
 }
 
 #numberpad-main > div, #button-0 {
-    width: 7vw;
+    width: 6vw;
     height: 3vw;
 
     font-size: 2vw;
@@ -169,8 +185,8 @@ body {
 }
 
 #button-0 {
-    margin-left: 7.6vw;
-    margin-top: 0.6vw;
+    margin-left: 7.4vw;
+    margin-top: 0.4vw;
 }
 
 #selection-pad {
