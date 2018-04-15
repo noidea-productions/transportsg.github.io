@@ -114,3 +114,8 @@ body {
 .dest-table-item > span:nth-child(3) {
     width: 68vw;
 }
+
+.selected-row {
+    background: black;
+    color: #3b9cd2;
+}

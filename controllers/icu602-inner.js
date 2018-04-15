@@ -37,7 +37,7 @@ function paintDestScreen() {
 
     let startCode = destScreenScroll - destScreenScreenPos;
 
-    function createDestRow(code, dest) {
+    function createDestRow(code, dest, selected) {
         return `<div class='dest-table-item'><span>${code}</span><span></span><span>${dest}</span></div>`;
     }
 
@@ -54,6 +54,7 @@ function paintDestScreen() {
 
     document.getElementById('dest-table').innerHTML = html;
 
+    document.getElementsByClassName('dest-table-item')[destScreenScreenPos].className = 'dest-table-item selected-row';
 }
 
 function setScreen(screen) {
