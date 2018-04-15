@@ -68,8 +68,8 @@ body {
 #full-sized {
     display: inline-block;
 
-    font-size: 3.6vw;
-    line-height: 3.6vw;
+    font-size: 4.6vw;
+    line-height: 1000000;
     transform: scale(0.9, 1.7);
     width: 1000vw;
     text-align: center;
