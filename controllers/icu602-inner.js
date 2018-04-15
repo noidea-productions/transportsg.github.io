@@ -93,6 +93,7 @@ window.addEventListener('message', (event) => {
         if (destScreenScroll < 0) destScreenScroll = 0;
 
         paintDestScreen();
+        return;
     } else if (eventData.mode === 'pressDown') {
         destScreenScroll++;
 
@@ -101,6 +102,17 @@ window.addEventListener('message', (event) => {
         }
 
         paintDestScreen();
+        return;
+    }
+
+    if (eventData.mode === 'enterPressed') {
+        console.log('enter')
+        let allCodes = Object.keys(EDSData).sort((a, b) => a - b);
+        let currentCode = allCodes[destScreenScroll];
+
+        handleCodeUpdate(currentCode, EDSData[currentCode]);
+        setScreen('home');
+        return;
     }
 });
 

@@ -5,6 +5,7 @@ window.addEventListener('load', () => {
     inner = document.getElementById('controller-iframe').contentWindow;
     document.getElementById('button-f1').addEventListener('click', onF1Pressed);
     document.getElementById('button-no').addEventListener('click', onCrossPressed);
+    document.getElementById('button-yes').addEventListener('click', onYesPressed);
     document.getElementById('button-up').addEventListener('click', onUpPressed);
     document.getElementById('button-down').addEventListener('click', onDownPressed);
 
@@ -36,6 +37,13 @@ function onCrossPressed() {
     state = 'home';
     inner.postMessage(JSON.stringify({
         mode: 'homePage'
+    }), inner.location.toString());
+}
+
+function onYesPressed() {
+    state = 'home';
+    inner.postMessage(JSON.stringify({
+        mode: 'enterPressed'
     }), inner.location.toString());
 }
 
