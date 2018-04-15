@@ -103,6 +103,7 @@ body {
 .dest-table-item {
     font-size: calc((65vh - 2.6vw - 4vh) / 3.6);
     height: calc((65vh - 2.6vw - 4vh) / 3);
+    line-height: calc((65vh - 2.6vw - 4vh) / 3);
 }
 
 .dest-table-item > span {
@@ -113,7 +114,6 @@ body {
 
 .dest-table-item > span:nth-child(3) {
     width: 68vw;
-    margin-top: 0.5vh
 }
 
 .selected-row {
