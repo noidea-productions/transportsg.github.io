@@ -62,5 +62,73 @@ let EDSData = {
     19: {
         renderType: 'fullSized',
         text: 'LRT SHUTTLE B'
+    },
+    475: {
+        renderType: 'standardService',
+        destination: {
+            text: 'HARBOURFRONT',
+            renderType: 'big',
+            scrollRenderType: 'thick'
+        },
+        scrolls: [
+            {
+                text: 'CHOA CHU KANG WAY',
+                font: 'thick'
+            },
+            {
+                text: 'B. B WEST AVE 4, 2',
+                font: 'thick'
+            },
+            {
+                text: 'TOH GUAN ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'BOON LAY WAY',
+                font: 'thick'
+            },
+            {
+                text: 'AYE, CLEMENTI RD',
+                font: 'thick'
+            } //Missing data oh noeses!!
+        ]
+    },
+    1901: {
+        renderType: 'standardService',
+        destination: {
+            text: ['KAMPONG BAHRU', 'TERMINAL'],
+            renderType: 'thick',
+            scrollRenderType: 'thin'
+        },
+        scrolls: {
+            {
+                text: 'BT PANJANG RD',
+                font: 'thin'
+            },
+            {
+                text: '??',
+                font: 'thin'
+            },
+            {
+                text: '??',
+                font: 'thin'
+            },
+            {
+                text: 'STEVENS RD',
+                font: 'thin'
+            },
+            {
+                text: 'ORCHARD RD',
+                font: 'thin'
+            },
+            {
+                text: 'HILL STREET',
+                font: 'thin'
+            },
+            {
+                text: 'CHINATOWN',
+                font: 'thin'
+            }
+        }
     }
 }
