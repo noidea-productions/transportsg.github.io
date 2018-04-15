@@ -1,4 +1,4 @@
-let data = {
+let EDSData = {
     1: {
         renderType: 'fullSized',
         text: 'CHARTERED'
