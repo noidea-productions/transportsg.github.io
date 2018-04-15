@@ -4,6 +4,9 @@ let state = 'home';
 window.addEventListener('load', () => {
     inner = document.getElementById('controller-iframe').contentWindow;
     document.getElementById('button-f1').addEventListener('click', onF1Pressed);
+    document.getElementById('button-no').addEventListener('click', onCrossPressed);
+    document.getElementById('button-up').addEventListener('click', onUpPressed);
+    document.getElementById('button-down').addEventListener('click', onDownPressed);
 
     inner.postMessage(JSON.stringify({
         mode: 'home'
@@ -24,9 +27,30 @@ function onF1Pressed() {
     if (state === 'home') {
         state = 'selectService';
         inner.postMessage(JSON.stringify({
-            mode: 'selectService',
-            code: code,
-            data: EDSData[code]
-        }), location.toString());
+            mode: 'selectService'
+        }), inner.location.toString());
+    }
+}
+
+function onCrossPressed() {
+    state = 'home';
+    inner.postMessage(JSON.stringify({
+        mode: 'homePage'
+    }), inner.location.toString());
+}
+
+function onUpPressed() {
+    if (state === 'selectService') {
+        inner.postMessage(JSON.stringify({
+            mode: 'pressUp'
+        }), inner.location.toString());
+    }
+}
+
+function onDownPressed() {
+    if (state === 'selectService') {
+        inner.postMessage(JSON.stringify({
+            mode: 'pressDown'
+        }), inner.location.toString());
     }
 }

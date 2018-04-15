@@ -1,5 +1,4 @@
 let destScreenScroll = 0;
-let destScreenScreenPos = 0;
 
 let previewPresets = {
     fullSized: (data) => {
@@ -28,14 +27,14 @@ function homeScreenInit() {
 function destScreenInit() {
     document.getElementById('function-label-row').innerHTML = '<div><span>Sort</span></div>';
 
-    destScreenScroll = destScreenScreenPos = 0;
+    destScreenScroll = 0;
     paintDestScreen();
 }
 
 function paintDestScreen() {
     let allCodes = Object.keys(EDSData).sort((a, b) => a - b);
 
-    let startCode = destScreenScroll - destScreenScreenPos;
+    let startCode = Math.max(0, destScreenScroll - destScreenScroll % 3);
 
     function createDestRow(code, dest, selected) {
         return `<div class='dest-table-item'><span>${code}</span><span></span><span>${dest}</span></div>`;
@@ -49,12 +48,13 @@ function paintDestScreen() {
     let html = '';
     for (let i = startCode; i < startCode + 3; i++) {
         let destData = EDSData[allCodes[i]];
+
         html += createDestRow(allCodes[i], createPreview(destData));
     }
 
     document.getElementById('dest-table').innerHTML = html;
 
-    document.getElementsByClassName('dest-table-item')[destScreenScreenPos].className = 'dest-table-item selected-row';
+    document.getElementsByClassName('dest-table-item')[destScreenScroll % 3].className = 'dest-table-item selected-row';
 }
 
 function setScreen(screen) {
@@ -74,6 +74,33 @@ window.addEventListener('message', (event) => {
 
     if (eventData.mode === 'updateCode') {
         handleCodeUpdate(eventData.code, eventData.data);
+        return;
+    }
+
+    if (eventData.mode === 'selectService') {
+        setScreen('dest');
+        return;
+    }
+
+    if (eventData.mode === 'homePage') {
+        setScreen('home');
+        return;
+    }
+
+    if (eventData.mode === 'pressUp') {
+        destScreenScroll--;
+
+        if (destScreenScroll < 0) destScreenScroll = 0;
+
+        paintDestScreen();
+    } else if (eventData.mode === 'pressDown') {
+        destScreenScroll++;
+
+        if (destScreenScroll >= Object.keys(EDSData).length) {
+            destScreenScroll = Object.keys(EDSData).length - 1;
+        }
+
+        paintDestScreen();
     }
 });
 
@@ -83,5 +110,5 @@ function handleCodeUpdate(code, data) {
 }
 
 window.addEventListener('load', () => {
-    setScreen('dest');
+    setScreen('home');
 });
