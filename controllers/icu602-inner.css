@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: Verdana;
+    overflow: hidden;
 }
 
 #content {
@@ -30,4 +31,6 @@ body {
 
     background-color: #000000;
     color: #3b9cd2;
+
+    font-size: 18vh;
 }
