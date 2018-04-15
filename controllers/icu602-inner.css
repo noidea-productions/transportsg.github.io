@@ -62,10 +62,10 @@ body {
 #full-sized {
     display: inline-block;
 
-    font-size: 6.5vw;
-    line-height: 6.5vw;
-    transform: scaleX(0.7);
-    width: 71.4vw;
+    font-size: 4.5vw;
+    line-height: 4.5vw;
+    transform: scale(0.9, 1.7);
+    width: 1000vw;
     text-align: center;
 }
 
