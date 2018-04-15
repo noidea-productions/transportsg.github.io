@@ -100,7 +100,7 @@ let EDSData = {
             renderType: 'thick',
             scrollRenderType: 'thin'
         },
-        scrolls: {
+        scrolls: [
             {
                 text: 'BT PANJANG RD',
                 font: 'thin'
@@ -129,6 +129,6 @@ let EDSData = {
                 text: 'CHINATOWN',
                 font: 'thin'
             }
-        }
+        ]
     }
 }
