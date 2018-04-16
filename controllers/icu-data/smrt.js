@@ -137,7 +137,7 @@ let EDSData = {
         renderType: 'standardService',
         serviceNumber: '61',
         destination: {
-            'BUKIT BATOK',
+            text: 'BUKIT BATOK',
             font: 'thin'
         },
         scrolls: [

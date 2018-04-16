@@ -51,6 +51,7 @@ function paintDestScreen() {
     let html = '';
     for (let i = startCode; i < startCode + 3; i++) {
         let destData = EDSData[allCodes[i]];
+        if (!destData) continue;
 
         html += createDestRow(allCodes[i], createPreview(destData));
     }
