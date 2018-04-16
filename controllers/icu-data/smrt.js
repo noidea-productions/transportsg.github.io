@@ -63,15 +63,54 @@ let EDSData = {
         renderType: 'fullSized',
         text: 'LRT SHUTTLE B'
     },
+    469: {
+        renderType: 'standardService',
+        serviceNumber: '172',
+        destination: {
+            text: 'BOON LAY',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: ['BOON LAY', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'CHOA CHU KANG DRIVE',
+                font: 'thick'
+            },
+            {
+                text: 'CHOA CHU KANG AVE 1, 3',
+                font: 'thick'
+            },
+            {
+                text: 'CHOA CHU KANG RD',
+                font: 'thick'
+            },
+            {
+                text: 'BRICKLAND RD',
+                font: 'thick'
+            },
+            {
+                text: 'JALAN BEHAR',
+                font: 'thick'
+            }
+        ]
+    },
     475: {
         renderType: 'standardService',
         serviceNumber: '188',
         destination: {
             text: 'HARBOURFRONT',
-            renderType: 'big',
-            scrollRenderType: 'thick'
+            font: 'thick'
         },
         scrolls: [
+            {
+                text: 'HARBOURFRONT',
+                font: 'big',
+                showDest: false
+            },
             {
                 text: 'CHOA CHU KANG WAY',
                 font: 'thick'
@@ -98,38 +137,42 @@ let EDSData = {
         renderType: 'standardService',
         serviceNumber: '190',
         destination: {
-            text: ['KAMPONG BAHRU', 'TERMINAL'],
-            renderType: 'thick',
-            scrollRenderType: 'thin'
+            text: 'KAMPONG BAHRU TER',
+            renderType: 'thin'
         },
         scrolls: [
             {
+                text: ['KAMPONG BAHRU', 'TERMINAL'],
+                font: 'thick',
+                showDest: false
+            },
+            {
                 text: 'BT PANJANG RD',
-                font: 'thin'
+                font: 'thick'
             },
             {
                 text: '??',
-                font: 'thin'
+                font: 'thick'
             },
             {
                 text: '??',
-                font: 'thin'
+                font: 'thick'
             },
             {
                 text: 'STEVENS RD',
-                font: 'thin'
+                font: 'thick'
             },
             {
                 text: 'ORCHARD RD',
-                font: 'thin'
+                font: 'thick'
             },
             {
                 text: 'HILL STREET',
-                font: 'thin'
+                font: 'thick'
             },
             {
                 text: 'CHINATOWN',
-                font: 'thin'
+                font: 'thick'
             }
         ]
     }
