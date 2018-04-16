@@ -133,12 +133,48 @@ let EDSData = {
             } //Missing data oh noeses!!
         ]
     },
+    497: {
+        renderType: 'standardService',
+        serviceNumber: '61',
+        destination: {
+            'BUKIT BATOK',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['BUKIT BATOK', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'UBI AVE 2',
+                font: 'thick'
+            },
+            {
+                text: 'MACPHERSON RD',
+                font: 'thick'
+            },
+            {
+                text: 'KALLANG BAHRU',
+                font: 'thick'
+            },
+            {
+                text: 'NORTH BRIDGE RD',
+                font: 'thick'
+            },//missing data
+            {
+                text: 'CLEMENTI RD',
+                font: 'thick'
+            }
+
+        ]
+    },
     1901: {
         renderType: 'standardService',
         serviceNumber: '190',
         destination: {
             text: 'KAMPONG BAHRU TER',
-            renderType: 'thin'
+            font: 'thin'
         },
         scrolls: [
             {

@@ -31,7 +31,6 @@ function homeScreenInit() {
 function destScreenInit() {
     document.getElementById('function-label-row').innerHTML = '<div><span>Sort</span></div>';
 
-    destScreenScroll = 0;
     paintDestScreen();
 }
 
