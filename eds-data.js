@@ -241,6 +241,17 @@ let EDSData = {
             'Orchard Rd'
         ]
     },
+    81: {
+        1: [
+            'Tampines Ave 7',
+            'Pasir Ris Dr 1',
+            'Tampines Rd',
+            'Upper Serangoon Rd',
+            'Tampines Rd',
+            'Pasir Ris Dr 1',
+            'Tampines Ave 7'
+          ]
+    },
     85: {
         1: [
             'Yishun Ave 2',
@@ -839,6 +850,17 @@ let EDSData = {
             'Jalan Boon Lay',
             'Jurong West Central 1'
         ]
+    },
+    '410W': {
+        1: [
+            'Bishan St 22',
+            'Sin Ming Ave',
+            'Upper Thomson Rd',
+            'Shunfu Rd',
+            'Bishan St 21',
+            'Bishan St 12',
+            'Bishan St 14',
+         ]
     },
     800: {
         1: [
