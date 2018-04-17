@@ -256,7 +256,8 @@ let EDSData = {
         scrolls: [
             {
                 text: ['GEYLANG LOR 1', '/KALLANG MRT'],
-                font: 'thick'
+                font: 'thick',
+                showDest: false
             }
         ]
     },

@@ -189,12 +189,14 @@ function parseVariables(variableRules, edsData, arrayPos) {
                     skipNext = false;
                     return;
                 }
+
                 if (!specialChars.includes(token.slice(0, 1))) { //variable name
                     let prevVariableName = variableRule[i - 1];
+
                     if (prevVariableName === '[]') {
                         currentVariable = currentVariable[token];
                     } else
-                    currentVariable = edsData[token];
+                        currentVariable = edsData[token];
                 } else {
                     if (token === '!') {
                         negate = !negate;
@@ -242,6 +244,16 @@ function parseFormat(format, variablePool, defaultFont) {
         return lines.map(token => {
             if (token.startsWith('<')) {
                 let tokenData = token.slice(1, -1).split(',');
+
+                if (tokenData[0].includes('[') && tokenData[0].endsWith(']')) {
+                    let variableName = tokenData[0].slice(0, tokenData.indexOf('[') - 2);
+                    let arrayIndex = tokenData[0].slice(tokenData.indexOf('[') - 1  , -1);
+
+                    return {
+                        text: variablePool[variableName][arrayIndex],
+                        font: tokenData[1] || defaultFont
+                    }
+                }
 
                 return {
                     text: variablePool[tokenData[0]],
