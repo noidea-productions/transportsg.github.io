@@ -231,13 +231,37 @@ function parseVariables(variableRules, edsData, arrayPos) {
     return variablePool;
 }
 
+function parseFormat(format, variablePool) {
+}
+
 function renderEDS(currentEDSCode, currentEDSScroll) {
     let edsData = EDSData[currentEDSCode];
     let edsFormat = EDSTemplates[edsData.renderType];
 
     edsFormat.forEach(renderGuideline => {
+        let guidelineActive = parseVariables({_: renderGuideline.active || 'true'}, edsData, [currentEDSScroll])._;
+        if (!guidelineActive) return;
+
         let variablePool = parseVariables(renderGuideline.variables, edsData, [currentEDSScroll]);
-        console.log(variablePool);
+
+        let mainFont = parseVariables({_: renderGuideline.font}, edsData, [currentEDSScroll])._;
+
+        let format;
+
+        if (Object.prototype.toString.call(renderGuideline.format).slice(8, -1) === 'Array') { // Multiline format
+            format = parseFormat(renderGuideline.format, variablePool);
+        } else if (Object.prototype.toString.call(renderGuideline.format).slice(8, -1) === 'Object') { // Choose format from condition
+            let formatSelectionRules = Object.keys(renderGuideline.format).map(rule => {
+                return parseVariables({_: rule}, edsData, [currentEDSScroll])._;
+            });
+
+            let firstTrue = formatSelectionRules.indexOf(true);
+            if (firstTrue === -1) return; // Couldn't get format so inactivate render guideline
+
+            format = parseFormat(renderGuideline.format[Object.keys(renderGuideline.format)[firstTrue]], variablePool);
+        } else { // Singleline format
+            format = parseFormat(renderGuideline.format, variablePool);
+        }
     });
 }
 

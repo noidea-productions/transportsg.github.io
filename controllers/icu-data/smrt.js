@@ -1,6 +1,6 @@
 let EDSTemplates = {
     standardService: [
-        {
+        { // Render svc
             variables: {
                 serviceNumber: '$serviceNumber'
             },
@@ -8,7 +8,7 @@ let EDSTemplates = {
             format: '<serviceNumber>',
             align: 'right'
         },
-        {
+        { // Render DEST via ROAD [SVC]
             variables: {
                 currentRoad: '$scrolls[]text',
                 currentRoadFont: '$scrolls[]font',
@@ -20,15 +20,15 @@ let EDSTemplates = {
             format: ['<destination,destinationFont> via', '<currentRoad,currentRoadFont>'],
             align: 'centre'
         },
-        {
+        { // Render DEST [SVC]
             variables: {
                 fullDestination: '$scrolls[]text'
             },
             font: '$scrolls[]font',
             active: '$!scrolls[]showDest{true}',
             format: {
-                '$scrolls[]text(array?)': ['<fullDestination[0]>', '<fullDestination[1]>'],
-                '$!scrolls[]text(array?)': ['<fullDestination>']
+                '$scrolls[]text(array?)': ['<fullDestination[0]>', '<fullDestination[1]>'], // Render multiline dest
+                '$!scrolls[]text(array?)': ['<fullDestination>'] // Render singleline dest
             },
             align: 'centre'
         }
