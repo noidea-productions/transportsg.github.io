@@ -62,3 +62,11 @@ function onDownPressed() {
         }), inner.location.toString());
     }
 }
+
+window.addEventListener('message', event => {
+    let eventData = JSON.parse(event.data);
+
+    if (event.origin == location.origin) {
+        parent.postMessage(event.data, parent.location.toString());
+    }
+});

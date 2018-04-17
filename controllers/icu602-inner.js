@@ -121,7 +121,12 @@ window.addEventListener('message', (event) => {
 
 function handleCodeUpdate(code, data) {
     setPreview('info', [0, code, 0]);
-    setPreview(data.renderType, data)
+    setPreview(data.renderType, data);
+
+    parent.postMessage(JSON.stringify({
+        mode: 'codeUpdated',
+        code: code
+    }), parent.location.toString());
 }
 
 window.addEventListener('load', () => {
