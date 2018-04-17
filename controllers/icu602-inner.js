@@ -1,7 +1,7 @@
 let destScreenScroll = 0;
 
 let previewPresets = {
-    fullSized: (data) => {
+    full: (data) => {
         let textContainer = document.getElementById('full-sized');
         textContainer.textContent = data.text;
     },
@@ -44,7 +44,7 @@ function paintDestScreen() {
     }
 
     function createPreview(data) {
-        if (data.renderType === 'fullSized') return data.text;
+        if (data.renderType === 'full') return data.text;
         if (data.renderType === 'standardService') return data.destination.text + ' ' + data.serviceNumber;
     }
 

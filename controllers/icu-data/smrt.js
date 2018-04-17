@@ -1,71 +1,72 @@
 let EDSData = {
     1: {
-        renderType: 'fullSized',
+        renderType: 'full',
         text: 'CHARTERED'
     },
     2: {
-        renderType: 'fullSized',
+        renderType: 'full',
         text: 'ANG MO KIO DEPOT'
     },
     3: {
-        renderType: 'fullSized',
+        renderType: 'full',
         text: 'KRANJI DEPOT'
     },
     4: {
-        renderType: 'fullSized',
+        renderType: 'full',
         text: 'SMRT BUSES'
     },
     5: {
-        renderType: 'fullSized',
+        renderType: 'full',
         text: 'OFF SERVICE'
     },
     6: {
-        renderType: 'fullSized',
+        renderType: 'full',
         text: 'WOODLANDS DEPOT'
     },
     7: {
-        renderType: 'fullSized',
+        renderType: 'full',
         text: 'OFF SERVICE'
     },
     8: {
-        renderType: 'fullSized',
+        renderType: 'full',
         text: 'OFF SERVICE'
     },
     9: {
-        renderType: 'fullSized',
+        renderType: 'full',
         text: 'ON DRIVING TEST'
     },
     10: {
-        renderType: 'fullSized',
+        renderType: 'full',
         text: 'FERRY SERVICE'
     },
     11: {
-        renderType: 'fullSized',
+        renderType: 'full',
         text: 'MRT SHUTTLE'
     },
     13: {
-        renderType: 'fullSized',
+        renderType: 'full',
         text: 'TRAINING BUS'
     },
     14: {
-        renderType: 'fullSized',
+        renderType: 'full',
         text: '???'
     },
     16: {
-        renderType: 'fullSized',
+        renderType: 'full',
         text: 'PULAU TEKONG'
     },
     18: {
-        renderType: 'fullSized',
+        renderType: 'full',
         text: 'LRT SHUTTLE A'
     },
     19: {
-        renderType: 'fullSized',
+        renderType: 'full',
         text: 'LRT SHUTTLE B'
     },
     469: {
         renderType: 'standardService',
         serviceNumber: '172',
+        serviceFont: 'full',
         destination: {
             text: 'BOON LAY',
             font: 'thick'
@@ -101,6 +102,7 @@ let EDSData = {
     475: {
         renderType: 'standardService',
         serviceNumber: '188',
+        serviceFont: 'full',
         destination: {
             text: 'HARBOURFRONT',
             font: 'thick'
@@ -136,6 +138,7 @@ let EDSData = {
     497: {
         renderType: 'standardService',
         serviceNumber: '61',
+        serviceFont: 'full',
         destination: {
             text: 'BUKIT BATOK',
             font: 'thin'
@@ -172,6 +175,7 @@ let EDSData = {
     611: {
         renderType: 'standardService',
         serviceNumber: '176',
+        serviceFont: 'full',
         destination: {
             text: 'BUKIT PANJANG',
             font: 'thick'
@@ -204,9 +208,25 @@ let EDSData = {
             }
         ]
     },
+    529: {
+        renderType: 'standardService',
+        serviceNumber: '985',
+        serviceFont: 'full',
+        destination: {
+            text: 'GEYLANG LOR 1',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: ['GEYLANG LOR 1', '/KALLANG MRT'],
+                font: 'thick'
+            }
+        ]
+    },
     1901: {
         renderType: 'standardService',
         serviceNumber: '190',
+        serviceFont: 'full',
         destination: {
             text: 'KAMPONG BAHRU TER',
             font: 'thin'
