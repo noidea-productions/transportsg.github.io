@@ -169,6 +169,41 @@ let EDSData = {
 
         ]
     },
+    611: {
+        renderType: 'standardService',
+        serviceNumber: '176',
+        destination: {
+            text: 'BUKIT PANJANG',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: 'BUKIT PANJANG',
+                font: 'big',
+                showDest: false
+            },
+            {
+                text: 'TELOK BLANGAH RD',
+                font: 'thick'
+            },
+            {
+                text: 'JURONG TOWN HALL',
+                font: 'thick'
+            },
+            {
+                text: 'BT BATOK CTR/ MRT',
+                font: 'thick'
+            },
+            {
+                text: 'HILLVIEW AVENUE',
+                font: 'thick'
+            },
+            {
+                text: 'UPP BUKIT TIMAH RD',
+                font: 'thick'
+            }
+        ]
+    },
     1901: {
         renderType: 'standardService',
         serviceNumber: '190',
