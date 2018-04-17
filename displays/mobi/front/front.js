@@ -124,7 +124,7 @@ function clearRect(sx, sy, ex, ey) {
 }
 
 function parseRule(rule) {
-    let specialChars = ['[', ']', '.', '!', '{', '}'];
+    let specialChars = ['[', ']', '.', '!', '{', '}', '(', ')'];
     let opening = ['[', '(', '{'];
     let closing = [']', ')', '}'];
     let tokens = [];
@@ -178,7 +178,7 @@ function parseVariables(variableRules, edsData, arrayPos) {
         if (variableRule.startsWith('$')) { // grab data from eds data
             variableRule = parseRule(variableRule.slice(1));
 
-            let specialChars = ['[', ']', '.', '!', '{', '}'];
+            let specialChars = ['[', ']', '.', '!', '{', '}', '(', ')'];
             let currentState = 'assignment';
             let currentVariable = null;
             let skipNext = false;
@@ -209,6 +209,11 @@ function parseVariables(variableRules, edsData, arrayPos) {
                         if (currentVariable === undefined) {
                             currentVariable = simpleParse(token.slice(1, -1));
                         }
+                    } else if (token.startsWith('(') && token.endsWith(')')) {
+                        let comparisonType = token.slice(1, -2);
+
+                        let objectClass = Object.prototype.toString.call(currentVariable).slice(8, -1).toLowerCase();
+                        currentVariable = (objectClass === comparisonType);
                     }
                 }
             });
