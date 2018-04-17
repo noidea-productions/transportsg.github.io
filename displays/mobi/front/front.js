@@ -231,7 +231,30 @@ function parseVariables(variableRules, edsData, arrayPos) {
     return variablePool;
 }
 
-function parseFormat(format, variablePool) {
+function parseFormat(format, variablePool, defaultFont) {
+    let lines = format;
+    if (Object.prototype.toString.call(format).slice(8, -1) !== 'Array') {
+        lines = [format];
+    }
+    let lineTokens = lines.map(e => e.split(/(<[^>]+>)*([\w ]+)*/).filter(Boolean));
+
+    return lineTokens.map(lines => {
+        return lines.map(token => {
+            if (token.startsWith('<')) {
+                let tokenData = token.slice(1, -1).split(',');
+
+                return {
+                    text: variablePool[tokenData[0]],
+                    font: tokenData[1] || defaultFont
+                }
+            } else {
+                return {
+                    text: token,
+                    font: defaultFont
+                }
+            }
+        });
+    });
 }
 
 function renderEDS(currentEDSCode, currentEDSScroll) {
@@ -249,7 +272,7 @@ function renderEDS(currentEDSCode, currentEDSScroll) {
         let format;
 
         if (Object.prototype.toString.call(renderGuideline.format).slice(8, -1) === 'Array') { // Multiline format
-            format = parseFormat(renderGuideline.format, variablePool);
+            format = parseFormat(renderGuideline.format, variablePool, mainFont);
         } else if (Object.prototype.toString.call(renderGuideline.format).slice(8, -1) === 'Object') { // Choose format from condition
             let formatSelectionRules = Object.keys(renderGuideline.format).map(rule => {
                 return parseVariables({_: rule}, edsData, [currentEDSScroll])._;
@@ -258,10 +281,12 @@ function renderEDS(currentEDSCode, currentEDSScroll) {
             let firstTrue = formatSelectionRules.indexOf(true);
             if (firstTrue === -1) return; // Couldn't get format so inactivate render guideline
 
-            format = parseFormat(renderGuideline.format[Object.keys(renderGuideline.format)[firstTrue]], variablePool);
+            format = parseFormat(renderGuideline.format[Object.keys(renderGuideline.format)[firstTrue]], variablePool, mainFont);
         } else { // Singleline format
-            format = parseFormat(renderGuideline.format, variablePool);
+            format = parseFormat(renderGuideline.format, variablePool, mainFont);
         }
+
+        console.log(format)
     });
 }
 
