@@ -1,3 +1,40 @@
+let EDSTemplates = {
+    standardService: [
+        {
+            variables: {
+                serviceNumber: '$serviceNumber'
+            },
+            font: '$serviceFont',
+            format: '<serviceNumber>',
+            align: 'right'
+        },
+        {
+            variables: {
+                currentRoad: '$scrolls[]text',
+                currentRoadFont: '$scrolls[]font',
+                destination: '$destination.text',
+                destinationFont: '$destination.font'
+            },
+            font: '$scrolls[]font',
+            active: '$scrolls[]showDest{true}',
+            format: ['<destination,destinationFont> via', '<currentRoad,currentRoadFont>'],
+            align: 'centre'
+        },
+        {
+            variables: {
+                fullDestination: '$scrolls[]text'
+            },
+            font: '$scrolls[]font',
+            active: '$!scrolls[]showDest{true}',
+            format: {
+                '$scrolls[]text(array?)': ['<fullDestination[0]>', '<fullDestination[1]>'],
+                '$!scrolls[]text(array?)': ['<fullDestination>']
+            },
+            align: 'centre'
+        }
+    ]
+}
+
 let EDSData = {
     1: {
         renderType: 'full',
