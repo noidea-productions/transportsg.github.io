@@ -6,6 +6,7 @@ let EDSTemplates = {
             },
             font: '$serviceFont',
             format: '<serviceNumber>',
+            spaceWidth: 2,
             align: 'right'
         },
         { // Render DEST via ROAD [SVC]
@@ -18,7 +19,8 @@ let EDSTemplates = {
             font: '$scrolls[]font',
             active: '$scrolls[]showDest{true}',
             format: ['<destination,destinationFont> via', '<currentRoad,currentRoadFont>'],
-            align: 'centre'
+            spaceWidth: 1,
+            align: 'centre-width[0]'
         },
         { // Render DEST [SVC]
             variables: {
@@ -30,7 +32,8 @@ let EDSTemplates = {
                 '$scrolls[]text(array?)': ['<fullDestination[0]>', '<fullDestination[1]>'], // Render multiline dest
                 '$!scrolls[]text(array?)': ['<fullDestination>'] // Render singleline dest
             },
-            align: 'centre'
+            spaceWidth: 1,
+            align: 'centre-width[0]'
         }
     ]
 }

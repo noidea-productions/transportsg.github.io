@@ -269,9 +269,38 @@ function parseFormat(format, variablePool, defaultFont) {
     });
 }
 
+function calculateRenderWidth(guideline) {
+    let widths = [];
+
+    guideline.format.forEach(lineFormat => {
+        let lineWidth = 0;
+
+        lineFormat.forEach(formatSection => {
+            lineWidth += getTextWidth([...formatSection.text], formatSection.font, guideline.spaceWidth);
+        })
+        widths.push(lineWidth);
+    });
+
+    return widths;
+}
+
+function parseAlignment(alignment, index, allGuidelines) {
+    let parts = alignment.split(/(\w+)([+-].+)?/).filter(Boolean);
+
+    if (parts.length === 1) return {align: parts[0], offset: 0};
+    let mainAlignment = parts[0];
+    parts = parts[1].split(/([+-])?(\w+)\[(\d+)]/).filter(Boolean);
+
+    if (parts[1] === 'width') {
+        let width = calculateRenderWidth(allGuidelines[parts[2]]).sort((a, b) => a-b)[0];
+        return {align: mainAlignment, offset: parseInt(parts[0] + '1') * width};
+    }
+}
+
 function renderEDS(currentEDSCode, currentEDSScroll) {
     let edsData = EDSData[currentEDSCode];
     let edsFormat = EDSTemplates[edsData.renderType];
+    let renderGuidelinesWithoutAlignment = [];
 
     edsFormat.forEach(renderGuideline => {
         let guidelineActive = parseVariables({_: renderGuideline.active || 'true'}, edsData, [currentEDSScroll])._;
@@ -298,8 +327,18 @@ function renderEDS(currentEDSCode, currentEDSScroll) {
             format = parseFormat(renderGuideline.format, variablePool, mainFont);
         }
 
-        console.log(format)
+        renderGuidelinesWithoutAlignment.push({
+            format, spaceWidth: renderGuideline.spaceWidth, align: renderGuideline.align
+        });
     });
+
+    let renderGuidelines = renderGuidelinesWithoutAlignment.map((guideline, i) => {
+        guideline.align = parseAlignment(guideline.align, i, renderGuidelinesWithoutAlignment);
+        return guideline;
+    });
+
+    console.log(JSON.stringify(renderGuidelines,null,2))
+
 }
 
 function edsHeartbeat() {
