@@ -63,14 +63,16 @@ function getTextWidth(chars, font, spaceWidth) {
     return chars.map(char => !!fonts[font][char] ? fonts[font][char][0].length + spaceWidth : spaceWidth + 4).reduce((a, b) => a + b, 0) - spaceWidth;
 }
 
-function drawTextWithAlignment(text, font, spaceWidth, align, offset, yPos) {
-    let textWidth = getTextWidth([...text], font, spaceWidth),
-        textHeight = fonts[font][Object.keys(fonts[font])[0]].length;
+function drawTextWithAlignment(segments, spaceWidth, align) {
+    let offset = align.offset,
+    textWidth = align.totalLineWidths[0],
+    alignment = align.align;
 
     let startX = 0;
-    switch (align) {
+
+    switch (alignment) {
         case 'centre':
-            startX = (width + offset) / 2 - textWidth / 2;
+            startX = Math.floor((width + offset) / 2 - textWidth / 2);
             break;
         case 'right':
             startX = width + offset - textWidth;
@@ -80,11 +82,19 @@ function drawTextWithAlignment(text, font, spaceWidth, align, offset, yPos) {
             break;
     }
 
-    drawText(text, font, spaceWidth, startX, Math.floor(height / 2 - textHeight / 2 + yPos));
+    segments.forEach(segment => {
+        let text = segment.text,
+            font = segment.font,
+            yPos = segment.yPos;
+
+        startX += drawText(text, font, spaceWidth, startX, yPos);
+    });
 }
 
 function drawText(text, font, spaceWidth, xPos, yPos) {
     let chars = [...text];
+
+    let startX = xPos * 1;
 
     font = font || 'thick';
     spaceWidth = spaceWidth || 1;
@@ -94,6 +104,8 @@ function drawText(text, font, spaceWidth, xPos, yPos) {
     chars.forEach(char => {
         xPos += showChar(char, font, xPos, yPos) + spaceWidth;
     });
+
+    return xPos - startX;
 }
 
 function showChar(char, type, dx, dy) {
@@ -252,7 +264,7 @@ function parseFormat(format, variablePool, defaultFont) {
     if (Object.prototype.toString.call(format).slice(8, -1) !== 'Array') {
         lines = [format];
     }
-    let lineTokens = lines.map(e => e.split(/(<[^>]+>)*([\w ]+)*/).filter(Boolean));
+    let lineTokens = lines.map(e => e.split(/(<[^>]\w+,\w+,\d+>)/).filter(Boolean));
 
     return lineTokens.map(lines => {
         return lines.map(token => {
@@ -265,18 +277,21 @@ function parseFormat(format, variablePool, defaultFont) {
 
                     return {
                         text: variablePool[variableName][arrayIndex],
-                        font: tokenData[1] || defaultFont
+                        font: variablePool[tokenData[1]] || defaultFont,
+                        yPos: tokenData[2] || 0
                     }
                 }
 
                 return {
                     text: variablePool[tokenData[0]],
-                    font: tokenData[1] || defaultFont
+                    font: variablePool[tokenData[1]] || defaultFont,
+                    yPos: tokenData[2] || 0
                 }
             } else {
                 return {
                     text: token,
-                    font: defaultFont
+                    font: defaultFont,
+                    yPos: 0
                 }
             }
         });
@@ -301,13 +316,15 @@ function calculateRenderWidth(guideline) {
 function parseAlignment(alignment, index, allGuidelines) {
     let parts = alignment.split(/(\w+)([+-].+)?/).filter(Boolean);
 
-    if (parts.length === 1) return {align: parts[0], offset: 0};
+    let totalLineWidths = calculateRenderWidth(allGuidelines[index]);
+
+    if (parts.length === 1) return {align: parts[0], offset: 0, totalLineWidths};
     let mainAlignment = parts[0];
     parts = parts[1].split(/([+-])?(\w+)\[(\d+)]/).filter(Boolean);
 
     if (parts[1] === 'width') {
         let width = calculateRenderWidth(allGuidelines[parts[2]]).sort((a, b) => a-b)[0];
-        return {align: mainAlignment, offset: parseInt(parts[0] + '1') * width};
+        return {align: mainAlignment, offset: parseInt(parts[0] + '1') * width, totalLineWidths};
     }
 }
 
@@ -351,8 +368,18 @@ function renderEDS(currentEDSCode, currentEDSScroll) {
         return guideline;
     });
 
+    console.log(JSON.stringify(renderGuidelines, null, 2))
+
     renderGuidelines.forEach(guideline => {
-        
+        let align = guideline.align;
+        let spaceWidth = guideline.spaceWidth;
+        let textLines = guideline.format;
+
+        let lineCount = textLines.length;
+
+        textLines.forEach(line => {
+            drawTextWithAlignment(line, spaceWidth, align, 0);
+        });
     });
 }
 

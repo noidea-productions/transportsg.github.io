@@ -5,7 +5,7 @@ let EDSTemplates = {
                 serviceNumber: '$serviceNumber'
             },
             font: '$serviceFont',
-            format: '<serviceNumber>',
+            format: '<serviceNumber,,0>',
             spaceWidth: 2,
             align: 'right'
         },
@@ -14,11 +14,14 @@ let EDSTemplates = {
                 currentRoad: '$scrolls[]text',
                 currentRoadFont: '$scrolls[]font',
                 destination: '$destination.text',
-                destinationFont: '$destination.font'
+                destinationFont: '$destination.font',
+                via: ' via',
+                viaFont: 'thin'
             },
             font: '$scrolls[]font',
             active: '$scrolls[]showDest{true}',
-            format: ['<destination,destinationFont> via', '<currentRoad,currentRoadFont>'],
+            format: ['<destination,destinationFont,9><via,viaFont,9>', '<currentRoad,currentRoadFont,0>'],
+            yPositions: [9, 0],
             spaceWidth: 1,
             align: 'centre-width[0]'
         },
@@ -29,8 +32,8 @@ let EDSTemplates = {
             font: '$scrolls[]font',
             active: '$!scrolls[]showDest{true}',
             format: {
-                '$scrolls[]text(array?)': ['<fullDestination[0]>', '<fullDestination[1]>'], // Render multiline dest
-                '$!scrolls[]text(array?)': ['<fullDestination>'] // Render singleline dest
+                '$scrolls[]text(array?)': ['<fullDestination[0],,9>', '<fullDestination[1],,0>'], // Render multiline dest
+                '$!scrolls[]text(array?)': ['<fullDestination,,1>'] // Render singleline dest
             },
             spaceWidth: 1,
             align: 'centre-width[0]'
@@ -109,7 +112,7 @@ let EDSData = {
         serviceFont: 'full',
         destination: {
             text: 'BOON LAY',
-            font: 'thick'
+            font: 'thin'
         },
         scrolls: [
             {
@@ -119,23 +122,23 @@ let EDSData = {
             },
             {
                 text: 'CHOA CHU KANG DRIVE',
-                font: 'thick'
+                font: 'thin'
             },
             {
                 text: 'CHOA CHU KANG AVE 1, 3',
-                font: 'thick'
+                font: 'thin'
             },
             {
                 text: 'CHOA CHU KANG RD',
-                font: 'thick'
+                font: 'thin'
             },
             {
                 text: 'BRICKLAND RD',
-                font: 'thick'
+                font: 'thin'
             },
             {
                 text: 'JALAN BEHAR',
-                font: 'thick'
+                font: 'thin'
             }
         ]
     },
@@ -145,7 +148,7 @@ let EDSData = {
         serviceFont: 'full',
         destination: {
             text: 'HARBOURFRONT',
-            font: 'thick'
+            font: 'thin'
         },
         scrolls: [
             {
@@ -218,7 +221,7 @@ let EDSData = {
         serviceFont: 'full',
         destination: {
             text: 'BUKIT PANJANG',
-            font: 'thick'
+            font: 'thin'
         },
         scrolls: [
             {
@@ -254,7 +257,7 @@ let EDSData = {
         serviceFont: 'full',
         destination: {
             text: 'GEYLANG LOR 1',
-            font: 'thick'
+            font: 'thin'
         },
         scrolls: [
             {
@@ -270,41 +273,41 @@ let EDSData = {
         serviceFont: 'full',
         destination: {
             text: 'KAMPONG BAHRU TER',
-            font: 'thin'
+            font: 'thick'
         },
         scrolls: [
             {
                 text: ['KAMPONG BAHRU', 'TERMINAL'],
-                font: 'thick',
+                font: 'thin',
                 showDest: false
             },
             {
                 text: 'BT PANJANG RD',
-                font: 'thick'
+                font: 'thin'
             },
             {
                 text: '??',
-                font: 'thick'
+                font: 'thin'
             },
             {
                 text: '??',
-                font: 'thick'
+                font: 'thin'
             },
             {
                 text: 'STEVENS RD',
-                font: 'thick'
+                font: 'thin'
             },
             {
                 text: 'ORCHARD RD',
-                font: 'thick'
+                font: 'thin'
             },
             {
                 text: 'HILL STREET',
-                font: 'thick'
+                font: 'thin'
             },
             {
                 text: 'CHINATOWN',
-                font: 'thick'
+                font: 'thin'
             }
         ]
     }
