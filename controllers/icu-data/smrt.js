@@ -38,6 +38,46 @@ let EDSTemplates = {
             spaceWidth: 1,
             align: 'centre-width[0]'
         }
+    ],
+    '190-variant': [
+        { // Render svc
+            variables: {
+                serviceNumber: '$serviceNumber'
+            },
+            font: '$serviceFont',
+            format: '<serviceNumber,,0>',
+            spaceWidth: 3,
+            align: 'right'
+        },
+        { // Render DEST via ROAD [SVC]
+            variables: {
+                currentRoad: '$scrolls[]text',
+                currentRoadFont: '$scrolls[]font',
+                destination: '$destination.text',
+                destinationFont: '$destination.font',
+                via: '  via',
+                viaFont: 'thin'
+            },
+            font: '$scrolls[]font',
+            active: '$scrolls[]showDest{true}',
+            format: ['<destination,destinationFont,9><via,viaFont,9>', '<currentRoad,currentRoadFont,0>'],
+            yPositions: [9, 0],
+            spaceWidth: 1,
+            align: 'centre-width[0]'
+        },
+        { // Render DEST [SVC]
+            variables: {
+                fullDestination: '$scrolls[]text'
+            },
+            font: '$scrolls[]font',
+            active: '$!scrolls[]showDest{true}',
+            format: {
+                '$scrolls[]text(array?)': ['<fullDestination[0],,9>', '<fullDestination[1],,0>'], // Render multiline dest
+                '$!scrolls[]text(array?)': ['<fullDestination,,1>'] // Render singleline dest
+            },
+            spaceWidth: 1,
+            align: 'centre-width[0]'
+        }
     ]
 }
 
@@ -92,7 +132,7 @@ let EDSData = {
     },
     14: {
         renderType: 'full',
-        text: '???'
+        text: 'MoBi 190418'
     },
     16: {
         renderType: 'full',
@@ -194,23 +234,27 @@ let EDSData = {
             },
             {
                 text: 'UBI AVE 2',
-                font: 'thick'
+                font: 'thin'
             },
             {
                 text: 'MACPHERSON RD',
-                font: 'thick'
+                font: 'thin'
             },
             {
                 text: 'KALLANG BAHRU',
-                font: 'thick'
+                font: 'thin'
             },
             {
                 text: 'NORTH BRIDGE RD',
-                font: 'thick'
+                font: 'thin'
+            },
+            {
+                text: 'SOUTH BRIDGE RD',
+                font: 'thin'
             },//missing data
             {
                 text: 'CLEMENTI RD',
-                font: 'thick'
+                font: 'thin'
             }
 
         ]
@@ -243,7 +287,7 @@ let EDSData = {
             },
             {
                 text: 'HILLVIEW AVENUE',
-                font: 'thin'
+                font: 'thin' // thick
             },
             {
                 text: 'UPP BUKIT TIMAH RD',
@@ -268,46 +312,46 @@ let EDSData = {
         ]
     },
     1901: {
-        renderType: 'standardService',
+        renderType: '190-variant',
         serviceNumber: '190',
         serviceFont: 'full',
         destination: {
             text: 'KAMPONG BAHRU TER',
-            font: 'thick'
+            font: '190-thin'
         },
         scrolls: [
             {
                 text: ['KAMPONG BAHRU', 'TERMINAL'],
-                font: 'thin',
+                font: 'thick',
                 showDest: false
             },
             {
                 text: 'BT PANJANG RD',
-                font: 'thin'
+                font: '190-thick'
             },
             {
                 text: '??',
-                font: 'thin'
+                font: '190-thick'
             },
             {
                 text: '??',
-                font: 'thin'
+                font: '190-thick'
             },
             {
                 text: 'STEVENS RD',
-                font: 'thin'
+                font: '190-thick'
             },
             {
                 text: 'ORCHARD RD',
-                font: 'thin'
+                font: '190-thick'
             },
             {
                 text: 'HILL STREET',
-                font: 'thin'
+                font: '190-thick'
             },
             {
                 text: 'CHINATOWN',
-                font: 'thin'
+                font: '190-thick'
             }
         ]
     }
