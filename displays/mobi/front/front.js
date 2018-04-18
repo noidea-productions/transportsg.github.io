@@ -1,7 +1,7 @@
 let width = 144, height = 16;
 let ledCache = [];
 
-let currentEDSCode = 5, currentEDSScroll = 0;
+let currentEDSCode = 5, currentEDSScroll = 0, edsHeartbeatInterval = 0;
 
 function generateLEDCssCode() {
     let pixelSize = Math.ceil(window.innerWidth * 0.005);
@@ -55,7 +55,7 @@ window.addEventListener('load', () => {
         }
     }
 
-    setInterval(edsHeartbeat, 4000);
+    edsHeartbeatInterval = setInterval(edsHeartbeat, 4000);
     edsHeartbeat();
 });
 
@@ -370,6 +370,7 @@ function renderEDS(currentEDSCode, currentEDSScroll) {
 
     console.log(JSON.stringify(renderGuidelines, null, 2))
 
+    clearLEDs();
     renderGuidelines.forEach(guideline => {
         let align = guideline.align;
         let spaceWidth = guideline.spaceWidth;
@@ -385,7 +386,14 @@ function renderEDS(currentEDSCode, currentEDSScroll) {
 
 function edsHeartbeat() {
     let edsData = EDSData[currentEDSCode];
+    if (!edsData || !edsData.scrolls) return;
+    let scrollLength = edsData.scrolls.length;
 
+    if (++currentEDSScroll > scrollLength) {
+        currentEDSScroll = 0;
+    };
+
+    renderEDS(currentEDSCode, currentEDSScroll);
 }
 
 window.addEventListener('message', event => {
@@ -395,6 +403,11 @@ window.addEventListener('message', event => {
         switch (eventData.mode) {
             case 'codeUpdated':
                 currentEDSCode = eventData.code;
+                currentEDSScroll = 1;
+                
+                clearInterval(edsHeartbeatInterval);
+                edsHeartbeatInterval = setInterval(edsHeartbeat, 4000);
+                edsHeartbeat();
                 break;
         }
     }
