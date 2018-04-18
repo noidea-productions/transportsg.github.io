@@ -63,10 +63,24 @@ function getTextWidth(chars, font, spaceWidth) {
     return chars.map(char => !!fonts[font][char] ? fonts[font][char][0].length + spaceWidth : spaceWidth + 4).reduce((a, b) => a + b, 0) - spaceWidth;
 }
 
-function showService(serviceNumber) {
-    let textWidth = getTextWidth([...serviceNumber], 'full', 2);
-    let startX = width - textWidth;
-    drawText(serviceNumber, 'full', 2, startX, 0);
+function drawTextWithAlignment(text, font, spaceWidth, align, offset, yPos) {
+    let textWidth = getTextWidth([...text], font, spaceWidth),
+        textHeight = fonts[font][Object.keys(fonts[font])[0]].length;
+
+    let startX = 0;
+    switch (align) {
+        case 'centre':
+            startX = (width + offset) / 2 - textWidth / 2;
+            break;
+        case 'right':
+            startX = width + offset - textWidth;
+            break;
+        default:
+            startX = offset;
+            break;
+    }
+
+    drawText(text, font, spaceWidth, startX, Math.floor(height / 2 - textHeight / 2 + yPos));
 }
 
 function drawText(text, font, spaceWidth, xPos, yPos) {
@@ -337,8 +351,9 @@ function renderEDS(currentEDSCode, currentEDSScroll) {
         return guideline;
     });
 
-    console.log(JSON.stringify(renderGuidelines,null,2))
-
+    renderGuidelines.forEach(guideline => {
+        
+    });
 }
 
 function edsHeartbeat() {
