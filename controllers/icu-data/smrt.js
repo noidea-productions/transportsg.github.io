@@ -158,23 +158,23 @@ let EDSData = {
             },
             {
                 text: 'CHOA CHU KANG WAY',
-                font: 'thick'
+                font: 'thin'
             },
             {
                 text: 'B. B WEST AVE 4, 2',
-                font: 'thick'
+                font: 'thin'
             },
             {
                 text: 'TOH GUAN ROAD',
-                font: 'thick'
+                font: 'thin'
             },
             {
                 text: 'BOON LAY WAY',
-                font: 'thick'
+                font: 'thin'
             },
             {
                 text: 'AYE, CLEMENTI RD',
-                font: 'thick'
+                font: 'thin'
             } //Missing data oh noeses!!
         ]
     },
@@ -231,23 +231,23 @@ let EDSData = {
             },
             {
                 text: 'TELOK BLANGAH RD',
-                font: 'thick'
+                font: 'thin'
             },
             {
                 text: 'JURONG TOWN HALL',
-                font: 'thick'
+                font: 'thin'
             },
             {
                 text: 'BT BATOK CTR/ MRT',
-                font: 'thick'
+                font: 'thin'
             },
             {
                 text: 'HILLVIEW AVENUE',
-                font: 'thick'
+                font: 'thin'
             },
             {
                 text: 'UPP BUKIT TIMAH RD',
-                font: 'thick'
+                font: 'thin'
             }
         ]
     },

@@ -368,7 +368,7 @@ function renderEDS(currentEDSCode, currentEDSScroll) {
         return guideline;
     });
 
-    console.log(JSON.stringify(renderGuidelines, null, 2))
+    // console.log(JSON.stringify(renderGuidelines, null, 2))
 
     clearLEDs();
     renderGuidelines.forEach(guideline => {
@@ -389,7 +389,7 @@ function edsHeartbeat() {
     if (!edsData || !edsData.scrolls) return;
     let scrollLength = edsData.scrolls.length;
 
-    if (++currentEDSScroll > scrollLength) {
+    if (++currentEDSScroll > scrollLength - 1) {
         currentEDSScroll = 0;
     };
 
@@ -403,8 +403,8 @@ window.addEventListener('message', event => {
         switch (eventData.mode) {
             case 'codeUpdated':
                 currentEDSCode = eventData.code;
-                currentEDSScroll = 1;
-                
+                currentEDSScroll = -1;
+
                 clearInterval(edsHeartbeatInterval);
                 edsHeartbeatInterval = setInterval(edsHeartbeat, 4000);
                 edsHeartbeat();
