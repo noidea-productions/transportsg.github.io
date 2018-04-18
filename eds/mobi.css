@@ -7,10 +7,16 @@ body {
     flex-direction: column;
 }
 
-#controller, #rear {
-    width: 50vw;
+#controller {
+    width: 75vw;
     height: 60vh;
 }
+
+#rear {
+    width: 25vw;
+    height: 60vh;
+}
+
 
 iframe {
     border: 0;
