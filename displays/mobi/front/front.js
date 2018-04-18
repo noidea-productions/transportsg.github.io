@@ -63,9 +63,9 @@ function getTextWidth(chars, font, spaceWidth) {
     return chars.map(char => !!fonts[font][char] ? fonts[font][char][0].length + spaceWidth : spaceWidth + 4).reduce((a, b) => a + b, 0) - spaceWidth;
 }
 
-function drawTextWithAlignment(segments, spaceWidth, align) {
+function drawTextWithAlignment(segments, spaceWidth, align, lineNumber) {
     let offset = align.offset,
-    textWidth = align.totalLineWidths[0],
+    textWidth = align.totalLineWidths[lineNumber],
     alignment = align.align;
 
     let startX = 0;
@@ -377,8 +377,8 @@ function renderEDS(currentEDSCode, currentEDSScroll) {
 
         let lineCount = textLines.length;
 
-        textLines.forEach(line => {
-            drawTextWithAlignment(line, spaceWidth, align, 0);
+        textLines.forEach((line, i) => {
+            drawTextWithAlignment(line, spaceWidth, align, i);
         });
     });
 }

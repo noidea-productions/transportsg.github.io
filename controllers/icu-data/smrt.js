@@ -15,7 +15,7 @@ let EDSTemplates = {
                 currentRoadFont: '$scrolls[]font',
                 destination: '$destination.text',
                 destinationFont: '$destination.font',
-                via: ' via',
+                via: '  via',
                 viaFont: 'thin'
             },
             font: '$scrolls[]font',
@@ -133,7 +133,7 @@ let EDSData = {
                 font: 'thin'
             },
             {
-                text: 'BRICKLAND RD',
+                text: 'BRICKLAND ROAD',
                 font: 'thin'
             },
             {
