@@ -8,6 +8,7 @@ window.addEventListener('load', () => {
     document.getElementById('button-yes').addEventListener('click', onYesPressed);
     document.getElementById('button-up').addEventListener('click', onUpPressed);
     document.getElementById('button-down').addEventListener('click', onDownPressed);
+    document.getElementById('operator-selector').addEventListener('change', onOperatorChanged);
 
     inner.postMessage(JSON.stringify({
         mode: 'home'
@@ -63,6 +64,20 @@ function onDownPressed() {
             mode: 'pressDown'
         }), inner.location.toString());
     }
+}
+
+function onOperatorChanged(e) {
+    let currentOperator = document.querySelectorAll('#operator-selector > option')
+    [document.getElementById('operator-selector').selectedIndex].textContent;
+    inner.postMessage(JSON.stringify({
+        mode: 'setOperator',
+        operator: currentOperator
+    }), inner.location.toString());
+
+    parent.postMessage(JSON.stringify({
+        mode: 'setOperator',
+        operator: currentOperator
+    }), parent.location.toString());
 }
 
 window.addEventListener('message', event => {

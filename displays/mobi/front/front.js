@@ -3,6 +3,11 @@ let ledCache = [];
 
 let currentEDSCode = 5, currentEDSScroll = 0, edsHeartbeatInterval = 0;
 
+let EDSTemplateSet = {};
+let EDSDataSet = {};
+let EDSTemplates = {};
+let EDSData = {};
+
 function generateLEDCssCode() {
     let pixelSize = Math.ceil(window.innerWidth * 0.005);
 
@@ -29,6 +34,7 @@ window.addEventListener('resize', () => {
 })
 
 window.addEventListener('load', () => {
+    updateOperator('SMRT');
     generateLEDCssCode();
     for (let x = 0; x < width; x++) {
         ledCache.push([]);
@@ -396,6 +402,11 @@ function edsHeartbeat() {
     renderEDS(currentEDSCode, currentEDSScroll);
 }
 
+function updateOperator(operator) {
+    EDSTemplates = EDSTemplateSet[operator];
+    EDSData = EDSDataSet[operator];
+}
+
 window.addEventListener('message', event => {
     let eventData = JSON.parse(event.data);
 
@@ -408,6 +419,9 @@ window.addEventListener('message', event => {
                 clearInterval(edsHeartbeatInterval);
                 edsHeartbeatInterval = setInterval(edsHeartbeat, 4000);
                 edsHeartbeat();
+                break;
+            case 'setOperator':
+                updateOperator(eventData.operator);
                 break;
         }
     }

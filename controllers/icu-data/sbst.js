@@ -1,4 +1,4 @@
-let EDSTemplates = {
+EDSTemplateSet['SBST'] = {
     standardService: [
         { // Render svc
             variables: {
@@ -26,7 +26,7 @@ let EDSTemplates = {
     ]
 }
 
-let EDSData = {
+EDSDataSet['SBST'] = {
     1741: {
         renderType: 'standardService',
         serviceNumber: '174',

@@ -1,5 +1,10 @@
 let destScreenScroll = 0;
 
+let EDSTemplateSet = {};
+let EDSDataSet = {};
+let EDSTemplates = {};
+let EDSData = {};
+
 let previewPresets = {
     full: (data) => {
         let textContainer = document.getElementById('full-sized');
@@ -73,8 +78,17 @@ function setScreen(screen) {
     window[screen + 'ScreenInit']();
 }
 
+function updateOperator(operator) {
+    EDSTemplates = EDSTemplateSet[operator];
+    EDSData = EDSDataSet[operator];
+}
+
 window.addEventListener('message', (event) => {
     let eventData = JSON.parse(event.data);
+
+    if (eventData.mode === 'setOperator') {
+        updateOperator(eventData.operator);
+    }
 
     if (eventData.mode === 'updateCode') {
         handleCodeUpdate(eventData.code, eventData.data);
@@ -131,4 +145,5 @@ function handleCodeUpdate(code, data) {
 
 window.addEventListener('load', () => {
     setScreen('home');
+    updateOperator('SMRT');
 });

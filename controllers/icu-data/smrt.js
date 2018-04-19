@@ -1,4 +1,4 @@
-let EDSTemplates = {
+EDSTemplateSet['SMRT'] = {
     standardService: [
         { // Render svc
             variables: {
@@ -81,7 +81,7 @@ let EDSTemplates = {
     ]
 }
 
-let EDSData = {
+EDSDataSet['SMRT'] = {
     1: {
         renderType: 'full',
         text: 'CHARTERED'
