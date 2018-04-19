@@ -76,7 +76,11 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "BT BATOK EAST AVE 6&3",
+                text: 'JURONG ROAD',
+                font: 'narrow'
+            },
+            {
+                "text": "BT BATOK EAST AVE 3&6",
                 "font": "narrow"
             },
             {
@@ -100,11 +104,7 @@ EDSDataSet['SBST'] = {
                 "font": "narrow"
             },
             {
-                "text": "NTH, STH BRIDGE RD",
-                "font": "narrow"
-            },
-            {
-                "text": "NTH BRIDGE RD",
+                "text": "NORTH&SOUTH BRIDGE RD",
                 "font": "narrow"
             }
         ]
