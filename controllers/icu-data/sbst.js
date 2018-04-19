@@ -41,7 +41,7 @@ let EDSData = {
                 "font": "narrow"
             },
             {
-                "text": "ORCHARD BLVD",
+                "text": "ORCHARD BOULEVARD",
                 "font": "narrow"
             },
             {
@@ -57,11 +57,11 @@ let EDSData = {
                 "font": "narrow"
             },
             {
-                "text": "JLN JURONG KECHIL",
+                "text": "JALAN JURONG KECHIL",
                 "font": "narrow"
             },
             {
-                "text": "BT BATOK E. AVE 6, 3",
+                "text": "BT BATOK EAST AVE 6&3",
                 "font": "narrow"
             }
         ]
@@ -76,11 +76,11 @@ let EDSData = {
         },
         scrolls: [
             {
-                "text": "BT BATOK E. AVE 6, 3",
+                "text": "BT BATOK EAST AVE 6&3",
                 "font": "narrow"
             },
             {
-                "text": "JLN JURONG KECHIL",
+                "text": "JALAN JURONG KECHIL",
                 "font": "narrow"
             },
             {
