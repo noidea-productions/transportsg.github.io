@@ -287,7 +287,7 @@ let EDSData = {
             },
             {
                 text: 'HILLVIEW AVENUE',
-                font: 'thin' // thick
+                font: 'thick'
             },
             {
                 text: 'UPP BUKIT TIMAH RD',
