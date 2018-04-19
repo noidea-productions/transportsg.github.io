@@ -41,10 +41,12 @@ function onCrossPressed() {
 }
 
 function onYesPressed() {
-    state = 'home';
-    inner.postMessage(JSON.stringify({
-        mode: 'enterPressed'
-    }), inner.location.toString());
+    if (state === 'selectService') {
+        state = 'home';
+        inner.postMessage(JSON.stringify({
+            mode: 'enterPressed'
+        }), inner.location.toString());
+    }
 }
 
 function onUpPressed() {
