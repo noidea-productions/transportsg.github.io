@@ -251,7 +251,15 @@ let EDSData = {
             {
                 text: 'SOUTH BRIDGE RD',
                 font: 'thin'
-            },//missing data
+            },
+            {
+                text: 'TELOK BLANGAH RD',
+                font: 'thin'
+            },
+            {
+                text: 'HOLLAND RD',
+                font: 'thin'
+            },
             {
                 text: 'CLEMENTI RD',
                 font: 'thin'

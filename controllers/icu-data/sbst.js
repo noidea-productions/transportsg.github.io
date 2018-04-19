@@ -108,5 +108,32 @@ let EDSData = {
                 "font": "narrow"
             }
         ]
-    }
+    },
+    8061: {
+        renderType: 'standardService',
+        serviceNumber: '860',
+        serviceFont: 'full',
+        destination: {
+            text: 'YIO CHU KANG INT',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                "text": "UPPER THOMSON RD",
+                "font": "narrow"
+            },
+            {
+                "text": "ANG MO KIO AVE 5",
+                "font": "narrow"
+            },
+            {
+                "text": "YISHUN RING RD",
+                "font": "narrow"
+            },
+            {
+                "text": "YISHUN AVE 3",
+                "font": "narrow"
+            }// Boo missing data
+        ]
+    },
 }
