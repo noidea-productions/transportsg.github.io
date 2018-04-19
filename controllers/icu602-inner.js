@@ -81,6 +81,8 @@ function setScreen(screen) {
 function updateOperator(operator) {
     EDSTemplates = EDSTemplateSet[operator];
     EDSData = EDSDataSet[operator];
+
+    setScreen('home');
 }
 
 window.addEventListener('message', (event) => {
@@ -88,6 +90,7 @@ window.addEventListener('message', (event) => {
 
     if (eventData.mode === 'setOperator') {
         updateOperator(eventData.operator);
+        return;
     }
 
     if (eventData.mode === 'updateCode') {

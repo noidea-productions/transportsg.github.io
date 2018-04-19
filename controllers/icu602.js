@@ -78,6 +78,8 @@ function onOperatorChanged(e) {
         mode: 'setOperator',
         operator: currentOperator
     }), parent.location.toString());
+
+    state = 'home';
 }
 
 window.addEventListener('message', event => {
