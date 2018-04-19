@@ -256,3 +256,18 @@ body {
 #yes-button-icon, #no-button-icon {
     width: 1.8vw;
 }
+
+#operator-selector {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    outline: none;
+    border: 0;
+    padding: 1vw 1.78vw 1vw 2vw;
+    margin-bottom: 3.1vw;
+
+    background-color: #181818;
+    border-radius: 2vw;
+    color: #d1c72f;
+}
