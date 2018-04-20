@@ -174,6 +174,24 @@ let EDSData = {
             'Tampines Ave 3'
         ]
     },
+    50: {
+        2: [
+            'Ang Mo Kio Ave 8',
+            'Ang Mo Kio Ave 5',
+            'Yio Chu Kang Rd',
+            'Sengkang West Ave',
+            'Sengkang East Way',
+            'Punggol Dr'
+        ],
+        1: [
+            'Punggol Dr',
+            'Sengkang East Way',
+            'Sengkang West Ave',
+            'Yio Chu Kang Rd',
+            'Ang Mo Kio Ave 5',
+            'Ang Mo Kio Ave 8'
+        ]
+    },
     59: {
         1: [
             'Loyang Ave',
@@ -671,6 +689,24 @@ let EDSData = {
     '182M': {
         1: [
             'Jalan Ahmad Ibrahim'
+        ]
+    },
+    186: {
+        1: [
+            'Balestier Rd',
+            'Farrer Rd',
+            'Queensway',
+            'Alexandra Rd',
+            'Havelock Rd',
+            'Upper Pickering St'      
+        ], 
+        2: [
+            'Upper Pickering St',
+            'Havelock Rd',
+            'Alexandra Rd',
+            'Queensway',
+            'Farrer Rd',
+            'Balestier Rd'
         ]
     },
     189: {
