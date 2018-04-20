@@ -27,6 +27,37 @@ EDSTemplateSet['SBST'] = {
 }
 
 EDSDataSet['SBST'] = {
+    1071: {
+        renderType: 'standardService',
+        serviceNumber: '107',
+        serviceFont: 'full',
+        destination: {
+            text: 'SHENTON WAY TER',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                "text": "HOUGANG AVE 10",
+                "font": "narrow"
+            },
+            {
+                "text": "UPPER SERANGOON RD",
+                "font": "narrow"
+            },
+            {
+                "text": "KALLANG BAHRU",
+                "font": "narrow"
+            },
+            {
+                "text": "LANVENDER ST",
+                "font": "narrow"
+            },
+            {
+               "text": "BEACH RD",
+               "font": "narrow"
+            }
+        ]   
+    },
     1741: {
         renderType: 'standardService',
         serviceNumber: '174',
@@ -64,7 +95,7 @@ EDSDataSet['SBST'] = {
                 "text": "BT BATOK EAST AVE 6&3",
                 "font": "narrow"
             }
-        ]
+        ]   
     },
     1742: {
         renderType: 'standardService',
