@@ -78,6 +78,17 @@ EDSTemplateSet['SMRT'] = {
             spaceWidth: 1,
             align: 'centre-width[0]'
         }
+    ],
+    full: [
+        {
+            variables: {
+                text: '$text'
+            },
+            font: 'full',
+            format: '<text,,0>',
+            spaceWidth: 1,
+            align: 'centre'
+        }
     ]
 }
 

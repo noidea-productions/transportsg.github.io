@@ -392,8 +392,7 @@ function renderEDS(currentEDSCode, currentEDSScroll) {
 
 function edsHeartbeat() {
     let edsData = EDSData[currentEDSCode];
-    if (!edsData || !edsData.scrolls) return;
-    let scrollLength = edsData.scrolls.length;
+    let scrollLength = edsData.scrolls ? edsData.scrolls.length : 0;
 
     if (++currentEDSScroll > scrollLength - 1) {
         currentEDSScroll = 0;
