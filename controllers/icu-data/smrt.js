@@ -153,7 +153,7 @@ EDSDataSet['SMRT'] = {
         text: 'TRAINING BUS'
     },
     14: {
-        renderType: 'full',
+        renderType: 'big',
         text: 'MoBi 190418'
     },
     16: {
