@@ -61,7 +61,7 @@ window.addEventListener('load', () => {
         }
     }
 
-    edsHeartbeatInterval = setInterval(edsHeartbeat, 4000);
+    edsHeartbeatInterval = setInterval(edsHeartbeat, 3000);
     edsHeartbeat();
 });
 
@@ -417,7 +417,7 @@ window.addEventListener('message', event => {
                 currentEDSScroll = -1;
 
                 clearInterval(edsHeartbeatInterval);
-                edsHeartbeatInterval = setInterval(edsHeartbeat, 4000);
+                edsHeartbeatInterval = setInterval(edsHeartbeat, 3000);
                 edsHeartbeat();
                 break;
             case 'setOperator':
