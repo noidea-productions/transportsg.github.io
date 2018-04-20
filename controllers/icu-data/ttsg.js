@@ -26,7 +26,7 @@ EDSTemplateSet['TTSG'] = {
 }
 
 EDSDataSet['TTSG'] = {
-    7701: {
+    771: {
         renderType: 'standardService',
         serviceNumber: '77',
         destination: {
@@ -53,6 +53,34 @@ EDSDataSet['TTSG'] = {
             {
                "text": "TOH TUCK RD",
                "font": "narrow"
+            }
+        ]
+    },
+    1731: {
+        renderType: 'standardService',
+        serviceNumber: '173',
+        destination: {
+            text: 'CLEMENTI',
+            font: 'fat'
+        },
+        scrolls: [
+            {
+                text: 'HILLVIEW AVE',
+                font: 'narrow'
+            }
+        ]
+    },
+    1891: {
+        renderType: 'standardService',
+        serviceNumber: '189',
+        destination: {
+            text: 'CLEMENTI AVE 1',
+            font: 'fat'
+        },
+        scrolls: [
+            {
+                text: 'BT BATOK EAST AVE 6',
+                font: 'narrow'
             }
         ]
     }
