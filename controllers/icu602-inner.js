@@ -82,6 +82,7 @@ function updateOperator(operator) {
     EDSTemplates = EDSTemplateSet[operator];
     EDSData = EDSDataSet[operator];
 
+    destScreenScroll = 0;
     setScreen('home');
 }
 
