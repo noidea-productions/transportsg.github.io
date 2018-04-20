@@ -49,14 +49,14 @@ EDSDataSet['SBST'] = {
                 "font": "narrow"
             },
             {
-                "text": "LANVENDER ST",
+                "text": "LAVENDER ST",
                 "font": "narrow"
             },
             {
                "text": "BEACH RD",
                "font": "narrow"
             }
-        ]   
+        ]
     },
     1741: {
         renderType: 'standardService',
@@ -95,7 +95,7 @@ EDSDataSet['SBST'] = {
                 "text": "BT BATOK EAST AVE 6&3",
                 "font": "narrow"
             }
-        ]   
+        ]
     },
     1742: {
         renderType: 'standardService',
