@@ -26,6 +26,20 @@ EDSTemplateSet['TTSG'] = {
 }
 
 EDSDataSet['TTSG'] = {
+    661: {
+        renderType: 'standardService',
+        serviceNumber: '66',
+        destination: {
+            text: 'JURONG EAST',
+            font: 'fat'
+        },
+        scrolls: [
+            {
+                text: 'BEDOK RESERVOIR RD',
+                font: 'narrow'
+            }
+        ]
+    },
     771: {
         renderType: 'standardService',
         serviceNumber: '77',
