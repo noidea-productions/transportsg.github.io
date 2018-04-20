@@ -89,6 +89,17 @@ EDSTemplateSet['SMRT'] = {
             spaceWidth: 1,
             align: 'centre'
         }
+    ],
+    big: [
+        {
+            variables: {
+                text: '$text'
+            },
+            font: 'big',
+            format: '<text,,1>',
+            spaceWidth: 1,
+            align: 'centre'
+        }
     ]
 }
 
@@ -110,7 +121,7 @@ EDSDataSet['SMRT'] = {
         text: 'SMRT BUSES'
     },
     5: {
-        renderType: 'full',
+        renderType: 'big',
         text: 'OFF SERVICE'
     },
     6: {
@@ -118,11 +129,11 @@ EDSDataSet['SMRT'] = {
         text: 'WOODLANDS DEPOT'
     },
     7: {
-        renderType: 'full',
+        renderType: 'big',
         text: 'OFF SERVICE'
     },
     8: {
-        renderType: 'full',
+        renderType: 'big',
         text: 'OFF SERVICE'
     },
     9: {
