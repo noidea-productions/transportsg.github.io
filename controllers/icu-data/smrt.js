@@ -386,3 +386,12 @@ EDSDataSet['SMRT'] = {
         ]
     }
 }
+
+EDSExtraMessageSet['SMRT'] = {
+    2: {
+        text: 'GONG XI FA CAI',
+        font: 'full',
+        align: 'centre',
+        yPos: 0
+    }
+}

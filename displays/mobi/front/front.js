@@ -2,6 +2,7 @@ let width = 144, height = 16;
 let ledCache = [];
 
 let currentEDSCode = 5, currentEDSScroll = 0, edsHeartbeatInterval = 0;
+let currentExtraMessage = 0;
 
 let EDSTemplateSet = {};
 let EDSDataSet = {};
@@ -9,6 +10,8 @@ let EDSImageSet = {};
 let EDSTemplates = {};
 let EDSData = {};
 let EDSImages = {};
+let EDSExtraMessageSet = {};
+let EDSExtraMessage = {};
 
 function generateLEDCssCode() {
     let pixelSize = Math.ceil(window.innerWidth * 0.005);
@@ -347,7 +350,39 @@ function parseAlignment(alignment, index, allGuidelines) {
     }
 }
 
-function renderEDS(currentEDSCode, currentEDSScroll) {
+function renderEDS(currentEDSCode, currentEDSScroll, currentExtraMessage) {
+    if (currentEDSScroll === -1 && currentExtraMessage !== 0) {
+        let extraMessageFormat = EDSExtraMessage[currentExtraMessage];
+
+        clearLEDs();
+
+        let text = extraMessageFormat.text;
+        if (Object.prototype.toString.call(text) === '[object String]') {
+            let font = extraMessageFormat.font, align = extraMessageFormat.align;
+            let textWidth = getTextWidth([...text], font, 1);
+
+            let startX = 0;
+
+            switch (align) {
+                case 'centre':
+                    startX = Math.floor(width / 2 - textWidth / 2);
+                    break;
+                case 'right':
+                    startX = width - textWidth;
+                    break;
+                default:
+                    startX = 0;
+                    break;
+            }
+
+            drawText(text, font, 1, startX, extraMessageFormat.yPos);
+        } else {
+
+        }
+
+        return;
+    }
+
     let edsData = EDSData[currentEDSCode];
     let edsFormat = EDSTemplates[edsData.renderType];
     let renderGuidelinesWithoutAlignment = [];
@@ -417,19 +452,23 @@ function renderEDS(currentEDSCode, currentEDSScroll) {
 function edsHeartbeat() {
     let edsData = EDSData[currentEDSCode];
     if (!edsData) return;
-    let scrollLength = edsData.scrolls ? edsData.scrolls.length : 0;
+    let scrollLength = edsData.scrolls ? edsData.scrolls.length : 1;
 
     if (++currentEDSScroll > scrollLength - 1) {
-        currentEDSScroll = 0;
+        if (currentExtraMessage !== 0)
+            currentEDSScroll = -1;
+        else
+            currentEDSScroll = 0;
     };
 
-    renderEDS(currentEDSCode, currentEDSScroll);
+    renderEDS(currentEDSCode, currentEDSScroll, currentExtraMessage);
 }
 
 function updateOperator(operator) {
     EDSTemplates = EDSTemplateSet[operator];
     EDSData = EDSDataSet[operator];
     EDSImages = EDSImageSet[operator] || {};
+    EDSExtraMessage = EDSExtraMessageSet[operator];
 }
 
 window.addEventListener('message', event => {
