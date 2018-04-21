@@ -297,14 +297,14 @@ function parseFormat(format, variablePool, defaultFont) {
                     return {
                         text: variablePool[variableName][arrayIndex],
                         font: variablePool[tokenData[1]] || defaultFont,
-                        yPos: tokenData[2] || 0
+                        yPos: variablePool[tokenData[2]] || tokenData[2] || 0
                     }
                 }
 
                 return {
                     text: variablePool[tokenData[0]],
                     font: variablePool[tokenData[1]] || defaultFont,
-                    yPos: tokenData[2] || 0
+                    yPos: variablePool[tokenData[2]] || tokenData[2] || 0
                 }
             } else {
                 return {

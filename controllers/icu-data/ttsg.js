@@ -26,13 +26,15 @@ EDSTemplateSet['TTSG'] = {
         { // Render TTS Extra messages
             variables: {
                 fullDestination: '$scrolls[]text',
-                image: '$scrolls[]image'
+                image: '$scrolls[]image',
+                yPosTop: '$scrolls[]yPosTop',
+                yPosBelow: '$scrolls[]yPosBelow'
             },
             font: '$scrolls[]font',
             active: '$scrolls[]extraMsg{false}',
             format: {
-                '$scrolls[]text(array?)': ['<fullDestination[0],,9>', '<fullDestination[1],,0>'], // Render multiline dest
-                '$!scrolls[]text(array?)': ['<fullDestination,,3>'] // Render singleline dest
+                '$scrolls[]text(array?)': ['<fullDestination[0],,yPosTop>', '<fullDestination[1],,yPosBelow>'], // Render multiline dest
+                '$!scrolls[]text(array?)': ['<fullDestination,,yPosBelow>'] // Render singleline dest
             },
             spaceWidth: 1,
             align: 'centre',
@@ -177,6 +179,8 @@ EDSDataSet['TTSG'] = {
         scrolls: [
             {
                 text: ['Have a pleasant', 'journey!'],
+                yPosTop: 9,
+                yPosBelow: 1,
                 font: 'tts-message',
                 extraMsg: true,
                 image: 'logo'
@@ -184,14 +188,26 @@ EDSDataSet['TTSG'] = {
             {
                 text: 'BUKIT BATOK',
                 font: 'fat',
+                yPosTop: 0,
+                yPosBelow: 3,
                 extraMsg: true,
                 image: 'mrt'
             },
             {
                 text: ['Merry Christmas &', 'Happy New Year !'],
                 font: 'tts-message',
+                yPosTop: 9,
+                yPosBelow: 1,
                 extraMsg: true,
                 image: 'christmas'
+            },
+            {
+                text: 'GHXC',
+                font: 'tts-chinese',
+                yPosTop: 1,
+                yPosBelow: 1,
+                extraMsg: 'true',
+                image: 'cny'
             }
         ]
     }
