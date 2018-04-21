@@ -125,6 +125,47 @@ EDSDataSet['TTSG'] = {
             }
         ]
     },
+    772: {
+        renderType: 'standardService',
+        serviceNumber: '77',
+        destination: {
+            text: 'MARINA CENTRE',
+            font: 'fat'
+        },
+        scrolls: [
+            {
+                text: ['Have a pleasant', 'journey!'],
+                font: 'tts-message',
+                yPosTop: 9,
+                yPosBelow: 1,
+                extraMsg: true,
+                image: 'logo'
+            },
+            {
+                text: 'MARINA CENTRE',
+                font: 'fat',
+                yPosTop: 0,
+                yPosBelow: 3,
+                extraMsg: true
+            },
+            {
+                "text": "TOH TUCK RD",
+                "font": "narrow"
+            },
+            {
+                "text": "SIXTH AVE",
+                "font": "narrow"
+            },
+            {
+                "text": "HOLLAND RD / VILLAGE",
+                "font": "narrow"
+            },
+            {
+                "text": "ORCHARD RD",
+                "font": "narrow"
+            }
+        ]
+    },
     1061: {
         renderType: 'standardService',
         serviceNumber: '106',
@@ -167,6 +208,90 @@ EDSDataSet['TTSG'] = {
             },
             {
                 text: 'TOH TUCK AVE',
+                font: 'narrow'
+            }
+        ]
+    },
+    1431: {
+        renderType: 'standardService',
+        serviceNumber: '143',
+        destination: {
+            text: 'JURONG EAST',
+            font: 'fat'
+        },
+        scrolls: [
+            {
+                text: ['Have a pleasant', 'journey!'],
+                font: 'tts-message',
+                yPosTop: 9,
+                yPosBelow: 1,
+                extraMsg: true,
+                image: 'logo'
+            },
+            {
+                text: 'JURONG EAST',
+                font: 'fat',
+                yPosTop: 0,
+                yPosBelow: 3,
+                extraMsg: true,
+                image: 'mrt'
+            },
+            {
+                text: 'THOMSON RD',
+                font: 'narrow'
+            },
+            {
+                text: 'ORCHARD RD',
+                font: 'narrow'
+            },
+            {
+                text: 'NEW BRIDGE RD',
+                font: 'narrow'
+            },
+            {
+                text: 'KAMPONG BAHRU RD',
+                font: 'narrow'
+            },
+            {
+                text: 'PASIR PANJANG RD',
+                font: 'narrow'
+            },
+            {
+                text: 'WEST COAST RD',
+                font: 'narrow'
+            },
+            {
+                text: 'JURONG TOWN HALL RD',
+                font: 'narrow'
+            }
+        ]
+    },
+    1432: {
+        renderType: 'standardService',
+        serviceNumber: '143',
+        destination: {
+            text: 'TOA PAYOH',
+            font: 'fat'
+        },
+        scrolls: [
+            {
+                text: ['Have a pleasant', 'journey!'],
+                font: 'tts-message',
+                yPosTop: 9,
+                yPosBelow: 1,
+                extraMsg: true,
+                image: 'logo'
+            },
+            {
+                text: 'TOA PAYOH',
+                font: 'fat',
+                yPosTop: 0,
+                yPosBelow: 3,
+                extraMsg: true,
+                image: 'mrt'
+            },
+            {
+                text: 'HARBOURFRONT',
                 font: 'narrow'
             }
         ]
