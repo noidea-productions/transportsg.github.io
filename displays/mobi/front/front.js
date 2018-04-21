@@ -71,7 +71,7 @@ window.addEventListener('load', () => {
 });
 
 function getTextWidth(chars, font, spaceWidth) {
-    return chars.map(char => !!fonts[font][char] ? fonts[font][char][0].length + spaceWidth : spaceWidth + 4).reduce((a, b) => a + b, 0) - spaceWidth;
+    return chars.map(char => !!(fonts[font] && fonts[font][char]) ? fonts[font][char][0].length + spaceWidth : spaceWidth + 4).reduce((a, b) => a + b, 0) - spaceWidth;
 }
 
 function drawTextWithAlignment(segments, spaceWidth, align, lineNumber) {

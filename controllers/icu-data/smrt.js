@@ -56,7 +56,7 @@ EDSTemplateSet['SMRT'] = {
                 destination: '$destination.text',
                 destinationFont: '$destination.font',
                 via: '  via',
-                viaFont: 'thin'
+                viaFont: '190-thin'
             },
             font: '$scrolls[]font',
             active: '$scrolls[]showDest{true}',
@@ -437,31 +437,31 @@ EDSDataSet['SMRT'] = {
             },
             {
                 text: 'BT PANJANG RD',
-                font: '190-thick'
+                font: 'thin'
             },
             {
                 text: '??',
-                font: '190-thick'
+                font: 'thin'
             },
             {
                 text: '??',
-                font: '190-thick'
+                font: 'thin'
             },
             {
                 text: 'STEVENS RD',
-                font: '190-thick'
+                font: 'thin'
             },
             {
                 text: 'ORCHARD RD',
-                font: '190-thick'
+                font: 'thin'
             },
             {
                 text: 'HILL STREET',
-                font: '190-thick'
+                font: 'thin'
             },
             {
                 text: 'CHINATOWN',
-                font: '190-thick'
+                font: 'thin'
             }
         ]
     }
