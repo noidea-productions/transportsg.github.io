@@ -166,6 +166,34 @@ EDSDataSet['TTSG'] = {
                 font: 'narrow'
             }
         ]
+    },
+    1: {
+        renderType: 'standardService',
+        serviceNumber: '000',
+        destination: {
+            text: 'MESSAGE SCROLL',
+            font: 'fat'
+        },
+        scrolls: [
+            {
+                text: ['Have a pleasant', 'journey!'],
+                font: 'tts-message',
+                extraMsg: true,
+                image: 'logo'
+            },
+            {
+                text: 'BUKIT BATOK',
+                font: 'fat',
+                extraMsg: true,
+                image: 'mrt'
+            },
+            {
+                text: ['Merry Christmas &', 'Happy New Year !'],
+                font: 'tts-message',
+                extraMsg: true,
+                image: 'christmas'
+            }
+        ]
     }
 }
 
