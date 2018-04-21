@@ -62,7 +62,7 @@ EDSDataSet['TTSG'] = {
                 image: 'logo'
             },
             {
-                text: 'BUKIT BATOK',
+                text: 'JURONG EAST',
                 font: 'fat',
                 extraMsg: true,
                 image: 'mrt'
@@ -130,7 +130,7 @@ EDSDataSet['TTSG'] = {
                 image: 'logo'
             },
             {
-                text: 'BUKIT BATOK',
+                text: 'CLEMEMTI',
                 font: 'fat',
                 extraMsg: true,
                 image: 'mrt'
@@ -156,7 +156,7 @@ EDSDataSet['TTSG'] = {
                 image: 'logo'
             },
             {
-                text: 'BUKIT BATOK',
+                text: 'CLEMENTI AVE 1',
                 font: 'fat',
                 extraMsg: true,
                 image: 'mrt'
