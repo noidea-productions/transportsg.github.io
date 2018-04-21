@@ -173,22 +173,6 @@ EDSDataSet['SBST'] = {
             font: 'tall'
         },
         scrolls: [
-            {
-                "text": "UPPER THOMSON RD",
-                "font": "narrow"
-            },
-            {
-                "text": "ANG MO KIO AVE 5",
-                "font": "narrow"
-            },
-            {
-                "text": "YISHUN RING RD",
-                "font": "narrow"
-            },
-            {
-                "text": "YISHUN AVE 3",
-                "font": "narrow"
-            }// Boo missing data
         ]
     },
     8061: {
@@ -216,6 +200,21 @@ EDSDataSet['SBST'] = {
                 "text": "YISHUN AVE 3",
                 "font": "narrow"
             }// Boo missing data
+        ]
+    },
+    8111: {
+        renderType: 'standardService',
+        serviceNumber: '811',
+        serviceFont: 'full',
+        destination: {
+            text: 'YISHUN AVE 5 & 1',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                "text": "YISHUN AVE 1",
+                "font": "narrow"
+            }
         ]
     },
 }
