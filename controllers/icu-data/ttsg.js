@@ -125,6 +125,52 @@ EDSDataSet['TTSG'] = {
             }
         ]
     },
+    1061: {
+        renderType: 'standardService',
+        serviceNumber: '106',
+        destination: {
+            text: 'BUKIT BATOK',
+            font: 'fat'
+        },
+        scrolls: [
+            {
+                text: ['Have a pleasant', 'journey!'],
+                font: 'tts-message',
+                yPosTop: 9,
+                yPosBelow: 1,
+                extraMsg: true,
+                image: 'logo'
+            },
+            {
+                text: 'BUKIT BATOK',
+                font: 'fat',
+                yPosTop: 0,
+                yPosBelow: 3,
+                extraMsg: true,
+                image: 'mrt'
+            },
+            {
+                text: 'BAYFRONT AVE / MBS',
+                font: 'narrow'
+            },
+            {
+                text: 'ORCHARD BOULEVARD',
+                font: 'narrow'
+            },
+            {
+                text: 'HOLLAND RD / VILLAGE',
+                font: 'narrow'
+            },
+            {
+                text: 'C\'WEALTH AVE WEST',
+                font: 'narrow'
+            },
+            {
+                text: 'TOH TUCK AVE',
+                font: 'narrow'
+            }
+        ]
+    },
     1731: {
         renderType: 'standardService',
         serviceNumber: '173',
