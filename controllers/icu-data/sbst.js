@@ -173,6 +173,33 @@ EDSDataSet['SBST'] = {
             font: 'tall'
         },
         scrolls: [
+            {
+                "text": "YISHUN AVE 7",
+                'font': 'narrow'
+            },
+            {
+                "text": "YISHUN RING RD",
+                'font': 'narrow'
+            },
+            {
+                "text": "SEMBAWANG RD",
+                'font': 'narrow'
+            }
+        ]
+    },
+    8041: {
+        renderType: 'int-loopSvc',
+        serviceNumber: '804',
+        serviceFont: 'full',
+        destination: {
+            text: 'YISHUN INT-YISHUN AVE 11',
+            font: 'tall'
+        },
+        scrolls: [
+            {
+                "text": "YISHUN AVE 2",
+                'font': 'narrow'
+            }
         ]
     },
     8061: {
