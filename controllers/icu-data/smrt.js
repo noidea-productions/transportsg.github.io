@@ -388,22 +388,40 @@ EDSDataSet['SMRT'] = {
 }
 
 EDSExtraMessageSet['SMRT'] = {
+    1: {
+        text: ['MERRY CHRISTMAS', 'HAPPY NEW YEAR'],
+        font: 'thick',
+        align: 'centre',
+        yPos: [9, 0]
+    },
     2: {
         text: 'GONG XI FA CAI',
         font: 'full',
         align: 'centre',
         yPos: 0
     },
+    3: {
+        text: 'SELAMAT HARI RAYA',
+        font: 'big',
+        align: 'centre',
+        yPos: 1
+    },
     4: {
         text: ['HAPPY', 'DEEPAVALI'],
-        font: 'narrow',
+        font: 'thick',
         align: 'centre',
-        yPos: [9, 1]
+        yPos: [9, 0]
+    },
+    5: {
+        text: ['EZ READER OUT OF ORDER', 'PLEASE PAY CASH'],
+        font: 'thin',
+        align: 'centre',
+        yPos: [9, 0]
     },
     8: {
-        text: ['RUN RUN RUN', 'LAST BUS ALREADY!!!'],
-        font: 'narrow',
+        text: ['RUN RUN RUN!!!', 'LAST BUS ALREADY!!!'],
+        font: 'thick',
         align: 'centre',
-        yPos: [9, 1]
+        yPos: [9, 0]
     }
 }
