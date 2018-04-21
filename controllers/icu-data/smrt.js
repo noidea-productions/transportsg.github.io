@@ -168,6 +168,86 @@ EDSDataSet['SMRT'] = {
         renderType: 'full',
         text: 'LRT SHUTTLE B'
     },
+    422: {
+        renderType: 'standardService',
+        serviceNumber: '187',
+        serviceFont: 'full',
+        destination: {
+            text: 'BOON LAY',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: ['BOON LAY', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'WOODLANDS AVE 3',
+                font: 'thin'
+            },
+            {
+                text: 'BUKIT PANJANG RD',
+                font: 'thin'
+            },
+            {
+                text: 'BT BATOK WEST',
+                font: 'thin'
+            },
+            {
+                text: 'BT BATOK CTR, MRT',
+                font: 'thin'
+            },
+            {
+                text: 'JURONG EAST',
+                font: 'thick'
+            },
+            {
+                text: 'BOON LAY WAY',
+                font: 'thick'
+            }
+        ]
+    },
+    423: {
+        renderType: 'standardService',
+        serviceNumber: '187',
+        serviceFont: 'full',
+        destination: {
+            text: 'WOODLANDS INT',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['WOODLANDS', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'BOON LAY WAY',
+                font: 'thick'
+            },
+            {
+                text: 'JURONG EAST',
+                font: 'thick'
+            },
+            {
+                text: 'BT BATOK CTR, MRT',
+                font: 'thin'
+            },
+            {
+                text: 'BT BATOK WEST',
+                font: 'thick'
+            },
+            {
+                text: 'BUKIT PANJANG RD',
+                font: 'thin'
+            },
+            {
+                text: 'WOODLANDS AVE 3',
+                font: 'thin'
+            }
+        ]
+    },
     469: {
         renderType: 'standardService',
         serviceNumber: '172',
