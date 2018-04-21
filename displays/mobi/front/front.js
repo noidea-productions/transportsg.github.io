@@ -378,7 +378,13 @@ function renderEDS(currentEDSCode, currentEDSScroll) {
         }
 
         renderGuidelinesWithoutAlignment.push({
-            format, spaceWidth: renderGuideline.spaceWidth, align: renderGuideline.align, images: renderGuideline.images
+            format, spaceWidth: renderGuideline.spaceWidth, align: renderGuideline.align,
+            images: (renderGuideline.images || []).map(image => {
+                return {
+                    name: parseVariables({_: image.name}, edsData, [currentEDSScroll])._,
+                    x: image.x
+                }
+            })
         });
     });
 

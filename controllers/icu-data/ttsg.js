@@ -18,23 +18,27 @@ EDSTemplateSet['TTSG'] = {
                 destinationFont: '$destination.font',
             },
             font: '$scrolls[]font',
-            active: '$scrolls[]showDest{true}',
+            active: '$!scrolls[]extraMsg{false}',
             format: ['<destination,destinationFont,7>', '<currentRoad,currentRoadFont,0>'],
             spaceWidth: 1,
             align: 'centre-width[0]'
         },
-        { // Render DEST via ROAD [SVC]
+        { // Render TTS Extra messages
             variables: {
-                fullDestination: '$scrolls[]text'
+                fullDestination: '$scrolls[]text',
+                image: '$scrolls[]image'
             },
             font: '$scrolls[]font',
-            active: '$!scrolls[]showDest{true}',
-            format: ['<fullDestination,,3>'],
+            active: '$scrolls[]extraMsg{false}',
+            format: {
+                '$scrolls[]text(array?)': ['<fullDestination[0],,9>', '<fullDestination[1],,0>'], // Render multiline dest
+                '$!scrolls[]text(array?)': ['<fullDestination,,3>'] // Render singleline dest
+            },
             spaceWidth: 1,
             align: 'centre',
             images: [
                 {
-                    name: 'mrt',
+                    name: '$scrolls[]image',
                     x: 0
                 }
             ]
@@ -52,6 +56,18 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
+                text: ['Have a pleasant', 'journey!'],
+                font: 'tts-message',
+                extraMsg: true,
+                image: 'logo'
+            },
+            {
+                text: 'BUKIT BATOK',
+                font: 'fat',
+                extraMsg: true,
+                image: 'mrt'
+            },
+            {
                 text: 'BEDOK RESERVOIR RD',
                 font: 'narrow'
             }
@@ -66,9 +82,16 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
+                text: ['Have a pleasant', 'journey!'],
+                font: 'tts-message',
+                extraMsg: true,
+                image: 'logo'
+            },
+            {
                 text: 'BUKIT BATOK',
                 font: 'fat',
-                showDest: false
+                extraMsg: true,
+                image: 'mrt'
             },
             {
                 "text": "STAMFORD RD",
@@ -101,6 +124,18 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
+                text: ['Have a pleasant', 'journey!'],
+                font: 'tts-message',
+                extraMsg: true,
+                image: 'logo'
+            },
+            {
+                text: 'BUKIT BATOK',
+                font: 'fat',
+                extraMsg: true,
+                image: 'mrt'
+            },
+            {
                 text: 'HILLVIEW AVE',
                 font: 'narrow'
             }
@@ -114,6 +149,18 @@ EDSDataSet['TTSG'] = {
             font: 'fat'
         },
         scrolls: [
+            {
+                text: ['Have a pleasant', 'journey!'],
+                font: 'tts-message',
+                extraMsg: true,
+                image: 'logo'
+            },
+            {
+                text: 'BUKIT BATOK',
+                font: 'fat',
+                extraMsg: true,
+                image: 'mrt'
+            },
             {
                 text: 'BT BATOK EAST AVE 6',
                 font: 'narrow'
