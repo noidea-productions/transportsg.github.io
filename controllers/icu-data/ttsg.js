@@ -18,9 +18,26 @@ EDSTemplateSet['TTSG'] = {
                 destinationFont: '$destination.font',
             },
             font: '$scrolls[]font',
+            active: '$scrolls[]showDest{true}',
             format: ['<destination,destinationFont,7>', '<currentRoad,currentRoadFont,0>'],
             spaceWidth: 1,
             align: 'centre-width[0]'
+        },
+        { // Render DEST via ROAD [SVC]
+            variables: {
+                fullDestination: '$scrolls[]text'
+            },
+            font: '$scrolls[]font',
+            active: '$!scrolls[]showDest{true}',
+            format: ['<fullDestination,,3>'],
+            spaceWidth: 1,
+            align: 'centre',
+            images: [
+                {
+                    name: 'mrt',
+                    x: 0
+                }
+            ]
         }
     ]
 }
@@ -48,6 +65,11 @@ EDSDataSet['TTSG'] = {
             font: 'fat'
         },
         scrolls: [
+            {
+                text: 'BUKIT BATOK',
+                font: 'fat',
+                showDest: false
+            },
             {
                 "text": "STAMFORD RD",
                 "font": "narrow"

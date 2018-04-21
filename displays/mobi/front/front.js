@@ -378,7 +378,7 @@ function renderEDS(currentEDSCode, currentEDSScroll) {
         }
 
         renderGuidelinesWithoutAlignment.push({
-            format, spaceWidth: renderGuideline.spaceWidth, align: renderGuideline.align
+            format, spaceWidth: renderGuideline.spaceWidth, align: renderGuideline.align, images: renderGuideline.images
         });
     });
 
@@ -400,6 +400,11 @@ function renderEDS(currentEDSCode, currentEDSScroll) {
         textLines.forEach((line, i) => {
             drawTextWithAlignment(line, spaceWidth, align, i);
         });
+
+        if (guideline.images)
+            guideline.images.forEach(image => {
+                drawImage(image.name, image.x);
+            });
     });
 }
 
