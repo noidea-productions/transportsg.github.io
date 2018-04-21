@@ -377,7 +377,26 @@ function renderEDS(currentEDSCode, currentEDSScroll, currentExtraMessage) {
 
             drawText(text, font, 1, startX, extraMessageFormat.yPos);
         } else {
+            let font = extraMessageFormat.font, align = extraMessageFormat.align;
 
+            text.forEach((line, i) => {
+                let textWidth = getTextWidth([...line], font, 1);
+                let startX = 0;
+
+                switch (align) {
+                    case 'centre':
+                        startX = Math.floor(width / 2 - textWidth / 2);
+                        break;
+                    case 'right':
+                        startX = width - textWidth;
+                        break;
+                    default:
+                        startX = 0;
+                        break;
+                }
+
+                drawText(line, font, 1, startX, extraMessageFormat.yPos[i]);
+            });
         }
 
         return;
@@ -490,6 +509,8 @@ window.addEventListener('message', event => {
 
                 clearInterval(edsHeartbeatInterval);
                 edsHeartbeatInterval = setInterval(edsHeartbeat, 3000);
+                edsHeartbeat();
+
                 break;
             case 'setOperator':
                 updateOperator(eventData.operator);

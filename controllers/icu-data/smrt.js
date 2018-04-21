@@ -393,5 +393,17 @@ EDSExtraMessageSet['SMRT'] = {
         font: 'full',
         align: 'centre',
         yPos: 0
+    },
+    4: {
+        text: ['HAPPY', 'DEEPAVALI'],
+        font: 'narrow',
+        align: 'centre',
+        yPos: [9, 1]
+    },
+    8: {
+        text: ['RUN RUN RUN', 'LAST BUS ALREADY!!!'],
+        font: 'narrow',
+        align: 'centre',
+        yPos: [9, 1]
     }
 }
