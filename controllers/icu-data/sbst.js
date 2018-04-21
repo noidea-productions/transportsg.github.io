@@ -23,6 +23,30 @@ EDSTemplateSet['SBST'] = {
             spaceWidth: 1,
             align: 'left'
         }
+    ],
+    'int-loopSvc': [
+        { // Render svc
+            variables: {
+                serviceNumber: '$serviceNumber'
+            },
+            font: '$serviceFont',
+            format: '<serviceNumber,,0>',
+            spaceWidth: 2,
+            align: 'right'
+        },
+        { // Render DEST via ROAD [SVC]
+            variables: {
+                currentRoad: '$scrolls[]text',
+                currentRoadFont: '$scrolls[]font',
+                destination: '$destination.text',
+                destinationFont: '$destination.font',
+            },
+            font: '$scrolls[]font',
+            format: ['<currentRoad,currentRoadFont,9>','<destination,destinationFont,0>'],
+            yPositions: [9, 0],
+            spaceWidth: 1,
+            align: 'left'
+        }
     ]
 }
 
@@ -138,6 +162,33 @@ EDSDataSet['SBST'] = {
                 "text": "NORTH&SOUTH BRIDGE RD",
                 "font": "narrow"
             }
+        ]
+    },
+    8001: {
+        renderType: 'int-loopSvc',
+        serviceNumber: '800',
+        serviceFont: 'full',
+        destination: {
+            text: 'YISHUN INT-SEMBAWANG RD',
+            font: 'tall'
+        },
+        scrolls: [
+            {
+                "text": "UPPER THOMSON RD",
+                "font": "narrow"
+            },
+            {
+                "text": "ANG MO KIO AVE 5",
+                "font": "narrow"
+            },
+            {
+                "text": "YISHUN RING RD",
+                "font": "narrow"
+            },
+            {
+                "text": "YISHUN AVE 3",
+                "font": "narrow"
+            }// Boo missing data
         ]
     },
     8061: {
