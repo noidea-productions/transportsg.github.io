@@ -163,8 +163,10 @@ window.addEventListener('message', (event) => {
             choiceScreenScrolls[currentScreen] = Object.keys(dataSource[currentScreen]).length - 1;
         }
 
-        paintDestScreen();
-        paintExtraScreen();
+        if (currentScreen === 'dest')
+            paintDestScreen();
+        else if (currentScreen === 'extra')
+            paintExtraScreen();
         return;
     }
 
