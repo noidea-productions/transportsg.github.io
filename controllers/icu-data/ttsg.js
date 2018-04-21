@@ -60,12 +60,16 @@ EDSDataSet['TTSG'] = {
             {
                 text: ['Have a pleasant', 'journey!'],
                 font: 'tts-message',
+                yPosTop: 9,
+                yPosBelow: 1,
                 extraMsg: true,
                 image: 'logo'
             },
             {
                 text: 'JURONG EAST',
                 font: 'fat',
+                yPosTop: 0,
+                yPosBelow: 3,
                 extraMsg: true,
                 image: 'mrt'
             },
@@ -86,12 +90,16 @@ EDSDataSet['TTSG'] = {
             {
                 text: ['Have a pleasant', 'journey!'],
                 font: 'tts-message',
+                yPosTop: 9,
+                yPosBelow: 1,
                 extraMsg: true,
                 image: 'logo'
             },
             {
                 text: 'BUKIT BATOK',
                 font: 'fat',
+                yPosTop: 0,
+                yPosBelow: 3,
                 extraMsg: true,
                 image: 'mrt'
             },
@@ -128,12 +136,16 @@ EDSDataSet['TTSG'] = {
             {
                 text: ['Have a pleasant', 'journey!'],
                 font: 'tts-message',
+                yPosTop: 9,
+                yPosBelow: 1,
                 extraMsg: true,
                 image: 'logo'
             },
             {
                 text: 'CLEMEMTI',
                 font: 'fat',
+                yPosTop: 0,
+                yPosBelow: 3,
                 extraMsg: true,
                 image: 'mrt'
             },
@@ -154,12 +166,16 @@ EDSDataSet['TTSG'] = {
             {
                 text: ['Have a pleasant', 'journey!'],
                 font: 'tts-message',
+                yPosTop: 9,
+                yPosBelow: 1,
                 extraMsg: true,
                 image: 'logo'
             },
             {
                 text: 'CLEMENTI AVE 1',
                 font: 'fat',
+                yPosTop: 0,
+                yPosBelow: 3,
                 extraMsg: true,
                 image: 'mrt'
             },
