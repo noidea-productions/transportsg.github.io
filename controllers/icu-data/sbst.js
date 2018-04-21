@@ -178,11 +178,15 @@ EDSDataSet['SBST'] = {
                 'font': 'narrow'
             },
             {
-                "text": "YISHUN RING RD",
+                "text": "SEMBAWANG RD",
                 'font': 'narrow'
             },
             {
-                "text": "SEMBAWANG RD",
+                "text": "YISHUN ST 71",
+                'font': 'narrow'
+            },
+            {
+                "text": "YISHUN RING RD",
                 'font': 'narrow'
             }
         ]
@@ -198,6 +202,53 @@ EDSDataSet['SBST'] = {
         scrolls: [
             {
                 "text": "YISHUN AVE 2",
+                'font': 'narrow'
+            },
+            {
+                "text": "YISHUN RING RD",
+                'font': 'narrow'
+            },
+            {
+                "text": "YISHUN ST 41",
+                'font': 'narrow'
+            },
+            {
+                "text": "YISHUN AVE 1",
+                'font': 'narrow'
+            },
+            {
+                "text": "YISHUN AVE 11",
+                'font': 'narrow'
+            },
+            {
+                "text": "YISHUN RING RD",
+                'font': 'narrow'
+            }
+        ]
+    },
+    8051: {
+        renderType: 'int-loopSvc',
+        serviceNumber: '805',
+        serviceFont: 'full',
+        destination: {
+            text: 'YISHUN INT-YISHUN AVE 1',
+            font: 'narrow'
+        },
+        scrolls: [
+            {
+                "text": "YISHUN AVE 2",
+                'font': 'narrow'
+            },
+            {
+                "text": "YISHUN AVE 4",
+                'font': 'narrow'
+            },
+            {
+                "text": "YISHUN AVE 1",
+                'font': 'narrow'
+            },
+            {
+                "text": "YISHUN RING RD",
                 'font': 'narrow'
             }
         ]
@@ -239,7 +290,23 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "YISHUN AVE 1",
+                "text": "YISHUN AVE 9,6,7",
+                "font": "narrow"
+            },
+            {
+                "text": "SEMBAWANG RD",
+                "font": "narrow"
+            },
+            {
+                "text": "YISHUN AVE 5,2",
+                "font": "narrow"
+            },
+            {
+                "text": "YISHUN RING RD",
+                "font": "narrow"
+            },
+            {
+                "text": "YISHUN AVE 2",
                 "font": "narrow"
             }
         ]
