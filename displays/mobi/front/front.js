@@ -484,6 +484,13 @@ window.addEventListener('message', event => {
                 edsHeartbeatInterval = setInterval(edsHeartbeat, 3000);
                 edsHeartbeat();
                 break;
+            case 'extraUpdated':
+                currentExtraMessage = eventData.code;
+                currentEDSScroll = -2;
+
+                clearInterval(edsHeartbeatInterval);
+                edsHeartbeatInterval = setInterval(edsHeartbeat, 3000);
+                break;
             case 'setOperator':
                 updateOperator(eventData.operator);
                 break;

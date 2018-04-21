@@ -83,38 +83,38 @@ body {
     font-size: 3vw;
 }
 
-#table-labels {
+.table-labels {
     font-size: 2.4vw;
     height: 2.6vw;
 
     display: flex;
 }
 
-#table-labels > span {
+.table-labels > span {
     display: inline-block;
     width: 15vw;
 }
 
-#dest-table {
+.dest-table {
     height: calc(65vh - 2.6vw - 4vh);
     margin-top: 10vh;
     margin-bottom: 2vh;
     border: 0.5vh solid black;
 }
 
-.dest-table-item {
+.dest-table-item, .extra-table-item {
     font-size: calc((65vh - 2.6vw - 4vh) / 3.6);
     height: calc((65vh - 2.6vw - 4vh) / 3);
     line-height: calc((65vh - 2.6vw - 4vh) / 3);
 }
 
-.dest-table-item > span {
+.dest-table-item > span, .extra-table-item > span {
     margin-left: 1vw;
     display: inline-block;
     width: 14vw;
 }
 
-.dest-table-item > span:nth-child(3) {
+.dest-table-item > span:nth-child(3), .extra-table-item > span:nth-child(3) {
     width: 68vw;
 }
 

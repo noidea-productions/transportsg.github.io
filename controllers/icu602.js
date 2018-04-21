@@ -4,6 +4,7 @@ let state = 'home';
 window.addEventListener('load', () => {
     inner = document.getElementById('controller-iframe').contentWindow;
     document.getElementById('button-f1').addEventListener('click', onF1Pressed);
+    document.getElementById('button-f2').addEventListener('click', onF2Pressed);
     document.getElementById('button-no').addEventListener('click', onCrossPressed);
     document.getElementById('button-yes').addEventListener('click', onYesPressed);
     document.getElementById('button-up').addEventListener('click', onUpPressed);
@@ -34,6 +35,15 @@ function onF1Pressed() {
     }
 }
 
+function onF2Pressed() {
+    if (state === 'home') {
+        state = 'selectExtra';
+        inner.postMessage(JSON.stringify({
+            mode: 'selectExtra'
+        }), inner.location.toString());
+    }
+}
+
 function onCrossPressed() {
     state = 'home';
     inner.postMessage(JSON.stringify({
@@ -42,7 +52,7 @@ function onCrossPressed() {
 }
 
 function onYesPressed() {
-    if (state === 'selectService') {
+    if (state !== 'home') {
         state = 'home';
         inner.postMessage(JSON.stringify({
             mode: 'enterPressed'
@@ -51,7 +61,7 @@ function onYesPressed() {
 }
 
 function onUpPressed() {
-    if (state === 'selectService') {
+    if (state !== 'home') {
         inner.postMessage(JSON.stringify({
             mode: 'pressUp'
         }), inner.location.toString());
@@ -59,7 +69,7 @@ function onUpPressed() {
 }
 
 function onDownPressed() {
-    if (state === 'selectService') {
+    if (state !== 'home') {
         inner.postMessage(JSON.stringify({
             mode: 'pressDown'
         }), inner.location.toString());

@@ -1,9 +1,20 @@
-let destScreenScroll = 0;
+let choiceScreenScrolls = {
+    dest: 0,
+    extra: 0
+}
+
+let currentScreen = '';
+
+let currentDest = 0;
+let currentExtra = 0;
 
 let EDSTemplateSet = {};
 let EDSDataSet = {};
 let EDSTemplates = {};
 let EDSData = {};
+let EDSImages = {};
+let EDSExtraMessageSet = {};
+let EDSExtraMessage = {};
 
 let previewPresets = {
     full: (data) => {
@@ -39,38 +50,55 @@ function destScreenInit() {
     paintDestScreen();
 }
 
-function paintDestScreen() {
-    let allCodes = Object.keys(EDSData).sort((a, b) => a - b);
+function extraScreenInit() {
+    document.getElementById('function-label-row').innerHTML = '<div><span>Sort</span></div>';
 
-    let startCode = Math.max(0, destScreenScroll - destScreenScroll % 3);
+    paintExtraScreen();
+}
+
+function paintChoiceScreen(screenName, dataSource, previewFunction) {
+    let allCodes = Object.keys(dataSource).sort((a, b) => a - b);
+
+    let startCode = Math.max(0, choiceScreenScrolls[screenName] - choiceScreenScrolls[screenName] % 3);
 
     function createDestRow(code, dest, selected) {
-        return `<div class='dest-table-item'><span>${code}</span><span></span><span>${dest}</span></div>`;
-    }
-
-    function createPreview(data) {
-        if (data.renderType === 'full') return data.text;
-        if (data.renderType === 'standardService') return data.destination.text + ' ' + data.serviceNumber;
+        return `<div class='${screenName}-table-item'><span>${code}</span><span></span><span>${dest}</span></div>`;
     }
 
     let html = '';
     for (let i = startCode; i < startCode + 3; i++) {
-        let destData = EDSData[allCodes[i]];
+        let destData = dataSource[allCodes[i]];
         if (!destData) continue;
 
-        html += createDestRow(allCodes[i], createPreview(destData));
+        html += createDestRow(allCodes[i], previewFunction(destData));
     }
 
-    document.getElementById('dest-table').innerHTML = html;
+    document.getElementById('table-'+ screenName).innerHTML = html;
 
-    document.getElementsByClassName('dest-table-item')[destScreenScroll % 3].className = 'dest-table-item selected-row';
+    document.getElementsByClassName(screenName + '-table-item')[choiceScreenScrolls[screenName] % 3].className = screenName + '-table-item selected-row';
+}
+
+function paintDestScreen() {
+    paintChoiceScreen('dest', EDSData, function createPreview(data) {
+        if (data.renderType === 'full') return data.text;
+        if (data.renderType === 'standardService') return data.destination.text + ' ' + data.serviceNumber;
+    });
+}
+
+
+function paintExtraScreen() {
+    paintChoiceScreen('extra', EDSExtraMessage, function createPreview(data) {
+        return data.text;
+    });
 }
 
 function setScreen(screen) {
-    let allStates = ['home', 'dest'];
+    let allStates = ['home', 'dest', 'extra'];
     function hideScreens() {
         allStates.forEach(e => document.getElementById('screen-' + e).style = 'display: none');
     }
+
+    currentScreen = screen;
 
     hideScreens();
 
@@ -81,6 +109,7 @@ function setScreen(screen) {
 function updateOperator(operator) {
     EDSTemplates = EDSTemplateSet[operator];
     EDSData = EDSDataSet[operator];
+    EDSExtraMessage = EDSExtraMessageSet[operator];
 
     destScreenScroll = 0;
     setScreen('home');
@@ -104,43 +133,72 @@ window.addEventListener('message', (event) => {
         return;
     }
 
+    if (eventData.mode === 'selectExtra') {
+        setScreen('extra');
+        return;
+    }
+
     if (eventData.mode === 'homePage') {
         setScreen('home');
         return;
     }
 
     if (eventData.mode === 'pressUp') {
-        destScreenScroll--;
+        choiceScreenScrolls[currentScreen]--;
 
-        if (destScreenScroll < 0) destScreenScroll = 0;
+        if (choiceScreenScrolls[currentScreen] < 0) choiceScreenScrolls[currentScreen] = 0;
 
         paintDestScreen();
+        paintExtraScreen();
+
         return;
     } else if (eventData.mode === 'pressDown') {
-        destScreenScroll++;
+        let dataSource = {
+            dest: EDSData,
+            extra: EDSExtraMessage
+        }
+        choiceScreenScrolls[currentScreen]++;
 
-        if (destScreenScroll >= Object.keys(EDSData).length) {
-            destScreenScroll = Object.keys(EDSData).length - 1;
+        if (choiceScreenScrolls[currentScreen] >= Object.keys(dataSource[currentScreen]).length) {
+            choiceScreenScrolls[currentScreen] = Object.keys(dataSource[currentScreen]).length - 1;
         }
 
         paintDestScreen();
+        paintExtraScreen();
         return;
     }
 
     if (eventData.mode === 'enterPressed') {
-        let allCodes = Object.keys(EDSData).sort((a, b) => a - b);
-        let currentCode = allCodes[destScreenScroll];
+        let dataSource = {
+            dest: EDSData,
+            extra: EDSExtraMessage
+        }
+        let allCodes = Object.keys(dataSource[currentScreen]).sort((a, b) => a - b);
+        let currentCode = allCodes[choiceScreenScrolls[currentScreen]];
 
-        handleCodeUpdate(currentCode, EDSData[currentCode]);
+        if (currentScreen === 'dest') {
+            let data = dataSource[currentScreen][currentCode];
+
+            handleCodeUpdate(currentCode);
+            setPreview(data.renderType, data);
+        } else if (currentScreen === 'extra') {
+            handleExtraUpdate(currentCode);
+        }
+
         setScreen('home');
+        setPreview('info', [0, currentDest, currentExtra]);
         return;
     }
 });
 
-function handleCodeUpdate(code, data) {
-    setPreview('info', [0, code, 0]);
-    setPreview(data.renderType, data);
+function handleExtraUpdate(code) {
+    parent.postMessage(JSON.stringify({
+        mode: 'extraUpdated',
+        code: code
+    }), parent.location.toString());
+}
 
+function handleCodeUpdate(code) {
     parent.postMessage(JSON.stringify({
         mode: 'codeUpdated',
         code: code
