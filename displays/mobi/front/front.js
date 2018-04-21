@@ -5,8 +5,10 @@ let currentEDSCode = 5, currentEDSScroll = 0, edsHeartbeatInterval = 0;
 
 let EDSTemplateSet = {};
 let EDSDataSet = {};
+let EDSImageSet = {};
 let EDSTemplates = {};
 let EDSData = {};
+let EDSImages = {};
 
 function generateLEDCssCode() {
     let pixelSize = Math.ceil(window.innerWidth * 0.005);
@@ -131,6 +133,17 @@ function showChar(char, type, dx, dy) {
         }
     }
     return charWidth;
+}
+
+function drawImage(imageName, xPos) {
+    let imageData = EDSImages[imageName];
+    let imageWidth = imageData[0].length;
+
+    for (let y = 0; y < height; y++) {
+        for (let x = 0; x < imageWidth; x++) {
+            setLED(x, y, imageData[y][x]);
+        }
+    }
 }
 
 function setLED(x, y, state) {
@@ -405,6 +418,7 @@ function edsHeartbeat() {
 function updateOperator(operator) {
     EDSTemplates = EDSTemplateSet[operator];
     EDSData = EDSDataSet[operator];
+    EDSImages = EDSImageSet[operator] || {};
 }
 
 window.addEventListener('message', event => {
