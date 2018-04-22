@@ -41,13 +41,13 @@ EDSTemplateSet['TTSG'] = {
             images: [
                 {
                     name: '$scrolls[]image',
-                    x: 1
+                    x: 0
                 }
             ]
         }
     ],
     full: [,
-        { // Render TTS Extra messages
+        {
             variables: {
                 text: '$text',
                 font: 'large'

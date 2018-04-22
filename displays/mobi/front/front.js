@@ -160,7 +160,7 @@ function drawImage(imageName, xPos) {
 
     for (let y = 0; y < height; y++) {
         for (let x = 0; x < imageWidth; x++) {
-            setLED(x, y, imageData[y][x]);
+            setLED(xPos + x, y, imageData[y][x]);
         }
     }
 }
