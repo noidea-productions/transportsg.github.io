@@ -71,7 +71,18 @@ window.addEventListener('load', () => {
 });
 
 function getTextWidth(chars, font, spaceWidth) {
-    return chars.map(char => !!(fonts[font] && fonts[font][char]) ? fonts[font][char][0].length + spaceWidth : spaceWidth + 4).reduce((a, b) => a + b, 0) - spaceWidth;
+    return chars.map(char => {
+        if (!fonts[font]) return 0;
+
+        let charData = fonts[font][char];
+        if (!charData) return spaceWidth + 4;
+
+        if (Object.prototype.toString.call(charData) !== '[object Array]') {
+            return fonts[font][char].data[0].length + spaceWidth;
+        }
+
+        return fonts[font][char][0].length + spaceWidth;
+    }).reduce((a, b) => a + b, 0) - spaceWidth;
 }
 
 function drawTextWithAlignment(segments, spaceWidth, align, lineNumber) {
@@ -125,6 +136,11 @@ function showChar(char, type, dx, dy) {
     let charData = fonts[type][char];
     if (!charData) {
         charData = fonts['unknown-char'];
+    }
+
+    if (Object.prototype.toString.call(charData) !== '[object Array]') {
+        dy += charData.offset;
+        charData = charData.data;
     }
 
     let charWidth = charData[0].length;
