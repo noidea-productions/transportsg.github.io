@@ -393,7 +393,7 @@ EDSDataSet['TTSG'] = {
                 font: 'tts-chinese',
                 yPosTop: 1,
                 yPosBelow: 1,
-                extraMsg: 'true',
+                extraMsg: true,
                 image: 'cny'
             },
             {
@@ -401,7 +401,7 @@ EDSDataSet['TTSG'] = {
                 font: 'thin',
                 yPosTop: 1,
                 yPosBelow: 4,
-                extraMsg: 'true',
+                extraMsg: true,
                 image: 'candle'
             }
         ]
