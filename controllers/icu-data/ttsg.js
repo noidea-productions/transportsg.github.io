@@ -37,7 +37,7 @@ EDSTemplateSet['TTSG'] = {
                 '$!scrolls[]text(array?)': ['<fullDestination,,yPosBelow>'] // Render singleline dest
             },
             spaceWidth: 1,
-            align: 'centre',
+            align: 'centre-width[0]+image(0)',
             images: [
                 {
                     name: '$scrolls[]image',

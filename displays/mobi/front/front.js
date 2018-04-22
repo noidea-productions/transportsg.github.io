@@ -358,12 +358,27 @@ function parseAlignment(alignment, index, allGuidelines) {
 
     if (parts.length === 1) return {align: parts[0], offset: 0, totalLineWidths};
     let mainAlignment = parts[0];
-    parts = parts[1].split(/([+-])?(\w+)\[(\d+)]/).filter(Boolean);
+    parts = parts[1].split(/([+-])?(\w+)([\[(]\d+[\])])/).filter(Boolean);
+    let offset = 0;
 
-    if (parts[1] === 'width') {
-        let width = calculateRenderWidth(allGuidelines[parts[2]]).sort((a, b) => a-b)[0];
-        return {align: mainAlignment, offset: parseInt(parts[0] + '1') * width, totalLineWidths};
+    for (let i = 0; i < parts.length; i += 3) {
+        let sign = parseInt(parts[i] + '1'), type = parts[i + 1], arg = parts[i + 2];
+        if (type === 'width') {
+            let argContent = arg.slice(1, -1);
+            if (arg.startsWith('[')) {
+                offset += sign * calculateRenderWidth(allGuidelines[argContent]).sort((a, b) => a-b)[0];
+            } else if (arg.startsWith('(')) {
+                offset += sign * argContent
+            }
+        } else if (type === 'image') {
+            let argContent = arg.slice(1, -1);
+            let currentImage = EDSImages[allGuidelines[index].images[argContent].name];
+
+            offset += sign * currentImage[0].length;
+        }
     }
+
+    return {align: mainAlignment, offset, totalLineWidths};
 }
 
 function renderEDS(currentEDSCode, currentEDSScroll, currentExtraMessage) {
