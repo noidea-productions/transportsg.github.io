@@ -232,7 +232,7 @@ EDSDataSet['SBST'] = {
         serviceFont: 'full',
         destination: {
             text: 'YISHUN INT-YISHUN AVE 1',
-            font: 'narrow'
+            font: 'tall'
         },
         scrolls: [
             {
@@ -311,4 +311,66 @@ EDSDataSet['SBST'] = {
             }
         ]
     },
+    2471: {
+        renderType: 'int-loopSvc',
+        serviceNumber: '247',
+        serviceFont: 'full',
+        destination: {
+            text: 'TUAS TER-TUAS BAY LINK',
+            font: 'tall'
+        },
+        scrolls: [
+            {
+                "text": "TUAS AVE 7",
+                "font": "narrow"
+            },
+            {
+                "text": "TUAS CRES",
+                "font": "narrow"
+            },
+            {
+                "text": "TUAS STH AVE 5&4&7",
+                "font": "narrow"
+            },
+            {
+                "text": "TUAS STH AVE 3&9&8",
+                "font": "narrow"
+            },
+            {
+                "text": "TUAS LINK 4",
+                "font": "narrow"
+            }
+        ]
+    },
+    2481: {
+        renderType: 'int-loopSvc',
+        serviceNumber: '248',
+        serviceFont: 'full',
+        destination: {
+            text: 'TUAS TER-TUAS STH AVE 14',
+            font: 'tall'
+        },
+        scrolls: [
+            {
+                "text": "PIONEER RD",
+                "font": "narrow"
+            },
+            {
+                "text": "TUAS AVE 20",
+                "font": "narrow"
+            },
+            {
+                "text": "TUAS STH AVE 5",
+                "font": "narrow"
+            },
+            {
+                "text": "TUAS STH AVE 9",
+                "font": "narrow"
+            },
+            {
+                "text": "TUAS STH AVE 10",
+                "font": "narrow"
+            }
+        ]
+    }
 }
