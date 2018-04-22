@@ -372,5 +372,28 @@ EDSDataSet['SBST'] = {
                 "font": "narrow"
             }
         ]
+    },
+    2581: {
+        renderType: 'int-loopSvc',
+        serviceNumber: '258',
+        serviceFont: 'full',
+        destination: {
+            text: 'JOO KOON INT-JUR W. ST 64',
+            font: 'tall'
+        },
+        scrolls: [
+            {
+                "text": "PIONEER RD NTH",
+                "font": "narrow"
+            },
+            {
+                "text": "JURONG W. ST 61&81&75",
+                "font": "narrow"
+            },
+            {
+                "text": "JALAN AHMAD IBRAHIM",
+                "font": "narrow"
+            }
+        ]
     }
 }
