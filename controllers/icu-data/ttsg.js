@@ -45,10 +45,26 @@ EDSTemplateSet['TTSG'] = {
                 }
             ]
         }
+    ],
+    full: [,
+        { // Render TTS Extra messages
+            variables: {
+                text: '$text',
+                font: 'large'
+            },
+            font: 'large',
+            format: '<text,font,0>',
+            spaceWidth: 3,
+            align: 'centre'
+        }
     ]
 }
 
 EDSDataSet['TTSG'] = {
+    1111: {
+        renderType: 'full',
+        text: 'Off Service'
+    },
     661: {
         renderType: 'standardService',
         serviceNumber: '66',
