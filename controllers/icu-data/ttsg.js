@@ -358,7 +358,7 @@ EDSDataSet['TTSG'] = {
     },
     1: {
         renderType: 'standardService',
-        serviceNumber: '000',
+        serviceNumber: '',
         destination: {
             text: 'MESSAGE SCROLL',
             font: 'fat'
