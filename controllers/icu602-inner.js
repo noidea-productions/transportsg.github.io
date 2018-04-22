@@ -80,8 +80,8 @@ function paintChoiceScreen(screenName, dataSource, previewFunction) {
 
 function paintDestScreen() {
     paintChoiceScreen('dest', EDSData, function createPreview(data) {
-        if (data.renderType === 'full') return data.text;
-        if (data.renderType === 'standardService') return data.destination.text + ' ' + data.serviceNumber;
+        if (!!data.text) return data.text;
+        else if (!!data.destination.text) return data.destination.text + ' ' + data.serviceNumber;
     });
 }
 
