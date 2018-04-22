@@ -397,7 +397,7 @@ EDSDataSet['TTSG'] = {
                 image: 'cny'
             },
             {
-                text: 'Happy Deepavali!',
+                text: 'Happy Deepavali !',
                 font: 'thin',
                 yPosTop: 1,
                 yPosBelow: 4,
