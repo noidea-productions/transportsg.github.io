@@ -56,7 +56,7 @@ EDSTemplateSet['SMRT'] = {
                 destination: '$destination.text',
                 destinationFont: '$destination.font',
                 via: '  via',
-                viaFont: '190-thin'
+                viaFont: 'tall'
             },
             font: '$scrolls[]font',
             active: '$scrolls[]showDest{true}',
@@ -427,7 +427,7 @@ EDSDataSet['SMRT'] = {
         serviceFont: 'full',
         destination: {
             text: 'KAMPONG BAHRU TER',
-            font: '190-thin'
+            font: 'tall'
         },
         scrolls: [
             {
