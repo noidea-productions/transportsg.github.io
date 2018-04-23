@@ -162,7 +162,8 @@ EDSDataSet['TTSG'] = {
                 font: 'fat',
                 yPosTop: 0,
                 yPosBelow: 3,
-                extraMsg: true
+                extraMsg: true,
+                image: 'blank'
             },
             {
                 "text": "TOH TUCK RD",
@@ -224,6 +225,52 @@ EDSDataSet['TTSG'] = {
             },
             {
                 text: 'TOH TUCK AVE',
+                font: 'narrow'
+            }
+        ]
+    },
+    1062: {
+        renderType: 'standardService',
+        serviceNumber: '106',
+        destination: {
+            text: 'SHENTON WAY',
+            font: 'fat'
+        },
+        scrolls: [
+            {
+                text: ['Have a pleasant', 'journey!'],
+                font: 'tts-message',
+                yPosTop: 9,
+                yPosBelow: 1,
+                extraMsg: true,
+                image: 'logo'
+            },
+            {
+                text: 'SHENTON WAY',
+                font: 'fat',
+                yPosTop: 0,
+                yPosBelow: 3,
+                extraMsg: true,
+                image: 'blank'
+            },
+            {
+                text: 'C\'WEALTH RD WEST',
+                font: 'narrow'
+            },
+            {
+                text: 'HOLLAND RD / VILLAGE',
+                font: 'narrow'
+            },
+            {
+                text: 'ORCHARD RD',
+                font: 'narrow'
+            },
+            {
+                text: 'SUNTEC CITY',
+                font: 'narrow'
+            },
+            {
+                text: 'BAYFRONT AVE / MBS',
                 font: 'narrow'
             }
         ]
@@ -540,5 +587,6 @@ EDSImageSet['TTSG'] = {
         [0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0],
         [0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0],
         [0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0]
-    ]
+    ],
+    blank: [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]
 }
