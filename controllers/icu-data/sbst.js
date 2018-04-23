@@ -72,6 +72,17 @@ EDSTemplateSet['SBST'] = {
                 }
             ]
         }
+    ],
+    full: [
+        {
+            variables: {
+                text: '$text'
+            },
+            font: 'full',
+            format: '<text,,0>',
+            spaceWidth: 1,
+            align: 'centre'
+        }
     ]
 }
 
@@ -137,6 +148,10 @@ EDSDataSet['SBST'] = {
                "font": "narrow"
             }
         ]
+    },
+    1111: {
+        renderType: 'full',
+        text: 'OFF SERVICE'
     },
     1741: {
         renderType: 'standardService',
