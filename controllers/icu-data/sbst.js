@@ -82,6 +82,37 @@ EDSDataSet['SBST'] = {
             }
         ]
     },
+    1072: {
+        renderType: 'standardService',
+        serviceNumber: '107',
+        serviceFont: 'full',
+        destination: {
+            text: 'HOUGANG CTRL INT',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                "text": "BEACH RD",
+                "font": "narrow"
+            },
+            {
+                "text": "LAVENDER ST",
+                "font": "narrow"
+            },
+            {
+                "text": "KALLANG BAHRU",
+                "font": "narrow"
+            },
+            {
+                "text": "UPPER SERANGOON RD",
+                "font": "narrow"
+            },
+            {
+               "text": "HOUGANG AVE 10",
+               "font": "narrow"
+            }
+        ]
+    },
     1741: {
         renderType: 'standardService',
         serviceNumber: '174',
