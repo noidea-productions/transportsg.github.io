@@ -17,6 +17,24 @@ let EDSData = {
             'Pasir Ris Dr 3'
         ]
     },
+    7:  {
+       2: [
+           'Changi Rd',
+           'Guillemard Rd',
+           'North Bridge Rd',
+           'Orchard Boulevard',
+           'Holland Rd',
+           'Ulu Pandan Rd'
+        ],
+       1: [
+           'Ulu Pandan Rd',
+           'Holland Rd',
+           'Orchard Rd',
+           'Victora St',
+           'Guillemard Rd',
+           'Sims Ave East'
+        ]
+    },
     20: {
         1: [
             'Tampines Ave 5',
@@ -115,6 +133,20 @@ let EDSData = {
             'Changi North St 1'
         ]
     },
+    39: {
+        2: [
+            'Tampines Ave 2',
+            'Pasir Ris Dr 1',
+            'Jalan Kayu',
+            'Yishun Ave 2'
+        ],
+        1: [
+            'Yishun Ave 2',
+            'Jalan Kayu',
+            'Pasir Ris Dr 1',
+            'Tampines Ave 2'
+        ]
+    },
     '43M': {
        1: [
            'Punggol Way',
@@ -140,6 +172,24 @@ let EDSData = {
             'Bedok North Rd',
             'Bedok Reservoir Rd',
             'Tampines Ave 3'
+        ]
+    },
+    50: {
+        2: [
+            'Ang Mo Kio Ave 8',
+            'Ang Mo Kio Ave 5',
+            'Yio Chu Kang Rd',
+            'Sengkang West Ave',
+            'Sengkang East Way',
+            'Punggol Dr'
+        ],
+        1: [
+            'Punggol Dr',
+            'Sengkang East Way',
+            'Sengkang West Ave',
+            'Yio Chu Kang Rd',
+            'Ang Mo Kio Ave 5',
+            'Ang Mo Kio Ave 8'
         ]
     },
     59: {
@@ -518,12 +568,23 @@ let EDSData = {
    },
    157: {
        2: [
+           'Braddell Rd',
            'Lornie Rd',
            'Bukit Timah Rd',
+           'Jalan Jurong Kechil',
            'Bukit Batok East Ave 3',
            'Jurong East Ave 1',
            'Jurong West Ave 1'
-       ]
+       ],
+       1: [
+          'Jurong West Ave 1',
+          'Jurong East Ave 1',
+          'Bukit Batok East Ave 3',
+          'Jalan Jurong Kechil',
+          'Dunearn Rd',
+          'Lornie Rd',
+          'Braddell Rd'
+             
    },
    161: {
        2: [
@@ -539,7 +600,7 @@ let EDSData = {
            'Sengkang East Rd',
            'Sengkang East Way',
            'Woodlands Ave 2'
-        ]
+      ]
    },
    163: {
        1: [
@@ -628,6 +689,24 @@ let EDSData = {
     '182M': {
         1: [
             'Jalan Ahmad Ibrahim'
+        ]
+    },
+    186: {
+        1: [
+            'Balestier Rd',
+            'Farrer Rd',
+            'Queensway',
+            'Alexandra Rd',
+            'Havelock Rd',
+            'Upper Pickering St'      
+        ], 
+        2: [
+            'Upper Pickering St',
+            'Havelock Rd',
+            'Alexandra Rd',
+            'Queensway',
+            'Farrer Rd',
+            'Balestier Rd'
         ]
     },
     189: {
