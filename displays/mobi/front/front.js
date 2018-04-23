@@ -94,7 +94,7 @@ function drawTextWithAlignment(segments, spaceWidth, align, lineNumber) {
 
     switch (alignment) {
         case 'centre':
-            startX = Math.floor((width + offset) / 2 - textWidth / 2);
+            startX = Math.round((width + offset) / 2 - textWidth / 2);
             break;
         case 'right':
             startX = width + offset - textWidth;

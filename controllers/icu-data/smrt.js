@@ -15,12 +15,11 @@ EDSTemplateSet['SMRT'] = {
                 currentRoadFont: '$scrolls[]font',
                 destination: '$destination.text',
                 destinationFont: '$destination.font',
-                via: '  via',
-                viaFont: 'thin'
+                via: ' via'
             },
             font: '$scrolls[]font',
             active: '$scrolls[]showDest{true}',
-            format: ['<destination,destinationFont,9><via,viaFont,9>', '<currentRoad,currentRoadFont,0>'],
+            format: ['<destination,destinationFont,9><via,destinationFont,9>', '<currentRoad,currentRoadFont,0>'],
             yPositions: [9, 0],
             spaceWidth: 1,
             align: 'centre-width[0]'
@@ -191,7 +190,7 @@ EDSDataSet['SMRT'] = {
                 font: 'thin'
             },
             {
-                text: 'BT BATOK WEST',
+                text: 'BUKIT BATOK WEST',
                 font: 'thin'
             },
             {
@@ -235,7 +234,7 @@ EDSDataSet['SMRT'] = {
                 font: 'thin'
             },
             {
-                text: 'BT BATOK WEST',
+                text: 'BUKIT BATOK WEST',
                 font: 'thick'
             },
             {
