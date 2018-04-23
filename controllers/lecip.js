@@ -88,6 +88,11 @@ let dests = {
         routeType: 'TOWNLINK',
         loopPoint: 'Rochor'
     },
+    27: {
+        interchanges: ['> CHANGI AIRPORT', '> HOUGANG CTRL INT'],
+        routeType: 'TRUNK',
+        loopPoint: ''
+    },
     29: {
         interchanges: ['>TAMPINES INT'],
         routeType: 'TRUNK',
@@ -112,6 +117,16 @@ let dests = {
         interchanges: ['> UPP EAST COAST TER', '> ANG MO KIO DEPOT'],
         routeType: 'TRUNK',
         loopPoint: ''
+    },
+    53: {
+        interchanges: ['> CHANGI AIRPORT', '> BISHAN INT'],
+        routeType: 'TRUNK',
+        loopPoint: ''
+    },
+    '53M': {
+        interchanges: ['> HOUGANG AVE 1'],
+        routeType: 'TRUNK',
+        loopPoint: 'S\'goon Ctrl'
     },
     64: {
         interchanges: ['> SIMS PLACE', '> MEI LING ST'],
