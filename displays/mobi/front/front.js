@@ -519,6 +519,8 @@ function updateOperator(operator) {
     EDSData = EDSDataSet[operator];
     EDSImages = EDSImageSet[operator] || {};
     EDSExtraMessage = EDSExtraMessageSet[operator];
+
+    currentEDSCode = currentEDSScroll = currentExtraMessage = 0;
 }
 
 window.addEventListener('message', event => {

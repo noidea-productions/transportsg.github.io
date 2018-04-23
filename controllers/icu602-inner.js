@@ -57,6 +57,11 @@ function extraScreenInit() {
 }
 
 function paintChoiceScreen(screenName, dataSource, previewFunction) {
+    if (!dataSource) {
+        document.getElementById('table-'+ screenName).innerHTML = '';
+        return;
+    }
+
     let allCodes = Object.keys(dataSource).sort((a, b) => a - b);
 
     let startCode = Math.max(0, choiceScreenScrolls[screenName] - choiceScreenScrolls[screenName] % 3);
