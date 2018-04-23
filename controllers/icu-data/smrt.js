@@ -498,6 +498,12 @@ EDSExtraMessageSet['SMRT'] = {
         align: 'centre',
         yPos: [9, 0]
     },
+    6: {
+        text: 'LAST BUS',
+        font: 'full',
+        align: 'centre',
+        yPos: 0
+    },
     8: {
         text: ['RUN RUN RUN!!!', 'LAST BUS ALREADY!!!'],
         font: 'thick',
