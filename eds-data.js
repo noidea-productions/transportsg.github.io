@@ -584,7 +584,7 @@ let EDSData = {
           'Dunearn Rd',
           'Lornie Rd',
           'Braddell Rd'
-             
+      ]
    },
    161: {
        2: [
@@ -698,8 +698,8 @@ let EDSData = {
             'Queensway',
             'Alexandra Rd',
             'Havelock Rd',
-            'Upper Pickering St'      
-        ], 
+            'Upper Pickering St'
+        ],
         2: [
             'Upper Pickering St',
             'Havelock Rd',
