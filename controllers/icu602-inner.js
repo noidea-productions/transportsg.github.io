@@ -148,9 +148,10 @@ window.addEventListener('message', (event) => {
 
         if (choiceScreenScrolls[currentScreen] < 0) choiceScreenScrolls[currentScreen] = 0;
 
-        paintDestScreen();
-        paintExtraScreen();
-
+        if (currentScreen === 'dest')
+            paintDestScreen();
+        else if (currentScreen === 'extra')
+            paintExtraScreen();
         return;
     } else if (eventData.mode === 'pressDown') {
         let dataSource = {
@@ -159,9 +160,8 @@ window.addEventListener('message', (event) => {
         }
         choiceScreenScrolls[currentScreen]++;
 
-        if (choiceScreenScrolls[currentScreen] >= Object.keys(dataSource[currentScreen]).length) {
+        if (choiceScreenScrolls[currentScreen] >= Object.keys(dataSource[currentScreen]).length)
             choiceScreenScrolls[currentScreen] = Object.keys(dataSource[currentScreen]).length - 1;
-        }
 
         if (currentScreen === 'dest')
             paintDestScreen();
