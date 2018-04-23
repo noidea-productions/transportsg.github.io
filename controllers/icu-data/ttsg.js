@@ -432,19 +432,19 @@ EDSDataSet['TTSG'] = {
             {
                 text: 'BT BATOK EAST AVE 4',
                 font: 'narrow'
-            }
+            },
             {
                 text: 'HILLVIEW AVE',
                 font: 'narrow'
-            }
+            },
             {
                 text: 'HUME AVE',
                 font: 'narrow'
-            }
+            },
             {
                 text: 'BEAUTY WORLD MRT',
                 font: 'narrow'
-            }
+            },
             {
                 text: 'TOH TUCK RD / TERRACE',
                 font: 'narrow'
