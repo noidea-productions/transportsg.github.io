@@ -95,6 +95,52 @@ EDSDataSet['TTSG'] = {
             }
         ]
     },
+    662: {
+        renderType: 'standardService',
+        serviceNumber: '66',
+        destination: {
+            text: 'BEDOK',
+            font: 'fat'
+        },
+        scrolls: [
+            {
+                text: ['Have a pleasant', 'journey!'],
+                font: 'tts-message',
+                yPosTop: 9,
+                yPosBelow: 1,
+                extraMsg: true,
+                image: 'logo'
+            },
+            {
+                text: 'BEDOK',
+                font: 'fat',
+                yPosTop: 0,
+                yPosBelow: 3,
+                extraMsg: true,
+                image: 'mrt'
+            },
+            {
+                text: 'BUKIT BATOK CENTRAL',
+                font: 'narrow'
+            },
+            {
+                text: 'DUNEARN RD',
+                font: 'narrow'
+            },
+            {
+                text: 'LITTLE INDIA',
+                font: 'narrow'
+            },
+            {
+                text: 'MACPHERSON RD / EST',
+                font: 'narrow'
+            },
+            {
+                text: 'BEDOK RESERVOIR RD',
+                font: 'narrow'
+            }
+        ]
+    },
     771: {
         renderType: 'standardService',
         serviceNumber: '77',
@@ -384,7 +430,23 @@ EDSDataSet['TTSG'] = {
                 image: 'mrt'
             },
             {
+                text: 'BT BATOK EAST AVE 4',
+                font: 'narrow'
+            }
+            {
                 text: 'HILLVIEW AVE',
+                font: 'narrow'
+            }
+            {
+                text: 'HUME AVE',
+                font: 'narrow'
+            }
+            {
+                text: 'BEAUTY WORLD MRT',
+                font: 'narrow'
+            }
+            {
+                text: 'TOH TUCK RD / TERRACE',
                 font: 'narrow'
             }
         ]

@@ -283,6 +283,42 @@ EDSDataSet['SMRT'] = {
             }
         ]
     },
+    470: {
+        renderType: 'standardService',
+        serviceNumber: '172',
+        serviceFont: 'full',
+        destination: {
+            text: 'CHOA CHU KANG',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['CHOA CHU KANG', 'INT / MRT / LRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'JLN BOON LAY',
+                font: 'thin'
+            },
+            {
+                text: 'JALAN BEHAR',
+                font: 'thin'
+            },
+            {
+                text: 'CHOA CHU KANG RD',
+                font: 'thin'
+            },
+            {
+                text: 'BRICKLAND RD',
+                font: 'thin'
+            },
+            {
+                text: 'CHOA CHU KANG AVE 1, 3',
+                font: 'thin'
+            }
+        ]
+    },
     475: {
         renderType: 'standardService',
         serviceNumber: '188',
@@ -368,6 +404,38 @@ EDSDataSet['SMRT'] = {
 
         ]
     },
+    512: {
+        renderType: 'standardService',
+        serviceNumber: '970',
+        serviceFont: 'full',
+        destination: {
+            text: 'SHENTON WAY',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: 'SHENTON WAY',
+                font: 'big',
+                showDest: false
+            },
+            {
+                text: 'HILLVIEW RD, AVE',
+                font: 'thin'
+            },
+            {
+                text: 'JLN JURONG KECHIL',
+                font: 'thin'
+            },
+            {
+                text: 'DUNEARN RD',
+                font: 'thin'
+            },
+            {
+                text: 'SIXTH AVE',
+                font: 'thin'
+            }
+        ]
+    },
     611: {
         renderType: 'standardService',
         serviceNumber: '176',
@@ -404,6 +472,66 @@ EDSDataSet['SMRT'] = {
             }
         ]
     },
+    619: {
+        renderType: 'standardService',
+        serviceNumber: '970',
+        serviceFont: 'full',
+        destination: {
+            text: 'BUKIT PANJANG',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['BUKIT', 'PANJANG'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'NEW BRIDGE RD',
+                font: 'thin'
+            },
+            {
+                text: 'ZION RD',
+                font: 'thin'
+            }
+        ]
+    },
+    528: {
+        renderType: 'standardService',
+        serviceNumber: '985',
+        serviceFont: 'full',
+        destination: {
+            text: 'CHOA CHU KANG',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['CHOA CHU KANG', 'INT / MRT / LRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'SERANGOON RD',
+                font: 'thin'
+            },
+            {
+                text: 'JLN TOA PAYOH',
+                font: 'thin'
+            },
+            {
+                text: 'B.B EAST AVE 2, 4',
+                font: 'thin'
+            },
+            {
+                text: 'B.B WEST AVE 7',
+                font: 'thin'
+            },
+            {
+                text: 'TECK WHYE AVE',
+                font: 'thin'
+            }
+        ]
+    },
     529: {
         renderType: 'standardService',
         serviceNumber: '985',
@@ -414,7 +542,7 @@ EDSDataSet['SMRT'] = {
         },
         scrolls: [
             {
-                text: ['GEYLANG LOR 1', '/KALLANG MRT'],
+                text: ['GEYLANG LOR 1/', 'KALLANG MRT'],
                 font: 'thick',
                 showDest: false
             }
