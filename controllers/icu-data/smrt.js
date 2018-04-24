@@ -414,8 +414,8 @@ EDSDataSet['SMRT'] = {
         },
         scrolls: [
             {
-                text: 'SHENTON WAY',
-                font: 'big',
+                text: ['SHENTON', 'WAY'],
+                font: 'thick',
                 showDest: false
             },
             {
@@ -432,6 +432,18 @@ EDSDataSet['SMRT'] = {
             },
             {
                 text: 'SIXTH AVE',
+                font: 'thin'
+            },
+            {
+                text: 'COMMONWEALTH AVE',
+                font: 'thin'
+            },
+            {
+                text: 'KIM SENG ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'EU TONG SEN ST',
                 font: 'thin'
             }
         ]
