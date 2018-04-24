@@ -451,6 +451,32 @@ EDSDataSet['TTSG'] = {
             }
         ]
     },
+    1771: {
+        renderType: 'standardService',
+        serviceNumber: '177',
+        destination: {
+            text: 'BUKIT PANJANG',
+            font: 'fat'
+        },
+        scrolls: [
+            {
+                text: ['Have a pleasant', 'journey!'],
+                font: 'tts-message',
+                yPosTop: 9,
+                yPosBelow: 1,
+                extraMsg: true,
+                image: 'logo'
+            },
+            {
+                text: 'BUKIT PANJANG',
+                font: 'fat',
+                yPosTop: 0,
+                yPosBelow: 3,
+                extraMsg: true,
+                image: 'blank'
+            }
+        ]
+    },
     1891: {
         renderType: 'standardService',
         serviceNumber: '189',
@@ -473,7 +499,7 @@ EDSDataSet['TTSG'] = {
                 yPosTop: 0,
                 yPosBelow: 3,
                 extraMsg: true,
-                image: 'mrt'
+                image: 'blank'
             },
             {
                 text: 'BT BATOK EAST AVE 6',
