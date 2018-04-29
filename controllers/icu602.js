@@ -16,6 +16,12 @@ function playAnnouncement(announcementID, playComplete) {
 
 function startPlayingAnnouncements() {
     let nextAnnouncement = announcementQueue.shift();
+    if (!nextAnnouncement) return;
+    
+    if (nextAnnouncement < 1 || nextAnnouncement > 7) {
+        startPlayingAnnouncements();
+        return;
+    }
 
     announcementPlaying = true;
 
