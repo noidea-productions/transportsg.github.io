@@ -192,6 +192,22 @@ let EDSData = {
             'Ang Mo Kio Ave 8'
         ]
     },
+    53: {
+        1: [
+            'Bishan Rd',
+            'Serangoon Central',
+            'Lorong Ah Soo',
+            'Hougang Ave 1',
+            'Pasir Ris Dr 1'
+        ],
+        2: [
+            'Pasir Ris Dr 1',
+            'Hougang Ave 1',
+            'Lorong Ah Soo',
+            'Serangoon Central',
+            'Bishan Rd'
+        ]
+    },
     59: {
         1: [
             'Loyang Ave',
