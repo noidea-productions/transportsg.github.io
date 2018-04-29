@@ -16,10 +16,12 @@ let EDSImages = {};
 let EDSExtraMessageSet = {};
 let EDSExtraMessage = {};
 
+let previewCanvas;
+
 let previewPresets = {
     full: (data) => {
-        let textContainer = document.getElementById('full-sized');
-        textContainer.textContent = data.text;
+        // let textContainer = document.getElementById('full-sized');
+        // textContainer.textContent = data.text;
     },
     info: (data) => {
         let nodes = document.getElementById('output-info').children;
@@ -31,8 +33,8 @@ let previewPresets = {
         });
     },
     standardService: (data) => {
-        let textContainer = document.getElementById('full-sized');
-        textContainer.textContent = data.serviceNumber;
+        // let textContainer = document.getElementById('full-sized');
+        // textContainer.textContent = data.serviceNumber;
     }
 };
 
@@ -121,11 +123,19 @@ function updateOperator(operator) {
 }
 
 function showScreen(matrix) {
+    let scaleFactor = 4;
+    let ctx = previewCanvas.getContext('2d');
+    ctx.clearRect(0, 0, 144 * scaleFactor, 16 * scaleFactor);
+    ctx.beginPath();
     matrix.forEach((column, x) => {
         column.forEach((pixel, y) => {
-            
+            if (pixel) {
+                ctx.fillRect(x * scaleFactor, y * scaleFactor, scaleFactor, scaleFactor);
+            }
         });
     });
+
+    ctx.stroke();
 }
 
 window.addEventListener('message', (event) => {
@@ -228,4 +238,8 @@ function handleCodeUpdate(code) {
 window.addEventListener('load', () => {
     setScreen('home');
     updateOperator('SMRT');
+    previewCanvas = document.getElementById('preview-canvas');
+
+    let ctx = previewCanvas.getContext('2d');
+    ctx.fillStyle = 'black';
 });
