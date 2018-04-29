@@ -17,7 +17,7 @@ function playAnnouncement(announcementID, playComplete) {
 function startPlayingAnnouncements() {
     let nextAnnouncement = announcementQueue.shift();
     if (!nextAnnouncement) return;
-    
+
     if (nextAnnouncement < 1 || nextAnnouncement > 7) {
         startPlayingAnnouncements();
         return;
@@ -51,10 +51,11 @@ window.addEventListener('load', () => {
         let buttonDiv = document.getElementById('button-' + button);
 
         buttonDiv.addEventListener('click', () => {
-            console.log(button + ' pressed');
-            announcementQueue.push(button);
-            if (!announcementPlaying) {
-                startPlayingAnnouncements();
+            if (state === 'home') {
+                announcementQueue.push(button);
+                if (!announcementPlaying) {
+                    startPlayingAnnouncements();
+                }
             }
         });
     }
