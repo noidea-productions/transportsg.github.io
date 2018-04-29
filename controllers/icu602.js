@@ -18,14 +18,10 @@ function startPlayingAnnouncements() {
     let nextAnnouncement = announcementQueue.shift();
     if (!nextAnnouncement) return;
 
-    if (nextAnnouncement < 1 || nextAnnouncement > 7) {
-        startPlayingAnnouncements();
-        return;
-    }
-
     announcementPlaying = true;
 
     playAnnouncement(nextAnnouncement, () => {
+        console.log('complete');
         if (announcementQueue.length !== 0)
             setTimeout(() => {
                 startPlayingAnnouncements();
@@ -52,6 +48,7 @@ window.addEventListener('load', () => {
 
         buttonDiv.addEventListener('click', () => {
             if (state === 'home') {
+                if (button < 1 || button > 7) return;
                 announcementQueue.push(button);
                 if (!announcementPlaying) {
                     startPlayingAnnouncements();
