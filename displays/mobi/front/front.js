@@ -187,6 +187,14 @@ function clearRect(sx, sy, ex, ey) {
     }
 }
 
+function edsToMatrix() {
+    return ledCache.map(column => {
+        return column.map(led => {
+            return led.className.includes('on');
+        });
+    });
+}
+
 function parseRule(rule) {
     let specialChars = ['[', ']', '.', '!', '{', '}', '(', ')'];
     let opening = ['[', '(', '{'];
@@ -497,6 +505,13 @@ function renderEDS(currentEDSCode, currentEDSScroll, currentExtraMessage) {
                 drawImage(image.name, image.x);
             });
     });
+
+    let matrixData = edsToMatrix();
+
+    parent.postMessage(JSON.stringify({
+        type: 'controller-preview',
+        matrix: matrixData
+    }), parent.location.toString());
 }
 
 function edsHeartbeat() {

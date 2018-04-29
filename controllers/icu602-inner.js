@@ -120,8 +120,21 @@ function updateOperator(operator) {
     setScreen('home');
 }
 
+function showScreen(matrix) {
+    matrix.forEach((column, x) => {
+        column.forEach((pixel, y) => {
+            
+        });
+    });
+}
+
 window.addEventListener('message', (event) => {
     let eventData = JSON.parse(event.data);
+
+    if (eventData.mode === 'controller-preview') {
+        showScreen(eventData.matrix);
+        return;
+    }
 
     if (eventData.mode === 'setOperator') {
         updateOperator(eventData.operator);

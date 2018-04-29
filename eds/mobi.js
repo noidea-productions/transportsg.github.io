@@ -9,6 +9,10 @@ window.addEventListener('message', event => {
     let eventData = JSON.parse(event.data);
 
     if (event.origin == location.origin) {
+        if (eventData.type === 'controller-preview') {
+            controller.contentWindow.postMessage(event.data, location.toString());
+            return;
+        }
         propagateEvent(eventData);
     }
 });
