@@ -167,6 +167,10 @@ EDSDataSet['SMRT'] = {
         renderType: 'full',
         text: 'LRT SHUTTLE B'
     },
+    155: {
+        renderType: 'big',
+        text: 'FREE SHUTTLE BUS'
+    },
     422: {
         renderType: 'standardService',
         serviceNumber: '187',
