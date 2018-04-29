@@ -473,7 +473,11 @@ EDSDataSet['TTSG'] = {
                 yPosTop: 0,
                 yPosBelow: 3,
                 extraMsg: true,
-                image: 'blank'
+                image: 'mrt'
+            },
+            {
+                text: 'UPP BUKIT TIMAH RD',
+                font: 'narrow'
             }
         ]
     },
@@ -503,6 +507,186 @@ EDSDataSet['TTSG'] = {
             },
             {
                 text: 'BT BATOK EAST AVE 6',
+                font: 'narrow'
+            }
+        ]
+    },
+    9411: {
+        renderType: 'standardService',
+        serviceNumber: '941',
+        destination: {
+            text: 'BUKIT BATOK',
+            font: 'fat'
+        },
+        scrolls: [
+            {
+                text: ['Have a pleasant', 'journey!'],
+                font: 'tts-message',
+                yPosTop: 9,
+                yPosBelow: 1,
+                extraMsg: true,
+                image: 'logo'
+            },
+            {
+                text: 'BUKIT BATOK',
+                font: 'fat',
+                yPosTop: 0,
+                yPosBelow: 3,
+                extraMsg: true,
+                image: 'mrt'
+            },
+            {
+                text: 'BT BATOK WEST AVE 3',
+                font: 'narrow'
+            },
+            {
+                text: 'BT BATOK WEST AVE 6',
+                font: 'narrow'
+            },
+            {
+                text: 'BT BATOK ST 11',
+                font: 'narrow'
+            },
+            {
+                text: 'BT BATOK WEST AVE 8',
+                font: 'narrow'
+            }
+        ]
+    },
+    9451: {
+        renderType: 'standardService',
+        serviceNumber: '945',
+        destination: {
+            text: 'BUKIT BATOK',
+            font: 'fat'
+        },
+        scrolls: [
+            {
+                text: ['Have a pleasant', 'journey!'],
+                font: 'tts-message',
+                yPosTop: 9,
+                yPosBelow: 1,
+                extraMsg: true,
+                image: 'logo'
+            },
+            {
+                text: 'BUKIT BATOK',
+                font: 'fat',
+                yPosTop: 0,
+                yPosBelow: 3,
+                extraMsg: true,
+                image: 'mrt'
+            },
+            {
+                text: 'BT BATOK EAST AVE 5',
+                font: 'narrow'
+            },
+            {
+                text: 'BT BATOK ST 52',
+                font: 'narrow'
+            },
+            {
+                text: 'BT GOMBAK MRT',
+                font: 'narrow'
+            },
+            {
+                text: 'BT BATOK WEST AVE 7',
+                font: 'narrow'
+            },
+            {
+                text: 'BT BATOK ST 34',
+                font: 'narrow'
+            }
+        ]
+    },
+    9741: {
+        renderType: 'standardService',
+        serviceNumber: '974',
+        destination: {
+            text: 'BUKIT PANJANG',
+            font: 'fat'
+        },
+        scrolls: [
+            {
+                text: ['Have a pleasant', 'journey!'],
+                font: 'tts-message',
+                yPosTop: 9,
+                yPosBelow: 1,
+                extraMsg: true,
+                image: 'logo'
+            },
+            {
+                text: 'BUKIT PANJANG',
+                font: 'fat',
+                yPosTop: 0,
+                yPosBelow: 3,
+                extraMsg: true,
+                image: 'mrt'
+            },
+            {
+                text: 'UPP JURONG RD',
+                font: 'narrow'
+            },
+            {
+                text: 'JURONG WEST ST 63',
+                font: 'narrow'
+            },
+            {
+                text: 'JLN BOON LAY',
+                font: 'narrow'
+            },
+            {
+                text: 'CHOA CHU KANG MRT',
+                font: 'narrow'
+            },
+            {
+                text: 'CHOA CHU KANG WAY',
+                font: 'narrow'
+            }
+        ]
+    },
+    9742: {
+        renderType: 'standardService',
+        serviceNumber: '974',
+        destination: {
+            text: 'JOO KOON',
+            font: 'fat'
+        },
+        scrolls: [
+            {
+                text: ['Have a pleasant', 'journey!'],
+                font: 'tts-message',
+                yPosTop: 9,
+                yPosBelow: 1,
+                extraMsg: true,
+                image: 'logo'
+            },
+            {
+                text: 'JOO KOON',
+                font: 'fat',
+                yPosTop: 0,
+                yPosBelow: 3,
+                extraMsg: true,
+                image: 'mrt'
+            },
+            {
+                text: 'CHOA CHU KANG WAY',
+                font: 'narrow'
+            },
+            {
+                text: 'CHOA CHU KANG MRT',
+                font: 'narrow'
+            },
+            {
+                text: 'JLN BOON LAY',
+                font: 'narrow'
+            },
+            {
+                text: 'JURONG WEST ST 63',
+                font: 'narrow'
+            },
+            {
+                text: 'UPP JURONG RD',
                 font: 'narrow'
             }
         ]
