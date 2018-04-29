@@ -241,6 +241,22 @@ EDSDataSet['SBST'] = {
         serviceFont: 'full',
         text: 'FAST FORWARD 174'
     },
+    3333: {
+        renderType: 'full',
+        text: 'FREE SHUTTLE'
+    },
+    4444: {
+        renderType: 'full',
+        text: 'ON TEST'
+    },
+    5555: {
+        renderType: 'full',
+        text: 'TRAINING BUS'
+    },
+    7777: {
+        renderType: 'full',
+        text: 'FREE BRIDGING BUS'
+    },
     8001: {
         renderType: 'int-loopSvc',
         serviceNumber: '800',
@@ -367,7 +383,7 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "YISHUN AVE 9,6,7",
+                "text": "YISHUN AVE 9,6&7",
                 "font": "narrow"
             },
             {
