@@ -1,7 +1,37 @@
 let inner = null;
 let state = 'home';
 
+let currentOperator;
+
+let announcementQueue = [];
+let announcementPlaying = false;
+
+function playAnnouncement(announcementID, playComplete) {
+    let announcementURL = '/resources/audio/' + currentOperator + '/' + announcementID + '.mp3';
+
+    let audio = new Audio(announcementURL);
+    audio.addEventListener('ended', playComplete);
+    audio.play();
+}
+
+function startPlayingAnnouncements() {
+    let nextAnnouncement = announcementQueue.shift();
+
+    announcementPlaying = true;
+
+    playAnnouncement(nextAnnouncement, () => {
+        if (announcementQueue.length !== 0)
+            setTimeout(() => {
+                startPlayingAnnouncements();
+            }, 500);
+        else
+            announcementPlaying = false;
+    });
+}
+
 window.addEventListener('load', () => {
+    currentOperator = 'SMRT';
+
     inner = document.getElementById('controller-iframe').contentWindow;
     document.getElementById('button-f1').addEventListener('click', onF1Pressed);
     document.getElementById('button-f2').addEventListener('click', onF2Pressed);
@@ -10,6 +40,18 @@ window.addEventListener('load', () => {
     document.getElementById('button-up').addEventListener('click', onUpPressed);
     document.getElementById('button-down').addEventListener('click', onDownPressed);
     document.getElementById('operator-selector').addEventListener('change', onOperatorChanged);
+
+    for (let button = 0; button < 10; button++) {
+        let buttonDiv = document.getElementById('button-' + button);
+
+        buttonDiv.addEventListener('click', () => {
+            console.log(button + ' pressed');
+            announcementQueue.push(button);
+            if (!announcementPlaying) {
+                startPlayingAnnouncements();
+            }
+        });
+    }
 
     inner.postMessage(JSON.stringify({
         mode: 'home'
@@ -77,7 +119,7 @@ function onDownPressed() {
 }
 
 function onOperatorChanged(e) {
-    let currentOperator = document.querySelectorAll('#operator-selector > option')
+    currentOperator = document.querySelectorAll('#operator-selector > option')
     [document.getElementById('operator-selector').selectedIndex].textContent;
     inner.postMessage(JSON.stringify({
         mode: 'setOperator',
