@@ -7,7 +7,7 @@ EDSTemplateSet['TTSG'] = {
             },
             font: 'tts-svc',
             format: '<serviceNumber,serviceFont,0>',
-            spaceWidth: 2,
+            spaceWidth: 3,
             align: 'right'
         },
         { // Render DEST via ROAD [SVC]
@@ -92,7 +92,7 @@ EDSDataSet['TTSG'] = {
     94: {
         renderType: 'static-image',
         text: 'Bus Under Repair',
-        font: 'big', //wrong font
+        font: 'tts-message-thick',
         image0: 'warning',
         image1: 'warning',
         y: 2
