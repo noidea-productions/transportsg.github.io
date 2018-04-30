@@ -452,66 +452,6 @@ EDSDataSet['SMRT'] = {
             }
         ]
     },
-    611: {
-        renderType: 'standardService',
-        serviceNumber: '176',
-        serviceFont: 'full',
-        destination: {
-            text: 'BUKIT PANJANG',
-            font: 'thin'
-        },
-        scrolls: [
-            {
-                text: 'BUKIT PANJANG',
-                font: 'big',
-                showDest: false
-            },
-            {
-                text: 'TELOK BLANGAH RD',
-                font: 'thin'
-            },
-            {
-                text: 'JURONG TOWN HALL',
-                font: 'thin'
-            },
-            {
-                text: 'BT BATOK CTR/ MRT',
-                font: 'thin'
-            },
-            {
-                text: 'HILLVIEW AVENUE',
-                font: 'thick'
-            },
-            {
-                text: 'UPP BUKIT TIMAH RD',
-                font: 'thin'
-            }
-        ]
-    },
-    619: {
-        renderType: 'standardService',
-        serviceNumber: '970',
-        serviceFont: 'full',
-        destination: {
-            text: 'BUKIT PANJANG',
-            font: 'thin'
-        },
-        scrolls: [
-            {
-                text: ['BUKIT', 'PANJANG'],
-                font: 'thick',
-                showDest: false
-            },
-            {
-                text: 'NEW BRIDGE RD',
-                font: 'thin'
-            },
-            {
-                text: 'ZION RD',
-                font: 'thin'
-            }
-        ]
-    },
     528: {
         renderType: 'standardService',
         serviceNumber: '985',
@@ -561,6 +501,98 @@ EDSDataSet['SMRT'] = {
                 text: ['GEYLANG LOR 1/', 'KALLANG MRT'],
                 font: 'thick',
                 showDest: false
+            }
+        ]
+    },
+    611: {
+        renderType: 'standardService',
+        serviceNumber: '176',
+        serviceFont: 'full',
+        destination: {
+            text: 'BUKIT PANJANG',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: 'BUKIT PANJANG',
+                font: 'big',
+                showDest: false
+            },
+            {
+                text: 'TELOK BLANGAH RD',
+                font: 'thin'
+            },
+            {
+                text: 'JURONG TOWN HALL',
+                font: 'thin'
+            },
+            {
+                text: 'BT BATOK CTR/ MRT',
+                font: 'thin'
+            },
+            {
+                text: 'HILLVIEW AVENUE',
+                font: 'thick'
+            },
+            {
+                text: 'UPP BUKIT TIMAH RD',
+                font: 'thin'
+            }
+        ]
+    },
+    614: {
+        renderType: 'standardService',
+        serviceNumber: '184',
+        serviceFont: 'full',
+        destination: {
+            text: 'BUKIT PANJANG',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: 'BUKIT PANJANG',
+                font: 'big',
+                showDest: false
+            },
+            {
+                text: 'CLEMENTI RD',
+                font: 'thin'
+            },
+            {
+                text: 'UPP BUKIT TIMAH RD',
+                font: 'thin'
+            },
+            {
+                text: 'CASHEW RD',
+                font: 'thick'
+            },
+            {
+                text: 'BUKIT PANJANG RD',
+                font: 'thin'
+            }
+        ]
+    },
+    619: {
+        renderType: 'standardService',
+        serviceNumber: '970',
+        serviceFont: 'full',
+        destination: {
+            text: 'BUKIT PANJANG',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['BUKIT', 'PANJANG'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'NEW BRIDGE RD',
+                font: 'thin'
+            },
+            {
+                text: 'ZION RD',
+                font: 'thin'
             }
         ]
     },
