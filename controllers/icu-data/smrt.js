@@ -7,7 +7,7 @@ EDSTemplateSet['SMRT'] = {
             font: '$serviceFont',
             format: '<serviceNumber,,0>',
             spaceWidth: 2,
-            align: 'right'
+            align: 'right-width(1)'
         },
         { // Render DEST via ROAD [SVC]
             variables: {
@@ -546,7 +546,7 @@ EDSDataSet['SMRT'] = {
         serviceFont: 'full',
         destination: {
             text: 'BUKIT PANJANG',
-            font: 'thick'
+            font: 'thin'
         },
         scrolls: [
             {
@@ -556,7 +556,7 @@ EDSDataSet['SMRT'] = {
             },
             {
                 text: 'CLEMENTI RD',
-                font: 'thin'
+                font: 'thick'
             },
             {
                 text: 'UPP BUKIT TIMAH RD',
