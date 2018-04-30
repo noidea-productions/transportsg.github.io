@@ -6,6 +6,17 @@ let currentOperator;
 let announcementQueue = [];
 let announcementPlaying = false;
 
+let announcementRanges = {
+    SMRT: {
+        min: 1,
+        max: 7
+    },
+    TTSG: {
+        min: 0,
+        max: 9
+    }
+}
+
 function playAnnouncement(announcementID, playComplete) {
     let announcementURL = '/resources/audio/' + currentOperator + '/' + announcementID + '.mp3';
 
@@ -21,7 +32,6 @@ function startPlayingAnnouncements() {
     announcementPlaying = true;
 
     playAnnouncement(nextAnnouncement, () => {
-        console.log('complete');
         if (announcementQueue.length !== 0)
             setTimeout(() => {
                 startPlayingAnnouncements();
@@ -48,7 +58,9 @@ window.addEventListener('load', () => {
 
         buttonDiv.addEventListener('click', () => {
             if (state === 'home') {
-                if (button < 1 || button > 7) return;
+                let {min, max} = announcementRanges[currentOperator];
+
+                if (button < min || button > max) return;
                 announcementQueue.push(button);
                 if (!announcementPlaying) {
                     startPlayingAnnouncements();
