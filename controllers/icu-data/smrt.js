@@ -167,6 +167,22 @@ EDSDataSet['SMRT'] = {
         renderType: 'full',
         text: 'LRT SHUTTLE B'
     },
+    66: {
+        renderType: 'big',
+        text: 'BULIM DEPOT'
+    },
+    113: {
+        renderType: 'big',
+        text: 'AIRSHOW SHUTTLE'
+    },
+    118: {
+        renderType: 'big',
+        text: 'SMRT FLY OUR FLAG'
+    },
+    119: {
+        renderType: 'big',
+        text: 'SMRT'
+    },
     155: {
         renderType: 'big',
         text: 'FREE SHUTTLE BUS'
