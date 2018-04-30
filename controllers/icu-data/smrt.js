@@ -108,15 +108,15 @@ EDSDataSet['SMRT'] = {
         text: 'CHARTERED'
     },
     2: {
-        renderType: 'full',
+        renderType: 'big',
         text: 'ANG MO KIO DEPOT'
     },
     3: {
-        renderType: 'full',
+        renderType: 'big',
         text: 'KRANJI DEPOT'
     },
     4: {
-        renderType: 'full',
+        renderType: 'big',
         text: 'SMRT BUSES'
     },
     5: {
@@ -124,7 +124,7 @@ EDSDataSet['SMRT'] = {
         text: 'OFF SERVICE'
     },
     6: {
-        renderType: 'full',
+        renderType: 'big',
         text: 'WOODLANDS DEPOT'
     },
     7: {
