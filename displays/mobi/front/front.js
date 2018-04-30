@@ -444,7 +444,7 @@ function renderEDS(currentEDSCode, currentEDSScroll, currentExtraMessage) {
             type: 'controller-preview',
             matrix: matrixData
         }), parent.location.toString());
-        
+
         return;
     }
 

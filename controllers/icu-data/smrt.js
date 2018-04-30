@@ -99,6 +99,17 @@ EDSTemplateSet['SMRT'] = {
             spaceWidth: 1,
             align: 'centre'
         }
+    ],
+    efat: [
+        {
+            variables: {
+                text: '$text'
+            },
+            font: 'efat',
+            format: '<text,,1>',
+            spaceWidth: 1,
+            align: 'centre'
+        }
     ]
 }
 
@@ -180,7 +191,7 @@ EDSDataSet['SMRT'] = {
         text: 'SMRT FLY OUR FLAG'
     },
     119: {
-        renderType: 'big',
+        renderType: 'efat',
         text: 'SMRT'
     },
     155: {
