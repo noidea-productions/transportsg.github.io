@@ -438,6 +438,13 @@ function renderEDS(currentEDSCode, currentEDSScroll, currentExtraMessage) {
             });
         }
 
+        let matrixData = edsToMatrix();
+
+        parent.postMessage(JSON.stringify({
+            type: 'controller-preview',
+            matrix: matrixData
+        }), parent.location.toString());
+        
         return;
     }
 
