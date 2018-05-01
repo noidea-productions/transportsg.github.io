@@ -136,13 +136,13 @@ EDSDataSet['SMRT'] = {
         serviceNumber: '',
         serviceFont: 'full',
         destination: {
-            text: 'ABCDEFGHIJKLMN',
+            text: 'ABCDEFGHIJKLMNOPQRS',
             font: 'thin'
         },
         scrolls: [
             {
-                text: '1234567890',
-                font: 'thin2'
+                text: 'TUVWXYZ',
+                font: 'thin'
             }
         ]
     },
