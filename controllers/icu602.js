@@ -150,11 +150,8 @@ window.addEventListener('message', event => {
     let eventData = JSON.parse(event.data);
 
     if (event.origin == location.origin) {
-        if (eventData.type === 'controller-preview') {
-            inner.postMessage(JSON.stringify({
-                mode: 'controller-preview',
-                matrix: eventData.matrix
-            }), location.toString());
+        if (eventData.type === 'controller-preview-update') {
+            inner.postMessage(event.data, location.toString());
             return;
         }
         parent.postMessage(event.data, parent.location.toString());

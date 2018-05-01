@@ -9,13 +9,6 @@ let currentFilter = '';
 let currentDest = 0;
 let currentExtra = 0;
 
-let EDSTemplateSet = {};
-let EDSDataSet = {};
-let EDSTemplates = {};
-let EDSData = {};
-let EDSImages = {};
-let EDSExtraMessageSet = {};
-let EDSExtraMessage = {};
 
 let previewCanvas;
 
@@ -143,8 +136,10 @@ function showScreen(matrix) {
 window.addEventListener('message', (event) => {
     let eventData = JSON.parse(event.data);
 
-    if (eventData.mode === 'controller-preview') {
-        showScreen(eventData.matrix);
+    if (eventData.type === 'controller-preview-update') {
+        renderEDS(eventData.code, eventData.scroll, eventData.extra);
+
+        showScreen(edsToMatrix());
         return;
     }
 

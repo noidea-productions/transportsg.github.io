@@ -91,6 +91,13 @@ function edsHeartbeat() {
             setRLED(x, y, column);
         });
     });
+
+    parent.postMessage(JSON.stringify({
+        type: 'controller-preview-update',
+        code: currentEDSCode,
+        extra: currentExtraMessage,
+        scroll: currentEDSScroll
+    }), parent.location.toString());
 }
 
 function updateOperator(operator) {
