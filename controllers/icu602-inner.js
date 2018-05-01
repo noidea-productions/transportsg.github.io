@@ -18,28 +18,14 @@ let EDSExtraMessage = {};
 
 let previewCanvas;
 
-let previewPresets = {
-    full: (data) => {
-        // let textContainer = document.getElementById('full-sized');
-        // textContainer.textContent = data.text;
-    },
-    info: (data) => {
-        let nodes = document.getElementById('output-info').children;
-        let linePrefixes = ['Line : ', 'Dest : ', 'Extr : '];
+function setPreview(data) {
+    let nodes = document.getElementById('output-info').children;
+    let linePrefixes = ['Line : ', 'Dest : ', 'Extr : '];
 
-        if (data.length !== 3) return;
-        data.forEach((e, i) => {
-            nodes[i].textContent = linePrefixes[i] + e;
-        });
-    },
-    standardService: (data) => {
-        // let textContainer = document.getElementById('full-sized');
-        // textContainer.textContent = data.serviceNumber;
-    }
-};
-
-function setPreview(type, data) {
-    if (previewPresets[type]) previewPresets[type](data);
+    if (data.length !== 3) return;
+    data.forEach((e, i) => {
+        nodes[i].textContent = linePrefixes[i] + e;
+    });
 }
 
 function homeScreenInit() {
@@ -210,13 +196,14 @@ window.addEventListener('message', (event) => {
             let data = dataSource[currentScreen][currentCode];
 
             handleCodeUpdate(currentCode);
-            setPreview(data.renderType, data);
+            currentDest = currentCode;
         } else if (currentScreen === 'extra') {
             handleExtraUpdate(currentCode);
+            currentExtra = currentCode;
         }
 
         setScreen('home');
-        setPreview('info', [0, currentDest, currentExtra]);
+        setPreview([0, currentDest, currentExtra]);
         return;
     }
 });
@@ -238,6 +225,7 @@ function handleCodeUpdate(code) {
 window.addEventListener('load', () => {
     setScreen('home');
     updateOperator('SMRT');
+    setPreview([0, 0, 0]);
     previewCanvas = document.getElementById('preview-canvas');
 
     let ctx = previewCanvas.getContext('2d');
