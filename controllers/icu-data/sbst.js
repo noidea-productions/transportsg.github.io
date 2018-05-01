@@ -170,6 +170,84 @@ EDSDataSet['SBST'] = {
         renderType: 'full',
         text: 'OFF SERVICE'
     },
+    1231: {
+        renderType: 'standardService',
+        serviceNumber: '123',
+        serviceFont: 'full',
+        destination: {
+            text: 'BUKIT MERAH INT',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                "text": "BUKIT PURMEI AVE",
+                "font": "narrow"
+            },
+            {
+                "text": "LOWER DELTA RD",
+                "font": "narrow"
+            },
+            {
+                "text": "TIONG BAHRU RD",
+                "font": "narrow"
+            },
+            {
+                "text": "HAVELOCK RD",
+                "font": "narrow"
+            },
+            {
+               "text": "ORCHARD BLVD",
+               "font": "narrow"
+            },
+            {
+               "text": "HOLLAND RD",
+               "font": "narrow"
+            },
+            {
+               "text": "QUEENSWAY",
+               "font": "narrow"
+            }
+        ]
+    },
+    1232: {
+        renderType: 'standardService',
+        serviceNumber: '123',
+        serviceFont: 'full',
+        destination: {
+            text: 'SENTOSA',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                "text": "QUEENSWAY",
+                "font": "narrow"
+            },
+            {
+                "text": "HOLLAND RD",
+                "font": "narrow"
+            },
+            {
+                "text": "ORCHARD RD",
+                "font": "narrow"
+            },
+            {
+                "text": "HAVELOCK RD",
+                "font": "narrow"
+            },
+            {
+               "text": "TIONG BAHRU RD",
+               "font": "narrow"
+            },
+            {
+               "text": "LOWER DELTA RD",
+               "font": "narrow"
+            },
+            {
+               "text": "BUKIT PURMEI AVE",
+               "font": "narrow"
+            }
+        ]
+    },
     1741: {
         renderType: 'standardService',
         serviceNumber: '174',
