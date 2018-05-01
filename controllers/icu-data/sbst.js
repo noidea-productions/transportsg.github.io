@@ -110,7 +110,7 @@ EDSDataSet['SBST'] = {
         serviceFont: 'full',
         destination: {
             text: 'SHENTON WAY TER',
-            font: 'thin'
+            font: 'thin2'
         },
         scrolls: [
             {
@@ -141,7 +141,7 @@ EDSDataSet['SBST'] = {
         serviceFont: 'full',
         destination: {
             text: 'HOUGANG CTRL INT',
-            font: 'thin'
+            font: 'thin2'
         },
         scrolls: [
             {
@@ -207,7 +207,7 @@ EDSDataSet['SBST'] = {
         serviceFont: 'full',
         destination: {
             text: 'BUKIT MERAH INT',
-            font: 'thin'
+            font: 'thin2'
         },
         scrolls: [
             {
@@ -246,7 +246,7 @@ EDSDataSet['SBST'] = {
         serviceFont: 'full',
         destination: {
             text: 'SENTOSA',
-            font: 'thin'
+            font: 'thin2'
         },
         scrolls: [
             {
@@ -312,7 +312,7 @@ EDSDataSet['SBST'] = {
         serviceFont: 'full',
         destination: {
             text: "ST MICHAEL'S TER",
-            font: 'thin'
+            font: 'thin2'
         },
         scrolls: [
             {
@@ -343,7 +343,7 @@ EDSDataSet['SBST'] = {
         serviceFont: 'full',
         destination: {
             text: 'HARBOURFRONT INT',
-            font: 'thin'
+            font: 'thin2'
         },
         scrolls: [
              {
@@ -374,7 +374,7 @@ EDSDataSet['SBST'] = {
         serviceFont: 'full',
         destination: {
             text: 'BOON LAY INT',
-            font: 'thin'
+            font: 'thin2'
         },
         scrolls: [
             {
@@ -413,7 +413,7 @@ EDSDataSet['SBST'] = {
         serviceFont: 'full',
         destination: {
             text: 'KAMPONG BAHRU TER',
-            font: 'thin'
+            font: 'thin2'
         },
         scrolls: [
             {
@@ -456,7 +456,7 @@ EDSDataSet['SBST'] = {
         serviceFont: 'full',
         destination: {
             text: 'BOON LAY INT',
-            font: 'thin'
+            font: 'thin2'
         },
         scrolls: [
             {
@@ -487,7 +487,7 @@ EDSDataSet['SBST'] = {
         serviceFont: 'full',
         destination: {
             text: 'BOON LAY INT',
-            font: 'thin'
+            font: 'thin2'
         },
         scrolls: [
             {
@@ -510,7 +510,7 @@ EDSDataSet['SBST'] = {
         serviceFont: 'full',
         destination: {
             text: 'BOON LAY INT',
-            font: 'thin'
+            font: 'thin2'
         },
         scrolls: [
             {
@@ -549,7 +549,7 @@ EDSDataSet['SBST'] = {
         serviceFont: 'full',
         destination: {
             text: 'BOON LAY INT',
-            font: 'thin'
+            font: 'thin2'
         },
         scrolls: [
             {
@@ -576,7 +576,7 @@ EDSDataSet['SBST'] = {
         serviceFont: 'full',
         destination: {
             text: 'BOON LAY INT',
-            font: 'thin'
+            font: 'thin2'
         },
         scrolls: [
             {
@@ -728,7 +728,7 @@ EDSDataSet['SBST'] = {
         serviceFont: 'full',
         destination: {
             text: 'YIO CHU KANG INT',
-            font: 'thin'
+            font: 'thin2'
         },
         scrolls: [
             {
@@ -755,7 +755,7 @@ EDSDataSet['SBST'] = {
         serviceFont: 'full',
         destination: {
             text: 'YISHUN AVE 5 & 1',
-            font: 'thin'
+            font: 'thin2'
         },
         scrolls: [
             {
