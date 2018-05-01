@@ -132,24 +132,9 @@ EDSTemplateSet['SMRT'] = {
 
 EDSDataSet['SMRT'] = {
     1: {
-        renderType: 'standardService',
-        serviceNumber: '',
-        serviceFont: 'full',
-        destination: {
-            text: 'ABCDEFGHIJKLMNOPQRS',
-            font: 'thin'
-        },
-        scrolls: [
-            {
-                text: 'TUVWXYZ',
-                font: 'thin'
-            }
-        ]
+        renderType: 'full',
+        text: 'CHARTERED'
     },
-    // 1: {
-    //     renderType: 'full',
-    //     text: 'CHARTERED'
-    // },
     2: {
         renderType: 'big',
         text: 'ANG MO KIO DEPOT'
