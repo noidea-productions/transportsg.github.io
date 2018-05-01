@@ -36,11 +36,19 @@ function homeScreenInit() {
 function destScreenInit() {
     document.getElementById('function-label-row').innerHTML = '<div><span>Sort</span></div>';
 
+    let allCodes = Object.keys(EDSData).sort((a, b) => a - b);
+
+    choiceScreenScrolls.dest = Math.max(allCodes.indexOf(currentDest), 0);
+
     paintDestScreen();
 }
 
 function extraScreenInit() {
     document.getElementById('function-label-row').innerHTML = '<div><span>Sort</span></div>';
+
+    let allCodes = Object.keys(EDSExtraMessage).sort((a, b) => a - b);
+
+    choiceScreenScrolls.extra = Math.max(allCodes.indexOf(currentExtra), 0);
 
     paintExtraScreen();
 }
@@ -102,7 +110,8 @@ function setScreen(screen) {
 
     hideScreens();
 
-    document.getElementById('screen-' + screen).style.display = ''
+    document.getElementById('screen-' + screen).style.display = '';
+
     window[screen + 'ScreenInit']();
 }
 
@@ -201,6 +210,9 @@ window.addEventListener('message', (event) => {
     }
 
     if (eventData.mode === 'keyPressed') {
+
+        Object.keys(choiceScreenScrolls).forEach(key => choiceScreenScrolls[key] = 0);
+
         currentFilter += eventData.key;
 
         if (currentScreen === 'dest')
