@@ -86,11 +86,13 @@ function edsHeartbeat() {
 
     let matrix = edsToMatrix();
 
-    matrix.forEach((row, x) => {
-        row.forEach((column, y) => {
-            setRLED(x, y, column);
-        });
-    });
+    for (let x = 0; x < width; x++) {
+        setTimeout(() => {
+            for (let y = 0; y < height; y++) {
+                setRLED(x, y, matrix[x][y]);
+            }
+        }, 5 * x);
+    }
 
     parent.postMessage(JSON.stringify({
         type: 'controller-preview-update',
@@ -119,7 +121,7 @@ window.addEventListener('message', event => {
                 currentEDSScroll = -1;
 
                 clearInterval(edsHeartbeatInterval);
-                edsHeartbeatInterval = setInterval(edsHeartbeat, 3000);
+                edsHeartbeatInterval = setInterval(edsHeartbeat, 3500);
                 edsHeartbeat();
                 break;
             case 'extraUpdated':
@@ -127,7 +129,7 @@ window.addEventListener('message', event => {
                 currentEDSScroll = -2;
 
                 clearInterval(edsHeartbeatInterval);
-                edsHeartbeatInterval = setInterval(edsHeartbeat, 3000);
+                edsHeartbeatInterval = setInterval(edsHeartbeat, 3500);
                 edsHeartbeat();
 
                 break;
