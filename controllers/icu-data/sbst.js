@@ -450,6 +450,161 @@ EDSDataSet['SBST'] = {
             }
         ]
     },
+    2401: {
+        renderType: 'standardService',
+        serviceNumber: '240',
+        serviceFont: 'full',
+        destination: {
+            text: 'BOON LAY INT',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: 'JALAN AHMAD IBRAHIM',
+                font: 'narrow'
+            },
+            {
+                text: 'KANG CHING RD',
+                font: 'narrow'
+            },
+            {
+                text: 'YUAN CHING RD',
+                font: 'narrow'
+            },
+            {
+                text: 'BOON LAY PLACE',
+                font: 'narrow'
+            },
+            {
+                text: 'BOON LAY WAY',
+                font: 'narrow'
+            },
+        ]
+    },
+    2411: {
+        renderType: 'standardService',
+        serviceNumber: '241',
+        serviceFont: 'full',
+        destination: {
+            text: 'BOON LAY INT',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: 'JURONG WEST ST 63',
+                font: 'narrow'
+            },
+            {
+                text: 'PIONEER RD NTH',
+                font: 'narrow'
+            },
+            {
+                text: 'JURONG WEST ST 91',
+                font: 'narrow'
+            },
+        ]
+    },
+    2421: {
+        renderType: 'standardService',
+        serviceNumber: '242',
+        serviceFont: 'full',
+        destination: {
+            text: 'BOON LAY INT',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: 'JURONG WEST CTRL 1',
+                font: 'narrow'
+            },
+            {
+                text: 'JALAN BOON LAY',
+                font: 'narrow'
+            },
+            {
+                text: 'JURONG WEST AVE 4',
+                font: 'narrow'
+            },
+            {
+                text: 'JURONG WEST ST 72',
+                font: 'narrow'
+            },
+            {
+                text: 'JURONG WEST AVE 5',
+                font: 'narrow'
+            },
+            {
+                text: 'JURONG WEST AVE 4',
+                font: 'narrow'
+            },
+            {
+                text: 'JALAN BOON LAY',
+                font: 'narrow'
+            }
+        ]
+    },
+    2431: {
+        renderType: 'standardService',
+        serviceNumber: '243W',
+        serviceFont: 'full',
+        destination: {
+            text: 'BOON LAY INT',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: '',
+                font: 'narrow'
+            },
+            {
+                text: '',
+                font: 'narrow'
+            },
+            {
+                text: '',
+                font: 'narrow'
+            },
+            {
+                text: '',
+                font: 'narrow'
+            },
+        ]
+    },
+    2432: {
+        renderType: 'standardService',
+        serviceNumber: '243G',
+        serviceFont: 'full',
+        destination: {
+            text: 'BOON LAY INT',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: 'JURONG WEST AVE 4',
+                font: 'narrow'
+            },
+            {
+                text: 'JURONG WEST ST 62',
+                font: 'narrow'
+            },
+            {
+                text: 'JURONG WEST ST 64',
+                font: 'narrow'
+            },
+            {
+                text: 'JURONG WEST ST 75',
+                font: 'narrow'
+            },
+            {
+                text: 'JURONG WEST 81',
+                font: 'narrow'
+            },
+            {
+                text: 'JURONG WEST AVE 5',
+                font: 'narrow'
+            }
+        ]
+    },
     1743: {
         renderType: 'ffwSvc',
         serviceNumber: '174e',
