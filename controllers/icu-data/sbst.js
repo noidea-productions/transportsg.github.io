@@ -170,6 +170,37 @@ EDSDataSet['SBST'] = {
         renderType: 'full',
         text: 'OFF SERVICE'
     },
+    1201: {
+        renderType: 'int-loopSvc',
+        serviceNumber: '120',
+        serviceFont: 'full',
+        destination: {
+            text: 'KG|BAHRU|TER-TK|BLANGAH|HTS',
+            font: 'tall'
+        },
+        scrolls: [
+            {
+                "text": "JALAN BUKIT MERAH",
+                "font": "narrow"
+            },
+            {
+                "text": "TELOK BLANGAH HTS",
+                "font": "narrow"
+            },
+            {
+                "text": "TELOK BLANGAH RD",
+                "font": "narrow"
+            },
+            {
+                "text": "ALEXANDRA RD",
+                "font": "narrow"
+            },
+            {
+               "text": "TIONG BAHRU RD",
+               "font": "narrow"
+            }
+        ]
+    },
     1231: {
         renderType: 'standardService',
         serviceNumber: '123',
@@ -271,6 +302,68 @@ EDSDataSet['SBST'] = {
             },
             {
                "text": "LOWER DELTA RD",
+               "font": "narrow"
+            }
+        ]
+    },
+    1241: {
+        renderType: 'standardService',
+        serviceNumber: '124',
+        serviceFont: 'full',
+        destination: {
+            text: "ST MICHAEL'S TER",
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                "text": "NEW BRIDGE RD",
+                "font": "narrow"
+            },
+            {
+                "text": "KAMPONG BAHRU RD",
+                "font": "narrow"
+            },
+            {
+                "text": "TELOK BLANGAH HTS",
+                "font": "narrow"
+            },
+            {
+                "text": "MOULMEIN RD",
+                "font": "narrow"
+            },
+            {
+               "text": "ORCHARD RD",
+               "font": "narrow"
+            }
+        ]
+    },
+    1242: {
+        renderType: 'standardService',
+        serviceNumber: '124',
+        serviceFont: 'full',
+        destination: {
+            text: 'HARBOURFRONT INT',
+            font: 'thin'
+        },
+        scrolls: [
+             {
+                "text": "TELOK BLANGAH HTS",
+                "font": "narrow"
+            },
+            {
+                "text": "TELOK BLANGAH WAY",
+                "font": "narrow"
+            },
+            {
+                "text": "EU TONG SEN ST",
+                "font": "narrow"
+            },
+            {
+                "text": "ORCHARD TURN",
+                "font": "narrow"
+            },
+            {
+               "text": "MOULMEIN RD",
                "font": "narrow"
             }
         ]
