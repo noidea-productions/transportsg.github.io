@@ -184,6 +184,33 @@ window.addEventListener('message', (event) => {
         return;
     }
 
+    if (eventData.mode === 'keyData') {
+        let dataSource = {
+            dest: EDSData,
+            extra: EDSExtraMessage
+        }
+
+        let currentCode = eventData.input;
+
+        if (!dataSource[currentScreen][currentCode]) {
+            setScreen('home');
+            setPreview([0, currentDest, currentExtra]);
+            return;
+        }
+
+        if (currentScreen === 'dest') {
+            handleCodeUpdate(currentCode);
+            currentDest = currentCode;
+        } else if (currentScreen === 'extra') {
+            handleExtraUpdate(currentCode);
+            currentExtra = currentCode;
+        }
+
+        setScreen('home');
+        setPreview([0, currentDest, currentExtra]);
+        return;
+    }
+
     if (eventData.mode === 'enterPressed') {
         let dataSource = {
             dest: EDSData,
@@ -193,8 +220,6 @@ window.addEventListener('message', (event) => {
         let currentCode = allCodes[choiceScreenScrolls[currentScreen]];
 
         if (currentScreen === 'dest') {
-            let data = dataSource[currentScreen][currentCode];
-
             handleCodeUpdate(currentCode);
             currentDest = currentCode;
         } else if (currentScreen === 'extra') {

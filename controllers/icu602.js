@@ -6,6 +6,8 @@ let currentOperator;
 let announcementQueue = [];
 let announcementPlaying = false;
 
+let input = [];
+
 let announcementRanges = {
     SMRT: {
         min: 1,
@@ -65,6 +67,8 @@ window.addEventListener('load', () => {
                 if (!announcementPlaying) {
                     startPlayingAnnouncements();
                 }
+            } else if (state.startsWith('select')) {
+                input.push(button);
             }
         });
     }
@@ -73,16 +77,6 @@ window.addEventListener('load', () => {
         mode: 'home'
     }), location.toString());
 });
-
-function setCode(code) {
-    if (code in EDSData) {
-        inner.postMessage(JSON.stringify({
-            mode: 'updateCode',
-            code: code,
-            data: EDSData[code]
-        }), location.toString());
-    }
-}
 
 function onF1Pressed() {
     if (state === 'home') {
@@ -112,9 +106,21 @@ function onCrossPressed() {
 function onYesPressed() {
     if (state !== 'home') {
         state = 'home';
-        inner.postMessage(JSON.stringify({
-            mode: 'enterPressed'
-        }), inner.location.toString());
+
+        if (input.length > 0) {
+            let data = input.join('') * 1;
+
+            inner.postMessage(JSON.stringify({
+                mode: 'keyData',
+                input: data
+            }), inner.location.toString());
+
+            input = [];
+        } else {
+            inner.postMessage(JSON.stringify({
+                mode: 'enterPressed'
+            }), inner.location.toString());
+        }
     }
 }
 
