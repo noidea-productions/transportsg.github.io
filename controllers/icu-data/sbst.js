@@ -248,6 +248,33 @@ EDSDataSet['SBST'] = {
             }
         ]
     },
+    1233: {
+        renderType: 'int-loopSvc',
+        serviceNumber: '123',
+        serviceFont: 'full',
+        destination: {
+            text: 'HBF INT-TIONG BAHRU RD',
+            font: 'tall'
+        },
+        scrolls: [
+            {
+                "text": "BUKIT PURMEI AVE",
+                "font": "narrow"
+            },
+            {
+                "text": "LOWER DELTA RD",
+                "font": "narrow"
+            },
+            {
+                "text": "TIONG BAHRU RD",
+                "font": "narrow"
+            },
+            {
+               "text": "LOWER DELTA RD",
+               "font": "narrow"
+            }
+        ]
+    },
     1741: {
         renderType: 'standardService',
         serviceNumber: '174',
