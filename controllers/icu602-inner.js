@@ -4,6 +4,7 @@ let choiceScreenScrolls = {
 }
 
 let currentScreen = '';
+let currentFilter = '';
 
 let currentDest = 0;
 let currentExtra = 0;
@@ -44,13 +45,18 @@ function extraScreenInit() {
     paintExtraScreen();
 }
 
-function paintChoiceScreen(screenName, dataSource, previewFunction) {
+function paintChoiceScreen(screenName, dataSource, previewFunction, filter) {
+    filter = filter || null;
     if (!dataSource) {
         document.getElementById('table-'+ screenName).innerHTML = '';
         return;
     }
 
     let allCodes = Object.keys(dataSource).sort((a, b) => a - b);
+
+    if (!!filter) {
+        allCodes = allCodes.filter(code => code.toString().startsWith(filter));
+    }
 
     let startCode = Math.max(0, choiceScreenScrolls[screenName] - choiceScreenScrolls[screenName] % 3);
 
@@ -75,14 +81,14 @@ function paintDestScreen() {
     paintChoiceScreen('dest', EDSData, function createPreview(data) {
         if (!!data.text) return data.text;
         else if (!!data.destination.text) return data.destination.text + ' ' + data.serviceNumber;
-    });
+    }, currentFilter);
 }
 
 
 function paintExtraScreen() {
     paintChoiceScreen('extra', EDSExtraMessage, function createPreview(data) {
         return data.text;
-    });
+    }, currentFilter);
 }
 
 function setScreen(screen) {
@@ -172,10 +178,17 @@ window.addEventListener('message', (event) => {
             dest: EDSData,
             extra: EDSExtraMessage
         }
+
+        let allCodes = Object.keys(dataSource[currentScreen]);
+
+        if (!!currentFilter) {
+            allCodes = allCodes.filter(code => code.toString().startsWith(currentFilter));
+        }
+
         choiceScreenScrolls[currentScreen]++;
 
-        if (choiceScreenScrolls[currentScreen] >= Object.keys(dataSource[currentScreen]).length)
-            choiceScreenScrolls[currentScreen] = Object.keys(dataSource[currentScreen]).length - 1;
+        if (choiceScreenScrolls[currentScreen] >= allCodes.length)
+            choiceScreenScrolls[currentScreen] = allCodes.length - 1;
 
         if (currentScreen === 'dest')
             paintDestScreen();
@@ -217,6 +230,11 @@ window.addEventListener('message', (event) => {
             extra: EDSExtraMessage
         }
         let allCodes = Object.keys(dataSource[currentScreen]).sort((a, b) => a - b);
+
+        if (!!currentFilter) {
+            allCodes = allCodes.filter(code => code.toString().startsWith(currentFilter));
+        }
+
         let currentCode = allCodes[choiceScreenScrolls[currentScreen]];
 
         if (currentScreen === 'dest') {
