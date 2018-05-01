@@ -450,7 +450,7 @@ EDSDataSet['SBST'] = {
             }
         ]
     },
-    2401: {
+    2401: { //likely incomplete go check!
         renderType: 'standardService',
         serviceNumber: '240',
         serviceFont: 'full',
@@ -580,14 +580,6 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                text: 'JURONG WEST AVE 4',
-                font: 'narrow'
-            },
-            {
-                text: 'JURONG WEST ST 62',
-                font: 'narrow'
-            },
-            {
                 text: 'JURONG WEST ST 64',
                 font: 'narrow'
             },
@@ -601,6 +593,14 @@ EDSDataSet['SBST'] = {
             },
             {
                 text: 'JURONG WEST AVE 5',
+                font: 'narrow'
+            },
+            {
+                text: 'JURONG WEST AVE 4',
+                font: 'narrow'
+            },
+            {
+                text: 'JURONG WEST ST 62',
                 font: 'narrow'
             }
         ]
