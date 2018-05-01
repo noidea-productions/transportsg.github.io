@@ -1,6 +1,8 @@
+let currentCache = 'v3';
+
 self.addEventListener('install', event => {
     event.waitUntil(
-        caches.open('v2').then(cache => {
+        caches.open(currentCache).then(cache => {
             return cache.addAll([
                 '/eds/mobi.html',
                 '/eds/mobi.css',
@@ -30,6 +32,22 @@ self.addEventListener('install', event => {
     );
 });
 
+self.addEventListener('activate', function(event) {
+    event.waitUntil(
+        caches.keys().then(function(keyList) {
+            return Promise.all(keyList.map(function(key) {
+                if (key !== currentCache) {
+                    console.log('cleared cache', key);
+                    return caches.delete(key);
+                }
+            }));
+        })
+    );
+});
+
+
 self.addEventListener('fetch', function(event) {
-  event.respondWith(caches.match(event.request));
+    event.respondWith(caches.match(event.request).then(function(response) {
+        return response || fetch(event.request);
+    }));
 });
