@@ -281,7 +281,7 @@ EDSDataSet['SBST'] = {
     },
     1233: {
         renderType: 'int-loopSvc',
-        serviceNumber: '123',
+        serviceNumber: '123M',
         serviceFont: 'full',
         destination: {
             text: 'HBF INT-TIONG BAHRU RD',
