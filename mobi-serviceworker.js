@@ -1,6 +1,6 @@
 self.addEventListener('install', event => {
     event.waitUntil(
-        caches.open('v1').then(cache => {
+        caches.open('v2').then(cache => {
             return cache.addAll([
                 '/eds/mobi.html',
                 '/eds/mobi.css',
@@ -10,10 +10,14 @@ self.addEventListener('install', event => {
                 '/controllers/icu602.js',
                 '/controllers/icu602-inner.html',
                 '/controllers/icu602-inner.css',
-                '/controllers/icu602-inner.js',
+                '/controllers/icu602-inner.js',,
+                '/displays/mobi/eds-renderer.js',
                 '/displays/mobi/front/index.html',
                 '/displays/mobi/front/front.css',
                 '/displays/mobi/front/front.js',
+                '/displays/mobi/front-flipdot/index.html',
+                '/displays/mobi/front-flipdot/front.css',
+                '/displays/mobi/front-flipdot/front.js',
                 '/resources/cross.svg',
                 '/resources/house.svg',
                 '/resources/tick.svg',
