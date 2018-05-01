@@ -160,6 +160,8 @@ window.addEventListener('message', (event) => {
 
     if (eventData.mode === 'homePage') {
         setScreen('home');
+
+        currentFilter = '';
         return;
     }
 
@@ -197,30 +199,13 @@ window.addEventListener('message', (event) => {
         return;
     }
 
-    if (eventData.mode === 'keyData') {
-        let dataSource = {
-            dest: EDSData,
-            extra: EDSExtraMessage
-        }
+    if (eventData.mode === 'keyPressed') {
+        currentFilter += eventData.key;
 
-        let currentCode = eventData.input;
-
-        if (!dataSource[currentScreen][currentCode]) {
-            setScreen('home');
-            setPreview([0, currentDest, currentExtra]);
-            return;
-        }
-
-        if (currentScreen === 'dest') {
-            handleCodeUpdate(currentCode);
-            currentDest = currentCode;
-        } else if (currentScreen === 'extra') {
-            handleExtraUpdate(currentCode);
-            currentExtra = currentCode;
-        }
-
-        setScreen('home');
-        setPreview([0, currentDest, currentExtra]);
+        if (currentScreen === 'dest')
+            paintDestScreen();
+        else if (currentScreen === 'extra')
+            paintExtraScreen();
         return;
     }
 
@@ -247,6 +232,8 @@ window.addEventListener('message', (event) => {
 
         setScreen('home');
         setPreview([0, currentDest, currentExtra]);
+
+        currentFilter = '';
         return;
     }
 });

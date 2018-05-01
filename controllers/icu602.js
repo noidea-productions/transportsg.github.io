@@ -6,8 +6,6 @@ let currentOperator;
 let announcementQueue = [];
 let announcementPlaying = false;
 
-let input = [];
-
 let announcementRanges = {
     SMRT: {
         min: 1,
@@ -68,7 +66,10 @@ window.addEventListener('load', () => {
                     startPlayingAnnouncements();
                 }
             } else if (state.startsWith('select')) {
-                input.push(button);
+                inner.postMessage(JSON.stringify({
+                    mode: 'keyPressed',
+                    key: button
+                }), inner.location.toString());
             }
         });
     }
@@ -107,20 +108,9 @@ function onYesPressed() {
     if (state !== 'home') {
         state = 'home';
 
-        if (input.length > 0) {
-            let data = input.join('') * 1;
-
-            inner.postMessage(JSON.stringify({
-                mode: 'keyData',
-                input: data
-            }), inner.location.toString());
-
-            input = [];
-        } else {
-            inner.postMessage(JSON.stringify({
-                mode: 'enterPressed'
-            }), inner.location.toString());
-        }
+        inner.postMessage(JSON.stringify({
+            mode: 'enterPressed'
+        }), inner.location.toString());
     }
 }
 
