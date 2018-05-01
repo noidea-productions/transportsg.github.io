@@ -112,6 +112,7 @@ function updateOperator(operator) {
     EDSTemplates = EDSTemplateSet[operator];
     EDSData = EDSDataSet[operator];
     EDSExtraMessage = EDSExtraMessageSet[operator];
+    EDSImages = EDSImageSet[operator];
 
     choiceScreenScrolls.dest = choiceScreenScrolls.extra = 0;
     setScreen('home');
