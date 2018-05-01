@@ -141,7 +141,7 @@ EDSDataSet['SMRT'] = {
         },
         scrolls: [
             {
-                text: 'OPQRSTUVWXYZ',
+                text: '1234567890',
                 font: 'thin2'
             }
         ]
