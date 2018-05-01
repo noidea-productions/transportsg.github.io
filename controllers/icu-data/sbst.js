@@ -175,7 +175,7 @@ EDSDataSet['SBST'] = {
         serviceNumber: '120',
         serviceFont: 'full',
         destination: {
-            text: 'KG|BAHRU|TER-TK|BLANGAH|HTS',
+            text: 'KG BAHRU TER-TK BLANGAH',
             font: 'tall'
         },
         scrolls: [
