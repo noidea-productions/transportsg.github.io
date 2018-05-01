@@ -20,3 +20,13 @@ window.addEventListener('message', event => {
 function propagateEvent(eventData) {
     frontEDS.contentWindow.postMessage(JSON.stringify(eventData), location.toString());
 }
+
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/mobi-serviceworker.js', {
+        scope: '/'
+    }).then(reg => {
+        console.log('success', reg)
+    }).catch(err => {
+        console.log('fail', err);
+    });
+}
