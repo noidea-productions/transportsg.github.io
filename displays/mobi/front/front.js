@@ -480,9 +480,15 @@ function renderEDS(currentEDSCode, currentEDSScroll, currentExtraMessage) {
         renderGuidelinesWithoutAlignment.push({
             format, spaceWidth: renderGuideline.spaceWidth, align: renderGuideline.align,
             images: (renderGuideline.images || []).map(image => {
+                let xPos;
+                if (typeof image.x === 'number')
+                    xPos = image.x;
+                else {
+                    xPos = parseVariables({_: image.x}, edsData, [currentEDSScroll])._;
+                }
                 return {
                     name: parseVariables({_: image.name}, edsData, [currentEDSScroll])._,
-                    x: image.x
+                    x: xPos
                 }
             })
         });
@@ -496,6 +502,21 @@ function renderEDS(currentEDSCode, currentEDSScroll, currentExtraMessage) {
     // console.log(JSON.stringify(renderGuidelines, null, 2))
 
     clearLEDs();
+
+    function simpleAlign(type, imageLength) {
+        switch(type) {
+            case 'left':
+                return 0;
+            case 'centre':
+                return Math.round(144 / 2 - imageLength / 2);
+            case 'right':
+                return 144 - imageLength;
+
+            default:
+                return 0;
+        }
+    }
+
     renderGuidelines.forEach(guideline => {
         let align = guideline.align;
         let spaceWidth = guideline.spaceWidth;
@@ -509,6 +530,9 @@ function renderEDS(currentEDSCode, currentEDSScroll, currentExtraMessage) {
 
         if (guideline.images)
             guideline.images.forEach(image => {
+                if (typeof image.x === 'string') {
+                    image.x = simpleAlign(image.x, EDSImages[image.name][0].length);
+                }
                 drawImage(image.name, image.x);
             });
     });
