@@ -74,7 +74,8 @@ function paintChoiceScreen(screenName, dataSource, previewFunction, filter) {
 
     document.getElementById('table-'+ screenName).innerHTML = html;
 
-    document.getElementsByClassName(screenName + '-table-item')[choiceScreenScrolls[screenName] % 3].className = screenName + '-table-item selected-row';
+    if (allCodes.length > 0)
+        document.getElementsByClassName(screenName + '-table-item')[choiceScreenScrolls[screenName] % 3].className = screenName + '-table-item selected-row';
 }
 
 function paintDestScreen() {
