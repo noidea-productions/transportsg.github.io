@@ -231,12 +231,14 @@ window.addEventListener('message', (event) => {
 
         let currentCode = allCodes[choiceScreenScrolls[currentScreen]];
 
-        if (currentScreen === 'dest') {
-            handleCodeUpdate(currentCode);
-            currentDest = currentCode;
-        } else if (currentScreen === 'extra') {
-            handleExtraUpdate(currentCode);
-            currentExtra = currentCode;
+        if (currentCode) {
+            if (currentScreen === 'dest') {
+                handleCodeUpdate(currentCode);
+                currentDest = currentCode;
+            } else if (currentScreen === 'extra') {
+                handleExtraUpdate(currentCode);
+                currentExtra = currentCode;
+            }
         }
 
         setScreen('home');
