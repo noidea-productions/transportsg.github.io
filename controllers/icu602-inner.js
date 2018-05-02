@@ -231,6 +231,11 @@ window.addEventListener('message', (event) => {
 
         let currentCode = allCodes[choiceScreenScrolls[currentScreen]];
 
+        if (currentScreen === 'extra' && currentFilter * 1 === 0) {
+            handleExtraUpdate(0);
+            currentExtra = 0;
+        }
+
         if (currentCode) {
             if (currentScreen === 'dest') {
                 handleCodeUpdate(currentCode);
