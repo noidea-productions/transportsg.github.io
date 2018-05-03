@@ -81,15 +81,15 @@ function paintChoiceScreen(screenName, dataSource, previewFunction, filter) {
 
 function paintDestScreen() {
     paintChoiceScreen('dest', EDSData, function createPreview(data) {
-        if (!!data.text) return data.text;
-        else if (!!data.destination.text) return data.destination.text + ' ' + data.serviceNumber;
+        if (!!data.text) return data.text.toString().slice(0, 32);
+        else if (!!data.destination.text) return (data.destination.text + ' ' + data.serviceNumber).slice(0, 32);
     }, currentFilter);
 }
 
 
 function paintExtraScreen() {
     paintChoiceScreen('extra', EDSExtraMessage, function createPreview(data) {
-        return data.text;
+        return data.text.toString().slice(0, 32);
     }, currentFilter);
 }
 
