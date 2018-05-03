@@ -729,6 +729,13 @@ EDSExtraMessageSet['SMRT'] = {
         align: 'centre',
         yPos: 0
     },
+    2799: {
+        text: 'MOFO LIM KOPI',
+        font: 'big',
+        align: 'centre',
+        yPos: 1,
+        hidden: true
+    },
     3449: {
         text: ['CHEONG CHEONG CHEONG!!!', 'LAST BUS ALREADY!!!'],
         font: 'thin',
@@ -741,6 +748,13 @@ EDSExtraMessageSet['SMRT'] = {
         font: 'thick',
         align: 'centre',
         yPos: [9, 0],
+        hidden: true
+    },
+    63122: {
+        text: 'I AM GOYANG KING!!',
+        font: 'big',
+        align: 'centre',
+        yPos: 1,
         hidden: true
     }
 }
