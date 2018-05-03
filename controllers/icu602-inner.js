@@ -53,7 +53,7 @@ function paintChoiceScreen(screenName, dataSource, previewFunction, filter) {
         return;
     }
 
-    let allCodes = Object.keys(dataSource).sort((a, b) => a - b);
+    let allCodes = Object.keys(dataSource).sort((a, b) => a - b).filter(code => !dataSource[code].hidden);
 
     if (!!filter) {
         allCodes = allCodes.filter(code => code.toString().startsWith(filter));
@@ -187,7 +187,7 @@ window.addEventListener('message', (event) => {
             extra: EDSExtraMessage
         }
 
-        let allCodes = Object.keys(dataSource[currentScreen]);
+        let allCodes = Object.keys(dataSource[currentScreen]).filter(code => !dataSource[currentScreen][code].hidden);
 
         if (!!currentFilter) {
             allCodes = allCodes.filter(code => code.toString().startsWith(currentFilter));
