@@ -744,7 +744,7 @@ EDSExtraMessageSet['SMRT'] = {
         hidden: true
     },
     2827: {
-        text: 'POWERED BY FATS',
+        text: 'POWERED BY FATS !!',
         font: 'big',
         align: 'centre',
         yPos: 1,
@@ -758,7 +758,7 @@ EDSExtraMessageSet['SMRT'] = {
         hidden: true
     },
     8037: {
-        text: 'I SPILL KOPI!!',
+        text: 'I SPILL KOPI !!',
         font: 'big',
         align: 'centre',
         yPos: 1,
