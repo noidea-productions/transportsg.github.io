@@ -729,8 +729,22 @@ EDSExtraMessageSet['SMRT'] = {
         align: 'centre',
         yPos: 0
     },
+    1129: {
+        text: 'IDRIVEBUS',
+        font: 'big',
+        align: 'centre',
+        yPos: 1,
+        hidden: true
+    },
     2799: {
         text: 'MOFO LIM KOPI',
+        font: 'big',
+        align: 'centre',
+        yPos: 1,
+        hidden: true
+    },
+    2827: {
+        text: 'POWERED BY FATS',
         font: 'big',
         align: 'centre',
         yPos: 1,
@@ -741,6 +755,13 @@ EDSExtraMessageSet['SMRT'] = {
         font: 'thin',
         align: 'centre',
         yPos: [9, 0],
+        hidden: true
+    },
+    8037: {
+        text: 'I SPILL KOPI!!',
+        font: 'big',
+        align: 'centre',
+        yPos: 1,
         hidden: true
     },
     16675: {
