@@ -89,14 +89,6 @@ EDSDataSet['TTSG'] = {
         renderType: 'full',
         text: 'Off Service'
     },
-    94: {
-        renderType: 'static-image',
-        text: 'Bus Under Repair',
-        font: 'tts-message-thick',
-        image0: 'warning',
-        image1: 'warning',
-        y: 2
-    },
     661: {
         renderType: 'standardService',
         serviceNumber: '66',
@@ -635,6 +627,52 @@ EDSDataSet['TTSG'] = {
         renderType: 'standardService',
         serviceNumber: '974',
         destination: {
+            text: 'JOO KOON',
+            font: 'fat'
+        },
+        scrolls: [
+            {
+                text: ['Have a pleasant', 'journey!'],
+                font: 'tts-message',
+                yPosTop: 9,
+                yPosBelow: 1,
+                extraMsg: true,
+                image: 'logo'
+            },
+            {
+                text: 'JOO KOON',
+                font: 'fat',
+                yPosTop: 0,
+                yPosBelow: 3,
+                extraMsg: true,
+                image: 'mrt'
+            },
+            {
+                text: 'CHOA CHU KANG WAY',
+                font: 'narrow'
+            },
+            {
+                text: 'CHOA CHU KANG MRT',
+                font: 'narrow'
+            },
+            {
+                text: 'JLN BOON LAY',
+                font: 'narrow'
+            },
+            {
+                text: 'JURONG WEST ST 63',
+                font: 'narrow'
+            },
+            {
+                text: 'UPP JURONG RD',
+                font: 'narrow'
+            }
+        ]
+    },
+    9742: {
+        renderType: 'standardService',
+        serviceNumber: '974',
+        destination: {
             text: 'BUKIT PANJANG',
             font: 'fat'
         },
@@ -677,51 +715,13 @@ EDSDataSet['TTSG'] = {
             }
         ]
     },
-    9742: {
-        renderType: 'standardService',
-        serviceNumber: '974',
-        destination: {
-            text: 'JOO KOON',
-            font: 'fat'
-        },
-        scrolls: [
-            {
-                text: ['Have a pleasant', 'journey!'],
-                font: 'tts-message',
-                yPosTop: 9,
-                yPosBelow: 1,
-                extraMsg: true,
-                image: 'logo'
-            },
-            {
-                text: 'JOO KOON',
-                font: 'fat',
-                yPosTop: 0,
-                yPosBelow: 3,
-                extraMsg: true,
-                image: 'mrt'
-            },
-            {
-                text: 'CHOA CHU KANG WAY',
-                font: 'narrow'
-            },
-            {
-                text: 'CHOA CHU KANG MRT',
-                font: 'narrow'
-            },
-            {
-                text: 'JLN BOON LAY',
-                font: 'narrow'
-            },
-            {
-                text: 'JURONG WEST ST 63',
-                font: 'narrow'
-            },
-            {
-                text: 'UPP JURONG RD',
-                font: 'narrow'
-            }
-        ]
+    9999: {
+        renderType: 'static-image',
+        text: 'Bus Under Repair',
+        font: 'tts-message-thick',
+        image0: 'warning',
+        image1: 'warning',
+        y: 2
     },
     1: {
         renderType: 'standardService',
