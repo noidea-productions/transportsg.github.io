@@ -126,7 +126,7 @@ window.addEventListener('message', event => {
                 break;
             case 'extraUpdated':
                 currentExtraMessage = eventData.code;
-                currentEDSScroll = -2;
+                currentEDSScroll = -1;
 
                 clearInterval(edsHeartbeatInterval);
                 edsHeartbeatInterval = setInterval(edsHeartbeat, 3500);
