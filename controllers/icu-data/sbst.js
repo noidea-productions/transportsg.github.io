@@ -6,7 +6,7 @@ EDSTemplateSet['SBST'] = {
             },
             font: '$serviceFont',
             format: '<serviceNumber,,0>',
-            spaceWidth: 2,
+            spaceWidth: 1,
             align: 'right'
         },
         { // Render DEST via ROAD [SVC]
