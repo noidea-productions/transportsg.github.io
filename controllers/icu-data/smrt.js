@@ -729,16 +729,16 @@ EDSExtraMessageSet['SMRT'] = {
         align: 'centre',
         yPos: 0
     },
-    16675: {
-        text: ['RUN RUN RUN!!!', 'LAST BUS ALREADY!!!'],
-        font: 'thick',
+    3449: {
+        text: ['CHEONG CHEONG CHEONG!!!', 'LAST BUS ALREADY!!!'],
+        font: 'thin',
         align: 'centre',
         yPos: [9, 0],
         hidden: true
     },
-    3449: {
-        text: ['CHEONG CHEONG CHEONG!!!', 'LAST BUS ALREADY!!!'],
-        font: 'thin',
+    16675: {
+        text: ['RUN RUN RUN!!!', 'LAST BUS ALREADY!!!'],
+        font: 'thick',
         align: 'centre',
         yPos: [9, 0],
         hidden: true
