@@ -141,7 +141,7 @@ EDSDataSet['TTSG'] = {
                 yPosTop: 0,
                 yPosBelow: 3,
                 extraMsg: true,
-                image: 'mrt'
+                image: 'blank'
             },
             {
                 text: 'BUKIT BATOK CENTRAL',
