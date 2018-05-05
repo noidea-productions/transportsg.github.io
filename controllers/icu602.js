@@ -52,6 +52,7 @@ window.addEventListener('load', () => {
     document.getElementById('button-up').addEventListener('click', onUpPressed);
     document.getElementById('button-down').addEventListener('click', onDownPressed);
     document.getElementById('operator-selector').addEventListener('change', onOperatorChanged);
+    document.getElementById('eds-selector').addEventListener('change', onEDSTypeChanged);
 
     for (let button = 0; button < 10; button++) {
         let buttonDiv = document.getElementById('button-' + button);
@@ -144,6 +145,16 @@ function onOperatorChanged(e) {
     }), parent.location.toString());
 
     state = 'home';
+}
+
+function onEDSTypeChanged(e) {
+    let currentEDSType = document.querySelectorAll('#eds-selector > option')
+    [document.getElementById('eds-selector').selectedIndex].textContent;
+
+    parent.postMessage(JSON.stringify({
+        type: 'edsTypeChanged',
+        edsType: currentEDSType
+    }), parent.location.toString());
 }
 
 window.addEventListener('message', event => {

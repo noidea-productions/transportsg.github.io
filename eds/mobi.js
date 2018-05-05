@@ -1,8 +1,7 @@
-let controller, frontEDS;
+let controller;
 
 window.addEventListener('load', () => {
     controller = document.getElementById('controller');
-    frontEDS = document.getElementById('front')
 });
 
 window.addEventListener('message', event => {
@@ -13,14 +12,24 @@ window.addEventListener('message', event => {
             controller.contentWindow.postMessage(event.data, location.toString());
             return;
         }
+
+        if (eventData.type === 'edsTypeChanged') {
+            let types = {
+                MobiDOT: '-flipdot',
+                MobiLED: ''
+            }
+
+            let currentType = types[eventData.edsType];
+            document.getElementById('front').src = '/displays/mobi/front' + currentType + '/index.html';
+        }
         propagateEvent(eventData);
     }
 });
 
 function propagateEvent(eventData) {
-    frontEDS.contentWindow.postMessage(JSON.stringify(eventData), location.toString());
+    document.getElementById('front').contentWindow.postMessage(JSON.stringify(eventData), location.toString());
 }
-// 
+//
 // if ('serviceWorker' in navigator) {
 //     navigator.serviceWorker.register('/mobi-serviceworker.js', {
 //         scope: '/'

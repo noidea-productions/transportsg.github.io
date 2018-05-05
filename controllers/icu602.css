@@ -257,14 +257,14 @@ body {
     width: 1.8vw;
 }
 
-#operator-selector {
+.selector {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
 
 
     width: 7vw;
-    height: 3.5vw;
+    height: 4vw;
     font-size: 1.5vw;
 
     outline: none;
@@ -276,4 +276,8 @@ body {
     background-color: #181818;
     border-radius: 2vw;
     color: #d1c72f;
+}
+
+#eds-selector {
+    width: 9vw;
 }
