@@ -113,7 +113,7 @@ function showSmallText(line, yPos) {
 
     let totalWidth = getTextWidth(chars, 'rearText', 1);
 
-    let xPos = Math.floor(32 / 2 - totalWidth / 2);
+    let xPos = Math.floor(40 / 2 - totalWidth / 2);
 
     writeText(line, 'rearText', 1, xPos, yPos);
 
