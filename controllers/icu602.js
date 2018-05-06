@@ -153,7 +153,8 @@ function onEDSTypeChanged(e) {
 
     parent.postMessage(JSON.stringify({
         type: 'edsTypeChanged',
-        edsType: currentEDSType
+        edsType: currentEDSType,
+        operator: currentOperator
     }), parent.location.toString());
 }
 
