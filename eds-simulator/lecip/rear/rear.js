@@ -231,27 +231,27 @@ function handleSpecialCode(event) {
         case '1111':
             clearLEDs();
             showSmallText('OFF', 11);
-            showSmallText('SERVICE', 3);
+            showSmallText('SERVICE', 2);
             break;
         case '2222':
             clearLEDs();
             showSmallText('SBS', 11);
-            showSmallText('TRANSIT', 3);
+            showSmallText('TRANSIT', 2);
             break;
         case '4444':
             clearLEDs();
             showSmallText('ON', 11);
-            showSmallText('TEST', 3);
+            showSmallText('TEST', 2);
             break;
         case '5555':
             clearLEDs();
             showSmallText('TRAINING', 11);
-            showSmallText('BUS', 3);
+            showSmallText('BUS', 2);
             break;
         case '3333':
             clearLEDs();
             showSmallText('FREE', 11);
-            showSmallText('SHUTTLE', 3);
+            showSmallText('SHUTTLE', 2);
             break;
         case '9999':
             clearLEDs();
