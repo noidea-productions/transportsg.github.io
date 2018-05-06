@@ -20,7 +20,7 @@ window.addEventListener('message', event => {
             }
 
             let currentType = types[eventData.edsType];
-            document.getElementById('front').src = '/displays/mobi/front' + currentType + '/index.html';
+            document.getElementById('front').src = './front' + currentType + '/index.html';
             document.getElementById('front').addEventListener('load', () => {
                 propagateEvent({
                     mode: 'setOperator',
