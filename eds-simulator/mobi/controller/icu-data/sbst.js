@@ -450,6 +450,18 @@ EDSDataSet['SBST'] = {
             }
         ]
     },
+    1743: {
+        renderType: 'ffwSvc',
+        serviceNumber: '174e',
+        serviceFont: 'full',
+        text: 'FAST FORWARD 174'
+    },
+    2222: {
+        renderType: 'image',
+        text: 'SBS TRANSIT',
+        image: 'logo',
+        x: 'centre'
+    },
     2401: { //likely incomplete go check!
         renderType: 'standardService',
         serviceNumber: '240',
@@ -605,17 +617,90 @@ EDSDataSet['SBST'] = {
             }
         ]
     },
-    1743: {
-        renderType: 'ffwSvc',
-        serviceNumber: '174e',
+    2471: {
+        renderType: 'int-loopSvc',
+        serviceNumber: '247',
         serviceFont: 'full',
-        text: 'FAST FORWARD 174'
+        destination: {
+            text: 'TUAS TER-TUAS BAY LINK',
+            font: 'tall'
+        },
+        scrolls: [
+            {
+                "text": "TUAS AVE 7",
+                "font": "narrow"
+            },
+            {
+                "text": "TUAS CRES",
+                "font": "narrow"
+            },
+            {
+                "text": "TUAS STH AVE 5&4&7",
+                "font": "narrow"
+            },
+            {
+                "text": "TUAS STH AVE 3&9&8",
+                "font": "narrow"
+            },
+            {
+                "text": "TUAS LINK 4",
+                "font": "narrow"
+            }
+        ]
     },
-    2222: {
-        renderType: 'image',
-        text: 'SBS TRANSIT',
-        image: 'logo',
-        x: 'centre'
+    2481: {
+        renderType: 'int-loopSvc',
+        serviceNumber: '248',
+        serviceFont: 'full',
+        destination: {
+            text: 'TUAS TER-TUAS STH AVE 14',
+            font: 'tall'
+        },
+        scrolls: [
+            {
+                "text": "PIONEER RD",
+                "font": "narrow"
+            },
+            {
+                "text": "TUAS AVE 20",
+                "font": "narrow"
+            },
+            {
+                "text": "TUAS STH AVE 5",
+                "font": "narrow"
+            },
+            {
+                "text": "TUAS STH AVE 9",
+                "font": "narrow"
+            },
+            {
+                "text": "TUAS STH AVE 10",
+                "font": "narrow"
+            }
+        ]
+    },
+    2581: {
+        renderType: 'int-loopSvc',
+        serviceNumber: '258',
+        serviceFont: 'full',
+        destination: {
+            text: 'JOO KOON INT-JUR W. ST 64',
+            font: 'tall'
+        },
+        scrolls: [
+            {
+                "text": "PIONEER RD NTH",
+                "font": "narrow"
+            },
+            {
+                "text": "JURONG W. ST 61&81&75",
+                "font": "narrow"
+            },
+            {
+                "text": "JALAN AHMAD IBRAHIM",
+                "font": "narrow"
+            }
+        ]
     },
     3333: {
         renderType: 'full',
@@ -722,33 +807,6 @@ EDSDataSet['SBST'] = {
             }
         ]
     },
-    8061: {
-        renderType: 'standardService',
-        serviceNumber: '860',
-        serviceFont: 'full',
-        destination: {
-            text: 'YIO CHU KANG INT',
-            font: 'thin2'
-        },
-        scrolls: [
-            {
-                "text": "UPPER THOMSON RD",
-                "font": "narrow"
-            },
-            {
-                "text": "ANG MO KIO AVE 5",
-                "font": "narrow"
-            },
-            {
-                "text": "YISHUN RING RD",
-                "font": "narrow"
-            },
-            {
-                "text": "YISHUN AVE 3",
-                "font": "narrow"
-            }// Boo missing data
-        ]
-    },
     8111: {
         renderType: 'standardService',
         serviceNumber: '811',
@@ -780,89 +838,31 @@ EDSDataSet['SBST'] = {
             }
         ]
     },
-    2471: {
-        renderType: 'int-loopSvc',
-        serviceNumber: '247',
+    8601: {
+        renderType: 'standardService',
+        serviceNumber: '860',
         serviceFont: 'full',
         destination: {
-            text: 'TUAS TER-TUAS BAY LINK',
-            font: 'tall'
+            text: 'YIO CHU KANG INT',
+            font: 'thin2'
         },
         scrolls: [
             {
-                "text": "TUAS AVE 7",
+                "text": "UPPER THOMSON RD",
                 "font": "narrow"
             },
             {
-                "text": "TUAS CRES",
+                "text": "ANG MO KIO AVE 5",
                 "font": "narrow"
             },
             {
-                "text": "TUAS STH AVE 5&4&7",
+                "text": "YISHUN RING RD",
                 "font": "narrow"
             },
             {
-                "text": "TUAS STH AVE 3&9&8",
+                "text": "YISHUN AVE 3",
                 "font": "narrow"
-            },
-            {
-                "text": "TUAS LINK 4",
-                "font": "narrow"
-            }
-        ]
-    },
-    2481: {
-        renderType: 'int-loopSvc',
-        serviceNumber: '248',
-        serviceFont: 'full',
-        destination: {
-            text: 'TUAS TER-TUAS STH AVE 14',
-            font: 'tall'
-        },
-        scrolls: [
-            {
-                "text": "PIONEER RD",
-                "font": "narrow"
-            },
-            {
-                "text": "TUAS AVE 20",
-                "font": "narrow"
-            },
-            {
-                "text": "TUAS STH AVE 5",
-                "font": "narrow"
-            },
-            {
-                "text": "TUAS STH AVE 9",
-                "font": "narrow"
-            },
-            {
-                "text": "TUAS STH AVE 10",
-                "font": "narrow"
-            }
-        ]
-    },
-    2581: {
-        renderType: 'int-loopSvc',
-        serviceNumber: '258',
-        serviceFont: 'full',
-        destination: {
-            text: 'JOO KOON INT-JUR W. ST 64',
-            font: 'tall'
-        },
-        scrolls: [
-            {
-                "text": "PIONEER RD NTH",
-                "font": "narrow"
-            },
-            {
-                "text": "JURONG W. ST 61&81&75",
-                "font": "narrow"
-            },
-            {
-                "text": "JALAN AHMAD IBRAHIM",
-                "font": "narrow"
-            }
+            }// Boo missing data
         ]
     }
 }
