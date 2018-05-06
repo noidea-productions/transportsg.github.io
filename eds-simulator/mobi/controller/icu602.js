@@ -18,7 +18,7 @@ let announcementRanges = {
 }
 
 function playAnnouncement(announcementID, playComplete) {
-    let announcementURL = '/resources/audio/' + currentOperator + '/' + announcementID + '.mp3';
+    let announcementURL = '../resources/audio/' + currentOperator + '/' + announcementID + '.mp3';
 
     let audio = new Audio(announcementURL);
     audio.addEventListener('ended', playComplete);
