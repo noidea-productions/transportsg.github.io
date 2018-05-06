@@ -111,11 +111,11 @@ function writeText(text, font, spaceWidth, xPos, yPos) {
 function showSmallText(line, yPos) {
     let chars = [...line];
 
-    let totalWidth = getTextWidth(chars, 'rearText', 1);
+    let totalWidth = getTextWidth(chars, 'frontSmall', 1);
 
     let xPos = Math.floor(40 / 2 - totalWidth / 2);
 
-    writeText(line, 'rearText', 1, xPos, yPos);
+    writeText(line, 'frontSmall', 1, xPos, yPos);
 
 }
 
