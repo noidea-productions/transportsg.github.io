@@ -54,7 +54,7 @@ EDSTemplateSet['TTSG'] = {
             },
             font: 'large',
             format: '<text,font,0>',
-            spaceWidth: 3,
+            spaceWidth: 2,
             align: 'centre'
         }
     ],
