@@ -85,10 +85,6 @@ EDSTemplateSet['TTSG'] = {
 }
 
 EDSDataSet['TTSG'] = {
-    1111: {
-        renderType: 'full',
-        text: 'Off Service'
-    },
     661: {
         renderType: 'standardService',
         serviceNumber: '66',
@@ -345,6 +341,10 @@ EDSDataSet['TTSG'] = {
             }
         ]
     },
+    1111: {
+        renderType: 'full',
+        text: 'Off Service'
+    },
     1431: {
         renderType: 'standardService',
         serviceNumber: '143',
@@ -534,6 +534,10 @@ EDSDataSet['TTSG'] = {
                 font: 'narrow'
             }
         ]
+    },
+    5555: {
+        renderType: 'full',
+        text: 'Training Bus'
     },
     9411: {
         renderType: 'standardService',
