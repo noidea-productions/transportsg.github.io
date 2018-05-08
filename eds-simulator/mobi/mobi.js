@@ -1,3 +1,5 @@
+let cacheName = 'mobitec-eds';
+
 let controller;
 
 window.addEventListener('load', () => {
@@ -35,13 +37,9 @@ window.addEventListener('message', event => {
 function propagateEvent(eventData) {
     document.getElementById('front').contentWindow.postMessage(JSON.stringify(eventData), location.toString());
 }
-//
-// if ('serviceWorker' in navigator) {
-//     navigator.serviceWorker.register('/mobi-serviceworker.js', {
-//         scope: '/'
-//     }).then(reg => {
-//         console.log('success', reg)
-//     }).catch(err => {
-//         console.log('fail', err);
-//     });
-// }
+
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/eds-simulator/mobi/serviceworker.js', {
+        scope: '/eds-simulator/mobi/'
+    });
+}
