@@ -39,26 +39,17 @@ self.addEventListener('fetch', event => {
     console.log('[mobitec]: fetching resource', event.request.url);
 
     event.respondWith(fromCache(event.request));
-
-    event.waitUntil(updateCache(event.request));
 });
 
 function fromCache(request) {
     return caches.open(cacheName).then(cache => {
-        return fetch(request).catch(() => {
-            return cache.match(request);
-        }).then(response => {
-            return response;
-        });
-    });
-}
+        return fetch(request).then(response => {
+            console.log('[mobitec]: cached', response.url);
 
-function updateCache(request) {
-    return caches.open(cacheName).then(function (cache) {
-        return fetch(request).then(function (response) {
-            return cache.put(request, response.clone()).then(() => {
-                return response;
-            });
+            cache.put(request, response.clone());
+            return response;
+        }).catch(() => {
+            return cache.match(request) || Promise.reject('no-match');
         });
     });
 }
