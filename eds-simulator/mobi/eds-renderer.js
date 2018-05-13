@@ -245,6 +245,7 @@ function parseVariables(variableRules, edsData, arrayPos) {
             variablePool[variableName] = variableRule;
         }
     });
+
     return variablePool;
 }
 
@@ -267,14 +268,14 @@ function parseFormat(format, variablePool, defaultFont) {
                     return {
                         text: variablePool[variableName][arrayIndex],
                         font: variablePool[tokenData[1]] || defaultFont,
-                        yPos: variablePool[tokenData[2]] || tokenData[2] || 0
+                        yPos: (variablePool[tokenData[2]] === undefined ? tokenData[2] : variablePool[tokenData[2]]) || 0
                     }
                 }
 
                 return {
                     text: variablePool[tokenData[0]],
                     font: variablePool[tokenData[1]] || defaultFont,
-                    yPos: variablePool[tokenData[2]] || tokenData[2] || 0
+                    yPos: (variablePool[tokenData[2]] === undefined ? tokenData[2] : variablePool[tokenData[2]]) || 0
                 }
             } else {
                 return {
@@ -459,6 +460,8 @@ function renderEDS(currentEDSCode, currentEDSScroll, currentExtraMessage) {
                 return 0;
         }
     }
+
+console.log(renderGuidelines)
 
     renderGuidelines.forEach(guideline => {
         let align = guideline.align;
