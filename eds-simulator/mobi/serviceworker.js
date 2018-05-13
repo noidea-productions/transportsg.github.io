@@ -1,5 +1,7 @@
 let cacheName = 'mobitec-eds';
 let controlledURLs = [
+    '/eds-simulator/mobi/',
+    '/eds-simulator/mobi/manifest.webmanifest',
     '/eds-simulator/mobi/controller/icu-data/fonts.js',
     '/eds-simulator/mobi/controller/icu-data/sbst.js',
     '/eds-simulator/mobi/controller/icu-data/smrt.js',

@@ -1,7 +1,7 @@
 {
     "name": "Mobitec EDS Simulator",
     "short_name": "Mobitec EDS",
-    "start_url": "/eds-simulator/mobi",
+    "start_url": "/eds-simulator/mobi/",
     "background_color": "#010101",
     "theme_color": "#010101",
     "display": "fullscreen",
