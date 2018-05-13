@@ -59,7 +59,7 @@ body {
 
     margin-left: 10vw;
 
-    border: 0.6vw solid #000000;
+    border: 0.5vw solid #000000;
 
     justify-content: center;
     align-items: center;
@@ -91,10 +91,10 @@ body {
 }
 
 .dest-table {
-    height: calc(65vh - 2.6vw - 4vh);
+    height: calc(59vh - 2.6vw);
     margin-top: 10vh;
     margin-bottom: 2vh;
-    border: 0.5vh solid black;
+    border: 2vh solid black;
 }
 
 .dest-table-item, .extra-table-item {
