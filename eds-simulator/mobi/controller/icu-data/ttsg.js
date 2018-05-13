@@ -97,7 +97,7 @@ EDSDataSet['TTSG'] = {
                 text: ['Have a pleasant', 'journey!'],
                 font: 'tts-message',
                 yPosTop: 9,
-                yPosBelow: 1,
+                yPosBelow: 0,
                 extraMsg: true,
                 image: 'logo'
             },
@@ -127,7 +127,7 @@ EDSDataSet['TTSG'] = {
                 text: ['Have a pleasant', 'journey!'],
                 font: 'tts-message',
                 yPosTop: 9,
-                yPosBelow: 1,
+                yPosBelow: 0,
                 extraMsg: true,
                 image: 'logo'
             },
@@ -137,7 +137,7 @@ EDSDataSet['TTSG'] = {
                 yPosTop: 0,
                 yPosBelow: 3,
                 extraMsg: true,
-                image: 'blank'
+                image: 'mrt'
             },
             {
                 text: 'BUKIT BATOK CENTRAL',
@@ -173,7 +173,7 @@ EDSDataSet['TTSG'] = {
                 text: ['Have a pleasant', 'journey!'],
                 font: 'tts-message',
                 yPosTop: 9,
-                yPosBelow: 1,
+                yPosBelow: 0,
                 extraMsg: true,
                 image: 'logo'
             },
@@ -219,7 +219,7 @@ EDSDataSet['TTSG'] = {
                 text: ['Have a pleasant', 'journey!'],
                 font: 'tts-message',
                 yPosTop: 9,
-                yPosBelow: 1,
+                yPosBelow: 0,
                 extraMsg: true,
                 image: 'logo'
             },
@@ -261,7 +261,7 @@ EDSDataSet['TTSG'] = {
                 text: ['Have a pleasant', 'journey!'],
                 font: 'tts-message',
                 yPosTop: 9,
-                yPosBelow: 1,
+                yPosBelow: 0,
                 extraMsg: true,
                 image: 'logo'
             },
@@ -307,7 +307,7 @@ EDSDataSet['TTSG'] = {
                 text: ['Have a pleasant', 'journey!'],
                 font: 'tts-message',
                 yPosTop: 9,
-                yPosBelow: 1,
+                yPosBelow: 0,
                 extraMsg: true,
                 image: 'logo'
             },
@@ -357,7 +357,7 @@ EDSDataSet['TTSG'] = {
                 text: ['Have a pleasant', 'journey!'],
                 font: 'tts-message',
                 yPosTop: 9,
-                yPosBelow: 1,
+                yPosBelow: 0,
                 extraMsg: true,
                 image: 'logo'
             },
@@ -411,7 +411,7 @@ EDSDataSet['TTSG'] = {
                 text: ['Have a pleasant', 'journey!'],
                 font: 'tts-message',
                 yPosTop: 9,
-                yPosBelow: 1,
+                yPosBelow: 0,
                 extraMsg: true,
                 image: 'logo'
             },
@@ -441,7 +441,7 @@ EDSDataSet['TTSG'] = {
                 text: ['Have a pleasant', 'journey!'],
                 font: 'tts-message',
                 yPosTop: 9,
-                yPosBelow: 1,
+                yPosBelow: 0,
                 extraMsg: true,
                 image: 'logo'
             },
@@ -487,7 +487,7 @@ EDSDataSet['TTSG'] = {
                 text: ['Have a pleasant', 'journey!'],
                 font: 'tts-message',
                 yPosTop: 9,
-                yPosBelow: 1,
+                yPosBelow: 0,
                 extraMsg: true,
                 image: 'logo'
             },
@@ -517,7 +517,7 @@ EDSDataSet['TTSG'] = {
                 text: ['Have a pleasant', 'journey!'],
                 font: 'tts-message',
                 yPosTop: 9,
-                yPosBelow: 1,
+                yPosBelow: 0,
                 extraMsg: true,
                 image: 'logo'
             },
@@ -551,7 +551,7 @@ EDSDataSet['TTSG'] = {
                 text: ['Have a pleasant', 'journey!'],
                 font: 'tts-message',
                 yPosTop: 9,
-                yPosBelow: 1,
+                yPosBelow: 0,
                 extraMsg: true,
                 image: 'logo'
             },
@@ -593,7 +593,7 @@ EDSDataSet['TTSG'] = {
                 text: ['Have a pleasant', 'journey!'],
                 font: 'tts-message',
                 yPosTop: 9,
-                yPosBelow: 1,
+                yPosBelow: 0,
                 extraMsg: true,
                 image: 'logo'
             },
@@ -639,7 +639,7 @@ EDSDataSet['TTSG'] = {
                 text: ['Have a pleasant', 'journey!'],
                 font: 'tts-message',
                 yPosTop: 9,
-                yPosBelow: 1,
+                yPosBelow: 0,
                 extraMsg: true,
                 image: 'logo'
             },
@@ -685,7 +685,7 @@ EDSDataSet['TTSG'] = {
                 text: ['Have a pleasant', 'journey!'],
                 font: 'tts-message',
                 yPosTop: 9,
-                yPosBelow: 1,
+                yPosBelow: 0,
                 extraMsg: true,
                 image: 'logo'
             },
@@ -738,7 +738,7 @@ EDSDataSet['TTSG'] = {
             {
                 text: ['Have a pleasant', 'journey!'],
                 yPosTop: 9,
-                yPosBelow: 1,
+                yPosBelow: 0,
                 font: 'tts-message',
                 extraMsg: true,
                 image: 'logo'
@@ -755,7 +755,7 @@ EDSDataSet['TTSG'] = {
                 text: ['Merry Christmas &', 'Happy New Year !'],
                 font: 'tts-message',
                 yPosTop: 9,
-                yPosBelow: 1,
+                yPosBelow: 0,
                 extraMsg: true,
                 image: 'christmas'
             },
@@ -777,8 +777,8 @@ EDSDataSet['TTSG'] = {
             },
             {
                 text: '',
-                yPosTop: 1,
-                yPosBelow: 1,
+                yPosTop: 0,
+                yPosBelow: 0,
                 font: 'tts-message',
                 extraMsg: true,
                 image: 'gas'
