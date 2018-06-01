@@ -256,10 +256,16 @@ function parseFormat(format, variablePool, defaultFont) {
     }
     let lineTokens = lines.map(e => e.split(/(<[^>]\w+,\w+,\d+>)/).filter(Boolean));
 
-    return lineTokens.map(lines => {
+    return lineTokens.map((lines, lineNumber) => {
         return lines.map(token => {
             if (token.startsWith('<')) {
                 let tokenData = token.slice(1, -1).split(',');
+
+                let font = variablePool[tokenData[1]] || defaultFont;
+                
+                if (font instanceof Array) {
+                    font = font[lineNumber];
+                }
 
                 if (tokenData[0].includes('[') && tokenData[0].endsWith(']')) {
                     let variableName = tokenData[0].slice(0, tokenData.indexOf('[') - 2);
@@ -267,7 +273,7 @@ function parseFormat(format, variablePool, defaultFont) {
 
                     return {
                         text: variablePool[variableName][arrayIndex],
-                        font: variablePool[tokenData[1]] || defaultFont,
+                        font,
                         yPos: (variablePool[tokenData[2]] === undefined ? tokenData[2] : variablePool[tokenData[2]]) || 0
                     }
                 }
@@ -278,6 +284,11 @@ function parseFormat(format, variablePool, defaultFont) {
                     yPos: (variablePool[tokenData[2]] === undefined ? tokenData[2] : variablePool[tokenData[2]]) || 0
                 }
             } else {
+
+                if (defaultFont instanceof Array) {
+                    font = font[lineNumber]
+                }
+
                 return {
                     text: token,
                     font: defaultFont,
@@ -461,7 +472,7 @@ function renderEDS(currentEDSCode, currentEDSScroll, currentExtraMessage) {
         }
     }
 
-console.log(renderGuidelines)
+// console.log(renderGuidelines)
 
     renderGuidelines.forEach(guideline => {
         let align = guideline.align;

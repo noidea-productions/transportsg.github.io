@@ -33,8 +33,8 @@ EDSTemplateSet['TTSG'] = {
             font: '$scrolls[]font',
             active: '$scrolls[]extraMsg{false}',
             format: {
-                '$scrolls[]text(array?)': ['<fullDestination[0],,yPosTop>', '<fullDestination[1],,yPosBelow>'], // Render multiline dest
-                '$!scrolls[]text(array?)': ['<fullDestination,,yPosBelow>'] // Render singleline dest
+                '$scrolls[]text(array?)': ['<fullDestination[0],,yPosTop>', '<fullDestination[1],,yPosBelow>'], // Render multiline
+                '$!scrolls[]text(array?)': ['<fullDestination,,yPosBelow>'] // Render singleline
             },
             spaceWidth: 1,
             align: 'centre-width[0]+image(0)',
@@ -739,7 +739,7 @@ EDSDataSet['TTSG'] = {
                 text: ['Welcome Aboard', 'Tower Transit!'],
                 yPosTop: 9,
                 yPosBelow: 0,
-                font: 'tts-message',
+                font: ['tts-message-fat', 'tts-message'],
                 extraMsg: true,
                 image: 'logo'
             },
@@ -753,7 +753,7 @@ EDSDataSet['TTSG'] = {
             },
             {
                 text: ['Merry Christmas &', 'Happy New Year !'],
-                font: 'tts-message',
+                font: ['tts-message', 'tts-message'],
                 yPosTop: 9,
                 yPosBelow: 0,
                 extraMsg: true,
@@ -776,10 +776,10 @@ EDSDataSet['TTSG'] = {
                 image: 'candle'
             },
             {
-                text: '',
+                text: 'GA 1',
                 yPosTop: 0,
                 yPosBelow: 0,
-                font: 'tts-message',
+                font: 'full',
                 extraMsg: true,
                 image: 'gas'
             },
