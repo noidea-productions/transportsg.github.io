@@ -736,7 +736,7 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Have a pleasant', 'journey!'],
+                text: ['Welcome Aboard', 'Tower Transit!'],
                 yPosTop: 9,
                 yPosBelow: 0,
                 font: 'tts-message',
