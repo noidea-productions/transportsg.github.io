@@ -94,12 +94,13 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Have a pleasant', 'journey!'],
-                font: 'tts-message',
+                text: ['Selamat', 'Hari Raya!'],
                 yPosTop: 9,
                 yPosBelow: 0,
+                font: 'tts-message-fat',
                 extraMsg: true,
-                image: 'logo'
+                image: 'hari-raya',
+                spaceWidth: 2
             },
             {
                 text: 'JURONG EAST',
@@ -124,12 +125,13 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Have a pleasant', 'journey!'],
-                font: 'tts-message',
+                text: ['Selamat', 'Hari Raya!'],
                 yPosTop: 9,
                 yPosBelow: 0,
+                font: 'tts-message-fat',
                 extraMsg: true,
-                image: 'logo'
+                image: 'hari-raya',
+                spaceWidth: 2
             },
             {
                 text: 'BEDOK',
@@ -170,12 +172,13 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Have a pleasant', 'journey!'],
-                font: 'tts-message',
+                text: ['Selamat', 'Hari Raya!'],
                 yPosTop: 9,
                 yPosBelow: 0,
+                font: 'tts-message-fat',
                 extraMsg: true,
-                image: 'logo'
+                image: 'hari-raya',
+                spaceWidth: 2
             },
             {
                 text: 'BUKIT BATOK',
@@ -216,12 +219,13 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Have a pleasant', 'journey!'],
-                font: 'tts-message',
+                text: ['Selamat', 'Hari Raya!'],
                 yPosTop: 9,
                 yPosBelow: 0,
+                font: 'tts-message-fat',
                 extraMsg: true,
-                image: 'logo'
+                image: 'hari-raya',
+                spaceWidth: 2
             },
             {
                 text: 'MARINA CENTRE',
@@ -258,12 +262,13 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Have a pleasant', 'journey!'],
-                font: 'tts-message',
+                text: ['Selamat', 'Hari Raya!'],
                 yPosTop: 9,
                 yPosBelow: 0,
+                font: 'tts-message-fat',
                 extraMsg: true,
-                image: 'logo'
+                image: 'hari-raya',
+                spaceWidth: 2
             },
             {
                 text: 'BUKIT BATOK',
@@ -304,12 +309,13 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Have a pleasant', 'journey!'],
-                font: 'tts-message',
+                text: ['Selamat', 'Hari Raya!'],
                 yPosTop: 9,
                 yPosBelow: 0,
+                font: 'tts-message-fat',
                 extraMsg: true,
-                image: 'logo'
+                image: 'hari-raya',
+                spaceWidth: 2
             },
             {
                 text: 'SHENTON WAY',
@@ -354,12 +360,13 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Have a pleasant', 'journey!'],
-                font: 'tts-message',
+                text: ['Selamat', 'Hari Raya!'],
                 yPosTop: 9,
                 yPosBelow: 0,
+                font: 'tts-message-fat',
                 extraMsg: true,
-                image: 'logo'
+                image: 'hari-raya',
+                spaceWidth: 2
             },
             {
                 text: 'JURONG EAST',
@@ -408,12 +415,13 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Have a pleasant', 'journey!'],
-                font: 'tts-message',
+                text: ['Selamat', 'Hari Raya!'],
                 yPosTop: 9,
                 yPosBelow: 0,
+                font: 'tts-message-fat',
                 extraMsg: true,
-                image: 'logo'
+                image: 'hari-raya',
+                spaceWidth: 2
             },
             {
                 text: 'TOA PAYOH',
@@ -438,12 +446,13 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Have a pleasant', 'journey!'],
-                font: 'tts-message',
+                text: ['Selamat', 'Hari Raya!'],
                 yPosTop: 9,
                 yPosBelow: 0,
+                font: 'tts-message-fat',
                 extraMsg: true,
-                image: 'logo'
+                image: 'hari-raya',
+                spaceWidth: 2
             },
             {
                 text: 'CLEMEMTI',
@@ -484,12 +493,13 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Have a pleasant', 'journey!'],
-                font: 'tts-message',
+                text: ['Selamat', 'Hari Raya!'],
                 yPosTop: 9,
                 yPosBelow: 0,
+                font: 'tts-message-fat',
                 extraMsg: true,
-                image: 'logo'
+                image: 'hari-raya',
+                spaceWidth: 2
             },
             {
                 text: 'BUKIT PANJANG',
@@ -514,12 +524,13 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Have a pleasant', 'journey!'],
-                font: 'tts-message',
+                text: ['Selamat', 'Hari Raya!'],
                 yPosTop: 9,
                 yPosBelow: 0,
+                font: 'tts-message-fat',
                 extraMsg: true,
-                image: 'logo'
+                image: 'hari-raya',
+                spaceWidth: 2
             },
             {
                 text: 'CLEMENTI AVE 1',
@@ -548,12 +559,13 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Have a pleasant', 'journey!'],
-                font: 'tts-message',
+                text: ['Selamat', 'Hari Raya!'],
                 yPosTop: 9,
                 yPosBelow: 0,
+                font: 'tts-message-fat',
                 extraMsg: true,
-                image: 'logo'
+                image: 'hari-raya',
+                spaceWidth: 2
             },
             {
                 text: 'BUKIT BATOK',
@@ -590,12 +602,13 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Have a pleasant', 'journey!'],
-                font: 'tts-message',
+                text: ['Selamat', 'Hari Raya!'],
                 yPosTop: 9,
                 yPosBelow: 0,
+                font: 'tts-message-fat',
                 extraMsg: true,
-                image: 'logo'
+                image: 'hari-raya',
+                spaceWidth: 2
             },
             {
                 text: 'BUKIT BATOK',
@@ -636,12 +649,13 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Have a pleasant', 'journey!'],
-                font: 'tts-message',
+                text: ['Selamat', 'Hari Raya!'],
                 yPosTop: 9,
                 yPosBelow: 0,
+                font: 'tts-message-fat',
                 extraMsg: true,
-                image: 'logo'
+                image: 'hari-raya',
+                spaceWidth: 2
             },
             {
                 text: 'JOO KOON',
@@ -682,12 +696,13 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Have a pleasant', 'journey!'],
-                font: 'tts-message',
+                text: ['Selamat', 'Hari Raya!'],
                 yPosTop: 9,
                 yPosBelow: 0,
+                font: 'tts-message-fat',
                 extraMsg: true,
-                image: 'logo'
+                image: 'hari-raya',
+                spaceWidth: 2
             },
             {
                 text: 'BUKIT PANJANG',
@@ -736,15 +751,6 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Selamat', 'Hari Raya!'],
-                yPosTop: 9,
-                yPosBelow: 0,
-                font: 'tts-message-fat',
-                extraMsg: true,
-                image: 'hari-raya',
-                spaceWidth: 2
-            },
-            {
                 text: ['Welcome Aboard', 'Tower Transit!'],
                 yPosTop: 9,
                 yPosBelow: 0,
@@ -791,6 +797,15 @@ EDSDataSet['TTSG'] = {
                 font: 'full',
                 extraMsg: true,
                 image: 'gas'
+            },
+            {
+                text: ['Selamat', 'Hari Raya!'],
+                yPosTop: 9,
+                yPosBelow: 0,
+                font: 'tts-message-fat',
+                extraMsg: true,
+                image: 'hari-raya',
+                spaceWidth: 2
             },
         ]
     }
