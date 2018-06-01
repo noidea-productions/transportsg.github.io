@@ -433,7 +433,7 @@ function renderEDS(currentEDSCode, currentEDSScroll, currentExtraMessage) {
         }
 
         renderGuidelinesWithoutAlignment.push({
-            format, spaceWidth: parseVariables({_: renderGuideline.spaceWidth + ''}, edsData, [currentEDSScroll])._, align: renderGuideline.align,
+            format, spaceWidth: 1*parseVariables({_: renderGuideline.spaceWidth + ''}, edsData, [currentEDSScroll])._, align: renderGuideline.align,
             images: (renderGuideline.images || []).map(image => {
                 let xPos;
                 if (typeof image.x === 'number')
@@ -454,7 +454,7 @@ function renderEDS(currentEDSCode, currentEDSScroll, currentExtraMessage) {
         return guideline;
     });
 
-    // console.log(JSON.stringify(renderGuidelines, null, 2))
+    console.log(JSON.stringify(renderGuidelines, null, 2))
 
     clearLEDs();
 
