@@ -262,7 +262,7 @@ function parseFormat(format, variablePool, defaultFont) {
                 let tokenData = token.slice(1, -1).split(',');
 
                 let font = variablePool[tokenData[1]] || defaultFont;
-                
+
                 if (font instanceof Array) {
                     font = font[lineNumber];
                 }
@@ -433,7 +433,7 @@ function renderEDS(currentEDSCode, currentEDSScroll, currentExtraMessage) {
         }
 
         renderGuidelinesWithoutAlignment.push({
-            format, spaceWidth: renderGuideline.spaceWidth, align: renderGuideline.align,
+            format, spaceWidth: parseVariables({_: renderGuideline.spaceWidth + ''}, edsData, [currentEDSScroll])._, align: renderGuideline.align,
             images: (renderGuideline.images || []).map(image => {
                 let xPos;
                 if (typeof image.x === 'number')
