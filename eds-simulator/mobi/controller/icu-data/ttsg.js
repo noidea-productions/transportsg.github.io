@@ -484,6 +484,49 @@ EDSDataSet['TTSG'] = {
             }
         ]
     },
+    1732: {
+        renderType: 'standardService',
+        serviceNumber: '173',
+        destination: {
+            text: 'BUKIT BATOK',
+            font: 'fat'
+        },
+        scrolls: [
+            {
+                text: ['Selamat', 'Hari Raya!'],
+                yPosTop: 9,
+                yPosBelow: 0,
+                font: 'tts-message-fat',
+                extraMsg: true,
+                image: 'hari-raya',
+                spaceWidth: 2
+            },
+            {
+                text: 'BUKIT BATOK',
+                font: 'fat',
+                yPosTop: 0,
+                yPosBelow: 3,
+                extraMsg: true,
+                image: 'mrt'
+            },
+            {
+                text: 'TOH TUCK RD / TERRACE',
+                font: 'narrow'
+            },
+            {
+                text: 'BEAUTY WORLD MRT',
+                font: 'narrow'
+            },
+            {
+                text: 'HUME AVE',
+                font: 'narrow'
+            },
+            {
+                text: 'JLN BATU NILAM',
+                font: 'narrow'
+            },
+        ]
+    },
     1771: {
         renderType: 'standardService',
         serviceNumber: '177',

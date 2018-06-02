@@ -299,6 +299,50 @@ EDSDataSet['SMRT'] = {
             }
         ]
     },
+    460: {
+        renderType: 'standardService',
+        serviceNumber: '961',
+        serviceFont: 'full',
+        destination: {
+            text: 'GEYLANG LOR 1',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['GEYLANG LOR 1', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'WOODLANDS AVE 3',
+                font: 'thin'
+            },
+            {
+                text: 'UPP BUKIT TIMAH RD',
+                font: 'thin'
+            },
+            {
+                text: 'QUEENSWAY',
+                font: 'thin'
+            },
+            {
+                text: 'BUKIT MERAH',
+                font: 'thin'
+            },
+            {
+                text: 'CHINATOWN',
+                font: 'thin'
+            },
+            {
+                text: 'BEACH RD',
+                font: 'thin'
+            },
+            {
+                text: 'KALLANG BAHRU',
+                font: 'thin'
+            },
+        ]
+    },
     469: {
         renderType: 'standardService',
         serviceNumber: '172',
@@ -405,6 +449,54 @@ EDSDataSet['SMRT'] = {
                 text: 'AYE, CLEMENTI RD',
                 font: 'thin'
             } //Missing data oh noeses!!
+        ]
+    },
+    496: {
+        renderType: 'standardService',
+        serviceNumber: '61',
+        serviceFont: 'full',
+        destination: {
+            text: 'EUNOS',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['EUNOS', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'CLEMENTI RD',
+                font: 'thin'
+            },
+            {
+                text: 'HOLLAND RD',
+                font: 'thin'
+            },
+            {
+                text: 'TELOK BLANGAH',
+                font: 'thin'
+            },
+            {
+                text: 'CHINATOWN',
+                font: 'thin'
+            },
+            {
+                text: 'VICTORIA ST',
+                font: 'thin'
+            },
+            {
+                text: 'KALLANG BAHRU',
+                font: 'thin'
+            },
+            {
+                text: 'MACPHERSON RD',
+                font: 'thin'
+            },
+            {
+                text: 'UBI AVE 2',
+                font: 'thin'
+            }
         ]
     },
     497: {

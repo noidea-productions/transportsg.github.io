@@ -454,7 +454,7 @@ function renderEDS(currentEDSCode, currentEDSScroll, currentExtraMessage) {
         return guideline;
     });
 
-    console.log(JSON.stringify(renderGuidelines, null, 2))
+    // console.log(JSON.stringify(renderGuidelines, null, 2))
 
     clearLEDs();
 
