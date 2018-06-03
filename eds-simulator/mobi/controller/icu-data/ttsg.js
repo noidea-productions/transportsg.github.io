@@ -802,6 +802,14 @@ EDSDataSet['TTSG'] = {
                 image: 'logo'
             },
             {
+                text: ['Welcome Aboard', 'Tower Transit!'],
+                yPosTop: 9,
+                yPosBelow: 0,
+                font: 'tts-message',
+                extraMsg: true,
+                image: 'logo'
+            },
+            {
                 text: 'BUKIT BATOK',
                 font: 'fat',
                 yPosTop: 0,
@@ -839,7 +847,8 @@ EDSDataSet['TTSG'] = {
                 yPosBelow: 0,
                 font: 'full',
                 extraMsg: true,
-                image: 'gas'
+                image: 'gas',
+                spaceWidth: 6
             },
             {
                 text: ['Selamat', 'Hari Raya!'],
