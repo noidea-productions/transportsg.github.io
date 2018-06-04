@@ -56,7 +56,7 @@ window.addEventListener('load', () => {
         }
     }
 
-    edsHeartbeatInterval = setInterval(edsHeartbeat, 3000);
+    edsHeartbeatInterval = setInterval(edsHeartbeat, 3500);
     edsHeartbeat();
 });
 
