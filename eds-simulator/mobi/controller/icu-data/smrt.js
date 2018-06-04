@@ -378,7 +378,7 @@ EDSDataSet['SMRT'] = {
                 font: 'thin'
             },
             {
-                text: 'BT BATOK CTR, MRT',
+                text: 'BUKIT BATOK CTR,MRT',
                 font: 'thin'
             },
             {
@@ -414,7 +414,7 @@ EDSDataSet['SMRT'] = {
                 font: 'thick'
             },
             {
-                text: 'BT BATOK CTR, MRT',
+                text: 'BUKITT BATOK CTR,MRT',
                 font: 'thin'
             },
             {
@@ -480,7 +480,7 @@ EDSDataSet['SMRT'] = {
         serviceNumber: '172',
         serviceFont: 'full',
         destination: {
-            text: 'BOON LAY',
+            text: 'BOON LAY ',
             font: 'thin'
         },
         scrolls: [
@@ -494,7 +494,7 @@ EDSDataSet['SMRT'] = {
                 font: 'thin'
             },
             {
-                text: 'CHOA CHU KANG AVE 1, 3',
+                text: 'CHOA CHU KANG AVE 1,3',
                 font: 'thin'
             },
             {
