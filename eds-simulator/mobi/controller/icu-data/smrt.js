@@ -139,11 +139,11 @@ EDSTemplateSet['SMRT'] = {
         { // Render ENDS AT via DEST
             variables: {
                 destination: '$destination.text',
-                destinationFont: '$destination.font',
+                font: '$font',
                 endsAt: 'ENDS AT'
             },
             font: 'thin',
-            format: ['<endsAt,thin,9>', '<destination,destinationFont,0>'],
+            format: ['<endsAt,font,9>', '<destination,font,0>'],
             yPositions: [9, 0],
             spaceWidth: 1,
             align: 'centre-width[0]'
@@ -282,14 +282,32 @@ EDSDataSet['SMRT'] = {
             },
         ]
     },
+    229: {
+        renderType: 'swt',
+        serviceNumber: '67A',
+        serviceFont: 'full',
+        destination: {
+            text: 'HWA CHONG JC',
+        },
+        font: 'thick'
+    },
+    230: {
+        renderType: 'swt',
+        serviceNumber: '67W',
+        serviceFont: 'full',
+        destination: {
+            text: ' LITTLE INDIA'
+        },
+        font: 'thick'
+    },
     272: {
         renderType: 'swt',
         serviceNumber: '302A',
         serviceFont: 'full',
         destination: {
-            text: 'OPP YEW TEE MRT',
-            font: 'thin'
-        }
+            text: 'OPP YEW TEE MRT'
+        },
+        font: 'thin'
     },
     285: {
         renderType: 'standardService',
@@ -561,6 +579,34 @@ EDSDataSet['SMRT'] = {
                 text: 'QUEENSWAY',
                 font: 'thin'
             }
+        ]
+    },
+    466: {
+        renderType: 'standardService',
+        serviceNumber: '67',
+        serviceFont: 'full',
+        destination: {
+            text: 'TAMPINES',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['TAMPINES', ' INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'DUNEARN ROAD',
+                font: 'thin'
+            },//?
+            {
+                text: 'SERANGOON RD',
+                font: 'thin'
+            },
+            {
+                text: 'SIMS AVE',
+                font: 'thin'
+            },
         ]
     },
     469: {
@@ -888,6 +934,26 @@ EDSDataSet['SMRT'] = {
             },
             {
                 text: 'B. B WEST AVE 7,4',
+                font: 'thin'
+            },
+        ]
+    },
+    586: {
+        renderType: 'standardService',
+        serviceNumber: '188R',
+        serviceFont: 'full',
+        destination: {
+            text: 'R W S',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: ['RESORTS WORLD', 'SENTOSA'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'TELOK BLANGAH ROAD',
                 font: 'thin'
             },
         ]
