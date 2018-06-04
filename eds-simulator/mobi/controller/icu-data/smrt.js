@@ -306,7 +306,27 @@ EDSDataSet['SMRT'] = {
                 showDest: false
             },
             {
+                text: 'C.C.K WAY',
+                font: 'thick'
+            },
+            {
                 text: 'C. C. K  AVE 2,3',
+                font: 'thin'
+            },
+            {
+                text: 'C. C. K  AVE 5,6',
+                font: 'thin'
+            },//?
+            {
+                text: 'C. C. K  AVENUE 5',
+                font: 'thin'
+            },
+            {
+                text: 'KEAT HONG CLOSE (LOOP)',
+                font: 'tall'
+            },
+            {
+                text: 'C. C. K  AVE 6,1',
                 font: 'thin'
             },
         ]
@@ -429,6 +449,50 @@ EDSDataSet['SMRT'] = {
                 text: 'WOODLANDS AVE 3',
                 font: 'thin'
             }
+        ]
+    },
+    431: {
+        renderType: 'standardService',
+        serviceNumber: '852',
+        serviceFont: 'full',
+        destination: {
+            text: 'BUKIT BATOK',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['BUKIT BATOK', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'YISHUN AVE 2',
+                font: 'thick'
+            },
+            {
+                text: 'LENTOR AVE',
+                font: 'thick'
+            },
+            {
+                text: 'AND MO KIO AVE 6',
+                font: 'thin'
+            },
+            {
+                text: 'LORNIE RD',
+                font: 'thick'
+            },
+            {
+                text: 'BUKIT TIMAH RD',
+                font: 'thick'
+            },
+            {
+                text: 'UPP BUKIT TIMAH RD',
+                font: 'thin'
+            },
+            {
+                text: 'BUKIT BATOK E. AVE 6',
+                font: 'thin'
+            },
         ]
     },
     460: {
@@ -581,6 +645,30 @@ EDSDataSet['SMRT'] = {
                 text: 'AYE, CLEMENTI RD',
                 font: 'thin'
             } //Missing data oh noeses!!
+        ]
+    },
+    495: {
+        renderType: 'standardService',
+        serviceNumber: '927',
+        serviceFont: 'full',
+        destination: {
+            text: 'SINGAPORE ZOO',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['SINGAPORE', 'ZOOLOGICAL GDN '],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'CHOA CHU KANG AVE 4',
+                font: 'thin'
+            },//?
+            {
+                text: 'MANDAI RD',
+                font: 'thin'
+            }
         ]
     },
     496: {
@@ -773,7 +861,11 @@ EDSDataSet['SMRT'] = {
                 text: ['GEYLANG LOR 1/', 'KALLANG MRT'],
                 font: 'thick',
                 showDest: false
-            }
+            },
+            {
+                text: 'B. B WEST AVE 7,4',
+                font: 'thin'
+            },
         ]
     },
     611: {
@@ -864,6 +956,42 @@ EDSDataSet['SMRT'] = {
             },
             {
                 text: 'ZION RD',
+                font: 'thin'
+            }
+        ]
+    },
+    654: {
+        renderType: 'standardService',
+        serviceNumber: '983',
+        serviceFont: 'full',
+        destination: {
+            text: 'CHOA CHU KANG',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['CHOA CHU KANG', 'INTERCHANGE'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'C.C.K AVE 4 ,5',
+                font: 'thin'
+            },
+            {
+                text: 'C.C.K AVE 6 ,1',
+                font: 'thin'
+            },
+            {
+                text: 'CHOA CHU KANG RD',
+                font: 'thin'
+            },
+            {
+                text: 'PETIR ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'JELUBU RD (LOOP)',
                 font: 'thin'
             }
         ]
