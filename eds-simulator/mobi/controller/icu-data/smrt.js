@@ -219,6 +219,46 @@ EDSDataSet['SMRT'] = {
         renderType: 'big',
         text: 'FREE SHUTTLE BUS'
     },
+    410: {
+        renderType: 'standardService',
+        serviceNumber: '176',
+        serviceFont: 'full',
+        destination: {
+            text: 'BUKIT MERAH',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: 'BUKIT MERAH',
+                font: 'big',
+                showDest: false
+            },
+            {
+                text: 'UPP BUKIT TIMAH RD',
+                font: 'thin'
+            },
+            {
+                text: 'HILLVIEW AVE',
+                font: 'thick'
+            },
+            {
+                text: 'BT BATOK CTR / MRT',
+                font: 'thin'
+            },
+            {
+                text: 'JURONG TOWN HALL',
+                font: 'thin'
+            },
+            {
+                text: 'WEST COAST HIGHWAY',
+                font: 'thin'
+            },
+            {
+                text: 'TELOK BLANGAH',
+                font: 'thin'
+            }
+        ]
+    },
     422: {
         renderType: 'standardService',
         serviceNumber: '187',
@@ -309,7 +349,7 @@ EDSDataSet['SMRT'] = {
         },
         scrolls: [
             {
-                text: ['GEYLANG LOR 1', 'INT / MRT'],
+                text: ['GEYLANG LOR 1/', 'KALLANG MRT'],
                 font: 'thick',
                 showDest: false
             },
