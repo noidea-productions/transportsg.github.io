@@ -125,6 +125,29 @@ EDSTemplateSet['SMRT'] = {
                 }
             ]
         }
+    ],
+    swt: [
+        { // Render svc
+            variables: {
+                serviceNumber: '$serviceNumber'
+            },
+            font: '$serviceFont',
+            format: '<serviceNumber,,0>',
+            spaceWidth: 2,
+            align: 'right-width(1)'
+        },
+        { // Render ENDS AT via DEST
+            variables: {
+                destination: '$destination.text',
+                destinationFont: '$destination.font',
+                endsAt: 'ENDS AT'
+            },
+            font: 'thin',
+            format: ['<endsAt,thin,9>', '<destination,destinationFont,0>'],
+            yPositions: [9, 0],
+            spaceWidth: 1,
+            align: 'centre-width[0]'
+        }
     ]
 }
 
@@ -218,6 +241,75 @@ EDSDataSet['SMRT'] = {
     155: {
         renderType: 'big',
         text: 'FREE SHUTTLE BUS'
+    },
+    218: {
+        renderType: 'standardService',
+        serviceNumber: '300',
+        serviceFont: 'full',
+        destination: {
+            text: 'CHOA CHU KANG',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['CHOA CHU KANG', 'INT / MRT / LRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'CHOA CHU KANG WAY',
+                font: 'thin'
+            },
+        ]
+    },
+    219: {
+        renderType: 'standardService',
+        serviceNumber: '302',
+        serviceFont: 'full',
+        destination: {
+            text: 'CHOA CHU KANG',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['CHOA CHU KANG', 'INT / MRT / LRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'CHOA CHU KANG WAY',
+                font: 'thin'
+            },
+        ]
+    },
+    272: {
+        renderType: 'swt',
+        serviceNumber: '302A',
+        serviceFont: 'full',
+        destination: {
+            text: 'OPP YEW TEE MRT',
+            font: 'thin'
+        }
+    },
+    285: {
+        renderType: 'standardService',
+        serviceNumber: '301',
+        serviceFont: 'full',
+        destination: {
+            text: 'CHOA CHU KANG',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['CHOA CHU KANG', 'INT / MRT / LRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'C.C.K. AVE 2, 3',
+                font: 'thin'
+            },
+        ]
     },
     410: {
         renderType: 'standardService',
