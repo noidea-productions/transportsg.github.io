@@ -306,7 +306,7 @@ EDSDataSet['SMRT'] = {
                 showDest: false
             },
             {
-                text: 'C.C.K. AVE 2, 3',
+                text: 'C. C. K  AVE 2,3',
                 font: 'thin'
             },
         ]
@@ -739,7 +739,7 @@ EDSDataSet['SMRT'] = {
                 showDest: false
             },
             {
-                text: 'SERANGOON RD',
+                text: 'SERANGOON ROAD',
                 font: 'thin'
             },
             {
