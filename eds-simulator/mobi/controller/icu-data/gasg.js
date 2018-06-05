@@ -91,6 +91,20 @@ EDSTemplateSet['GASG'] = {
                 }
             ]
         }
+    ],
+    static2: [
+        {
+            variables: {
+                text: '$text',
+                y0: '$yTop',
+                y1: '$yBottom',
+                font: '$font'
+            },
+            font: 'thin',
+            format: ['<text[1],font,y1>', '<text[0],font,y0>'],
+            align: 'centre',
+            spaceWidth: 1
+        }
     ]
 }
 
@@ -144,6 +158,13 @@ EDSDataSet['GASG'] = {
                 font: 'tall'
             }
         ]
+    },
+    1111: {
+        renderType: 'static2',
+        text: ['Sorry!', 'Not in Service'], // Needs checking for font
+        yTop: 9,
+        yBottom: 0,
+        font: 'thick'
     },
     2222: {
         renderType: 'image',
