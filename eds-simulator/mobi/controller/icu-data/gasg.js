@@ -101,6 +101,15 @@ EDSDataSet['GASG'] = {
         image0: 'gas',
         image1: 'gas',
         y: 3
+    }
+}
+
+EDSExtraMessageSet['GASG'] = {
+    1: {
+        text: 'Last Bus',
+        font: 'efat',
+        align: 'centre',
+        yPos: 2
     },
 }
 
