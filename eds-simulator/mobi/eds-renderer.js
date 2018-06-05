@@ -350,22 +350,45 @@ function renderEDS(currentEDSCode, currentEDSScroll, currentExtraMessage) {
 
         clearLEDs();
 
+        (extraMessageFormat.images || []).forEach(image => {
+            let name = image.name, align = image.x;
+
+            align = parseAlignment(align, 0, [{format:[]}]);
+
+            let startX;
+
+            switch (align.align) {
+                case 'centre':
+                    startX = Math.floor(width / 2 - textWidth / 2) + align.offset;
+                    break;
+                case 'right':
+                    startX = width - textWidth + align.offset;
+                    break;
+                default:
+                    startX = align.offset;
+                    break;
+            }
+
+            drawImage(name, startX);
+        });
+
         let text = extraMessageFormat.text;
         if (Object.prototype.toString.call(text) === '[object String]') {
             let font = extraMessageFormat.font, align = extraMessageFormat.align;
             let textWidth = getTextWidth([...text], font, 1);
 
             let startX = 0;
+            align = parseAlignment(align, 0, [{format: [], images: extraMessageFormat.images}]);
 
-            switch (align) {
+            switch (align.align) {
                 case 'centre':
-                    startX = Math.floor(width / 2 - textWidth / 2);
+                    startX = Math.floor(width / 2 - textWidth / 2 + align.offset / 2);
                     break;
                 case 'right':
-                    startX = width - textWidth;
+                    startX = width - textWidth + align.offset;
                     break;
                 default:
-                    startX = 0;
+                    startX = align.offset;
                     break;
             }
 
@@ -373,19 +396,22 @@ function renderEDS(currentEDSCode, currentEDSScroll, currentExtraMessage) {
         } else {
             let font = extraMessageFormat.font, align = extraMessageFormat.align;
 
+            align = parseAlignment(align, 0, [{format: [], images: extraMessageFormat.images}]);
+
             text.forEach((line, i) => {
                 let textWidth = getTextWidth([...line], font, 1);
+
                 let startX = 0;
 
-                switch (align) {
+                switch (align.align) {
                     case 'centre':
-                        startX = Math.floor(width / 2 - textWidth / 2);
+                        startX = Math.floor(width / 2 - textWidth / 2 + align.offset / 2);
                         break;
                     case 'right':
-                        startX = width - textWidth;
+                        startX = width - textWidth + align.offset;
                         break;
                     default:
-                        startX = 0;
+                        startX = align.offset;
                         break;
                 }
 

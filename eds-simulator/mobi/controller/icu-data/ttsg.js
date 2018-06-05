@@ -793,54 +793,54 @@ EDSDataSet['TTSG'] = {
             font: 'fat'
         },
         scrolls: [
-            // {
-            //     text: ['Welcome Aboard', 'Tower Transit!'],
-            //     yPosTop: 9,
-            //     yPosBelow: 0,
-            //     font: ['tts-message-fat', 'tts-message'],
-            //     extraMsg: true,
-            //     image: 'logo'
-            // },
-            // {
-            //     text: ['Welcome Aboard', 'Tower Transit!'],
-            //     yPosTop: 9,
-            //     yPosBelow: 0,
-            //     font: 'tts-message',
-            //     extraMsg: true,
-            //     image: 'logo'
-            // },
-            // {
-            //     text: 'BUKIT BATOK',
-            //     font: 'fat',
-            //     yPosTop: 0,
-            //     yPosBelow: 3,
-            //     extraMsg: true,
-            //     image: 'mrt'
-            // },
-            // {
-            //     text: ['Merry Christmas &', 'Happy New Year !'],
-            //     font: 'tts-message',
-            //     yPosTop: 9,
-            //     yPosBelow: 0,
-            //     extraMsg: true,
-            //     image: 'christmas'
-            // },
-            // {
-            //     text: 'GHXC',
-            //     font: 'tts-chinese',
-            //     yPosTop: 1,
-            //     yPosBelow: 1,
-            //     extraMsg: true,
-            //     image: 'cny'
-            // },
-            // {
-            //     text: 'Happy Deepavali !',
-            //     font: 'thin',
-            //     yPosTop: 1,
-            //     yPosBelow: 4,
-            //     extraMsg: true,
-            //     image: 'candle'
-            // },
+            {
+                text: ['Welcome Aboard', 'Tower Transit!'],
+                yPosTop: 9,
+                yPosBelow: 0,
+                font: ['tts-message-fat', 'tts-message'],
+                extraMsg: true,
+                image: 'logo'
+            },
+            {
+                text: ['Welcome Aboard', 'Tower Transit!'],
+                yPosTop: 9,
+                yPosBelow: 0,
+                font: 'tts-message',
+                extraMsg: true,
+                image: 'logo'
+            },
+            {
+                text: 'BUKIT BATOK',
+                font: 'fat',
+                yPosTop: 0,
+                yPosBelow: 3,
+                extraMsg: true,
+                image: 'mrt'
+            },
+            {
+                text: ['Merry Christmas &', 'Happy New Year !'],
+                font: 'tts-message',
+                yPosTop: 9,
+                yPosBelow: 0,
+                extraMsg: true,
+                image: 'christmas'
+            },
+            {
+                text: 'GHXC',
+                font: 'tts-chinese',
+                yPosTop: 1,
+                yPosBelow: 1,
+                extraMsg: true,
+                image: 'cny'
+            },
+            {
+                text: 'Happy Deepavali !',
+                font: 'thin',
+                yPosTop: 1,
+                yPosBelow: 4,
+                extraMsg: true,
+                image: 'candle'
+            },
             {
                 text: 'GA 1',
                 yPosTop: 0,
@@ -850,17 +850,32 @@ EDSDataSet['TTSG'] = {
                 image: 'gas',
                 spaceWidth: 6
             },
-            // {
-            //     text: ['Selamat', 'Hari Raya!'],
-            //     yPosTop: 9,
-            //     yPosBelow: 0,
-            //     font: 'tts-message-fat',
-            //     extraMsg: true,
-            //     image: 'hari-raya',
-            //     spaceWidth: 2
-            // },
+            {
+                text: ['Selamat', 'Hari Raya!'],
+                yPosTop: 9,
+                yPosBelow: 0,
+                font: 'tts-message-fat',
+                extraMsg: true,
+                image: 'hari-raya',
+                spaceWidth: 2
+            },
         ]
     }
+}
+
+EDSExtraMessageSet['TTSG'] = {
+    1: {
+        text: ['HAPPY', 'NATIONAL DAY'],
+        font: 'thick',
+        align: 'centre+image[0]',
+        yPos: [9, 0],
+        images: [
+            {
+                name: 'logo',
+                x: 'left+width(3)'
+            }
+        ]
+    },
 }
 
 EDSImageSet['TTSG'] = {
