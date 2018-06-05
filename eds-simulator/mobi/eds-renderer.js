@@ -23,7 +23,7 @@ function getTextWidth(chars, font, spaceWidth) {
         if (!fonts[font]) return 0;
 
         let charData = fonts[font][char];
-        if (!charData) return spaceWidth + 4;
+        if (!charData) return spaceWidth + 6;
 
         if (Object.prototype.toString.call(charData) !== '[object Array]') {
             return fonts[font][char].data[0].length + spaceWidth;
