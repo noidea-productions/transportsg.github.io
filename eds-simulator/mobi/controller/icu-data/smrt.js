@@ -54,10 +54,11 @@ EDSTemplateSet['SMRT'] = {
                 currentRoadFont: '$scrolls[]font',
                 destination: '$destination.text',
                 destinationFont: '$destination.font',
+                via: ' via'
             },
             font: '$scrolls[]font',
             active: '$scrolls[]showDest{true}',
-            format: ['<destination,destinationFont,9>', '<currentRoad,currentRoadFont,0>'],
+            format: ['<destination,destinationFont,9><via,destinationFont,9>', '<currentRoad,currentRoadFont,0>'],
             yPositions: [9, 0],
             spaceWidth: 1,
             align: 'centre-width[0]'
@@ -1091,7 +1092,7 @@ EDSDataSet['SMRT'] = {
         serviceNumber: '190',
         serviceFont: 'full',
         destination: {
-            text: 'KAMPONG BAHRU TER via',
+            text: 'KAMPONG BAHRU TER',
             font: 'tall'
         },
         scrolls: [
@@ -1127,7 +1128,7 @@ EDSDataSet['SMRT'] = {
         serviceNumber: '190',
         serviceFont: 'full',
         destination: {
-            text: 'CHOA CHU KANG via',
+            text: 'CHOA CHU KANG',
             font: 'thin'
         },
         scrolls: [
