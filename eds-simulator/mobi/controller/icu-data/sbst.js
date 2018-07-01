@@ -861,14 +861,14 @@ EDSDataSet['SBST'] = {
         scrolls: [
             {
                 "text": "YISHUN AVE 9,6&7",
-                "font": "narrow"
+                "font": "tall"
             },
             {
                 "text": "SEMBAWANG RD",
                 "font": "narrow"
             },
             {
-                "text": "YISHUN AVE 5,2",
+                "text": "YISHUN AVE 5&2",
                 "font": "narrow"
             },
             {
