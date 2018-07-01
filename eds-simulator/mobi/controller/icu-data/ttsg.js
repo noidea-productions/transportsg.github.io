@@ -826,8 +826,8 @@ EDSDataSet['TTSG'] = {
                 image: 'christmas'
             },
             {
-                text: 'GHXC',
-                font: 'tts-chinese',
+                text: '恭贺新春',
+                font: 'chinese-bold',
                 yPosTop: 1,
                 yPosBelow: 1,
                 extraMsg: true,
@@ -858,7 +858,7 @@ EDSDataSet['TTSG'] = {
                 extraMsg: true,
                 image: 'hari-raya',
                 spaceWidth: 2
-            },
+            }
         ]
     }
 }
@@ -876,6 +876,24 @@ EDSExtraMessageSet['TTSG'] = {
             }
         ]
     },
+    2: {
+        text: '恭喜发财',
+        font: 'chinese',
+        align: 'centre',
+        yPos: 0,
+    },
+    3: {
+        text: 'EID MUBARAK',
+        font: 'full',
+        align: 'centre+image[0]',
+        yPos: 0,
+        images: [
+            {
+                name: 'hari-raya',
+                x: 'left-width(1)'
+            }
+        ]
+    }
 }
 
 EDSImageSet['TTSG'] = {
