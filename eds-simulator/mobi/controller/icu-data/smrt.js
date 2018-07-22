@@ -218,8 +218,12 @@ EDSDataSet['SMRT'] = {
         text: 'LRT SHUTTLE B'
     },
     66: {
-        renderType: 'big',
+        renderType: 'efat',
         text: 'BULIM DEPOT'
+    },
+    106: {
+        renderType: 'efat',
+        text: 'NGEE ANN POLY'
     },
     113: {
         renderType: 'big',
