@@ -219,7 +219,7 @@ EDSDataSet['SMRT'] = {
     },
     66: {
         renderType: 'efat',
-        text: 'BULIM DEPOT'
+        text: 'BULIM  DEPOT'
     },
     106: {
         renderType: 'efat',
@@ -841,6 +841,42 @@ EDSDataSet['SMRT'] = {
                 font: 'thin'
             }
 
+        ]
+    },
+    499: {
+        renderType: 'standardService',
+        serviceNumber: '77',
+        serviceFont: 'full',
+        destination: {
+            text: 'BUKIT BATOK',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['BUKIT BATOK', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'PENANG RD',
+                font: 'thin'
+            },
+            {
+                text: 'ORCHARD BOULEVARD',
+                font: 'thin'
+            },
+            {
+                text: 'HOLLAND RD',
+                font: 'thin'
+            },
+            {
+                text: 'SIXTH AVE',
+                font: 'thin'
+            },
+            {
+                text: 'BUKIT TIMAH RD',
+                font: 'thin'
+            }
         ]
     },
     512: {
