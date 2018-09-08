@@ -129,7 +129,7 @@ EDSTemplateSet['SBST'] = {
 }
 
 EDSDataSet['SBST'] = {
-    0711: {
+    711: {
         renderType: 'int-loopSvc',
         serviceNumber: '71',
         serviceFont: 'full',
@@ -168,7 +168,7 @@ EDSDataSet['SBST'] = {
             }
         ]
     },
-    0761: {
+    761: {
         renderType: 'standardService',
         serviceNumber: '76',
         serviceFont: 'full',
@@ -199,7 +199,7 @@ EDSDataSet['SBST'] = {
             }
         ]
     },
-    0762: {
+    762: {
         renderType: 'standardService',
         serviceNumber: '76',
         serviceFont: 'full',
