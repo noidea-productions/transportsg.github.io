@@ -589,6 +589,37 @@ EDSDataSet['TTSG'] = {
             }
         ]
     },
+    2841: {
+        renderType: 'standardService',
+        serviceNumber: '284',
+        destination: {
+            text: 'CLEMENTI',
+            font: 'fat'
+        },
+        scrolls: [
+            {
+                text: ['Selamat', 'Hari Raya!'],
+                yPosTop: 9,
+                yPosBelow: 0,
+                font: 'tts-message-fat',
+                extraMsg: true,
+                image: 'hari-raya',
+                spaceWidth: 2
+            },
+            {
+                text: 'CLEMENTI',
+                font: 'fat',
+                yPosTop: 0,
+                yPosBelow: 3,
+                extraMsg: true,
+                image: 'mrt'
+            },
+            {
+                text: 'CLEMEMTI AVE 4',
+                font: 'narrow'
+            }
+        ]
+    },
     5555: {
         renderType: 'full',
         text: 'Training Bus'
