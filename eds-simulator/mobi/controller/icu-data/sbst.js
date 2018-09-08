@@ -410,7 +410,7 @@ EDSDataSet['SBST'] = {
         serviceNumber: '123M',
         serviceFont: 'full',
         destination: {
-            text: 'HARBOURFRONT INT-T.BAHRU',
+            text: 'HBF INT-TIONG BAHRU RD',
             font: 'tall'
         },
         scrolls: [
