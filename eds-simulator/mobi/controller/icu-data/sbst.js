@@ -48,31 +48,6 @@ EDSTemplateSet['SBST'] = {
             align: 'left'
         }
     ],
-    ffwSvc: [
-        { // Render svc
-            variables: {
-                serviceNumber: '$serviceNumber'
-            },
-            font: '$serviceFont',
-            format: '<serviceNumber,,0>',
-            spaceWidth: 1,
-            align: 'right'
-        },
-        {
-            variables: {
-            },
-            font: 'thick',
-            format: '',
-            spaceWidth: 1,
-            align: 'left',
-            images: [
-                {
-                    name: 'ffw',
-                    x: 0
-                }
-            ]
-        }
-    ],
     expSvc: [
         { // Render svc
             variables: {
@@ -190,6 +165,30 @@ EDSDataSet['SBST'] = {
                 "font": "narrow"
             }
         ]
+    },
+    108: {
+        renderType: 'expSvc',
+        serviceNumber: '10e',
+        serviceFont: 'full',
+        text: 'EXPRESS 10e'
+    },
+    109: {
+        renderType: 'expSvc',
+        serviceNumber: '10e',
+        serviceFont: 'full',
+        text: 'EXPRESS 10e'
+    },
+    148: {
+        renderType: 'expSvc',
+        serviceNumber: '14e',
+        serviceFont: 'full',
+        text: 'EXPRESS 14e'
+    },
+    149: {
+        renderType: 'expSvc',
+        serviceNumber: '14e',
+        serviceFont: 'full',
+        text: 'EXPRESS 14e'
     },
     561: {
         renderType: 'int-loopSvc',
@@ -1081,11 +1080,17 @@ EDSDataSet['SBST'] = {
             }
         ]
     },
-    1743: {
-        renderType: 'ffwSvc',
+    1748: {
+        renderType: 'expSvc',
         serviceNumber: '174e',
         serviceFont: 'full',
-        text: 'FAST FORWARD 174'
+        text: 'EXPRESS 174'
+    },
+    1749: {
+        renderType: 'expSvc',
+        serviceNumber: '174e',
+        serviceFont: 'full',
+        text: 'EXPRESS 174'
     },
     2222: {
         renderType: 'image',
