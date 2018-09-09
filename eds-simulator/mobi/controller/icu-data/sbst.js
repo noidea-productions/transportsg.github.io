@@ -135,7 +135,7 @@ EDSDataSet['SBST'] = {
             }
         ]
     },
-        111: {
+    111: {
         renderType: 'int-loopSvc',
         serviceNumber: '11',
         serviceFont: 'full',
@@ -353,7 +353,7 @@ EDSDataSet['SBST'] = {
             }
         ]
     },
-        911: {
+    911: {
         renderType: 'int-loopSvc',
         serviceNumber: '91',
         serviceFont: 'full',
@@ -823,7 +823,7 @@ EDSDataSet['SBST'] = {
         serviceFont: 'full',
         text: 'EXPRESS 151e'
     },
-    
+
     1621: {
         renderType: 'standardService',
         serviceNumber: '162',
@@ -867,7 +867,7 @@ EDSDataSet['SBST'] = {
             }
         ]
     },
-    
+
     1622: {
         renderType: 'standardService',
         serviceNumber: '162',
@@ -1339,36 +1339,36 @@ EDSDataSet['SBST'] = {
         ]
     },
     2611: {
-       renderType: 'standardService',
-       serviceNumber: '261',
-       serviceFont: 'full',
-       destination: {
-           text: 'ANG MO KIO INT',
-           font: 'thin2'
-       },
-       scrolls: [
-           {
-               text: 'ANG MO KIO AVE 3',
-               font: 'narrow'
-           },
-           {
-               text: 'ANG MO KIO AVE 10',
-               font: 'narrow'
-           },
-           {
-               text: 'ANG MO KIO IND PK 1',
-               font: 'narrow'
-           },
-           {
-               text: 'ANG MO KIO AVE 10',
-               font: 'narrow'
-           },
-           {
-               text: 'ANG MO KIO AVE 3',
-               font: 'narrow'
-           }
-       ]
-   },
+        renderType: 'standardService',
+        serviceNumber: '261',
+        serviceFont: 'full',
+        destination: {
+            text: 'ANG MO KIO INT',
+            font: 'thin2'
+        },
+        scrolls: [
+            {
+                text: 'ANG MO KIO AVE 3',
+                font: 'narrow'
+            },
+            {
+                text: 'ANG MO KIO AVE 10',
+                font: 'narrow'
+            },
+            {
+                text: 'ANG MO KIO IND PK 1',
+                font: 'narrow'
+            },
+            {
+                text: 'ANG MO KIO AVE 10',
+                font: 'narrow'
+            },
+            {
+                text: 'ANG MO KIO AVE 3',
+                font: 'narrow'
+            }
+        ]
+    },
     3333: {
         renderType: 'full',
         text: 'FREE SHUTTLE'
@@ -1563,10 +1563,10 @@ EDSDataSet['SBST'] = {
             {
                 "text": "ANG MO KIO AVE 5",
                 "font": "narrow"
-               }
+            }
         ]
     },
-         
+
     8602: {
         renderType: 'standardService',
         serviceNumber: '860',
