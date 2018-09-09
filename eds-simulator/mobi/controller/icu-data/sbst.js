@@ -1513,16 +1513,15 @@ EDSDataSet['SBST'] = {
                 "text": "SEMBAWANG RD",
                 "font": "narrow"
             },
-                            {
+            {
                 "text": "YISHUN AVE 3",
                 "font": "narrow"
             },
             {
                 "text": "YISHUN RING RD",
                 "font": "narrow"
-                 }
+            }
         ]
-    },
     }
 }
 
