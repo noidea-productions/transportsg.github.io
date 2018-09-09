@@ -824,50 +824,7 @@ EDSDataSet['SBST'] = {
         serviceFont: 'full',
         text: 'EXPRESS 151e'
     },
-    1661: {
-        renderType: 'standardService',
-        serviceNumber: '166',
-        serviceFont: 'full',
-        destination: {
-            text: 'CLEMENTI INT',
-            font: 'thin2'
-        },
-        scrolls: [
-            {
-                "text": "ANG MO KIO AVE 3",
-                "font": "narrow"
-            },
-            {
-                "text": "UPP THOMSON RD",
-                "font": "narrow"
-            },
-            {
-                "text": "THOMSON RD",
-                "font": "narrow"
-            },
-            {
-                "text": "NEW BRIDGE RD",
-                "font": "narrow"
-            },
-            {
-                "text": "KAMPONG BAHRU RD",
-                "font": "narrow"
-            },
-            {
-                "text": "TELOK BLANGAH RD",
-                "font": "narrow"
-            },
-            {
-                "text": "ALEXANDRA RD",
-                "font": "narrow"
-            },
-            {
-                "text": "C'WEALTH AVE WEST",
-                "font": "narrow"
-            }
-        ]
-    },
-
+    
     1621: {
         renderType: 'standardService',
         serviceNumber: '162',
@@ -907,6 +864,94 @@ EDSDataSet['SBST'] = {
             },
             {
                 "text": "BRAS BASAH RD",
+                "font": "narrow"
+            }
+        ]
+    },
+    
+    1622: {
+        renderType: 'standardService',
+        serviceNumber: '162',
+        serviceFont: 'full',
+        destination: {
+            text: 'YIO CHU KANG INT',
+            font: 'thin2'
+        },
+        scrolls: [
+            {
+                "text": "STAMFORD RD",
+                "font": "narrow"
+            },
+            {
+                "text": "ORCHARD TURN",
+                "font": "narrow"
+            },
+            {
+                "text": "THOMSON RD",
+                "font": "narrow"
+            },
+            {
+                "text": "UPPER THOMSON RD",
+                "font": "narrow"
+            },
+            {
+                "text": "SIN MING AVE",
+                "font": "narrow"
+            },
+            {
+                "text": "BISHAN ST 22",
+                "font": "narrow"
+            },
+            {
+                "text": "ANG MO KIO AVE 8",
+                "font": "narrow"
+            },
+
+            {
+                "text": "ANG MO KIO AVE 6",
+                "font": "narrow"
+            }
+        ]
+    },
+    1661: {
+        renderType: 'standardService',
+        serviceNumber: '166',
+        serviceFont: 'full',
+        destination: {
+            text: 'CLEMENTI INT',
+            font: 'thin2'
+        },
+        scrolls: [
+            {
+                "text": "ANG MO KIO AVE 3",
+                "font": "narrow"
+            },
+            {
+                "text": "UPP THOMSON RD",
+                "font": "narrow"
+            },
+            {
+                "text": "THOMSON RD",
+                "font": "narrow"
+            },
+            {
+                "text": "NEW BRIDGE RD",
+                "font": "narrow"
+            },
+            {
+                "text": "KAMPONG BAHRU RD",
+                "font": "narrow"
+            },
+            {
+                "text": "TELOK BLANGAH RD",
+                "font": "narrow"
+            },
+            {
+                "text": "ALEXANDRA RD",
+                "font": "narrow"
+            },
+            {
+                "text": "C'WEALTH AVE WEST",
                 "font": "narrow"
             }
         ]
@@ -1495,21 +1540,57 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "UPPER THOMSON RD",
-                "font": "narrow"
-            },
-            {
-                "text": "ANG MO KIO AVE 5",
-                "font": "narrow"
-            },
-            {
                 "text": "YISHUN RING RD",
                 "font": "narrow"
             },
             {
                 "text": "YISHUN AVE 3",
                 "font": "narrow"
-            }// Boo missing data
+            },
+            {
+                "text": "SEMBAWANG RD",
+                "font": "narrow"
+            },
+            {
+                "text": "UPPER THOMSON RD",
+                "font": "narrow"
+            },
+            {
+                "text": "ANG MO KIO AVE 5",
+                "font": "narrow"
+               }
+        ]
+    },
+         
+    8602: {
+        renderType: 'standardService',
+        serviceNumber: '860',
+        serviceFont: 'full',
+        destination: {
+            text: 'YISHUN INT',
+            font: 'thin2'
+        },
+        scrolls: [
+            {
+                "text": "ANG MO KIO AVE 5",
+                "font": "narrow"
+            },
+            {
+                "text": "UPPER THOMSON RD",
+                "font": "narrow"
+            },
+            {
+                "text": "SEMBAWANG RD",
+                "font": "narrow"
+            },
+            {
+                "text": "YISHUN AVE 3",
+                "font": "narrow"
+            },
+            {
+                "text": "YISHUN RING RD",
+                "font": "narrow"
+            }
         ]
     }
 }
