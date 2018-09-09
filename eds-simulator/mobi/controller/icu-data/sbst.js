@@ -160,6 +160,37 @@ EDSDataSet['SBST'] = {
             }
         ]
     },
+        111: {
+        renderType: 'int-loopSvc',
+        serviceNumber: '11',
+        serviceFont: 'full',
+        destination: {
+            text: 'LOR 1 GEYLANG TER-RHU CROSS',
+            font: 'tall'
+        },
+        scrolls: [
+            {
+                "text": "SIMS WAY",
+                "font": "narrow"
+            },
+            {
+                "text": "STADIUM CRESCENT",
+                "font": "narrow"
+            },
+            {
+                "text": "RHU CROSS",
+                "font": "narrow"
+            },
+            {
+                "text": "STADIUM WALK",
+                "font": "narrow"
+            },
+            {
+                "text": "SIMS WAY",
+                "font": "narrow"
+            }
+        ]
+    },
     561: {
         renderType: 'int-loopSvc',
         serviceNumber: '56',
@@ -323,6 +354,45 @@ EDSDataSet['SBST'] = {
             }
         ]
     },
+        911: {
+        renderType: 'int-loopSvc',
+        serviceNumber: '91',
+        serviceFont: 'full',
+        destination: {
+            text: 'BUONA V TER-AYER RAJAH CRES',
+            font: 'tall'
+        },
+        scrolls: [
+            {
+                "text": "C'WEALTH AVE",
+                "font": "narrow"
+            },
+            {
+                "text": "NTH BUONA VISTA RD",
+                "font": "narrow"
+            },
+            {
+                "text": "AYER RAJAH AVE",
+                "font": "narrow"
+            },
+            {
+                "text": "AYER RAJAH CRES",
+                "font": "narrow"
+            },
+            {
+                "text": "AYER RAJAH AVE",
+                "font": "narrow"
+            },
+            {
+                "text": "NTH BUONA VISTA RD",
+                "font": "narrow"
+            },
+            {
+                "text": "C'WEALTH AVE",
+                "font": "narrow"
+            }
+        ]
+    },
     1072: {
         renderType: 'standardService',
         serviceNumber: '107',
@@ -363,7 +433,7 @@ EDSDataSet['SBST'] = {
         serviceNumber: '120',
         serviceFont: 'full',
         destination: {
-            text: 'KG. BAHRU TER-TK. BLANGAH',
+            text: 'KG.BAHRU TER-TK.BLANGAH',
             font: 'tall'
         },
         scrolls: [
