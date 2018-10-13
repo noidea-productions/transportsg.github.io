@@ -1003,6 +1003,62 @@ EDSDataSet['SMRT'] = {
             }
         ]
     },
+    522: {
+        renderType: 'standardService',
+        serviceNumber: '963',
+        serviceFont: 'full',
+        destination: {
+            text: 'WOODLANDS INT',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['WOODLANDS', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'TELOK BLANGAH RD',
+                font: 'thin'
+            },
+            {
+                text: 'ALEXANDRA RD',
+                font: 'thin'
+            },
+            {
+                text: 'SISIR , NUH',
+                font: 'thick'
+            },
+            {
+                text: 'A Y E',
+                font: 'thick'
+            },
+            {
+                text: 'CLEMENTI AVE 6',
+                font: 'thin'
+            },
+            {
+                text: 'B. B EAST AVE 3,4',
+                font: 'thin'
+            },
+            {
+                text: 'B. B EAST AVE 2',
+                font: 'thin'
+            },
+            {
+                text: 'HILLVIEW AVENUE',
+                font: 'thin'
+            },
+            {
+                text: 'BUKIT PANJANG RD',
+                font: 'thin'
+            },
+            {
+                text: 'MASRILING MRT',
+                font: 'thin'
+            }
+        ]
+    },
     528: {
         renderType: 'standardService',
         serviceNumber: '985',
