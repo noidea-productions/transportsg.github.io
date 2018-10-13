@@ -149,7 +149,21 @@ EDSTemplateSet['SMRT'] = {
             spaceWidth: 1,
             align: 'centre-width[0]'
         }
-    ]
+    ],
+    e2i: [
+        {
+            variables: {
+                text: '$scrolls[]text'
+            },
+            font: '$scrolls[]font',
+            format: {
+                '$scrolls[]text(array?)': ['<text[0],$scrolls[]font[0],9>', '<text[1],$scrolls[]font[1],0>'],
+                '$!scrolls[]text(array?)': ['<text,,1>']
+            },
+            spaceWidth: 1,
+            align: 'centre'
+        }
+    ],
 }
 
 EDSDataSet['SMRT'] = {
@@ -220,6 +234,44 @@ EDSDataSet['SMRT'] = {
     66: {
         renderType: 'efat',
         text: 'BULIM  DEPOT'
+    },
+    103: {
+        renderType: 'e2i',
+        serviceFont: 'fat',
+        text: 'e2i & SMRT;BUS CARNIVAL AND CAREER FAIR',
+        scrolls: [
+            {
+                text: 'WELCOME',
+                font: 'big'
+            },
+            {
+                text: 'JOURNEY WITH US',
+                font: 'big'
+            },
+            {
+              text: ['e2i & SMRT', 'BUS CARNIVAL AND CAREER FAIR'],
+              font: ['thick', 'tall'],
+            }
+        ]
+    },
+    104: {
+        renderType: 'e2i',
+        serviceFont: 'fat',
+        text: 'SMRT BUS CARNIVAL;AND CAREER FAIR',
+        scrolls: [
+            {
+                text: 'WELCOME',
+                font: 'big'
+            },
+            {
+                text: 'JOURNEY WITH US',
+                font: 'big'
+            },
+            {
+              text: ['SMRT BUS CARNIVAL', 'AND CAREER FAIR'],
+              font: 'thick'
+            }
+        ]
     },
     106: {
         renderType: 'efat',
