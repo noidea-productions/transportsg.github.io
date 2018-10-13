@@ -685,7 +685,7 @@ EDSDataSet['SMRT'] = {
                 font: 'thin'
             },//?
             {
-                text: 'SERANGOON RD',
+                text: 'SERANGOON ROAD',
                 font: 'thin'
             },
             {
@@ -717,7 +717,7 @@ EDSDataSet['SMRT'] = {
                 font: 'thin'
             },
             {
-                text: 'CHOA CHU KANG RD',
+                text: 'CHOA CHU KANG ROAD',
                 font: 'thin'
             },
             {
@@ -753,11 +753,11 @@ EDSDataSet['SMRT'] = {
                 font: 'thin'
             },
             {
-                text: 'CHOA CHU KANG RD',
+                text: 'CHOA CHU KANG ROAD',
                 font: 'thin'
             },
             {
-                text: 'BRICKLAND RD',
+                text: 'BRICKLAND ROAD',
                 font: 'thin'
             },
             {
@@ -1282,11 +1282,11 @@ EDSDataSet['SMRT'] = {
                 font: 'thin'
             },
             {
-                text: 'STEVENS RD',
+                text: 'STEVENS ROAD',
                 font: 'thin'
             },
             {
-                text: 'ORCHARD RD',
+                text: 'ORCHARD ROAD',
                 font: 'thin'
             },
             {

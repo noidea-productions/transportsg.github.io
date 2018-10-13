@@ -675,7 +675,7 @@ let EDSData = {
             'Bt Batok E. Ave 6, 3'
         ]
     },
-    179: {
+    179: {//-NTU
         1: [
             'Jurong West St 63',
             'Pioneer Rd North',
@@ -683,13 +683,13 @@ let EDSData = {
             'Nanyang Dr'
         ]
     },
-    '179A': {
+    '179A': {//-NANYANG DR
         1: [
             'Nanyang Dr',
             'Pioneer Rd Nth'
         ]
     },
-    181: {
+    181: { //-J. WEST
         1: [
             'Jurong West St 64'
         ]
