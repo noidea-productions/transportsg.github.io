@@ -48,6 +48,30 @@ EDSTemplateSet['SBST'] = {
             align: 'left'
         }
     ],
+    'int-loopSvc1': [
+        { // Render svc
+            variables: {
+                serviceNumber: '$serviceNumber'
+            },
+            font: '$serviceFont',
+            format: '<serviceNumber,,0>',
+            spaceWidth: 1,
+            align: 'right'
+        },
+        { // Render DEST via ROAD [SVC]
+            variables: {
+                currentRoad: '$scrolls[]text',
+                currentRoadFont: '$scrolls[]font',
+                destination: '$destination.text',
+                destinationFont: '$destination.font',
+            },
+            font: '$scrolls[]font',
+            format: ['<currentRoad,currentRoadFont,9>','<destination,destinationFont,1>'],
+            yPositions: [9, 0],
+            spaceWidth: 1,
+            align: 'left'
+        }
+    ],
     expSvc: [
         { // Render svc
             variables: {
@@ -365,6 +389,21 @@ EDSDataSet['SBST'] = {
             },
             {
                 "text": "SIMS AVE EAST",
+                "font": "narrow"
+            },
+        ]
+    },
+    471: { //incomplete
+        renderType: 'int-loopSvc1',
+        serviceNumber: '47',
+        serviceFont: 'full',
+        destination: {
+            text: 'CHANGI BIZ PK-AMBER RD',
+            font: 'narrow'
+        },
+        scrolls: [
+            {
+                "text": "BEDOK SOUTH RD",
                 "font": "narrow"
             },
         ]
@@ -1241,7 +1280,11 @@ EDSDataSet['SBST'] = {
             {
                 "text": "SENGKANG WEST WAY",
                 "font": "narrow"
-            }
+            },
+            {
+                "text": "SELETAR A\'SPACE DR",
+                "font": "narrow"
+            },
         ]
     },
     1031: {
@@ -1434,12 +1477,27 @@ EDSDataSet['SBST'] = {
         renderType: 'full',
         text: 'OFF SERVICE'
     },
+    1161: {
+        renderType: 'int-loopSvc',
+        serviceNumber: '116',
+        serviceFont: 'full',
+        destination: {
+            text: 'HOUGANG INT-S\'GOON CTRL',
+            font: 'tall'
+        },
+        scrolls: [
+            {
+                "text": "HOUGANG AVE 4",
+                "font": "narrow"
+            },
+        ]
+    },
     1201: {
         renderType: 'int-loopSvc',
         serviceNumber: '120',
         serviceFont: 'full',
         destination: {
-            text: 'KG.BAHRU TER-TK.BLANGAH',
+            text: 'KG BAHRU TER-TK BLANGAH',
             font: 'tall'
         },
         scrolls: [
@@ -1461,6 +1519,88 @@ EDSDataSet['SBST'] = {
             },
             {
                 "text": "TIONG BAHRU RD",
+                "font": "narrow"
+            }
+        ]
+    },
+    1211: {
+        renderType: 'int-loopSvc',
+        serviceNumber: '121',
+        serviceFont: 'full',
+        destination: {
+            text: 'KG.BAHRU TER-TK.BLANGAH',
+            font: 'tall'
+        },
+        scrolls: [
+            {
+                "text": "GANGES AVE",
+                "font": "narrow"
+            },
+            {
+                "text": "TIONG BAHRU RD",
+                "font": "narrow"
+            },
+            {
+                "text": "KIM TIAN RD",
+                "font": "narrow"
+            },
+            {
+                "text": "LOWER DELTA RD",
+                "font": "narrow"
+            },
+            {
+                "text": "TELOK BLANGAH RISE",
+                "font": "narrow"
+            },
+            {
+                "text": "LOWER DELTA RD",
+                "font": "narrow"
+            },
+            {
+                "text": "KIM TIAN RD",
+                "font": "narrow"
+            },
+            {
+                "text": "TIONG BAHRU RD",
+                "font": "narrow"
+            },
+            {
+                "text": "GANGES AVE",
+                "font": "narrow"
+            },
+        ]
+    },
+    1221: {
+        renderType: 'int-loopSvc',
+        serviceNumber: '122',
+        serviceFont: 'full',
+        destination: {
+            text: 'KG.BAHRU TER-C\'WEALTH DR',
+            font: 'tall'
+        },
+        scrolls: [
+            {
+                "text": "",
+                "font": "narrow"
+            },
+            {
+                "text": "",
+                "font": "narrow"
+            },
+            {
+                "text": "",
+                "font": "narrow"
+            },
+            {
+                "text": "",
+                "font": "narrow"
+            },
+            {
+                "text": "",
+                "font": "narrow"
+            },
+            {
+                "text": "",
                 "font": "narrow"
             }
         ]
