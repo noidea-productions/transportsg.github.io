@@ -1218,7 +1218,7 @@ EDSDataSet['SBST'] = {
         serviceNumber: '102',
         serviceFont: 'full',
         destination: {
-            text: 'HOUGANG CENTRAL INT-JLN KAYU',
+            text: 'HOUGANG-SELETAR A\'SPACE',
             font: 'tall'
         },
         scrolls: [
@@ -1244,7 +1244,6 @@ EDSDataSet['SBST'] = {
             }
         ]
     },
-
     1031: {
         renderType: 'standardService',
         serviceNumber: '103',
@@ -2162,6 +2161,105 @@ EDSDataSet['SBST'] = {
             }
         ]
     },
+     1622: {
+        renderType: 'standardService',
+        serviceNumber: '162',
+        serviceFont: 'full',
+        destination: {
+            text: 'YIO CHU KANG INT',
+            font: 'thin2'
+        },
+        scrolls: [
+            {
+                "text": "STAMFORD RD",
+                "font": "narrow"
+            },
+            {
+                "text": "ORCHARD TURN",
+                "font": "narrow"
+            },
+            {
+                "text": "THOMSON RD",
+                "font": "narrow"
+            },
+            {
+                "text": "UPPER THOMSON RD",
+                "font": "narrow"
+            },
+            {
+                "text": "SIN MING AVE",
+                "font": "narrow"
+            },
+            {
+                "text": "BISHAN ST 22",
+                "font": "narrow"
+            },
+            {
+                "text": "ANG MO KIO AVE 8",
+                "font": "narrow"
+            },
+
+            {
+                "text": "ANG MO KIO AVE 6",
+                "font": "narrow"
+            }
+        ]
+    },
+    1623: {
+        renderType: 'int-loopSvc',
+        serviceNumber: '162M',
+        serviceFont: 'full',
+        destination: {
+            text: 'YCK INT-MARINA CTR',
+            font: 'narrow'
+        },
+        scrolls: [
+            {
+                "text": "ANG MO KIO AVE 6",
+                "font": "narrow"
+            },
+            {
+                "text": "BISHAN ST 22",
+                "font": "narrow"
+            },
+            {
+                "text": "SIN MING AVE",
+                "font": "narrow"
+            },
+            {
+                "text": "THOMSON RD",
+                "font": "narrow"
+            },
+            {
+                "text": "ORCHARD RD",
+                "font": "narrow"
+            },
+            {
+                "text": "TEMASEK AVE",
+                "font": "narrow"
+            },
+            {
+                "text": "ORCHARD TURN",
+                "font": "narrow"
+            },
+            {
+                "text": "THOMSON RD",
+                "font": "narrow"
+            },
+            {
+                "text": "SIN MING AVE",
+                "font": "narrow"
+            },
+            {
+                "text": "BISHAN ST 22",
+                "font": "narrow"
+            },
+            {
+                "text": "ANG MO KIO AVE 6",
+                "font": "narrow"
+            }
+        ]
+    },
     1631: {
         renderType: 'standardService',
         serviceNumber: '163',
@@ -2427,6 +2525,49 @@ EDSDataSet['SBST'] = {
             }
         ]
     },
+    1742: {
+        renderType: 'standardService',
+        serviceNumber: '174',
+        serviceFont: 'full',
+        destination: {
+            text: 'KAMPONG BAHRU TER',
+            font: 'thin2'
+        },
+        scrolls: [
+            {
+                text: 'JURONG ROAD',
+                font: 'narrow'
+            },
+            {
+                "text": "BT BATOK EAST AVE 3&6",
+                "font": "narrow"
+            },
+            {
+                "text": "JALAN JURONG KECHIL",
+                "font": "narrow"
+            },
+            {
+                "text": "DUNEARN RD",
+                "font": "narrow"
+            },
+            {
+                "text": "FARRER RD",
+                "font": "narrow"
+            },
+            {
+                "text": "HOLLAND RD",
+                "font": "narrow"
+            },
+            {
+                "text": "ORCHARD RD",
+                "font": "narrow"
+            },
+            {
+                "text": "NORTH&SOUTH BRIDGE RD",
+                "font": "narrow"
+            }
+        ]
+    },
     1748: {
         renderType: 'expSvc',
         serviceNumber: '174e',
@@ -2438,6 +2579,41 @@ EDSDataSet['SBST'] = {
         serviceNumber: '174e',
         serviceFont: 'full',
         text: 'EXPRESS 174'
+    },
+    2011: {
+        renderType: 'int-loopSvc',
+        serviceNumber: '201',
+        serviceFont: 'full',
+        destination: {
+            text: 'KENT RIDGE - PANDAN GDNS',
+            font: 'tall'
+        },
+        scrolls: [
+            {
+                "text": "WEST COAST RD",
+                "font": "narrow"
+            },
+            {
+                "text": "C'WEALTH AVE WEST",
+                "font": "narrow"
+            },
+            {
+                "text": "TEBAN GARDENS RD",
+                "font": "narrow"
+            },
+            {
+                "text": "PANDAN GARDENS",
+                "font": "narrow"
+            },
+            {
+                "text": "C'WEALTH AVE WEST",
+                "font": "narrow"
+            },
+            {
+                "text": "WEST COAST RD",
+                "font": "narrow"
+            }
+        ]
     },
     1968: {
         renderType: 'expSvc',
