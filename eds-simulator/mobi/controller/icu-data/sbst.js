@@ -4,7 +4,7 @@ EDSTemplateSet['SBST'] = {
             variables: {
                 serviceNumber: '$serviceNumber'
             },
-            font: '$serviceFont',
+            font: 'full',
             format: '<serviceNumber,,0>',
             spaceWidth: 1,
             align: 'right'
@@ -12,13 +12,13 @@ EDSTemplateSet['SBST'] = {
         { // Render DEST via ROAD [SVC]
             variables: {
                 currentRoad: '$scrolls[]text',
-                currentRoadFont: '$scrolls[]font',
+                narrow: 'narrow',
                 destination: '$destination.text',
-                destinationFont: '$destination.font',
+                thin2: 'thin2',
                 arrow: '> ',
             },
             font: '$scrolls[]font',
-            format: ['<currentRoad,currentRoadFont,9>','<arrow,destinationFont,0><destination,destinationFont,0>'],
+            format: ['<currentRoad,narrow,9>','<arrow,thin2,0><destination,thin2,0>'],
             yPositions: [9, 0],
             spaceWidth: 1,
             align: 'left'
@@ -29,7 +29,7 @@ EDSTemplateSet['SBST'] = {
             variables: {
                 serviceNumber: '$serviceNumber'
             },
-            font: '$serviceFont',
+            font: 'full',
             format: '<serviceNumber,,0>',
             spaceWidth: 1,
             align: 'right'
@@ -37,12 +37,12 @@ EDSTemplateSet['SBST'] = {
         { // Render DEST via ROAD [SVC]
             variables: {
                 currentRoad: '$scrolls[]text',
-                currentRoadFont: '$scrolls[]font',
+                narrow: 'narrow',
                 destination: '$destination.text',
                 destinationFont: '$destination.font',
             },
             font: '$scrolls[]font',
-            format: ['<currentRoad,currentRoadFont,9>','<destination,destinationFont,0>'],
+            format: ['<currentRoad,narrow,9>','<destination,destinationFont,0>'],
             yPositions: [9, 0],
             spaceWidth: 1,
             align: 'left'
@@ -53,7 +53,7 @@ EDSTemplateSet['SBST'] = {
             variables: {
                 serviceNumber: '$serviceNumber'
             },
-            font: '$serviceFont',
+            font: 'full',
             format: '<serviceNumber,,0>',
             spaceWidth: 1,
             align: 'right'
@@ -61,12 +61,12 @@ EDSTemplateSet['SBST'] = {
         { // Render DEST via ROAD [SVC]
             variables: {
                 currentRoad: '$scrolls[]text',
-                currentRoadFont: '$scrolls[]font',
+                narrow: 'narrow',
                 destination: '$destination.text',
                 destinationFont: '$destination.font',
             },
             font: '$scrolls[]font',
-            format: ['<currentRoad,currentRoadFont,9>','<destination,destinationFont,1>'],
+            format: ['<currentRoad,narrow,9>','<destination,destinationFont,1>'],
             yPositions: [9, 0],
             spaceWidth: 1,
             align: 'left'
@@ -77,7 +77,7 @@ EDSTemplateSet['SBST'] = {
             variables: {
                 serviceNumber: '$serviceNumber'
             },
-            font: '$serviceFont',
+            font: 'full',
             format: '<serviceNumber,,0>',
             spaceWidth: 1,
             align: 'right'
@@ -138,24 +138,19 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "TAMPINES AVE 7",
-                "font": "narrow"
+                'text': 'TAMPINES AVE 7'
             },
             {
-                "text": "FLORA RD",
-                "font": "narrow"
+                'text': 'FLORA RD'
             },
             {
-                "text": "CHANGI NORTH WAY",
-                "font": "narrow"
+                'text': 'CHANGI NORTH WAY'
             },
             {
-                "text": "FLORA RD",
-                "font": "narrow"
+                'text': 'FLORA RD'
             },
             {
-                "text": "TAMPINES AVE 7",
-                "font": "narrow"
+                'text': 'TAMPINES AVE 7'
             }
         ]
     },
@@ -169,28 +164,22 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "CHANGI RD",
-                "font": "narrow"
+                'text': 'CHANGI RD'
             },
             {
-                "text": "GUILLEMARD RD",
-                "font": "narrow"
+                'text': 'GUILLEMARD RD'
             },
             {
-                "text": "NORTH BRIDGE RD",
-                "font": "narrow"
+                'text': 'NORTH BRIDGE RD'
             },
             {
-                "text": "OCHARD BOULEVARD",
-                "font": "narrow"
+                'text': 'OCHARD BOULEVARD'
             },
             {
-                "text": "HOLLAND RD",
-                "font": "narrow"
+                'text': 'HOLLAND RD'
             },
             {
-                "text": "ULU PANDAN RD",
-                "font": "narrow"
+                'text': 'ULU PANDAN RD'
             },
         ]
     },
@@ -204,28 +193,22 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "ULU PANDAN RD",
-                "font": "narrow"
+                'text': 'ULU PANDAN RD'
             },
             {
-                "text": "HOLLAND RD",
-                "font": "narrow"
+                'text': 'HOLLAND RD'
             },
             {
-                "text": "ORCHARD RD",
-                "font": "narrow"
+                'text': 'ORCHARD RD'
             },
             {
-                "text": "VICTORIA ST",
-                "font": "narrow"
+                'text': 'VICTORIA ST'
             },
             {
-                "text": "GUILLEMARD RD",
-                "font": "narrow"
+                'text': 'GUILLEMARD RD'
             },
             {
-                "text": "SIMS AVE EAST",
-                "font": "narrow"
+                'text': 'SIMS AVE EAST'
             },
         ]
     },
@@ -251,24 +234,19 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "SIMS WAY",
-                "font": "narrow"
+                'text': 'SIMS WAY'
             },
             {
-                "text": "STADIUM CRESCENT",
-                "font": "narrow"
+                'text': 'STADIUM CRESCENT'
             },
             {
-                "text": "RHU CROSS",
-                "font": "narrow"
+                'text': 'RHU CROSS'
             },
             {
-                "text": "STADIUM WALK",
-                "font": "narrow"
+                'text': 'STADIUM WALK'
             },
             {
-                "text": "SIMS WAY",
-                "font": "narrow"
+                'text': 'SIMS WAY'
             }
         ]
     },
@@ -294,28 +272,22 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "ANG MO KIO AVE 8",
-                "font": "narrow"
+                'text': 'ANG MO KIO AVE 8'
             },
             {
-                "text": "SERANGOON CENTRAL",
-                "font": "narrow"
+                'text': 'SERANGOON CENTRAL'
             },
             {
-                "text": "UPPER PAYA LEBAR RD",
-                "font": "narrow"
+                'text': 'UPPER PAYA LEBAR RD'
             },
             {
-                "text": "UBI AVE 2",
-                "font": "narrow"
+                'text': 'UBI AVE 2'
             },
             {
-                "text": "BEDOK RESERVOIR RD",
-                "font": "narrow"
+                'text': 'BEDOK RESERVOIR RD'
             },
             {
-                "text": "TAMPINES AVE 4",
-                "font": "narrow"
+                'text': 'TAMPINES AVE 4'
             },
         ]
     },
@@ -329,28 +301,22 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "TAMPINES AVE 4",
-                "font": "narrow"
+                'text': 'TAMPINES AVE 4'
             },
             {
-                "text": "BEDOK RESERVOIR RD",
-                "font": "narrow"
+                'text': 'BEDOK RESERVOIR RD'
             },
             {
-                "text": "UBI AVE 2",
-                "font": "narrow"
+                'text': 'UBI AVE 2'
             },
             {
-                "text": "UPPER PAYA LEBAR RD",
-                "font": "narrow"
+                'text': 'UPPER PAYA LEBAR RD'
             },
             {
-                "text": "SERANGOON CENTRAL",
-                "font": "narrow"
+                'text': 'SERANGOON CENTRAL'
             },
             {
-                "text": "ANG MO KIO AVE 8",
-                "font": "narrow"
+                'text': 'ANG MO KIO AVE 8'
             },
         ]
     },
@@ -364,32 +330,25 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "CORPORATION DR",
-                "font": "narrow"
+                'text': 'CORPORATION DR'
             },
             {
-                "text": "WEST COAST RD",
-                "font": "narrow"
+                'text': 'WEST COAST RD'
             },
             {
-                "text": "PASIR PANJANG RD",
-                "font": "narrow"
+                'text': 'PASIR PANJANG RD'
             },
             {
-                "text": "TELOK BLANGAH RD",
-                "font": "narrow"
+                'text': 'TELOK BLANGAH RD'
             },
             {
-                "text": "KEPPEL RD",
-                "font": "narrow"
+                'text': 'KEPPEL RD'
             },
             {
-                "text": "OLD AIRPORT RD",
-                "font": "narrow"
+                'text': 'OLD AIRPORT RD'
             },
             {
-                "text": "SIMS AVE EAST",
-                "font": "narrow"
+                'text': 'SIMS AVE EAST'
             },
         ]
     },
@@ -403,8 +362,7 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "BEDOK SOUTH RD",
-                "font": "narrow"
+                'text': 'BEDOK SOUTH RD'
             },
         ]
     },
@@ -418,28 +376,22 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "ANG MO KIO AVE 8",
-                "font": "narrow"
+                'text': 'ANG MO KIO AVE 8'
             },
             {
-                "text": "ANG MO KIO AVE 5",
-                "font": "narrow"
+                'text': 'ANG MO KIO AVE 5'
             },
             {
-                "text": "YIO CHU KANG RD",
-                "font": "narrow"
+                'text': 'YIO CHU KANG RD'
             },
             {
-                "text": "SENGKANG WEST AVE",
-                "font": "narrow"
+                'text': 'SENGKANG WEST AVE'
             },
             {
-                "text": "SENGKANG EAST WAY",
-                "font": "narrow"
+                'text': 'SENGKANG EAST WAY'
             },
             {
-                "text": "PUNGGOL DR",
-                "font": "narrow"
+                'text': 'PUNGGOL DR'
             }
         ]
     },
@@ -453,28 +405,22 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "PUNGGOL DR",
-                "font": "narrow"
+                'text': 'PUNGGOL DR'
             },
             {
-                "text": "SENGKANG EAST WAY",
-                "font": "narrow"
+                'text': 'SENGKANG EAST WAY'
             },
             {
-                "text": "SENGKANG WEST AVE",
-                "font": "narrow"
+                'text': 'SENGKANG WEST AVE'
             },
             {
-                "text": "YIO CHU KANG RD",
-                "font": "narrow"
+                'text': 'YIO CHU KANG RD'
             },
             {
-                "text": "ANG MO KIO AVE 5",
-                "font": "narrow"
+                'text': 'ANG MO KIO AVE 5'
             },
             {
-                "text": "ANG MO KIO AVE 8",
-                "font": "narrow"
+                'text': 'ANG MO KIO AVE 8'
             }
         ]
     },
@@ -488,24 +434,19 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "BISHAN RD",
-                "font": "narrow"
+                'text': 'BISHAN RD'
             },
             {
-                "text": "SERANGOOON CENTRAL",
-                "font": "narrow"
+                'text': 'SERANGOOON CENTRAL'
             },
             {
-                "text": "LORONG AH SOO",
-                "font": "narrow"
+                'text': 'LORONG AH SOO'
             },
             {
-                "text": "HOUGANG AVE 1",
-                "font": "narrow"
+                'text': 'HOUGANG AVE 1'
             },
             {
-                "text": "PASIR RIS DR 1",
-                "font": "narrow"
+                'text': 'PASIR RIS DR 1'
             }
         ]
     },
@@ -519,24 +460,19 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "PASIR RIS DR 1",
-                "font": "narrow"
+                'text': 'PASIR RIS DR 1'
             },
             {
-                "text": "HOUGANG AVE 1",
-                "font": "narrow"
+                'text': 'HOUGANG AVE 1'
             },
             {
-                "text": "LORONG AH SOO",
-                "font": "narrow"
+                'text': 'LORONG AH SOO'
             },
             {
-                "text": "SERANGOOON CENTRAL",
-                "font": "narrow"
+                'text': 'SERANGOOON CENTRAL'
             },
             {
-                "text": "BISHAN RD",
-                "font": "narrow"
+                'text': 'BISHAN RD'
             }
         ]
     },
@@ -545,29 +481,24 @@ EDSDataSet['SBST'] = {
         serviceNumber: '53M',
         serviceFont: 'full',
         destination: {
-            text: "HOUGANG AVE 1-S'GOON CTRL",
+            text: 'HOUGANG AVE 1-S'GOON CTRL',
             font: 'tall'
         },
         scrolls: [
             {
-                "text": "HOUGANG AVE 1",
-                "font": "narrow"
+                'text': 'HOUGANG AVE 1'
             },
             {
-                "text": "LORONG AH SOO",
-                "font": "narrow"
+                'text': 'LORONG AH SOO'
             },
             {
-                "text": "SERANGOOON CENTRAL",
-                "font": "narrow"
+                'text': 'SERANGOOON CENTRAL'
             },
             {
-                "text": "LORONG AH SOO",
-                "font": "narrow"
+                'text': 'LORONG AH SOO'
             },
             {
-                "text": "HOUGANG AVE 1",
-                "font": "narrow"
+                'text': 'HOUGANG AVE 1'
             }
         ]
     },
@@ -581,24 +512,19 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "BISHAN ST 13",
-                "font": "narrow"
+                'text': 'BISHAN ST 13'
             },
             {
-                "text": "LOR 6 TOA PAYOH",
-                "font": "narrow"
+                'text': 'LOR 6 TOA PAYOH'
             },
             {
-                "text": "THOMSON RD",
-                "font": "narrow"
+                'text': 'THOMSON RD'
             },
             {
-                "text": "BUKIT TIMAH RD",
-                "font": "narrow"
+                'text': 'BUKIT TIMAH RD'
             },
             {
-                "text": "MIDDLE RD",
-                "font": "narrow"
+                'text': 'MIDDLE RD'
             }
         ]
     },
@@ -612,24 +538,19 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "LOR 1 TOA PAYOH",
-                "font": "narrow"
+                'text': 'LOR 1 TOA PAYOH'
             },
             {
-                "text": "KAKI BUKIT AVE 1",
-                "font": "narrow"
+                'text': 'KAKI BUKIT AVE 1'
             },
             {
-                "text": "BEDOK RESERVOIR RD",
-                "font": "narrow"
+                'text': 'BEDOK RESERVOIR RD'
             },
             {
-                "text": "TAMPINES AVE 2",
-                "font": "narrow"
+                'text': 'TAMPINES AVE 2'
             },
             {
-                "text": "LOYANG AVE",
-                "font": "narrow"
+                'text': 'LOYANG AVE'
             },
         ]
     },
@@ -643,24 +564,19 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "LOYANG AVE",
-                "font": "narrow"
+                'text': 'LOYANG AVE'
             },
             {
-                "text": "TAMPINES AVE 2",
-                "font": "narrow"
+                'text': 'TAMPINES AVE 2'
             },
             {
-                "text": "BEDOK RESERVOIR RD",
-                "font": "narrow"
+                'text': 'BEDOK RESERVOIR RD'
             },
             {
-                "text": "KAKI BUKIT AVE 1",
-                "font": "narrow"
+                'text': 'KAKI BUKIT AVE 1'
             },
             {
-                "text": "LOR 1 TOA PAYOH",
-                "font": "narrow"
+                'text': 'LOR 1 TOA PAYOH'
             },
         ]
     },
@@ -674,28 +590,22 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "ALJUNIED RD",
-                "font": "narrow"
+                'text': 'ALJUNIED RD'
             },
             {
-                "text": "BENDEMEER RD",
-                "font": "narrow"
+                'text': 'BENDEMEER RD'
             },
             {
-                "text": "JALAN BESAR",
-                "font": "narrow"
+                'text': 'JALAN BESAR'
             },
             {
-                "text": "CLEMANCEAU AVE",
-                "font": "narrow"
+                'text': 'CLEMANCEAU AVE'
             },
             {
-                "text": "TIONG BAHRU RD",
-                "font": "narrow"
+                'text': 'TIONG BAHRU RD'
             },
             {
-                "text": "STIRLING RD",
-                "font": "narrow"
+                'text': 'STIRLING RD'
             },
         ]
     },
@@ -709,28 +619,22 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "ALEXANDRA RD",
-                "font": "narrow"
+                'text': 'ALEXANDRA RD'
             },
             {
-                "text": "TIONG BAHRU RD",
-                "font": "narrow"
+                'text': 'TIONG BAHRU RD'
             },
             {
-                "text": "CLEMANCEAU AVE",
-                "font": "narrow"
+                'text': 'CLEMANCEAU AVE'
             },
             {
-                "text": "SELEGIE RD",
-                "font": "narrow"
+                'text': 'SELEGIE RD'
             },
             {
-                "text": "SERANGOON RD",
-                "font": "narrow"
+                'text': 'SERANGOON RD'
             },
             {
-                "text": "ALJUNIED RD",
-                "font": "narrow"
+                'text': 'ALJUNIED RD'
             },
         ]
     },
@@ -744,32 +648,25 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "BEDOK RESERVOIR RD",
-                "font": "narrow"
+                'text': 'BEDOK RESERVOIR RD'
             },
             {
-                "text": "UBI AVE 2",
-                "font": "narrow"
+                'text': 'UBI AVE 2'
             },
             {
-                "text": "MACPHERSON RD",
-                "font": "narrow"
+                'text': 'MACPHERSON RD'
             },
             {
-                "text": "BENDEMEER RD",
-                "font": "narrow"
+                'text': 'BENDEMEER RD'
             },
             {
-                "text": "JALAN BESAR",
-                "font": "narrow"
+                'text': 'JALAN BESAR'
             },
             {
-                "text": "ORCHARD BOULEVARD",
-                "font": "narrow"
+                'text': 'ORCHARD BOULEVARD'
             },
             {
-                "text": "LOWER DELTA RD",
-                "font": "narrow"
+                'text': 'LOWER DELTA RD'
             }
         ]
     },
@@ -783,32 +680,25 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "LOWER DELTA RD",
-                "font": "narrow"
+                'text': 'LOWER DELTA RD'
             },
             {
-                "text": "ORCHARD RD",
-                "font": "narrow"
+                'text': 'ORCHARD RD'
             },
             {
-                "text": "SELEGIE RD",
-                "font": "narrow"
+                'text': 'SELEGIE RD'
             },
             {
-                "text": "SERANGOON RD",
-                "font": "narrow"
+                'text': 'SERANGOON RD'
             },
             {
-                "text": "MACPHERSON RD",
-                "font": "narrow"
+                'text': 'MACPHERSON RD'
             },
             {
-                "text": "UBI AVE 2",
-                "font": "narrow"
+                'text': 'UBI AVE 2'
             },
             {
-                "text": "BEDOK RESERVOIR RD",
-                "font": "narrow"
+                'text': 'BEDOK RESERVOIR RD'
             },
         ]
     },
@@ -817,37 +707,29 @@ EDSDataSet['SBST'] = {
         serviceNumber: '71',
         serviceFont: 'full',
         destination: {
-            text: 'YCK INT-BISHAN ST 11',
-            font: 'narrow'
+            text: 'YCK INT-BISHAN ST 11'
         },
         scrolls: [
             {
-                "text": "ANG MO KIO AVE 4",
-                "font": "narrow"
+                'text': 'ANG MO KIO AVE 4'
             },
             {
-                "text": "ANG MO KIO AVE 1",
-                "font": "narrow"
+                'text': 'ANG MO KIO AVE 1'
             },
             {
-                "text": "BISHAN RD",
-                "font": "narrow"
+                'text': 'BISHAN RD'
             },
             {
-                "text": "BRADDELL RD",
-                "font": "narrow"
+                'text': 'BRADDELL RD'
             },
             {
-                "text": "BISHAN RD",
-                "font": "narrow"
+                'text': 'BISHAN RD'
             },
             {
-                "text": "ANG MO KIO AVE 1",
-                "font": "narrow"
+                'text': 'ANG MO KIO AVE 1'
             },
             {
-                "text": "ANG MO KIO AVE 4",
-                "font": "narrow"
+                'text': 'ANG MO KIO AVE 4'
             }
         ]
     },
@@ -861,28 +743,22 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "ANG MO KIO AVE 5",
-                "font": "narrow"
+                'text': 'ANG MO KIO AVE 5'
             },
             {
-                "text": "HOUGANG AVE 9",
-                "font": "narrow"
+                'text': 'HOUGANG AVE 9'
             },
             {
-                "text": "HOUGANG CENTRAL",
-                "font": "narrow"
+                'text': 'HOUGANG CENTRAL'
             },
             {
-                "text": "TAMPINES RD",
-                "font": "narrow"
+                'text': 'TAMPINES RD'
             },
             {
-                "text": "TAMPINES AVE 10",
-                "font": "narrow"
+                'text': 'TAMPINES AVE 10'
             },
             {
-                "text": "TAMPINES AVE 9",
-                "font": "narrow"
+                'text': 'TAMPINES AVE 9'
             },
         ]
     },
@@ -896,28 +772,22 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "TAMPINES AVE 9",
-                "font": "narrow"
+                'text': 'TAMPINES AVE 9'
             },
             {
-                "text": "TAMPINES AVE 10",
-                "font": "narrow"
+                'text': 'TAMPINES AVE 10'
             },
             {
-                "text": "TAMPINES RD",
-                "font": "narrow"
+                'text': 'TAMPINES RD'
             },
             {
-                "text": "HOUGANG CENTRAL",
-                "font": "narrow"
+                'text': 'HOUGANG CENTRAL'
             },
             {
-                "text": "HOUGANG AVE 9",
-                "font": "narrow"
+                'text': 'HOUGANG AVE 9'
             },
             {
-                "text": "ANG MO KIO AVE 5",
-                "font": "narrow"
+                'text': 'ANG MO KIO AVE 5'
             },
         ]
     },
@@ -931,24 +801,19 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "ANG MO KIO AVE 4",
-                "font": "narrow"
+                'text': 'ANG MO KIO AVE 4'
             },
             {
-                "text": "ANG MO KIO AVE 3",
-                "font": "narrow"
+                'text': 'ANG MO KIO AVE 3'
             },
             {
-                "text": "YIO CHU KANG RD",
-                "font": "narrow"
+                'text': 'YIO CHU KANG RD'
             },
             {
-                "text": "UPPER PAYA LEBAR RD",
-                "font": "narrow"
+                'text': 'UPPER PAYA LEBAR RD'
             },
             {
-                "text": "PAYA LEBAR RD",
-                "font": "narrow"
+                'text': 'PAYA LEBAR RD'
             }
         ]
     },
@@ -962,24 +827,19 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "PAYA LEBAR RD",
-                "font": "narrow"
+                'text': 'PAYA LEBAR RD'
             },
             {
-                "text": "UPPER PAYA LEBAR RD",
-                "font": "narrow"
+                'text': 'UPPER PAYA LEBAR RD'
             },
             {
-                "text": "YIO CHU KANG RD",
-                "font": "narrow"
+                'text': 'YIO CHU KANG RD'
             },
             {
-                "text": "ANG MO KIO AVE 3",
-                "font": "narrow"
+                'text': 'ANG MO KIO AVE 3'
             },
             {
-                "text": "ANG MO KIO AVE 4",
-                "font": "narrow"
+                'text': 'ANG MO KIO AVE 4'
             }
         ]
     },
@@ -988,37 +848,30 @@ EDSDataSet['SBST'] = {
         serviceNumber: '81',
         serviceFont: 'full',
         destination: {
-            text: "TAMPINES INT-S'GOON CTRL",
+            text: 'TAMPINES INT-S'GOON CTRL',
             font: 'tall'
         },
         scrolls: [
             {
-                "text": "TAMPINES AVE 7",
-                "font": "narrow"
+                'text': 'TAMPINES AVE 7'
             },
             {
-                "text": "PASIR RIS DR 1",
-                "font": "narrow"
+                'text': 'PASIR RIS DR 1'
             },
             {
-                "text": "TAMPINES RD",
-                "font": "narrow"
+                'text': 'TAMPINES RD'
             },
             {
-                "text": "UPPER SERANGOON RD",
-                "font": "narrow"
+                'text': 'UPPER SERANGOON RD'
             },
             {
-                "text": "TAMPINES RD",
-                "font": "narrow"
+                'text': 'TAMPINES RD'
             },
             {
-                "text": "PASIR RIS DR 1",
-                "font": "narrow"
+                'text': 'PASIR RIS DR 1'
             },
             {
-                "text": "TAMPINES AVE 7",
-                "font": "narrow"
+                'text': 'TAMPINES AVE 7'
             }
         ]
     },
@@ -1027,37 +880,30 @@ EDSDataSet['SBST'] = {
         serviceNumber: '81',
         serviceFont: 'full',
         destination: {
-            text: "TAMPINES INT-S'GOON CTRL",
+            text: 'TAMPINES INT-S'GOON CTRL',
             font: 'tall'
         },
         scrolls: [
             {
-                "text": "TAMPINES AVE 7",
-                "font": "narrow"
+                'text': 'TAMPINES AVE 7'
             },
             {
-                "text": "PASIR RIS DR 1",
-                "font": "narrow"
+                'text': 'PASIR RIS DR 1'
             },
             {
-                "text": "TAMPINES RD",
-                "font": "narrow"
+                'text': 'TAMPINES RD'
             },
             {
-                "text": "UPPER SERANGOON RD",
-                "font": "narrow"
+                'text': 'UPPER SERANGOON RD'
             },
             {
-                "text": "TAMPINES RD",
-                "font": "narrow"
+                'text': 'TAMPINES RD'
             },
             {
-                "text": "PASIR RIS DR 1",
-                "font": "narrow"
+                'text': 'PASIR RIS DR 1'
             },
             {
-                "text": "TAMPINES AVE 7",
-                "font": "narrow"
+                'text': 'TAMPINES AVE 7'
             }
         ]
     },
@@ -1071,24 +917,19 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "HOUGANG AVE 10",
-                "font": "narrow"
+                'text': 'HOUGANG AVE 10'
             },
             {
-                "text": "COMPASSVIEW RD",
-                "font": "narrow"
+                'text': 'COMPASSVIEW RD'
             },
             {
-                "text": "PASIR RIS DR 1",
-                "font": "narrow"
+                'text': 'PASIR RIS DR 1'
             },
             {
-                "text": "LOYANG AVE",
-                "font": "narrow"
+                'text': 'LOYANG AVE'
             },
             {
-                "text": "AIRLINE RD",
-                "font": "narrow"
+                'text': 'AIRLINE RD'
             }
         ]
     },
@@ -1102,32 +943,25 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "PASIR RIS DR 3",
-                "font": "narrow"
+                'text': 'PASIR RIS DR 3'
             },
             {
-                "text": "PUNGGOL RD",
-                "font": "narrow"
+                'text': 'PUNGGOL RD'
             },
             {
-                "text": "HOUGANG AVE 8",
-                "font": "narrow"
+                'text': 'HOUGANG AVE 8'
             },
             {
-                "text": "ANG MO KIO AVE 5",
-                "font": "narrow"
+                'text': 'ANG MO KIO AVE 5'
             },
             {
-                "text": "ANG MO KIO AVE 3",
-                "font": "narrow"
+                'text': 'ANG MO KIO AVE 3'
             },
             {
-                "text": "BISHAN ST 22",
-                "font": "narrow"
+                'text': 'BISHAN ST 22'
             },
             {
-                "text": "LOR 4 TOA PAYOH",
-                "font": "narrow"
+                'text': 'LOR 4 TOA PAYOH'
             },
         ]
     },
@@ -1141,36 +975,28 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "",
-                "font": "narrow"
+                'text': ''
             },
             {
-                "text": "",
-                "font": "narrow"
+                'text': ''
             },
             {
-                "text": "",
-                "font": "narrow"
+                'text': ''
             },
             {
-                "text": "",
-                "font": "narrow"
+                'text': ''
             },
             {
-                "text": "",
-                "font": "narrow"
+                'text': ''
             },
             {
-                "text": "",
-                "font": "narrow"
+                'text': ''
             },
             {
-                "text": "",
-                "font": "narrow"
+                'text': ''
             },
             {
-                "text": "",
-                "font": "narrow"
+                'text': ''
             },
         ]
     },
@@ -1196,32 +1022,25 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "C'WEALTH AVE",
-                "font": "narrow"
+                'text': 'C'WEALTH AVE'
             },
             {
-                "text": "NTH BUONA VISTA RD",
-                "font": "narrow"
+                'text': 'NTH BUONA VISTA RD'
             },
             {
-                "text": "AYER RAJAH AVE",
-                "font": "narrow"
+                'text': 'AYER RAJAH AVE'
             },
             {
-                "text": "AYER RAJAH CRES",
-                "font": "narrow"
+                'text': 'AYER RAJAH CRES'
             },
             {
-                "text": "AYER RAJAH AVE",
-                "font": "narrow"
+                'text': 'AYER RAJAH AVE'
             },
             {
-                "text": "NTH BUONA VISTA RD",
-                "font": "narrow"
+                'text': 'NTH BUONA VISTA RD'
             },
             {
-                "text": "C'WEALTH AVE",
-                "font": "narrow"
+                'text': 'C'WEALTH AVE'
             }
         ]
     },
@@ -1235,24 +1054,19 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "JURONG EAST AVE 1",
-                "font": "narrow"
+                'text': 'JURONG EAST AVE 1'
             },
             {
-                "text": "JURONG WEST AVE 1",
-                "font": "narrow"
+                'text': 'JURONG WEST AVE 1'
             },
             {
-                "text": "JURONG WEST AVE 4",
-                "font": "narrow"
+                'text': 'JURONG WEST AVE 4'
             },
             {
-                "text": "JURONG WEST ST 91",
-                "font": "narrow"
+                'text': 'JURONG WEST ST 91'
             },
             {
-                "text": "UPP JURONG RD",
-                "font": "narrow"
+                'text': 'UPP JURONG RD'
             }
         ]
     },
@@ -1266,24 +1080,19 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "UPP JURONG RD",
-                "font": "narrow"
+                'text': 'UPP JURONG RD'
             },
             {
-                "text": "JURONG WEST ST 91",
-                "font": "narrow"
+                'text': 'JURONG WEST ST 91'
             },
             {
-                "text": "JURONG WEST AVE 4",
-                "font": "narrow"
+                'text': 'JURONG WEST AVE 4'
             },
             {
-                "text": "JURONG WEST AVE 1",
-                "font": "narrow"
+                'text': 'JURONG WEST AVE 1'
             },
             {
-                "text": "JURONG EAST AVE 1",
-                "font": "narrow"
+                'text': 'JURONG EAST AVE 1'
             }
         ]
     },
@@ -1292,45 +1101,36 @@ EDSDataSet['SBST'] = {
         serviceNumber: '101',
         serviceFont: 'full',
         destination: {
-            text: "S'GOON INT-BUANGKOK LK",
+            text: 'S'GOON INT-BUANGKOK LK',
             font: 'tall'
         },
         scrolls: [
             {
-                "text": "UPPER SERANGOON RD",
-                "font": "narrow"
+                'text': 'UPPER SERANGOON RD'
             },
             {
-                "text": "HOUGANG CENTRAL",
-                "font": "narrow"
+                'text': 'HOUGANG CENTRAL'
             },
             {
-                "text": "HOUGANG AVE 8",
-                "font": "narrow"
+                'text': 'HOUGANG AVE 8'
             },
             {
-                "text": "HOUGANG ST 51",
-                "font": "narrow"
+                'text': 'HOUGANG ST 51'
             },
             {
-                "text": "BUANGKOK LINK",
-                "font": "narrow"
+                'text': 'BUANGKOK LINK'
             },
             {
-                "text": "HOUGANG ST 51",
-                "font": "narrow"
+                'text': 'HOUGANG ST 51'
             },
             {
-                "text": "HOUGANG AVE 8",
-                "font": "narrow"
+                'text': 'HOUGANG AVE 8'
             },
             {
-                "text": "HOUGANG CENTRAL",
-                "font": "narrow"
+                'text': 'HOUGANG CENTRAL'
             },
             {
-                "text": "UPPER SERANGOON RD",
-                "font": "narrow"
+                'text': 'UPPER SERANGOON RD'
             }
         ]
     },
@@ -1344,28 +1144,22 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "UPPER SERANGOON RD",
-                "font": "narrow"
+                'text': 'UPPER SERANGOON RD'
             },
             {
-                "text": "BUANGKOK DR",
-                "font": "narrow"
+                'text': 'BUANGKOK DR'
             },
             {
-                "text": "COMPASSVALE DR",
-                "font": "narrow"
+                'text': 'COMPASSVALE DR'
             },
             {
-                "text": "SENGKANG EAST WAY",
-                "font": "narrow"
+                'text': 'SENGKANG EAST WAY'
             },
             {
-                "text": "SENGKANG WEST WAY",
-                "font": "narrow"
+                'text': 'SENGKANG WEST WAY'
             },
             {
-                "text": "SELETAR A\'SPACE DR",
-                "font": "narrow"
+                'text': 'SELETAR A\'SPACE DR'
             },
         ]
     },
@@ -1379,24 +1173,19 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "YIO CHU KANG RD",
-                "font": "narrow"
+                'text': 'YIO CHU KANG RD'
             },
             {
-                "text": "JLN KAYU",
-                "font": "narrow"
+                'text': 'JLN KAYU'
             },
             {
-                "text": "SELETAR AEROSPACE DR",
-                "font": "narrow"
+                'text': 'SELETAR AEROSPACE DR'
             },
             {
-                "text": "WEST CAMP RD",
-                "font": "narrow"
+                'text': 'WEST CAMP RD'
             },
             {
-                "text": "YISHUN CENTRAL",
-                "font": "narrow"
+                'text': 'YISHUN CENTRAL'
             }
         ]
     },
@@ -1410,24 +1199,19 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "YISHUN CENTRAL",
-                "font": "narrow"
+                'text': 'YISHUN CENTRAL'
             },
             {
-                "text": "WEST CAMP RD",
-                "font": "narrow"
+                'text': 'WEST CAMP RD'
             },
             {
-                "text": "SELETAR AEROSPACE DR",
-                "font": "narrow"
+                'text': 'SELETAR AEROSPACE DR'
             },
             {
-                "text": "JLN KAYU",
-                "font": "narrow"
+                'text': 'JLN KAYU'
             },
             {
-                "text": "YIO CHU KANG RD",
-                "font": "narrow"
+                'text': 'YIO CHU KANG RD'
             }
         ]
     },
@@ -1441,24 +1225,19 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "HOUGANG AVE 10",
-                "font": "narrow"
+                'text': 'HOUGANG AVE 10'
             },
             {
-                "text": "UPPER SERANGOON RD",
-                "font": "narrow"
+                'text': 'UPPER SERANGOON RD'
             },
             {
-                "text": "KALLANG BAHRU",
-                "font": "narrow"
+                'text': 'KALLANG BAHRU'
             },
             {
-                "text": "LAVENDER ST",
-                "font": "narrow"
+                'text': 'LAVENDER ST'
             },
             {
-                "text": "BEACH RD",
-                "font": "narrow"
+                'text': 'BEACH RD'
             }
         ]
     },
@@ -1472,24 +1251,19 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "BEACH RD",
-                "font": "narrow"
+                'text': 'BEACH RD'
             },
             {
-                "text": "LAVENDER ST",
-                "font": "narrow"
+                'text': 'LAVENDER ST'
             },
             {
-                "text": "KALLANG BAHRU",
-                "font": "narrow"
+                'text': 'KALLANG BAHRU'
             },
             {
-                "text": "UPPER SERANGOON RD",
-                "font": "narrow"
+                'text': 'UPPER SERANGOON RD'
             },
             {
-                "text": "HOUGANG AVE 10",
-                "font": "narrow"
+                'text': 'HOUGANG AVE 10'
             }
         ]
     },
@@ -1503,24 +1277,19 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "YIO CHU KANG RD",
-                "font": "narrow"
+                'text': 'YIO CHU KANG RD'
             },
             {
-                "text": "HOUGANG AVE 9",
-                "font": "narrow"
+                'text': 'HOUGANG AVE 9'
             },
             {
-                "text": "SENGKANG EAST RD",
-                "font": "narrow"
+                'text': 'SENGKANG EAST RD'
             },
             {
-                "text": "PASIR RIS DR 1",
-                "font": "narrow"
+                'text': 'PASIR RIS DR 1'
             },
             {
-                "text": "LOYANG AVE",
-                "font": "narrow"
+                'text': 'LOYANG AVE'
             }
         ]
     },
@@ -1534,24 +1303,19 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "LOYANG AVE",
-                "font": "narrow"
+                'text': 'LOYANG AVE'
             },
             {
-                "text": "PASIR RIS DR 1",
-                "font": "narrow"
+                'text': 'PASIR RIS DR 1'
             },
             {
-                "text": "SENGKANG EAST RD",
-                "font": "narrow"
+                'text': 'SENGKANG EAST RD'
             },
             {
-                "text": "HOUGANG AVE 9",
-                "font": "narrow"
+                'text': 'HOUGANG AVE 9'
             },
             {
-                "text": "YIO CHU KANG RD",
-                "font": "narrow"
+                'text': 'YIO CHU KANG RD'
             }
         ]
     },
@@ -1569,36 +1333,28 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "COMMONWEALTH AVE",
-                "font": "narrow"
+                'text': 'COMMONWEALTH AVE'
             },
             {
-                "text": "TANGLIN RD",
-                "font": "narrow"
+                'text': 'TANGLIN RD'
             },
             {
-                "text": "ORCHARD RD",
-                "font": "narrow"
+                'text': 'ORCHARD RD'
             },
             {
-                "text": "BRAS BASAH RD",
-                "font": "narrow"
+                'text': 'BRAS BASAH RD'
             },
             {
-                "text": "STAMFORD RD",
-                "font": "narrow"
+                'text': 'STAMFORD RD'
             },
             {
-                "text": "OCHARD BOULEVARD",
-                "font": "narrow"
+                'text': 'OCHARD BOULEVARD'
             },
             {
-                "text": "TANGLIN RD",
-                "font": "narrow"
+                'text': 'TANGLIN RD'
             },
             {
-                "text": "COMMONWEALTH AVE",
-                "font": "narrow"
+                'text': 'COMMONWEALTH AVE'
             },
         ]
     },
@@ -1612,8 +1368,7 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "HOUGANG AVE 4",
-                "font": "narrow"
+                'text': 'HOUGANG AVE 4'
             },
         ]
     },
@@ -1627,24 +1382,19 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "JALAN BUKIT MERAH",
-                "font": "narrow"
+                'text': 'JALAN BUKIT MERAH'
             },
             {
-                "text": "TELOK BLANGAH HTS",
-                "font": "narrow"
+                'text': 'TELOK BLANGAH HTS'
             },
             {
-                "text": "TELOK BLANGAH RD",
-                "font": "narrow"
+                'text': 'TELOK BLANGAH RD'
             },
             {
-                "text": "ALEXANDRA RD",
-                "font": "narrow"
+                'text': 'ALEXANDRA RD'
             },
             {
-                "text": "TIONG BAHRU RD",
-                "font": "narrow"
+                'text': 'TIONG BAHRU RD'
             }
         ]
     },
@@ -1658,40 +1408,31 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "GANGES AVE",
-                "font": "narrow"
+                'text': 'GANGES AVE'
             },
             {
-                "text": "TIONG BAHRU RD",
-                "font": "narrow"
+                'text': 'TIONG BAHRU RD'
             },
             {
-                "text": "KIM TIAN RD",
-                "font": "narrow"
+                'text': 'KIM TIAN RD'
             },
             {
-                "text": "LOWER DELTA RD",
-                "font": "narrow"
+                'text': 'LOWER DELTA RD'
             },
             {
-                "text": "TELOK BLANGAH RISE",
-                "font": "narrow"
+                'text': 'TELOK BLANGAH RISE'
             },
             {
-                "text": "LOWER DELTA RD",
-                "font": "narrow"
+                'text': 'LOWER DELTA RD'
             },
             {
-                "text": "KIM TIAN RD",
-                "font": "narrow"
+                'text': 'KIM TIAN RD'
             },
             {
-                "text": "TIONG BAHRU RD",
-                "font": "narrow"
+                'text': 'TIONG BAHRU RD'
             },
             {
-                "text": "GANGES AVE",
-                "font": "narrow"
+                'text': 'GANGES AVE'
             },
         ]
     },
@@ -1705,28 +1446,22 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "",
-                "font": "narrow"
+                'text': ''
             },
             {
-                "text": "",
-                "font": "narrow"
+                'text': ''
             },
             {
-                "text": "",
-                "font": "narrow"
+                'text': ''
             },
             {
-                "text": "",
-                "font": "narrow"
+                'text': ''
             },
             {
-                "text": "",
-                "font": "narrow"
+                'text': ''
             },
             {
-                "text": "",
-                "font": "narrow"
+                'text': ''
             }
         ]
     },
@@ -1740,32 +1475,25 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "QUEENSWAY",
-                "font": "narrow"
+                'text': 'QUEENSWAY'
             },
             {
-                "text": "HOLLAND RD",
-                "font": "narrow"
+                'text': 'HOLLAND RD'
             },
             {
-                "text": "ORCHARD RD",
-                "font": "narrow"
+                'text': 'ORCHARD RD'
             },
             {
-                "text": "HAVELOCK RD",
-                "font": "narrow"
+                'text': 'HAVELOCK RD'
             },
             {
-                "text": "TIONG BAHRU RD",
-                "font": "narrow"
+                'text': 'TIONG BAHRU RD'
             },
             {
-                "text": "LOWER DELTA RD",
-                "font": "narrow"
+                'text': 'LOWER DELTA RD'
             },
             {
-                "text": "BUKIT PURMEI AVE",
-                "font": "narrow"
+                'text': 'BUKIT PURMEI AVE'
             }
         ]
     },
@@ -1779,32 +1507,25 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "BUKIT PURMEI AVE",
-                "font": "narrow"
+                'text': 'BUKIT PURMEI AVE'
             },
             {
-                "text": "LOWER DELTA RD",
-                "font": "narrow"
+                'text': 'LOWER DELTA RD'
             },
             {
-                "text": "TIONG BAHRU RD",
-                "font": "narrow"
+                'text': 'TIONG BAHRU RD'
             },
             {
-                "text": "HAVELOCK RD",
-                "font": "narrow"
+                'text': 'HAVELOCK RD'
             },
             {
-                "text": "ORCHARD BLVD",
-                "font": "narrow"
+                'text': 'ORCHARD BLVD'
             },
             {
-                "text": "HOLLAND RD",
-                "font": "narrow"
+                'text': 'HOLLAND RD'
             },
             {
-                "text": "QUEENSWAY",
-                "font": "narrow"
+                'text': 'QUEENSWAY'
             }
         ]
     },
@@ -1818,20 +1539,16 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "BUKIT PURMEI AVE",
-                "font": "narrow"
+                'text': 'BUKIT PURMEI AVE'
             },
             {
-                "text": "LOWER DELTA RD",
-                "font": "narrow"
+                'text': 'LOWER DELTA RD'
             },
             {
-                "text": "TIONG BAHRU RD",
-                "font": "narrow"
+                'text': 'TIONG BAHRU RD'
             },
             {
-                "text": "LOWER DELTA RD",
-                "font": "narrow"
+                'text': 'LOWER DELTA RD'
             }
         ]
     },
@@ -1845,24 +1562,19 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "TELOK BLANGAH HTS",
-                "font": "narrow"
+                'text': 'TELOK BLANGAH HTS'
             },
             {
-                "text": "TELOK BLANGAH WAY",
-                "font": "narrow"
+                'text': 'TELOK BLANGAH WAY'
             },
             {
-                "text": "EU TONG SEN ST",
-                "font": "narrow"
+                'text': 'EU TONG SEN ST'
             },
             {
-                "text": "ORCHARD TURN",
-                "font": "narrow"
+                'text': 'ORCHARD TURN'
             },
             {
-                "text": "MOULMEIN RD",
-                "font": "narrow"
+                'text': 'MOULMEIN RD'
             }
         ]
     },
@@ -1871,29 +1583,24 @@ EDSDataSet['SBST'] = {
         serviceNumber: '124',
         serviceFont: 'full',
         destination: {
-            text: "ST MICHAEL'S TER",
+            text: 'ST MICHAEL'S TER',
             font: 'thin2'
         },
         scrolls: [
             {
-                "text": "NEW BRIDGE RD",
-                "font": "narrow"
+                'text': 'NEW BRIDGE RD'
             },
             {
-                "text": "KAMPONG BAHRU RD",
-                "font": "narrow"
+                'text': 'KAMPONG BAHRU RD'
             },
             {
-                "text": "TELOK BLANGAH HTS",
-                "font": "narrow"
+                'text': 'TELOK BLANGAH HTS'
             },
             {
-                "text": "MOULMEIN RD",
-                "font": "narrow"
+                'text': 'MOULMEIN RD'
             },
             {
-                "text": "ORCHARD RD",
-                "font": "narrow"
+                'text': 'ORCHARD RD'
             }
         ]
     },
@@ -1907,20 +1614,16 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "TAMPINES CONCOURSE",
-                "font": "narrow"
+                'text': 'TAMPINES CONCOURSE'
             },
             {
-                "text": "TAMPINES AVE 9,10",
-                "font": "narrow"
+                'text': 'TAMPINES AVE 9,10'
             },
             {
-                "text": "TAMPINES IND AVE 5",
-                "font": "narrow"
+                'text': 'TAMPINES IND AVE 5'
             },
             {
-                "text": "TAMPINES RD",
-                "font": "narrow"
+                'text': 'TAMPINES RD'
             }
         ]
     },
@@ -1929,25 +1632,21 @@ EDSDataSet['SBST'] = {
         serviceNumber: '129',
         serviceFont: 'full',
         destination: {
-            text: "ST MICHAEL'S TER",
+            text: 'ST MICHAEL'S TER',
             font: 'thin2'
         },
         scrolls: [
             {
-                "text": "TAMPINES AVE 1",
-                "font": "narrow"
+                'text': 'TAMPINES AVE 1'
             },
             {
-                "text": "BRADDELL RD",
-                "font": "narrow"
+                'text': 'BRADDELL RD'
             },
             {
-                "text": "LOR 1 TOA PAYOH",
-                "font": "narrow"
+                'text': 'LOR 1 TOA PAYOH'
             },
             {
-                "text": "BALESTIER RD",
-                "font": "narrow"
+                'text': 'BALESTIER RD'
             }
         ]
     },
@@ -1961,20 +1660,16 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "BALESTIER RD",
-                "font": "narrow"
+                'text': 'BALESTIER RD'
             },
             {
-                "text": "LOR 1 TOA PAYOH",
-                "font": "narrow"
+                'text': 'LOR 1 TOA PAYOH'
             },
             {
-                "text": "BRADDELL RD",
-                "font": "narrow"
+                'text': 'BRADDELL RD'
             },
             {
-                "text": "TAMPINES AVE 1",
-                "font": "narrow"
+                'text': 'TAMPINES AVE 1'
             }
         ]
     },
@@ -1988,24 +1683,19 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "ANG MO KIO AVE 8",
-                "font": "narrow"
+                'text': 'ANG MO KIO AVE 8'
             },
             {
-                "text": "SERANGOON AVE 2",
-                "font": "narrow"
+                'text': 'SERANGOON AVE 2'
             },
             {
-                "text": "UPP ALJUNIED RD",
-                "font": "narrow"
+                'text': 'UPP ALJUNIED RD'
             },
             {
-                "text": "TANJONG KATONG RD",
-                "font": "narrow"
+                'text': 'TANJONG KATONG RD'
             },
             {
-                "text": "MARINE PARADE RD",
-                "font": "narrow"
+                'text': 'MARINE PARADE RD'
             }
         ]
     },
@@ -2019,24 +1709,19 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "MARINE PARADE RD",
-                "font": "narrow"
+                'text': 'MARINE PARADE RD'
             },
             {
-                "text": "TANJONG KATONG RD",
-                "font": "narrow"
+                'text': 'TANJONG KATONG RD'
             },
             {
-                "text": "UPP ALJUNIED RD",
-                "font": "narrow"
+                'text': 'UPP ALJUNIED RD'
             },
             {
-                "text": "SERANGOON AVE 2",
-                "font": "narrow"
+                'text': 'SERANGOON AVE 2'
             },
             {
-                "text": "ANG MO KIO AVE 8",
-                "font": "narrow"
+                'text': 'ANG MO KIO AVE 8'
             }
         ]
     },
@@ -2050,28 +1735,22 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "HOUGANG AVE 3",
-                "font": "narrow"
+                'text': 'HOUGANG AVE 3'
             },
             {
-                "text": "MACPHERSON RD",
-                "font": "narrow"
+                'text': 'MACPHERSON RD'
             },
             {
-                "text": "JALAN TOA PAYOH",
-                "font": "narrow"
+                'text': 'JALAN TOA PAYOH'
             },
             {
-                "text": "BUKIT TIMAH RD",
-                "font": "narrow"
+                'text': 'BUKIT TIMAH RD'
             },
             {
-                "text": "CLEMENTI RD",
-                "font": "narrow"
+                'text': 'CLEMENTI RD'
             },
             {
-                "text": "KENT RIDGE CRES",
-                "font": "narrow"
+                'text': 'KENT RIDGE CRES'
             }
         ]
     },
@@ -2085,28 +1764,22 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "KENT RIDGE CRES",
-                "font": "narrow"
+                'text': 'KENT RIDGE CRES'
             },
             {
-                "text": "CLEMENTI RD",
-                "font": "narrow"
+                'text': 'CLEMENTI RD'
             },
             {
-                "text": "DUNEARN RD",
-                "font": "narrow"
+                'text': 'DUNEARN RD'
             },
             {
-                "text": "JALAN TOA PAYOH",
-                "font": "narrow"
+                'text': 'JALAN TOA PAYOH'
             },
             {
-                "text": "MACPHERSON RD",
-                "font": "narrow"
+                'text': 'MACPHERSON RD'
             },
             {
-                "text": "HOUGANG AVE 3",
-                "font": "narrow"
+                'text': 'HOUGANG AVE 3'
             }
         ]
     },
@@ -2132,32 +1805,25 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "YUAN CHING RD",
-                "font": "narrow"
+                'text': 'YUAN CHING RD'
             },
             {
-                "text": "AYE",
-                "font": "narrow"
+                'text': 'AYE'
             },
             {
-                "text": "COMMONWEALTH AVE WEST",
-                "font": "narrow"
+                'text': 'COMMONWEALTH AVE WEST'
             },
             {
-                "text": "CLEMENTI RD",
-                "font": "narrow"
+                'text': 'CLEMENTI RD'
             },
             {
-                "text": "DUNEARN RD",
-                "font": "narrow"
+                'text': 'DUNEARN RD'
             },
             {
-                "text": "JALAN TOA PAYOH",
-                "font": "narrow"
+                'text': 'JALAN TOA PAYOH'
             },
             {
-                "text": "PAYA LEBAR RD",
-                "font": "narrow"
+                'text': 'PAYA LEBAR RD'
             },
         ]
     },
@@ -2171,32 +1837,25 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "PAYA LEBAR RD",
-                "font": "narrow"
+                'text': 'PAYA LEBAR RD'
             },
             {
-                "text": "JALAN TOA PAYOH",
-                "font": "narrow"
+                'text': 'JALAN TOA PAYOH'
             },
             {
-                "text": "BUKIT TIMAH RD",
-                "font": "narrow"
+                'text': 'BUKIT TIMAH RD'
             },
             {
-                "text": "CLEMENTI RD",
-                "font": "narrow"
+                'text': 'CLEMENTI RD'
             },
             {
-                "text": "COMMONWEALTH AVE WEST",
-                "font": "narrow"
+                'text': 'COMMONWEALTH AVE WEST'
             },
             {
-                "text": "AYE",
-                "font": "narrow"
+                'text': 'AYE'
             },
             {
-                "text": "YUAN CHING RD",
-                "font": "narrow"
+                'text': 'YUAN CHING RD'
             },
         ]
     },
@@ -2210,36 +1869,28 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "ULU PANDAN RD",
-                "font": "narrow"
+                'text': 'ULU PANDAN RD'
             },
             {
-                "text": "SIXTH AVE",
-                "font": "narrow"
+                'text': 'SIXTH AVE'
             },
             {
-                "text": "DUNEARN RD",
-                "font": "narrow"
+                'text': 'DUNEARN RD'
             },
             {
-                "text": "THOMSON RD",
-                "font": "narrow"
+                'text': 'THOMSON RD'
             },
             {
-                "text": "BISHAN RD",
-                "font": "narrow"
+                'text': 'BISHAN RD'
             },
             {
-                "text": "YIO CHU KANG RD",
-                "font": "narrow"
+                'text': 'YIO CHU KANG RD'
             },
             {
-                "text": "BUANGKOK GREEN",
-                "font": "narrow"
+                'text': 'BUANGKOK GREEN'
             },
             {
-                "text": "SENGKANG EAST RD",
-                "font": "narrow"
+                'text': 'SENGKANG EAST RD'
             },
         ]
     },
@@ -2253,32 +1904,25 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "BRADDELL RD",
-                "font": "narrow"
+                'text': 'BRADDELL RD'
             },
             {
-                "text": "LORNIE RD",
-                "font": "narrow"
+                'text': 'LORNIE RD'
             },
             {
-                "text": "BUKIT TIMAH RD",
-                "font": "narrow"
+                'text': 'BUKIT TIMAH RD'
             },
             {
-                "text": "JALAN JURONG KECHIL",
-                "font": "narrow"
+                'text': 'JALAN JURONG KECHIL'
             },
             {
-                "text": "BUKIT BATOK EAST AVE 3",
-                "font": "narrow"
+                'text': 'BUKIT BATOK EAST AVE 3'
             },
             {
-                "text": "JURONG EAST AVE 3",
-                "font": "narrow"
+                'text': 'JURONG EAST AVE 3'
             },
             {
-                "text": "JURONG WEST AVE 3",
-                "font": "narrow"
+                'text': 'JURONG WEST AVE 3'
             }
         ]
     },
@@ -2292,32 +1936,25 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "JURONG WEST AVE 1",
-                "font": "narrow"
+                'text': 'JURONG WEST AVE 1'
             },
             {
-                "text": "JURONG EAST AVE 1",
-                "font": "narrow"
+                'text': 'JURONG EAST AVE 1'
             },
             {
-                "text": "BUKIT BATOK EAST AVE 3",
-                "font": "narrow"
+                'text': 'BUKIT BATOK EAST AVE 3'
             },
             {
-                "text": "JALAN JURONG KECHIL",
-                "font": "narrow"
+                'text': 'JALAN JURONG KECHIL'
             },
             {
-                "text": "DUNEARN RD",
-                "font": "narrow"
+                'text': 'DUNEARN RD'
             },
             {
-                "text": "LORNIE RD",
-                "font": "narrow"
+                'text': 'LORNIE RD'
             },
             {
-                "text": "BRADDELL RD",
-                "font": "narrow"
+                'text': 'BRADDELL RD'
             }
         ]
     },
@@ -2331,24 +1968,19 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "HOUGANG AVE 8",
-                "font": "narrow"
+                'text': 'HOUGANG AVE 8'
             },
             {
-                "text": "HOUGANG AVE 4",
-                "font": "narrow"
+                'text': 'HOUGANG AVE 4'
             },
             {
-                "text": "SENGKANG EAST RD",
-                "font": "narrow"
+                'text': 'SENGKANG EAST RD'
             },
             {
-                "text": "SENGKANG EAST WAY",
-                "font": "narrow"
+                'text': 'SENGKANG EAST WAY'
             },
             {
-                "text": "WOODLANDS AVE 2",
-                "font": "narrow"
+                'text': 'WOODLANDS AVE 2'
             },
         ]
     },
@@ -2362,24 +1994,19 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "WOODLANDS AVE 2",
-                "font": "narrow"
+                'text': 'WOODLANDS AVE 2'
             },
             {
-                "text": "SENGKANG EAST WAY",
-                "font": "narrow"
+                'text': 'SENGKANG EAST WAY'
             },
             {
-                "text": "SENGKANG EAST RD",
-                "font": "narrow"
+                'text': 'SENGKANG EAST RD'
             },
             {
-                "text": "HOUGANG AVE 4",
-                "font": "narrow"
+                'text': 'HOUGANG AVE 4'
             },
             {
-                "text": "HOUGANG AVE 8",
-                "font": "narrow"
+                'text': 'HOUGANG AVE 8'
             },
         ]
     },
@@ -2393,36 +2020,28 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "ANG MO KIO AVE 6",
-                "font": "narrow"
+                'text': 'ANG MO KIO AVE 6'
             },
             {
-                "text": "ANG MO KIO AVE 8",
-                "font": "narrow"
+                'text': 'ANG MO KIO AVE 8'
             },
             {
-                "text": "BISHAN ST 22",
-                "font": "narrow"
+                'text': 'BISHAN ST 22'
             },
             {
-                "text": "SIN MING AVE",
-                "font": "narrow"
+                'text': 'SIN MING AVE'
             },
             {
-                "text": "UPPER THOMSON RD",
-                "font": "narrow"
+                'text': 'UPPER THOMSON RD'
             },
             {
-                "text": "THOMSON RD",
-                "font": "narrow"
+                'text': 'THOMSON RD'
             },
             {
-                "text": "ORCHARD RD",
-                "font": "narrow"
+                'text': 'ORCHARD RD'
             },
             {
-                "text": "BRAS BASAH RD",
-                "font": "narrow"
+                'text': 'BRAS BASAH RD'
             }
         ]
       },
@@ -2436,37 +2055,29 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "STAMFORD RD",
-                "font": "narrow"
+                'text': 'STAMFORD RD'
             },
             {
-                "text": "ORCHARD TURN",
-                "font": "narrow"
+                'text': 'ORCHARD TURN'
             },
             {
-                "text": "THOMSON RD",
-                "font": "narrow"
+                'text': 'THOMSON RD'
             },
             {
-                "text": "UPPER THOMSON RD",
-                "font": "narrow"
+                'text': 'UPPER THOMSON RD'
             },
             {
-                "text": "SIN MING AVE",
-                "font": "narrow"
+                'text': 'SIN MING AVE'
             },
             {
-                "text": "BISHAN ST 22",
-                "font": "narrow"
+                'text': 'BISHAN ST 22'
             },
             {
-                "text": "ANG MO KIO AVE 8",
-                "font": "narrow"
+                'text': 'ANG MO KIO AVE 8'
             },
 
             {
-                "text": "ANG MO KIO AVE 6",
-                "font": "narrow"
+                'text': 'ANG MO KIO AVE 6'
             }
         ]
     },
@@ -2475,53 +2086,41 @@ EDSDataSet['SBST'] = {
         serviceNumber: '162M',
         serviceFont: 'full',
         destination: {
-            text: 'YCK INT-MARINA CTR',
-            font: 'narrow'
+            text: 'YCK INT-MARINA CTR'
         },
         scrolls: [
             {
-                "text": "ANG MO KIO AVE 6",
-                "font": "narrow"
+                'text': 'ANG MO KIO AVE 6'
             },
             {
-                "text": "BISHAN ST 22",
-                "font": "narrow"
+                'text': 'BISHAN ST 22'
             },
             {
-                "text": "SIN MING AVE",
-                "font": "narrow"
+                'text': 'SIN MING AVE'
             },
             {
-                "text": "THOMSON RD",
-                "font": "narrow"
+                'text': 'THOMSON RD'
             },
             {
-                "text": "ORCHARD RD",
-                "font": "narrow"
+                'text': 'ORCHARD RD'
             },
             {
-                "text": "TEMASEK AVE",
-                "font": "narrow"
+                'text': 'TEMASEK AVE'
             },
             {
-                "text": "ORCHARD TURN",
-                "font": "narrow"
+                'text': 'ORCHARD TURN'
             },
             {
-                "text": "THOMSON RD",
-                "font": "narrow"
+                'text': 'THOMSON RD'
             },
             {
-                "text": "SIN MING AVE",
-                "font": "narrow"
+                'text': 'SIN MING AVE'
             },
             {
-                "text": "BISHAN ST 22",
-                "font": "narrow"
+                'text': 'BISHAN ST 22'
             },
             {
-                "text": "ANG MO KIO AVE 6",
-                "font": "narrow"
+                'text': 'ANG MO KIO AVE 6'
             }
         ]
     },
@@ -2535,32 +2134,25 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "SENGKANG EAST AVE",
-                "font": "narrow"
+                'text': 'SENGKANG EAST AVE'
             },
             {
-                "text": "SENGKANG WEST AVE",
-                "font": "narrow"
+                'text': 'SENGKANG WEST AVE'
             },
             {
-                "text": "YIO CHU KANG RD",
-                "font": "narrow"
+                'text': 'YIO CHU KANG RD'
             },
             {
-                "text": "UPPER THOMSON RD",
-                "font": "narrow"
+                'text': 'UPPER THOMSON RD'
             },
             {
-                "text": "BRADDELL RD",
-                "font": "narrow"
+                'text': 'BRADDELL RD'
             },
             {
-                "text": "LOR 6 TOA PAYOH",
-                "font": "narrow"
+                'text': 'LOR 6 TOA PAYOH'
             },
             {
-                "text": "LOR 4 TOA PAYOH",
-                "font": "narrow"
+                'text': 'LOR 4 TOA PAYOH'
             },
         ]
     },
@@ -2574,32 +2166,25 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "LOR 4 TOA PAYOH",
-                "font": "narrow"
+                'text': 'LOR 4 TOA PAYOH'
             },
             {
-                "text": "LOR 6 TOA PAYOH",
-                "font": "narrow"
+                'text': 'LOR 6 TOA PAYOH'
             },
             {
-                "text": "BRADDELL RD",
-                "font": "narrow"
+                'text': 'BRADDELL RD'
             },
             {
-                "text": "UPPER THOMSON RD",
-                "font": "narrow"
+                'text': 'UPPER THOMSON RD'
             },
             {
-                "text": "YIO CHU KANG RD",
-                "font": "narrow"
+                'text': 'YIO CHU KANG RD'
             },
             {
-                "text": "SENGKANG WEST AVE",
-                "font": "narrow"
+                'text': 'SENGKANG WEST AVE'
             },
             {
-                "text": "SENGKANG EAST AVE",
-                "font": "narrow"
+                'text': 'SENGKANG EAST AVE'
             },
         ]
     },
@@ -2613,36 +2198,28 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "ANG MO KIO AVE 3",
-                "font": "narrow"
+                'text': 'ANG MO KIO AVE 3'
             },
             {
-                "text": "UPP THOMSON RD",
-                "font": "narrow"
+                'text': 'UPP THOMSON RD'
             },
             {
-                "text": "THOMSON RD",
-                "font": "narrow"
+                'text': 'THOMSON RD'
             },
             {
-                "text": "NEW BRIDGE RD",
-                "font": "narrow"
+                'text': 'NEW BRIDGE RD'
             },
             {
-                "text": "KAMPONG BAHRU RD",
-                "font": "narrow"
+                'text': 'KAMPONG BAHRU RD'
             },
             {
-                "text": "TELOK BLANGAH RD",
-                "font": "narrow"
+                'text': 'TELOK BLANGAH RD'
             },
             {
-                "text": "ALEXANDRA RD",
-                "font": "narrow"
+                'text': 'ALEXANDRA RD'
             },
             {
-                "text": "C'WEALTH AVE WEST",
-                "font": "narrow"
+                'text': 'C'WEALTH AVE WEST'
             }
         ]
     },
@@ -2656,36 +2233,28 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "C'WEALTH AVE WEST",
-                "font": "narrow"
+                'text': 'C'WEALTH AVE WEST'
             },
             {
-                "text": "ALEXANDRA RD",
-                "font": "narrow"
+                'text': 'ALEXANDRA RD'
             },
             {
-                "text": "TELOK BLANGAH RD",
-                "font": "narrow"
+                'text': 'TELOK BLANGAH RD'
             },
             {
-                "text": "KAMPONG BAHRU RD",
-                "font": "narrow"
+                'text': 'KAMPONG BAHRU RD'
             },
             {
-                "text": "EU TONG SEN ST",
-                "font": "narrow"
+                'text': 'EU TONG SEN ST'
             },
             {
-                "text": "THOMSON RD",
-                "font": "narrow"
+                'text': 'THOMSON RD'
             },
             {
-                "text": "UPP THOMSON RD",
-                "font": "narrow"
+                'text': 'UPP THOMSON RD'
             },
             {
-                "text": "ANG MO KIO AVE 3",
-                "font": "narrow"
+                'text': 'ANG MO KIO AVE 3'
             }
         ]
     },
@@ -2699,24 +2268,19 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "BEDOK NORTH AVE 3",
-                "font": "narrow"
+                'text': 'BEDOK NORTH AVE 3'
             },
             {
-                "text": "TAMPINES AVE 4",
-                "font": "narrow"
+                'text': 'TAMPINES AVE 4'
             },
             {
-                "text": "TAMPINES AVE 10",
-                "font": "narrow"
+                'text': 'TAMPINES AVE 10'
             },
             {
-                "text": "JALAN KAYU",
-                "font": "narrow"
+                'text': 'JALAN KAYU'
             },
             {
-                "text": "WOODLANDS AVE 2",
-                "font": "narrow"
+                'text': 'WOODLANDS AVE 2'
             },
         ]
     },
@@ -2730,24 +2294,19 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "WOODLANDS AVE 2",
-                "font": "narrow"
+                'text': 'WOODLANDS AVE 2'
             },
             {
-                "text": "JALAN KAYU",
-                "font": "narrow"
+                'text': 'JALAN KAYU'
             },
             {
-                "text": "TAMPINES AVE 10",
-                "font": "narrow"
+                'text': 'TAMPINES AVE 10'
             },
             {
-                "text": "TAMPINES AVE 4",
-                "font": "narrow"
+                'text': 'TAMPINES AVE 4'
             },
             {
-                "text": "BEDOK NORTH AVE 3",
-                "font": "narrow"
+                'text': 'BEDOK NORTH AVE 3'
             },
         ]
     },
@@ -2761,36 +2320,28 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                text: 'JURONG ROAD',
-                font: 'narrow'
+                text: 'JURONG ROAD'
             },
             {
-                "text": "BT BATOK EAST AVE 3&6",
-                "font": "narrow"
+                'text': 'BT BATOK EAST AVE 3&6'
             },
             {
-                "text": "JALAN JURONG KECHIL",
-                "font": "narrow"
+                'text': 'JALAN JURONG KECHIL'
             },
             {
-                "text": "DUNEARN RD",
-                "font": "narrow"
+                'text': 'DUNEARN RD'
             },
             {
-                "text": "FARRER RD",
-                "font": "narrow"
+                'text': 'FARRER RD'
             },
             {
-                "text": "HOLLAND RD",
-                "font": "narrow"
+                'text': 'HOLLAND RD'
             },
             {
-                "text": "ORCHARD RD",
-                "font": "narrow"
+                'text': 'ORCHARD RD'
             },
             {
-                "text": "NORTH&SOUTH BRIDGE RD",
-                "font": "narrow"
+                'text': 'NORTH&SOUTH BRIDGE RD'
             }
         ]
     },
@@ -2804,32 +2355,25 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "EU TONG SEN ST",
-                "font": "narrow"
+                'text': 'EU TONG SEN ST'
             },
             {
-                "text": "ORCHARD BOULEVARD",
-                "font": "narrow"
+                'text': 'ORCHARD BOULEVARD'
             },
             {
-                "text": "HOLLAND RD",
-                "font": "narrow"
+                'text': 'HOLLAND RD'
             },
             {
-                "text": "FARRER RD",
-                "font": "narrow"
+                'text': 'FARRER RD'
             },
             {
-                "text": "BUKIT TIMAH RD",
-                "font": "narrow"
+                'text': 'BUKIT TIMAH RD'
             },
             {
-                "text": "JALAN JURONG KECHIL",
-                "font": "narrow"
+                'text': 'JALAN JURONG KECHIL'
             },
             {
-                "text": "BT BATOK EAST AVE 6&3",
-                "font": "narrow"
+                'text': 'BT BATOK EAST AVE 6&3'
             }
         ]
     },
@@ -2867,28 +2411,22 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "WEST COAST RD",
-                "font": "narrow"
+                'text': 'WEST COAST RD'
             },
             {
-                "text": "C'WEALTH AVE WEST",
-                "font": "narrow"
+                'text': 'C'WEALTH AVE WEST'
             },
             {
-                "text": "TEBAN GARDENS RD",
-                "font": "narrow"
+                'text': 'TEBAN GARDENS RD'
             },
             {
-                "text": "PANDAN GARDENS",
-                "font": "narrow"
+                'text': 'PANDAN GARDENS'
             },
             {
-                "text": "C'WEALTH AVE WEST",
-                "font": "narrow"
+                'text': 'C'WEALTH AVE WEST'
             },
             {
-                "text": "WEST COAST RD",
-                "font": "narrow"
+                'text': 'WEST COAST RD'
             }
         ]
     },
@@ -2908,24 +2446,19 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                text: 'JALAN AHMAD IBRAHIM',
-                font: 'narrow'
+                text: 'JALAN AHMAD IBRAHIM'
             },
             {
-                text: 'KANG CHING RD',
-                font: 'narrow'
+                text: 'KANG CHING RD'
             },
             {
-                text: 'YUAN CHING RD',
-                font: 'narrow'
+                text: 'YUAN CHING RD'
             },
             {
-                text: 'BOON LAY PLACE',
-                font: 'narrow'
+                text: 'BOON LAY PLACE'
             },
             {
-                text: 'BOON LAY WAY',
-                font: 'narrow'
+                text: 'BOON LAY WAY'
             },
         ]
     },
@@ -2939,16 +2472,13 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                text: 'JURONG WEST ST 63',
-                font: 'narrow'
+                text: 'JURONG WEST ST 63'
             },
             {
-                text: 'PIONEER RD NTH',
-                font: 'narrow'
+                text: 'PIONEER RD NTH'
             },
             {
-                text: 'JURONG WEST ST 91',
-                font: 'narrow'
+                text: 'JURONG WEST ST 91'
             },
         ]
     },
@@ -2962,32 +2492,25 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                text: 'JURONG WEST CENTRAL 1',
-                font: 'narrow'
+                text: 'JURONG WEST CENTRAL 1'
             },
             {
-                text: 'JALAN BOON LAY',
-                font: 'narrow'
+                text: 'JALAN BOON LAY'
             },
             {
-                text: 'JURONG WEST AVE 4',
-                font: 'narrow'
+                text: 'JURONG WEST AVE 4'
             },
             {
-                text: 'JURONG WEST ST 72',
-                font: 'narrow'
+                text: 'JURONG WEST ST 72'
             },
             {
-                text: 'JURONG WEST AVE 5',
-                font: 'narrow'
+                text: 'JURONG WEST AVE 5'
             },
             {
-                text: 'JURONG WEST AVE 4',
-                font: 'narrow'
+                text: 'JURONG WEST AVE 4'
             },
             {
-                text: 'JALAN BOON LAY',
-                font: 'narrow'
+                text: 'JALAN BOON LAY'
             }
         ]
     },
@@ -3001,28 +2524,22 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                text: 'JURONG WEST ST 62',
-                font: 'narrow'
+                text: 'JURONG WEST ST 62'
             },
             {
-                text: 'JURONG WEST AVE 4',
-                font: 'narrow'
+                text: 'JURONG WEST AVE 4'
             },
             {
-                text: 'JURONG WEST AVE 5',
-                font: 'narrow'
+                text: 'JURONG WEST AVE 5'
             },
             {
-                text: 'JURONG WEST ST 81',
-                font: 'narrow'
+                text: 'JURONG WEST ST 81'
             },
             {
-                text: 'JURONG WEST ST 75',
-                font: 'narrow'
+                text: 'JURONG WEST ST 75'
             },
             {
-                text: 'JURONG WEST 64',
-                font: 'narrow'
+                text: 'JURONG WEST 64'
             },
         ]
     },
@@ -3036,28 +2553,22 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                text: 'JURONG WEST ST 64',
-                font: 'narrow'
+                text: 'JURONG WEST ST 64'
             },
             {
-                text: 'JURONG WEST ST 75',
-                font: 'narrow'
+                text: 'JURONG WEST ST 75'
             },
             {
-                text: 'JURONG WEST ST 81',
-                font: 'narrow'
+                text: 'JURONG WEST ST 81'
             },
             {
-                text: 'JURONG WEST AVE 5',
-                font: 'narrow'
+                text: 'JURONG WEST AVE 5'
             },
             {
-                text: 'JURONG WEST AVE 4',
-                font: 'narrow'
+                text: 'JURONG WEST AVE 4'
             },
             {
-                text: 'JURONG WEST ST 62',
-                font: 'narrow'
+                text: 'JURONG WEST ST 62'
             }
         ]
     },
@@ -3071,24 +2582,19 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "TUAS AVE 7",
-                "font": "narrow"
+                'text': 'TUAS AVE 7'
             },
             {
-                "text": "TUAS CRES",
-                "font": "narrow"
+                'text': 'TUAS CRES'
             },
             {
-                "text": "TUAS STH AVE 5&4&7",
-                "font": "narrow"
+                'text': 'TUAS STH AVE 5&4&7'
             },
             {
-                "text": "TUAS STH AVE 3&9&8",
-                "font": "narrow"
+                'text': 'TUAS STH AVE 3&9&8'
             },
             {
-                "text": "TUAS LINK 4",
-                "font": "narrow"
+                'text': 'TUAS LINK 4'
             }
         ]
     },
@@ -3102,24 +2608,19 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "PIONEER RD",
-                "font": "narrow"
+                'text': 'PIONEER RD'
             },
             {
-                "text": "TUAS AVE 20",
-                "font": "narrow"
+                'text': 'TUAS AVE 20'
             },
             {
-                "text": "TUAS STH AVE 5",
-                "font": "narrow"
+                'text': 'TUAS STH AVE 5'
             },
             {
-                "text": "TUAS STH AVE 9",
-                "font": "narrow"
+                'text': 'TUAS STH AVE 9'
             },
             {
-                "text": "TUAS STH AVE 10",
-                "font": "narrow"
+                'text': 'TUAS STH AVE 10'
             }
         ]
     },
@@ -3133,16 +2634,13 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "PIONEER RD NTH",
-                "font": "narrow"
+                'text': 'PIONEER RD NTH'
             },
             {
-                "text": "JURONG W. ST 61&81&75",
-                "font": "narrow"
+                'text': 'JURONG W. ST 61&81&75'
             },
             {
-                "text": "JALAN AHMAD IBRAHIM",
-                "font": "narrow"
+                'text': 'JALAN AHMAD IBRAHIM'
             }
         ]
     },
@@ -3156,24 +2654,19 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                text: 'ANG MO KIO AVE 3',
-                font: 'narrow'
+                text: 'ANG MO KIO AVE 3'
             },
             {
-                text: 'ANG MO KIO AVE 10',
-                font: 'narrow'
+                text: 'ANG MO KIO AVE 10'
             },
             {
-                text: 'ANG MO KIO IND PK 1',
-                font: 'narrow'
+                text: 'ANG MO KIO IND PK 1'
             },
             {
-                text: 'ANG MO KIO AVE 10',
-                font: 'narrow'
+                text: 'ANG MO KIO AVE 10'
             },
             {
-                text: 'ANG MO KIO AVE 3',
-                font: 'narrow'
+                text: 'ANG MO KIO AVE 3'
             }
         ]
     },
@@ -3187,24 +2680,19 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                text: 'HENDERSON RD',
-                font: 'narrow'
+                text: 'HENDERSON RD'
             },
             {
-                text: 'TELOK BLANGAH WAY',
-                font: 'narrow'
+                text: 'TELOK BLANGAH WAY'
             },
             {
-                text: 'TELOK BLANGAH RISE',
-                font: 'narrow'
+                text: 'TELOK BLANGAH RISE'
             },
             {
-                text: 'TELOK BLANGAH CRES',
-                font: 'narrow'
+                text: 'TELOK BLANGAH CRES'
             },
             {
-                text: 'HENDERSON RD',
-                font: 'narrow'
+                text: 'HENDERSON RD'
             },
         ]
     },
@@ -3218,24 +2706,19 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                text: 'HENDERSON RD',
-                font: 'narrow'
+                text: 'HENDERSON RD'
             },
             {
-                text: 'TELOK BLANGAH HTS',
-                font: 'narrow'
+                text: 'TELOK BLANGAH HTS'
             },
             {
-                text: 'TELOK BLANGAH ST32',
-                font: 'narrow'
+                text: 'TELOK BLANGAH ST32'
             },
             {
-                text: 'TELOK BLANGAH DRIVE',
-                font: 'narrow'
+                text: 'TELOK BLANGAH DRIVE'
             },
             {
-                text: 'HENDERSON RD',
-                font: 'narrow'
+                text: 'HENDERSON RD'
             },
         ]
     },
@@ -3249,24 +2732,19 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                text: 'JALAN BUKIT MERAH',
-                font: 'narrow'
+                text: 'JALAN BUKIT MERAH'
             },
             {
-                text: 'LOWER DELTA RD',
-                font: 'narrow'
+                text: 'LOWER DELTA RD'
             },
             {
-                text: 'BUKIT PURMEI AVE',
-                font: 'narrow'
+                text: 'BUKIT PURMEI AVE'
             },
             {
-                text: 'LOWER DELTA RD',
-                font: 'narrow'
+                text: 'LOWER DELTA RD'
             },
             {
-                text: 'JALAN BUKIT MERAH',
-                font: 'narrow'
+                text: 'JALAN BUKIT MERAH'
             }
         ]
     },
@@ -3284,32 +2762,25 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "JURONG WEST CENTRAL 1",
-                "font": "narrow"
+                'text': 'JURONG WEST CENTRAL 1'
             },
             {
-                "text": "JLN BOON LAY",
-                "font": "narrow"
+                'text': 'JLN BOON LAY'
             },
             {
-                "text": "JALAN BAHAR",
-                "font": "narrow"
+                'text': 'JALAN BAHAR'
             },
             {
-                "text": "OLD CHOA CHU KANG RD",
-                "font": "narrow"
+                'text': 'OLD CHOA CHU KANG RD'
             },
             {
-                "text": "JALAN BAHAR",
-                "font": "narrow"
+                'text': 'JALAN BAHAR'
             },
             {
-                "text": "JLN BOON LAY",
-                "font": "narrow"
+                'text': 'JLN BOON LAY'
             },
             {
-                "text": "JURONG WEST CENTRAL 1",
-                "font": "narrow"
+                'text': 'JURONG WEST CENTRAL 1'
             }
         ]
     },
@@ -3323,32 +2794,25 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "JURONG WEST CENTRAL 1",
-                "font": "narrow"
+                'text': 'JURONG WEST CENTRAL 1'
             },
             {
-                "text": "JLN BOON LAY",
-                "font": "narrow"
+                'text': 'JLN BOON LAY'
             },
             {
-                "text": "JALAN BAHAR",
-                "font": "narrow"
+                'text': 'JALAN BAHAR'
             },
             {
-                "text": "OLD CHOA CHU KANG RD",
-                "font": "narrow"
+                'text': 'OLD CHOA CHU KANG RD'
             },
             {
-                "text": "JALAN BAHAR",
-                "font": "narrow"
+                'text': 'JALAN BAHAR'
             },
             {
-                "text": "JLN BOON LAY",
-                "font": "narrow"
+                'text': 'JLN BOON LAY'
             },
             {
-                "text": "JURONG WEST CENTRAL 1",
-                "font": "narrow"
+                'text': 'JURONG WEST CENTRAL 1'
             }
         ]
     },
@@ -3392,19 +2856,19 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "YISHUN AVE 7",
+                'text': 'YISHUN AVE 7',
                 'font': 'narrow'
             },
             {
-                "text": "SEMBAWANG RD",
+                'text': 'SEMBAWANG RD',
                 'font': 'narrow'
             },
             {
-                "text": "YISHUN ST 71",
+                'text': 'YISHUN ST 71',
                 'font': 'narrow'
             },
             {
-                "text": "YISHUN RING RD",
+                'text': 'YISHUN RING RD',
                 'font': 'narrow'
             }
         ]
@@ -3419,27 +2883,27 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "YISHUN AVE 2",
+                'text': 'YISHUN AVE 2',
                 'font': 'narrow'
             },
             {
-                "text": "YISHUN RING RD",
+                'text': 'YISHUN RING RD',
                 'font': 'narrow'
             },
             {
-                "text": "YISHUN ST 41",
+                'text': 'YISHUN ST 41',
                 'font': 'narrow'
             },
             {
-                "text": "YISHUN AVE 1",
+                'text': 'YISHUN AVE 1',
                 'font': 'narrow'
             },
             {
-                "text": "YISHUN AVE 11",
+                'text': 'YISHUN AVE 11',
                 'font': 'narrow'
             },
             {
-                "text": "YISHUN RING RD",
+                'text': 'YISHUN RING RD',
                 'font': 'narrow'
             }
         ]
@@ -3454,19 +2918,19 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "YISHUN AVE 2",
+                'text': 'YISHUN AVE 2',
                 'font': 'narrow'
             },
             {
-                "text": "YISHUN AVE 4",
+                'text': 'YISHUN AVE 4',
                 'font': 'narrow'
             },
             {
-                "text": "YISHUN AVE 1",
+                'text': 'YISHUN AVE 1',
                 'font': 'narrow'
             },
             {
-                "text": "YISHUN RING RD",
+                'text': 'YISHUN RING RD',
                 'font': 'narrow'
             }
         ]
@@ -3481,24 +2945,20 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "YISHUN AVE 9,6&7",
-                "font": "tall"
+                'text': 'YISHUN AVE 9,6&7',
+                'font': 'tall'
             },
             {
-                "text": "SEMBAWANG RD",
-                "font": "narrow"
+                'text': 'SEMBAWANG RD'
             },
             {
-                "text": "YISHUN AVE 5&2",
-                "font": "narrow"
+                'text': 'YISHUN AVE 5&2'
             },
             {
-                "text": "YISHUN RING RD",
-                "font": "narrow"
+                'text': 'YISHUN RING RD'
             },
             {
-                "text": "YISHUN AVE 2",
-                "font": "narrow"
+                'text': 'YISHUN AVE 2'
             }
         ]
     },
@@ -3512,16 +2972,13 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "EU TONG SEN ST",
-                "font": "narrow"
+                'text': 'EU TONG SEN ST'
             },
             {
-                "text": "C'WEALTH AVE WEST",
-                "font": "narrow"
+                'text': 'C'WEALTH AVE WEST'
             },
             {
-                "text": "CLEMENTI AVE 4",
-                "font": "narrow"
+                'text': 'CLEMENTI AVE 4'
             }
         ]
     },
@@ -3535,16 +2992,13 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "CLEMENTI AVE 4",
-                "font": "narrow"
+                'text': 'CLEMENTI AVE 4'
             },
             {
-                "text": "C'WEALTH AVE WEST",
-                "font": "narrow"
+                'text': 'C'WEALTH AVE WEST'
             },
             {
-                "text": "NEW BRIDGE RD",
-                "font": "narrow"
+                'text': 'NEW BRIDGE RD'
             }
         ]
     },
@@ -3570,24 +3024,19 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "YISHUN RING RD",
-                "font": "narrow"
+                'text': 'YISHUN RING RD'
             },
             {
-                "text": "YISHUN AVE 3",
-                "font": "narrow"
+                'text': 'YISHUN AVE 3'
             },
             {
-                "text": "SEMBAWANG RD",
-                "font": "narrow"
+                'text': 'SEMBAWANG RD'
             },
             {
-                "text": "UPPER THOMSON RD",
-                "font": "narrow"
+                'text': 'UPPER THOMSON RD'
             },
             {
-                "text": "ANG MO KIO AVE 5",
-                "font": "narrow"
+                'text': 'ANG MO KIO AVE 5'
             }
         ]
     },
@@ -3602,24 +3051,19 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             {
-                "text": "ANG MO KIO AVE 5",
-                "font": "narrow"
+                'text': 'ANG MO KIO AVE 5'
             },
             {
-                "text": "UPPER THOMSON RD",
-                "font": "narrow"
+                'text': 'UPPER THOMSON RD'
             },
             {
-                "text": "SEMBAWANG RD",
-                "font": "narrow"
+                'text': 'SEMBAWANG RD'
             },
             {
-                "text": "YISHUN AVE 3",
-                "font": "narrow"
+                'text': 'YISHUN AVE 3'
             },
             {
-                "text": "YISHUN RING RD",
-                "font": "narrow"
+                'text': 'YISHUN RING RD'
             }
         ]
     }
