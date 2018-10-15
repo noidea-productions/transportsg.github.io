@@ -249,6 +249,86 @@ EDSDataSet['TTSG'] = {
             }
         ]
     },
+    781: {// Incomplete
+        renderType: 'standardService',
+        serviceNumber: '78',
+        destination: {
+            text: 'CLEMENTI MRT',
+            font: 'fat'
+        },
+        scrolls: [
+            {
+                text: ['Welcome Aboard', 'Tower Transit!'],
+                yPosTop: 9,
+                yPosBelow: 0,
+                font: ['tts-message-fat', 'tts-message'],
+                extraMsg: true,
+                image: 'logo'
+            },
+            {
+                text: 'CLEMENTI MRT',
+                font: 'fat',
+                yPosTop: 0,
+                yPosBelow: 3,
+                extraMsg: true,
+                image: 'blank'
+            },
+            {
+                "text": "PENJURU RD",
+                "font": "narrow"
+            },
+            {
+                "text": "TANJONG PENJURU",
+                "font": "narrow"
+            },
+        ]
+    },
+    971: {
+        renderType: 'standardService',
+        serviceNumber: '97',
+        destination: {
+            text: 'MARINE CENTRE',
+            font: 'fat'
+        },
+        scrolls: [
+            {
+                text: ['Welcome Aboard', 'Tower Transit!'],
+                yPosTop: 9,
+                yPosBelow: 0,
+                font: 'tts-message',
+                extraMsg: true,
+                image: 'logo'
+            },
+            {
+                text: 'MARINE CENTRE',
+                font: 'fat',
+                yPosTop: 0,
+                yPosBelow: 3,
+                extraMsg: true,
+                image: 'mrt'
+            },
+            {
+                text: 'A.Y.E.',
+                font: 'narrow'
+            },
+            {
+                text: 'HARBOURFRONT',
+                font: 'narrow'
+            },
+            {
+                text: 'ROBINSON RD',
+                font: 'narrow'
+            },
+            {
+                text: 'BAYFRONT AVE / MBS',
+                font: 'narrow'
+            },
+            {
+                text: 'SUNTEC CITY',
+                font: 'narrow'
+            },
+        ]
+    },
     1061: {
         renderType: 'standardService',
         serviceNumber: '106',
@@ -607,6 +687,42 @@ EDSDataSet['TTSG'] = {
             }
         ]
     },
+    3331: {
+        renderType: 'standardService',
+        serviceNumber: '333',
+        destination: {
+            text: 'JURONG EAST',
+            font: 'fat'
+        },
+        scrolls: [
+            {
+                text: ['Welcome Aboard', 'Tower Transit!'],
+                yPosTop: 9,
+                yPosBelow: 0,
+                font: 'tts-message',
+                extraMsg: true,
+                image: 'logo'
+            },
+            {
+                text: 'JURONG EAST',
+                font: 'fat',
+                yPosTop: 0,
+                yPosBelow: 3,
+                extraMsg: true,
+                image: 'mrt'
+            },
+            {
+                text: 'TOH GUAN RD',
+                font: 'narrow'
+            },
+            {
+                text: 'JURONG EAST AVE 1',
+                font: 'narrow'
+            },
+            {
+                text: 'JURONG EAST ST 32',
+                font: 'narrow'
+            },
     5555: {
         renderType: 'full',
         text: 'Training Bus'

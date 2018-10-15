@@ -1092,6 +1092,88 @@ EDSDataSet['SBST'] = {
             }
         ]
     },
+    881: {
+        renderType: 'standardService',
+        serviceNumber: '88',
+        serviceFont: 'full',
+        destination: {
+            text: 'TOA PAYOH INT',
+            font: 'thin2'
+        },
+        scrolls: [
+            {
+                "text": "PASIR RIS DR 3",
+                "font": "narrow"
+            },
+            {
+                "text": "PUNGGOL RD",
+                "font": "narrow"
+            },
+            {
+                "text": "HOUGANG AVE 8",
+                "font": "narrow"
+            },
+            {
+                "text": "ANG MO KIO AVE 5",
+                "font": "narrow"
+            },
+            {
+                "text": "ANG MO KIO AVE 3",
+                "font": "narrow"
+            },
+            {
+                "text": "BISHAN ST 22",
+                "font": "narrow"
+            },
+            {
+                "text": "LOR 4 TOA PAYOH",
+                "font": "narrow"
+            },
+        ]
+    },
+    882: {
+        renderType: 'standardService',
+        serviceNumber: '88',
+        serviceFont: 'full',
+        destination: {
+            text: 'PASIR RIS INT',
+            font: 'thin2'
+        },
+        scrolls: [
+            {
+                "text": "",
+                "font": "narrow"
+            },
+            {
+                "text": "",
+                "font": "narrow"
+            },
+            {
+                "text": "",
+                "font": "narrow"
+            },
+            {
+                "text": "",
+                "font": "narrow"
+            },
+            {
+                "text": "",
+                "font": "narrow"
+            },
+            {
+                "text": "",
+                "font": "narrow"
+            },
+            {
+                "text": "",
+                "font": "narrow"
+            },
+            {
+                "text": "",
+                "font": "narrow"
+            },
+        ]
+    },
     898: {
         renderType: 'expSvc',
         serviceNumber: '89e',
@@ -1476,6 +1558,49 @@ EDSDataSet['SBST'] = {
     1111: {
         renderType: 'full',
         text: 'OFF SERVICE'
+    },
+    1112: {
+        renderType: 'int-loopSvc',
+        serviceNumber: '111',
+        serviceFont: 'full',
+        destination: {
+            text: 'GHIM MOH TER-MARINE CTR',
+            font: 'tall'
+        },
+        scrolls: [
+            {
+                "text": "COMMONWEALTH AVE",
+                "font": "narrow"
+            },
+            {
+                "text": "TANGLIN RD",
+                "font": "narrow"
+            },
+            {
+                "text": "ORCHARD RD",
+                "font": "narrow"
+            },
+            {
+                "text": "BRAS BASAH RD",
+                "font": "narrow"
+            },
+            {
+                "text": "STAMFORD RD",
+                "font": "narrow"
+            },
+            {
+                "text": "OCHARD BOULEVARD",
+                "font": "narrow"
+            },
+            {
+                "text": "TANGLIN RD",
+                "font": "narrow"
+            },
+            {
+                "text": "COMMONWEALTH AVE",
+                "font": "narrow"
+            },
+        ]
     },
     1161: {
         renderType: 'int-loopSvc',
@@ -2123,45 +2248,6 @@ EDSDataSet['SBST'] = {
         serviceNumber: '157',
         serviceFont: 'full',
         destination: {
-            text: 'TOA PAYOH INT',
-            font: 'thin2'
-        },
-        scrolls: [
-            {
-                "text": "JURONG WEST AVE 1",
-                "font": "narrow"
-            },
-            {
-                "text": "JURONG EAST AVE 1",
-                "font": "narrow"
-            },
-            {
-                "text": "BUKIT BATOK EAST AVE 3",
-                "font": "narrow"
-            },
-            {
-                "text": "JALAN JURONG KECHIL",
-                "font": "narrow"
-            },
-            {
-                "text": "DUNEARN RD",
-                "font": "narrow"
-            },
-            {
-                "text": "LORNIE RD",
-                "font": "narrow"
-            },
-            {
-                "text": "BRADDELL RD",
-                "font": "narrow"
-            }
-        ]
-    },
-    1572: {
-        renderType: 'standardService',
-        serviceNumber: '157',
-        serviceFont: 'full',
-        destination: {
             text: 'BOON LAY INT',
             font: 'thin2'
         },
@@ -2192,6 +2278,45 @@ EDSDataSet['SBST'] = {
             },
             {
                 "text": "JURONG WEST AVE 3",
+                "font": "narrow"
+            }
+        ]
+    },
+    1572: {
+        renderType: 'standardService',
+        serviceNumber: '157',
+        serviceFont: 'full',
+        destination: {
+            text: 'TOA PAYOH INT',
+            font: 'thin2'
+        },
+        scrolls: [
+            {
+                "text": "JURONG WEST AVE 1",
+                "font": "narrow"
+            },
+            {
+                "text": "JURONG EAST AVE 1",
+                "font": "narrow"
+            },
+            {
+                "text": "BUKIT BATOK EAST AVE 3",
+                "font": "narrow"
+            },
+            {
+                "text": "JALAN JURONG KECHIL",
+                "font": "narrow"
+            },
+            {
+                "text": "DUNEARN RD",
+                "font": "narrow"
+            },
+            {
+                "text": "LORNIE RD",
+                "font": "narrow"
+            },
+            {
+                "text": "BRADDELL RD",
                 "font": "narrow"
             }
         ]
@@ -2300,8 +2425,8 @@ EDSDataSet['SBST'] = {
                 "font": "narrow"
             }
         ]
-    },
-     1622: {
+      },
+      1622: {
         renderType: 'standardService',
         serviceNumber: '162',
         serviceFont: 'full',
