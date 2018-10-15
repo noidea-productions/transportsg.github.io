@@ -723,6 +723,8 @@ EDSDataSet['TTSG'] = {
                 text: 'JURONG EAST ST 32',
                 font: 'narrow'
             },
+        ]
+    },
     5555: {
         renderType: 'full',
         text: 'Training Bus'
