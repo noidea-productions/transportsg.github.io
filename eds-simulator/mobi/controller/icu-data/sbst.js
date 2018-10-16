@@ -447,7 +447,8 @@ EDSDataSet['SBST'] = {
         renderType: "int-loopSvc",
         serviceNumber: "71",
         destination: {
-            text: "YCK INT-BISHAN ST 11"
+            text: "YCK INT-BISHAN ST 11",
+            "font": "tall"
         },
         scrolls: [
             "ANG MO KIO AVE 4",
@@ -1167,7 +1168,8 @@ EDSDataSet['SBST'] = {
         renderType: "int-loopSvc",
         serviceNumber: "162M",
         destination: {
-            text: "YCK INT-MARINA CTR"
+            text: "YCK INT-MARINA CTR",
+            "font": "tall"
         },
         scrolls: [
             "ANG MO KIO AVE 6",
