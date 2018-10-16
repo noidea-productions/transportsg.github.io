@@ -229,7 +229,7 @@ EDSDataSet['TTSG'] = {
                 yPosTop: 0,
                 yPosBelow: 3,
                 extraMsg: true,
-                image: 'blank'
+                image: 'mrt'
             },
             {
                 "text": "TOH TUCK RD",
@@ -271,7 +271,7 @@ EDSDataSet['TTSG'] = {
                 yPosTop: 0,
                 yPosBelow: 3,
                 extraMsg: true,
-                image: 'blank'
+                image: 'mrt'
             },
             {
                 "text": "PENJURU RD",
@@ -287,7 +287,7 @@ EDSDataSet['TTSG'] = {
         renderType: 'standardService',
         serviceNumber: '97',
         destination: {
-            text: 'MARINE CENTRE',
+            text: 'MARINA CENTRE',
             font: 'fat'
         },
         scrolls: [
@@ -295,12 +295,12 @@ EDSDataSet['TTSG'] = {
                 text: ['Welcome Aboard', 'Tower Transit!'],
                 yPosTop: 9,
                 yPosBelow: 0,
-                font: 'tts-message',
+                font: ['tts-message-fat', 'tts-message'],
                 extraMsg: true,
                 image: 'logo'
             },
             {
-                text: 'MARINE CENTRE',
+                text: 'MARINA CENTRE',
                 font: 'fat',
                 yPosTop: 0,
                 yPosBelow: 3,
@@ -397,7 +397,7 @@ EDSDataSet['TTSG'] = {
                 yPosTop: 0,
                 yPosBelow: 3,
                 extraMsg: true,
-                image: 'f1'
+                image: 'mrt'
             },
             {
                 text: 'C\'WEALTH RD WEST',

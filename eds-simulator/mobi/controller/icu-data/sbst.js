@@ -763,7 +763,7 @@ EDSDataSet['SBST'] = {
         renderType: "int-loopSvc",
         serviceNumber: "111",
         destination: {
-            text: "GHIM MOH TER-MARINE CTR",
+            text: "GHIM MOH TER-MARINA CTR",
             "font": "tall"
         },
         scrolls: [
@@ -963,7 +963,7 @@ EDSDataSet['SBST'] = {
             "SERANGOON AVE 2",
             "UPP ALJUNIED RD",
             "TANJONG KATONG RD",
-            "MARINE PARADE RD"
+            "MARINA PARADE RD"
         ]
     },
     "1352": {
@@ -973,7 +973,7 @@ EDSDataSet['SBST'] = {
             text: "ANG MO KIO INT"
         },
         scrolls: [
-            "MARINE PARADE RD",
+            "MARINA PARADE RD",
             "TANJONG KATONG RD",
             "UPP ALJUNIED RD",
             "SERANGOON AVE 2",
