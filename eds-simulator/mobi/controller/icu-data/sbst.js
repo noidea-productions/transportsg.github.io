@@ -953,6 +953,21 @@ EDSDataSet['SBST'] = {
             "TAMPINES AVE 1"
         ]
     },
+    "1312": {
+        renderType: "standardService",
+        serviceNumber: "131",
+        destination: {
+            text: "ST MICHAEL'S TER"
+        },
+        scrolls: [
+            "BUKIT PURMEI AVE",
+            "TELOK BLANGAH RD",
+            "CECIL ST",
+            "STAMFORD RD",
+            "THOMSON RD",
+            "BALESTIER RD"
+        ]
+    },
     "1351": {
         renderType: "standardService",
         serviceNumber: "135",
@@ -1279,6 +1294,66 @@ EDSDataSet['SBST'] = {
             "BEDOK NORTH AVE 3"
         ]
     },
+    "1701": {
+        renderType: "standardService",
+        serviceNumber: "170",
+        destination: {
+            text: "LARKIN TER"
+        },
+        scrolls: [
+            "BUKIT TIMAH RD",
+            "UPPER BUKIT TIMAH RD",
+            "WOODLANDS RD",
+            "WOODLANDS CTR RD"
+        ]
+    },
+    "1702": {
+        renderType: "standardService",
+        serviceNumber: "170",
+        destination: {
+            text: "QUEEN ST TER"
+        },
+        scrolls: [
+            "WOODLANDS CTR RD",
+            "WOODLANDS RD",
+            "UPP BUKIT TIMAH RD",
+            "DUNEARN RD"
+        ]
+    },
+    // "1703": {
+    //     renderType: "standardService",
+    //     serviceNumber: "170A",
+    //     destination: {
+    //         text: "LARKIN TER"
+    //     },
+    //     scrolls: [
+    //         ""
+    //     ]
+    // },
+    "1704": {
+        renderType: "standardService",
+        serviceNumber: "170X",
+        destination: {
+            text: "JB SENTRAL"
+        },
+        scrolls: [
+            "WOODLANDS RD",
+            "WOODLANDS CROSSING",
+            "JB SENTRAL"
+        ]
+    },
+    "1705": {
+        renderType: "standardService",
+        serviceNumber: "170X",
+        destination: {
+            text: "KRANJI STN"
+        },
+        scrolls: [
+            "WOODLANDS RD",
+            "WOODLANDS CROSSING",
+            "JB SENTRAL"
+        ]
+    },
     "1741": {
         renderType: "standardService",
         serviceNumber: "174",
@@ -1287,7 +1362,7 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             "JURONG ROAD",
-            "BT BATOK EAST AVE 3&6",
+            "BUKIT BATOK E. AVE 3&6",
             "JALAN JURONG KECHIL",
             "DUNEARN RD",
             "FARRER RD",
@@ -1309,7 +1384,7 @@ EDSDataSet['SBST'] = {
             "FARRER RD",
             "BUKIT TIMAH RD",
             "JALAN JURONG KECHIL",
-            "BT BATOK EAST AVE 6&3"
+            "BUKIT BATOK E. AVE 6&3"
         ]
     },
     "1748": {
@@ -1456,6 +1531,123 @@ EDSDataSet['SBST'] = {
             "TUAS STH AVE 10"
         ]
     },
+    "2491": {
+        renderType: "standardService",
+        serviceNumber: "249",
+        destination: {
+            text: "BOON LAY INT"
+        },
+        scrolls: [
+            "JALAN BOON LAY",
+            "JURONG PIER RD",
+            "TANJONG KLING RD",
+            "SHIPYARD RD",
+            "JALAN SAMULUN",
+            "SHIPYARD RD",
+            "TANJONG KLING RD",
+            "JALAN BOON LAY"
+        ]
+    },
+    "2511": {
+        renderType: "int-loopSvc",
+        serviceNumber: "251",
+        destination: {
+            text: "BOON LAY INT-SHIPYARD RD",
+            "font": "tall"
+        },
+        scrolls: [
+            "BOON LAY WAY",
+            "PIONEER RD NTH",
+            "SHIPYARD RD",
+            "PIONEER RD NTH",
+            "BOON LAY WAY"
+        ]
+    },
+    "2521": {
+        renderType: "standardService",
+        serviceNumber: "252",
+        destination: {
+            text: "BOON LAY INT"
+        },
+        scrolls: [
+            "ENTERPRISE RD",
+            "INTERNATIONAL RD",
+            "JOO KOON CIRCLE"
+        ]
+    },
+    "2531": {
+        renderType: "int-loopSvc",
+        serviceNumber: "253",
+        destination: {
+            text: "JOO KOON INT-BENOI RD",
+            "font": "tall"
+        },
+        scrolls: [
+            "BENOI RD",
+            "BENOI SECTOR",
+            "PIONEER RD",
+            "BENOI RD",
+            "PIONEER RD"
+        ]
+    },
+    "2541": {
+        renderType: "int-loopSvc",
+        serviceNumber: "254",
+        destination: {
+            text: "JOO KOON INT-TUAS AVE 11",
+            "font": "tall"
+        },
+        scrolls: [
+            "BENOI RD",
+            "PIONEER RD",
+            "TUAS RD",
+            "TUAS BASIN LINK"
+        ]
+    },
+    "2551": {
+        renderType: "int-loopSvc",
+        serviceNumber: "255",
+        destination: {
+            text: "JOO KOON INT-GUL CRES",
+            "font": "tall"
+        },
+        scrolls: [
+            "GUL CIRCLE",
+            "GUL CRES",
+            "GUL AVE"
+        ]
+    },
+    "2561": {
+        renderType: "int-loopSvc",
+        serviceNumber: "256",
+        destination: {
+            text: "BOON LAY INT-JOO KOON",
+            "font": "tall"
+        },
+        scrolls: [
+            "JURONG WEST ST 62",
+            "PIONEER RD NTH",
+            "JALAN AHMAD IBRAHIM",
+            "JOO KOON CIRCLE",
+            "JALAN AHMARD IBRAHIM",
+            "PIONEER RD NTH",
+            "JURONG WEST ST 62"
+        ]
+    },
+    "2571": {
+        renderType: "int-loopSvc",
+        serviceNumber: "257",
+        destination: {
+            text: "JOO KOON INT-PIONEER SEC 2",
+            "font": "tall"
+        },
+        scrolls: [
+            "BENOI RD",
+            "GUL RD",
+            "PIONEER SECTOR 2",
+            "PIONEER SECTOR 1"
+        ]
+    },
     "2581": {
         renderType: "int-loopSvc",
         serviceNumber: "258",
@@ -1525,6 +1717,88 @@ EDSDataSet['SBST'] = {
             "JALAN BUKIT MERAH"
         ]
     },
+    "2911": {
+        renderType: "standardService",
+        serviceNumber: "291",
+        destination: {
+            text: "TAMPINES ST 83&33"
+        },
+        scrolls: [
+            'TAMPINES AVE 5',
+            'TAMPINES ST 83',
+            'TAMPINES ST 81',
+            'TAMPINES ST 21',
+            'TAMPINES ST 32',
+            'TAMPINES ST 21'
+        ]
+    },
+    "2921": {
+        renderType: "standardService",
+        serviceNumber: "292",
+        destination: {
+            text: "TAMPINES INT"
+        },
+        scrolls: [
+            'TAMPINES AVE 5',
+            'TAMPINES AVE 2',
+            'TAMPINES ST 22',
+            'TAMPINES AVE 2',
+            'TAMPINES ST 11',
+        ]
+    },
+    "2931": {
+        renderType: "standardService",
+        serviceNumber: "293",
+        destination: {
+            text: "TAMPINES ST 71&AVE 7"
+        },
+        scrolls: [
+            'TAMPINES ST 45&42',
+            'TAMPINES AVE 4&3',
+            'TAMPINES AVE 8&9'
+        ]
+    },
+    "3711": {
+        renderType: "standardService",
+        serviceNumber: "371",
+        destination: {
+            text: "SENGKANG INT"
+        },
+        scrolls: [
+            'COMPASSVALE RD',
+            'RIVERVALE DR',
+            'RIVERVALE CRES',
+            'COMPASSVALE ST'
+        ]
+    },
+    "3741": {
+        renderType: "standardService",
+        serviceNumber: "374",
+        destination: {
+            text: "COMPASSVALE INT"
+        },
+        scrolls: [
+            'SENGKANG EAST WAY',
+            'ANCHORVALE CRES',
+            'COMPASSVALE RD',
+            'SENGKANG EAST WAY',
+            'FERNVALE RD'
+        ]
+    },
+    "3861": {
+        renderType: "standardService",
+        serviceNumber: "386",
+        destination: {
+            text: "PUNGGOL INT"
+        },
+        scrolls: [
+            'PUNGGOL CENTRAL',
+            'EDGEVALE PLAINS',
+            'PUNGGOL EAST',
+            'EDGEVALE PLAINS',
+            'PUNGGOL CENTRAL'
+        ]
+    },
     "3333": {
         renderType: "full",
         text: "FREE SHUTTLE"
@@ -1538,11 +1812,11 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             "JURONG WEST CENTRAL 1",
-            "JLN BOON LAY",
+            "JALAN BOON LAY",
             "JALAN BAHAR",
             "OLD CHOA CHU KANG RD",
             "JALAN BAHAR",
-            "JLN BOON LAY",
+            "JALAN BOON LAY",
             "JURONG WEST CENTRAL 1"
         ]
     },
@@ -1555,11 +1829,11 @@ EDSDataSet['SBST'] = {
         },
         scrolls: [
             "JURONG WEST CENTRAL 1",
-            "JLN BOON LAY",
+            "JALAN BOON LAY",
             "JALAN BAHAR",
             "OLD CHOA CHU KANG RD",
             "JALAN BAHAR",
-            "JLN BOON LAY",
+            "JALAN BOON LAY",
             "JURONG WEST CENTRAL 1"
         ]
     },

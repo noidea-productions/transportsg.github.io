@@ -1186,7 +1186,7 @@ EDSDataSet['SMRT'] = {
                 showDest: false
             },
             {
-                text: 'CLEMENTI RD',
+                text: 'CLEMENTI ROAD',
                 font: 'thick'
             },
             {
@@ -1194,7 +1194,7 @@ EDSDataSet['SMRT'] = {
                 font: 'thin'
             },
             {
-                text: 'CASHEW RD',
+                text: 'CASHEW ROAD',
                 font: 'thick'
             },
             {
