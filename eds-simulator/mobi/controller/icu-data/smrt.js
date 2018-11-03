@@ -598,6 +598,42 @@ EDSDataSet['SMRT'] = {
             },
         ]
     },
+    451: {
+        renderType: 'standardService',
+        serviceNumber: '925',
+        serviceFont: 'full',
+        destination: {
+            text: 'CHOA CHU KANG',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['CHOA CHU KANG', 'INT / MRT / LRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'WOODLANDS AVE 3',
+                font: 'thin'
+            },
+            {
+                text: 'KRANJI RD, WAY',
+                font: 'thin'
+            },
+            {
+                text: 'SUNGEI KADUT ST 1',
+                font: 'thin'
+            },
+            {
+                text: 'WOODLANDS RD',
+                font: 'thin'
+            },
+            {
+                text: 'KRANJI EXP WAY',
+                font: 'thin'
+            },
+        ]
+    },
     460: {
         renderType: 'standardService',
         serviceNumber: '961',
@@ -1131,6 +1167,42 @@ EDSDataSet['SMRT'] = {
             },
             {
                 text: 'TELOK BLANGAH ROAD',
+                font: 'thin'
+            },
+        ]
+    },
+    591: {
+        renderType: 'standardService',
+        serviceNumber: '178',
+        serviceFont: 'full',
+        destination: {
+            text: 'BOON LAY',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['BOON LAY', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'WOODLANDS CENTRE RD',
+                font: 'thin'
+            },
+            {
+                text: 'UPP BT TIMAH',
+                font: 'thin'
+            },
+            {
+                text: 'BUKIT BATOK',
+                font: 'thin'
+            },
+            {
+                text: 'JURONG TOWN HALL',
+                font: 'thin'
+            },
+            {
+                text: 'CORPORATION RD',
                 font: 'thin'
             },
         ]
