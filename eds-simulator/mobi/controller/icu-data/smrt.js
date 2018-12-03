@@ -140,12 +140,12 @@ EDSTemplateSet['SMRT'] = {
         { // Render ENDS AT via DEST
             variables: {
                 destination: '$destination.text',
-                font: '$font',
+                destFont: '$destination.font',
                 endsAt: 'ENDS AT',
                 endsAtExtra: '$destination.road{""}'
             },
-            font: 'thin',
-            format: ['<endsAt,font,9><endsAtExtra,font,9>', '<destination,font,0>'],
+            font: '$font',
+            format: ['<endsAt,font,9><endsAtExtra,font,9>', '<destination,destFont,0>'],
             yPositions: [9, 0],
             spaceWidth: 1,
             align: 'centre-width[0]'
@@ -913,6 +913,110 @@ EDSDataSet['SMRT'] = {
             text: 'BUKIT BATOK SEC SCH',
         },
         font: 'tall'
+    },
+    232: {
+        renderType: 'swt',
+        serviceNumber: '169A',
+        serviceFont: 'full',
+        destination: {
+            text: 'YISHUN INT/MRT'
+        },
+        font: 'thick'
+    },
+    233: {
+        renderType: 'swt',
+        serviceNumber: '965A',
+        serviceFont: 'full',
+        destination: {
+            text: 'YISHUN INT / MRT',
+            font: 'thin'
+        },
+        font: 'thick'
+    },
+    234: {
+        renderType: 'swt',
+        serviceNumber: '858A',
+        serviceFont: 'full',
+        destination: {
+            text: 'YISHUN MRT'
+        },
+        font: 'thick'
+    },
+    235: {
+        renderType: 'swt',
+        serviceNumber: '964A',
+        serviceFont: 'full',
+        destination: {
+            text: 'WOODLANDS LINK',
+            font: 'thin'
+        },
+        font: 'thick'
+    },
+    236: {
+        renderType: 'swt',
+        serviceNumber: '106A',
+        serviceFont: 'full',
+        destination: {
+            text: 'CLEMENTI MRT'
+        },
+        font: 'thick'
+    },
+    237: {
+        renderType: 'swt',
+        serviceNumber: '173A',
+        serviceFont: 'full',
+        destination: {
+            text: 'CLEMENTI INT'
+        },
+        font: 'thick'
+    },
+    238: {
+        renderType: 'swt',
+        serviceNumber: '173K',
+        serviceFont: 'full',
+        destination: {
+            text: 'CANADIAN INT\'L SCHOOL'
+        },
+        font: 'tall'
+    },
+    239: {
+        renderType: 'swt',
+        serviceNumber: '189A',
+        serviceFont: 'full',
+        destination: {
+            text: 'BT BATOK ST 23'
+        },
+        font: 'thick'
+    },
+    242: {
+        renderType: 'swt',
+        serviceNumber: '962A',
+        serviceFont: 'full',
+        destination: {
+            text: 'SEMBAWANG DRIVE',
+            font: 'thin'
+        },
+        font: 'thick'
+    },
+    244: {
+        renderType: 'swt',
+        serviceNumber: '67C',
+        serviceFont: 'full',
+        destination: {
+            road: 'GEYLANG ROAD',
+            text: '(BEFORE CITY PLAZA)'
+        },
+        font: 'tall'
+    },
+    246: {
+        renderType: 'swt',
+        serviceNumber: '985A',
+        serviceFont: 'full',
+        destination: {
+            text: 'JLN JURONG KECHIL',
+            font: 'thin'
+        },
+        font: 'thick'
     },
     272: {
         renderType: 'swt',
