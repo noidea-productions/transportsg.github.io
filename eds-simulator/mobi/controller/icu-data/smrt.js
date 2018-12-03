@@ -1777,7 +1777,7 @@ EDSDataSet['SMRT'] = {
                 font: 'thin'
             },
             {
-                text: 'BT PANAJANG RING RD',
+                text: 'BT PANJANG RING RD',
                 font: 'thin'
             },
             {
@@ -1991,7 +1991,7 @@ EDSDataSet['SMRT'] = {
         },
         font: 'thin'
     },
-    293: { // TODO: Check camberra
+    293: {
         renderType: 'standardService',
         serviceNumber: '883',
         serviceFont: 'full',
@@ -2014,7 +2014,7 @@ EDSDataSet['SMRT'] = {
                 font: 'thin'
             },
             {
-                text: 'CAMBERRA LINK',
+                text: 'CANBERRA LINK',
                 font: 'thin'
             },
             {
@@ -2026,7 +2026,7 @@ EDSDataSet['SMRT'] = {
                 font: 'thin'
             },
             {
-                text: 'CAMBERRA WAY',
+                text: 'CANBERRA WAY',
                 font: 'thin'
             },
             {
@@ -2975,6 +2975,86 @@ EDSDataSet['SMRT'] = {
             },
         ]
     },
+    429: {
+        renderType: 'standardService',
+        serviceNumber: '851',
+        serviceFont: 'full',
+        destination: {
+            text: 'BUKIT MERAH',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: 'BUKIT MERAH INT',
+                font: 'big',
+                showDest: false
+            },
+            {
+                text: 'ANG MO KIO AVE 6',
+                font: 'thin'
+            },
+            {
+                text: 'MARYMOUNT RD',
+                font: 'thick'
+            },
+            {
+                text: 'THOMSON RD',
+                font: 'thick'
+            },
+            {
+                text: 'SUNGEI ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'NEW BRIDGE RD',
+                font: 'thick'
+            },
+            {
+                text: 'TIONG BAHRU RD',
+                font: 'thick'
+            },
+        ]
+    },
+    430: {
+        renderType: 'standardService',
+        serviceNumber: '851',
+        serviceFont: 'full',
+        destination: {
+            text: 'YISHUN ',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: ['YISHUN', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'TIONG BAHRU RD',
+                font: 'thin'
+            },
+            {
+                text: 'EU TONG SEN ST',
+                font: 'thin'
+            },
+            {
+                text: 'ROCHOR RD',
+                font: 'thick'
+            },
+            {
+                text: 'THOMSON RD',
+                font: 'thick'
+            },
+            {
+                text: 'MARYMOUNT RD',
+                font: 'thick'
+            },
+            {
+                text: 'ANG MO KIO AVE 6',
+                font: 'thin'
+            },
+        ]
+    },
     431: {
         renderType: 'standardService',
         serviceNumber: '852',
@@ -3019,6 +3099,378 @@ EDSDataSet['SMRT'] = {
             },
         ]
     },
+    432: {
+        renderType: 'standardService',
+        serviceNumber: '852',
+        serviceFont: 'full',
+        destination: {
+            text: 'YISHUN ',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: ['YISHUN', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'JLN ANAK BUKIT',
+                font: 'thick'
+            },
+            {
+                text: 'DUNEARN ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'LORNIE ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'MARYMOUNT RD',
+                font: 'thick'
+            },
+            {
+                text: 'ANG MO KIO AVE 6',
+                font: 'thin'
+            },
+        ]
+    },
+    433: {
+        renderType: 'standardService',
+        serviceNumber: '853',
+        serviceFont: 'full',
+        destination: {
+            text: 'GEYLANG LOR 1',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['GEYLANG LOR 1/', 'KALLANG MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'ANG MO KIO AVE 6',
+                font: 'thin'
+            },
+            {
+                text: 'ANG MO KIO AVE 1',
+                font: 'thin'
+            },
+            {
+                text: 'UPP SERANGOON RD',
+                font: 'thin'
+            },
+            {
+                text: 'KALLANG BAHRU',
+                font: 'thin'
+            },
+        ]
+    },
+    434: {
+        renderType: 'standardService',
+        serviceNumber: '853',
+        serviceFont: 'full',
+        destination: {
+            text: 'YISHUN ',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: ['YISHUN', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'KALLANG BAHRU',
+                font: 'thin'
+            },
+            {
+                text: 'UPPER SERANGOON RD',
+                font: 'thin'
+            },
+            {
+                text: 'ANG MO KIO AVE 1',
+                font: 'thin'
+            },
+            {
+                text: 'ANG MO KIO AVE 6',
+                font: 'thin'
+            },
+        ]
+    },
+    435: {
+        renderType: 'standardService',
+        serviceNumber: '853',
+        serviceFont: 'full',
+        destination: {
+            text: 'UPP EAST COAST RD',
+            font: 'tall'
+        },
+        scrolls: [
+            {
+                text: ['UPPER', 'EAST COAST RD'],
+                font: 'thin',
+                showDest: false
+            },
+            {
+                text: 'ANG MO KIO AVE 6',
+                font: 'thin'
+            },
+            {
+                text: 'UPP SERANGOON RD',
+                font: 'thin'
+            },
+            {
+                text: 'KALLANG BAHRU',
+                font: 'thin'
+            },
+            {
+                text: 'TANJONG KATONG',
+                font: 'thin'
+            },
+            {
+                text: 'MARINE PARADE RD',
+                font: 'thin'
+            },
+        ]
+    },
+    436: {
+        renderType: 'standardService',
+        serviceNumber: '853',
+        serviceFont: 'full',
+        destination: {
+            text: 'YISHUN ',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: ['YISHUN', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'TANJONG KATONG',
+                font: 'thin'
+            },
+            {
+                text: 'KALLANG BAHRU',
+                font: 'thin'
+            },
+            {
+                text: 'UPP SERANGOON RD',
+                font: 'thin'
+            },
+            {
+                text: 'ANG MO KIO AVE 6',
+                font: 'thin'
+            },
+        ]
+    },
+    437: {
+        renderType: 'standardService',
+        serviceNumber: '854',
+        serviceFont: 'full',
+        destination: {
+            text: 'BEDOK ',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: ['BEDOK', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'YIO CHU KANG RD',
+                font: 'thin'
+            },
+            {
+                text: 'HOUGANG AVE 2',
+                font: 'thick'
+            },
+            {
+                text: 'HOUGANG AVE 3',
+                font: 'thick'
+            },
+            {
+                text: 'JLN EUNOS, MRT',
+                font: 'thick'
+            },
+        ]
+    },
+    438: {
+        renderType: 'standardService',
+        serviceNumber: '854',
+        serviceFont: 'full',
+        destination: {
+            text: 'YISHUN ',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: ['YISHUN', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'JLN EUNOS, MRT',
+                font: 'thick'
+            },
+            {
+                text: 'HOUGANG AVE 3',
+                font: 'thick'
+            },
+            {
+                text: 'HOUGANG AVE 2',
+                font: 'thick'
+            },
+            {
+                text: 'YIO CHU KANG RD',
+                font: 'thin'
+            },
+        ]
+    },
+    440: {
+        renderType: 'standardService',
+        serviceNumber: '855',
+        serviceFont: 'full',
+        destination: {
+            text: 'HARBOURFRONT',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: 'HARBOURFRONT',
+                font: 'big',
+                showDest: false
+            },
+            {
+                text: 'YIO CHU KANG RD',
+                font: 'thin'
+            },
+            {
+                text: 'UPP THOMSON RD',
+                font: 'thin'
+            },
+            {
+                text: 'FARRER ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'JLN BUKIT MERAH',
+                font: 'thin'
+            },
+            {
+                text: 'LOWER DELTA RD',
+                font: 'thin'
+            },
+        ]
+    },
+    441: {
+        renderType: 'standardService',
+        serviceNumber: '855',
+        serviceFont: 'full',
+        destination: {
+            text: 'YISHUN',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['YISHUN', 'INT / MRT'],
+                font: 'big',
+                showDest: false
+            },
+            {
+                text: 'LOWER DELTA RD',
+                font: 'thin'
+            },
+            {
+                text: 'JLN BUKIT MERAH',
+                font: 'thin'
+            },
+            {
+                text: 'FARRER ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'UPP THOMSON ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'YIO CHU KANG RD',
+                font: 'thin'
+            }
+        ]
+    },
+    444: {
+        renderType: 'standardService',
+        serviceNumber: '980',
+        serviceFont: 'full',
+        destination: {
+            text: 'GEYLANG LOR 1',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['GEYLANG LOR 1/', 'KALLANG MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'SEMBAWANG RD',
+                font: 'thin'
+            },
+            {
+                text: 'THOMSON RD',
+                font: 'thin'
+            },
+            {
+                text: 'BENCOOLEN ST',
+                font: 'thin'
+            },
+            {
+                text: 'MIDDLE ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'BEACH ROAD',
+                font: 'thin'
+            },
+        ]
+    },
+    445: {
+        renderType: 'standardService',
+        serviceNumber: '980',
+        serviceFont: 'full',
+        destination: {
+            text: 'SEMBAWANG',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: ['SEMBAWANG', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'BEACH ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'VICTORIA ST',
+                font: 'thick'
+            },
+            {
+                text: 'ROCHOR RD',
+                font: 'thick'
+            },
+            {
+                text: 'THOMSON RD',
+                font: 'thick'
+            },
+        ]
+    },
     451: {
         renderType: 'standardService',
         serviceNumber: '925',
@@ -3038,7 +3490,7 @@ EDSDataSet['SMRT'] = {
                 font: 'thin'
             },
             {
-                text: 'KRANJI RD, WAY',
+                text: 'KRANJI ROAD, WAY',
                 font: 'thin'
             },
             {
@@ -3046,11 +3498,283 @@ EDSDataSet['SMRT'] = {
                 font: 'thin'
             },
             {
-                text: 'WOODLANDS RD',
+                text: 'WOODLANDS ROAD',
                 font: 'thin'
             },
             {
                 text: 'KRANJI EXP WAY',
+                font: 'thin'
+            },
+        ]
+    },
+    452: {
+        renderType: 'standardService',
+        serviceNumber: '925',
+        serviceFont: 'full',
+        destination: {
+            text: 'SUNGEI BULOH',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['SUNGEI BULOH', 'NATURE PARK'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'WOODLANDS AVE 3',
+                font: 'thin'
+            },
+            {
+                text: 'KRANJI RD, LOOP',
+                font: 'thin'
+            },
+            {
+                text: 'KRANJI WAY',
+                font: 'thin'
+            },
+            {
+                text: 'NEW TEO LANE',
+                font: 'thin'
+            },
+        ]
+    },
+    453: {
+        renderType: 'standardService',
+        serviceNumber: '925',
+        serviceFont: 'full',
+        destination: {
+            text: 'WOODLANDS INT',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['WOODLANDS', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'KRANJI EXP WAY',
+                font: 'thin'
+            },
+            {
+                text: 'WOODLANDS RD',
+                font: 'thin'
+            },
+            {
+                text: 'SUNGEI KANDUT ST 1',
+                font: 'thin'
+            },
+            {
+                text: 'KRANJI WAY, RD',
+                font: 'thin'
+            },
+            {
+                text: 'WOODLANDS AVE 3',
+                font: 'thin'
+            },
+        ]
+    },
+    454: {
+        renderType: 'standardService',
+        serviceNumber: '925',
+        serviceFont: 'full',
+        destination: {
+            text: 'WOODLANDS INT',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['WOODLANDS', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'KRANJI WAY, LOOP',
+                font: 'thin'
+            },
+            {
+                text: 'KRANJI ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'WOODLANDS AVE 3',
+                font: 'thin'
+            },
+        ]
+    },
+    455: {
+        renderType: 'standardService',
+        serviceNumber: '926',
+        serviceFont: 'full',
+        destination: {
+            text: 'WOODLANDS INT',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['WOODLANDS', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'MANDAI LAKE RD',
+                font: 'thin'
+            },
+            {
+                text: 'MANDAI ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'WDL CENTRE',
+                font: 'thin'
+            },
+        ]
+    },
+    456: {
+        renderType: 'standardService',
+        serviceNumber: '926',
+        serviceFont: 'full',
+        destination: {
+            text: 'WOODLANDS INT',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['SINGAPORE', 'ZOOLOGICAL GDN'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'WOODLANDS CENTRE',
+                font: 'thin'
+            },
+            {
+                text: 'MANDAI ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'MANDAI LAKE RD',
+                font: 'thin'
+            },
+        ]
+    },
+    457: {
+        renderType: 'standardService',
+        serviceNumber: '925',
+        serviceFont: 'full',
+        destination: {
+            text: 'LIM CHU KANG',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: 'LIM CHU KANG',
+                font: 'big',
+                showDest: false
+            },
+            {
+                text: 'WOODLANDS AVE 3',
+                font: 'thin'
+            },
+            {
+                text: 'KRANJI, LOOP',
+                font: 'thin'
+            },
+            {
+                text: 'SUNGEI BULOH',
+                font: 'thin'
+            },
+            {
+                text: 'NEO TIEW ROAD',
+                font: 'thin'
+            },
+        ]
+    },
+    458: {
+        renderType: 'standardService',
+        serviceNumber: '960',
+        serviceFont: 'full',
+        destination: {
+            text: 'MARINA CENTRE',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['MARINA', 'CENTRE'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'WOODLANDS RD',
+                font: 'thin'
+            },
+            {
+                text: 'BT PANJANG RD',
+                font: 'thin'
+            },
+            {
+                text: 'BKE / PIE',
+                font: 'thin'
+            },
+            {
+                text: 'WHITLEY RD',
+                font: 'thin'
+            },
+            {
+                text: 'BUKIT TIMAH RD',
+                font: 'thin'
+            },
+            {
+                text: 'VICTORIA ST',
+                font: 'thin'
+            },
+            {
+                text: 'BRAS BASAH RD',
+                font: 'thin'
+            },
+        ]
+    },
+    459: {
+        renderType: 'standardService',
+        serviceNumber: '960',
+        serviceFont: 'full',
+        destination: {
+            text: 'WOODLANDS INT',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['WOODLANDS', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'VICTORIA ST',
+                font: 'thin'
+            },
+            {
+                text: 'ROCHOR RD',
+                font: 'thin'
+            },
+            {
+                text: 'BUKIT TIMAH RD',
+                font: 'thin'
+            },
+            {
+                text: 'WHITLEY RD',
+                font: 'thin'
+            },
+            {
+                text: 'PIE / BKE',
+                font: 'thin'
+            },
+            {
+                text: 'BT PANJANG RD/LRT',
+                font: 'thin'
+            },
+            {
+                text: 'WOODLANDS RD',
                 font: 'thin'
             },
         ]
@@ -3074,7 +3798,7 @@ EDSDataSet['SMRT'] = {
                 font: 'thin'
             },
             {
-                text: 'UPP BUKIT TIMAH RD',
+                text: 'UPP BT TIMAH RD',
                 font: 'thin'
             },
             {
@@ -3082,7 +3806,7 @@ EDSDataSet['SMRT'] = {
                 font: 'thin'
             },
             {
-                text: 'BUKIT MERAH',
+                text: 'JLN BUKIT MERAH',
                 font: 'thin'
             },
             {
@@ -3090,7 +3814,7 @@ EDSDataSet['SMRT'] = {
                 font: 'thin'
             },
             {
-                text: 'BEACH RD',
+                text: 'BEACH ROAD',
                 font: 'thin'
             },
             {
@@ -3114,13 +3838,33 @@ EDSDataSet['SMRT'] = {
                 showDest: false
             },
             {
-                text: 'WOODLANDS AVE 3',
+                text: 'KALLANG BAHRU',
                 font: 'thin'
-            }, //?
+            },
+            {
+                text: 'BEACH ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'CHINATOWN',
+                font: 'thin'
+            },
+            {
+                text: 'JLN BUKIT MERAH',
+                font: 'thin'
+            },
             {
                 text: 'QUEENSWAY',
                 font: 'thin'
-            }
+            },
+            {
+                text: 'UPP BT TIMAH RD',
+                font: 'thin'
+            },
+            {
+                text: 'WOODLANDS AVE 3',
+                font: 'thin'
+            },
         ]
     },
     466: {
