@@ -2175,6 +2175,214 @@ EDSDataSet['SMRT'] = {
             },
         ]
     },
+    373: {
+        renderType: 'twoline',
+        text: 'SHUTTLE 10 ANG MO KIO - WOODLANDS',
+        topFont: 'thick',
+        bottomFont: 'thin',
+        top: 'SHUTTLE 10',
+        bottom: 'ANG MO KIO - WOODLANDS'
+    },
+    374: {
+        renderType: 'twoline',
+        text: 'SHUTTLE 10 WOODLANDS - ANG MO KIO',
+        topFont: 'thick',
+        bottomFont: 'thin',
+        top: 'SHUTTLE 10',
+        bottom: 'WOODLANDS - ANG MO KIO'
+    },
+    375: {
+        renderType: 'twoline',
+        text: 'EXPRESS 17 WOODLANDS-BUKIT PANJANG',
+        topFont: 'thick',
+        bottomFont: 'thin',
+        top: 'EXPRESS 17',
+        bottom: 'WOODLANDS-BUKIT PANJANG'
+    },
+    376: {
+        renderType: 'twoline',
+        text: 'EXPRESS 17 BUKIT PANJANG-WOODLANDS',
+        topFont: 'thick',
+        bottomFont: 'thin',
+        top: 'EXPRESS 17',
+        bottom: 'BUKIT PANJANG-WOODLANDS'
+    },
+    377: {
+        renderType: 'twoline',
+        text: 'SHUTTLE 9 YISHUN - NEWTON',
+        topFont: 'thick',
+        bottomFont: 'thick',
+        top: 'SHUTTLE 9',
+        bottom: 'YISHUN - NEWTON'
+    },
+    378: {
+        renderType: 'twoline',
+        text: 'SHUTTLE 9 NEWTON - YISHUN',
+        topFont: 'thick',
+        bottomFont: 'thick',
+        top: 'SHUTTLE 9',
+        bottom: 'NEWTON - YISHUN'
+    },
+    379: {
+        renderType: 'twoline',
+        text: 'EXPRESS 15 CLEMENTI - BEAUTY WORLD',
+        topFont: 'thick',
+        bottomFont: 'thin',
+        top: 'EXPRESS 15',
+        bottom: 'CLEMENTI - BEAUTY WORLD'
+    },
+    380: {
+        renderType: 'twoline',
+        text: 'EXPRESS 15 BEAUTY WORLD - CLEMENTI',
+        topFont: 'thick',
+        bottomFont: 'thin',
+        top: 'EXPRESS 15',
+        bottom: 'BEAUTY WORLD - CLEMENTI'
+    },
+    381: {
+        renderType: 'twoline',
+        text: 'SHUTTLE 2 JOO KOON - JURONG EAST',
+        topFont: 'thick',
+        bottomFont: 'thin',
+        top: 'SHUTTLE 2',
+        bottom: 'JOO KOON - JURONG EAST'
+    },
+    382: {
+        renderType: 'twoline',
+        text: 'SHUTTLE 2 JURONG EAST - JOO KOON',
+        topFont: 'thick',
+        bottomFont: 'thin',
+        top: 'SHUTTLE 2',
+        bottom: 'JURONG EAST - JOO KOON'
+    },
+    383: {
+        renderType: 'twoline',
+        text: 'SHUTTLE 4 CHOA CHU KANG - JURONG EAST',
+        topFont: 'thick',
+        bottomFont: 'tall',
+        top: 'SHUTTLE 4',
+        bottom: 'CHOA CHU KANG - JURONG EAST'
+    },
+    384: {
+        renderType: 'twoline',
+        text: 'SHUTTLE 4 JURONG EAST - CHOA CHU KANG',
+        topFont: 'thick',
+        bottomFont: 'tall',
+        top: 'SHUTTLE 4',
+        bottom: 'JURONG EAST - CHOA CHU KANG'
+    },
+    385: {
+        renderType: 'twoline',
+        text: 'SHUTTLE 7 PAYA LEBAR - PASIR RIS',
+        topFont: 'thick',
+        bottomFont: 'thin',
+        top: 'SHUTTLE 7',
+        bottom: 'PAYA LEBAR - PASIR RIS'
+    },
+    386: {
+        renderType: 'twoline',
+        text: 'SHUTTLE 7 PASIR RIS - PAYA LEBAR',
+        topFont: 'thick',
+        bottomFont: 'thin',
+        top: 'SHUTTLE 7',
+        bottom: 'PASIR RIS - PAYA LEBAR'
+    },
+    387: {
+        renderType: 'twoline',
+        text: 'SHUTTLE 8 TANAH MERAH - CHANGI AIRPORT',
+        topFont: 'thick',
+        bottomFont: 'tall',
+        top: 'SHUTTLE 8',
+        bottom: 'TANAH MERAH - CHANGI AIRPORT'
+    },
+    388: {
+        renderType: 'twoline',
+        text: 'SHUTTLE 8 CHANGI AIRPORT - TANAH MERAH',
+        topFont: 'thick',
+        bottomFont: 'tall',
+        top: 'SHUTTLE 8',
+        bottom: 'CHANGI AIRPORT - TANAH MERAH'
+    },
+    389: {
+        renderType: 'twoline',
+        text: 'SHUTTLE 11 ALJUNIED - MACPHERSON',
+        topFont: 'thick',
+        bottomFont: 'thin',
+        top: 'SHUTTLE 11',
+        bottom: 'ALJUNIED - MACPHERSON'
+    },
+    390: {
+        renderType: 'twoline',
+        text: 'SHUTTLE 11 MACPHERSON - ALJUNIED',
+        topFont: 'thick',
+        bottomFont: 'thin',
+        top: 'SHUTTLE 11',
+        bottom: 'MACPHERSON - ALJUNIED'
+    },
+    391: {
+        renderType: 'twoline',
+        text: 'EXPRESS 12 CHANGI AIRPORT T3 - BUGIS',
+        topFont: 'thick',
+        bottomFont: 'thin',
+        top: 'EXPRESS 12',
+        bottom: 'CHANGI AIRPORT T3 - BUGIS'
+    },
+    392: {
+        renderType: 'twoline',
+        text: 'EXPRESS 12 BUGIS - CHANGI AIRPORT T3',
+        topFont: 'thick',
+        bottomFont: 'thin',
+        top: 'EXPRESS 12',
+        bottom: 'BUGIS - CHANGI AIRPORT T3'
+    },
+    393: {
+        renderType: 'twoline',
+        text: 'SHUTTLE 2 JOO KOON - BUONA VISTA',
+        topFont: 'thick',
+        bottomFont: 'thin',
+        top: 'SHUTTLE 2',
+        bottom: 'JOO KOON - BUONA VISTA'
+    },
+    394: {
+        renderType: 'twoline',
+        text: 'SHUTTLE 2 BUONA VISTA - JOO KOON',
+        topFont: 'thick',
+        bottomFont: 'thin',
+        top: 'SHUTTLE 2',
+        bottom: 'BUONA VISTA - JOO KOON'
+    },
+    395: {
+        renderType: 'twoline',
+        text: 'SHUTTLE 3 JOO KOON - TUAS LINK',
+        topFont: 'thick',
+        bottomFont: 'thick',
+        top: 'SHUTTLE 3',
+        bottom: 'JOO KOON - TUAS LINK'
+    },
+    396: {
+        renderType: 'twoline',
+        text: 'SHUTTLE 3 TUAS LINK - JOO KOON',
+        topFont: 'thick',
+        bottomFont: 'thick',
+        top: 'SHUTTLE 3',
+        bottom: 'TUAS LINK - JOO KOON'
+    },
+    397: {
+        renderType: 'twoline',
+        text: 'SHUTTLE 1 BUONA VISTA - RAFFLES PLACE',
+        topFont: 'thick',
+        bottomFont: 'tall',
+        top: 'SHUTTLE 1',
+        bottom: 'BUONA VISTA - RAFFLES PLACE'
+    },
+    398: {
+        renderType: 'twoline',
+        text: 'SHUTTLE 1 RAFFLES PLACE - BUONA VISTA',
+        topFont: 'thick',
+        bottomFont: 'tall',
+        top: 'SHUTTLE 1',
+        bottom: 'RAFFLES PLACE - BUONA VISTA'
+    },
     410: {
         renderType: 'standardService',
         serviceNumber: '176',
