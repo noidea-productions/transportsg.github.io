@@ -258,9 +258,465 @@ EDSDataSet['SMRT'] = {
         renderType: 'full',
         text: 'LRT SHUTTLE B'
     },
+    21: {
+        renderType: "full",
+        text: "WT 1"
+    },
+    22: {
+        renderType: "full",
+        text: "WT 2"
+    },
+    23: {
+        renderType: "full",
+        text: "WT 3"
+    },
+    24: {
+        renderType: "full",
+        text: "WT 4"
+    },
+    25: {
+        renderType: "full",
+        text: "WT 5"
+    },
+    26: {
+        renderType: "full",
+        text: "WT 6"
+    },
+    27: {
+        renderType: "full",
+        text: "WT 7"
+    },
+    28: {
+        renderType: "full",
+        text: "WT 8"
+    },
+    29: {
+        renderType: "full",
+        text: "WT 9"
+    },
+    30: {
+        renderType: "full",
+        text: "WT 10"
+    },
+    31: {
+        renderType: "full",
+        text: "WT 11"
+    },
+    32: {
+        renderType: "full",
+        text: "WT 12"
+    },
+    33: {
+        renderType: "full",
+        text: "WT 13"
+    },
+    34: {
+        renderType: "full",
+        text: "WT 14"
+    },
+    35: {
+        renderType: "full",
+        text: "WT 15"
+    },
+    36: {
+        renderType: "full",
+        text: "WT 16"
+    },
+    37: {
+        renderType: "full",
+        text: "WT 17"
+    },
+    38: {
+        renderType: "full",
+        text: "WT 18"
+    },
+    39: {
+        renderType: "full",
+        text: "WT 19"
+    },
+    40: {
+        renderType: "full",
+        text: "WT 20"
+    },
+    41: {
+        renderType: "full",
+        text: "WT 21"
+    },
+    42: {
+        renderType: 'full',
+        text: 'LRT A'
+    },
+    43: {
+        renderType: 'full',
+        text: 'LRT B'
+    },
+    44: {
+        renderType: "full",
+        text: "WT 22"
+    },
+    45: {
+        renderType: "full",
+        text: "WT 23"
+    },
+    46: {
+        renderType: 'standardService',
+        serviceNumber: 'NR6',
+        serviceFont: 'full',
+        destination: {
+            text: 'RWS',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: ['RESORTS WORLD', 'SENTOSA'],
+                font: 'thick',
+                showDest: false
+            },
+        ]
+    },
+    47: {
+        renderType: 'standardService',
+        serviceNumber: 'NR1',
+        serviceFont: 'full',
+        destination: {
+            text: 'RWS',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: ['RESORTS WORLD', 'SENTOSA'],
+                font: 'thick',
+                showDest: false
+            },
+        ]
+    },
+    48: {
+        renderType: 'standardService',
+        serviceNumber: 'NR1',
+        serviceFont: 'full',
+        destination: {
+            text: 'YISHUN',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: 'YISHUN',
+                font: 'big',
+                showDest: false
+            },
+        ]
+    },
+    49: {
+        renderType: 'standardService',
+        serviceNumber: 'NR6',
+        serviceFont: 'full',
+        destination: {
+            text: 'HARBOURFRONT',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: ['HARBOUR FRONT', 'INTERCHANGE'],
+                font: 'thick',
+                showDest: false
+            },
+        ]
+    },
+    50: {
+        renderType: 'standardService',
+        serviceNumber: 'NR1',
+        serviceFont: 'full',
+        destination: {
+            text: 'HARBOURFRONT',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: ['HARBOUR FRONT', 'INTERCHANGE'],
+                font: 'thick',
+                showDest: false
+            },
+        ]
+    },
+    51: {
+        renderType: 'standardService',
+        serviceNumber: 'NR1',
+        serviceFont: 'full',
+        destination: {
+            text: 'SUNTEC CITY',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: 'SUNTEC CITY',
+                font: 'big',
+                showDest: false
+            },
+        ]
+    },
+    52: {
+        renderType: 'standardService',
+        serviceNumber: 'NR1',
+        serviceFont: 'full',
+        destination: {
+            text: 'YISHUN INT',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: ['YISHUN', 'INTERCHANGE'],
+                font: 'thick',
+                showDest: false
+            },
+        ]
+    },
+    53: {
+        renderType: 'standardService',
+        serviceNumber: 'NR2',
+        serviceFont: 'full',
+        destination: {
+            text: 'MARINA CENTRE',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: 'MARINA CENTRE',
+                font: 'big',
+                showDest: false
+            },
+        ]
+    },
+    54: {
+        renderType: 'standardService',
+        serviceNumber: 'NR2',
+        serviceFont: 'full',
+        destination: {
+            text: 'SEMBAWANG',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: 'SEMBAWANG',
+                font: 'efat',
+                showDest: false
+            },
+        ]
+    },
+    55: {
+        renderType: 'standardService',
+        serviceNumber: 'NR3',
+        serviceFont: 'full',
+        destination: {
+            text: 'BOAT QUAY',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: 'BOAT QUAY',
+                font: 'efat',
+                showDest: false
+            },
+        ]
+    },
+    56: {
+        renderType: 'standardService',
+        serviceNumber: 'NR3',
+        serviceFont: 'full',
+        destination: {
+            text: 'CHOA CHU KANG',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: 'CHOA CHU KANG',
+                font: 'big',
+                showDest: false
+            },
+        ]
+    },
+    57: {
+        renderType: 'standardService',
+        serviceNumber: 'NR5',
+        serviceFont: 'full',
+        destination: {
+            text: 'JURONG WEST',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: 'JURONG WEST',
+                font: 'big',
+                showDest: false
+            },
+        ]
+    },
+    58: {
+        renderType: 'standardService',
+        serviceNumber: 'NR5',
+        serviceFont: 'full',
+        destination: {
+            text: 'WHAMPOA',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: 'WHAMPOA',
+                font: 'efat',
+                showDest: false
+            },
+        ]
+    },
+    59: {
+        renderType: 'standardService',
+        serviceNumber: 'NR6',
+        serviceFont: 'full',
+        destination: {
+            text: 'SENGKANG',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: 'SENGKANG',
+                font: 'efat',
+                showDest: false
+            },
+        ]
+    },
+    60: {
+        renderType: 'standardService',
+        serviceNumber: 'NR6',
+        serviceFont: 'full',
+        destination: {
+            text: 'MARINA CENTRE',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: 'MARINA CENTRE',
+                font: 'big',
+                showDest: false
+            },
+        ]
+    },
+    61: {
+        renderType: 'standardService',
+        serviceNumber: 'NR7',
+        serviceFont: 'full',
+        destination: {
+            text: 'PASIR RIS',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: 'PASIR RIS',
+                font: 'efat',
+                showDest: false
+            },
+        ]
+    },
+    62: {
+        renderType: 'standardService',
+        serviceNumber: 'NR7',
+        serviceFont: 'full',
+        destination: {
+            text: 'MAIRNA CENTRE',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: 'MARINA CENTRE',
+                font: 'big',
+                showDest: false
+            },
+        ]
+    },
     66: {
         renderType: 'efat',
         text: 'BULIM  DEPOT'
+    },
+    67: {
+        renderType: "full",
+        text: "WT 24"
+    },
+    68: {
+        renderType: "full",
+        text: "WT 25"
+    },
+    69: {
+        renderType: "full",
+        text: "WT 26"
+    },
+    70: {
+        renderType: "full",
+        text: "WT 27"
+    },
+    72: {
+        renderType: "efat",
+        text: "HAPPY MAY DAY"
+    },
+    75: {
+        renderType: 'standardService',
+        serviceNumber: 'NR5',
+        serviceFont: 'full',
+        destination: {
+            text: 'JURONG WEST',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: 'JURONG WEST',
+                font: 'big',
+                showDest: false
+            },
+        ]
+    },
+    76: {
+        renderType: 'standardService',
+        serviceNumber: 'NR5',
+        serviceFont: 'full',
+        destination: {
+            text: 'MARINA CENTRE',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: 'MARINA CENTRE',
+                font: 'big',
+                showDest: false
+            },
+        ]
+    },
+    77: {
+        renderType: 'standardService',
+        serviceNumber: 'NR8',
+        serviceFont: 'full',
+        destination: {
+            text: 'BUKIT BATOK',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: 'BUKIT BATOK',
+                font: 'big',
+                showDest: false
+            },
+        ]
+    },
+    78: {
+        renderType: 'standardService',
+        serviceNumber: 'NR8',
+        serviceFont: 'full',
+        destination: {
+            text: 'MARINA CENTRE',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: 'MARINA CENTRE',
+                font: 'big',
+                showDest: false
+            },
+        ]
     },
     81: {
         renderType: 'twoline',
