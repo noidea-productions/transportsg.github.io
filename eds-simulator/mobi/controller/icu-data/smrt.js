@@ -3867,6 +3867,38 @@ EDSDataSet['SMRT'] = {
             },
         ]
     },
+    462: {
+        renderType: 'standardService',
+        serviceNumber: '964',
+        serviceFont: 'full',
+        destination: {
+            text: 'WOODLANDS INT',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['WOODLANDS', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'WOODLANDS AVE 7,6',
+                font: 'thin'
+            },
+            {
+                text: 'WOODLANDS AVE 9',
+                font: 'thin'
+            },
+            {
+                text: 'WOODLANDS LOOP',
+                font: 'thin'
+            },
+            {
+                text: 'WOODLANDS LINK',
+                font: 'thin'
+            },
+        ]
+    },
     466: {
         renderType: 'standardService',
         serviceNumber: '67',
@@ -3882,15 +3914,67 @@ EDSDataSet['SMRT'] = {
                 showDest: false
             },
             {
+                text: 'UPP BT TIMAH RD',
+                font: 'thin'
+            },
+            {
                 text: 'DUNEARN ROAD',
                 font: 'thin'
-            },//?
+            },
             {
                 text: 'SERANGOON ROAD',
                 font: 'thin'
             },
             {
-                text: 'SIMS AVE',
+                text: 'SIMS AVENUE',
+                font: 'thin'
+            },
+            {
+                text: 'NEW UPP CHANGI RD',
+                font: 'thin'
+            },
+            {
+                text: 'BEDOK NORTH AVE 3',
+                font: 'thin'
+            },
+        ]
+    },
+    467: {
+        renderType: 'standardService',
+        serviceNumber: '67',
+        serviceFont: 'full',
+        destination: {
+            text: 'CHOA CHU KANG',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['CHOA CHU KANG', ' INT / MRT / LRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'BEDOK NORTH AVE 3',
+                font: 'thin'
+            },
+            {
+                text: 'NEW UPP CHANGI RD',
+                font: 'thin'
+            },
+            {
+                text: 'GEYLANG ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'JALAN BESAR',
+                font: 'thin'
+            },
+            {
+                text: 'BUKIT TIMAH RD',
+                font: 'thin'
+            },
+            {
+                text: 'UPP BUKIT TIMAH RD',
                 font: 'thin'
             },
         ]
@@ -3918,11 +4002,11 @@ EDSDataSet['SMRT'] = {
                 font: 'thin'
             },
             {
-                text: 'CHOA CHU KANG ROAD',
+                text: 'BRICKLAND ROAD',
                 font: 'thin'
             },
             {
-                text: 'BRICKLAND ROAD',
+                text: 'CHOA CHU KANG RD',
                 font: 'thin'
             },
             {
@@ -3954,15 +4038,15 @@ EDSDataSet['SMRT'] = {
                 font: 'thin'
             },
             {
-                text: 'CHOA CHU KANG ROAD',
+                text: 'CHOA CHU KANG RD',
                 font: 'thin'
             },
             {
-                text: 'BRICKLAND ROAD',
+                text: 'BRICKLAND RD',
                 font: 'thin'
             },
             {
-                text: 'CHOA CHU KANG AVE 1, 3',
+                text: 'CHOA CHU KANG AVE 3,1',
                 font: 'thin'
             }
         ]
@@ -3986,7 +4070,11 @@ EDSDataSet['SMRT'] = {
                 font: 'thin'
             },
             {
-                text: 'B. B WEST AVE 4, 2',
+                text: 'B.B. WEST AVE 4, 2',
+                font: 'thin'
+            },
+            {
+                text: 'B.B. WEST AVE 3, 6',
                 font: 'thin'
             },
             {
@@ -4000,7 +4088,281 @@ EDSDataSet['SMRT'] = {
             {
                 text: 'AYE, CLEMENTI RD',
                 font: 'thin'
-            } //Missing data oh noeses!!
+            },
+            {
+                text: 'PASIR PANJANG RD',
+                font: 'thin'
+            },
+            {
+                text: 'HAW PAR VILLA',
+                font: 'thin'
+            },
+            {
+                text: 'TELOK BLANGAH RD',
+                font: 'thin'
+            }
+        ]
+    },
+    476: {
+        renderType: 'standardService',
+        serviceNumber: '188',
+        serviceFont: 'full',
+        destination: {
+            text: 'CHOA CHU KANG',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['CHOA CHU KANG', 'INT / MRT / LRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'TELOK BLANGAH RD',
+                font: 'thin'
+            },
+            {
+                text: 'HAW PAR VILLA',
+                font: 'thin'
+            },
+            {
+                text: 'PASIR PANJANG RD',
+                font: 'thin'
+            },
+            {
+                text: 'CLEMENTI RD, AYE',
+                font: 'thin'
+            },
+            {
+                text: 'BOON LAY WAY',
+                font: 'thin'
+            },
+            {
+                text: 'TOH GUAN ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'B.B. WAST AVE 6,3',
+                font: 'thin'
+            },
+            {
+                text: 'B.B. WAST AVE 2,4',
+                font: 'thin'
+            },
+            {
+                text: 'CHOA CHU KANG WAY',
+                font: 'thin'
+            },
+        ]
+    },
+    477: {
+        renderType: 'standardService',
+        serviceNumber: '190',
+        serviceFont: 'full',
+        destination: {
+            text: 'NEW BRIDGE ROAD',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['NEW BRIDGE', 'ROAD'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'BUKIT PANJANG RD',
+                font: 'thin'
+            },
+            {
+                text: 'STEVENS ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'ORCHARD ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'HILL STREET',
+                font: 'thin'
+            },
+            {
+                text: 'CHINATOWN',
+                font: 'thin'
+            },
+        ]
+    },
+    478: {
+        renderType: 'standardService',
+        serviceNumber: '188',
+        serviceFont: 'full',
+        destination: {
+            text: 'CHOA CHU KANG',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['CHOA CHU KANG', 'INT / MRT / LRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'HILL STREET',
+                font: 'thin'
+            },
+            {
+                text: 'SOMERSET ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'SCOTTS ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'STEVENS ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'BUKIT PANJANG RD',
+                font: 'thin'
+            },
+        ]
+    },
+    479: {
+        renderType: 'swt',
+        serviceNumber: '190A',
+        serviceFont: 'full',
+        destination: {
+            text: 'DHOBY GHAUT MRT',
+            font: 'thin'
+        },
+        font: 'thick'
+    },
+    480: {
+        renderType: 'standardService',
+        serviceNumber: '981',
+        serviceFont: 'full',
+        destination: {
+            text: 'SENOKO IND EST',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['SENOKO', 'INDUSTRIAL EST'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'CANBERRA ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'ADMIRALTY RD WEST',
+                font: 'thin'
+            },
+            {
+                text: 'SENOKO ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'SEMOKO LOOP',
+                font: 'thin'
+            },
+        ]
+    },
+    481: {
+        renderType: 'standardService',
+        serviceNumber: '981',
+        serviceFont: 'full',
+        destination: {
+            text: 'SEMBAWANG MRT',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['SEMBAWANG', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'SENOKO ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'SENOKO LOOP',
+                font: 'thin'
+            },
+            {
+                text: 'ADMIRALTY RD WEST',
+                font: 'thin'
+            },
+            {
+                text: 'CANBERRA ROAD',
+                font: 'thin'
+            },
+        ]
+    },
+    492: {
+        renderType: 'standardService',
+        serviceNumber: '700A',
+        serviceFont: 'full',
+        destination: {
+            text: 'SUNTEC',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: 'SUNTEC',
+                font: 'big',
+                showDest: false
+            },
+            {
+                text: 'BUKIT PANJANG RD',
+                font: 'thin'
+            },
+            {
+                text: 'DUNEARN RD',
+                font: 'thin'
+            },
+            {
+                text: 'SCOTTS RD',
+                font: 'thin'
+            },
+            {
+                text: 'ORCHARD RD',
+                font: 'thin'
+            },
+        ]
+    },
+    494: {
+        renderType: 'standardService',
+        serviceNumber: '927',
+        serviceFont: 'full',
+        destination: {
+            text: 'CHOA CHU KANG',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['CHOA CHU KANG', 'INT / MRT / LRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'MANDAI ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'WOODLANDS RD',
+                font: 'thin'
+            },
+            {
+                text: 'KJE,CHOA CHU KANG DR',
+                font: 'thin'
+            },
+            {
+                text: 'CHOA CHU KANG AVE 4',
+                font: 'thin'
+            },
         ]
     },
     495: {
@@ -4013,14 +4375,22 @@ EDSDataSet['SMRT'] = {
         },
         scrolls: [
             {
-                text: ['SINGAPORE', 'ZOOLOGICAL GDN '],
+                text: ['SINGAPORE', 'ZOOLOGICAL GDN'],
                 font: 'thick',
                 showDest: false
             },
             {
                 text: 'CHOA CHU KANG AVE 4',
                 font: 'thin'
-            },//?
+            },
+            {
+                text: 'CHOA CHU KANG DR,KJE',
+                font: 'thin'
+            },
+            {
+                text: 'WOODLANDS RD',
+                font: 'thin'
+            },
             {
                 text: 'MANDAI RD',
                 font: 'thin'
@@ -4046,11 +4416,11 @@ EDSDataSet['SMRT'] = {
                 font: 'thin'
             },
             {
-                text: 'HOLLAND RD',
+                text: 'HOLLAND RD,AVE',
                 font: 'thin'
             },
             {
-                text: 'TELOK BLANGAH',
+                text: 'TELOK BLANGAH RD',
                 font: 'thin'
             },
             {
@@ -4124,6 +4494,42 @@ EDSDataSet['SMRT'] = {
 
         ]
     },
+    498: {
+        renderType: 'standardService',
+        serviceNumber: '77',
+        serviceFont: 'full',
+        destination: {
+            text: 'MARINA CENTRE',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['MARINA', 'CENTRE'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'DUNEARN RD',
+                font: 'thin'
+            },
+            {
+                text: 'SIXTH AVENUE',
+                font: 'thin'
+            },
+            {
+                text: 'HOLLAND RD',
+                font: 'thin'
+            },
+            {
+                text: 'ORCHARD RD',
+                font: 'thin'
+            },
+            {
+                text: 'RAFFLES CITY',
+                font: 'thin'
+            },
+        ]
+    },
     499: {
         renderType: 'standardService',
         serviceNumber: '77',
@@ -4151,13 +4557,177 @@ EDSDataSet['SMRT'] = {
                 font: 'thin'
             },
             {
-                text: 'SIXTH AVE',
+                text: 'SIXTH AVENUE',
                 font: 'thin'
             },
             {
                 text: 'BUKIT TIMAH RD',
                 font: 'thin'
             }
+        ]
+    },
+    504: {
+        renderType: 'standardService',
+        serviceNumber: '189',
+        serviceFont: 'full',
+        destination: {
+            text: 'KENT RIDGE TER',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['KENT RIDGE', 'TERMINAL'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'B. B. EAST AVE 6',
+                font: 'thin'
+            },
+            {
+                text: 'CLEMENTI AVE 6',
+                font: 'thin'
+            },
+            {
+                text: 'CLEMENTI MRT',
+                font: 'thin'
+            },
+            {
+                text: 'WEST COAST RD',
+                font: 'thin'
+            },
+        ]
+    },
+    505: {
+        renderType: 'standardService',
+        serviceNumber: '189',
+        serviceFont: 'full',
+        destination: {
+            text: 'BUKIT BATOK',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['BUKIT BATOK', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'WEST COAST RD',
+                font: 'thin'
+            },
+            {
+                text: 'CLEMENTI MRT',
+                font: 'thin'
+            },
+            {
+                text: 'CLEMENTI AVE 6',
+                font: 'thin'
+            },
+            {
+                text: 'B. B. EAST AVE 6',
+                font: 'thin'
+            },
+        ]
+    },
+    508: {
+        renderType: 'standardService',
+        serviceNumber: '921',
+        serviceFont: 'full',
+        destination: {
+            text: 'BUKIT PANJANG',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['BUKIT PANJANG', 'INT / LRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'BUKIT PANAJNG RD',
+                font: 'thin'
+            },
+            {
+                text: 'PENDING RD',
+                font: 'thin'
+            },
+            {
+                text: 'PETIR RD (LOOP)',
+                font: 'thin'
+            },
+        ]
+    },
+    510: {
+        renderType: 'standardService',
+        serviceNumber: '857',
+        serviceFont: 'full',
+        destination: {
+            text: 'SUNTEC CITY',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['SUNTEC', 'CITY'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'YIO CHU KANG RD,CTE',
+                font: 'thin'
+            },
+            {
+                text: 'JLN TOA PAYOH',
+                font: 'thin'
+            },
+            {
+                text: 'BENDEMEER RD',
+                font: 'thin'
+            },
+            {
+                text: 'JALAN BESAR',
+                font: 'thin'
+            },
+            {
+                text: 'BENCOOLEN ST',
+                font: 'thin'
+            },
+        ]
+    },
+    511: {
+        renderType: 'standardService',
+        serviceNumber: '857',
+        serviceFont: 'full',
+        destination: {
+            text: 'YISHUN',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['YISHUN', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'STAMFORD RD',
+                font: 'thin'
+            },
+            {
+                text: 'SELEGIE RD',
+                font: 'thin'
+            },
+            {
+                text: 'SERANGOON RD',
+                font: 'thin'
+            },
+            {
+                text: 'JLN TOA PAYOH',
+                font: 'thin'
+            },
+            {
+                text: 'CTE,YIO CHU KANG RD',
+                font: 'thin'
+            },
         ]
     },
     512: {
@@ -4187,7 +4757,7 @@ EDSDataSet['SMRT'] = {
                 font: 'thin'
             },
             {
-                text: 'SIXTH AVE',
+                text: 'SIXTH AVENUE',
                 font: 'thin'
             },
             {
@@ -4202,6 +4772,50 @@ EDSDataSet['SMRT'] = {
                 text: 'EU TONG SEN ST',
                 font: 'thin'
             }
+        ]
+    },
+    513: {
+        renderType: 'standardService',
+        serviceNumber: '970',
+        serviceFont: 'full',
+        destination: {
+            text: 'BUKIT PANJANG',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['BUKIT', 'PANJANG'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'NEW BRIDGE RD',
+                font: 'thin'
+            },
+            {
+                text: 'ZION RD',
+                font: 'thick'
+            },
+            {
+                text: 'COMMONWEALTH AVE',
+                font: 'thin'
+            },
+            {
+                text: 'SIXTH AVENUE',
+                font: 'thin'
+            },
+            {
+                text: 'UPP BUKIT TIMAH RD',
+                font: 'thin'
+            },
+            {
+                text: 'JLN JUORNG KECHIl',
+                font: 'thin'
+            },
+            {
+                text: 'HILLVIEW RD, AVE',
+                font: 'thin'
+            },
         ]
     },
     522: {
