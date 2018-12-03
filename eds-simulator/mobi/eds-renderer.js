@@ -19,7 +19,7 @@ for (let x = 0; x < width; x++) {
 }
 
 function getTextWidth(chars, font, spaceWidth) {
-    return chars.map(char => {
+    return chars.map(char => {1
         if (!fonts[font]) return 0;
 
         let charData = fonts[font][char];
@@ -62,7 +62,7 @@ function drawTextWithAlignment(segments, spaceWidth, align, lineNumber) {
 }
 
 function drawText(text, font, spaceWidth, xPos, yPos) {
-    let chars = [...text];
+    let chars = [...text || ''];
 
     let startX = xPos * 1;
 
@@ -306,7 +306,7 @@ function calculateRenderWidth(guideline) {
         let lineWidth = 0;
 
         lineFormat.forEach(formatSection => {
-            lineWidth += getTextWidth([...formatSection.text], formatSection.font, guideline.spaceWidth);
+            lineWidth += getTextWidth([...(formatSection.text || '')], formatSection.font, guideline.spaceWidth);
         })
         widths.push(lineWidth);
     });

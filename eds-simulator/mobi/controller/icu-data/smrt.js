@@ -141,10 +141,11 @@ EDSTemplateSet['SMRT'] = {
             variables: {
                 destination: '$destination.text',
                 font: '$font',
-                endsAt: 'ENDS AT'
+                endsAt: 'ENDS AT',
+                endsAtExtra: '$destination.road{""}'
             },
             font: 'thin',
-            format: ['<endsAt,font,9>', '<destination,font,0>'],
+            format: ['<endsAt,font,9><endsAtExtra,font,9>', '<destination,font,0>'],
             yPositions: [9, 0],
             spaceWidth: 1,
             align: 'centre-width[0]'
@@ -164,6 +165,32 @@ EDSTemplateSet['SMRT'] = {
             align: 'centre'
         }
     ],
+    twoline: [
+        {
+            variables: {
+                top: '$top',
+                bottom: '$bottom',
+                topFont: '$topFont',
+                bottomFont: '$bottomFont'
+            },
+            font: '$font',
+            format: ['<top,topFont,9>', '<bottom,bottomFont,0>'],
+            spaceWidth: 1,
+            align: 'centre'
+        }
+    ],
+    centre: [
+        {
+            variables: {
+                text: '$text',
+                spacing: '$spacing',
+            },
+            font: '$font',
+            format: '<text,,spacing>',
+            spaceWidth: 1,
+            align: 'centre'
+        }
+    ]
 }
 
 EDSDataSet['SMRT'] = {
@@ -235,6 +262,92 @@ EDSDataSet['SMRT'] = {
         renderType: 'efat',
         text: 'BULIM  DEPOT'
     },
+    81: {
+        renderType: 'twoline',
+        text: 'WELCOME TO IKEA',
+        topFont: 'thick',
+        bottomFont: 'thin',
+        top: 'WELCOME TO IKEA',
+        bottom: 'IKEA    -   TAMPINES'
+    },
+    82: {
+        renderType: 'twoline',
+        text: 'WELCOME TO IKEA',
+        font: 'thick',
+        top: 'WELCOME TO IKEA',
+        bottom: 'IKEA  -  SENGKANG'
+    },
+    83: {
+        renderType: 'twoline',
+        text: 'WELCOME TO IKEA',
+        topFont: 'thick',
+        bottomFont: 'thin',
+        top: 'WELCOME TO IKEA',
+        bottom: 'IKEA    -     ANG MO KIO'
+    },
+    84: {
+        renderType: 'twoline',
+        text: 'WELCOME TO IKEA',
+        font: 'thick',
+        top: 'WELCOME TO IKEA',
+        bottom: 'IKEA  -  WOODLANDS'
+    },
+    85: {
+        renderType: 'twoline',
+        text: 'WELCOME TO IKEA',
+        font: 'thick',
+        top: 'WELCOME TO IKEA',
+        bottom: 'IKEA  -  BOON LAY'
+    },
+    86: {
+        renderType: 'twoline',
+        text: 'WELCOME TO IKEA',
+        font: 'thick',
+        top: 'WELCOME TO IKEA',
+        bottom: 'IKEA  -  YISHUN'
+    },
+    89: {
+        renderType: 'twoline',
+        text: 'DOWNTOWN EAST - PASIR RIS',
+        font: 'tall',
+        top: 'DOWNTOWN EAST   -  PASIR RIS',
+        bottom: 'CARPARKS C, D, E, F',
+    },
+    91: {
+        renderType: 'twoline',
+        text: 'BEDOK MRT TO & FROM; GIANT, IKEA & COURTS',
+        font: 'thin',
+        top: 'BEDOK MRT TO & FROM',
+        bottom: 'GIANT, IKEA & COURTS'
+    },
+    92: {
+        renderType: 'twoline',
+        text: 'TAMPINES MRT TO & FROM; GIANT, IKEA & COURTS',
+        font: 'thin',
+        top: 'TAMPINES MRT TO & FROM',
+        bottom: 'GIANT, IKEA & COURTS'
+    },
+    98: {
+        renderType: 'twoline',
+        text: 'SENGKANG & PUNGGOL -; GIANT, IKEA & COURTS',
+        font: 'thin',
+        top: 'SENGKANG & PUNGGOL -',
+        bottom: 'GIANT, IKEA & COURTS'
+    },
+    99: {
+        renderType: 'twoline',
+        text: 'PASIR RIS TO & FROM; GIANT, IKEA & COURTS',
+        font: 'thin',
+        top: 'PASIR RIS TO & FROM',
+        bottom: 'GIANT, IKEA & COURTS'
+    },
+    101: {
+        renderType: 'twoline',
+        text: 'FREE CHINATOWN SHUTTLE SERVICE',
+        font: 'thick',
+        top: 'FREE CHINATOWN',
+        bottom: 'SHUTTLE SERVICE'
+    },
     103: {
         renderType: 'e2i',
         serviceFont: 'fat',
@@ -281,6 +394,20 @@ EDSDataSet['SMRT'] = {
         renderType: 'big',
         text: 'AIRSHOW SHUTTLE'
     },
+    114: {
+        renderType: 'twoline',
+        text: 'JOO KOON - BUKIT GOMBAK PARALLEL BUS SERVICE',
+        top: 'JOO KOON - BUKIT GOMBAK',
+        bottom: 'PARALLEL BUS SERVICE',
+        font: 'thin'
+    },
+    115: {
+        renderType: 'twoline',
+        text: 'BUKIT GOMBAK - JOO KOON PARALLEL BUS SERVICE',
+        top: 'BUKIT GOMBAK - JOO KOON',
+        bottom: 'PARALLEL BUS SERVICE',
+        font: 'thin'
+    },
     117: {
         renderType: 'image',
         text: 'SMRT',
@@ -295,9 +422,315 @@ EDSDataSet['SMRT'] = {
         renderType: 'efat',
         text: 'SMRT'
     },
+    141: {
+        renderType: 'twoline',
+        text: 'FREE SMRT CHINATOWN SHUTTLE SERVICE',
+        font: 'thick',
+        top: 'FREE SMRT CHINATOWN',
+        bottom: 'SHUTTLE BUS SERVICE'
+    },
+    142: {
+        renderType: 'centre',
+        text: 'THANK YOU EXSA WINNERS',
+        font: 'thin',
+        spacing: 4
+    },
+    150: {
+        renderType: 'big',
+        text: 'FREE SHUTTLE'
+    },
+    151: {
+        renderType: 'big',
+        text: 'FREE BRIDGING BUS'
+    },
+    152: {
+        renderType: 'big',
+        text: 'LRT BRIDGING A'
+    },
+    153: {
+        renderType: 'big',
+        text: 'LRT BRIDGING B'
+    },
     155: {
         renderType: 'big',
         text: 'FREE SHUTTLE BUS'
+    },
+    199: {
+        renderType: 'efat',
+        text: 'ON TEST'
+    },
+    200: {
+        renderType: 'standardService',
+        serviceNumber: '804',
+        serviceFont: 'full',
+        destination: {
+            text: 'YISHUN INT',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: ['YISHUN', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'YISHUN AVE 2',
+                font: 'thick'
+            },
+            {
+                text: 'YISHUN RING RD',
+                font: 'thick'
+            },
+            {
+                text: 'YISHUN AVE 1, 11',
+                font: 'thick'
+            },
+            {
+                text: 'YISHUN RING RD',
+                font: 'thick'
+            },
+            {
+                text: 'YISHUN AVE 2',
+                font: 'thick'
+            },
+        ]
+    },
+    203: {
+        renderType: 'standardService',
+        serviceNumber: '800',
+        serviceFont: 'full',
+        destination: {
+            text: 'YISHUN INT',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: ['YISHUN', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'YISHUN AVE 3',
+                font: 'thick'
+            },
+            {
+                text: 'YISHUN AVE 9',
+                font: 'thick'
+            },
+            {
+                text: 'YISHUN RING RD',
+                font: 'thick'
+            },
+            {
+                text: 'YISHUN AVE 2, 7',
+                font: 'thick'
+            },
+            {
+                text: 'SEMBAWANG RD',
+                font: 'thick'
+            },
+            {
+                text: 'YISHUN ST 71',
+                font: 'thick'
+            },
+            {
+                text: 'YISHUN AVE 9',
+                font: 'thick'
+            },
+        ]
+    },
+    204: {
+        renderType: 'standardService',
+        serviceNumber: '806',
+        serviceFont: 'full',
+        destination: {
+            text: 'YISHUN INT',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: ['YISHUN', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'YISHUN AVE 11',
+                font: 'thick'
+            },
+            {
+                text: 'YISHUN AVE 6',
+                font: 'thick'
+            },
+            {
+                text: 'YISHUN RING RD',
+                font: 'thick'
+            },
+        ]
+    },
+    206: {
+        renderType: 'standardService',
+        serviceNumber: '811',
+        serviceFont: 'full',
+        destination: {
+            text: 'YISHUN INT',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: ['YISHUN', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'YISHUN AVE 9, 6, 7',
+                font: 'thin'
+            },
+            {
+                text: 'SEMBAWANG RD ',
+                font: 'thick'
+            },
+            {
+                text: 'YISHUN AVE 5, 2, 7',
+                font: 'thin'
+            },
+            {
+                text: 'YISHUN AVE 6, 9, 2',
+                font: 'thin'
+            },
+            {
+                text: 'YISHUN RING RD',
+                font: 'thin'
+            },
+            {
+                text: 'YISHUN ST 81',
+                font: 'thin'
+            },
+            {
+                text: 'YISHUN AVE 1',
+                font: 'thin'
+            },
+            {
+                text: 'YISHUN AVE 4',
+                font: 'thin'
+            },
+            {
+                text: 'YISHUN RING RD',
+                font: 'thin'
+            },
+            {
+                text: 'YISHUN AVE 2',
+                font: 'thin'
+            },
+        ]
+    },
+    207: {
+        renderType: 'swt',
+        serviceNumber: '811E',
+        serviceFont: 'full',
+        destination: {
+            text: 'YISHUN INT/MRT',
+        },
+        font: 'thick'
+    },
+    208: {
+        renderType: 'standardService',
+        serviceNumber: '812',
+        serviceFont: 'full',
+        destination: {
+            text: 'YISHUN INT',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: ['YISHUN', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'YISHUN CENTRAL',
+                font: 'thick'
+            },
+            {
+                text: 'YISHUN ST 61',
+                font: 'thick'
+            },
+            {
+                text: 'YISHUN AVE 4',
+                font: 'thick'
+            },
+        ]
+    },
+    209: {
+        renderType: 'swt',
+        serviceNumber: '812E',
+        serviceFont: 'full',
+        destination: {
+            text: 'YISHUN INT / MRT',
+        },
+        font: 'thin'
+    },
+    210: {
+        renderType: 'standardService',
+        serviceNumber: '900',
+        serviceFont: 'full',
+        destination: {
+            text: 'WOODLANDS INT',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['WOODLANDS', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'WDL AVENUE 7',
+                font: 'thick'
+            },
+            {
+                text: 'WDL AVENUE 4',
+                font: 'thick'
+            },
+            {
+                text: 'WDL DRIVE 14',
+                font: 'thick'
+            },
+            {
+                text: 'WDL AVENUE 4 ',
+                font: 'thick'
+            },
+            {
+                text: 'WDL AVENUE 7 ',
+                font: 'thick'
+            },
+        ]
+    },
+    213: {
+        renderType: 'swt',
+        serviceNumber: '911E',
+        serviceFont: 'full',
+        destination: {
+            text: 'WDL INT / MRT',
+        },
+        font: 'thin'
+    },
+    215: {
+        renderType: 'swt',
+        serviceNumber: '912E',
+        serviceFont: 'full',
+        destination: {
+            text: 'WDL INT / MRT',
+        },
+        font: 'thin'
+    },
+    217: {
+        renderType: 'swt',
+        serviceNumber: '913E',
+        serviceFont: 'full',
+        destination: {
+            text: 'WDL INT / MRT',
+        },
+        font: 'thin'
     },
     218: {
         renderType: 'standardService',
@@ -346,25 +779,111 @@ EDSDataSet['SMRT'] = {
                 showDest: false
             },
             {
-                text: 'C.C.K WAY',
-                font: 'thick'
-            },
-            {
-                text: 'C.C.K AVE 2,3',
+                text: 'CHOA CHU KANG WAY',
                 font: 'thin'
             },
             {
-                text: 'C.C.K AVENUE 5',
+                text: 'CHOA CHU KANG ST 52',
                 font: 'thin'
             },
             {
-                text: 'KEAT HONG CLOSE (LOOP)',
+                text: 'CHOA CHU KANG CRES',
+                font: 'thin'
+            },
+        ]
+    },
+    221: {
+        renderType: 'swt',
+        serviceNumber: '307E',
+        serviceFont: 'full',
+        destination: {
+            text: 'C.C.K INT/MRT/LRT',
+        },
+        font: 'thin'
+    },
+    222: {
+        renderType: 'standardService',
+        serviceNumber: '307',
+        serviceFont: 'full',
+        destination: {
+            text: 'CHOA CHU KANG',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['CHOA CHU KANG', 'INT / MRT / LRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'CHOA CHU KANG CENTRAL',
                 font: 'tall'
             },
             {
-                text: 'C.C.K AVE 6,1',
+                text: 'TECK WHYE LANE',
                 font: 'thin'
-            }
+            },
+            {
+                text: 'CHOA CHU KANG CENTRAL',
+                font: 'tall'
+            },
+            {
+                text: 'CHOA CHU KANG AVE 4',
+                font: 'tall'
+            },
+            {
+                text: 'CHOA CHU KANG NORTH 5',
+                font: 'tall'
+            },
+            {
+                text: 'CHOA CHU KANG NORTH 6',
+                font: 'tall'
+            },
+            {
+                text: 'YEW TEE MRT',
+                font: 'thick'
+            },
+            {
+                text: 'CHOA CHU KANG ST 62',
+                font: 'tall'
+            },
+        ]
+    },
+    224: {
+        renderType: 'swt',
+        serviceNumber: '811',
+        serviceFont: 'full',
+        destination: {
+            text: 'YISHUN ITE',
+        },
+        font: 'thick'
+    },
+    225: {
+        renderType: 'standardService',
+        serviceNumber: '901',
+        serviceFont: 'full',
+        destination: {
+            text: 'WOODLANDS INT',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['WOODLANDS', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'WOODLANDS AVE 2,1',
+                font: 'thin'
+            },
+            {
+                text: 'WOODLANDS DRIVE 16',
+                font: 'thin'
+            },
+            {
+                text: 'WOODLANDS AVE 6',
+                font: 'thin'
+            },
         ]
     },
     229: {
@@ -384,6 +903,16 @@ EDSDataSet['SMRT'] = {
             text: ' LITTLE INDIA'
         },
         font: 'thick'
+    },
+    231: {
+        renderType: 'swt',
+        serviceNumber: '77A',
+        serviceFont: 'full',
+        destination: {
+            road: ' TOH TUCK ROAD',
+            text: 'BUKIT BATOK SEC SCH',
+        },
+        font: 'tall'
     },
     272: {
         renderType: 'swt',
