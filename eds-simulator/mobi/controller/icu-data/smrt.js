@@ -7716,6 +7716,166 @@ EDSDataSet['SMRT'] = {
             },
         ]
     },
+    592: {
+        renderType: 'standardService',
+        serviceNumber: '178',
+        serviceFont: 'full',
+        destination: {
+            text: 'WOODLANDS INT',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['WOODLANDS', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'CORPORATION RD',
+                font: 'thin'
+            },
+            {
+                text: 'JURONG TOWN HALL',
+                font: 'thin'
+            },
+            {
+                text: 'BUKIT BATOK',
+                font: 'thin'
+            },
+            {
+                text: 'UPP BUKIT TIMAH',
+                font: 'thin'
+            },
+            {
+                text: 'WDL TRAIN CHECKPOINT',
+                font: 'tall'
+            },
+        ]
+    },
+    593: {
+        renderType: 'standardService',
+        serviceNumber: '856',
+        serviceFont: 'full',
+        destination: {
+            text: 'YISHUN INT',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['YISHUN', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'WDL TRAIN CHECKPOINT',
+                font: 'tall'
+            },
+            {
+                text: 'ADMIRALTY RD',
+                font: 'thin'
+            },
+            {
+                text: 'SENOKO AVE',
+                font: 'thin'
+            },
+            {
+                text: 'ADMIRALTY RD WEST',
+                font: 'thin'
+            },
+            {
+                text: 'CANBERRA RD / MRT',
+                font: 'thin'
+            },
+            {
+                text: 'SEMBAWANG RD',
+                font: 'thin'
+            },
+            {
+                text: 'YISHUN AVE 5',
+                font: 'thin'
+            },
+        ]
+    },
+    594: {
+        renderType: 'standardService',
+        serviceNumber: '856',
+        serviceFont: 'full',
+        destination: {
+            text: 'WOODLANDS INT',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['WOODLANDS', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'YISHUN AVE 5',
+                font: 'thin'
+            },
+            {
+                text: 'SEMBAWANG RD',
+                font: 'thin'
+            },
+            {
+                text: 'CANBERRA RD / MRT',
+                font: 'thin'
+            },
+            {
+                text: 'ADMIRALTY RD WEST',
+                font: 'thin'
+            },
+            {
+                text: 'SENOKO AVE',
+                font: 'thin'
+            },
+            {
+                text: 'ADMIRALTY RD',
+                font: 'thin'
+            },
+            {
+                text: 'WDL CENTRE RD',
+                font: 'thin'
+            },
+        ]
+    },
+    598: {
+        renderType: 'standardService',
+        serviceNumber: '860',
+        serviceFont: 'full',
+        destination: {
+            text: 'YISHUN INT',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: 'YISHUN INT',
+                font: 'big',
+                showDest: false
+            },
+            {
+                text: 'YISHUN AVENUE 9',
+                font: 'thin'
+            },
+            {
+                text: 'YISHUN RING ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'YISHUN AVE 3, 2(LOOP)',
+                font: 'tall'
+            },
+            {
+                text: 'YISHUN RING ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'YISHUN AVENUE 9',
+                font: 'thin'
+            },
+        ]
+    },
     611: {
         renderType: 'standardService',
         serviceNumber: '176',
