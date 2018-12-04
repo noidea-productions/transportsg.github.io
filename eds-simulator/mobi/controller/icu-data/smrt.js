@@ -259,88 +259,88 @@ EDSDataSet['SMRT'] = {
         text: 'LRT SHUTTLE B'
     },
     21: {
-        renderType: "full",
-        text: "WT 1"
+        renderType: 'full',
+        text: 'WT 1'
     },
     22: {
-        renderType: "full",
-        text: "WT 2"
+        renderType: 'full',
+        text: 'WT 2'
     },
     23: {
-        renderType: "full",
-        text: "WT 3"
+        renderType: 'full',
+        text: 'WT 3'
     },
     24: {
-        renderType: "full",
-        text: "WT 4"
+        renderType: 'full',
+        text: 'WT 4'
     },
     25: {
-        renderType: "full",
-        text: "WT 5"
+        renderType: 'full',
+        text: 'WT 5'
     },
     26: {
-        renderType: "full",
-        text: "WT 6"
+        renderType: 'full',
+        text: 'WT 6'
     },
     27: {
-        renderType: "full",
-        text: "WT 7"
+        renderType: 'full',
+        text: 'WT 7'
     },
     28: {
-        renderType: "full",
-        text: "WT 8"
+        renderType: 'full',
+        text: 'WT 8'
     },
     29: {
-        renderType: "full",
-        text: "WT 9"
+        renderType: 'full',
+        text: 'WT 9'
     },
     30: {
-        renderType: "full",
-        text: "WT 10"
+        renderType: 'full',
+        text: 'WT 10'
     },
     31: {
-        renderType: "full",
-        text: "WT 11"
+        renderType: 'full',
+        text: 'WT 11'
     },
     32: {
-        renderType: "full",
-        text: "WT 12"
+        renderType: 'full',
+        text: 'WT 12'
     },
     33: {
-        renderType: "full",
-        text: "WT 13"
+        renderType: 'full',
+        text: 'WT 13'
     },
     34: {
-        renderType: "full",
-        text: "WT 14"
+        renderType: 'full',
+        text: 'WT 14'
     },
     35: {
-        renderType: "full",
-        text: "WT 15"
+        renderType: 'full',
+        text: 'WT 15'
     },
     36: {
-        renderType: "full",
-        text: "WT 16"
+        renderType: 'full',
+        text: 'WT 16'
     },
     37: {
-        renderType: "full",
-        text: "WT 17"
+        renderType: 'full',
+        text: 'WT 17'
     },
     38: {
-        renderType: "full",
-        text: "WT 18"
+        renderType: 'full',
+        text: 'WT 18'
     },
     39: {
-        renderType: "full",
-        text: "WT 19"
+        renderType: 'full',
+        text: 'WT 19'
     },
     40: {
-        renderType: "full",
-        text: "WT 20"
+        renderType: 'full',
+        text: 'WT 20'
     },
     41: {
-        renderType: "full",
-        text: "WT 21"
+        renderType: 'full',
+        text: 'WT 21'
     },
     42: {
         renderType: 'full',
@@ -351,12 +351,12 @@ EDSDataSet['SMRT'] = {
         text: 'LRT B'
     },
     44: {
-        renderType: "full",
-        text: "WT 22"
+        renderType: 'full',
+        text: 'WT 22'
     },
     45: {
-        renderType: "full",
-        text: "WT 23"
+        renderType: 'full',
+        text: 'WT 23'
     },
     46: {
         renderType: 'standardService',
@@ -635,24 +635,24 @@ EDSDataSet['SMRT'] = {
         text: 'BULIM  DEPOT'
     },
     67: {
-        renderType: "full",
-        text: "WT 24"
+        renderType: 'full',
+        text: 'WT 24'
     },
     68: {
-        renderType: "full",
-        text: "WT 25"
+        renderType: 'full',
+        text: 'WT 25'
     },
     69: {
-        renderType: "full",
-        text: "WT 26"
+        renderType: 'full',
+        text: 'WT 26'
     },
     70: {
-        renderType: "full",
-        text: "WT 27"
+        renderType: 'full',
+        text: 'WT 27'
     },
     72: {
-        renderType: "efat",
-        text: "HAPPY MAY DAY"
+        renderType: 'efat',
+        text: 'HAPPY MAY DAY'
     },
     75: {
         renderType: 'standardService',
@@ -2269,7 +2269,7 @@ EDSDataSet['SMRT'] = {
                 font: 'thin'
             },
             {
-                text: 'BT PANAJANG RING RD',
+                text: 'BT PANJANG RING RD',
                 font: 'thin'
             },
             {
@@ -5101,7 +5101,7 @@ EDSDataSet['SMRT'] = {
                 showDest: false
             },
             {
-                text: 'BUKIT PANAJNG RD',
+                text: 'BUKIT PANJANG RD',
                 font: 'thin'
             },
             {
@@ -5429,7 +5429,7 @@ EDSDataSet['SMRT'] = {
                 font: 'thick'
             },
             {
-                text: 'BUKIT PANAJNG RD',
+                text: 'BUKIT PANJANG RD',
                 font: 'thin'
             },
             {
@@ -5757,7 +5757,7 @@ EDSDataSet['SMRT'] = {
                 font: 'thin'
             },
             {
-                text: 'BT PANAJNG RD',
+                text: 'BT PANJANG RD',
                 font: 'thin'
             },
             {
@@ -6838,6 +6838,559 @@ EDSDataSet['SMRT'] = {
             }
         ]
     },
+    571: {
+        renderType: 'standardService',
+        serviceNumber: '882',
+        serviceFont: 'full',
+        destination: {
+            text: 'SEMBAWANG PARK',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['SEMBAWANG', 'PARK'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'SEMBAWANG DRIVE',
+                font: 'thin'
+            },
+            {
+                text: 'SEMBAWANG WAY',
+                font: 'thin'
+            },
+            {
+                text: 'CANBERRA RD',
+                font: 'thick'
+            },
+            {
+                text: 'WELLINGTON CIRCLE',
+                font: 'thin'
+            },
+            {
+                text: 'MONTREAL DR',
+                font: 'thick'
+            },
+            {
+                text: 'MONTREAL LINK',
+                font: 'thin'
+            },
+            {
+                text: 'SEMBAWANG RD',
+                font: 'thin'
+            },
+        ]
+    },
+    572: {
+        renderType: 'standardService',
+        serviceNumber: '882',
+        serviceFont: 'full',
+        destination: {
+            text: 'SEMBAWANG',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['SEMBAWANG', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'SEMBAWANG RD',
+                font: 'thick'
+            },
+            {
+                text: 'MONTREAL LINK',
+                font: 'thick'
+            },
+            {
+                text: 'MONTREAL DRIVE',
+                font: 'thick'
+            },
+            {
+                text: 'WELLINGTON CIRCLE',
+                font: 'thin'
+            },
+            {
+                text: 'CANBERRA ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'SEMBAWANG WAY',
+                font: 'thin'
+            },
+            {
+                text: 'SEMBAWANG DR',
+                font: 'thick'
+            },
+        ]
+    },
+    574: {
+        renderType: 'full',
+        text: 'RWS 8 (STAFF)'
+    },
+    575: {
+        renderType: 'standardService',
+        serviceNumber: 'RWS8',
+        serviceFont: 'full',
+        destination: {
+            text: 'RWS',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: ['RESORTS WORLD', 'SENTOSA'],
+                font: ['thin', 'thick'],
+                showDest: false
+            },
+        ]
+    },
+    576: {
+        renderType: 'standardService',
+        serviceNumber: '963R',
+        serviceFont: 'full',
+        destination: {
+            text: 'SENTOSA',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['RESORTS WORLD', 'SENTOSA'],
+                font: ['thin', 'thick'],
+                showDest: false
+            },
+            {
+                text: 'WOODLANDS AVE 3',
+                font: 'thin'
+            },
+            {
+                text: 'B K E',
+                font: 'thick'
+            },
+            {
+                text: 'BT PANJANG RD',
+                font: 'thin'
+            },
+            {
+                text: 'PENDING ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'PETIR ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'JELUBU ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'HILLVIEW AVE',
+                font: 'thin'
+            },
+            {
+                text: 'B. B EAST AVE 4,3',
+                font: 'thin'
+            },
+            {
+                text: 'C\'WEALTH AVE WEST',
+                font: 'thin'
+            },
+            {
+                text: 'CLEMENTI AVE 6',
+                font: 'thin'
+            },
+            {
+                text: 'A Y E',
+                font: 'thick'
+            },
+            {
+                text: 'ALEXANDRA ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'TELOK BLANGAH RD',
+                font: 'thin'
+            },
+        ]
+    },
+    577: {
+        renderType: 'standardService',
+        serviceNumber: '963E',
+        serviceFont: 'full',
+        destination: {
+            text: 'WOODLANDS INT',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['WOODLANDS', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'TELOK BLANGAH RD',
+                font: 'thin'
+            },
+            {
+                text: 'ALEXANDRA RD',
+                font: 'thick'
+            },
+            {
+                text: 'A Y E',
+                font: 'thick'
+            },
+            {
+                text: 'CLEMENTI AVE 6',
+                font: 'thin'
+            },
+            {
+                text: 'C\'WEALTH AVE WEST',
+                font: 'thin'
+            },
+            {
+                text: 'B. B EAST AVE 3,4',
+                font: 'thin'
+            },
+            {
+                text: 'HILLVIEW AVENUE',
+                font: 'thin'
+            },
+            {
+                text: 'BT PANJANG ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'JELUBU ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'PETIR ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'PENDING ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'B K E',
+                font: 'thick'
+            },
+            {
+                text: 'WOODLANDS AVE 3',
+                font: 'thin'
+            }
+        ]
+    },
+    578: {
+        renderType: 'standardService',
+        serviceNumber: 'RWS88',
+        serviceFont: 'full',
+        destination: {
+            text: 'RWS',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: ['RESORTS WORLD', 'SENTOSA'],
+                font: ['thin', 'thick'],
+                showDest: false
+            },
+            {
+                text: ['CITY HALL', '(LOOP)'],
+                font: ['thick', 'thin'],
+                showDest: false
+            },
+        ]
+    },
+    579: {
+        renderType: 'standardService',
+        serviceNumber: 'RWS68',
+        serviceFont: 'full',
+        destination: {
+            text: 'RWS',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: ['RESORTS WORLD', 'SENTOSA'],
+                font: ['thin', 'thick'],
+                showDest: false
+            },
+        ]
+    },
+    580: {
+        renderType: 'standardService',
+        serviceNumber: 'RWS68',
+        serviceFont: 'full',
+        destination: {
+            text: 'OUTRAM PARK MRT',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: ['OUTRAM PARK', 'MRT STATION'],
+                font: 'thick',
+                showDest: false
+            },
+        ]
+    },
+    582: {
+        renderType: 'standardService',
+        serviceNumber: '858',
+        serviceFont: 'full',
+        destination: {
+            text: 'CHANGI AIRPORT',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['CHANGI', 'AIRPORT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'WDL AVENUE 4',
+                font: 'thick'
+            },
+            {
+                text: 'WDL AVENUE 9',
+                font: 'thick'
+            },
+            {
+                text: 'GAMBAS AVE',
+                font: 'thick'
+            },
+            {
+                text: 'WDL AVENUE 7',
+                font: 'thick'
+            },
+            {
+                text: 'SEMBAWANG WAY',
+                font: 'thin'
+            },
+            {
+                text: 'CANBERRA RD',
+                font: 'thick'
+            },
+            {
+                text: 'SEMBAWANG RD',
+                font: 'thick'
+            },
+            {
+                text: 'YISHUN AVE 5, 2',
+                font: 'thick'
+            },
+            {
+                text: 'YISHUN CTRL 2',
+                font: 'thick'
+            },
+            {
+                text: 'SLE / TPE',
+                font: 'thick'
+            },
+            {
+                text: 'AIRPORT BOULEVARD',
+                font: 'thin'
+            },
+        ]
+    },
+    583: {
+        renderType: 'standardService',
+        serviceNumber: '858',
+        serviceFont: 'full',
+        destination: {
+            text: 'WOODLANDS INT',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['WOODLANDS', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'AIRPORT BOULEVARD',
+                font: 'thin'
+            },
+            {
+                text: 'TPE / SLE',
+                font: 'thick'
+            },
+            {
+                text: 'YISHUN CTRL 2',
+                font: 'thick'
+            },
+            {
+                text: 'YISHUN AVE 2,5',
+                font: 'thick'
+            },
+            {
+                text: 'SEMBAWANG RD',
+                font: 'thick'
+            },
+            {
+                text: 'CANBERRA RD',
+                font: 'thick'
+            },
+            {
+                text: 'SEMBAWANG WAY',
+                font: 'thick'
+            },
+            {
+                text: 'WDL AVENUE 7',
+                font: 'thick'
+            },
+            {
+                text: 'GAMBAS AVE',
+                font: 'thick'
+            },
+            {
+                text: 'WDL AVENUE 9',
+                font: 'thick'
+            },
+            {
+                text: 'WDL AVENUE 4',
+                font: 'thick'
+            },
+        ]
+    },
+    584: {
+        renderType: 'standardService',
+        serviceNumber: '106',
+        serviceFont: 'full',
+        destination: {
+            text: 'SHENTON WAY TER',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['SHENTON WAY', 'TERMINAL'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'B.B EAST AVE 3',
+                font: 'thick'
+            },
+            {
+                text: 'TOH TUCK AVE',
+                font: 'thick'
+            },
+            {
+                text: 'C\'WEALTH AVE WEST',
+                font: 'thin'
+            },
+            {
+                text: 'C\'WEALTH AVE',
+                font: 'thin'
+            },
+            {
+                text: 'HOLLAND AVE, ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'NAPIER ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'TANGLIN ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'ORHCARD ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'BRAS BASAH RD',
+                font: 'thick'
+            },
+            {
+                text: 'TAMASEK BLVD, AVE',
+                font: 'thin'
+            },
+            {
+                text: 'BAYFRONT AVE',
+                font: 'thick'
+            },
+            {
+                text: 'CENTRAL BLVD',
+                font: 'thick'
+            },
+            {
+                text: 'SHENTON WAY',
+                font: 'thick'
+            },
+        ]
+    },
+    585: {
+        renderType: 'standardService',
+        serviceNumber: '106',
+        serviceFont: 'full',
+        destination: {
+            text: 'BUKIT BATOK',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: ['BUKIT BATOK', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'CENTRAL BLVD',
+                font: 'thick'
+            },
+            {
+                text: 'BAYFRONT AVE',
+                font: 'thick'
+            },
+            {
+                text: 'RAFFLES AVENUE',
+                font: 'thick'
+            },
+            {
+                text: 'STAMFORD ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'ORCHARD ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'PENANG ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'SOMERSET ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'ORCHARD BLVD',
+                font: 'thick'
+            },
+            {
+                text: 'NAIPER ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'HOLLAND ROAD, AVE',
+                font: 'thin'
+            },
+            {
+                text: 'C\'WEALTH AVE WEST',
+                font: 'thin'
+            },
+            {
+                text: 'TOH TUCK AVE',
+                font: 'thick'
+            },
+            {
+                text: 'B.B EAST AVE 3',
+                font: 'thick'
+            },
+        ]
+    },
     586: {
         renderType: 'standardService',
         serviceNumber: '188R',
@@ -6853,8 +7406,277 @@ EDSDataSet['SMRT'] = {
                 showDest: false
             },
             {
+                text: 'C. C. K WAY',
+                font: 'thick'
+            },
+            {
+                text: 'B.B WEST AVE 7',
+                font: 'thick'
+            },
+            {
+                text: 'B.B WEST AVE 4',
+                font: 'thick'
+            },
+            {
+                text: 'B.B WEST AVE 2',
+                font: 'thick'
+            },
+            {
+                text: 'B.B WEST AVE 3',
+                font: 'thick'
+            },
+            {
+                text: 'B.B WEST AVE 6',
+                font: 'thick'
+            },
+            {
+                text: 'B. BATOK AVE 1',
+                font: 'thick'
+            },
+            {
+                text: 'JURONG EAST CTRL',
+                font: 'thin'
+            },
+            {
+                text: 'TOH GUAN ROAD',
+                font: 'thick'
+            },
+            {
                 text: 'TELOK BLANGAH ROAD',
                 font: 'thin'
+            },
+        ]
+    },
+    587: {
+        renderType: 'standardService',
+        serviceNumber: '188R',
+        serviceFont: 'full',
+        destination: {
+            text: 'C. C. K INT',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: ['CHOA CHU KANG', 'INTERCHANGE'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'TELOK BLANGAH RD',
+                font: 'thin'
+            },
+            {
+                text: 'TOH GUAN ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'B. BATOK AVE 1',
+                font: 'thick'
+            },
+            {
+                text: 'B.B WEST AVE 6',
+                font: 'thick'
+            },
+            {
+                text: 'B.B WEST AVE 3',
+                font: 'thick'
+            },
+            {
+                text: 'B.B WEST AVE 2',
+                font: 'thick'
+            },
+            {
+                text: 'B.B WEST AVE 4',
+                font: 'thick'
+            },
+            {
+                text: 'B.B WEST AVE 7',
+                font: 'thick'
+            },
+            {
+                text: 'C. C. K WAY',
+                font: 'thick'
+            },
+        ]
+    },
+    588: {
+        renderType: 'standardService',
+        serviceNumber: '568',
+        serviceFont: 'full',
+        destination: {
+            text: 'SUNTEC CITY',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: 'SUNTEC CITY',
+                font: 'big',
+                showDest: false
+            },
+            {
+                text: 'BT BATOK WEST AVE 5,4',
+                font: 'tall'
+            },
+            {
+                text: 'BT BATOK WEST AVE 2,3',
+                font: 'tall'
+            },
+            {
+                text: 'BT BATOK WEST AVE 6',
+                font: 'tall'
+            },
+            {
+                text: 'BT BATOK AVE 1',
+                font: 'thick'
+            },
+            {
+                text: 'JURONG EAST CENTRAL',
+                font: 'tall'
+            },
+            {
+                text: 'TOH GUAN ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'JURONG TOWN HALL ROAD',
+                font: 'tall'
+            },
+            {
+                text: 'ANSON ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'ROBINSON ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'FULLERTON ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'ESPLANADE DRIVE',
+                font: 'thin'
+            },
+            {
+                text: 'TAMASEK BLVD / AVE',
+                font: 'thin'
+            },
+        ]
+    },
+    589: {
+        renderType: 'standardService',
+        serviceNumber: '966',
+        serviceFont: 'full',
+        destination: {
+            text: 'MARINE PARADE',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['MARINE', 'PARADE'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'WDL AVENUE 3',
+                font: 'thick'
+            },
+            {
+                text: 'PENDING / PETIR RD',
+                font: 'thin'
+            },
+            {
+                text: 'JLN TOA PAYOH',
+                font: 'thick'
+            },
+            {
+                text: 'JLN KOLAM AYER',
+                font: 'thin'
+            },
+            {
+                text: 'EUNOS MRT / STILL ROAD',
+                font: 'tall'
+            },
+            {
+                text: ['MARINE PARADE', '( LOOP )'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'STILL ROAD / EUNOS MRT',
+                font: 'tall'
+            },
+            {
+                text: 'JLN KOLAM AYER',
+                font: 'thin'
+            },
+            {
+                text: 'JLN TOA PAYOH',
+                font: 'thick'
+            },
+            {
+                text: 'PETIR / PENDING RD',
+                font: 'thin'
+            },
+            {
+                text: 'WDL AVENUE 3',
+                font: 'thick'
+            },
+        ]
+    },
+    590: {
+        renderType: 'standardService',
+        serviceNumber: '971E',
+        serviceFont: 'full',
+        destination: {
+            text: 'CECIL STREET',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: 'CECIL STREET',
+                font: 'big',
+                showDest: false
+            },
+            {
+                text: 'BT PANJANG RING RD',
+                font: 'tall'
+            },
+            {
+                text: 'JELAPANG ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'SEGAR / FAJAR RD',
+                font: 'thin'
+            },
+            {
+                text: 'WHITLEY ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'SCOTTS / ORCHARD RD',
+                font: 'tall'
+            },
+            {
+                text: 'NICOLL HIGHWAY',
+                font: 'thin'
+            },
+            {
+                text: 'COLLYER QUAY',
+                font: 'thick'
+            },
+            {
+                text: 'RAFFLES QUAY',
+                font: 'thick'
+            },
+            {
+                text: 'SHENTON WAY',
+                font: 'thick'
+            },
+            {
+                text: 'ANSON ROAD',
+                font: 'thick'
             },
         ]
     },
