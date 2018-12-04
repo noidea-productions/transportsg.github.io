@@ -3174,7 +3174,7 @@ EDSDataSet['SMRT'] = {
                 font: 'thick'
             },
             {
-                text: 'ORHCARD TURN',
+                text: 'ORCHARD TURN',
                 font: 'thick'
             },
             {
@@ -7298,7 +7298,7 @@ EDSDataSet['SMRT'] = {
                 font: 'thick'
             },
             {
-                text: 'ORHCARD ROAD',
+                text: 'ORCHARD ROAD',
                 font: 'thick'
             },
             {
@@ -8658,12 +8658,12 @@ EDSDataSet['SMRT'] = {
         serviceFont: 'full',
         destination: {
             text: 'BENCOOLEN ST',
-            font: 'thick'
+            font: 'thin'
         },
         scrolls: [
             {
                 text: ['BENCOOLEN', 'STREET'],
-                font: 'thin',
+                font: 'thick',
                 showDest: false
             },
             {
@@ -8679,7 +8679,7 @@ EDSDataSet['SMRT'] = {
                 font: 'thick'
             },
             {
-                text: 'STEVENS / SCTOOS RD',
+                text: 'STEVENS / SCOTTS RD',
                 font: 'tall'
             },
             {
@@ -8694,7 +8694,7 @@ EDSDataSet['SMRT'] = {
         serviceFont: 'full',
         destination: {
             text: 'BUKIT PANJANG',
-            font: 'thick'
+            font: 'thin'
         },
         scrolls: [
             {
@@ -9153,6 +9153,294 @@ EDSDataSet['SMRT'] = {
             },
         ]
     },
+    647: {
+        renderType: 'standardService',
+        serviceNumber: '972',
+        serviceFont: 'full',
+        destination: {
+            text: 'BENCOOLEN ST',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['BENCOOLEN', 'STREET'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'BT PANJANG RD',
+                font: 'tall'
+            },
+            {
+                text: 'SENJA ROAD / LINK',
+                font: 'thin'
+            },
+            {
+                text: 'JELAPANG RD',
+                font: 'thin'
+            },
+            {
+                text: 'SEGAR / FAJAR RD',
+                font: 'thin'
+            },
+            {
+                text: 'BT PANJANG RING RD',
+                font: 'thin'
+            },
+            {
+                text: 'B K E / P I E',
+                font: 'thin'
+            },
+            {
+                text: 'WHITLEY RD',
+                font: 'thin'
+            },
+            {
+                text: 'STEVENS / SCOTTS RD',
+                font: 'thin'
+            },
+            {
+                text: 'ORCHARD RD',
+                font: 'thick'
+            },
+        ]
+    },
+    648: {
+        renderType: 'standardService',
+        serviceNumber: '972',
+        serviceFont: 'full',
+        destination: {
+            text: 'BUKIT PANJANG',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: 'BUKIT PANJANG',
+                font: 'big',
+                showDest: false
+            },
+            {
+                text: 'ORCHARD / PENANG RD',
+                font: 'thin'
+            },
+            {
+                text: 'SOMERSET ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'ORCHARD TURN',
+                font: 'thin'
+            },
+            {
+                text: 'SCOTTS / STEVENS RD',
+                font: 'thin'
+            },
+            {
+                text: 'WHITLEY ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'P I E / B K E',
+                font: 'thin'
+            },
+            {
+                text: 'BT PANJANG RING RD',
+                font: 'thin'
+            },
+            {
+                text: 'FAJAR / SEGAR RD',
+                font: 'thin'
+            },
+            {
+                text: 'JELAPANG RD',
+                font: 'thin'
+            },
+            {
+                text: 'SENJA LINK / ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'BT PANJANG RD',
+                font: 'thin'
+            },
+        ]
+    },
+    649: {
+        renderType: 'standardService',
+        serviceNumber: '850E',
+        serviceFont: 'full',
+        destination: {
+            text: 'SHENTON WAY',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['SHENTON', 'WAY'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'YISHUN AVE 1,11',
+                font: 'thin'
+            },
+            {
+                text: 'YISHUN RING RD',
+                font: 'thin'
+            },
+            {
+                text: 'DHOBY GHAUT MRT',
+                font: 'thin'
+            },
+            {
+                text: 'BRAS BASAH RD',
+                font: 'thin'
+            },
+            {
+                text: 'COLLYER QUAY',
+                font: 'thin'
+            },
+        ]
+    },
+    650: {
+        renderType: 'standardService',
+        serviceNumber: '850E',
+        serviceFont: 'full',
+        destination: {
+            text: 'YISHUN RING RD',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['YISHUN', 'RING ROAD'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'ROBINSON RD',
+                font: 'thick'
+            },
+            {
+                text: 'STAMFORD RD',
+                font: 'thick'
+            },
+            {
+                text: 'DHOBY GHAUT MRT',
+                font: 'thin'
+            },
+            {
+                text: 'YISHUN ST 41',
+                font: 'thin'
+            },
+            {
+                text: 'YISHUN AVE 1,11',
+                font: 'thin'
+            },
+        ]
+    },
+    651: {
+        renderType: 'standardService',
+        serviceNumber: '951E',
+        serviceFont: 'full',
+        destination: {
+            text: 'SHENTON WAY',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['SHENTON', 'WAY'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'WOODLANDS AVE 4,5',
+                font: 'tall'
+            },
+            {
+                text: 'DHOBY GHAUT MRT',
+                font: 'thin'
+            },
+            {
+                text: 'BRAS BASAH RD',
+                font: 'thin'
+            },
+            {
+                text: 'COLLYER QUAY',
+                font: 'thin'
+            },
+        ]
+    },
+    652: {
+        renderType: 'standardService',
+        serviceNumber: '951E',
+        serviceFont: 'full',
+        destination: {
+            text: 'WOODLANDS ST 82',
+            font: 'tall'
+        },
+        scrolls: [
+            {
+                text: ['WOODLANDS', 'STREET 82'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'ROBINSON ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'STAMFORD ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'DHOBY GHAUT MRT',
+                font: 'thin'
+            },
+            {
+                text: 'WOODLANDS AVE 5,4',
+                font: 'tall'
+            },
+        ]
+    },
+    653: {
+        renderType: 'standardService',
+        serviceNumber: '979',
+        serviceFont: 'full',
+        destination: {
+            text: 'BT PANJANG',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: 'BT PANJANG',
+                font: 'big',
+                showDest: false
+            },
+            {
+                text: 'PETIR / JELUBU RD',
+                font: 'thin'
+            },
+            {
+                text: 'WOODLANDS RD',
+                font: 'thick'
+            },
+            {
+                text: 'C.C.K DR / NTH 5',
+                font: 'thick'
+            },
+            {
+                text: 'C.C.K ST 5 / DR',
+                font: 'thick'
+            },
+            {
+                text: 'C.C.K NORTH 7',
+                font: 'thick'
+            },
+            {
+                text: 'C.C.K CRES (LOOP)',
+                font: 'thick'
+            }
+        ]
+    },
     654: {
         renderType: 'standardService',
         serviceNumber: '983',
@@ -9187,6 +9475,226 @@ EDSDataSet['SMRT'] = {
                 text: 'JELUBU RD (LOOP)',
                 font: 'thin'
             }
+        ]
+    },
+    655: {
+        renderType: 'standardService',
+        serviceNumber: '979M',
+        serviceFont: 'full',
+        destination: {
+            text: 'BT PANJANG',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: 'BT PANJANG',
+                font: 'efat',
+                showDest: false
+            },
+            {
+                text: 'PETIR / JELUBU RD',
+                font: 'thin'
+            },
+            {
+                text: 'WOODLANDS RD',
+                font: 'thin'
+            },
+            {
+                text: 'C.C.K DR / NTH 6',
+                font: 'thin'
+            },
+            {
+                text: 'C.C.K NTH 5 (LOOP)',
+                font: 'thick'
+            }
+        ]
+    },
+    656: {
+        renderType: 'standardService',
+        serviceNumber: '972',
+        serviceFont: 'full',
+        destination: {
+            text: 'ORCHARD ROAD',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['ORCHARD', 'ROAD'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'BT PANJANG RD',
+                font: 'tall'
+            },
+            {
+                text: 'SENJA ROAD / LINK',
+                font: 'thin'
+            },
+            {
+                text: 'JELAPANG ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'SEGAR / FAJAR RD',
+                font: 'thin'
+            },
+            {
+                text: 'BT PANJANG RING RD',
+                font: 'thin'
+            },
+            {
+                text: 'BKE / PIE',
+                font: 'thin'
+            },
+            {
+                text: 'WHITLEY ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'STEVENS / SCOTTS RD',
+                font: 'thin'
+            },
+        ]
+    },
+    657: {
+        renderType: 'standardService',
+        serviceNumber: '972',
+        serviceFont: 'full',
+        destination: {
+            text: 'BUKIT PANJANG',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: 'BUKIT PANJANG', // research font
+                font: 'big',
+                showDest: false
+            },
+            {
+                text: 'PENANG RD',
+                font: 'thin'
+            },
+            {
+                text: 'SOMERSET ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'ORCHARD TURN',
+                font: 'thin'
+            },
+            {
+                text: 'SCOTTS / STEVENS RD',
+                font: 'thin'
+            },
+            {
+                text: 'WHITLEY ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'PIE / BKE',
+                font: 'thin'
+            },
+            {
+                text: 'BT PANJANG RING RD',
+                font: 'thin'
+            },
+            {
+                text: 'FAJAR / SEGAR RD',
+                font: 'thin'
+            },
+            {
+                text: 'JELAPANG RD',
+                font: 'thin'
+            },
+            {
+                text: 'SENJA LINK / ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'BT PANJANG RD',
+                font: 'thin'
+            },
+        ]
+    },
+    658: {
+        renderType: 'standardService',
+        serviceNumber: '969',
+        serviceFont: 'full',
+        destination: {
+            text: 'TAMPINES',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['TAMPINES', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'WDL AVENUE 7',
+                font: 'thin'
+            },
+            {
+                text: 'GAMBAS AVENUE',
+                font: 'thin'
+            },
+            {
+                text: 'YISHUN AVE 5 ,2',
+                font: 'thin'
+            },
+            {
+                text: 'SLE / TPE',
+                font: 'thin'
+            },
+            {
+                text: 'TAMPINES AVE 9',
+                font: 'thin'
+            },
+            {
+                text: 'TAMPINES CONCOURSE',
+                font: 'thin'
+            },
+        ]
+    },
+    659: {
+        renderType: 'standardService',
+        serviceNumber: '969',
+        serviceFont: 'full',
+        destination: {
+            text: 'WOODLANDS INT',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['WOODLANDS', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'TAMPINES CONCOURSE',
+                font: 'thin'
+            },
+            {
+                text: 'TAMPINES AVE 9',
+                font: 'thin'
+            },
+            {
+                text: 'TPE / SLE',
+                font: 'thin'
+            },
+            {
+                text: 'YISHUN AVE 2 ,5',
+                font: 'thin'
+            },
+            {
+                text: 'GAMBAS AVENUE',
+                font: 'thin'
+            },
+            {
+                text: 'WDL AVENUE 7',
+                font: 'thin'
+            },
         ]
     },
     1901: {
