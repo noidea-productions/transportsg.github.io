@@ -7876,6 +7876,46 @@ EDSDataSet['SMRT'] = {
             },
         ]
     },
+    610: {
+        renderType: 'standardService',
+        serviceNumber: '75',
+        serviceFont: 'full',
+        destination: {
+            text: 'BUKIT PANJANG',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: 'BUKIT PANJANG',
+                font: 'efat',
+                showDest: false
+            },
+            {
+                text: 'COLLYER QUAY',
+                font: 'thick'
+            },
+            {
+                text: 'SHENTON WAY',
+                font: 'thick'
+            },
+            {
+                text: 'OUTRAM RD, MRT',
+                font: 'thick'
+            },
+            {
+                text: 'HOLLAND ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'CLEMENTI ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'UPP BT TIMAH RD',
+                font: 'thick'
+            },
+        ]
+    },
     611: {
         renderType: 'standardService',
         serviceNumber: '176',
@@ -7895,6 +7935,10 @@ EDSDataSet['SMRT'] = {
                 font: 'thin'
             },
             {
+                text: 'WEST COAST HIGHWAY',
+                font: 'thin'
+            },
+            {
                 text: 'JURONG TOWN HALL',
                 font: 'thin'
             },
@@ -7910,6 +7954,78 @@ EDSDataSet['SMRT'] = {
                 text: 'UPP BUKIT TIMAH RD',
                 font: 'thin'
             }
+        ]
+    },
+    612: {
+        renderType: 'standardService',
+        serviceNumber: '177',
+        serviceFont: 'full',
+        destination: {
+            text: 'BUKIT PANJANG',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: 'BUKIT PANJANG',
+                font: 'big',
+                showDest: false
+            },
+            {
+                text: 'BT BATOK EAST AVE 3',
+                font: 'thin'
+            },
+            {
+                text: 'BT BATOK EAST AVE 4',
+                font: 'thin'
+            },
+            {
+                text: 'HILLVIEW AVE',
+                font: 'thick'
+            },
+            {
+                text: 'GOMBAK DRIVE',
+                font: 'thick'
+            },
+            {
+                text: 'UPP BUKIT TIMAH RD',
+                font: 'thin'
+            },
+        ]
+    },
+    613: {
+        renderType: 'standardService',
+        serviceNumber: '180',
+        serviceFont: 'full',
+        destination: {
+            text: 'BUKIT PANJANG',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: 'BUKIT PANJANG',
+                font: 'big',
+                showDest: false
+            },
+            {
+                text: 'BOON LAY WAY',
+                font: 'thick'
+            },
+            {
+                text: 'JURONG TOWN HALL',
+                font: 'thin'
+            },
+            {
+                text: 'BUKIT BATOK RD',
+                font: 'thick'
+            },
+            {
+                text: 'CHOA CHU KANG RD',
+                font: 'thin'
+            },
+            {
+                text: 'PETIR RD',
+                font: 'thick'
+            },
         ]
     },
     614: {
@@ -7941,12 +8057,56 @@ EDSDataSet['SMRT'] = {
             {
                 text: 'BUKIT PANJANG RD',
                 font: 'thin'
-            }
+            },
         ]
     },
-    619: {
+    615: {
         renderType: 'standardService',
-        serviceNumber: '970',
+        serviceNumber: '700',
+        serviceFont: 'full',
+        destination: {
+            text: 'BUKIT PANJANG',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: 'BUKIT PANJANG',
+                font: 'big',
+                showDest: false
+            },
+            {
+                text: 'STAMFORD RD',
+                font: 'thick'
+            },
+            {
+                text: 'SOMERSET RD',
+                font: 'thick'
+            },
+            {
+                text: 'ORCHARD TURN',
+                font: 'thick'
+            },
+            {
+                text: 'SCOTTS ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'BUKIT TIMAH RD',
+                font: 'thick'
+            },
+            {
+                text: 'PETIR RD',
+                font: 'thick'
+            },
+            {
+                text: 'BUKIT PANJANG RD',
+                font: 'thin'
+            },
+        ]
+    },
+    616: {
+        renderType: 'standardService',
+        serviceNumber: '700A',
         serviceFont: 'full',
         destination: {
             text: 'BUKIT PANJANG',
@@ -7959,13 +8119,1038 @@ EDSDataSet['SMRT'] = {
                 showDest: false
             },
             {
-                text: 'NEW BRIDGE RD',
+                text: 'STAMFORD RD',
+                font: 'thick'
+            },
+            {
+                text: 'SOMERSET RD',
+                font: 'thick'
+            },
+            {
+                text: 'ORCHARD TURN',
                 font: 'thin'
             },
             {
-                text: 'ZION RD',
+                text: 'SCOTTS RD',
+                font: 'thick'
+            },
+            {
+                text: 'BUKIT TIMAH RD',
                 font: 'thin'
-            }
+            },
+            {
+                text: 'BT PANJANG RD',
+                font: 'thin'
+            },
+        ]
+    },
+    617: {
+        renderType: 'standardService',
+        serviceNumber: '920',
+        serviceFont: 'full',
+        destination: {
+            text: 'BUKIT PANJANG',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: 'BUKIT PANJANG',
+                font: 'big',
+                showDest: false
+            },
+            {
+                text: 'SENJA ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'JELAPANG ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'SAUJANA ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'FAJAR ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'BANGKIT ROAD (LOOP)',
+                font: 'thin'
+            },
+        ]
+    },
+    618: {
+        renderType: 'standardService',
+        serviceNumber: '922',
+        serviceFont: 'full',
+        destination: {
+            text: 'BUKIT PANJANG',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: 'BUKIT PANJANG',
+                font: 'big',
+                showDest: false
+            },
+            {
+                text: 'BT PANJANG RING RD',
+                font: 'thin'
+            },
+            {
+                text: 'JELAPANG ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'SEGAR ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'FAJAR ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'BANGKIT RD ( LOOP )',
+                font: 'thin'
+            },
+        ]
+    },
+    619: {
+        renderType: 'standardService',
+        serviceNumber: '970',
+        serviceFont: 'full',
+        destination: {
+            text: 'BUKIT PANJANG',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: 'BUKIT PANJANG',
+                font: 'big',
+                showDest: false
+            },
+            {
+                text: 'NEW BRIDGE RD',
+                font: 'thick'
+            },
+            {
+                text: 'ZION RD',
+                font: 'thick'
+            },
+            {
+                text: 'COMMONWEALTH AVE',
+                font: 'thin'
+            },
+            {
+                text: 'SIXTH AVENUE',
+                font: 'thick'
+            },
+            {
+                text: 'UPP BUKIT TIMAH RD',
+                font: 'thin'
+            },
+            {
+                text: 'JLN JURONG KECHIL',
+                font: 'thin'
+            },
+            {
+                text: 'HILLVIEW AVE, RD',
+                font: 'thin'
+            },
+        ]
+    },
+    621: {
+        renderType: 'standardService',
+        serviceNumber: '971E',
+        serviceFont: 'full',
+        destination: {
+            text: 'BT PANJANG',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['BUKIT', 'PANJANG'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'ANSON RD / CECIL ST',
+                font: 'tall'
+            },
+            {
+                text: 'FULLERTON ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'ESPLANADE DR',
+                font: 'thin'
+            },
+            {
+                text: 'STAMFORD ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'ORCHARD/ PENANG RD',
+                font: 'tall'
+            },
+            {
+                text: 'SOMERSET ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'GARAGE / SCOTTS RD',
+                font: 'tall'
+            },
+            {
+                text: 'WHITLEY ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'BT PANJANG RING RD',
+                font: 'tall'
+            },
+            {
+                text: 'FAJAR / SEGAR RD',
+                font: 'tall'
+            },
+            {
+                text: 'JELAPANG ROAD',
+                font: 'thin'
+            },
+        ]
+    },
+    622: {
+        renderType: 'standardService',
+        serviceNumber: '850E',
+        serviceFont: 'full',
+        destination: {
+            text: 'SHENTON WAY',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: 'SHENTON WAY',
+                font: 'big',
+                showDest: false
+            },
+            {
+                text: 'YISHUN AVE 6',
+                font: 'thin'
+            },
+            {
+                text: 'YISHUN RING RD',
+                font: 'thin'
+            },
+            {
+                text: 'DHOBY GHAUT MRT',
+                font: 'thin'
+            },
+            {
+                text: 'BRAS BASAH RD',
+                font: 'thin'
+            },
+            {
+                text: 'COLLYER QUAY',
+                font: 'thin'
+            },
+        ]
+    },
+    623: {
+        renderType: 'standardService',
+        serviceNumber: '850E',
+        serviceFont: 'full',
+        destination: {
+            text: 'YISHUN AVE 11',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['YISHUN', 'AVENUE 11'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'ROBINSON RD',
+                font: 'thick'
+            },
+            {
+                text: 'STAMFORD RD',
+                font: 'thick'
+            },
+            {
+                text: 'DHOBY GHAUT MRT',
+                font: 'thin'
+            },
+            {
+                text: 'YISHUN RING RD',
+                font: 'thin'
+            },
+            {
+                text: 'YISHUN AVE 6',
+                font: 'thin'
+            },
+        ]
+    },
+    624: {
+        renderType: 'standardService',
+        serviceNumber: '975',
+        serviceFont: 'full',
+        destination: {
+            text: 'LIM CHU KANG',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: 'LIM CHU KANG',
+                font: 'big',
+                showDest: false
+            },
+            {
+                text: 'TECK WHYE AVE',
+                font: 'thin'
+            },
+            {
+                text: 'CHOA CHU KANG MRT',
+                font: 'thin'
+            },
+            {
+                text: 'C.C.K WAY,AVE 3',
+                font: 'thin'
+            },
+            {
+                text: 'OLD CHOA CHU KANG RD',
+                font: 'tall'
+            },
+            {
+                text: 'LIM CHU KANG RD',
+                font: 'thin'
+            },
+        ]
+    },
+    625: {
+        renderType: 'standardService',
+        serviceNumber: '975',
+        serviceFont: 'full',
+        destination: {
+            text: 'BUKIT PANJANG',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: 'BUKIT PANJANG',
+                font: 'big',
+                showDest: false
+            },
+            {
+                text: 'LIM CHU KANG RD',
+                font: 'thin'
+            },
+            {
+                text: 'OLD CHOA CHU KANG RD',
+                font: 'tall'
+            },
+            {
+                text: 'C.C.K  AVE 3,WAY',
+                font: 'thin'
+            },
+            {
+                text: 'CHOA CHU KANG MRT',
+                font: 'thin'
+            },
+            {
+                text: 'TECK WHY AVE',
+                font: 'thick'
+            },
+        ]
+    },
+    626: {
+        renderType: 'standardService',
+        serviceNumber: '982E',
+        serviceFont: 'full',
+        destination: {
+            text: 'MARINA BLVD',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['MARINA', 'BOULEVARD'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'C.C.K AVE 5,4',
+                font: 'thin'
+            },
+            {
+                text: 'C.C.K WAY,AVE 1',
+                font: 'thin'
+            },
+            {
+                text: 'TECK WHYE AVE',
+                font: 'thin'
+            },
+            {
+                text: 'ANSON ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'ROBINSON ROAD',
+                font: 'thin'
+            },
+        ]
+    },
+    627: {
+        renderType: 'standardService',
+        serviceNumber: '982E',
+        serviceFont: 'full',
+        destination: {
+            text: 'C.C.K AVE 5',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['CHOA CHU KANG', 'AVENUE 5'],
+                font: 'thin',
+                showDest: false
+            },
+            {
+                text: 'CENTRAL BLVD',
+                font: 'thin'
+            },
+            {
+                text: 'SHENTON WAY',
+                font: 'thin'
+            },
+            {
+                text: 'TECK WHYE AVE',
+                font: 'thin'
+            },
+            {
+                text: 'C.C.K  AVE 1',
+                font: 'thick'
+            },
+            {
+                text: 'C.C.K WAY,AVE 4',
+                font: 'thin'
+            },
+        ]
+    },
+    628: {
+        renderType: 'standardService',
+        serviceNumber: '951E',
+        serviceFont: 'full',
+        destination: {
+            text: 'SHENTON WAY',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['SHENTON', 'WAY'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'WOODLANDS AVE 4,1',
+                font: 'tall'
+            },
+            {
+                text: 'DHOBY GHAUT MRT',
+                font: 'thin'
+            },
+            {
+                text: 'BRAS BASAH RD',
+                font: 'thin'
+            },
+            {
+                text: 'COLLYER QUAY',
+                font: 'thin'
+            },
+        ]
+    },
+    629: {
+        renderType: 'standardService',
+        serviceNumber: '951E',
+        serviceFont: 'full',
+        destination: {
+            text: 'WOODLANDS ST 82',
+            font: 'tall'
+        },
+        scrolls: [
+            {
+                text: ['WOODLANDS', 'STREET 82'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'ROBINSON ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'STAMFORD ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'DHOBY GHAUT MRT',
+                font: 'thin'
+            },
+            {
+                text: 'WOODLANDS AVE 1,4',
+                font: 'tall'
+            },
+        ]
+    },
+    631: {
+        renderType: 'standardService',
+        serviceNumber: '75',
+        serviceFont: 'full',
+        destination: {
+            text: 'MARINA CENTRE',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: 'MARINA CENTRE',
+                font: 'big',
+                showDest: false
+            },
+            {
+                text: 'UPP BT TIMAH RD',
+                font: 'thick'
+            },
+            {
+                text: 'CLEMENTI ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'HOLLAND ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'GREAT WORLD CITY',
+                font: 'thick'
+            },
+            {
+                text: 'OUTRAM ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'CANTOMENT RD',
+                font: 'thick'
+            },
+            {
+                text: 'ANSON ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'ROBINSON ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'EMPRESS PLACE',
+                font: 'thick'
+            },
+        ]
+    },
+    632: {
+        renderType: 'standardService',
+        serviceNumber: '972',
+        serviceFont: 'full',
+        destination: {
+            text: 'BENCOOLEN ST',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: ['BENCOOLEN', 'STREET'],
+                font: 'thin',
+                showDest: false
+            },
+            {
+                text: 'BT PANJANG RING RD',
+                font: 'tall'
+            },
+            {
+                text: 'SEGAR / FAJAR RD',
+                font: 'thin'
+            },
+            {
+                text: 'B K E / P I E',
+                font: 'thick'
+            },
+            {
+                text: 'STEVENS / SCTOOS RD',
+                font: 'tall'
+            },
+            {
+                text: 'ORCHARD RD',
+                font: 'thick'
+            },
+        ]
+    },
+    633: {
+        renderType: 'standardService',
+        serviceNumber: '972',
+        serviceFont: 'full',
+        destination: {
+            text: 'BUKIT PANJANG',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: 'BUKIT PANJANG',
+                font: 'big',
+                showDest: false
+            },
+            {
+                text: 'SOMERSET RD',
+                font: 'thick'
+            },
+            {
+                text: 'SCOTTS / STEVENS RD',
+                font: 'tall'
+            },
+            {
+                text: ' P I E / B K E',
+                font: 'thick'
+            },
+            {
+                text: 'FAJAR / SENJAR RD',
+                font: 'thin'
+            },
+            {
+                text: 'BT PANJANG RING RD',
+                font: 'tall'
+            },
+        ]
+    },
+    634: {
+        renderType: 'standardService',
+        serviceNumber: '853',
+        serviceFont: 'full',
+        destination: {
+            text: 'GEYLANG LOR 1',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['GEYLANG LOR 1/', 'KALLANG MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'YISHUN CTRL 1',
+                font: 'thin'
+            },
+            {
+                text: 'ANG MO KIO AVE 6',
+                font: 'thin'
+            },
+            {
+                text: 'ANG MO KIO AVE 1',
+                font: 'thin'
+            },
+            {
+                text: 'UPP SERANGOON RD',
+                font: 'thin'
+            },
+            {
+                text: 'KALLANG BAHRU',
+                font: 'thin'
+            },
+        ]
+    },
+    635: {
+        renderType: 'standardService',
+        serviceNumber: '853',
+        serviceFont: 'full',
+        destination: {
+            text: 'YISHUN',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['YISHUN', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'KALLANG BAHRU',
+                font: 'thin'
+            },
+            {
+                text: 'UPPER SERANGOON RD',
+                font: 'thin'
+            },
+            {
+                text: 'ANG MO KIO AVE 1',
+                font: 'thin'
+            },
+            {
+                text: 'ANG MO KIO AVE 6',
+                font: 'thin'
+            },
+            {
+                text: 'YISHUN CTRL 1',
+                font: 'thin'
+            },
+        ]
+    },
+    636: {
+        renderType: 'standardService',
+        serviceNumber: '853',
+        serviceFont: 'full',
+        destination: {
+            text: 'UPP E. COAST RD',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['UPPER', 'EAST COAST RD'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'YISHUN CTRL 1',
+                font: 'thin'
+            },
+            {
+                text: 'ANG MO KIO AVE 6',
+                font: 'thin'
+            },
+            {
+                text: 'UPP SERANGOON RD',
+                font: 'thin'
+            },
+            {
+                text: 'KALLANG BAHRU',
+                font: 'thin'
+            },
+            {
+                text: 'TANJONG KATONG',
+                font: 'thin'
+            },
+            {
+                text: 'MARINE PARADE RD',
+                font: 'thin'
+            },
+        ]
+    },
+    637: {
+        renderType: 'standardService',
+        serviceNumber: '853',
+        serviceFont: 'full',
+        destination: {
+            text: 'YISHUN',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['YISHUN', 'INT / MRT'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'TANJONG KATONG',
+                font: 'thin'
+            },
+            {
+                text: 'KALLANG BAHRU',
+                font: 'thin'
+            },
+            {
+                text: 'UPP SERANGOON RD',
+                font: 'thin'
+            },
+            {
+                text: 'ANG MO KIO AVE 6',
+                font: 'thin'
+            },
+            {
+                text: 'YISHUN CTRL 1',
+                font: 'thin'
+            },
+        ]
+    },
+    638: {
+        renderType: 'standardService',
+        serviceNumber: '990',
+        serviceFont: 'full',
+        destination: {
+            text: 'BUKIT BATOK',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: 'BUKIT BATOK',
+                font: 'efat',
+                showDest: false
+            },
+            {
+                text: 'B.B EAST AVE 3,6',
+                font: 'thin'
+            },
+            {
+                text: 'B.BATOK AVE 1',
+                font: 'thin'
+            },
+            {
+                text: 'TOH GUAN ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'BOON LAY WAY',
+                font: 'thin'
+            },
+            {
+                text: 'JURONG EAST CTRL',
+                font: 'thin'
+            },
+            {
+                text: 'JURONG GATEWAY RD',
+                font: 'thin'
+            },
+            {
+                text: 'JURONG EAST (LOOP)',
+                font: 'thin'
+            },
+        ]
+    },
+    640: {
+        renderType: 'standardService',
+        serviceNumber: '189',
+        serviceFont: 'full',
+        destination: {
+            text: 'BUKIT BATOK',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: 'BUKIT BATOK',
+                font: 'big',
+                showDest: false
+            },
+            {
+                text: 'B.B. EAST AVE 6',
+                font: 'thin'
+            },
+            {
+                text: 'B.B. EAST ST 23',
+                font: 'thin'
+            },
+            {
+                text: 'B.B. EAST AVE 3',
+                font: 'thin'
+            },
+            {
+                text: 'CLEMENTI AVE 6',
+                font: 'thin'
+            },
+            {
+                text: 'C\'WEALTH AVE WEST',
+                font: 'thin'
+            },
+            {
+                text: 'CLEMENTI AVE 1 (LOOP)',
+                font: 'thin'
+            },
+        ]
+    },
+    642: {
+        renderType: 'standardService',
+        serviceNumber: '982E',
+        serviceFont: 'full',
+        destination: {
+            text: 'MARINA BLVD',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['MARINA', 'BOULEVARD'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'C. C. K AVE 5,4',
+                font: 'thin'
+            },
+            {
+                text: 'C. C. K WAY,AVE 1',
+                font: 'thin'
+            },
+            {
+                text: 'TECK WHYE AVE',
+                font: 'thin'
+            },
+            {
+                text: 'CHOA CHU KANG RD',
+                font: 'thin'
+            },
+            {
+                text: 'BUKIT BATOK RD',
+                font: 'thin'
+            },
+            {
+                text: 'ANSON ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'ROBINSON ROAD',
+                font: 'thin'
+            },
+        ]
+    },
+    643: {
+        renderType: 'standardService',
+        serviceNumber: '982E',
+        serviceFont: 'full',
+        destination: {
+            text: 'KEAT HONG CLOSE',
+            font: 'tall'
+        },
+        scrolls: [
+            {
+                text: ['KEAT HONG', 'CLOSE'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'CENTRAL BLVD',
+                font: 'thin'
+            },
+            {
+                text: 'SHENTON WAY',
+                font: 'thin'
+            },
+            {
+                text: 'BUKIT BATOK RD',
+                font: 'thin'
+            },
+            {
+                text: 'CHOA CHU KANG RD',
+                font: 'thin'
+            },
+            {
+                text: 'TECK WHYE AVE',
+                font: 'thin'
+            },
+            {
+                text: 'C.C.K AVE 1,WAY',
+                font: 'thin'
+            },
+            {
+                text: 'C.C.K AVE 4,5',
+                font: 'thin'
+            },
+        ]
+    },
+    644: {
+        renderType: 'standardService',
+        serviceNumber: '950',
+        serviceFont: 'full',
+        destination: {
+            text: 'JB SENTRAL TER',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['WOODLANDS INT', 'SINGAPORE'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: ['JB SENTRAL TER (LOOP)', 'JOHOR BAHRU'],
+                font: ['thin', 'thick'],
+                showDest: false
+            },
+        ]
+    },
+    645: {
+        renderType: 'standardService',
+        serviceNumber: '982E',
+        serviceFont: 'full',
+        destination: {
+            text: 'MARINA BLVD',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['MARINA', 'BOULEVARD'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'C. C. K AVE 5,4',
+                font: 'thin'
+            },
+            {
+                text: 'C. C. K WAY,AVE 1',
+                font: 'thin'
+            },
+            {
+                text: 'TECK WHYE AVE',
+                font: 'thin'
+            },
+            {
+                text: 'CHOA CHU KANG RD',
+                font: 'thin'
+            },
+            {
+                text: 'BUKIT BATOK RD',
+                font: 'thin'
+            },
+            {
+                text: 'ANSON ROAD',
+                font: 'thick'
+            },
+            {
+                text: 'ROBINSON ROAD',
+                font: 'thin'
+            },
+        ]
+    },
+    646: {
+        renderType: 'standardService',
+        serviceNumber: '982E',
+        serviceFont: 'full',
+        destination: {
+            text: 'C.C.K AVE 5',
+            font: 'thin'
+        },
+        scrolls: [
+            {
+                text: ['CHOA CHU KANG', 'AVENUE 5'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'CENTRAL BLVD',
+                font: 'thin'
+            },
+            {
+                text: 'SHENTON WAY',
+                font: 'thin'
+            },
+            {
+                text: 'BUKIT BATOK ROAD',
+                font: 'thin'
+            },
+            {
+                text: 'CHOA CHU KANG RD',
+                font: 'thin'
+            },
+            {
+                text: 'TECK WHYE AVE',
+                font: 'thin'
+            },
+            {
+                text: 'C.C.K AVE 1,WAY',
+                font: 'thin'
+            },
+            {
+                text: 'C.C.K AVE 4',
+                font: 'thin'
+            },
         ]
     },
     654: {
