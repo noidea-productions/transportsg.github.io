@@ -15110,7 +15110,7 @@ EDSDataSet['SMRT'] = {
             },
             {
                 text: 'C.C.K NTH 5 (LOOP)',
-                font: 'thick'
+                font: 'thin'
             }
         ]
     },
