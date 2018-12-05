@@ -2686,10 +2686,10 @@ let fonts = {
             [1, 0]
         ],
         '-': [
-            [1, 1, 1, 1],
-            [0, 0, 0, 0],
-            [0, 0, 0, 0],
-            [0, 0, 0, 0]
+            [1, 1, 1],
+            [0, 0, 0],
+            [0, 0, 0],
+            [0, 0, 0]
         ],
     },
     thin2: { // Mirror font of thin, used in sbst dest eg > BOON LAY INT
