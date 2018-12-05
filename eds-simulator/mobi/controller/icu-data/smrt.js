@@ -11326,6 +11326,210 @@ EDSDataSet['SMRT'] = {
         },
         font: 'thick'
     },
+    6531: {
+        renderType: 'standardService',
+        serviceNumber: '653',
+        serviceFont: 'full',
+        destination: {
+            text: 'MARINA BLVD',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: 'MARINA BLVD',
+                font: 'efat',
+                showDest: false
+            },
+            {
+                text: 'HUME AVE',
+                font: 'thick'
+            },
+            {
+                text: 'HILLVIEW RD / AVE',
+                font: 'thin'
+            },
+            {
+                text: 'B.B EAST AVE 2 / 3',
+                font: 'thin'
+            },
+            {
+                text: 'ROBINSON RD',
+                font: 'thin'
+            },
+        ]
+    },
+    6532: {
+        renderType: 'standardService',
+        serviceNumber: '653',
+        serviceFont: 'full',
+        destination: {
+            text: 'HILLVIEW AVE',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: 'HILLVIEW AVE',
+                font: 'big',
+                showDest: false
+            },
+            {
+                text: 'CENTRAL BLVD',
+                font: 'thin'
+            },
+            {
+                text: 'SHENTON WAY',
+                font: 'thin'
+            },
+            {
+                text: 'B.B EAST AVE 3 / 2',
+                font: 'thin'
+            },
+            {
+                text: 'HUME AVE',
+                font: 'thin'
+            },
+            {
+                text: 'HILLVIEW RD',
+                font: 'thin'
+            },
+        ]
+    },
+    6561: {
+        renderType: 'standardService',
+        serviceNumber: '656',
+        serviceFont: 'full',
+        destination: {
+            text: 'SHENTON WAY',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: 'SHENTON WAY',
+                font: 'big',
+                showDest: false
+            },
+            {
+                text: 'ADMIRALTY LINK',
+                font: 'thin'
+            },
+            {
+                text: 'SEMBAWANG DR',
+                font: 'thin'
+            },
+            {
+                text: 'SEMBAWANG AVE',
+                font: 'thin'
+            },
+            {
+                text: 'DHOBY GHAUT',
+                font: 'thin'
+            },
+            {
+                text: 'BRAS BASAH RD',
+                font: 'thin'
+            },
+        ]
+    },
+    6562: {
+        renderType: 'standardService',
+        serviceNumber: '653',
+        serviceFont: 'full',
+        destination: {
+            text: 'CANBERRA RD',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: 'CANBERRA RD',
+                font: 'efat',
+                showDest: false
+            },
+            {
+                text: 'ROBINSON RD',
+                font: 'thin'
+            },
+            {
+                text: 'DHOBY GHAUT',
+                font: 'thin'
+            },
+            {
+                text: 'SEMBAWANG AVE',
+                font: 'thin'
+            },
+            {
+                text: 'SEMBAWANG DR',
+                font: 'thin'
+            },
+            {
+                text: 'ADMIRALTY LINK',
+                font: 'thin'
+            },
+        ]
+    },
+    6571: {
+        renderType: 'standardService',
+        serviceNumber: '657',
+        serviceFont: 'full',
+        destination: {
+            text: 'MARINA BLVD',
+            font: 'thick'
+        },
+        scrolls: [
+            {
+                text: 'MARINA BLVD',
+                font: 'efat',
+                showDest: false
+            },
+            {
+                text: 'JURONG WEST AVE 1',
+                font: 'thin'
+            },
+            {
+                text: 'JURONG EAST AVE 1',
+                font: 'thin'
+            },
+            {
+                text: 'TOH GUAN RD',
+                font: 'thin'
+            },
+            {
+                text: 'ROBINSON RD',
+                font: 'thin'
+            },
+        ]
+    },
+    6572: {
+        renderType: 'standardService',
+        serviceNumber: '657',
+        serviceFont: 'full',
+        destination: {
+            text: 'JURING WEST AVE 1',
+            font: 'tall'
+        },
+        scrolls: [
+            {
+                text: ['JURONG WEST', 'AVENUE 1'],
+                font: 'thick',
+                showDest: false
+            },
+            {
+                text: 'CENTRAL BLVD',
+                font: 'thin'
+            },
+            {
+                text: 'SHENTON WAY',
+                font: 'thin'
+            },
+            {
+                text: 'TOH GUAN RD',
+                font: 'thin'
+            },
+            {
+                text: 'JURONG EAST AVE 1',
+                font: 'thin'
+            },
+        ]
+    },
     7001: {
         renderType: 'standardService',
         serviceNumber: '700',
