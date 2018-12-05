@@ -4,7 +4,7 @@ let controlledURLs = [
     '/eds-simulator/mobi/manifest.webmanifest',
     '/eds-simulator/mobi/controller/icu-data/fonts.js',
     '/eds-simulator/mobi/controller/icu-data/sbst.js',
-    '/eds-simulator/mobi/controller/icu-data/smrt.js',
+    '/eds-simulator/mobi/controller/icu-data/smrt_mini.js',
     '/eds-simulator/mobi/controller/icu-data/ttsg.js',
     '/eds-simulator/mobi/controller/icu602-inner.css',
     '/eds-simulator/mobi/controller/icu602-inner.html',
