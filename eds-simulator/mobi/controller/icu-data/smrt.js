@@ -13088,7 +13088,7 @@ EDSDataSet['SMRT'] = {
         scrolls: [
             {
                 text: 'BT PANJANG',
-                font: 'big',
+                font: 'efat',
                 showDest: false
             },
             {
@@ -13127,7 +13127,7 @@ EDSDataSet['SMRT'] = {
         serviceFont: 'full',
         destination: {
             text: 'BT PANJANG',
-            font: 'thick'
+            font: 'efat'
         },
         scrolls: [
             {
