@@ -1168,7 +1168,7 @@ EDSDataSet['SMRT'] = {
         destination: {
             text: 'WDL INT / MRT',
         },
-        font: 'thin'
+        font: 'thick'
     },
     215: {
         renderType: 'swt',
@@ -1177,7 +1177,7 @@ EDSDataSet['SMRT'] = {
         destination: {
             text: 'WDL INT / MRT',
         },
-        font: 'thin'
+        font: 'thick'
     },
     217: {
         renderType: 'swt',
@@ -1186,7 +1186,7 @@ EDSDataSet['SMRT'] = {
         destination: {
             text: 'WDL INT / MRT',
         },
-        font: 'thin'
+        font: 'thick'
     },
     218: {
         renderType: 'standardService',
@@ -12881,7 +12881,7 @@ EDSDataSet['SMRT'] = {
         destination: {
             text: 'WDL INT / MRT',
         },
-        font: 'thin'
+        font: 'thick'
     },
     9121: {
         renderType: 'standardService',
@@ -13002,7 +13002,7 @@ EDSDataSet['SMRT'] = {
         destination: {
             text: 'WDL INT / MRT',
         },
-        font: 'thin'
+        font: 'thick'
     },
     9125: {
         renderType: 'standardService',
@@ -13075,7 +13075,7 @@ EDSDataSet['SMRT'] = {
         destination: {
             text: 'WDL INT / MRT',
         },
-        font: 'thin'
+        font: 'thick'
     },
     9201: {
         renderType: 'standardService',
