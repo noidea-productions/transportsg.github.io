@@ -94,12 +94,12 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Welcome Aboard', 'Tower Transit!'],
+                text: ['Happy New Year!', '2.0.1.9'],
                 yPosTop: 9,
                 yPosBelow: 0,
-                font: ['tts-message-fat', 'tts-message'],
+                font: ['tts-message-thin', 'tts-message-thin'],
                 extraMsg: true,
-                image: 'logo'
+                image: 'calendar'
             },
             {
                 text: 'JURONG EAST',
@@ -124,12 +124,12 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Welcome Aboard', 'Tower Transit!'],
+                text: ['Happy New Year!', '2.0.1.9'],
                 yPosTop: 9,
                 yPosBelow: 0,
-                font: ['tts-message-fat', 'tts-message'],
+                font: ['tts-message-thin', 'tts-message-thin'],
                 extraMsg: true,
-                image: 'logo'
+                image: 'calendar'
             },
             {
                 text: 'BEDOK',
@@ -170,12 +170,12 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Welcome Aboard', 'Tower Transit!'],
+                text: ['Happy New Year!', '2.0.1.9'],
                 yPosTop: 9,
                 yPosBelow: 0,
-                font: ['tts-message-fat', 'tts-message'],
+                font: ['tts-message-thin', 'tts-message-thin'],
                 extraMsg: true,
-                image: 'logo'
+                image: 'calendar'
             },
             {
                 text: 'BUKIT BATOK',
@@ -216,12 +216,12 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Welcome Aboard', 'Tower Transit!'],
+                text: ['Happy New Year!', '2.0.1.9'],
                 yPosTop: 9,
                 yPosBelow: 0,
-                font: ['tts-message-fat', 'tts-message'],
+                font: ['tts-message-thin', 'tts-message-thin'],
                 extraMsg: true,
-                image: 'logo'
+                image: 'calendar'
             },
             {
                 text: 'MARINA CENTRE',
@@ -258,12 +258,12 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Welcome Aboard', 'Tower Transit!'],
+                text: ['Happy New Year!', '2.0.1.9'],
                 yPosTop: 9,
                 yPosBelow: 0,
-                font: ['tts-message-fat', 'tts-message'],
+                font: ['tts-message-thin', 'tts-message-thin'],
                 extraMsg: true,
-                image: 'logo'
+                image: 'calendar'
             },
             {
                 text: 'CLEMENTI MRT',
@@ -292,12 +292,12 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Welcome Aboard', 'Tower Transit!'],
+                text: ['Happy New Year!', '2.0.1.9'],
                 yPosTop: 9,
                 yPosBelow: 0,
-                font: ['tts-message-fat', 'tts-message'],
+                font: ['tts-message-thin', 'tts-message-thin'],
                 extraMsg: true,
-                image: 'logo'
+                image: 'calendar'
             },
             {
                 text: 'MARINA CENTRE',
@@ -338,12 +338,12 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Welcome Aboard', 'Tower Transit!'],
+                text: ['Happy New Year!', '2.0.1.9'],
                 yPosTop: 9,
                 yPosBelow: 0,
-                font: 'tts-message',
+                font: ['tts-message-thin', 'tts-message-thin'],
                 extraMsg: true,
-                image: 'logo'
+                image: 'calendar'
             },
             {
                 text: 'BUKIT BATOK',
@@ -384,12 +384,12 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Welcome Aboard', 'Tower Transit!'],
+                text: ['Happy New Year!', '2.0.1.9'],
                 yPosTop: 9,
                 yPosBelow: 0,
-                font: 'tts-message',
+                font: ['tts-message-thin', 'tts-message-thin'],
                 extraMsg: true,
-                image: 'logo'
+                image: 'calendar'
             },
             {
                 text: 'SHENTON WAY',
@@ -434,12 +434,12 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Welcome Aboard', 'Tower Transit!'],
+                text: ['Happy New Year!', '2.0.1.9'],
                 yPosTop: 9,
                 yPosBelow: 0,
-                font: 'tts-message',
+                font: ['tts-message-thin', 'tts-message-thin'],
                 extraMsg: true,
-                image: 'logo'
+                image: 'calendar'
             },
             {
                 text: 'JURONG EAST',
@@ -488,12 +488,12 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Welcome Aboard', 'Tower Transit!'],
+                text: ['Happy New Year!', '2.0.1.9'],
                 yPosTop: 9,
                 yPosBelow: 0,
-                font: 'tts-message',
+                font: ['tts-message-thin', 'tts-message-thin'],
                 extraMsg: true,
-                image: 'logo'
+                image: 'calendar'
             },
             {
                 text: 'TOA PAYOH',
@@ -518,12 +518,12 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Welcome Aboard', 'Tower Transit!'],
+                text: ['Happy New Year!', '2.0.1.9'],
                 yPosTop: 9,
                 yPosBelow: 0,
-                font: 'tts-message',
+                font: ['tts-message-thin', 'tts-message-thin'],
                 extraMsg: true,
-                image: 'logo'
+                image: 'calendar'
             },
             {
                 text: 'CLEMEMTI',
@@ -564,12 +564,12 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Welcome Aboard', 'Tower Transit!'],
+                text: ['Happy New Year!', '2.0.1.9'],
                 yPosTop: 9,
                 yPosBelow: 0,
-                font: 'tts-message',
+                font: ['tts-message-thin', 'tts-message-thin'],
                 extraMsg: true,
-                image: 'logo'
+                image: 'calendar'
             },
             {
                 text: 'BUKIT BATOK',
@@ -606,12 +606,12 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Welcome Aboard', 'Tower Transit!'],
+                text: ['Happy New Year!', '2.0.1.9'],
                 yPosTop: 9,
                 yPosBelow: 0,
-                font: 'tts-message',
+                font: ['tts-message-thin', 'tts-message-thin'],
                 extraMsg: true,
-                image: 'logo'
+                image: 'calendar'
             },
             {
                 text: 'BUKIT PANJANG',
@@ -636,12 +636,12 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Welcome Aboard', 'Tower Transit!'],
+                text: ['Happy New Year!', '2.0.1.9'],
                 yPosTop: 9,
                 yPosBelow: 0,
-                font: 'tts-message',
+                font: ['tts-message-thin', 'tts-message-thin'],
                 extraMsg: true,
-                image: 'logo'
+                image: 'calendar'
             },
             {
                 text: 'CLEMENTI AVE 1',
@@ -666,12 +666,12 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Welcome Aboard', 'Tower Transit!'],
+                text: ['Happy New Year!', '2.0.1.9'],
                 yPosTop: 9,
                 yPosBelow: 0,
-                font: 'tts-message',
+                font: ['tts-message-thin', 'tts-message-thin'],
                 extraMsg: true,
-                image: 'logo'
+                image: 'calendar'
             },
             {
                 text: 'CLEMENTI',
@@ -696,12 +696,12 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Welcome Aboard', 'Tower Transit!'],
+                text: ['Happy New Year!', '2.0.1.9'],
                 yPosTop: 9,
                 yPosBelow: 0,
-                font: 'tts-message',
+                font: ['tts-message-thin', 'tts-message-thin'],
                 extraMsg: true,
-                image: 'logo'
+                image: 'calendar'
             },
             {
                 text: 'JURONG EAST',
@@ -738,12 +738,12 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Welcome Aboard', 'Tower Transit!'],
+                text: ['Happy New Year!', '2.0.1.9'],
                 yPosTop: 9,
                 yPosBelow: 0,
-                font: 'tts-message',
+                font: ['tts-message-thin', 'tts-message-thin'],
                 extraMsg: true,
-                image: 'logo'
+                image: 'calendar'
             },
             {
                 text: 'BUKIT BATOK',
@@ -780,12 +780,12 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Welcome Aboard', 'Tower Transit!'],
+                text: ['Happy New Year!', '2.0.1.9'],
                 yPosTop: 9,
                 yPosBelow: 0,
-                font: 'tts-message',
+                font: ['tts-message-thin', 'tts-message-thin'],
                 extraMsg: true,
-                image: 'logo'
+                image: 'calendar'
             },
             {
                 text: 'BUKIT BATOK',
@@ -826,12 +826,12 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Welcome Aboard', 'Tower Transit!'],
+                text: ['Happy New Year!', '2.0.1.9'],
                 yPosTop: 9,
                 yPosBelow: 0,
-                font: 'tts-message',
+                font: ['tts-message-thin', 'tts-message-thin'],
                 extraMsg: true,
-                image: 'logo'
+                image: 'calendar'
             },
             {
                 text: 'JOO KOON',
@@ -872,12 +872,12 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Welcome Aboard', 'Tower Transit!'],
+                text: ['Happy New Year!', '2.0.1.9'],
                 yPosTop: 9,
                 yPosBelow: 0,
-                font: 'tts-message',
+                font: ['tts-message-thin', 'tts-message-thin'],
                 extraMsg: true,
-                image: 'logo'
+                image: 'calendar'
             },
             {
                 text: 'BUKIT PANJANG',
@@ -990,6 +990,14 @@ EDSDataSet['TTSG'] = {
                 extraMsg: true,
                 image: 'hari-raya',
                 spaceWidth: 2
+            },
+            {
+                text: ['Happy New Year!', '2.0.1.9'],
+                yPosTop: 9,
+                yPosBelow: 0,
+                font: ['tts-message-thin', 'tts-message-thin'],
+                extraMsg: true,
+                image: 'calendar'
             }
         ]
     }
@@ -1029,6 +1037,24 @@ EDSExtraMessageSet['TTSG'] = {
 }
 
 EDSImageSet['TTSG'] = {
+    calendar: [//15
+        [0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0],
+        [0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0],
+        [0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+        [1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1],
+        [1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1],
+        [1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1],
+        [1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1],
+        [1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1],
+        [1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1],
+        [1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1],
+        [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    ],
     christmas: [
         [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0],
