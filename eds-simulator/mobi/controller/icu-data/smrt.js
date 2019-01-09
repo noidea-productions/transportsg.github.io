@@ -1562,7 +1562,7 @@ EDSDataSet['SMRT'] = {
                 font: 'thin'
             },
             {
-                text: 'CAMBERRA RD',
+                text: 'CANBERRA RD',
                 font: 'thin'
             },
             {
@@ -2005,7 +2005,7 @@ EDSDataSet['SMRT'] = {
                 font: 'thin'
             },
             {
-                text: 'CAMBERRA ROAD',
+                text: 'CANBERRA ROAD',
                 font: 'thin',
             },
         ]
@@ -4720,7 +4720,7 @@ EDSDataSet['SMRT'] = {
                 font: 'thin'
             },
             {
-                text: 'SEMOKO LOOP',
+                text: 'SENOKO LOOP',
                 font: 'thin'
             },
         ]
@@ -12474,7 +12474,7 @@ EDSDataSet['SMRT'] = {
                 font: 'thin'
             },
             {
-                text: 'CAMBERRA ROAD',
+                text: 'CANBERRA ROAD',
                 font: 'thin',
             },
         ]
@@ -15209,7 +15209,7 @@ EDSDataSet['SMRT'] = {
                 font: 'thin'
             },
             {
-                text: 'SEMOKO LOOP',
+                text: 'SENOKO LOOP',
                 font: 'thin'
             },
         ]

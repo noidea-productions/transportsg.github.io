@@ -1152,8 +1152,8 @@ EDSDataSet['SBST'] = {
             text: "SHENTON WAY TER"
         },
         scrolls: [
-            "ANG MO KIO AVE 6",
             "ANG MO KIO AVE 8",
+            "ANG MO KIO AVE 6",
             "BISHAN ST 22",
             "SIN MING AVE",
             "UPPER THOMSON RD",
@@ -1175,8 +1175,8 @@ EDSDataSet['SBST'] = {
             "UPPER THOMSON RD",
             "SIN MING AVE",
             "BISHAN ST 22",
-            "ANG MO KIO AVE 8",
-            "ANG MO KIO AVE 6"
+            "ANG MO KIO AVE 6",
+            "ANG MO KIO AVE 8"
         ]
     },
     "1623": {
@@ -1483,7 +1483,7 @@ EDSDataSet['SBST'] = {
             "JURONG WEST AVE 5",
             "JURONG WEST ST 81",
             "JURONG WEST ST 75",
-            "JURONG WEST 64"
+            "JURONG WEST ST 64"
         ]
     },
     "2432": {
@@ -1698,7 +1698,7 @@ EDSDataSet['SBST'] = {
         scrolls: [
             "HENDERSON RD",
             "TELOK BLANGAH HTS",
-            "TELOK BLANGAH ST32",
+            "TELOK BLANGAH ST 32",
             "TELOK BLANGAH DRIVE",
             "HENDERSON RD"
         ]
