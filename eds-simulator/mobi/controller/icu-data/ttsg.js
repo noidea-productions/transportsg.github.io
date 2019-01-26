@@ -94,12 +94,12 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Happy New Year!', '2.0.1.9'],
-                yPosTop: 9,
-                yPosBelow: 0,
-                font: ['tts-message-thin', 'tts-message-thin'],
+                text: '恭贺新春',
+                font: 'chinese-bold',
+                yPosTop: 1,
+                yPosBelow: 1,
                 extraMsg: true,
-                image: 'calendar'
+                image: 'cny'
             },
             {
                 text: 'JURONG EAST',
@@ -124,12 +124,12 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Happy New Year!', '2.0.1.9'],
-                yPosTop: 9,
-                yPosBelow: 0,
-                font: ['tts-message-thin', 'tts-message-thin'],
+                text: '恭贺新春',
+                font: 'chinese-bold',
+                yPosTop: 1,
+                yPosBelow: 1,
                 extraMsg: true,
-                image: 'calendar'
+                image: 'cny'
             },
             {
                 text: 'BEDOK',
@@ -170,12 +170,12 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Happy New Year!', '2.0.1.9'],
-                yPosTop: 9,
-                yPosBelow: 0,
-                font: ['tts-message-thin', 'tts-message-thin'],
+                text: '恭贺新春',
+                font: 'chinese-bold',
+                yPosTop: 1,
+                yPosBelow: 1,
                 extraMsg: true,
-                image: 'calendar'
+                image: 'cny'
             },
             {
                 text: 'BUKIT BATOK',
@@ -216,12 +216,12 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Happy New Year!', '2.0.1.9'],
-                yPosTop: 9,
-                yPosBelow: 0,
-                font: ['tts-message-thin', 'tts-message-thin'],
+                text: '恭贺新春',
+                font: 'chinese-bold',
+                yPosTop: 1,
+                yPosBelow: 1,
                 extraMsg: true,
-                image: 'calendar'
+                image: 'cny'
             },
             {
                 text: 'MARINA CENTRE',
@@ -258,12 +258,12 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Happy New Year!', '2.0.1.9'],
-                yPosTop: 9,
-                yPosBelow: 0,
-                font: ['tts-message-thin', 'tts-message-thin'],
+                text: '恭贺新春',
+                font: 'chinese-bold',
+                yPosTop: 1,
+                yPosBelow: 1,
                 extraMsg: true,
-                image: 'calendar'
+                image: 'cny'
             },
             {
                 text: 'CLEMENTI MRT',
@@ -292,12 +292,12 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Happy New Year!', '2.0.1.9'],
-                yPosTop: 9,
-                yPosBelow: 0,
-                font: ['tts-message-thin', 'tts-message-thin'],
+                text: '恭贺新春',
+                font: 'chinese-bold',
+                yPosTop: 1,
+                yPosBelow: 1,
                 extraMsg: true,
-                image: 'calendar'
+                image: 'cny'
             },
             {
                 text: 'MARINA CENTRE',
@@ -338,12 +338,12 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Happy New Year!', '2.0.1.9'],
-                yPosTop: 9,
-                yPosBelow: 0,
-                font: ['tts-message-thin', 'tts-message-thin'],
+                text: '恭贺新春',
+                font: 'chinese-bold',
+                yPosTop: 1,
+                yPosBelow: 1,
                 extraMsg: true,
-                image: 'calendar'
+                image: 'cny'
             },
             {
                 text: 'BUKIT BATOK',
@@ -384,12 +384,12 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Happy New Year!', '2.0.1.9'],
-                yPosTop: 9,
-                yPosBelow: 0,
-                font: ['tts-message-thin', 'tts-message-thin'],
+                text: '恭贺新春',
+                font: 'chinese-bold',
+                yPosTop: 1,
+                yPosBelow: 1,
                 extraMsg: true,
-                image: 'calendar'
+                image: 'cny'
             },
             {
                 text: 'SHENTON WAY',
@@ -434,12 +434,12 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Happy New Year!', '2.0.1.9'],
-                yPosTop: 9,
-                yPosBelow: 0,
-                font: ['tts-message-thin', 'tts-message-thin'],
+                text: '恭贺新春',
+                font: 'chinese-bold',
+                yPosTop: 1,
+                yPosBelow: 1,
                 extraMsg: true,
-                image: 'calendar'
+                image: 'cny'
             },
             {
                 text: 'JURONG EAST',
@@ -488,12 +488,12 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Happy New Year!', '2.0.1.9'],
-                yPosTop: 9,
-                yPosBelow: 0,
-                font: ['tts-message-thin', 'tts-message-thin'],
+                text: '恭贺新春',
+                font: 'chinese-bold',
+                yPosTop: 1,
+                yPosBelow: 1,
                 extraMsg: true,
-                image: 'calendar'
+                image: 'cny'
             },
             {
                 text: 'TOA PAYOH',
@@ -518,15 +518,15 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Happy New Year!', '2.0.1.9'],
-                yPosTop: 9,
-                yPosBelow: 0,
-                font: ['tts-message-thin', 'tts-message-thin'],
+                text: '恭贺新春',
+                font: 'chinese-bold',
+                yPosTop: 1,
+                yPosBelow: 1,
                 extraMsg: true,
-                image: 'calendar'
+                image: 'cny'
             },
             {
-                text: 'CLEMEMTI',
+                text: 'CLEMENTI',
                 font: 'fat',
                 yPosTop: 0,
                 yPosBelow: 3,
@@ -564,12 +564,12 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Happy New Year!', '2.0.1.9'],
-                yPosTop: 9,
-                yPosBelow: 0,
-                font: ['tts-message-thin', 'tts-message-thin'],
+                text: '恭贺新春',
+                font: 'chinese-bold',
+                yPosTop: 1,
+                yPosBelow: 1,
                 extraMsg: true,
-                image: 'calendar'
+                image: 'cny'
             },
             {
                 text: 'BUKIT BATOK',
@@ -606,12 +606,12 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Happy New Year!', '2.0.1.9'],
-                yPosTop: 9,
-                yPosBelow: 0,
-                font: ['tts-message-thin', 'tts-message-thin'],
+                text: '恭贺新春',
+                font: 'chinese-bold',
+                yPosTop: 1,
+                yPosBelow: 1,
                 extraMsg: true,
-                image: 'calendar'
+                image: 'cny'
             },
             {
                 text: 'BUKIT PANJANG',
@@ -627,6 +627,78 @@ EDSDataSet['TTSG'] = {
             }
         ]
     },
+    1831: {
+        renderType: 'standardService',
+        serviceNumber: '183',
+        destination: {
+            text: 'SCIENCE PARK RD',
+            font: 'fat'
+        },
+        scrolls: [
+            {
+                text: '恭贺新春',
+                font: 'chinese-bold',
+                yPosTop: 1,
+                yPosBelow: 1,
+                extraMsg: true,
+                image: 'cny'
+            },
+            {
+                text: 'SCIENCE PARK RD',
+                font: 'fat',
+                yPosTop: 0,
+                yPosBelow: 3,
+                extraMsg: true,
+                image: 'blank'
+            },
+            {
+                text: 'TOH GUAN RD EAST',
+                font: 'narrow'
+            },
+            {
+                text: 'CLEMENTI MRT',
+                font: 'narrow'
+            },
+            {
+                text: 'CLEMENTI RD',
+                font: 'narrow'
+            },
+            {
+                text: 'PASIR PANJANG RD',
+                font: 'narrow'
+            },
+        ]
+    },
+    1832: {
+        renderType: 'standardService',
+        serviceNumber: '183',
+        destination: {
+            text: 'JURONG EAST',
+            font: 'fat'
+        },
+        scrolls: [
+            {
+                text: '恭贺新春',
+                font: 'chinese-bold',
+                yPosTop: 1,
+                yPosBelow: 1,
+                extraMsg: true,
+                image: 'cny'
+            },
+            {
+                text: 'JURONG EAST',
+                font: 'fat',
+                yPosTop: 0,
+                yPosBelow: 3,
+                extraMsg: true,
+                image: 'mrt'
+            },
+            {
+                text: 'TOH GUAN RD EAST',
+                font: 'narrow'
+            },
+        ]
+    },
     1891: {
         renderType: 'standardService',
         serviceNumber: '189',
@@ -636,12 +708,12 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Happy New Year!', '2.0.1.9'],
-                yPosTop: 9,
-                yPosBelow: 0,
-                font: ['tts-message-thin', 'tts-message-thin'],
+                text: '恭贺新春',
+                font: 'chinese-bold',
+                yPosTop: 1,
+                yPosBelow: 1,
                 extraMsg: true,
-                image: 'calendar'
+                image: 'cny'
             },
             {
                 text: 'CLEMENTI AVE 1',
@@ -666,12 +738,12 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Happy New Year!', '2.0.1.9'],
-                yPosTop: 9,
-                yPosBelow: 0,
-                font: ['tts-message-thin', 'tts-message-thin'],
+                text: '恭贺新春',
+                font: 'chinese-bold',
+                yPosTop: 1,
+                yPosBelow: 1,
                 extraMsg: true,
-                image: 'calendar'
+                image: 'cny'
             },
             {
                 text: 'CLEMENTI',
@@ -682,7 +754,7 @@ EDSDataSet['TTSG'] = {
                 image: 'mrt'
             },
             {
-                text: 'CLEMEMTI AVE 4',
+                text: 'CLEMENTI AVE 4',
                 font: 'narrow'
             }
         ]
@@ -696,12 +768,12 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Happy New Year!', '2.0.1.9'],
-                yPosTop: 9,
-                yPosBelow: 0,
-                font: ['tts-message-thin', 'tts-message-thin'],
+                text: '恭贺新春',
+                font: 'chinese-bold',
+                yPosTop: 1,
+                yPosBelow: 1,
                 extraMsg: true,
-                image: 'calendar'
+                image: 'cny'
             },
             {
                 text: 'JURONG EAST',
@@ -738,12 +810,12 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Happy New Year!', '2.0.1.9'],
-                yPosTop: 9,
-                yPosBelow: 0,
-                font: ['tts-message-thin', 'tts-message-thin'],
+                text: '恭贺新春',
+                font: 'chinese-bold',
+                yPosTop: 1,
+                yPosBelow: 1,
                 extraMsg: true,
-                image: 'calendar'
+                image: 'cny'
             },
             {
                 text: 'BUKIT BATOK',
@@ -780,12 +852,12 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Happy New Year!', '2.0.1.9'],
-                yPosTop: 9,
-                yPosBelow: 0,
-                font: ['tts-message-thin', 'tts-message-thin'],
+                text: '恭贺新春',
+                font: 'chinese-bold',
+                yPosTop: 1,
+                yPosBelow: 1,
                 extraMsg: true,
-                image: 'calendar'
+                image: 'cny'
             },
             {
                 text: 'BUKIT BATOK',
@@ -826,12 +898,12 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Happy New Year!', '2.0.1.9'],
-                yPosTop: 9,
-                yPosBelow: 0,
-                font: ['tts-message-thin', 'tts-message-thin'],
+                text: '恭贺新春',
+                font: 'chinese-bold',
+                yPosTop: 1,
+                yPosBelow: 1,
                 extraMsg: true,
-                image: 'calendar'
+                image: 'cny'
             },
             {
                 text: 'JOO KOON',
@@ -872,12 +944,12 @@ EDSDataSet['TTSG'] = {
         },
         scrolls: [
             {
-                text: ['Happy New Year!', '2.0.1.9'],
-                yPosTop: 9,
-                yPosBelow: 0,
-                font: ['tts-message-thin', 'tts-message-thin'],
+                text: '恭贺新春',
+                font: 'chinese-bold',
+                yPosTop: 1,
+                yPosBelow: 1,
                 extraMsg: true,
-                image: 'calendar'
+                image: 'cny'
             },
             {
                 text: 'BUKIT PANJANG',
