@@ -147,6 +147,26 @@ let EDSData = {
             'Tampines Ave 2'
         ]
     },
+    '43': {
+       1: [
+           'Punggol Pl'
+           'Punggol Ctrl'
+           'Punggol Way'
+           'Sengkang East Rd'
+           'Sengkang Ctrl'
+           'Buangkok Dr'
+           'Buangkok Green'
+           'Yio Chu Kang Rd'
+           'Yio Chu Kang Lk'
+           'Serengoon Ctrl'
+           'Upp Serengoon Rd'
+           'Upp Paya Lebar Rd'
+           'Paya Lebar Rd'
+           'Tanjong Katong Rd'
+           'Amber Rd'
+           'Marine Parade Rd'
+           'Bedok Sth Ave 1'
+           'Upp East Coast Rd'
     '43M': {
        1: [
            'Punggol Way',
