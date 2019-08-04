@@ -789,6 +789,47 @@ EDSDataSet['SBST'] = {
             "HOUGANG AVE 4"
         ]
     },
+"1171": {
+        renderType: "standardService",
+        serviceNumber: "117",
+        destination: {
+            text: "SEMBAWANG INT"
+        },
+        scrolls: [
+            "PUNGGOL PLACE",
+            "PUNGGOL CENTRAL",
+            "JALAN KAYU",
+            "PICCADILLY",
+            "SELETAR AREOSPACE DRIVE",
+            "WEST CAMP ROAD",
+            "YISHUN AVE 1,2",
+            "CANBERRA LINK",
+            "SEMBAWANG WAY",
+            "SEMBAWANG DRIVE",
+            "SEMBAWANG VISTA",
+        ]
+    },
+"1172": {
+        renderType: "standardService",
+        serviceNumber: "117",
+        destination: {
+            text: "PUNGGOL INT"
+        },
+        scrolls: [
+            "SEMBAWANG VISTA",
+            "SEMBAWANG DRIVE",
+            "SEMBAWANG WAY",
+            "CANBERRA LINK",
+            "YISHUN AVE 1,2",
+            "WEST CAMP ROAD",
+            "SELETAR AREOSPACE DRIVE",
+            "PICCADILLY",
+            "JALAN KAYU",
+            "PUNGGOL CENTRAL",
+            "PUNGGOL PLACE",
+        ]
+    },
+
     "1201": {
         renderType: "int-loopSvc",
         serviceNumber: "120",
