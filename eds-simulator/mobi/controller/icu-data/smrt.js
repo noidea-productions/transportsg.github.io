@@ -220,7 +220,7 @@ EDSDataSet['SMRT'] = {
     },
     7: {
         renderType: 'big',
-        text: 'OFF SERVICE'
+        text: 'OUT OF SERVICE'
     },
     8: {
         renderType: 'big',
